@@ -131,4 +131,4 @@ print 'QUERIES\n'
 print 'There were ' + str(queries_count) + ' unique queries today.\n'
 print 'Here they are:\n'
 for i in queries:
-    print i + '\n'
+    print i
