@@ -12,7 +12,7 @@ ead_identifiers_count = 0
 queries_count = 0
 
 # where are the logfiles?
-logfiles = 'subsetbhleadlog.csv'
+logfiles = 'path/to/subsetbhleadlog.csv'
 
 # open the logs
 with open(logfiles, 'rb') as csvfile:
