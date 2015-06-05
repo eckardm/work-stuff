@@ -10,7 +10,7 @@ import csv
 from constants import eadids_and_titlepropers
 
 '''
-second, lets get the unique ead identifiers and queries from the logs, and use the dictionary to tell us what the corresponding title proper is for each ead identifier'''
+first, lets get the unique ead identifiers and queries from the logs, and use the dictionary to tell us what the corresponding title proper is for each ead identifier'''
 
 # empty lists for ead identifiers and queries
 ead_identifiers = []
@@ -22,7 +22,7 @@ ead_identifiers_count = 0
 queries_count = 0
 
 # where are the logfiles?
-logfiles = 'subsetbhleadlog.csv'
+logfiles = 'C:/Users/Public/Documents/bhleadlog/subsetbhleadlog.csv'
 
 # print that we're starting the logs
 print 'Going through logs.'
@@ -75,7 +75,7 @@ print 'REQUESTS'
 print 'There were ' + str(requests_count) + ' requests today.'
 
 '''
-add unique ead identifiers and corresponding title to eadidentifiers.csv'''
+second, add unique ead identifiers and corresponding title to eadidentifiers.csv'''
 
 # where is the output csv
 eadidentifiers_csv = 'C:/Users/Public/Documents/bhleadlog/eadidentifiers.csv'
@@ -106,7 +106,7 @@ for i in ead_identifiers:
 print 'eadidentifiers.csv created.'
 
 '''
-add unique queries to queries.txt'''
+third, add unique queries to queries.txt'''
 
 # where is the output txt
 queries_txt = 'C:/Users/Public/Documents/bhleadlog/queries.txt'
