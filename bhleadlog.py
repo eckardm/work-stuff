@@ -6,53 +6,8 @@ import csv
 import re
 import csv
 
-'''
-first, let's create a dictionary of ead identifiers and their corresponding title propers'''
-
-#empty dictionary for ead identifier keys and title proper values
-eadids_and_titlepropers = {}
-
-# where are the eads?
-ead_path = 'path/to/eads'
-
-# make sure we only get the xml
-eads = re.compile('\.xml$')
-
-# xpaths we'll need
-eadid_xpath = '//eadid'
-titleproper_xpath = '//titlestmt/titleproper'
-
-# print that we're creating the dictionary
-print 'Creating dictionary.'
-
-# go through the eads
-for filename in os.listdir(ead_path):
-    if eads.search(filename):
-        # let us know we're still working on it
-        print '\rWorking on it... |',
-        print '\rWorking on it... /',
-        print '\rWorking on it... -',
-        print '\rWorking on it... \\',
-        print '\rWorking on it... |',
-        print '\rWorking on it... /',
-        print '\rWorking on it... -',
-        print '\rWorking on it... -',
-        print '\rWorking on it... \\',
-        # parse the ead
-        ead_tree = etree.parse(join(ead_path, filename))
-        # get the eadid xml entity
-        eadid = ead_tree.xpath(eadid_xpath)
-        # get the titleproper xml entity
-        titleproper = ead_tree.xpath(titleproper_xpath)
-        # get the eadid text
-        eadid_text = eadid[0].text
-        # get the titleproper text, and get the line breaks and encoding right
-        titleproper_text = titleproper[0].text.replace('\n', '').encode('ascii', 'ignore')
-        # add both do the ead identifier and title proper dictionary
-        eadids_and_titlepropers[eadid_text] = titleproper_text
-
-# print that dictionary got created
-print '\rDictionary created.'
+# import this custom dictionary
+from constants import eadids_and_titlepropers
 
 '''
 second, lets get the unique ead identifiers and queries from the logs, and use the dictionary to tell us what the corresponding title proper is for each ead identifier'''
@@ -67,7 +22,7 @@ ead_identifiers_count = 0
 queries_count = 0
 
 # where are the logfiles?
-logfiles = 'path/to/logfile.csv'
+logfiles = 'subsetbhleadlog.csv'
 
 # print that we're starting the logs
 print 'Going through logs.'
@@ -113,7 +68,7 @@ with open(logfiles, 'rb') as csvfile:
                 queries_count += 1
 
 # print that we're done with logs
-print '\rLogs gone through.'                    
+print '\rLogs gone through.'               
                 
 # print requests
 print 'REQUESTS'
@@ -123,7 +78,7 @@ print 'There were ' + str(requests_count) + ' requests today.'
 add unique ead identifiers and corresponding title to eadidentifiers.csv'''
 
 # where is the output csv
-eadidentifiers_csv = 'path/to/eadidentifiers.csv'
+eadidentifiers_csv = 'C:/Users/Public/Documents/bhleadlog/eadidentifiers.csv'
 
 # create header row
 with open(eadidentifiers_csv, 'ab') as csv_file:
@@ -154,7 +109,7 @@ print 'eadidentifiers.csv created.'
 add unique queries to queries.txt'''
 
 # where is the output txt
-queries_txt = 'path/to/queries.txt'
+queries_txt = 'C:/Users/Public/Documents/bhleadlog/queries.txt'
 
 # print that we're starting on unique queries
 print 'QUERIES'
