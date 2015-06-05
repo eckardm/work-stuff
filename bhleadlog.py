@@ -65,7 +65,6 @@ queries = []
 requests_count = 0
 ead_identifiers_count = 0
 queries_count = 0
-key_error_counter = 0
 
 # where are the logfiles?
 logfiles = 'path/to/logfile.csv'
@@ -144,19 +143,12 @@ for i in ead_identifiers:
         try:
             # write the row
             writer.writerow([i, eadids_and_titlepropers[i]])
-        # if it doesn't work
+        # if it doesn't work because somebody searched for and ead identifier that doesn't exist
         except:
-            # write the row
-            writer.writerow([i, 'UNIDENTIFIED TITLEPROPER'])
-            # add key to dictionary with dummy value for future investigation
-            eadids_and_titlepropers[i] = 'UNIDENTIFIED TITLEPROPER'
-            # update count
-            key_error_counter += 1
+            continue
 
 # let us know the csv is finished...
 print 'eadidentifiers.csv created.'
-# ...and how many errors there were
-print 'There were ' + str(key_error_counter) + ' KEY ERROR(S) found.'
 
 '''
 add unique queries to queries.txt'''
