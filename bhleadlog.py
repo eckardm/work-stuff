@@ -4,15 +4,19 @@ from os.path import join
 from lxml import etree
 import csv
 import re
+import csv
 
 '''
 first, let's create a dictionary of ead identifiers and their corresponding title propers'''
 
-# empty dictionary for ead identifier keys and title proper values
+# print that we're kicking it off
+print 'PRELIMS'
+
+#empty dictionary for ead identifier keys and title proper values
 eadids_and_titlepropers = {}
 
 # where are the eads?
-ead_path = 'S:/Curation/Projects/Mellon/ArchivesSpace/ATeam_Migration/EADs/Real_Masters_all'
+ead_path = 'path/to/eads'
 
 # make sure we only get the xml
 eads = re.compile('\.xml$')
@@ -22,7 +26,7 @@ eadid_xpath = '//eadid'
 titleproper_xpath = '//titlestmt/titleproper'
 
 # print that we're creating the dictionary
-print 'Creating dictionary.\n'
+print 'Creating dictionary.'
 
 # go through the eads
 for filename in os.listdir(ead_path):
@@ -51,7 +55,7 @@ for filename in os.listdir(ead_path):
         eadids_and_titlepropers[eadid_text] = titleproper_text
 
 # print that dictionary got created
-print 'Dictionary created.\n'
+print '\rDictionary created.'
 
 '''
 second, lets get the unique ead identifiers and queries from the logs, and use the dictionary to tell us what the corresponding title proper is for each ead identifier'''
@@ -67,10 +71,10 @@ queries_count = 0
 key_error_counter = 0
 
 # where are the logfiles?
-logfiles = 'subsetbhleadlog.csv'
+logfiles = 'path/to/logfile.csv'
 
 # print that we're starting the logs
-print 'Going through logs.\n'
+print 'Going through logs.'
 
 # open the logs
 with open(logfiles, 'rb') as csvfile:
@@ -78,6 +82,15 @@ with open(logfiles, 'rb') as csvfile:
     logreader = csv.reader(csvfile, delimiter=',')
     # go through each row
     for row in logreader:
+        print '\rWorking on it... |',
+        print '\rWorking on it... /',
+        print '\rWorking on it... -',
+        print '\rWorking on it... \\',
+        print '\rWorking on it... |',
+        print '\rWorking on it... /',
+        print '\rWorking on it... -',
+        print '\rWorking on it... -',
+        print '\rWorking on it... \\',
         # find the requests
         request = row[2]
         # update count
@@ -102,33 +115,65 @@ with open(logfiles, 'rb') as csvfile:
                 queries.append(query)
                 # update count
                 queries_count += 1
-                # add them to empty lis
 
 # print that we're done with logs
-print 'Done with logs.\n'                
+print '\rDone with logs.'                
                 
 # print requests
-print 'REQUESTS\n'
-print 'There were ' + str(requests_count) + ' requests today.\n'
+print 'REQUESTS'
+print 'There were ' + str(requests_count) + ' requests today.'
 
-# print unique ead identifiers and corresponding title
-print 'EAD IDENTIFIERS\n'
-print 'There were ' + str(ead_identifiers_count) + ' unique EADs accessed today.\n'
-print 'Here they are, with their title propers:\n'
+'''
+add unique ead identifiers and corresponding title to eadidentifiers.csv'''
+
+# where is the output csv
+eadidentifiers_csv = 'path/to/eadidentifiers.csv'
+
+# create header row
+with open(eadidentifiers_csv, 'ab') as csv_file:
+    writer = csv.writer(csv_file, dialect='excel')
+    writer.writerow(['eadid', 'titleproper'])
+
+# print that we're starting on unique ead identifiers
+print 'EAD IDENTIFIERS'
+# let us know how many
+print 'There were ' + str(ead_identifiers_count) + ' unique EADs accessed today.'
+# let us know we're starting the csv
+print 'Creating eadidentifiers.csv'
 for i in ead_identifiers:
-    try:
-        print i + '\n' + eadids_and_titlepropers[i] + '\n'
-    except:
-        print 'KEY ERROR on ' + i + '\n'
-        # add key to dictionary with dummy value for future investigation
-        eadids_and_titlepropers[i] = 'UNIDENTIFIED TITLEPROPER'
-        # update count
-        key_error_counter += 1
-print 'There were ' + str(key_error_counter) + ' KEY ERROR(S) found.\n'
-        
-# print unique queries
-print 'QUERIES\n'
-print 'There were ' + str(queries_count) + ' unique queries today.\n'
-print 'Here they are:\n'
+    with open(eadidentifiers_csv, 'ab') as csv_file:
+        writer = csv.writer(csv_file, dialect='excel')
+        # give it a try
+        try:
+            # write the row
+            writer.writerow([i, eadids_and_titlepropers[i]])
+        # if it doesn't work
+        except:
+            # write the row
+            writer.writerow([i, 'UNIDENTIFIED TITLEPROPER'])
+            # add key to dictionary with dummy value for future investigation
+            eadids_and_titlepropers[i] = 'UNIDENTIFIED TITLEPROPER'
+            # update count
+            key_error_counter += 1
+
+# let us know the csv is finished...
+print 'eadidentifiers.csv created.'
+# ...and how many errors there were
+print 'There were ' + str(key_error_counter) + ' KEY ERROR(S) found.'
+
+'''
+add unique queries to queries.txt'''
+
+# where is the output txt
+queries_txt = 'path/to/queries.txt'
+
+# print that we're starting on unique queries
+print 'QUERIES'
+# let us know how many
+print 'There were ' + str(queries_count) + ' unique queries today.'
+# let us know we're starting the txt
+print 'Creating queries.txt.'
 for i in queries:
-    print i
+    with open(queries_txt, "a") as txt_file:
+        txt_file.write(i + '\n')
+print 'queries.txt created.'
