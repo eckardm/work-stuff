@@ -8,7 +8,7 @@ import re
 eadids_and_titlepropers = {}
 
 # where are the eads?
-ead_path = 'path/to/EADs'
+ead_path = 'S:/Curation/Projects/Mellon/ArchivesSpace/ATeam_Migration/EADs/Real_Masters_all'
 
 # make sure we only get the xml
 eads = re.compile('\.xml$')
@@ -48,6 +48,7 @@ for filename in os.listdir(ead_path):
 
 # where is constants.py?
 constants = 'constants.py'
+# put the dictionary in constants.py
 with open(constants, "a") as txt_file:
     txt_file.write('eadids_and_titlepropers = ' + str(eadids_and_titlepropers))
         
