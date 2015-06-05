@@ -117,7 +117,7 @@ with open(logfiles, 'rb') as csvfile:
                 queries_count += 1
 
 # print that we're done with logs
-print '\rDone with logs.'                
+print '\rLogs gone through.'                    
                 
 # print requests
 print 'REQUESTS'
