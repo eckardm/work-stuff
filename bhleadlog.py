@@ -9,9 +9,6 @@ import csv
 '''
 first, let's create a dictionary of ead identifiers and their corresponding title propers'''
 
-# print that we're kicking it off
-print 'PRELIMS'
-
 #empty dictionary for ead identifier keys and title proper values
 eadids_and_titlepropers = {}
 
