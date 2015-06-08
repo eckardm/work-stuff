@@ -7,7 +7,7 @@ import re
 import csv
 
 # import this custom dictionary
-from constants import eadids_and_titlepropers
+from constants import eadids_and_unittitles
 
 '''
 first, lets get the unique ead identifiers and queries from the logs, and use the dictionary to tell us what the corresponding title proper is for each ead identifier'''
@@ -97,7 +97,7 @@ for i in ead_identifiers:
         # give it a try
         try:
             # write the row
-            writer.writerow([i, eadids_and_titlepropers[i]])
+            writer.writerow([i, eadids_and_unittitles[i]])
         # if it doesn't work because somebody searched for and ead identifier that doesn't exist
         except:
             continue
