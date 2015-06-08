@@ -45,9 +45,9 @@ for filename in os.listdir(ead_path):
         # get the eadid text
         eadid_text = eadid[0].text
         # get the collection unit title text, and get the line breaks and crazy spacing right
-        collection_unittitle_text = etree.tostring(collection_unittitle[0]).replace('\n', '').strip()
+        collection_unittitle_text = etree.tostring(collection_unittitle[0])
         # more crazy spacing
-        collection_unittitle_text = re.sub('\s\s+', '', collection_unittitle_text)
+        collection_unittitle_text = ' '.join(collection_unittitle_text.split())
         # remove the xml tags <-- this probably isn't the most elegant way to do this
         collection_unittitle_text = re.sub('<.*?>', '', collection_unittitle_text)
         # add both do the ead identifier and title proper dictionary
