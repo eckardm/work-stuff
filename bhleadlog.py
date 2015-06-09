@@ -221,7 +221,7 @@ def percentage(count):
     return percent
                 
 # print referrers
-print 'REFERRERS'
+print 'REFERRALS'
 print str(deepblue_counter) + ' referrals came from DeepBlue today. That is ' + str(percentage(deepblue_counter)) + '%.'
 print str(finding_aids_counter) + ' referrals came from the Finding Aids site today. That is ' + str(percentage(finding_aids_counter)) + '%.'
 print str(bentley_counter) + " referrals came from the Bentley's site today. That is " + str(percentage(bentley_counter)) + '%.'
@@ -249,7 +249,6 @@ base_url = 'http://quod.lib.umich.edu'
 
 # counter
 response_code_counter = 0
-no_error_counter = 0 # <-- get rid of
 
 # emptydictionary
 response_code_errors = {}
@@ -276,11 +275,8 @@ with open(log_files, 'rb') as csvfile:
             print '\rWorking on it... -',
             print '\rWorking on it... \\',
             request_url = base_url + request.replace('GET ', '')
-            print request_url # <-- get rid of
             response_code = urllib.urlopen(request_url).getcode()
-            print response_code # <-- get rid of
             if response_code == 200:
-                no_error_counter += 1 # <-- get rid of
                 continue
             else:
                 response_code_counter += 1
@@ -292,9 +288,8 @@ print '\rLogs gone through again.'
 # print response code errors
 print 'RESPONSE CODES'
 print 'There were ' + str(response_code_counter) + ' response code errors.'
-print 'NO ERRORS: ' + str(no_error_counter)
 print 'Here they are:'
-for key, value in response_code_errors:
+for key, value in response_code_errors.iteritems():
     print 'Request: ' + key
     print 'Response Code: ' + value
 
@@ -338,10 +333,13 @@ print '\rLogs gone through yet again.'
 print 'FOCUS REGIONS'
 print 'Found ' + str(len(focus_region_counts)) + ' focus regions.'
 print 'Here they are: '
+
+# calculate percentage
 total_focus_region_count = 0
 for key, value in focus_region_counts.iteritems():
     total_focus_region_count += value
-    
+
+# print the rest of requests
 for key, value in focus_region_counts.iteritems():
     print 'Focus Region: ' + key
     print 'Count: ' + str(value) + ', which is ' + str(float(value) / float(total_focus_region_count) * 100) + '%.'
