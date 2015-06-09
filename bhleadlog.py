@@ -5,6 +5,8 @@ from lxml import etree
 import csv
 import re
 import csv
+import urllib
+import time
 
 # import this custom dictionary
 from constants import eadids_and_unittitles
@@ -21,14 +23,14 @@ requests_count = 0
 ead_identifiers_count = 0
 queries_count = 0
 
-# where are the logfiles?
-logfiles = 'C:/Users/Public/Documents/bhleadlog/subsetbhleadlog.csv'
+# where are the log files?
+log_files = 'C:/Users/Public/Documents/bhleadlog/subsetbhleadlog.csv'
 
 # print that we're starting the logs
 print 'Going through logs.'
 
 # open the logs
-with open(logfiles, 'rb') as csvfile:
+with open(log_files, 'rb') as csvfile:
     # read the logs
     logreader = csv.reader(csvfile, delimiter=',')
     # go through each row
@@ -138,11 +140,11 @@ bing_counter = 0
 no_referral_counter = 0
 other_counter = 0
 
-# print that we're starting the logs
+# print that we're starting the logs again
 print 'Going through logs again.'
 
 # open the logs
-with open(logfiles, 'rb') as csvfile:
+with open(log_files, 'rb') as csvfile:
     # read the logs
     logreader = csv.reader(csvfile, delimiter=',')
     # go through each row
@@ -209,7 +211,7 @@ with open(logfiles, 'rb') as csvfile:
         if university_of_michigan_matches and google_matches and yahoo_matches and ask_matches and bing_matches and no_referral_matches not in referrer:
             other_counter += 1
             
-# print that we're done with logs
+# print that we're done with logs again
 print '\rLogs gone through again.'               
                 
 # create function for percentage
@@ -232,5 +234,114 @@ print str(bing_counter) + ' referrals came from Bing today. That is ' + str(perc
 print str(no_referral_counter) + ' were not referred. That is ' + str(percentage(no_referral_counter)) + '%.'
 print 'Other: ' + str(other_counter) + '. That is ' + str(percentage(other_counter)) + '%.'
 
+
 '''
-fifth, figure out if folks are getting any 404s'''
+fifth, figure out if folks are getting any 404s <--  this is very imperfect'''
+
+# print that we're starting the logs again
+print 'Going through logs again.'
+
+# match get requests
+get_requests = re.compile('^GET')
+
+# base dlxs url
+base_url = 'http://quod.lib.umich.edu'
+
+# counter
+response_code_counter = 0
+no_error_counter = 0 # <-- get rid of
+
+# emptydictionary
+response_code_errors = {}
+
+# open the logs
+with open(log_files, 'rb') as csvfile:
+    # read the logs
+    logreader = csv.reader(csvfile, delimiter=',')
+    # go through each row
+    for row in logreader:
+        # only look at get requests
+        request = row[2]
+        if get_requests.search(request):
+            # don't overload the server
+            time.sleep(1)
+            # keep up with where we are
+            print '\rWorking on it... |',
+            print '\rWorking on it... /',
+            print '\rWorking on it... -',
+            print '\rWorking on it... \\',
+            print '\rWorking on it... |',
+            print '\rWorking on it... /',
+            print '\rWorking on it... -',
+            print '\rWorking on it... -',
+            print '\rWorking on it... \\',
+            request_url = base_url + request.replace('GET ', '')
+            print request_url # <-- get rid of
+            response_code = urllib.urlopen(request_url).getcode()
+            print response_code # <-- get rid of
+            if response_code == 200:
+                no_error_counter += 1 # <-- get rid of
+                continue
+            else:
+                response_code_counter += 1
+                response_code_errors[request_url] = response_code
+                
+# print that we're done with logs again
+print '\rLogs gone through again.'  
+
+# print response code errors
+print 'RESPONSE CODES'
+print 'There were ' + str(response_code_counter) + ' response code errors.'
+print 'NO ERRORS: ' + str(no_error_counter)
+print 'Here they are:'
+for key, value in response_code_errors:
+    print 'Request: ' + key
+    print 'Response Code: ' + value
+
+'''
+sixth, see what kinds of side things people click on'''
+
+# print that we're starting the logs
+print 'Going through logs yet again.'
+
+# empty dictionary
+focus_region_counts = {}
+
+# open the logs
+with open(log_files, 'rb') as csvfile:
+    # read the logs
+    logreader = csv.reader(csvfile, delimiter=',')
+    # go through each row
+    for row in logreader:
+        print '\rWorking on it... |',
+        print '\rWorking on it... /',
+        print '\rWorking on it... -',
+        print '\rWorking on it... \\',
+        print '\rWorking on it... |',
+        print '\rWorking on it... /',
+        print '\rWorking on it... -',
+        print '\rWorking on it... -',
+        print '\rWorking on it... \\',
+        # find the requests
+        request = row[2]
+        # find the ead identifiers
+        focus_regions = re.findall('(?<=focusrgn=)(.*?)(?=\;)', request)
+        # go through them
+        for focus_region in focus_regions:
+            # create dictionary (http://stackoverflow.com/questions/3496518/python-using-a-dictionary-to-count-the-items-in-a-list)
+            focus_region_counts[focus_region] = focus_region_counts.get(focus_region, 0) + 1
+            
+# print that we're done with logs
+print '\rLogs gone through yet again.'               
+                
+# print requests
+print 'FOCUS REGIONS'
+print 'Found ' + str(len(focus_region_counts)) + ' focus regions.'
+print 'Here they are: '
+total_focus_region_count = 0
+for key, value in focus_region_counts.iteritems():
+    total_focus_region_count += value
+    
+for key, value in focus_region_counts.iteritems():
+    print 'Focus Region: ' + key
+    print 'Count: ' + str(value) + ', which is ' + str(float(value) / float(total_focus_region_count) * 100) + '%.'
