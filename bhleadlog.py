@@ -386,4 +386,50 @@ print '\rLogs gone through yet again.'
                 
 # print requests
 print 'MOBILE DEVICES'
-print str(mobile_devices_counter) + ' of ' + str(browser_os_counter) + ' requests were made on mobile devices. That is ' + str(float(mobile_devices_counter) / float (browser_os_counter) * 100) + '%.'
+print str(mobile_devices_counter) + ' of ' + str(browser_os_counter) + ' requests were made on mobile devices. That is ' + str(float(mobile_devices_counter) / float(browser_os_counter) * 100) + '%.'
+
+'''
+eighth, information on bookbag use'''
+
+# print that we're starting the logs
+print 'Going through logs yet again.'
+
+# empty dictionary
+bookbag_add_counter = 0
+bookbag_look_counter = 0
+requests_counter = 0
+
+# open the logs
+with open(log_files, 'rb') as csvfile:
+    # read the logs
+    logreader = csv.reader(csvfile, delimiter=',')
+    # go through each row
+    for row in logreader:
+        requests_counter +=1
+        print '\rWorking on it... |',
+        print '\rWorking on it... /',
+        print '\rWorking on it... -',
+        print '\rWorking on it... \\',
+        print '\rWorking on it... |',
+        print '\rWorking on it... /',
+        print '\rWorking on it... -',
+        print '\rWorking on it... -',
+        print '\rWorking on it... \\',
+        # find the requests
+        request = row[2]
+        # find adding to bookbag
+        bookbag_add_matches = re.findall('bbaction=add', request)
+        for bookbag_add_match in bookbag_add_matches:
+            bookbag_add_counter += 1
+        # find looking at bookbag
+        bookbag_look_matches = re.findall('page=bbaglist', request)
+        for bookbag_look_match in bookbag_look_matches:
+            bookbag_look_counter += 1
+ 
+# print that we're done with logs
+print '\rLogs gone through yet again.'               
+                
+# print requests
+print 'BOOKBAG USE'
+print str(bookbag_add_counter) + ' requests added items to bookbags. That is ' + str(float(bookbag_add_counter) / float(requests_counter) * 100) + '%.'
+print str(bookbag_look_counter) + ' requests looked at items in bookbags. That is ' + str(float(bookbag_look_counter) / float(requests_counter) * 100) + '%.'
