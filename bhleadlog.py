@@ -249,6 +249,7 @@ base_url = 'http://quod.lib.umich.edu'
 
 # counter
 response_code_counter = 0
+overloading_counter = 0
 
 # emptydictionary
 response_code_errors = {}
@@ -278,6 +279,8 @@ with open(log_files, 'rb') as csvfile:
             response_code = urllib.urlopen(request_url).getcode()
             if response_code == 200:
                 continue
+            elif response_code == 503:
+                overloading_counter += 1
             else:
                 response_code_counter += 1
                 response_code_errors[request_url] = response_code
@@ -287,11 +290,11 @@ print '\rLogs gone through again.'
 
 # print response code errors
 print 'RESPONSE CODES'
-print 'There were ' + str(response_code_counter) + ' response code errors.'
+print 'There were ' + str(response_code_counter) + " response code errors. We're not sure about " + str(overloading_counter) + ' because we are overloading the server.'
 print 'Here they are:'
 for key, value in response_code_errors.iteritems():
     print 'Request: ' + key
-    print 'Response Code: ' + value
+    print 'Response Code: ' + str(value)
 
 '''
 sixth, see what kinds of side things people click on'''
@@ -343,3 +346,44 @@ for key, value in focus_region_counts.iteritems():
 for key, value in focus_region_counts.iteritems():
     print 'Focus Region: ' + key
     print 'Count: ' + str(value) + ', which is ' + str(float(value) / float(total_focus_region_count) * 100) + '%.'
+    
+'''
+seventh, how many mobile users?'''
+
+# print that we're starting the logs
+print 'Going through logs yet again.'
+
+# empty dictionary
+browser_os_counter = 0
+mobile_devices_counter = 0
+
+# open the logs
+with open(log_files, 'rb') as csvfile:
+    # read the logs
+    logreader = csv.reader(csvfile, delimiter=',')
+    # go through each row
+    for row in logreader:
+        browser_os_counter +=1
+        print '\rWorking on it... |',
+        print '\rWorking on it... /',
+        print '\rWorking on it... -',
+        print '\rWorking on it... \\',
+        print '\rWorking on it... |',
+        print '\rWorking on it... /',
+        print '\rWorking on it... -',
+        print '\rWorking on it... -',
+        print '\rWorking on it... \\',
+        # find the requests
+        browser_os = row[4]
+        # find the ead identifiers
+        mobile_devices = re.findall('Mobile', browser_os)
+        # go through them
+        for mobile_device in mobile_devices:
+            mobile_devices_counter += 1
+            
+# print that we're done with logs
+print '\rLogs gone through yet again.'               
+                
+# print requests
+print 'MOBILE DEVICES'
+print str(mobile_devices_counter) + ' of ' + str(browser_os_counter) + ' requests were made on mobile devices. That is ' + str(float(mobile_devices_counter) / float (browser_os_counter) * 100) + '%.'
