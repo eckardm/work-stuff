@@ -78,7 +78,7 @@ print 'There were ' + str(requests_count) + ' requests today.'
 second, add unique ead identifiers and corresponding title to eadidentifiers.csv'''
 
 # where is the output csv
-eadidentifiers_csv = 'C:/Users/Public/Documents/bhleadlog/eadidentifiers.csv'
+eadidentifiers_csv = 'eadidentifiers.csv'
 
 # create header row
 with open(eadidentifiers_csv, 'ab') as csv_file:
@@ -109,7 +109,7 @@ print 'eadidentifiers.csv created.'
 third, add unique queries to queries.txt'''
 
 # where is the output txt
-queries_txt = 'C:/Users/Public/Documents/bhleadlog/queries.txt'
+queries_txt = 'queries.txt'
 
 # print that we're starting on unique queries
 print 'QUERIES'
@@ -120,4 +120,117 @@ print 'Creating queries.txt.'
 for i in queries:
     with open(queries_txt, "a") as txt_file:
         txt_file.write(i + '\n')
-print 'queries.txt created.'
+print 'queries.txt created'
+
+'''
+fourth, figure out where people are coming from'''
+
+# empty counters
+deepblue_counter = 0
+finding_aids_counter = 0
+bentley_counter = 0
+mirlyn_counter = 0
+university_of_michigan_counter = 0
+google_counter = 0
+yahoo_counter = 0
+ask_counter = 0
+bing_counter = 0
+no_referral_counter = 0
+other_counter = 0
+
+# print that we're starting the logs
+print 'Going through logs again.'
+
+# open the logs
+with open(logfiles, 'rb') as csvfile:
+    # read the logs
+    logreader = csv.reader(csvfile, delimiter=',')
+    # go through each row
+    for row in logreader:
+        print '\rWorking on it... |',
+        print '\rWorking on it... /',
+        print '\rWorking on it... -',
+        print '\rWorking on it... \\',
+        print '\rWorking on it... |',
+        print '\rWorking on it... /',
+        print '\rWorking on it... -',
+        print '\rWorking on it... -',
+        print '\rWorking on it... \\',
+        # find the referrers
+        referrer = row[3]
+        # set up umich.edu finds
+        university_of_michigan_matches = re.findall('umich.edu', referrer)  
+        deepblue_matches = re.findall('deepblue.lib.umich.edu', referrer)
+        finding_aids_matches = re.findall('quod.lib.umich.edu', referrer)
+        bentley_matches = re.findall('bentley.umich.edu', referrer)
+        mirlyn_matches = re.findall('mirlyn.lib.umich.edu', referrer)
+        # go through them
+        for university_of_michigan_match in university_of_michigan_matches:
+            # deepblue
+            if deepblue_matches:
+                # update count
+                deepblue_counter += 1
+            # finding aids
+            elif finding_aids_matches:
+                # update count
+                finding_aids_counter += 1
+            # bentley
+            elif bentley_matches:
+                # update count
+                bentley_counter += 1
+            # eadids_and_titlepropers
+            elif mirlyn_matches:
+                # update count
+                mirlyn_counter += 1
+            else:
+                # update university of michigan counter
+                university_of_michigan_counter += 1
+        # google
+        google_matches = re.findall('google.com', referrer)
+        for google_match in google_matches:
+            google_counter += 1
+        # yahoo
+        yahoo_matches = re.findall('yahoo.com', referrer)
+        for yahoo_match in yahoo_matches:
+            yahoo_counter += 1
+        # ask
+        ask_matches = re.findall('ask.com', referrer)
+        for ask_match in ask_matches:
+            ask_counter += 1
+        # bing
+        bing_matches = re.findall('bing.com', referrer)
+        for bing_match in bing_matches:
+            bing_counter += 1
+        # no referral
+        no_referral_matches = re.findall('^-$', referrer)
+        for no_referral_match in no_referral_matches:
+            no_referral_counter += 1
+        # other
+        if university_of_michigan_matches and google_matches and yahoo_matches and ask_matches and bing_matches and no_referral_matches not in referrer:
+            other_counter += 1
+            
+# print that we're done with logs
+print '\rLogs gone through again.'               
+                
+# create function for percentage
+def percentage(count):
+    total_referrals_count = deepblue_counter + finding_aids_counter + bentley_counter + mirlyn_counter + university_of_michigan_counter + google_counter + yahoo_counter + ask_counter + bing_counter + no_referral_counter + other_counter
+    percent = float(count) / float(total_referrals_count) * 100
+    return percent
+                
+# print referrers
+print 'REFERRERS'
+print str(deepblue_counter) + ' referrals came from DeepBlue today. That is ' + str(percentage(deepblue_counter)) + '%.'
+print str(finding_aids_counter) + ' referrals came from the Finding Aids site today. That is ' + str(percentage(finding_aids_counter)) + '%.'
+print str(bentley_counter) + " referrals came from the Bentley's site today. That is " + str(percentage(bentley_counter)) + '%.'
+print str(mirlyn_counter) + ' referrals came from Mirlyn today. That is ' + str(percentage(mirlyn_counter)) + '%.'
+print str(university_of_michigan_counter) + ' referrals came from the main University of Michigan site today. That is ' + str(percentage(university_of_michigan_counter)) + '%.'
+print str(google_counter) + ' referrals came from Google today. That is ' + str(percentage(google_counter)) + '%.'
+print str(yahoo_counter) + ' referrals came from Yahoo today. That is ' + str(percentage(yahoo_counter)) + '%.'
+print str(ask_counter) + ' referrals came from Ask today. That is ' + str(percentage(ask_counter)) + '%.'
+print str(bing_counter) + ' referrals came from Bing today. That is ' + str(percentage(bing_counter)) + '%.'
+print str(no_referral_counter) + ' were not referred. That is ' + str(percentage(no_referral_counter)) + '%.'
+print 'Other: ' + str(other_counter) + '. That is ' + str(percentage(other_counter)) + '%.'
+
+'''
+fifth, figure out if folks are getting any 404s'''
