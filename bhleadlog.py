@@ -80,7 +80,7 @@ print 'There were ' + str(requests_count) + ' requests today.'
 second, add unique ead identifiers and corresponding title to eadidentifiers.csv'''
 
 # where is the output csv
-eadidentifiers_csv = 'eadidentifiers.csv'
+eadidentifiers_csv = 'C:/Users/Public/Documents/bhleadlog/eadidentifiers.csv'
 
 # create header row
 with open(eadidentifiers_csv, 'ab') as csv_file:
@@ -111,7 +111,7 @@ print 'eadidentifiers.csv created.'
 third, add unique queries to queries.txt'''
 
 # where is the output txt
-queries_txt = 'queries.txt'
+queries_txt = 'C:/Users/Public/Documents/bhleadlog/queries.txt'
 
 # print that we're starting on unique queries
 print 'QUERIES'
