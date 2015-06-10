@@ -16,3 +16,8 @@ Let me know if you have any questions--thanks!
 
 MIke'''
 
+# import what we need
+import xlrd
+
+# where are the excel files?
+deepblue_
