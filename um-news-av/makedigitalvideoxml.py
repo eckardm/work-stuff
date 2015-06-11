@@ -85,7 +85,7 @@ for line in digitalvideo:
         physical_facet = cells[3][-4:]
         physdesc = ET.SubElement(did, 'physdesc')
         physfacet = ET.SubElement(physdesc, 'physfacet')
-        physfacet.text = physical_facet
+        physfacet.text = '(' + physical_facet + ' file)'
         handle = cells[6].strip()
         dao = ET.SubElement(did, 'dao')
         dao.set('href', handle)
