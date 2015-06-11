@@ -106,6 +106,7 @@ for line in reel_to_reel:
             unitdate_text = unitdate_match.replace(' (5 inch reel)', '') # <-- where should this information go?
             if unitdate_text == "Fall 1975": # <-- is this the best way to do this?
                 unitdate.set('normal', '1975-09/1975-12')
+                unitdate.set('certainty', 'approximate')
             elif '-' in unitdate_text:
                 year_begin_matches = re.findall('\d{4}', unitdate_text)
                 for year_begin_match in year_begin_matches:
