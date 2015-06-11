@@ -53,21 +53,44 @@ months = {
     'November': '11',
     'Nov': '11',
     'December': '12',
-    'Dec': '12'
+    'Dec': '12',
+    'january': '01',
+    'jan': '01',
+    'february': '02',
+    'feb': '02',
+    'march': '03',
+    'mar': '03',
+    'april': '04',
+    'apr': '04',
+    'may': '05',
+    'june': '06',
+    'jun': '06',
+    'july': '07',
+    'jul': '07',
+    'august': '08',
+    'aug': '08',
+    'september': '09',
+    'sep': '09',
+    'october': '10',
+    'oct': '10',
+    'november': '11',
+    'nov': '11',
+    'december': '12',
+    'dec': '12'
 }
 
 # go through the txt file
 reel_to_reel = open(reel_to_reel_path, 'r')
 for line in reel_to_reel:
-    if line.startswith('Audio Reel-to-Reel News Briefs (1975 - 1994)') and '(Cont.)' not in line:
+    if line.startswith('Audio Reel-to-Reel News Briefs') and '(Cont.)' not in line:
         c02 = ET.SubElement(dsc, 'c02')
         c02.set('level', 'subseries')
         did = ET.SubElement(c02, 'did')
         unittitle = ET.SubElement(did, 'unittitle')
         unittitle.text = line
-    if line.startswith('Box') and '(Cont.)' not in line:
+    elif line.startswith('Box') and '(Cont.)' not in line:
         box_number = str(line[4])
-    if line.startswith('News Briefs'):
+    elif line.startswith('News Briefs'):
         c03 = ET.SubElement(c02, 'c03')
         c03.set('level', 'file')
         did = ET.SubElement(c03, 'did')
@@ -89,7 +112,7 @@ for line in reel_to_reel:
                     year_begin = year_begin_match
                 month_begin_matches = re.findall('[A-Za-z]+', unitdate_text)
                 for month_begin_match in month_begin_matches:
-                    month_begin = month_begin_match
+                    month_begin = months[month_begin_match]
                 day_begin_matches = re.findall('\d\d?', unitdate_text)
                 for day_begin_match in day_begin_matches:
                     day_begin = day_begin_match
