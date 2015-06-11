@@ -60,8 +60,28 @@ for line in digitalvideo:
         unitdate = ET.SubElement(unittitle, 'unitdate')
         unitdate.set('type', 'inclusive')
         unit_date = cells[1].strip()
-        unitdate.set('normal', unit_date)
-        unitdate.text = unit_date
+        if len(unit_date) == 4:
+            unitdate.set('normal', unit_date)
+            unitdate.text = unit_date
+        else:
+            year_matches = re.findall('\d{4}', unit_date)
+            for year_match in year_matches:
+                year = year_match
+            month_matches = re.findall('^\d\d?', unit_date)
+            for month_match in month_matches:
+                if len(month_match) == 1:
+                    month = '0' + str(month_match)
+                else:
+                    month = str(month_match)
+            day_matches = re.findall('(?<=\/)(.*?)(?=\/)', unit_date)
+            for day_match in day_matches:
+                if len(day_match) == 1:
+                    day = '0' + str(day_match)
+                else:
+                    day = str(day_match)
+            normal = str(year) + '-' + month + '-' + str(day)
+            unitdate.set('normal', normal)
+            unitdate.text = unit_date
         physical_facet = cells[3][-4:]
         physdesc = ET.SubElement(did, 'physdesc')
         physfacet = ET.SubElement(physdesc, 'physfacet')
