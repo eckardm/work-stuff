@@ -152,8 +152,7 @@ for line in reel_to_reel:
             p.text = p_match
             
     
-# dump the xml
+# print the xml
 xml = ET.tostring(dsc)  
-
 with open(reel_to_reel_xml, 'a') as xml_file:
    xml_file.write(xml)
