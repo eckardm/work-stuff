@@ -44,10 +44,17 @@ for line in podcasts:
         c02.set('level', 'subseries')
         did = ET.SubElement(c02, 'did')
         unittitle = ET.SubElement(did, 'unittitle')
+        unitdate = ET.SubElement(unittitle, 'unitdate')
         contents_of_parenthesis_matches = re.findall('(?<=\()(.*?)(?=\))', line)
         for contents_of_parenthesis_match in contents_of_parenthesis_matches:
             contents = contents_of_parenthesis_match
-        unittitle.text = contents
+        unitdate.text = contents
+        unitdate.set('type', 'inclusive')
+        if unitdate.text == 'Undated':
+            continue
+        else:
+            normal = unitdate.text
+        unitdate.set('normal', normal)
     elif ';' in line:
         c03 = ET.SubElement(c02, 'c03')
         c03.set('level', 'file')
@@ -62,6 +69,7 @@ for line in podcasts:
         unitdate = ET.SubElement(unittitle, 'unitdate')
         unitdate.set('type', 'inclusive')
         unit_date = cells[1].strip()
+        unitdate.text = unit_date
         year_matches = re.findall('\d{4}', unit_date)
         for year_match in year_matches:
             year = year_match
@@ -77,9 +85,11 @@ for line in podcasts:
                 day = '0' + str(day_match)
             else:
                 day = str(day_match)
-        normal = str(year) + '-' + month + '-' + str(day)
+        if unitdate.text == 'Undated':
+            continue
+        else:
+            normal = str(year) + '-' + month + '-' + str(day)
         unitdate.set('normal', normal)
-        unitdate.text = unit_date
         physical_facet = cells[3][-4:]
         physdesc = ET.SubElement(did, 'physdesc')
         physfacet = ET.SubElement(physdesc, 'physfacet')

@@ -6,7 +6,9 @@
         </did>
         <c02 level="subseries">
             <did>
-                <unittitle>2006</unittitle>
+                <unittitle>
+                    <unitdate type="inclusive" normal="2006">2006</unitdate>
+                </unittitle>
             </did>
             <c03 level="file">
                 <did>
@@ -713,7 +715,9 @@
         </c02>
         <c02 level="subseries">
             <did>
-                <unittitle>2007</unittitle>
+                <unittitle>
+                    <unitdate type="inclusive" normal="2007">2007</unitdate>
+                </unittitle>
             </did>
             <c03 level="file">
                 <did>
@@ -1492,7 +1496,9 @@
         </c02>
         <c02 level="subseries">
             <did>
-                <unittitle>2008</unittitle>
+                <unittitle>
+                    <unitdate type="inclusive" normal="2008">2008</unitdate>
+                </unittitle>
             </did>
             <c03 level="file">
                 <did>
@@ -2379,7 +2385,9 @@
         </c02>
         <c02 level="subseries">
             <did>
-                <unittitle>2009</unittitle>
+                <unittitle>
+                    <unitdate type="inclusive" normal="2009">2009</unitdate>
+                </unittitle>
             </did>
             <c03 level="file">
                 <did>
@@ -3032,7 +3040,9 @@
         </c02>
         <c02 level="subseries">
             <did>
-                <unittitle>2010</unittitle>
+                <unittitle>
+                    <unitdate type="inclusive" normal="2010">2010</unitdate>
+                </unittitle>
             </did>
             <c03 level="file">
                 <did>
@@ -3541,7 +3551,9 @@
         </c02>
         <c02 level="subseries">
             <did>
-                <unittitle>2011</unittitle>
+                <unittitle>
+                    <unitdate type="inclusive" normal="2011">2011</unitdate>
+                </unittitle>
             </did>
             <c03 level="file">
                 <did>
@@ -3564,43 +3576,23 @@
         </c02>
         <c02 level="subseries">
             <did>
-                <unittitle>Undated</unittitle>
+                <unittitle>
+                    <unitdate type="inclusive">Undated</unitdate>
+                </unittitle>
             </did>
             <c03 level="file">
                 <did>
                     <physloc label="Box">Online</physloc>
-                    <unittitle>Predicting divorce<unitdate type="inclusive" normal="2011-01-18">Undated</unitdate>
+                    <unittitle>Predicting divorce<unitdate type="inclusive">Undated</unitdate>
                     </unittitle>
-                    <physdesc>
-                        <physfacet>(.mp3 file)</physfacet>
-                    </physdesc>
-                    <dao href="2027.42/84166" show="new" actuate="onrequest">
-                        <daodesc>
-                            <p>[view item]</p>
-                        </daodesc>
-                    </dao>
                 </did>
-                <odd>
-                    <p>New U-M study shows how fight styles affect marriage</p>
-                </odd>
             </c03>
             <c03 level="file">
                 <did>
                     <physloc label="Box">Online</physloc>
-                    <unittitle>Climate-change strategies in business<unitdate type="inclusive" normal="2011-01-18">Undated</unitdate>
+                    <unittitle>Climate-change strategies in business<unitdate type="inclusive">Undated</unitdate>
                     </unittitle>
-                    <physdesc>
-                        <physfacet>(.mp3 file)</physfacet>
-                    </physdesc>
-                    <dao href="2027.42/85009" show="new" actuate="onrequest">
-                        <daodesc>
-                            <p>[view item]</p>
-                        </daodesc>
-                    </dao>
                 </did>
-                <odd>
-                    <p>A growing number of companies are learning that implementing sustainable business practices isn't just good for the environment - it can also be good for the bottom line.</p>
-                </odd>
             </c03>
         </c02>
     </c01>

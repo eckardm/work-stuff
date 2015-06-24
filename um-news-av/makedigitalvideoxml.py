@@ -45,7 +45,17 @@ for line in digitalvideo:
         c02.set('level', 'subseries')
         did = ET.SubElement(c02, 'did')
         unittitle = ET.SubElement(did, 'unittitle')
-        unittitle.text = line
+        unitdate = ET.SubElement(unittitle, 'unitdate')
+        contents_of_parenthesis_matches = re.findall('(?<=\()(.*?)(?=\))', line)
+        for contents_of_parenthesis_match in contents_of_parenthesis_matches:
+            contents = contents_of_parenthesis_match
+        unitdate.text = contents
+        unitdate.set('type', 'inclusive')
+        if unitdate.text == 'Undated':
+            continue
+        else:
+            normal = unitdate.text.replace(' - ', '/')
+        unitdate.set('normal', normal)
     elif ';' in line:
         c03 = ET.SubElement(c02, 'c03')
         c03.set('level', 'file')
@@ -60,6 +70,7 @@ for line in digitalvideo:
         unitdate = ET.SubElement(unittitle, 'unitdate')
         unitdate.set('type', 'inclusive')
         unit_date = cells[1].strip()
+        unitdate.text = unit_date
         if len(unit_date) == 4:
             unitdate.set('normal', unit_date)
             unitdate.text = unit_date
@@ -79,9 +90,11 @@ for line in digitalvideo:
                     day = '0' + str(day_match)
                 else:
                     day = str(day_match)
+        if unitdate.text == 'Undated':
+            continue
+        else:
             normal = str(year) + '-' + month + '-' + str(day)
-            unitdate.set('normal', normal)
-            unitdate.text = unit_date
+        unitdate.set('normal', normal)
         physical_facet = cells[3][-4:]
         physdesc = ET.SubElement(did, 'physdesc')
         physfacet = ET.SubElement(physdesc, 'physfacet')
