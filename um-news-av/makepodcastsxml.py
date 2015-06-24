@@ -44,7 +44,10 @@ for line in podcasts:
         c02.set('level', 'subseries')
         did = ET.SubElement(c02, 'did')
         unittitle = ET.SubElement(did, 'unittitle')
-        unittitle.text = line
+        contents_of_parenthesis_matches = re.findall('(?<=\()(.*?)(?=\))', line)
+        for contents_of_parenthesis_match in contents_of_parenthesis_matches:
+            contents = contents_of_parenthesis_match
+        unittitle.text = contents
     elif ';' in line:
         c03 = ET.SubElement(c02, 'c03')
         c03.set('level', 'file')
