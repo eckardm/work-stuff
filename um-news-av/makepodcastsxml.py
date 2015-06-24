@@ -40,7 +40,7 @@ for line in podcasts:
         unittitle = ET.SubElement(did, 'unittitle')
         unittitle.text = line
     elif line.startswith('Podcasts') and '(Cont.)' not in line:
-        c02 = ET.SubElement(c01, 'co2')
+        c02 = ET.SubElement(c01, 'c02')
         c02.set('level', 'subseries')
         did = ET.SubElement(c02, 'did')
         unittitle = ET.SubElement(did, 'unittitle')
