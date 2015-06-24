@@ -3,13 +3,13 @@
         <did>
             <unittitle>Digital Video</unittitle>
         </did>
-        <co2 level="subseries">
+        <c02 level="subseries">
             <did>
                 <unittitle>Audio Podcasts (2006 - 2010)
                 </unittitle>
             </did>
-        </co2>
-        <co2 level="subseries">
+        </c02>
+        <c02 level="subseries">
             <did>
                 <unittitle>Podcasts (2006)
                 </unittitle>
@@ -716,8 +716,8 @@
                     <p>Composers' work inspiration for dance performance that was be part of 2006-07 national tour</p>
                 </odd>
             </c03>
-        </co2>
-        <co2 level="subseries">
+        </c02>
+        <c02 level="subseries">
             <did>
                 <unittitle>Podcasts (2007)
                 </unittitle>
@@ -1496,8 +1496,8 @@
                     <p>Gershoff says that we overestimate how much</p>
                 </odd>
             </c03>
-        </co2>
-        <co2 level="subseries">
+        </c02>
+        <c02 level="subseries">
             <did>
                 <unittitle>Podcasts (2008)
                 </unittitle>
@@ -2384,8 +2384,8 @@
                     <p>Professor Daniel Kruger looks to evolution to explain why we overspend</p>
                 </odd>
             </c03>
-        </co2>
-        <co2 level="subseries">
+        </c02>
+        <c02 level="subseries">
             <did>
                 <unittitle>Podcasts (2009)
                 </unittitle>
@@ -3038,8 +3038,8 @@
                     <p>Professor Louis Burgio talks about how the holiday season brings the holiday blues, especially among the elderly.</p>
                 </odd>
             </c03>
-        </co2>
-        <co2 level="subseries">
+        </c02>
+        <c02 level="subseries">
             <did>
                 <unittitle>Podcasts (2010)
                 </unittitle>
@@ -3548,8 +3548,8 @@
                     <p>Professor William Lovejoy explains that relationships of modern manufacturers with large, complex supply chains are constantly evolving.</p>
                 </odd>
             </c03>
-        </co2>
-        <co2 level="subseries">
+        </c02>
+        <c02 level="subseries">
             <did>
                 <unittitle>Podcasts (2011)
                 </unittitle>
@@ -3572,8 +3572,8 @@
                     <p>Sunil Kapila explains that the use of 3-D x-ray in orthodontics and pediatric dentistry should be limited</p>
                 </odd>
             </c03>
-        </co2>
-        <co2 level="subseries">
+        </c02>
+        <c02 level="subseries">
             <did>
                 <unittitle>Podcasts (Undated)
                 </unittitle>
@@ -3614,6 +3614,6 @@
                     <p>A growing number of companies are learning that implementing sustainable business practices isn't just good for the environment - it can also be good for the bottom line.</p>
                 </odd>
             </c03>
-        </co2>
+        </c02>
     </c01>
 </dsc>
