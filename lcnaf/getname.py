@@ -28,15 +28,15 @@ for filename in os.listdir(ead_path):
         ead_tree = ET.parse(join(ead_path, filename))
         for sub in ead_tree.xpath(controlaccess_xpath):
             try: 
-                if sub.tag == 'persname':
-                    with open(persname_output, 'wb') as text_file:
-                        text_file.write(sub.text.encode("utf-8") + '\n')
-                elif sub.tag == 'corpname':
-                    with open(corpname_output, 'wb') as text_file:
-                        text_file.write(sub.text.encode("utf-8") + '\n')
+                if sub.tag == 'persname' and sub.tag is not None:
+                    with open(persname_output, 'a') as text_file:
+                        text_file.write(sub.text.encode("utf-8"))
+                elif sub.tag == 'corpname' and sub.tag is not None:
+                    with open(corpname_output, 'a') as text_file:
+                        text_file.write(sub.text.encode("utf-8"))
             except:
                 error_counter += 1
-                with open(error_output, 'wb') as text_file:
-                    text_file.write(filename + ', ' + sub.tag + '\n')
+                with open(error_output, 'a') as text_file:
+                    text_file.write(filename + ', ' + sub.tag)
                     
 print 'There were ' + str(error_counter) + ' errors!'
