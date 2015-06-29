@@ -28,6 +28,15 @@ error_counter = 0
 for filename in os.listdir(ead_path):
     # only look at xml
     if xml.search(filename):
+        print '\rWorking on it... |',
+        print '\rWorking on it... /',
+        print '\rWorking on it... -',
+        print '\rWorking on it... \\',
+        print '\rWorking on it... |',
+        print '\rWorking on it... /',
+        print '\rWorking on it... -',
+        print '\rWorking on it... -',
+        print '\rWorking on it... \\',
         ead_tree = ET.parse(join(ead_path, filename))
         for sub in ead_tree.xpath(controlaccess_xpath):
             if sub.tag == 'persname' and sub.text is not None:
@@ -45,4 +54,4 @@ for filename in os.listdir(ead_path):
                 with open(corpname_output, 'a') as text_file:
                     text_file.write(output.encode("utf-8") + '\n')
                     
-print 'There were ' + str(error_counter) + ' errors!'
+print '\rThere were ' + str(error_counter) + ' errors!'
