@@ -12,7 +12,7 @@ persname_output = 'persname.txt'
 corpname_output = 'corpname.txt'
 error_output = 'error.csv'
 
-# how to tell xml
+# regex
 xml = re.compile('\.xml$')
 
 # controlaccess xpath
@@ -28,15 +28,27 @@ for filename in os.listdir(ead_path):
         ead_tree = ET.parse(join(ead_path, filename))
         for sub in ead_tree.xpath(controlaccess_xpath):
             try: 
-                if sub.tag == 'persname' and sub.tag is not None:
-                    with open(persname_output, 'a') as text_file:
-                        text_file.write(sub.text.encode("utf-8"))
-                elif sub.tag == 'corpname' and sub.tag is not None:
-                    with open(corpname_output, 'a') as text_file:
-                        text_file.write(sub.text.encode("utf-8"))
+                if sub.tag == 'persname' and sub.text is not None:
+                    if '--' in sub.text:
+                        compound_subject_matches = re.findall('(.*?)(?=--)')
+                        for compound_subject_match in compound_subject_matches:
+                            output = compound_subject_match.encode("utf-8")
+                    else:
+                        output = sub.text.encode("utf-8")
+                        with open(persname_output, 'a') as text_file:
+                            text_file.write(output + '\n')
+                if sub.tag == 'corpname' and sub.text is not None:
+                    if '--' in sub.text:
+                        compound_subject_matches = re.findall('(.*?)(?=--)')
+                        for compound_subject_match in compound_subject_matches:
+                            output = compound_subject_match.encode("utf-8")
+                    else:
+                        output = sub.text.encode("utf-8")
+                        with open(corpname_output, 'a') as text_file:
+                            text_file.write(output + '\n')
             except:
                 error_counter += 1
                 with open(error_output, 'a') as text_file:
-                    text_file.write(filename + ', ' + sub.tag)
+                    text_file.write(filename + ', ' + sub.tag + '\n')
                     
 print 'There were ' + str(error_counter) + ' errors!'
