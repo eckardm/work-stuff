@@ -30,22 +30,22 @@ for filename in os.listdir(ead_path):
             try: 
                 if sub.tag == 'persname' and sub.text is not None:
                     if '--' in sub.text:
-                        compound_subject_matches = re.findall('(.*?)(?=--)')
+                        compound_subject_matches = re.findall('(^.*?)(?=--)')
                         for compound_subject_match in compound_subject_matches:
                             output = compound_subject_match.encode("utf-8")
                     else:
                         output = sub.text.encode("utf-8")
-                        with open(persname_output, 'a') as text_file:
-                            text_file.write(output + '\n')
+                    with open(persname_output, 'a') as text_file:
+                        text_file.write(output + '\n')
                 if sub.tag == 'corpname' and sub.text is not None:
                     if '--' in sub.text:
-                        compound_subject_matches = re.findall('(.*?)(?=--)')
+                        compound_subject_matches = re.findall('(^.*?)(?=--)')
                         for compound_subject_match in compound_subject_matches:
                             output = compound_subject_match.encode("utf-8")
                     else:
                         output = sub.text.encode("utf-8")
-                        with open(corpname_output, 'a') as text_file:
-                            text_file.write(output + '\n')
+                    with open(corpname_output, 'a') as text_file:
+                        text_file.write(output + '\n')
             except:
                 error_counter += 1
                 with open(error_output, 'a') as text_file:
