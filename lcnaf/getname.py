@@ -8,7 +8,7 @@ from os.path import join
 import re
 
 # where are the eads?
-ead_path = 'S:/FindingAids/EAD/Master'
+ead_path = 'C:/Users/eckardm/GitHub/vandura/Real_Masters_all'
 
 # where are the output files?
 persname_output = 'persname.txt'
