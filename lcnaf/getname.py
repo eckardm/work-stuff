@@ -1,5 +1,5 @@
 '''
-step one of https://github.com/mcarruthers/LCNAF-Named-Entity-Reconciliation'''
+step one of https://github.com/mcarruthers/LCNAF-Named-Entity-Reconciliation, hopefully we'll get some lcnaf or viaf out of this'''
 
 import lxml
 from lxml import etree as ET
