@@ -1,6 +1,8 @@
 # import what we need
 import csv
 
+csv.field_size_limit(1000000000)
+
 # what's coming form openrefine?
 openrefine_persname = 'openrefine_persname.csv'
 openrefine_corpname = 'openrefine_corpname.csv'
@@ -18,28 +20,46 @@ with open(openrefine_persname, 'rb') as persnames:
     next(openrefine_persname_reader, None)
     # make dictionary
     for row in openrefine_persname_reader:
+        print '\rWorking on it... |',
+        print '\rWorking on it... /',
+        print '\rWorking on it... -',
+        print '\rWorking on it... \\',
+        print '\rWorking on it... |',
+        print '\rWorking on it... /',
+        print '\rWorking on it... -',
+        print '\rWorking on it... -',
+        print '\rWorking on it... \\',
         original = row[0]
         link = row[2]
-        if link is not None:
+        if link is not None and link.startswith('http://id.loc.gov/authorities/names/'):
             persnames_dictionary[original] = link
             
-print 'Persname dictionary created.'
+print '\rPersname dictionary created.'
 
 print 'Creating corpname dictionary.'
-            
+
 # corpnames
-with open(openrefine_persname, 'rb') as corpnames:
+with open(openrefine_corpname, 'rb') as corpnames:
     openrefine_corpname_reader = csv.reader(corpnames)
     # skip the first row
     next(openrefine_corpname_reader, None)
     # make dictionary
     for row in openrefine_corpname_reader:
+        print '\rWorking on it... |',
+        print '\rWorking on it... /',
+        print '\rWorking on it... -',
+        print '\rWorking on it... \\',
+        print '\rWorking on it... |',
+        print '\rWorking on it... /',
+        print '\rWorking on it... -',
+        print '\rWorking on it... -',
+        print '\rWorking on it... \\',
         original = row[0]
         link = row[2]
-        if link is not None:
+        if link is not None and link.startswith('http://id.loc.gov/authorities/names/'):
             corpnames_dictionary[original] = link
 
-print 'Persname dictionary created.'
+print '\rPersname dictionary created.'
 
 print 'Writing to constants.'
             

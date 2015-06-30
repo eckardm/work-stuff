@@ -1,31 +1,24 @@
-Ann Arbor (Mich. : Township)
 Washtenaw County (Mich.)
-Ann Arbor (Mich.)
-Michigan
 Hill Street (Ann Arbor, Mich.)
 Huron River (Oakland County-Monroe County, Mich.)
 Liberty Street (Ann Arbor, Mich.)
 Main Street (Ann Arbor, Mich.)
 State Street (Ann Arbor, Mich.)
-Nichols Arboretum (University of Michigan)
+Ann Arbor (Mich.)
 Ann Arbor Hills (Ann Arbor, Mich.)
 Ashland (Mich.)
 Gowen (Mich.)
 Manistee (Mich.)
-United States
-Denmark
 Ann Street (Ann Arbor, Mich.)
 Huron Street (Ann Arbor, Mich.)
 Lower Town (Ann Arbor, Mich.)
+Ann Arbor (Mich. : Township)
 Pittsfield (Mich. : Township)
 Scio (Mich. : Township)
 Superior (Washtenaw County, Mich. : Township)
 Webster (Mich. : Township)
-Dixboro (Mich.)
 Berkshire Road (Ann Arbor, Mich.)
 Washington Street (Ann Arbor, Mich.)
-Soviet Union
-Oakland County (Mich.)
 Waterford (Mich. : Township)
 Royal Oak (Mich. : Township)
 Bloomfield Hills (Mich.)
@@ -50,10 +43,10 @@ Kansas.
 Germany.
 Galesburg (Mich.)
 Kalamazoo County (Mich.)
+Nichols Arboretum (University of Michigan)
 Jackson (Mich.)
 Mississippi.
 New York (N.Y.)
-China
 Turkey.
 Waterman Gymnasium (University of Michigan)
 Detroit (Mich.)
@@ -64,7 +57,6 @@ South Haven (Mich.)
 Upper Peninsula (Mich.)
 Mount Morris (Mich.)
 East Ann Arbor (Ann Arbor, Mich.)
-Philippines
 Manistee County (Mich.)
 Japan.
 Mackinac Island (Mich.)
@@ -73,19 +65,10 @@ Asia.
 Dearborn (Mich.)
 Ferry Field (University of Michigan)
 Chile.
-Kentucky
-Tennessee
-Maryland
-Ohio
-Georgia
-South Carolina
-North Carolina
-Birmingham (Mich.)
 North Campus (University of Michigan)
 India.
 Israel.
 Camp MacArthur (Tex.)
-Europe
 Grosse Pointe (Mich.)
 Woodward Avenue (Detroit, Mich.)
 Adrian (Mich.)
@@ -95,7 +78,6 @@ Kalamazoo (Mich.)
 Mendon (Mich.)
 Moon.
 Europe.
-Hungary
 Budapest (Hungary)
 Constantine (Mich.)
 Ironwood (Mich.)
@@ -112,9 +94,7 @@ Sleeping Bear Dunes (Mich.)
 Black Pond (Ann Arbor, Mich.)
 Leslie Homestead (Ann Arbor, Mich.)
 Sleeping Bear Dunes National Lakeshore (Mich.)
-Barry County (Mich.)
 South America.
-Ferndale (Mich.)
 Dexter (Mich.)
 Central America.
 Ifalik Atoll (Micronesia)
@@ -145,6 +125,7 @@ Benton Harbor (Mich.)
 Bessemer (Mich.)
 Beulah (Mich.)
 Big Rapids (Mich.)
+Birmingham (Mich.)
 Blaney Park (Mich.)
 Brighton (Mich.)
 Burns (Mich.)
@@ -295,7 +276,6 @@ Owosso (Mich.)
 Oxbow (Mich.)
 Oxford (Mich.)
 Palms Book State Park (Mich.)
-Parades and processions
 Parma (Mich.)
 Parshallville (Mich.)
 Paw Paw (Mich.)
@@ -362,7 +342,6 @@ White Rock (Mich.)
 Woodbury (Mich.)
 Belgium.
 Hawaii.
-Japan
 Loomis (Calif.)
 Walnut Grove (Calif.)
 Arctic regions.
@@ -392,7 +371,6 @@ San Francisco Bay Area (Calif.)
 Soviet Union.
 Sweden.
 Mackinac Bridge (Mich.)
-California
 Camillus (N.Y.)
 Livingston County (Mich.)
 Scotland.
@@ -406,30 +384,11 @@ Bunker Hill (Mich.)
 Bunker Hill (Mich. : Township)
 Henrietta (Mich. : Township)
 Patmos (Greece)
-Florida
-Wyoming
 Portage Lake (Jackson County, Mich.)
-Australia
-Hawaii
-Massachusetts
 Latin America.
 Canada.
 Oregon.
 Vancouver Island (B.C.)
-Clare County (Mich.)
-Lake County (Mich.)
-Louisiana
-Mecosta County (Mich.)
-Missaukee County (Mich.)
-Mississippi
-Montmorency County (Mich.)
-Muskegon County (Mich.)
-Oregon
-Osceola County (Mich.)
-Oscoda County (Mich.)
-Otsego County (Mich.)
-Roscommon County (Mich.)
-Wexford County (Mich.)
 Great Britain.
 Hillwood (Ann Arbor, Mich.)
 Beaver Island (Mich.)
@@ -440,17 +399,13 @@ Boyne Falls (Mich.)
 Big Sky (Mont.)
 Gatlinburg (Tenn.)
 Harbor Springs (Mich.)
-Czech Republic
 Menominee County (Mich.)
 Maynard Street (Ann Arbor, Mich.)
-Crawford County (Mich.)
 Cedar Springs (Mich.)
 McBain (Mich.)
 Tustin (Mich.)
 China.
-Pasadena (Calif.)
 Ireland.
-Bavaria (Germany)
 Grandville (Mich.)
 Kent County (Mich.)
 Polkton (Mich. : Township)
@@ -460,47 +415,25 @@ Washington Heights (Battle Creek, Mich.)
 Gettysburg National Military Park (Pa.)
 Stadium Boulevard (Ann Arbor, Mich.)
 Korea.
-Mexico
-Vicksburg (Miss.)
 Winnetka (Ill.)
 Englishville (Mich.)
-Toledo (Ohio)
 Branch County (Mich.)
 Union City (Mich.)
 Elmira (Mich.)
 Cass County (Mich.)
 New Hampshire.
 Volinia (Mich. : Township)
-Dwellings
-Wyoming (Mich.)
-Italy
 Connecticut.
 Huron County (Mich.)
 New York (State)
 Sanilac County (Mich.)
-Iowa
 Belle Isle (Detroit, Mich.)
 Waterworks Park (Detroit, Mich.)
 South University Avenue (Ann Arbor, Mich.)
-Alcona County (Mich.)
-Alpena County (Mich.)
-Arenac County (Mich.)
 Bay County (Mich.)
-Gladwin County (Mich.)
-Iosco County (Mich.)
-Isabella County (Mich.)
-Midland County (Mich.)
-Ogemaw County (Mich.)
-Saginaw County (Mich.)
-Tuscola County (Mich.)
-Arenac (Mich.)
-Au Sable River (Mich.)
-Carrollton (Mich.)
-North Saint Charles (Mich.)
-Salina (Mich.)
+Clare County (Mich.)
 Onega Bay Region (Russia)
 Iran.
-Wisconsin
 Superior, Lake.
 Nicaragua.
 Allegan County (Mich.)
@@ -510,13 +443,11 @@ Deadwood (S.D.)
 Kentucky.
 Little Prairie Ronde (Mich.)
 South Dakota.
-South Dakota
+Muskegon County (Mich.)
 Whitehall (Mich.)
 Chicago (Ill.)
 Indianapolis (Ind.)
 Washington (D.C.)
-Geddes (Mich.)
-Gogebic County (Mich.)
 Saint Clair County (Mich.)
 Yale (Mich.)
 Cleveland (Ohio)
@@ -527,7 +458,6 @@ Beaver Lake (Alger County, Mich.)
 Golden Lake (Mich.)
 Grand Island (Alger County, Mich.)
 Grand Traverse Bay (Mich.)
-Great Lakes Region
 Michigan, Lake.
 Bean Creek (Mich.)
 Blissfield (Mich.)
@@ -545,17 +475,6 @@ Old Mill Creek State Park (Mich.)
 Pictured Rocks National Lakeshore (Mich.)
 Pigeon River Country State Forest (Mich.)
 Porcupine Mountains Region (Mich.)
-Eastpointe (Mich.)
-Grosse Pointe Woods (Mich.)
-Hazel Park (Mich.)
-Inkster (Mich.)
-Muskegon Heights (Mich.)
-Parchment (Mich.)
-Reed City (Mich.)
-Roosevelt Park (Mich.)
-Saint Clair Shores (Mich.)
-Scottville (Mich.)
-Walled Lake (Mich.)
 Duck Lake (Mich.)
 Lincoln (Mason County, Mich.)
 Mason County (Mich.)
@@ -565,27 +484,33 @@ Pentwater (Mich.)
 Silver Lake (Oceana County, Mich.)
 White Lake (Muskegon County, Mich.)
 Iwo Jima (Volcano Islands, Japan)
+Alcona County (Mich.)
 Antrim County (Mich.)
+Arenac County (Mich.)
 Benzie County (Mich.)
 Charlevoix County (Mich.)
 Dwellings.
+Gladwin County (Mich.)
 Grand Traverse County (Mich.)
 Houghton County (Mich.)
+Iosco County (Mich.)
+Isabella County (Mich.)
 Keweenaw County (Mich.)
+Lake County (Mich.)
+Montmorency County (Mich.)
 Newaygo County (Mich.)
+Ogemaw County (Mich.)
+Osceola County (Mich.)
+Oscoda County (Mich.)
+Roscommon County (Mich.)
 Van Buren County (Mich.)
-Dearborn Heights (Mich.)
-Livonia (Mich.)
+Barry County (Mich.)
 Berrien County (Mich.)
 Saint Joseph County (Mich.)
 Clinton (Mich.)
 Ohio.
 Shoreham (Mich.)
 Hill Auditorium (University of Michigan)
-Spain
-Peru
-Cemeteries
-Student unions
 Mackinac, Straits of (Mich.)
 Okayama-shi (Japan)
 Argentina.
@@ -621,6 +546,7 @@ Snoqualmie Pass (Wash.)
 West Vancouver (B.C.)
 Shady Trails Camp (Northport, Mich.)
 Evart (Mich.)
+Alpena County (Mich.)
 Salem (Washtenaw County, Mich. : Township)
 Van Buren (Mich. : Township)
 Tipton (Mich.)
@@ -629,21 +555,17 @@ Chicago Sanitary and Ship Canal (Ill.)
 Manistee River (Mich.)
 Kalamazoo River (Mich.)
 Keweenaw Peninsula (Mich.)
-Kingston (Mich.)
 Fairfield (Mich.)
 Fentonville (Mich.)
 Marathon (Mich.)
 Odessa (Mich.)
 Yellowstone National Park.
-Africa
 Niagara Falls (N.Y. and Ont.)
 Saint Lawrence River.
 Petersburg (Mich.)
 Tahiti.
 Pittsfield Charter Township (Mich.)
 Association Island (N.Y.)
-Asia, Southeastern
-South Asia
 Bermuda Islands.
 Dominican Republic.
 Georgetown (Guyana)
@@ -659,7 +581,6 @@ Maine.
 Nevada.
 Menominee (Mich.)
 Fort Wayne (Detroit, Mich.)
-Public schools
 Ottawa National Forest (Mich.)
 Sylvania Recreation Area (Mich.)
 Idaho.
@@ -667,27 +588,17 @@ Northfield (Mich. : Township)
 Sylvan (Washtenaw County, Mich. : Township)
 Ypsilanti (Mich. : Township)
 Yugoslavia.
-Yugoslavia
-Sermons
 Emmet County (Mich.)
 Langston (Mich.)
 Montcalm County (Mich.)
 Inskter (Mich.)
-Netherlands
 Isle Royale (Mich.)
 Garden Island (Charlevoix County, Mich.)
-Resder, Jerome & Duffield's Subdivision (Detroit, Mich.)
 Alaska.
 East Asia.
 Whitmore Lake (Mich.)
-Venus (Planet)
-Norway
 Essexville (Mich.)
 Flat River (Mich.)
-Emerson's Addition (Saginaw, Mich.)
-Forest Hill Cemetery (Ann Arbor, Mich)
-Huron, Lake, Region (Mich. and Ont.)
-Marquette County (Mich.)
 Bridgeton (Mich.)
 Colorado.
 Dakota Territory.
@@ -701,16 +612,14 @@ Kalkaska (Mich.)
 Pictured Rocks (Mich.)
 Lower Falls (Chippewa County, Mich.)
 Upper Falls (Luce County, Mich.)
-Middle East
-West (U.S.)
 Green Pastures Camp (Mich.)
+Saginaw County (Mich.)
 Dansville (Mich.)
 Ingham County (Mich.)
 Finance.
 Tahquamenon Falls State Park (Mich.)
 Indiana.
 Missouri.
-Missouri
 Saint Louis (Mo.)
 Asia, Southeastern.
 Cambodia.
@@ -719,10 +628,8 @@ Thailand.
 Vietnam.
 Peck (Mich.)
 Nankin Mills (Mich.)
-Pikes Peak (Colo.)
 Pikes Peak (Westland, Mich.)
 Elmwood Cemetery (Detroit, Mich.)
-Arkhangel'skaia oblast' (Russia)
 Chippewa Lake (Mich.)
 Custer (Mich.)
 Elk Rapids (Mich.)
@@ -731,12 +638,10 @@ Michigan City (Ind.)
 Montague (Mich.)
 Rapid River (Mich.)
 Vulcan (Mich.)
-Sweden
-Indiana
 Unionville (Mich.)
+Missaukee County (Mich.)
 France.
 Manchester (Mich. : Township)
-India
 Allen Park (Mich.)
 Au Sable (Mich.)
 Beechville (Mich.)
@@ -744,10 +649,12 @@ Belleville (Mich.)
 Bridgehampton (Mich.)
 Brooklyn (Mich.)
 Carsonville (Mich.)
+Ferndale (Mich.)
 Gagetown (Mich.)
 Gladstone (Mich.)
 Grass Lake (Mich.)
 Sans Souci (Mich.)
+Hazel Park (Mich.)
 Henrietta (Mich.)
 Highland Park (Mich.)
 Hillman (Mich.)
@@ -781,7 +688,7 @@ Great Lakes (North America)
 Harper Woods (Mich.)
 Keweenaw Bay Indian Community, Michigan.
 Keweenaw Bay (Mich. : Bay)
-Michigan. District Court (36th district)
+Livonia (Mich.)
 Middle West.
 Palestine.
 Pokagon Band of Potawatomi Indians, Michigan and Indiana.
@@ -791,6 +698,8 @@ Saginaw Chippewa Indian Tribe of Michigan.
 Sault Ste. Marie Tribe of Chippewa Indians of Michigan.
 Southfield (Mich.)
 Texas.
+Wyoming (Mich.)
+Au Sable River (Mich.)
 Muskegon River (Mich.)
 Thornapple River (Mich.)
 Grand River (Mich.)
@@ -799,19 +708,16 @@ Flambeau River (Wis.)
 Chippewa River (Wis.)
 Cedar Rapids (Iowa)
 Waterloo (Iowa)
-Fort Street (Detroit, Mich.)
-Jefferson Avenue (Detroit, Mich.)
 Gull Lake (Mich.)
 Luce County (Mich.)
-Canada
 Far East.
 Inter-American Highway.
 Willow Run (Mich.)
+Oakland County (Mich.)
 Grosse Pointe Farms (Mich.)
 Eaton County (Mich.)
 Wisconsin.
 Stony Run (Mich.)
-Jordan River Watershed (Antrim County and Charlevoix County, Mich.)
 United States. Congress. House.
 United States. Congress. House. Committee on Post Office and Civil Service.
 United States. Congress. House. Committee on Education and Labor.
@@ -833,7 +739,7 @@ Majuro Atoll (Marshall Islands)
 New Britain Island (Papua New Guinea)
 Wake Island.
 Wotje Atoll (Marshall Islands)
-Plants
+Geddes (Mich.)
 Houghton Lake (Mich.)
 Ranger (Tex.)
 Cyrus H. McCormick Experimental Forest (Mich.)
@@ -846,36 +752,34 @@ P.J. Hoffmaster State Park (Mich.)
 Detroit River (Mich. and Ont.)
 Pine Lake (West Bloomfield, Mich.)
 Millington (Mich. : Township)
+Tuscola County (Mich.)
 Fort Wagner (S.C.)
 Oklahoma.
 Tokyo.
 Cologne (Germany)
-Grant (Mich.)
 Jenison (Mich.)
+Crawford County (Mich.)
+Gogebic County (Mich.)
 Hillsdale County (Mich.)
 Lapeer County (Mich.)
 Manitou Beach (Mich.)
+Marquette County (Mich.)
+Midland County (Mich.)
+Otsego County (Mich.)
 Ransom (Mich. : Township)
 Schoolcraft County (Mich.)
 Shiawassee County (Mich.)
 Saline Valley Farms (Saline, Mich.)
 Oscoda (Mich.)
-Sumnerville (Mich.)
 Mooreville (Mich.)
 Manitoulin Island (Ont.)
-Ontario
 Au Train River (Mich.)
 Gogebic, Lake (Mich.)
 Huron, Lake (Mich. and Ont.)
 Looking Glass River (Mich.)
 Michigan, Northern.
-Presque Ile County (Mich.)
 Shiawassee River (Mich.)
 Cahokia Mounds State Historic Park (Ill.)
-American Bottom (Ill.)
-Illinois
-North America
-Mississippi River Valley
 Argo Dam (Ann Arbor, Mich.)
 Augusta (Mich.)
 Bangor (Mich.)
@@ -909,20 +813,16 @@ Whitefish Point (Mich.)
 Great Lakes.
 Cobblestone Farm (Ann Arbor, Mich.)
 Iraq.
-Universities and colleges
 Methodism.
 Mindanao Island (Philippines)
 Sulu Archipelago (Philippines)
 Decatur (Mich.)
-Hamilton (Van Buren County, Mich. : Township)
 Dijon (France)
-Tulgas (Russia)
-Indonesia
 Lincoln Highway.
 Nebraska.
 Allegan State Game Area (Mich.)
-Ovid (Mich.)
 Dickinson County (Mich.)
+Inkster (Mich.)
 Ionia (Mich. : Township)
 Iron River (Mich.)
 Newburgh (Livonia, Mich.)
@@ -931,7 +831,6 @@ Old Territorial Road (Mich.)
 Pennfield (Mich. : Township)
 Redford (Mich. : Township)
 Saginaw River Valley (Mich.)
-Northwest, Old
 Redford (Detroit, Mich.)
 Northwest, Old.
 Caroline Islands.
@@ -940,7 +839,6 @@ Yap (Micronesia)
 High Island (Mich.)
 Bellevue (Mich.)
 Breckenridge (Mich.)
-Finland
 Germfask (Mich.)
 Holly (Mich.)
 Lake Odessa (Mich.)
@@ -954,16 +852,16 @@ Boytown Camp (Washtenaw County, Mich.)
 Flushing (Mich.)
 Franklin Settlement Summer Camp (Lake Orion, Mich.)
 Baraga County (Mich.)
+Clinton County (Mich.)
 Gratiot County (Mich.)
+Ionia County (Mich.)
+Kalkaska County (Mich.)
 Leelanau County (Mich.)
+Mecosta County (Mich.)
 Ontonagon County (Mich.)
 Ottawa County (Mich.)
 Presque Isle County (Mich.)
-Minnesota
-Superior, Lake, Region
-Clinton County (Mich.)
-Ionia County (Mich.)
-Kalkaska County (Mich.)
+Wexford County (Mich.)
 Cliff Mine (Mich.)
 Porcupine Mountains (Mich.)
 Moosehead Lake (Me.)
@@ -976,19 +874,13 @@ Huron River Watershed (Oakland County-Monroe County, Mich.)
 Ganges (Mich.)
 Fennville (Mich.)
 Monroe Street (Ann Arbor, Mich.)
-New Hampshire
-Latin America
 Interlochen (Mich.)
 Washington (State)
-Scandinavia
 Sharon (Washtenaw County, Mich.)
 Sharon Mills (Mich.)
 Bridgewater (Mich.)
 Milan (Mich.)
-Israel
-Lebanon
 Haring (Mich.)
-Sierra Leone
 Burt Lake (Mich.)
 Grand Teton National Park (Wyo.)
 De Tour Village (Mich.)
@@ -1014,8 +906,6 @@ Cut River Bridge (Mich.)
 Willow Run Expressway (Mich.)
 American Civil Liberties Union.
 Hurley (Wis.)
-Afghanistan
-Iran
 Afghanistan.
 New Mexico.
 Alabaster (Mich.)
@@ -1025,19 +915,14 @@ Pequaming (Mich.)
 Port Hope (Mich.)
 Saint Clair River (Mich. and Ont.)
 Thumb District (Mich.)
-East Asia
 Maha Sarakham (Thailand : Province)
-Southeast Asia
 Nirvana (Mich.)
 Foxville (Mich.)
 Port Walter (Alaska)
 Pakistan.
 Houma (La.)
 Manila (Philippines)
-Nagasaki-Shi (Japan)
 Okinawa Island (Japan)
-Wakayama-Shi (Japan)
-Oaxaca (Mexico:State)
 Arkhangel'sk (Russia)
 Murmansk (Russia)
 Berkley (Mich.)
@@ -1054,11 +939,9 @@ Iowa City (Iowa)
 Minneapolis (Minn.)
 Newark (N.J.)
 Hamtramck Lumber & Supply Company.
-Superior (Washtenaw County, Mich.: Township)
 Grand Traverse Bay Region (Mich.)
 Mundy (Mich.)
 Biochemistry.
-Sulphur
 Cystine.
 Methionine.
 Protein.
@@ -1067,6 +950,7 @@ Farwell (Mich.)
 Bear Lake (Clare County, Mich.)
 Algonac (Mich.)
 Coloma (Mich.)
+Dixboro (Mich.)
 Drayton Plains (Mich.)
 East Grand Rapids (Mich.)
 Eastmanville (Mich.)
@@ -1084,9 +968,9 @@ Colonial Point Forest (Mich.)
 Little Traverse Bay Region (Mich.)
 North Point Preserve (Mich.)
 Thorne Swift Nature Preserve (Mich.)
-Lewiston (Mich.)
 Baroda (Mich.)
 Brown City (Mich.)
+Eastpointe (Mich.)
 Garden City (Mich.)
 Kaleva (Mich.)
 Kent City (Mich.)
@@ -1098,110 +982,44 @@ Mount Hope (Mich.)
 Oak Park (Mich.)
 Orchard Lake (Mich.)
 Roseville (Mich.)
+Saint Clair Shores (Mich.)
 Sidney (Mich.)
 Southgate (Mich.)
 Sterling Heights (Mich.)
 Stevensville (Mich.)
 Taylor (Mich.)
 Temperance (Mich.)
+Walled Lake (Mich.)
 Waterford (Mich.)
 Westland (Mich.)
-Alcona (Mich.)
-Amelith (Mich.)
-Armada (Mich.)
-Au Gres (Mich.)
-Birch Run (Mich.)
-Brady (Saginaw County, Mich. : Township)
-Bridgeport (Mich.)
-Caro (Mich.)
-Clawson (Mich.)
-Clio (Mich.)
-Davison (Mich.)
-Disco (Mich.)
-Fairgrove (Mich.)
-Frankenlust (Mich.)
-Frankentrost (Mich.)
-Freedom (Mich. : Township)
-Freeland (Mich.)
-Germania (Mich.)
-Glennie (Mich.)
-Grand Blanc (Mich.)
-Hadley (Mich.)
-Hale (Mich.)
-Hemlock (Mich.)
-Highland (Mich.)
-Ira (Mich.)
-Juhl (Mich.)
-Kawkawlin (Mich.)
-Linkville (Mich.)
-Macomb (Mich.)
-Marysville (Mich.)
-Mayville (Mich.)
-Millington (Mich.)
-Monitor (Mich. : Township)
-Mount Clements (Mich.)
-Munger (Mich.)
-New Baltimore (Mich.)
-New Haven (Mich.)
-North Branch (Mich.)
-Okemos (Mich.)
-Palmyra (Mich.)
-Pigeon (Mich.)
-Portage (Mich.)
-Rankin (Mich.)
-Reese (Mich.)
-Rhodes (Mich.)
-Richmond (Mich.)
-Richville (Mich.)
-Sanford (Mich.)
-Sebawaing (Mich.)
-Shelby (Macomb County, Mich. : Township)
-Squaconning Creek (Mich.)
-Sterling (Mich.)
-Swan Creek (Mich.)
-Swartz Creek (Mich.)
-Trverse City (Mich.)
-Trufant (Mich.)
-Waldenburg (Mich.)
-Wheeler (Mich.)
-Woodland (Mich.)
-Clinton (Macomb County, Mich. : Township)
+Dearborn Heights (Mich.)
 Novi (Mich.)
 West Bloomfield (Mich. : Township)
+Freedom (Mich. : Township)
 Boxford (Mass.)
 Old Saybrook (Conn.)
+Clio (Mich.)
 Waterloo Recreation Area (Mich.)
 Louisiana.
 South Carolina.
 West Indies.
-Uganda
 Augusta (Mich. : Township)
 Austria.
 Bulgaria.
 Spring Lake (Mich.)
-Chile
-Dominican Republic
-Honduras
 Honduras.
 White Lake (S.D.)
-Miami Beach (Fla.)
 McMillan (Mich.)
-Virginia
-Germany
 Fourmile Lake (Mich.)
 Mill Creek (Mich.)
 Sutton Lake (Mich.
 Plymouth (Mich. : Township)
 Brant County (Ont.)
 Korea (South)
-Poland
 Huron National Forest (Mich.)
 Bliss Park (Saginaw, Mich.)
 Boats.
-Detroit Metropolitan Area (Mich.)
 Darmstadt (Germany)
-Germany (West)
-Ireland
 Borculo (Mich.)
 Coopersville (Mich.)
 Drenthe (Mich.)
@@ -1214,9 +1032,7 @@ Noordeloos (Mich.)
 Vriesland (Mich.)
 Chase S. Osborn Preserve (Mich.)
 Congress Street (Ypsilanti, Mich.)
-Maple Ridge (Mich.)
 Michigan Avenue (Dearborn, Mich.)
-Mio (Mich.)
 Wolverine (Mich.)
 Corktown (Detroit, Mich.)
 Ambassador Bridge (Detroit, Mich. and Windsor, Ont.)
@@ -1228,22 +1044,21 @@ Northland Shopping Center (Southfield, Mich.)
 Selfridge Air National Guard Base (Mich.)
 Standale (Mich.)
 Wurtsmith Air Force Base (Mich.)
+Grant (Mich.)
 Boardman River Valley (Mich.)
 Mancelona (Mich.)
+North Branch (Mich.)
 Sebewaing (Mich.)
-Street railroads
 Sparta (Mich.)
 Camp Grayling (Mich.)
 Angola.
 Macatawa (Mich.)
 Portage Lake Ship Canal (Mich.)
 White Pine (Mich.)
-Fordson (Dearborn, Mich.)
 Tawas (Mich.)
 Cheboygan State Park (Mich.)
 Huron Mountains (Mich.)
 Ludington State Park (Mich.)
-Lodi Plains (Mich.)
 Ida (Mich. : Township)
 Milan (Mich. : Township)
 Port Lawrence (Mich. : Township)
@@ -1256,27 +1071,22 @@ Saint Mary's River (Mich. and Ont.)
 Cheever Court (Ann Arbor, Mich.)
 Jefferson Street (Ann Arbor, Mich.)
 Thompson Street (Ann Arbor, Mich.)
-Hampton Bays (N.Y.)
-University of Michigan
+Jordan River Watershed (Antrim County and Charlevoix County, Mich.)
 Ironton (Mich.)
 Clifton (Mich.)
-Palestine
 Philippines.
 Luther (Mich.)
 Deckerville (Mich.)
 Portage Lake (Livingston County and Washtenaw County, Mich.)
 Arnold Lake (Clare County, Mich.)
 Comins (Mich.)
-Gilbert Lake (Oakland County, Mich.)
+Glennie (Mich.)
 Metamora (Mich.)
 Pine River (Mich. : River)
 South Branch (Mich.)
 Les Cheneaux Islands (Mich.)
-Streets
 Kennedy Square (Detroit, Mich.)
-Archangel'sk (Russia)
 Student aid.
-South Africa
 Old West Side (Ann Arbor, Mich.)
 Middle Village (Mich.)
 North University Avenue (Ann Arbor, Mich.)
@@ -1300,7 +1110,6 @@ Calder Plaza (Grand Rapids, Mich.)
 Mexico, Valley of (Mexico)
 Oztoticpac (Texcoco de Mora, Mexico)
 Teotihuacán Valley (Mexico)
-Asia
 Montana.
 North Carolina.
 Milwaukee (Wis.)
@@ -1318,11 +1127,13 @@ Boyne City (Mich.)
 Brimley (Mich.)
 Brockway Mountain (Mich.)
 Burt Lake State Park (Mich.)
+Caro (Mich.)
 Cedar River (Mich.)
 Cedarville (Mich.)
 Christmas (Mich.)
 Curtis (Mich.)
 Franklin (Mich.)
+Freeland (Mich.)
 Fremont (Mich.)
 Glen Arbor (Mich.)
 Glen Haven (Mich.)
@@ -1341,6 +1152,7 @@ Lake Leelanau (Mich.)
 Little Girl's Point (Mich.)
 Marinette (Wis.)
 Mesick (Mich.)
+Mio (Mich.)
 Mitchell State Park (Mich.)
 Muskegon State Park (Mich.)
 Naubinway (Mich.)
@@ -1353,6 +1165,8 @@ Paradise (Mich.)
 Paulding (Mich.)
 Peshawbestown (Mich.)
 Petoskey State Park (Mich.)
+Reed City (Mich.)
+Scottville (Mich.)
 Seney National Wildlife Refuge (Mich.)
 Sister Lakes (Mich.)
 South Manitou Island (Mich.)
@@ -1369,20 +1183,18 @@ Walloon Lake (Mich.)
 Warren Dunes State Park (Mich.)
 Yankee Springs Recreation Area (Mich.)
 Caseville (Mich.)
-France
-Great Britain
 Québec (Québec)
 Suffolk County (N.Y.)
 Psychology.
 Hong Kong (China)
 Jean Klock Park (Benton Harbor, Mich.)
-Saar River Valley (France and Germany)
-Harbor Point (Mich.)
+Germany (West)
 Fort Mackinac (Mackinac Island, Mich.)
 Addison (Mich.)
 Ahmeek (Mich.)
 Akron (Mich.)
 Alba (Mich.)
+Alcona (Mich.)
 Alden (Mich.)
 Atlanta (Mich.)
 Au Train (Mich.)
@@ -1409,6 +1221,7 @@ Copemish (Mich.)
 Crooked River (Mich.)
 Crystal (Mich.)
 Davisburg (Mich.)
+Davison (Mich.)
 Henry Ford Museum and Greenfield Village.
 Devil's Lake (Mich.)
 Diamond Lake (Cass County, Mich.)
@@ -1426,6 +1239,7 @@ Garden Corners (Mich.)
 Garnet (Mich.)
 Glenn (Mich.)
 Goetzville (Mich.)
+Hale (Mich.)
 Hanover (Mich.)
 Harris (Mich.)
 Harsen's Island (Mich.)
@@ -1441,28 +1255,34 @@ Irons (Mich.)
 Kensington Metropolitan Park (Mich.)
 Kenton (Mich.)
 Kingsley (Mich.)
+Kingston (Mich.)
 Klinger Lake (Mich.)
 Lake Linden (Mich.)
 Lakeland (Mich.)
 Lawrence (Mich.)
 Lawton (Mich.)
 Lennon (Mich.)
+Lewiston (Mich.)
 Linwood (Mich.)
 Lovells (Mich.)
 Lupton (Mich.)
 Manistique Lake (Mich.)
 Marengo (Mich.)
+Marysville (Mich.)
 Mattawan (Mich.)
 Mayfield (Mich.)
+Mayville (Mich.)
 Medina (Mich.)
 Metropolitan Beach (Mich.)
 Michigan Center (Mich.)
 Michillinda (Mich.)
 Middleville (Mich.)
 Millersburg (Mich.)
+Millington (Mich.)
 Moran (Mich.)
 Mullett Lake (Mich.)
 Nashville (Mich.)
+New Baltimore (Mich.)
 New Richmond (Mich.)
 New Salem (Mich.)
 Newburg (Mich.)
@@ -1472,6 +1292,8 @@ Onsted (Mich.)
 Ontonagon River (Mich.)
 Otsego Lake (Mich.)
 Ottawa Beach (Mich.)
+Ovid (Mich.)
+Palmyra (Mich.)
 Pearl Beach (Mich.)
 Pellston (Mich.)
 Perrinton (Mich.)
@@ -1528,14 +1350,11 @@ Wolf Lake (Jackson County, Mich.)
 Post City (Tex.)
 Post City (Texas)
 Ontario, Lake (N.Y. and Ont.)
-Atlantic Ocean Region
 East University Avenue (Ann Arbor, Mich.)
 Yucca Mountain (Nev.)
 Bald Mountain Recreation Area (Mich.)
 Harsens Island (Mich. : Island)
 Island Lake State Recreation Area (Mich.)
-Nicaragua
-Panama
 Bryant Neighborhood (Ann Arbor, Mich.)
 Northside Neighborhood (Ann Arbor, Mich.)
 Cerro Tololo Inter-American Observatory.
@@ -1544,7 +1363,6 @@ South Africa.
 Fifth Street (Ann Arbor, Mich.)
 Sault Ste. Marie International Bridge (Sault Sainte Marie, Mich. and Sault Sainte Marie, Ont.)
 Highland (Oakland County, Mich. : Township)
-Highland (Oakland County Mich. : Township)
 Tibet (China)
 Baltistan (Pakistan)
 Sri Lanka.
@@ -1552,31 +1370,26 @@ Ladúakh (India)
 Jammu and Kashmir (India)
 Súanchi (India)
 Kulu Valley (India)
+West (U.S.)
 Ypsilanti Campaign for Equality.
 Raisin (Mich.)
 Morocco.
 Nepal.
 Bikini Atoll (Marshall Islands)
-German Americans
 Markey (Mich.)
-Eastlake (Mich.)
 Cedar Lake (Alcona County and Iosco County, Mich.)
 Honolulu (Hawaii)
 Great Lakes v Statistics.
-Great Lakes
 Great Lakes v Surveys.
 Morrice (Mich.)
 Agawa Canyon (Ont.)
 Tittabawassee River (Mich.)
-Silk Road
-Politics and Government
 Social conditions.
+Shelby (Macomb County, Mich. : Township)
 Almont (Mich.)
 Grattan (Mich.)
 Grattan (Mich. : Township)
-Business enterprises
 Samoan Islands.
-Russia
 Fort de Buade (Mich.)
 Moran (Mich. : Township)
 Castle Rock (Saint Ignace, Mich.)
@@ -1594,7 +1407,6 @@ Wright-Patterson Air Force Base (Ohio)
 Lynchburg (Va.)
 Rampart Canyon Dam Project (Alaska)
 Dryden Community Park (Dryden, Mich.)
-Vermont
 Hungary.
 Bennett (Mich.)
 Amazon River.
@@ -1603,7 +1415,6 @@ Second Street (Ann Arbor, Mich.)
 Sixth Street (Ann Arbor, Mich.)
 Washtenaw Country Club.
 Brightmoor (Detroit, Mich.)
-Rockwood (Mich.)
 Ethiopia.
 Alleyton (Mich.)
 Annpere (Mich.)
@@ -1619,6 +1430,7 @@ Clarion (Mich.)
 Dade City (Fla.)
 Dempsey (Mich.)
 Dighton (Mich.)
+Eastlake (Mich.)
 Elberta (Mich.)
 Filer City (Mich.)
 Grays River (Wash.)
@@ -1641,6 +1453,7 @@ Spencer (Mich.)
 Stratford (Mich.)
 Sturgeon Bay (Emmet County, Mich.)
 Svensen (Ore.)
+Toledo (Ohio)
 Urania (Mich.)
 Washington, Mount (N.H.)
 White River (Mich. : River)
@@ -1648,30 +1461,16 @@ Windsor (Ont.)
 Woodville (Newaygo County, Mich.)
 Kellogg Park (Plymouth, Mich.)
 Evanston (Ill.)
-Canton (Mich.)
 Alicia (Mich.)
-Amasa (Mich.)
 Chassell (Mich.)
 Coburntown (Mich.)
-Covington (Mich.)
-Elo (Mich.)
-Laird (Mich.)
-Metropolitan (Mich.)
-National Mine (Mich.)
-Nisula (Mich.)
 Oskar (Mich.)
-Palmer (Mich.)
-Pelkie (Mich.)
-Princeton (Mich.)
 Redridge (Mich.)
 Rockland (Mich.)
 Shafer (Mich.)
-Suomi (Mich.)
 Tamarack (Mich.)
 Toivola (Mich.)
-Egypt
 Island Park (Ann Arbor, Mich.)
-Turkey
 Indochina.
 Malaya.
 Camp Eldorado (Mich.)
@@ -1683,12 +1482,10 @@ Topeka (Kan.)
 Monroe Creek (Mich.)
 Bear River (Mich.)
 Switzerland.
-Russia (Federation)
 Fourteenth Avenue (Ann Arbor, Mich.)
 Pacific Ocean.
 Tinian (Northern Mariana Islands)
 Mount Pleasant (Jefferson County, Ohio)
-South America
 New England.
 Camp Cody (N.M.)
 Camp Bryn Afon (Rhinelander, Wis.)
@@ -1697,15 +1494,9 @@ Church Street (Ann Arbor, Mich.)
 Packard Street (Ann Arbor, Mich.)
 Remer (Minn.)
 Sheboygan (Wis.)
-Bartlesville (Okla.)
-Twining (Mich.)
 Hopkins (Mich.)
 South Boston (Mich.)
 Victor (Mich.)
-Ensign (Mich.)
-Iroquois (Mich.)
-Vienna (Mich.)
-Bookstores
 Division Street (Ann Arbor, Mich.)
 Erie Canal (N.Y.)
 University High School (Ann Arbor, Mich.)
@@ -1713,19 +1504,10 @@ Erie, Lake.
 Florida Ship Canal (Projected)
 Belize.
 Tonkin.
-Belize
-Bylot Island (Nunavut)
-Chichén Itzá Site (Mexico)
-Guatemala
-Indochina
-Texas
-Yucatán Peninsula
-Burdickville (Mich.)
 Port Oneida (Mich.)
 Bakaritsa (Russia)
 British Columbia.
 West Virginia.
-Kanawha River Valley (W. Va.)
 Black Canyon of the Gunnison National Park (Colo.)
 Dexter (Mich. : Township)
 Lodi (Mich. : Township)
@@ -1733,18 +1515,16 @@ Lyndon (Mich. : Township)
 Saline (Mich. : Township)
 York (Mich. : Township)
 Webster (Mich.)
-Iraq
 Coats Grove (Mich.)
 La Salle (Mich.)
+Swartz Creek (Mich.)
 Bronson (Mich.)
 Easton (Mich.)
+Portage (Mich.)
 Willard (Mich.)
+Woodland (Mich.)
 Tennessee.
 Georgian Bay (Ont.)
-Caryville (Tenn.)
-Stein Road (Ann Arbor, Mich. : Township)
-Alaska
-Guyana
 Burnips (Mich.)
 Covert (Mich.)
 Fort Saint Joseph (Mich.)
@@ -1757,7 +1537,6 @@ Sherwood (Mich.)
 Singapore (Mich.)
 Sunfield (Mich.)
 Thessalon (Mich.)
-Bradley (Mich.)
 Albuquerque (N.M.)
 Baltimore (Md.)
 Beverly (Mass.)
@@ -1785,18 +1564,10 @@ Nauvoo (Ill.)
 Salt Lake City (Utah)
 Oak Island (Lunenburg, N.S.)
 Ionia County (Mich.). Board of County Road Commissioners.
-Colombia
-Venezuela
-Southern States
 Amenia Seminary (Dutchess County, N.Y.)
-Genessee County (Mich.)
-Alabama
-West Virginia
 Downtown Historic District (Ann Arbor, Mich.)
 Old Fourth Ward Historic District (Ann Arbor, Mich.)
-Historic buildings
 Fond du Lac (Wis.)
-Battlefields
 Camp Crosswell (Mich.)
 Pacific Islands (Trust Territory)
 Hillcrest Golf and Country Club (Macomb County, Mich.)
@@ -1804,7 +1575,6 @@ Mindoro (Philippines)
 Palawan (Philippines)
 Tallmadge (Ohio)
 Ontario.
-Auburn Hills (Mich.)
 Guangzhou (China)
 Lake Geneva (Wis.)
 Washtenaw County Building (Ann Arbor, Mich.)

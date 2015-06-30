@@ -3,7 +3,6 @@ Ailey, Alvin.
 Hunter, Larry.
 Pierce, Edward, 1930-
 Manupelli, George.
-J. Jasmine.
 Ahern, Richard D.
 Barnes, Douglas.
 Byrd, David R.
@@ -996,8 +995,6 @@ Moore, Charles, 1855-1942.
 Pavey, Ernest W.
 Saarinen, Eliel, 1873-1950.
 Benninghoff, W. S.
-Gilbert, W. S. (William Schwenck), 1836-1911
-Sullivan, Arthur, Sir, 1842-1900
 Bennish, Gloria.
 Bentley, Alvin M. (Alvin Morell), 1918-1969.
 Ford, Gerald R., 1913-
@@ -1068,7 +1065,6 @@ Bingham, Mary Warden.
 Sumner, Charles, 1811-1874.
 Binkowski, Don, 1929-
 Swanson, John B. (John Burley), 1925-1994.
-Christman, Adam Arthur, 1896
 persname.
 Bird, Chauncey.
 Bird, John E. (John Everett), 1862-1928.
@@ -1283,7 +1279,6 @@ Bordin, Ruth Birgitta Anderson, 1917-
 Cain, Louise G.
 Likert, Jane Gibson.
 Boren, John.
-John Paul II, Pope, 1920
 Parks, Rosa, 1913-
 Borman, Abraham.
 Borman, Paul.
@@ -1738,7 +1733,6 @@ Muddy Waters, 1915-1983.
 Vonnegut, Kurt.
 Wallace, George C. (George Corley), 1919-1998.
 Castagnacci, Vincent.
-Castagnacci, Vincent
 Gould, Michael.
 Catford, J. C. (John Cunnison), 1917-
 Jenney, William Le Baron, 1832-1907.
@@ -1931,7 +1925,6 @@ Warner, Jack L., 1892-1978.
 Clay, Margaret L.
 Claytor, Helen Jackson.
 Cleage, Albert B.
-Jesus Christ
 Aten, Murl K., 1901-
 Blackney, William Wallace, 1876-1963.
 Bliss, Ray Charles, 1907-1981.
@@ -3533,7 +3526,6 @@ Krieger, Alex D. (Alex Dony), 1911-
 Perino, Gregory.
 Griffin, Levi T. (Levi Thomas), 1837-1906.
 Griffiths, Martha Wright, 1912-
-Kennedy, John F. (John Fitzgerald), 1917-1963
 Curtis, Carl T. (Carl Thomas), 1905-
 DuPont, Pierre Samuel, 1935-
 Hayward, Charles F.
@@ -4964,7 +4956,6 @@ Abbott, Bud.
 Costello, Lou.
 Lemon, William Philip, 1882-1967.
 Leonard, Justin W., 1909-1975.
-Hooper, Warren G.
 Juliana, Queen of the Netherlands, 1909-
 Vandercook, Roy C., 1873-
 Baird, Andrew C.
@@ -5523,7 +5514,6 @@ Brödel, Max, 1870-1941.
 Sweet, Ralph, 1892-1961.
 Teoli, Alfred.
 Perry, Emily S.
-Medicine
 Knott, Thomas A. (Thomas Albert), 1880-1945.
 Kuhn, Sherman M. (Sherman McAllister), 1907-1991.
 Kurath, Hans, 1891-1992.
@@ -6846,7 +6836,6 @@ Weiss, Janet A.
 White, Alfred H. (Alfred Holmes), 1873-
 Rademacher, Paul.
 Clooney, George.
-McCarthy, Joseph, 1908-1957
 Radulovich, Milo, 1926-2007.
 Ramsey, Leon, 1897-
 Randall, Harrison M. (Harrison McAllister), 1870-
@@ -7387,8 +7376,6 @@ Ross, Linda.
 Unangst, Joel.
 Weinberg, Barbara, 1950-
 Wiatrak, Ken.
-Plamondon, Pun
-Sinclair, John, 1941
 Sink, Alva Joanna Gordon.
 Caruso, Enrico, 1873-1921.
 Farrar, Geraldine, 1882-1967.
@@ -7694,7 +7681,6 @@ Beard, Daniel Carter, 1850-1941.
 Forrestal, James, 1872-1936.
 House, Edward Mandell, 1858-1938.
 Kennely, Arthur Edwin, 1861-1939.
-Singer, Emily K.
 Cunningham, Harry Blair, 1907-
 Stace, Arthur W. (Arthur William), 1875-1950.
 Gillespie, George De Normandie, 1819-1909.
@@ -8603,8 +8589,6 @@ Mecham, Floyd R. (Floyd Russell), 1858-1928.
 Wilhelm, Ross Johnston, 1920-1983.
 Scripps family.
 Willeke, Leonard Bernard, 1884-1970.
-Ford, Edsel, 1893-1943
-Webber, Oscar
 Willis, Mattie Azalia, 1912-1970.
 Barrett, Nell.
 Williams, Alfred Leonzo, 1808-1886.
