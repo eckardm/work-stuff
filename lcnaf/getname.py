@@ -42,40 +42,35 @@ for filename in os.listdir(ead_path):
         print '\rWorking on it... -',
         print '\rWorking on it... -',
         print '\rWorking on it... \\',
+        # parse
         ead_tree = ET.parse(join(ead_path, filename))
+        # go through the eads
         for sub in ead_tree.xpath(controlaccess_xpath):
-            # persname
-            if sub.tag == 'persname' and sub.text is not None:
-                if '--' in sub.text:
-                    output = sub.text.split('--')[0].strip()
-                else:
-                    output = sub.text.strip()
+            # persname <-- could make these next three functions...
+            if sub.tag == 'persname' and sub.text is not None and '--' not in sub.text:
+                output = sub.text.strip()
                 if output not in persname_list:
                     persname_list.append(output)
             # corpname
-            elif sub.tag == 'corpname' and sub.text is not None:
-                if '--' in sub.text:
-                    output = sub.text.split('--')[0].strip()
-                else:
-                    output = sub.text.strip()
+            elif sub.tag == 'corpname' and sub.text is not None and '--' not in sub.text:
+                output = sub.text.strip()
                 if output not in corpname_list: 
                     corpname_list.append(output)
             # geogname
-            if sub.tag == 'geogname' and sub.text is not None:
-                if '--' in sub.text:
-                    output = sub.text.split('--')[0].strip()
-                else:
-                    output = sub.text.strip()   
+            if sub.tag == 'geogname' and sub.text is not None and '--' not in sub.text:
+                output = sub.text.strip()   
                 if output not in geogname_list:
                     geogname_list.append(output)
 
-# output
+# output <-- could make these next three functions...
 for persname in persname_list:
     with open(persname_output, 'a') as text_file:
         text_file.write(persname.encode("utf-8") + '\n')
+        
 for corpname in corpname_list:
         with open(corpname_output, 'a') as text_file:
             text_file.write(corpname.encode("utf-8") + '\n')
+            
 for geogname in geogname_list:
         with open(geogname_output, 'a') as text_file:
             text_file.write(geogname.encode("utf-8") + '\n')
