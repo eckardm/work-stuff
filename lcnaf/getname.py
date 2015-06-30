@@ -52,9 +52,6 @@ for filename in os.listdir(ead_path):
                     output = sub.text.strip()
                 if output not in persname_list:
                     persname_list.append(output)
-                for persname in persname_list:
-                    with open(persname_output, 'a') as text_file:
-                        text_file.write(persname.encode("utf-8") + '\n')
             # corpname
             elif sub.tag == 'corpname' and sub.text is not None:
                 if '--' in sub.text:
@@ -63,9 +60,6 @@ for filename in os.listdir(ead_path):
                     output = sub.text.strip()
                 if output not in corpname_list: 
                     corpname_list.append(output)
-                for corpname in corpname_list:
-                    with open(corpname_output, 'a') as text_file:
-                        text_file.write(corpname.encode("utf-8") + '\n')
             # geogname
             if sub.tag == 'geogname' and sub.text is not None:
                 if '--' in sub.text:
@@ -74,8 +68,16 @@ for filename in os.listdir(ead_path):
                     output = sub.text.strip()   
                 if output not in geogname_list:
                     geogname_list.append(output)
-                for geogname in geogname_list:
-                    with open(geogname_output, 'a') as text_file:
-                        text_file.write(geogname.encode("utf-8") + '\n')
+
+# output
+for persname in persname_list:
+    with open(persname_output, 'a') as text_file:
+        text_file.write(persname.encode("utf-8") + '\n')
+for corpname in corpname_list:
+        with open(corpname_output, 'a') as text_file:
+            text_file.write(corpname.encode("utf-8") + '\n')
+for geogname in geogname_list:
+        with open(geogname_output, 'a') as text_file:
+            text_file.write(geogname.encode("utf-8") + '\n')
                     
 print '\rThere were ' + str(error_counter) + ' errors!'
