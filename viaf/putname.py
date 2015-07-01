@@ -44,7 +44,7 @@ for filename in os.listdir(ead_path_production):
                 if original in persnames_dictionary:
                     persname_xpath = ead_tree.getpath(sub)
                     persname_update = ead_tree.xpath(persname_xpath)
-                    persname_update[0].attrib['id'] = persnames_dictionary[original]
+                    persname_update[0].attrib['authfilenumber'] = persnames_dictionary[original]
                     outfile = open(join(ead_path_production, filename), 'w')
                     outfile.write(ET.tostring(ead_tree, encoding="utf-8", xml_declaration=True))
                     outfile.close()
@@ -54,7 +54,7 @@ for filename in os.listdir(ead_path_production):
                 # if original in corpnames_dictionary:
                     # corpname_xpath = ead_tree.getpath(sub)
                     # corpname_update = ead_tree.xpath(corpname_xpath)
-                    # corpname_update[0].attrib['id'] = corpnames_dictionary[original]
+                    # corpname_update[0].attrib['authfilenumber'] = corpnames_dictionary[original]
                     # outfile = open(join(ead_path_production, filename), 'w')
                     # outfile.write(ET.tostring(ead_tree, encoding="utf-8", xml_declaration=True))
                     # outfile.close()
