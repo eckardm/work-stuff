@@ -33,8 +33,10 @@ with open(openrefine_persname, 'rb') as persnames:
         original = row[0]
         authority = row[1]
         link = row[2]
-        if link is not None and link.startswith('http://id.loc.gov/authorities/names/') and if fuzz.ratio(original, authority) >= 80:
-            persnames_dictionary[original] = link
+        if link is not None and link.startswith('http://id.loc.gov/authorities/names/'):
+            fuzz_ratio = fuzz.ratio(original, authority)
+            if fuzz_ratio >= 80:
+                persnames_dictionary[original] = link
             
 print '\rPersname dictionary created.'
 
@@ -59,8 +61,10 @@ with open(openrefine_corpname, 'rb') as corpnames:
         original = row[0]
         authority = row[1]
         link = row[2]
-        if link is not None and link.startswith('http://id.loc.gov/authorities/names/') and if fuzz.ratio(original, authroity) >= 80:
-            corpnames_dictionary[original] = link
+        if link is not None and link.startswith('http://id.loc.gov/authorities/names/'):
+            fuzz_ratio = fuzz.ratio(original, authroity):
+            if fuzz_ratio >= 80:
+                corpnames_dictionary[original] = link
 
 print '\rCorpname dictionary created.'
 
