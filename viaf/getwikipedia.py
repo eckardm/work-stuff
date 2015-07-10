@@ -1,14 +1,15 @@
-# Translate LCCN ID to VIAF URI: http://www.viaf.org/viaf/lccn/{Library_of_Congress_Controll_Number}
-base_url_lccn_to_viaf = 'http://www.viaf.org/viaf/lccn/'
-
-# Link: http://id.loc.gov/authorities/names/n50001506
-lccn = 
+import beautifulsoup
+import json
 
 # parse link to look for lccn id
+link = 'http://id.loc.gov/authorities/names/n50001506'
+lccn_id = link.rsplit('/')[-1]
 
-# add lccn id to lccn id to viaf uri base url
-
-# add justlinks.json to the end of it
+# concatenate lccn id to viaf uri just links url
+lccn_id_to_viaf_uri_base_url = 'http://www.viaf.org/viaf/lccn/'
+json = '/justlinks.json'
+lccn_id_to_viaf_uri = lccn_id_to_viaf_uri_base_url + lccn_id
+lccn_id_to_viaf_uri_json = lccn_id_to_viaf_uri + json
 
 # find the en.wikipedia link
 
