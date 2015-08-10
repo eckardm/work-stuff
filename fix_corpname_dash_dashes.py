@@ -65,8 +65,9 @@ for filename in tqdm(os.listdir(ead_path)):
                         for subjects_iteration_variable in ead_tree.xpath('//controlaccess/*'):
                             if subjects_iteration_variable.text not in subjects:
                                 corpname.addnext(new_corporate_entity)
-                            else:
                                 subjects.append(subjects_iteration_variable.text)
+                            else:
+                                continue
                     # then creators
                     elif 'origination' in ead_tree.getpath(corpname):
                         # marc field equivalent
@@ -76,8 +77,9 @@ for filename in tqdm(os.listdir(ead_path)):
                         for creators_iteration_variable in ead_tree.xpath('//origination/*'):
                             if creators_iteration_variable.text not in creators:
                                 corpname.addnext(new_corporate_entity)
-                            else:
                                 creators.append(creators_iteration_variable.text)
+                            else:
+                                continue
 
                     
                     # adding
