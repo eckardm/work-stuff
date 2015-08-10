@@ -7,6 +7,8 @@ from lxml import etree
 # os provides a portable way of using operating system dependent functionality
 import os
 from os import path
+# tqdm adds a progress meter to your loops in a second
+from tqdm import *
 
 
 '''
@@ -24,7 +26,7 @@ corpname_xpath = '//corpname'
 go through the files, find corpnames with dash dashes and parse them out'''
 
 # go through the files
-for filename in os.listdir(ead_path):
+for filename in os.listdirtqdm((ead_path)):
     # only look at the xml files
     if filename.endswith('.xml'):
         # create lxml version of the ead
@@ -93,4 +95,3 @@ for filename in os.listdir(ead_path):
                         # write
                         behold_i_am_making_all_things_new.write(etree.tostring(tree, xml_declaration=True, encoding='utf-8', pretty_print=True))
                         
-   
