@@ -2,6 +2,7 @@
 first things first, import what we need'''
 
 # lxml is the most feature-rich and easy-to-use library for processing xml (and html), you'll need to install it
+import lxml
 from lxml import etree
 # os provides a portable way of using operating system dependent functionality
 import os
@@ -35,12 +36,44 @@ for filename in os.listdir(ead_path):
             if 'controlaccess' in ead_tree.getpath(corpname) or 'origination' in ead_tree.getpath(corpname):
                 # find the ones with dash dashes
                 if '--' in corpname.text:
-                    # split on the dash dash to get the two parts
+                    # split on the dash dash to get the two parts...
+                    # corpname
                     corporate_entity = corpname.text.split('--', 1)[0]
+                    # subject
                     subject = corpname.text.split('--', 1)[1]
-                    print 'found one'
-                    print ead_tree.getpath(corpname)
-                    print corpname.text
-                    print corporate_entity
-                    print subject
-        
+                   
+
+                    '''
+                    add them as new elements'''
+
+                    # create new elements
+                    # corporate entity
+                    # initalize and add tag name
+                    new_corporate_entity = lxml.etree.Element('corpname')
+                    # source
+                    new_corporate_entity.attrib['source'] = 'lcnaf'
+                    # marc field equivalent, first for subjects
+                    if 'controlaccesss' in ead_tree.getpath(corpname):
+                        new_corporate_entity.attrib['encodinganalog'] = '610'
+                    # then creators
+                    elif 'origination' in ead_tree.getpath(corpname):
+                        new_corporate_entity.attrib['encodinganalog'] = '110'
+                    # text
+                    new_corporate_entity.text = corporate_entity
+                    # adding
+                    corpname.addnext(new_corporate_entity)
+                    
+                    # subject
+                    # initalize and add tag name
+                    new_subject = lxml.etree.Element('subject')
+                    # source
+                    new_subject.attrib['source'] = 'lcsh'
+                    # marc field equivalent
+                    new_subject.attrib['encodinganalog'] = '650'
+                    # text
+                    new_subject.text = corporate_entity
+                    # adding
+                    corpname.addnext(new_subject)
+                    
+                    
+    
