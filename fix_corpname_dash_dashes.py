@@ -26,7 +26,7 @@ corpname_xpath = '//corpname'
 go through the files, find corpnames with dash dashes and parse them out'''
 
 # go through the files
-for filename in os.listdirtqdm((ead_path)):
+for filename in tqdm(os.listdir(ead_path)):
     # only look at the xml files
     if filename.endswith('.xml'):
         # create lxml version of the ead
