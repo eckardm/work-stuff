@@ -76,4 +76,21 @@ for filename in os.listdir(ead_path):
                     corpname.addnext(new_subject)
                     
                     
-    
+                    '''
+                    deletes the original element'''
+                    
+                    # find the parent
+                    parent = corpname.getparent()
+                    # delete the child
+                    parent.remove(corpname)
+                    
+                    
+                    '''
+                    write it!'''
+                    
+                    # setup the writer
+                    with open(os.path.join(ead_path, filename), mode="w") as behold_i_am_making_all_things_new:
+                        # write
+                        behold_i_am_making_all_things_new.write(etree.tostring(tree, xml_declaration=True, encoding='utf-8', pretty_print=True))
+                        
+   
