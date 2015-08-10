@@ -93,5 +93,5 @@ for filename in tqdm(os.listdir(ead_path)):
                     # setup the writer
                     with open(os.path.join(ead_path, filename), mode="w") as behold_i_am_making_all_things_new:
                         # write
-                        behold_i_am_making_all_things_new.write(etree.tostring(tree, xml_declaration=True, encoding='utf-8', pretty_print=True))
+                        behold_i_am_making_all_things_new.write(etree.tostring(ead_tree, xml_declaration=True, encoding='utf-8', pretty_print=True))
                         
