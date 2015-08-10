@@ -73,7 +73,7 @@ for filename in tqdm(os.listdir(ead_path)):
                     # marc field equivalent
                     new_subject.attrib['encodinganalog'] = '650'
                     # text
-                    new_subject.text = corporate_entity
+                    new_subject.text = subject
                     # adding
                     corpname.addnext(new_subject)
                     
