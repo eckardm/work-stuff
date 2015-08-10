@@ -40,7 +40,7 @@ for filename in tqdm(os.listdir(ead_path)):
                 if '--' in corpname.text:
                     # split on the dash dash to get the two parts...
                     # corpname
-                    corporate_entity = corpname.text.split('--', 1)[0]
+                    corporate_entity = corpname.text.split('--', 1)[0] + '.'
                     # subject
                     subject = corpname.text.split('--', 1)[1]
                    
@@ -56,35 +56,18 @@ for filename in tqdm(os.listdir(ead_path)):
                     new_corporate_entity.attrib['source'] = 'lcnaf'
                     # text
                     new_corporate_entity.text = corporate_entity
-                    # for subjects
-                    if 'controlaccesss' in ead_tree.getpath(corpname):
-                        # marc field equivalent
-                        new_corporate_entity.attrib['encodinganalog'] = '610'
-                        # create a quick list to make sure we aren't adding any duplicates
-                        subjects = []
-                        for subjects_iteration_variable in ead_tree.xpath('//controlaccess/*'):
-                            if subjects_iteration_variable.text not in subjects:
-                                corpname.addnext(new_corporate_entity)
-                                subjects.append(subjects_iteration_variable.text)
-                            else:
-                                continue
-                    # then creators
-                    elif 'origination' in ead_tree.getpath(corpname):
-                        # marc field equivalent
-                        new_corporate_entity.attrib['encodinganalog'] = '110'
-                        # create a quick list to make sure we aren't adding any duplicates
-                        creators = []
-                        for creators_iteration_variable in ead_tree.xpath('//origination/*'):
-                            if creators_iteration_variable.text not in creators:
-                                corpname.addnext(new_corporate_entity)
-                                creators.append(creators_iteration_variable.text)
-                            else:
-                                continue
-
-                    
-                    # adding
-                    corpname.addnext(new_corporate_entity)
-                    
+                    # for corpname
+                    # marc field equivalent
+                    new_corporate_entity.attrib['encodinganalog'] = '610'
+                    # create a quick list to make sure we aren't adding any duplicates
+                    corpnames = []
+                    for controlaccess_corpname in ead_tree.xpath('//controlaccess/corpname'):
+                        if controlaccess_corpname.text not in corpnames:
+                            corpname.addnext(new_corporate_entity)
+                            corpnames.append(controlaccess_corpname.text)
+                        else:
+                            continue
+                            
                     # subject
                     # initalize and add tag name
                     new_subject = lxml.etree.Element('subject')
@@ -92,10 +75,14 @@ for filename in tqdm(os.listdir(ead_path)):
                     new_subject.attrib['source'] = 'lcsh'
                     # marc field equivalent
                     new_subject.attrib['encodinganalog'] = '650'
-                    # text
-                    new_subject.text = subject
-                    # adding
-                    corpname.addnext(new_subject)
+                     # create a quick list to make sure we aren't adding any duplicates
+                    subjects = []
+                    for controlaccess_subject in ead_tree.xpath('//controlaccess/corpname'):
+                        if controlaccess_subject.text not in subjects:
+                            corpname.addnext(new_corporate_entity)
+                            subjects.append(controlaccess_subject.text)
+                        else:
+                            continue
                     
                     
                     '''
