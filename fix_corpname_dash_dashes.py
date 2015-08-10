@@ -54,14 +54,32 @@ for filename in tqdm(os.listdir(ead_path)):
                     new_corporate_entity = lxml.etree.Element('corpname')
                     # source
                     new_corporate_entity.attrib['source'] = 'lcnaf'
-                    # marc field equivalent, first for subjects
-                    if 'controlaccesss' in ead_tree.getpath(corpname):
-                        new_corporate_entity.attrib['encodinganalog'] = '610'
-                    # then creators
-                    elif 'origination' in ead_tree.getpath(corpname):
-                        new_corporate_entity.attrib['encodinganalog'] = '110'
                     # text
                     new_corporate_entity.text = corporate_entity
+                    # for subjects
+                    if 'controlaccesss' in ead_tree.getpath(corpname):
+                        # marc field equivalent
+                        new_corporate_entity.attrib['encodinganalog'] = '610'
+                        # create a quick list to make sure we aren't adding any duplicates
+                        subjects = []
+                        for subjects_iteration_variable in ead_tree.xpath('//controlaccess/*'):
+                            if subjects_iteration_variable.text not in subjects:
+                                corpname.addnext(new_corporate_entity)
+                            else:
+                                subjects.append(subjects_iteration_variable.text)
+                    # then creators
+                    elif 'origination' in ead_tree.getpath(corpname):
+                        # marc field equivalent
+                        new_corporate_entity.attrib['encodinganalog'] = '110'
+                        # create a quick list to make sure we aren't adding any duplicates
+                        creators = []
+                        for creators_iteration_variable in ead_tree.xpath('//origination/*'):
+                            if creators_iteration_variable.text not in creators:
+                                corpname.addnext(new_corporate_entity)
+                            else:
+                                creators.append(creators_iteration_variable.text)
+
+                    
                     # adding
                     corpname.addnext(new_corporate_entity)
                     
