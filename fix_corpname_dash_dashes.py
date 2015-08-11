@@ -38,51 +38,56 @@ for filename in tqdm(os.listdir(ead_path)):
             if 'controlaccess' in ead_tree.getpath(corpname) or 'origination' in ead_tree.getpath(corpname):
                 # find the ones with dash dashes
                 if '--' in corpname.text:
-                    # split on the dash dash to get the two parts...
-                    # corpname
+                    
+                    # split on the dash dash to get the two parts and add to lists...
+                    # corpnames
+                    # list
+                    corporate_entities = []
+                    # parse
                     corporate_entity = corpname.text.split('--', 1)[0] + '.'
-                    # subject
+                    # add to list if not a duplicate
+                    if corporate_entity not in corporate_entities:
+                        corporate_entities.append(corporate_entity)
+                    
+                    # subjects
+                    # list
+                    subjects = []
+                    # parse
                     subject = corpname.text.split('--', 1)[1]
-                   
+                    # add to list if not a duplicate 
+                    if subject not in subjects:
+                        subjects.append(subject)
+                    
 
                     '''
                     add them as new elements'''
-
-                    # create new elements
-                    # corporate entity
-                    # initalize and add tag name
-                    new_corporate_entity = lxml.etree.Element('corpname')
-                    # source
-                    new_corporate_entity.attrib['source'] = 'lcnaf'
-                    # text
-                    new_corporate_entity.text = corporate_entity
-                    # for corpname
-                    # marc field equivalent
-                    new_corporate_entity.attrib['encodinganalog'] = '610'
-                    # create a quick list to make sure we aren't adding any duplicates
-                    corpnames = []
-                    for controlaccess_corpname in ead_tree.xpath('//controlaccess/corpname'):
-                        if controlaccess_corpname.text not in corpnames:
-                            corpname.addnext(new_corporate_entity)
-                            corpnames.append(controlaccess_corpname.text)
-                        else:
-                            continue
+                    
+                    # corpnames
+                    # go through the list
+                    for corpname_itervar in corporate_entities:
+                        # initalize and add tag name
+                        new_corporate_entity = lxml.etree.Element('corpname')
+                        # source
+                        new_corporate_entity.attrib['source'] = 'lcnaf'
+                        # marc field equivalent
+                        new_corporate_entity.attrib['encodinganalog'] = '610'
+                        # text
+                        new_corporate_entity.text = corpname_itervar
+                        # add it
+                        corpname.addnext(new_corporate_entity)
                             
-                    # subject
-                    # initalize and add tag name
-                    new_subject = lxml.etree.Element('subject')
-                    # source
-                    new_subject.attrib['source'] = 'lcsh'
-                    # marc field equivalent
-                    new_subject.attrib['encodinganalog'] = '650'
-                     # create a quick list to make sure we aren't adding any duplicates
-                    subjects = []
-                    for controlaccess_subject in ead_tree.xpath('//controlaccess/corpname'):
-                        if controlaccess_subject.text not in subjects:
-                            corpname.addnext(new_corporate_entity)
-                            subjects.append(controlaccess_subject.text)
-                        else:
-                            continue
+                    # subjects
+                    for subject_itervar in subjects:
+                        # initalize and add tag name
+                        new_subject = lxml.etree.Element('subject')
+                        # source
+                        new_subject.attrib['source'] = 'lcsh'
+                        # marc field equivalent
+                        new_subject.attrib['encodinganalog'] = '650'
+                        # text
+                        new_subject.text = subject_itervar
+                        # add it 
+                        corpname.addnext(new_subject)
                     
                     
                     '''
