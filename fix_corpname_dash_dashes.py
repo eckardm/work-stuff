@@ -32,7 +32,18 @@ for filename in tqdm(os.listdir(ead_path)):
 
         # only look at controlaccess
         for controlaccess in ead_tree.xpath('//controlaccess/controlaccess'):
+        
+            # empty list to check existing controlaccess points
+            controlaccess_stuff = []
             
+            # checks all children to check for duplicates
+            stuffs = controlaccess.xpath('./*')
+            # goes through children
+            for stuff in stuffs:
+                # adds to list if not already there
+                if stuff.text not in controlaccess_stuff:
+                    controlaccess_stuff.append(stuff.text)
+                        
             # empty lists that we'll use to check for duplicates
             corporate_entities = []
             subjects = []
@@ -73,30 +84,38 @@ for filename in tqdm(os.listdir(ead_path)):
             # corpnames
             # go through the list
             for corpname_itervar in corporate_entities:
-                # initalize and add tag name
-                new_corporate_entity = lxml.etree.Element('corpname')
-                # source
-                new_corporate_entity.attrib['source'] = 'lcnaf'
-                # marc field equivalent
-                new_corporate_entity.attrib['encodinganalog'] = '610'
-                # text
-                new_corporate_entity.text = corpname_itervar
-                # add it
-                controlaccess.append(new_corporate_entity)
+                # check duplicates
+                if corpname_itervar not in controlaccess_stuff:
+                    # initalize and add tag name
+                    new_corporate_entity = lxml.etree.Element('corpname')
+                    # source
+                    new_corporate_entity.attrib['source'] = 'lcnaf'
+                    # marc field equivalent
+                    new_corporate_entity.attrib['encodinganalog'] = '610'
+                    # text
+                    new_corporate_entity.text = corpname_itervar
+                    # add it
+                    controlaccess.append(new_corporate_entity)
                     
             # subjects
             for subject_itervar in subjects:
-                # initalize and add tag name
-                new_subject = lxml.etree.Element('subject')
-                # source
-                new_subject.attrib['source'] = 'lcsh'
-                # marc field equivalent
-                new_subject.attrib['encodinganalog'] = '650'
-                # text
-                new_subject.text = subject_itervar
-                # add it 
-                controlaccess.append(new_subject)
-                
+                # check duplicates
+                if subject_itervar not in controlaccess_stuff:
+                    # initalize and add tag name
+                    new_subject = lxml.etree.Element('subject')
+                    # check for visual materials
+                    if 'Visual Materials' in controlaccess_stuff:
+                        new_subject.attrib['source'] = 'lctgm'
+                    else:
+                        # source
+                        new_subject.attrib['source'] = 'lcsh'
+                    # marc field equivalent
+                    new_subject.attrib['encodinganalog'] = '650'
+                    # text
+                    new_subject.text = subject_itervar
+                    # add it 
+                    controlaccess.append(new_subject)
+                    
         '''
         write it!'''
         
