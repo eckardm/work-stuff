@@ -19,7 +19,7 @@ ead_path = 'C:\Users\Public\Documents\Real_Masters_all'
 # ead_path = 'C:\Users\eckardm\GitHub\vandura\Real_Masters_all'
 
 # where are we looking in the eads?
-xpaths = ['//controlaccess/*', '//origination/*']
+xpaths = ['//controlaccess', '//origination']
 
 
 '''
@@ -35,41 +35,34 @@ def dash_dashes(xpath):
             # create lxml version of the ead
             ead_tree = etree.parse(path.join(ead_path, filename))
         
-            # go through each of the corpnames
-            for xpath_itervar in ead_tree.xpath(xpath):
-            
-                # empty lists
+            # empty lists
+            corporate_entities = []
+            subjects = []           
+            for block in ead_tree.xpath(xpath):
                 corporate_entities = []
                 subjects = []
-                
-                # find the parent (we'll need it later)
-                parent = ead_tree.getpath(xpath)
-        
-                # only look at corpnamess and dash dashes
-                if xpath_itervar.tag == 'corpname' and '--' in xpath_itervar.text:
-                    
-                    # split on the dash dash to get the two parts and add to lists...
-                    # corpnames
-                    # parse
-                    corporate_entity = xpath_itervar.text.split('--', 1)[0] + '.'
-                    # add to list if not a duplicate
-                    if corporate_entity not in corporate_entities:
-                        corporate_entities.append(corporate_entity)
-                    
-                    # subjects
-                    # parse
-                    subject = xpath_itervar.text.split('--', 1)[1]
-                    # add to list if not a duplicate 
-                    if subject not in subjects:
-                        subjects.append(subject)
-                    
-                    
-                    '''
-                    deletes the original element'''
-                    # delete the child
-                    parent.remove(xpath_itervar)
-                    
-                    
+                block_path = ead_tree.getpath(block)
+                corpnames = block.xpath('.//corpname')
+                # go through each of the corpnames
+                for corpname in corpnames:
+                    if '--' in corpname.text:
+                        # split on the dash dash to get the two parts and add to lists...
+                        # corpnames
+                        # parse
+                        corporate_entity = corpname.text.split('--', 1)[0] + '.'
+                         # add to list if not a duplicate
+                        if corporate_entity not in corporate_entities:
+                            corporate_entities.append(corporate_entity)
+                        # subjects
+                        # parse
+                        subject = xpath_itervar.text.split('--', 1)[1]
+                        # add to list if not a duplicate 
+                        if subject not in subjects:
+                            subjects.append(subject)
+                        
+                        corp_path = ead_tree.getpath(corpname)
+                        block.remove(corp_path)
+                        
                 '''
                 add them as new elements'''
                 
@@ -85,7 +78,7 @@ def dash_dashes(xpath):
                     # text
                     new_corporate_entity.text = corpname_itervar
                     # add it
-                    parent.addchild(new_corporate_entity)
+                    block.append(new_corporate_entity)
                         
                 # subjects
                 for subject_itervar in subjects:
@@ -98,19 +91,50 @@ def dash_dashes(xpath):
                     # text
                     new_subject.text = subject_itervar
                     # add it 
-                    parent.addchild(new_subject)
-
-        
-        '''
-        write it!'''
-        
-        # setup the writer
-        with open(os.path.join(ead_path, filename), mode="w") as behold_i_am_making_all_things_new:
-            # write
-            behold_i_am_making_all_things_new.write(etree.tostring(ead_tree, xml_declaration=True, encoding='utf-8', pretty_print=True))
+                    block.append(new_subject)
                     
+               '''
+            write it!'''
+            
+            # setup the writer
+            with open(os.path.join(ead_path, filename), mode="w") as behold_i_am_making_all_things_new:
+                # write
+                behold_i_am_making_all_things_new.write(etree.tostring(ead_tree, xml_declaration=True, encoding='utf-8', pretty_print=True))
+
+'''               
+            
+            for xpath_itervar in ead_tree.xpath(xpath):
+            
+                # find the parent (we'll need it later)
+                parent = xpath_itervar.getparent()
+        
+                # only look at corpnamess and dash dashes
+                if xpath_itervar.tag == 'corpname' and '--' in xpath_itervar.text:
+                    
+                    
+                    corporate_entity = xpath_itervar.text.split('--', 1)[0] + '.'
+                    # add to list if not a duplicate
+                    if corporate_entity not in corporate_entities:
+                        corporate_entities.append(corporate_entity)
+                    
+                    
+                    
+                    '''
+                    
+                    
+                    
+                    '''
+                    deletes the original element'''
+                    # # delete the child
+                    # parent.remove(xpath_itervar)
+                   
                     
 '''
+        
+     
+                    
+                    
+
 run it!'''
 
 for xpath in xpaths:
