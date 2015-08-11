@@ -15,8 +15,8 @@ from tqdm import *
 preliminaries'''
 
 # where are the eads?
-ead_path = 'C:\Users\Public\Documents\Real_Masters_all'
-# ead_path = 'C:\Users\eckardm\GitHub\vandura\Real_Masters_all'
+# ead_path = 'C:\Users\Public\Documents\Real_Masters_all'
+ead_path = r'C:\Users\eckardm\GitHub\vandura\Real_Masters_all'
 
 
 '''
