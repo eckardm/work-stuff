@@ -94,8 +94,8 @@ for filename in tqdm(os.listdir(ead_path)):
                     new_corporate_entity.attrib['encodinganalog'] = '610'
                     # text
                     new_corporate_entity.text = corpname_itervar
-                    # add it
-                    controlaccess.append(new_corporate_entity)
+                    # add it at the end
+                    controlaccess.insert(-1, new_corporate_entity)
                     
             # subjects
             for subject_itervar in subjects:
@@ -113,8 +113,8 @@ for filename in tqdm(os.listdir(ead_path)):
                     new_subject.attrib['encodinganalog'] = '650'
                     # text
                     new_subject.text = subject_itervar
-                    # add it 
-                    controlaccess.append(new_subject)
+                    # add it at the end
+                    controlaccess.insert(-1, new_subject)
                     
         '''
         write it!'''
