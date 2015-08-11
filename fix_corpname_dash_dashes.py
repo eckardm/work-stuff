@@ -103,7 +103,7 @@ for filename in tqdm(os.listdir(ead_path)):
                 if subject_itervar not in controlaccess_stuff:
                     # initalize and add tag name
                     new_subject = lxml.etree.Element('subject')
-                    # check for visual materials
+                    # check for visual materials (we didn't think of this on our own: http://stackoverflow.com/questions/4843158/check-if-a-python-list-item-contains-a-string-inside-another-string)
                     if any('Visual Materials' in stuff_itervar for stuff_itervar in controlaccess_stuff):
                         new_subject.attrib['source'] = 'lctgm'
                     else:
