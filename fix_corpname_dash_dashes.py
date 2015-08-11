@@ -104,7 +104,7 @@ for filename in tqdm(os.listdir(ead_path)):
                     # initalize and add tag name
                     new_subject = lxml.etree.Element('subject')
                     # check for visual materials
-                    if 'Visual Materials' in controlaccess_stuff:
+                    if any('Visual Materials' in stuff_itervar for stuff_itervar in controlaccess_stuff):
                         new_subject.attrib['source'] = 'lctgm'
                     else:
                         # source
