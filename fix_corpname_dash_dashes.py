@@ -48,6 +48,8 @@ for filename in tqdm(os.listdir(ead_path)):
                     # add to list if not a duplicate
                     if corporate_entity not in corporate_entities:
                         corporate_entities.append(corporate_entity)
+                    else:
+                        continue
                     
                     # subjects
                     # list
@@ -57,53 +59,55 @@ for filename in tqdm(os.listdir(ead_path)):
                     # add to list if not a duplicate 
                     if subject not in subjects:
                         subjects.append(subject)
+                    else:
+                        continue
                     
 
-                    '''
-                    add them as new elements'''
+            '''
+            add them as new elements'''
+            
+            # corpnames
+            # go through the list
+            for corpname_itervar in corporate_entities:
+                # initalize and add tag name
+                new_corporate_entity = lxml.etree.Element('corpname')
+                # source
+                new_corporate_entity.attrib['source'] = 'lcnaf'
+                # marc field equivalent
+                new_corporate_entity.attrib['encodinganalog'] = '610'
+                # text
+                new_corporate_entity.text = corpname_itervar
+                # add it
+                corpname.addnext(new_corporate_entity)
                     
-                    # corpnames
-                    # go through the list
-                    for corpname_itervar in corporate_entities:
-                        # initalize and add tag name
-                        new_corporate_entity = lxml.etree.Element('corpname')
-                        # source
-                        new_corporate_entity.attrib['source'] = 'lcnaf'
-                        # marc field equivalent
-                        new_corporate_entity.attrib['encodinganalog'] = '610'
-                        # text
-                        new_corporate_entity.text = corpname_itervar
-                        # add it
-                        corpname.addnext(new_corporate_entity)
-                            
-                    # subjects
-                    for subject_itervar in subjects:
-                        # initalize and add tag name
-                        new_subject = lxml.etree.Element('subject')
-                        # source
-                        new_subject.attrib['source'] = 'lcsh'
-                        # marc field equivalent
-                        new_subject.attrib['encodinganalog'] = '650'
-                        # text
-                        new_subject.text = subject_itervar
-                        # add it 
-                        corpname.addnext(new_subject)
-                    
-                    
-                    '''
-                    deletes the original element'''
-                    
-                    # find the parent
-                    parent = corpname.getparent()
-                    # delete the child
-                    parent.remove(corpname)
+            # subjects
+            for subject_itervar in subjects:
+                # initalize and add tag name
+                new_subject = lxml.etree.Element('subject')
+                # source
+                new_subject.attrib['source'] = 'lcsh'
+                # marc field equivalent
+                new_subject.attrib['encodinganalog'] = '650'
+                # text
+                new_subject.text = subject_itervar
+                # add it 
+                corpname.addnext(new_subject)
                     
                     
-                    '''
-                    write it!'''
-                    
-                    # setup the writer
-                    with open(os.path.join(ead_path, filename), mode="w") as behold_i_am_making_all_things_new:
-                        # write
-                        behold_i_am_making_all_things_new.write(etree.tostring(ead_tree, xml_declaration=True, encoding='utf-8', pretty_print=True))
+            '''
+            deletes the original element'''
+            
+            # find the parent
+            parent = corpname.getparent()
+            # delete the child
+            parent.remove(corpname)
+            
+            
+            '''
+            write it!'''
+            
+            # setup the writer
+            with open(os.path.join(ead_path, filename), mode="w") as behold_i_am_making_all_things_new:
+                # write
+                behold_i_am_making_all_things_new.write(etree.tostring(ead_tree, xml_declaration=True, encoding='utf-8', pretty_print=True))
                         
