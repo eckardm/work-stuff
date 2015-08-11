@@ -19,43 +19,46 @@ ead_path = 'C:\Users\Public\Documents\Real_Masters_all'
 # ead_path = 'C:\Users\eckardm\GitHub\vandura\Real_Masters_all'
 
 # where are we looking in the eads?
-corpname_xpath = '//corpname'
+xpaths = ['//controlaccess/*', '//origination/*']
 
 
 '''
 go through the files, find corpnames with dash dashes and parse them out'''
 
-# go through the files
-for filename in tqdm(os.listdir(ead_path)):
-    # only look at the xml files
-    if filename.endswith('.xml'):
+def dash_dashes(xpath):
+
+    # go through the files
+    for filename in tqdm(os.listdir(ead_path)):
+        # only look at the xml files
+        if filename.endswith('.xml'):
     
-        # empty lists
-        corporate_entities = []
-        subjects = []
-    
-        # create lxml version of the ead
-        ead_tree = etree.parse(path.join(ead_path, filename))
+            # create lxml version of the ead
+            ead_tree = etree.parse(path.join(ead_path, filename))
         
-        # go through each of the corpnames
-        for corpname in ead_tree.xpath(corpname_xpath):
+            # go through each of the corpnames
+            for xpath_itervar in ead_tree.xpath(xpath):
+            
+                # empty lists
+                corporate_entities = []
+                subjects = []
+                
+                # find the parent (we'll need it later)
+                parent = ead_tree.getpath(xpath)
         
-            # only look at controlaccess and origination sub-elements
-            if 'controlaccess' in ead_tree.getpath(corpname) or 'origination' in ead_tree.getpath(corpname):
-                # find the ones with dash dashes
-                if '--' in corpname.text:
+                # only look at corpnamess and dash dashes
+                if xpath_itervar.tag == 'corpname' and '--' in xpath_itervar.text:
                     
                     # split on the dash dash to get the two parts and add to lists...
                     # corpnames
                     # parse
-                    corporate_entity = corpname.text.split('--', 1)[0] + '.'
+                    corporate_entity = xpath_itervar.text.split('--', 1)[0] + '.'
                     # add to list if not a duplicate
                     if corporate_entity not in corporate_entities:
                         corporate_entities.append(corporate_entity)
                     
                     # subjects
                     # parse
-                    subject = corpname.text.split('--', 1)[1]
+                    subject = xpath_itervar.text.split('--', 1)[1]
                     # add to list if not a duplicate 
                     if subject not in subjects:
                         subjects.append(subject)
@@ -63,41 +66,39 @@ for filename in tqdm(os.listdir(ead_path)):
                     
                     '''
                     deletes the original element'''
-                    # find the parent
-                    parent = corpname.getparent()
                     # delete the child
-                    parent.remove(corpname)
+                    parent.remove(xpath_itervar)
                     
                     
-        '''
-        add them as new elements'''
-        
-        # corpnames
-        # go through the list
-        for corpname_itervar in corporate_entities:
-            # initalize and add tag name
-            new_corporate_entity = lxml.etree.Element('corpname')
-            # source
-            new_corporate_entity.attrib['source'] = 'lcnaf'
-            # marc field equivalent
-            new_corporate_entity.attrib['encodinganalog'] = '610'
-            # text
-            new_corporate_entity.text = corpname_itervar
-            # add it
-            corpname.addnext(new_corporate_entity)
+                '''
+                add them as new elements'''
                 
-        # subjects
-        for subject_itervar in subjects:
-            # initalize and add tag name
-            new_subject = lxml.etree.Element('subject')
-            # source
-            new_subject.attrib['source'] = 'lcsh'
-            # marc field equivalent
-            new_subject.attrib['encodinganalog'] = '650'
-            # text
-            new_subject.text = subject_itervar
-            # add it 
-            corpname.addnext(new_subject)
+                # corpnames
+                # go through the list
+                for corpname_itervar in corporate_entities:
+                    # initalize and add tag name
+                    new_corporate_entity = lxml.etree.Element('corpname')
+                    # source
+                    new_corporate_entity.attrib['source'] = 'lcnaf'
+                    # marc field equivalent
+                    new_corporate_entity.attrib['encodinganalog'] = '610'
+                    # text
+                    new_corporate_entity.text = corpname_itervar
+                    # add it
+                    parent.addchild(new_corporate_entity)
+                        
+                # subjects
+                for subject_itervar in subjects:
+                    # initalize and add tag name
+                    new_subject = lxml.etree.Element('subject')
+                    # source
+                    new_subject.attrib['source'] = 'lcsh'
+                    # marc field equivalent
+                    new_subject.attrib['encodinganalog'] = '650'
+                    # text
+                    new_subject.text = subject_itervar
+                    # add it 
+                    parent.addchild(new_subject)
 
         
         '''
@@ -108,3 +109,9 @@ for filename in tqdm(os.listdir(ead_path)):
             # write
             behold_i_am_making_all_things_new.write(etree.tostring(ead_tree, xml_declaration=True, encoding='utf-8', pretty_print=True))
                     
+                    
+'''
+run it!'''
+
+for xpath in xpaths:
+    dash_dashes(xpath)
