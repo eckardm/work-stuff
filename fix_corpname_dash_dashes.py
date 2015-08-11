@@ -60,7 +60,15 @@ for filename in tqdm(os.listdir(ead_path)):
                     if subject not in subjects:
                         subjects.append(subject)
                     
-
+                    
+                    '''
+                    deletes the original element'''
+                    # find the parent
+                    parent = corpname.getparent()
+                    # delete the child
+                    parent.remove(corpname)
+                    
+                    
         '''
         add them as new elements'''
         
@@ -90,16 +98,7 @@ for filename in tqdm(os.listdir(ead_path)):
             new_subject.text = subject_itervar
             # add it 
             corpname.addnext(new_subject)
-                
-                
-        '''
-        deletes the original element'''
-        
-        # find the parent
-        parent = corpname.getparent()
-        # delete the child
-        parent.remove(corpname)
-        
+
         
         '''
         write it!'''
