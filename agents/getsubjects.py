@@ -34,11 +34,19 @@ print 'Creating dictionary...'
 for filename in tqdm(os.listdir(ead_path)):
     if filename.endswith('.xml'):
         ead_tree = ET.parse(join(ead_path, filename))
+        dictionary = {}
         for controlaccess_subelement in ead_tree.xpath(origination_xpath):
             if (controlaccess_subelement.tag == 'persname' or controlaccess_subelement.tag == 'famname' or controlaccess_subelement.tag == 'corpname') and controlaccess_subelement.text is not None and '--' not in controlaccess_subelement.text:
-                dictionary = {}
                 dictionary['Type'] = controlaccess_subelement.tag
                 dictionary['ORIGINAL'] = controlaccess_subelement.text.strip()
+                if 'authfilenumber' in controlaccess_subelement.attrib:
+                    dictionary['Authority ID'] = controlaccess_subelement.get('authfilenumber')
+                if 'source' in controlaccess_subelement.attrib:
+                    dictionary['source'] = controlaccess_subelement.get('source')
+                list.append(dictionary)
+            elif (controlaccess_subelement.tag == 'persname' or controlaccess_subelement.tag == 'famname' or controlaccess_subelement.tag == 'corpname') and controlaccess_subelement.text is not None and '--' in controlaccess_subelement.text:
+                dictionary['Type'] = controlaccess_subelement.tag
+                dictionary['ORIGINAL'] = controlaccess_subelement.text.strip().split('--')[0]
                 if 'authfilenumber' in controlaccess_subelement.attrib:
                     dictionary['Authority ID'] = controlaccess_subelement.get('authfilenumber')
                 if 'source' in controlaccess_subelement.attrib:
@@ -48,11 +56,19 @@ for filename in tqdm(os.listdir(ead_path)):
 for filename in tqdm(os.listdir(ead_path)):
     if filename.endswith('.xml'):
         ead_tree = ET.parse(join(ead_path, filename))
+        dictionary = {}
         for controlaccess_subelement in ead_tree.xpath(controlaccess_xpath):
             if (controlaccess_subelement.tag == 'persname' or controlaccess_subelement.tag == 'famname' or controlaccess_subelement.tag == 'corpname') and controlaccess_subelement.text is not None and '--' not in controlaccess_subelement.text:
-                dictionary = {}
                 dictionary['Type'] = controlaccess_subelement.tag
                 dictionary['ORIGINAL'] = controlaccess_subelement.text.strip()
+                if 'authfilenumber' in controlaccess_subelement.attrib:
+                    dictionary['Authority ID'] = controlaccess_subelement.get('authfilenumber')
+                if 'source' in controlaccess_subelement.attrib:
+                    dictionary['source'] = controlaccess_subelement.get('source')
+                list.append(dictionary)
+            elif (controlaccess_subelement.tag == 'persname' or controlaccess_subelement.tag == 'famname' or controlaccess_subelement.tag == 'corpname') and controlaccess_subelement.text is not None and '--' in controlaccess_subelement.text:
+                dictionary['Type'] = controlaccess_subelement.tag
+                dictionary['ORIGINAL'] = controlaccess_subelement.text.strip().split('--')[0]
                 if 'authfilenumber' in controlaccess_subelement.attrib:
                     dictionary['Authority ID'] = controlaccess_subelement.get('authfilenumber')
                 if 'source' in controlaccess_subelement.attrib:
