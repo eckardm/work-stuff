@@ -79,6 +79,19 @@
   },
   {
     "op": "core/text-transform",
+    "description": "Text transform on cells in column WORKING using expression grel:value.replace('Whittemore Family (Tawas City, Mich.)', 'Wittemore (Family: Tawas City, Mich.)')",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "WORKING",
+    "expression": "grel:value.replace('Whittemore Family (Tawas City, Mich.)', 'Wittemore (Family: Tawas City, Mich.)')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
     "description": "Text transform on cells in column WORKING using expression grel:value.replace(/ Family| family/, ' (Family)')",
     "engineConfig": {
       "mode": "row-based",
@@ -120,14 +133,5 @@
     "op": "core/column-removal",
     "description": "Remove column WORKING",
     "columnName": "WORKING"
-  },
-  {
-    "op": "core/fill-down",
-    "description": "Fill down cells in column Source",
-    "engineConfig": {
-      "mode": "row-based",
-      "facets": []
-    },
-    "columnName": "Source"
   }
 ]
