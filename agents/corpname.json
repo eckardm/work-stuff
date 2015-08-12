@@ -106,7 +106,40 @@
   },
   {
     "op": "core/text-transform",
-    "description": "Text transform on cells in column Primary Part of Name using expression grel:cells['WORKING'].value.split('.')[0]",
+    "description": "Text transform on cells in column WORKING using expression grel:value.replace('Dept.', 'Department')",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "row.starred",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Starred Rows",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": ""
+        }
+      ]
+    },
+    "columnName": "WORKING",
+    "expression": "grel:value.replace('Dept.', 'Department')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Primary Part of Name using expression grel:cells['WORKING'].value.split('. ')[0]",
     "engineConfig": {
       "mode": "row-based",
       "facets": [
@@ -148,14 +181,14 @@
       ]
     },
     "columnName": "Primary Part of Name",
-    "expression": "grel:cells['WORKING'].value.split('.')[0]",
+    "expression": "grel:cells['WORKING'].value.split('. ')[0]",
     "onError": "keep-original",
     "repeat": false,
     "repeatCount": 10
   },
   {
     "op": "core/text-transform",
-    "description": "Text transform on cells in column Subordinate Name 1 using expression grel:cells['WORKING'].value.split('.')[1]",
+    "description": "Text transform on cells in column Subordinate Name 1 using expression grel:cells['WORKING'].value.split('. ')[1]",
     "engineConfig": {
       "mode": "row-based",
       "facets": [
@@ -197,7 +230,7 @@
       ]
     },
     "columnName": "Subordinate Name 1",
-    "expression": "grel:cells['WORKING'].value.split('.')[1]",
+    "expression": "grel:cells['WORKING'].value.split('. ')[1]",
     "onError": "keep-original",
     "repeat": false,
     "repeatCount": 10
