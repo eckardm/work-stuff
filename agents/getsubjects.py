@@ -36,7 +36,7 @@ for filename in tqdm(os.listdir(ead_path)):
         ead_tree = ET.parse(join(ead_path, filename))
         dictionary = {}
         for controlaccess_subelement in ead_tree.xpath(origination_xpath):
-            if (controlaccess_subelement.tag == 'persname' or controlaccess_subelement.tag == 'famname' or controlaccess_subelement.tag == 'corpname') and controlaccess_subelement.text is not None and '--' not in controlaccess_subelement.text:
+            if (controlaccess_subelement.tag == 'famname' or controlaccess_subelement.tag == 'corpname') and controlaccess_subelement.text is not None and '--' not in controlaccess_subelement.text:
                 dictionary['Type'] = controlaccess_subelement.tag
                 dictionary['ORIGINAL'] = controlaccess_subelement.text.strip()
                 if 'authfilenumber' in controlaccess_subelement.attrib:
@@ -58,7 +58,7 @@ for filename in tqdm(os.listdir(ead_path)):
         ead_tree = ET.parse(join(ead_path, filename))
         dictionary = {}
         for controlaccess_subelement in ead_tree.xpath(controlaccess_xpath):
-            if (controlaccess_subelement.tag == 'persname' or controlaccess_subelement.tag == 'famname' or controlaccess_subelement.tag == 'corpname') and controlaccess_subelement.text is not None and '--' not in controlaccess_subelement.text:
+            if (controlaccess_subelement.tag == 'famname' or controlaccess_subelement.tag == 'corpname') and controlaccess_subelement.text is not None and '--' not in controlaccess_subelement.text:
                 dictionary['Type'] = controlaccess_subelement.tag
                 dictionary['ORIGINAL'] = controlaccess_subelement.text.strip()
                 if 'authfilenumber' in controlaccess_subelement.attrib:
@@ -75,29 +75,29 @@ for filename in tqdm(os.listdir(ead_path)):
                     dictionary['source'] = controlaccess_subelement.get('source')
                 list.append(dictionary)
             
-print 'Creating <persname> CSV...'
+# print 'Creating <persname> CSV...'
 
-with open(persname_temp, 'wb') as persname_csv:
-    persname_header_writer = csv.writer(persname_csv)
-    persname_header_writer.writerow(persname_headers)
+# with open(persname_temp, 'wb') as persname_csv:
+    # persname_header_writer = csv.writer(persname_csv)
+    # persname_header_writer.writerow(persname_headers)
     
-for dictionary_item in tqdm(list):
-    if dictionary_item['Type'] == 'persname':
-        persname_row = ['persname', 'TRUE']
-        if 'Authority ID' in dictionary_item:
-            persname_row.append(dictionary_item['Authority ID'])
-        else:
-            persname_row.append('')
-        if 'source' in dictionary_item:
-            persname_row.append(dictionary_item['source'])
-        else:
-            persname_row.append('')
-        persname_row.append('')
-        persname_row.append('Indirect')
-        persname_row.append(dictionary_item['ORIGINAL'].encode('utf-8'))
-        with open(persname_temp, 'ab') as persname_csv_take_two:
-            persname_writer = csv.writer(persname_csv_take_two)
-            persname_writer.writerow(persname_row)
+# for dictionary_item in tqdm(list):
+    # if dictionary_item['Type'] == 'persname':
+        # persname_row = ['persname', 'TRUE']
+        # if 'Authority ID' in dictionary_item:
+            # persname_row.append(dictionary_item['Authority ID'])
+        # else:
+            # persname_row.append('')
+        # if 'source' in dictionary_item:
+            # persname_row.append(dictionary_item['source'])
+        # else:
+            # persname_row.append('')
+        # persname_row.append('')
+        # persname_row.append('Indirect')
+        # persname_row.append(dictionary_item['ORIGINAL'].encode('utf-8'))
+        # with open(persname_temp, 'ab') as persname_csv_take_two:
+            # persname_writer = csv.writer(persname_csv_take_two)
+            # persname_writer.writerow(persname_row)
             
 with open(persname_temp, 'rb') as persname_in, open(persname_output, 'wb') as persname_out:
     persnames = set()
