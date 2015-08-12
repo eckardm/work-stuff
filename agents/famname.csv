@@ -16,15 +16,18 @@ famname,TRUE,,lcnaf,,Buckbee Family
 famname,TRUE,,lcnaf,,Buck family.
 famname,TRUE,,lcnaf,,Buell family.
 famname,TRUE,,lcnaf,,Burrows family
+famname,TRUE,,lcnaf,,Campbell family.
 famname,TRUE,,lcnaf,,Carlisle family.
 famname,TRUE,,lcnaf,,Carr family.
 famname,TRUE,,lcnaf,,Cavanagh Family
 famname,TRUE,,lcnaf,,Chapin family
 famname,TRUE,,lcnaf,,Chipman family
+famname,TRUE,,lcnaf,,Clarke family
 famname,TRUE,,lcnaf,,Clarke family.
 famname,TRUE,,lcnaf,,Clippert family.
 famname,TRUE,,lcnaf,,Conant family.
 famname,TRUE,,lcnaf,,Crawford family.
+famname,TRUE,,lcnaf,,Dalgleish family.
 famname,TRUE,,lcnaf,,Den Bleyker family.
 famname,TRUE,,lcnaf,,Denison family
 famname,TRUE,,lcnaf,,Douglass family.
@@ -60,6 +63,7 @@ famname,TRUE,,lcnaf,,Kennedy family.
 famname,TRUE,,lcnaf,,Kibler family.
 famname,TRUE,,lcnaf,,Littlefield family.
 famname,TRUE,,lcnaf,,Ludwig family.
+famname,TRUE,,lcnaf,,McCreery family
 famname,TRUE,,lcnaf,,McCreery family.
 famname,TRUE,,lcnaf,,McDonald family.
 famname,TRUE,,lcnaf,,McMahon family.
@@ -69,6 +73,7 @@ famname,TRUE,,lcnaf,,Mitchell-Strong family
 famname,TRUE,,lcnaf,,Morgan Family
 famname,TRUE,,lcnaf,,Mullett family.
 famname,TRUE,,lcnaf,,Munger family.
+famname,TRUE,,lcnaf,,Netzorg family.
 famname,TRUE,,lcnaf,,Nisbett family.
 famname,TRUE,,lcnaf,,Norris family.
 famname,TRUE,,lcnaf,,O’Brien Family
@@ -103,6 +108,7 @@ famname,TRUE,,lcnaf,,Todd family.
 famname,TRUE,,lcnaf,,Tower Family
 famname,TRUE,,lcnaf,,Tuomy family.
 famname,TRUE,,lcnaf,,Twichell family.
+famname,TRUE,,lcnaf,,Upjohn family
 famname,TRUE,,lcnaf,,Upjohn family.
 famname,TRUE,,lcnaf,,Vandenberg family.
 famname,TRUE,,lcnaf,,Ward family.
@@ -115,6 +121,7 @@ famname,TRUE,,lcnaf,,Winegar family.
 famname,TRUE,,lcnaf,,Wright family.
 famname,TRUE,,lcnaf,,Adams family.
 famname,TRUE,,lcnaf,,Sparks family.
+famname,TRUE,,lcnaf,,Mann family.
 famname,TRUE,,lcnaf,,Angell family.
 famname,TRUE,,lcnaf,,Felland family.
 famname,TRUE,,lcnaf,,Albright family.
@@ -148,7 +155,6 @@ famname,TRUE,,lcnaf,,Burt family.
 famname,TRUE,,lcnaf,,Cole family.
 famname,TRUE,,lcnaf,,Burton family.
 famname,TRUE,,lcnaf,,Cameron family.
-famname,TRUE,,lcnaf,,Campbell family.
 famname,TRUE,,lcnaf,,Cappaert family.
 famname,TRUE,,lcnaf,,Carman family.
 famname,TRUE,,lcnaf,,Stearns family.
@@ -161,13 +167,13 @@ famname,TRUE,,lcnaf,,Tabor family.
 famname,TRUE,,lcnaf,,Chase family.
 famname,TRUE,,lcnaf,,Christian family.
 famname,TRUE,,lcnaf,,Clark family.
+famname,TRUE,,lcnaf,,Claybourn family.
 famname,TRUE,,lcnaf,,Cooley family.
 famname,TRUE,,lcnaf,,Gibson family.
 famname,TRUE,,lcnaf,,Jones family.
 famname,TRUE,,lcnaf,,Copeland family.
 famname,TRUE,,lcnaf,,Crapo family.
 famname,TRUE,,lcnaf,,Cross family.
-famname,TRUE,,lcnaf,,Dalgleish family.
 famname,TRUE,,lcnaf,,Davis family.
 famname,TRUE,,lcnaf,,Demmon family.
 famname,TRUE,,lcnaf,,Milliken family.
@@ -217,6 +223,7 @@ famname,TRUE,,lcnaf,,Prescott family.
 famname,TRUE,,lcnaf,,Strong family.
 famname,TRUE,,lcnaf,,Randall family.
 famname,TRUE,,lcnaf,,Potter family.
+famname,TRUE,,lcnaf,,Gillette family.
 famname,TRUE,,lcnaf,,Gingrich family.
 famname,TRUE,,lcnaf,,Gjelsness family.
 famname,TRUE,,lcnaf,,Goddard family.
@@ -284,6 +291,7 @@ famname,TRUE,,lcnaf,,Jewell family.
 famname,TRUE,,lcnaf,,McKenzie family.
 famname,TRUE,,lcnaf,,Mershon family.
 famname,TRUE,,lcnaf,,Myers family.
+famname,TRUE,,lcnaf,,Mead family.
 famname,TRUE,,lcnaf,,McCorkell family.
 famname,TRUE,,lcnaf,,Millard family.
 famname,TRUE,,lcnaf,,Miller family.
@@ -293,10 +301,13 @@ famname,TRUE,,lcnaf,,Monteith family.
 famname,TRUE,,lcnaf,,Moody family.
 famname,TRUE,,lcnaf,,Muncy family.
 famname,TRUE,,lcnaf,,Murphy family.
+famname,TRUE,,lcnaf,,Fuld family.
 famname,TRUE,,lcnaf,,Newkirk family.
 famname,TRUE,,lcnaf,,Nesbitt family.
+famname,TRUE,,lcnaf,,Nordman family.
 famname,TRUE,,lcnaf,,Whittelsey family.
 famname,TRUE,,lcnaf,,Novy family.
+famname,TRUE,,lcnaf,,O'Brien family.
 famname,TRUE,,lcnaf,,Hesselberg family.
 famname,TRUE,,lcnaf,,Olson family.
 famname,TRUE,,lcnaf,,Osborn family.
@@ -345,8 +356,8 @@ famname,TRUE,,lcnaf,,Staebler family.
 famname,TRUE,,lcnaf,,Stanley family.
 famname,TRUE,,lcnaf,,Starr family.
 famname,TRUE,,lcnaf,,Buzzard family.
-famname,TRUE,,lcnaf,,Seymour family.
 famname,TRUE,,lcnaf,,Stuart family.
+famname,TRUE,,lcnaf,,Seymour family.
 famname,TRUE,,lcnaf,,Van Aken family.
 famname,TRUE,,lcnaf,,Keeler family.
 famname,TRUE,,lcnaf,,McCalmont family.
