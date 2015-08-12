@@ -677,5 +677,148 @@
       ]
     },
     "starred": true
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Primary Part of Name using expression grel:cells['WORKING'].value.split(' (')[0]",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "row.starred",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Starred Rows",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": ""
+        },
+        {
+          "mode": "text",
+          "caseSensitive": false,
+          "query": ", Mich.)",
+          "name": "WORKING",
+          "type": "text",
+          "columnName": "WORKING"
+        },
+        {
+          "mode": "regex",
+          "caseSensitive": false,
+          "query": "^[^.]*\\.[^.]*$",
+          "name": "WORKING",
+          "type": "text",
+          "columnName": "WORKING"
+        }
+      ]
+    },
+    "columnName": "Primary Part of Name",
+    "expression": "grel:cells['WORKING'].value.split(' (')[0]",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Qualifier using expression grel:cells['WORKING'].value.split(' (')[1].replace(')', '')",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "row.starred",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Starred Rows",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": ""
+        },
+        {
+          "mode": "text",
+          "caseSensitive": false,
+          "query": ", Mich.)",
+          "name": "WORKING",
+          "type": "text",
+          "columnName": "WORKING"
+        },
+        {
+          "mode": "regex",
+          "caseSensitive": false,
+          "query": "^[^.]*\\.[^.]*$",
+          "name": "WORKING",
+          "type": "text",
+          "columnName": "WORKING"
+        }
+      ]
+    },
+    "columnName": "Qualifier",
+    "expression": "grel:cells['WORKING'].value.split(' (')[1].replace(')', '')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/row-star",
+    "description": "Star rows",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "row.starred",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Starred Rows",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": ""
+        },
+        {
+          "mode": "text",
+          "caseSensitive": false,
+          "query": ", Mich.)",
+          "name": "WORKING",
+          "type": "text",
+          "columnName": "WORKING"
+        },
+        {
+          "mode": "regex",
+          "caseSensitive": false,
+          "query": "^[^.]*\\.[^.]*$",
+          "name": "WORKING",
+          "type": "text",
+          "columnName": "WORKING"
+        }
+      ]
+    },
+    "starred": true
   }
 ]
