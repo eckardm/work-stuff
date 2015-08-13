@@ -2314,5 +2314,295 @@
       ]
     },
     "starred": true
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column WORKING using expression grel:value.replace('Nu Sigma Nu, Alpha Chapter. (University of Michigan)', 'Nu Sigma Nu. Alpha Chapter. (University of Michigan)')",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "row.starred",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Starred Rows",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": ""
+        },
+        {
+          "mode": "regex",
+          "caseSensitive": true,
+          "query": "\\(University of Michigan\\)$",
+          "name": "WORKING",
+          "type": "text",
+          "columnName": "WORKING"
+        },
+        {
+          "mode": "regex",
+          "caseSensitive": false,
+          "query": "",
+          "name": "WORKING",
+          "type": "text",
+          "columnName": "WORKING"
+        }
+      ]
+    },
+    "columnName": "WORKING",
+    "expression": "grel:value.replace('Nu Sigma Nu, Alpha Chapter. (University of Michigan)', 'Nu Sigma Nu. Alpha Chapter. (University of Michigan)')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Primary Part of Name using expression grel:cells['WORKING'].value.split('. ')[0]",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "row.starred",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Starred Rows",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": ""
+        },
+        {
+          "mode": "regex",
+          "caseSensitive": true,
+          "query": "\\(University of Michigan\\)$",
+          "name": "WORKING",
+          "type": "text",
+          "columnName": "WORKING"
+        },
+        {
+          "mode": "regex",
+          "caseSensitive": false,
+          "query": "",
+          "name": "WORKING",
+          "type": "text",
+          "columnName": "WORKING"
+        }
+      ]
+    },
+    "columnName": "Primary Part of Name",
+    "expression": "grel:cells['WORKING'].value.split('. ')[0]",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Subordinate Name 1 using expression grel:cells['WORKING'].value.split('. ')[1].split(' (')[0]",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "row.starred",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Starred Rows",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": ""
+        },
+        {
+          "mode": "regex",
+          "caseSensitive": true,
+          "query": "\\(University of Michigan\\)$",
+          "name": "WORKING",
+          "type": "text",
+          "columnName": "WORKING"
+        },
+        {
+          "mode": "regex",
+          "caseSensitive": false,
+          "query": "",
+          "name": "WORKING",
+          "type": "text",
+          "columnName": "WORKING"
+        }
+      ]
+    },
+    "columnName": "Subordinate Name 1",
+    "expression": "grel:cells['WORKING'].value.split('. ')[1].split(' (')[0]",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Subordinate Name 2 using expression grel:cells['WORKING'].value.split('. ')[2].split(' (')[0]",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "row.starred",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Starred Rows",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": ""
+        },
+        {
+          "mode": "regex",
+          "caseSensitive": true,
+          "query": "\\(University of Michigan\\)$",
+          "name": "WORKING",
+          "type": "text",
+          "columnName": "WORKING"
+        },
+        {
+          "mode": "regex",
+          "caseSensitive": false,
+          "query": "",
+          "name": "WORKING",
+          "type": "text",
+          "columnName": "WORKING"
+        }
+      ]
+    },
+    "columnName": "Subordinate Name 2",
+    "expression": "grel:cells['WORKING'].value.split('. ')[2].split(' (')[0]",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Qualifier using expression grel:'University' + cells['WORKING'].value.split('University')[1].replace(')', '')",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "row.starred",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Starred Rows",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": ""
+        },
+        {
+          "mode": "regex",
+          "caseSensitive": true,
+          "query": "\\(University of Michigan\\)$",
+          "name": "WORKING",
+          "type": "text",
+          "columnName": "WORKING"
+        },
+        {
+          "mode": "regex",
+          "caseSensitive": false,
+          "query": "",
+          "name": "WORKING",
+          "type": "text",
+          "columnName": "WORKING"
+        }
+      ]
+    },
+    "columnName": "Qualifier",
+    "expression": "grel:'University' + cells['WORKING'].value.split('University')[1].replace(')', '')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/row-star",
+    "description": "Star rows",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "row.starred",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Starred Rows",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": ""
+        },
+        {
+          "mode": "regex",
+          "caseSensitive": true,
+          "query": "\\(University of Michigan\\)$",
+          "name": "WORKING",
+          "type": "text",
+          "columnName": "WORKING"
+        },
+        {
+          "mode": "regex",
+          "caseSensitive": false,
+          "query": "",
+          "name": "WORKING",
+          "type": "text",
+          "columnName": "WORKING"
+        }
+      ]
+    },
+    "starred": true
   }
 ]
