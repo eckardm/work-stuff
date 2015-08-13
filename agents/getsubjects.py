@@ -99,15 +99,15 @@ for filename in tqdm(os.listdir(ead_path)):
             # persname_writer = csv.writer(persname_csv_take_two)
             # persname_writer.writerow(persname_row)
             
-with open(persname_temp, 'rb') as persname_in, open(persname_output, 'wb') as persname_out:
-    persnames = set()
-    for row in persname_in:
-        if row in persnames: 
-            continue
-        persnames.add(row)
-        persname_out.write(row)
+# with open(persname_temp, 'rb') as persname_in, open(persname_output, 'wb') as persname_out:
+    # persnames = set()
+    # for row in persname_in:
+        # if row in persnames: 
+            # continue
+        # persnames.add(row)
+        # persname_out.write(row)
 
-os.remove(persname_temp)
+# os.remove(persname_temp)
         
 print 'Creating <famname> CSV...'
         
