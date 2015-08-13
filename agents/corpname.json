@@ -4953,5 +4953,94 @@
       ]
     },
     "starred": true
+  },
+  {
+    "op": "core/row-flag",
+    "description": "Flag rows",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "row.starred",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Starred Rows",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": ""
+        },
+        {
+          "mode": "regex",
+          "caseSensitive": false,
+          "query": "^[A-Za-z]+\\,",
+          "name": "WORKING",
+          "type": "text",
+          "columnName": "WORKING"
+        },
+        {
+          "mode": "regex",
+          "caseSensitive": false,
+          "query": "",
+          "name": "WORKING",
+          "type": "text",
+          "columnName": "WORKING"
+        }
+      ]
+    },
+    "flagged": true
+  },
+  {
+    "op": "core/row-removal",
+    "description": "Remove rows",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": [
+        {
+          "omitError": false,
+          "expression": "row.starred",
+          "selectBlank": false,
+          "selection": [
+            {
+              "v": {
+                "v": false,
+                "l": "false"
+              }
+            }
+          ],
+          "selectError": false,
+          "invert": false,
+          "name": "Starred Rows",
+          "omitBlank": false,
+          "type": "list",
+          "columnName": ""
+        },
+        {
+          "mode": "regex",
+          "caseSensitive": false,
+          "query": "^[A-Za-z]+\\,",
+          "name": "WORKING",
+          "type": "text",
+          "columnName": "WORKING"
+        },
+        {
+          "mode": "regex",
+          "caseSensitive": false,
+          "query": "",
+          "name": "WORKING",
+          "type": "text",
+          "columnName": "WORKING"
+        }
+      ]
+    }
   }
 ]
