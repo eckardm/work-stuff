@@ -8,3 +8,13 @@ import csv
 import json
 
 
+'''
+open the csv and json files'''
+
+# open the csv file in read mode
+persname_csv = open('agents-persname.csv', 'r')
+
+# open the json file in write mode
+persname_json = open('agents-persname.json', 'w')
+
+
