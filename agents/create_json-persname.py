@@ -18,3 +18,10 @@ persname_csv = open('agents-persname.csv', 'r')
 persname_json = open('agents-persname.json', 'w')
 
 
+'''
+indicate csv fieldnames for json'''
+
+# set up a list
+field_names = ('prefix', 'title', 'primary_name', 'rest_of_name', 'number', 'suffix', 'fuller_form', 'dates', 'authority_id', 'source', 'name_order')
+
+
