@@ -14,6 +14,14 @@ preliminaries'''
 # where is the csv that has been exported from openrefine?
 corpname_csv = 'agents-corpname.csv'
 
+# preliminaries for using archivesspace api
+# base url
+base_url = 'http://localhost:8089"
+# username default
+username = 'admin'
+# password default
+password = 'password'
+
 
 '''
 go through csv, create a list of dictionaries for each entry'''
