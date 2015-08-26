@@ -1,6 +1,9 @@
 '''
 first things first, import what we need'''
 
+# requests takes all of the work out of python http making your integration with web services seamless, you'll need to install it
+import requests
+
 # csv implements classes to read and write tabular data in csv format
 import csv
 
@@ -16,11 +19,15 @@ corpname_csv = 'agents-corpname.csv'
 
 # preliminaries for using archivesspace api
 # base url
-base_url = 'http://localhost:8089"
+base_url = 'http://localhost:8089'
 # username default
 username = 'admin'
 # password default
 password = 'password'
+
+
+'''
+set up session in archivesspace using requests'''
 
 
 '''
