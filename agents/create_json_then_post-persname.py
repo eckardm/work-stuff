@@ -173,6 +173,8 @@ with open(persname_csv, 'r') as persname_csv_file:
         # add other required fields to dictionary
         # auto generate sort name
         persname_dictionary["sort_name_auto_generate"] = True
+        # name order
+        persname_dictionary["name_order"] = "inverted"
         
         # add dictionary to list
         persname_list.append(persname_dictionary)
@@ -205,5 +207,6 @@ with open(persname_csv, 'r') as persname_csv_file:
             # set up the writer
             persname_uris_csv_file_writer = csv.writer(persname_uris_csv_file)
             # write the headers
-            persname_uris_csv_file_writer.writerow([original, persnames["uri"]])
+            if "status" in persnames:
+                persname_uris_csv_file_writer.writerow([original, persnames["uri"]])
         
