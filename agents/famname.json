@@ -133,5 +133,18 @@
     "op": "core/column-removal",
     "description": "Remove column WORKING",
     "columnName": "WORKING"
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column Qualifier using expression grel:value.replace('(', '').replace(')', '')",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "Qualifier",
+    "expression": "grel:value.replace('(', '').replace(')', '')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
   }
 ]
