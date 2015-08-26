@@ -17,6 +17,17 @@ preliminaries'''
 # where is the csv that has been exported from openrefine?
 corpname_csv = 'agents-corpname.csv'
 
+# where is the csv that we'll record the original name and the new uri
+corpname_uris = 'corpname-uris.csv'
+
+# go ahead and create the headers of that csv
+# open the csv in write mode
+with open(corpname_uris, 'wb') as corpname_uris_csv_file:
+    # set up the writer
+    corpname_uris_csv_file_writer = csv.writer(corpname_uris_csv_file)
+    # write the headers
+    corpname_uris_csv_file_writer.writerow(['ORIGINAL', 'uri'])
+
 # preliminaries for using archivesspace api
 # base url
 base_url = 'http://localhost:8089'
@@ -83,6 +94,8 @@ with open(corpname_csv, 'r') as corpname_csv_file:
     for row in corpname_data:
         
         # match up fields to row index
+        # original
+        original = row[5]
         # primary name
         primary_name = row[6]
         # subordinate name 1
@@ -119,7 +132,7 @@ with open(corpname_csv, 'r') as corpname_csv_file:
         # if a qualifer exists
         if qualifier:
             # append it
-            print qualifier
+            corpname_dictionary["qualifier"] = qualifier
         # if authority id exists
         if authority_id:
             # add it to dictionary
@@ -145,6 +158,7 @@ with open(corpname_csv, 'r') as corpname_csv_file:
         
         # create json
         corpname_json = json.dumps(row_dictionary)
+        print corpname_json
         
        
         '''
@@ -152,6 +166,17 @@ with open(corpname_csv, 'r') as corpname_csv_file:
         
         # post the corpname
         corpnames = requests.post(base_url + '/agents/corporate_entities', headers = headers, data = corpname_json).json()
+        print corpnames
         
 
+        '''
+        get uri and append it to new csv'''
+        # write row of csv
+        # open the csv in append mode
+        with open(corpname_uris, 'ab') as corpname_uris_csv_file:
+            # set up the writer
+            corpname_uris_csv_file_writer = csv.writer(corpname_uris_csv_file)
+            # write the headers
+            if "status" in corpnames:
+                corpname_uris_csv_file_writer.writerow([original, corpnames["uri"]])
         
