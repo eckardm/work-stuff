@@ -29,6 +29,13 @@ password = 'password'
 '''
 set up session in archivesspace using requests'''
 
+# get authorization and return as json
+authorization = requests.post(base_url + '/users/' + username + '/login?password=' + password).json()
+# get the session token
+session_token = authorization["session"]
+# create the headers we'll need for posting
+headers = {'X-ArchivesSpace-Session': session_token}
+
 
 '''
 go through csv, create a list of dictionaries for each entry'''
