@@ -23,7 +23,7 @@ base_url = 'http://localhost:8089'
 # username default
 username = 'admin'
 # password default
-password = 'password'
+password = 'admin'
 
 
 '''
@@ -76,6 +76,9 @@ with open(corpname_csv, 'r') as corpname_csv_file:
     # read it to get the data
     corpname_data = csv.reader(corpname_csv_file)
     
+    # skip the first row
+    next(corpname_data)
+    
     # go through each row
     for row in corpname_data:
         
@@ -90,6 +93,8 @@ with open(corpname_csv, 'r') as corpname_csv_file:
         qualifier = row[11]
         # authority id
         authority_id = row[2]
+        # source
+        source = row[3]
         
         # set up list and dictionaries
         row_dictionary = {}
@@ -119,10 +124,12 @@ with open(corpname_csv, 'r') as corpname_csv_file:
         if authority_id:
             # add it to dictionary
             corpname_dictionary["authority_id"] = authority_id
+        # if source exists
+        if source:
+            # add it to dictionary
+            corpname_dictionary["source"] = source
                 
         # add other required fields to dictionary
-        # source
-        corpname_dictionary["source"] = "naf"
         # auto generate sort name
         corpname_dictionary["sort_name_auto_generate"] = True
         
@@ -139,9 +146,12 @@ with open(corpname_csv, 'r') as corpname_csv_file:
         # create json
         corpname_json = json.dumps(row_dictionary)
         
-        
+       
         '''
         post it to archivesspace'''
         
         # post the corpname
-        corpnames = requests.post(base_url + '/agents/corporate_entities/', headers = headers, data = corpname_json)
+        corpnames = requests.post(base_url + '/agents/corporate_entities', headers = headers, data = corpname_json).json()
+        
+
+        
