@@ -139,4 +139,9 @@ with open(corpname_csv, 'r') as corpname_csv_file:
         # create json
         corpname_json = json.dumps(row_dictionary)
         
-        print corpname_json
+        
+        '''
+        post it to archivesspace'''
+        
+        # post the corpname
+        corpnames = requests.post(base_url + '/agents/corporate_entities/', headers = headers, data = corpname_json)
