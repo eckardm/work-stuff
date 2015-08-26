@@ -97,7 +97,7 @@ with open(famname_csv, 'r') as famname_csv_file:
         # family name
         family_name = row[7]
         # qualifier
-        qualifier = row[9]]
+        qualifier = row[9]
         # authority id
         authority_id = row[2]
         # source
@@ -163,5 +163,6 @@ with open(famname_csv, 'r') as famname_csv_file:
             # set up the writer
             famname_uris_csv_file_writer = csv.writer(famname_uris_csv_file)
             # write the headers
-            famname_uris_csv_file_writer.writerow([original, famnames["uri"]])
+            if "status" in famnames:
+                famname_uris_csv_file_writer.writerow([original, famnames["uri"]])
         
