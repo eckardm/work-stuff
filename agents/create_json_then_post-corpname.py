@@ -128,7 +128,7 @@ with open(corpname_csv, 'r') as corpname_csv_file:
         # if a second subordinate name exists
         if subordinate_name_2:
             # append it
-            corpname_dictionary["subordinate_name_1"] = subordinate_name_1
+            corpname_dictionary["subordinate_name_2"] = subordinate_name_2
         # if a qualifer exists
         if qualifier:
             # append it
