@@ -48,7 +48,6 @@ for filename in tqdm(os.listdir(ead_folder)):
             # go through them
             for number_that_might_be_date in numbers_that_might_be_dates:
             
-                               
                # if it's not a range
                 if "-" not in number_that_might_be_date:
                     # see if they are in the appropriate date range and don't have quotes
@@ -56,7 +55,7 @@ for filename in tqdm(os.listdir(ead_folder)):
                         # add one to the counter
                         counter += 1
              
-             # if it is a range
+               # if it is a range
                 else:
                     # get the start date
                     number_that_might_be_date_start = number_that_might_be_date.split('-')[0].strip()
