@@ -40,6 +40,7 @@ with open(numbers_that_might_be_dates_report, 'wb') as csv_file:
     # write the headers
     csv_file_writer.writerow(['Filename', 'XPath', 'Suspicious Number', 'Context'])
 
+    
 '''
 go through eads and look for numbers that might be dates'''
 
