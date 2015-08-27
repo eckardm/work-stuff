@@ -1,6 +1,9 @@
 '''
 first, import what we need'''
 
+# csv implements classes to read and write tabular data in csv format
+import csv
+
 # lxml is a powerful xml document parser, you'll need to install it
 from lxml import etree
 
@@ -24,6 +27,15 @@ ead_folder = 'C:/Users/eckardm/vandura/Real_Masters_all'
 # counter
 counter = 0
 
+# where do we want to output report
+numbers_that_might_be_dates_report = 'numbers_that_might_be_dates_report.csv'
+
+# create the headers in that output report in write mode
+with open(numbers_that_might_be_dates_report, 'w') as csv_file:
+    # create the writer
+    csv_file_writer = csv.writer(csv_file)
+    # write the headers
+    csv_file_writer.writerow(['Filename', 'XPath', 'Suspicious Number', 'Context'])
 
 '''
 go through eads and look for numbers that might be dates'''
