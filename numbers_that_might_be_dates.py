@@ -133,7 +133,7 @@ for filename in tqdm(os.listdir(ead_folder)):
 make the report'''
 
 # print the high-level overview
-print 'Found ' + str(counter) + ' suspicious numbers in ' + str(len(histogram)) + ' files.'
+print 'Found ' + str(counter) + ' numbers that might be dates in ' + str(len(histogram)) + ' files.'
 
 # print the histogram
 print "Here's the historgram:"
