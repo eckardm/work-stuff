@@ -9,3 +9,22 @@ The following scripts and CSVs take Agents (ArchivesSpace-speak) or Names (Archi
   
 There are also a number of micellaneous scripts that were used during cleanup and to generate reports.
 
+Get Agents
+----------
+
+### getsubjects.py
+
+Goes through our EADs, generates a list of dictionaries of agent elements, and uses this dictionary to generate the **corpname.csv**, **famname.csv*** and **persname.csv*** to be used in OpenRefine.
+
+### corpname.csv
+
+Output of the **getsubjects.py** script for corpname elements.
+
+### famname.csv
+
+Output of the **getsubjects.py** script for famname elements.
+
+### persname.csv
+
+Output of the **getsubjects.py** script for persname elements.
+
