@@ -77,6 +77,10 @@ for filename in tqdm(os.listdir(ead_folder)):
                 # if this **really** is not a nested title
                 if (context.endswith(number_that_might_be_date) == False and ('"' in context.split(number_that_might_be_date)[0] and '"' in context.split(number_that_might_be_date)[1])):
                     continue
+                    
+                # turns out facport.xml has a bunch of persnames
+                if filename == 'facport.xml':
+                    continue
 
                 # if it's not a range
                 if '-' not in number_that_might_be_date:
