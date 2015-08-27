@@ -81,6 +81,10 @@ for filename in tqdm(os.listdir(ead_folder)):
                 # turns out facport.xml has a bunch of persnames, so does regport
                 if filename == 'facport.xml' or filename == 'regport.xml':
                     continue
+                    
+                # we should also skip this one
+                if filename == 'riegled.xml':
+                    continue
 
                 # if it's not a range
                 if '-' not in number_that_might_be_date:
