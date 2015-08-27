@@ -128,11 +128,15 @@ for filename in tqdm(os.listdir(ead_folder)):
                             # write the row
                             csv_file_writer.writerow([filename, number_that_might_be_date_xpath, number_that_might_be_date, context])
             
-# print it out
+
+'''
+make the report'''
+
+# print the high-level overview
 print 'Found ' + str(counter) + ' suspicious numbers in ' + str(len(histogram)) + ' files.'
 
+# print the histogram
 print "Here's the historgram:"
-
 for key, value in sorted(histogram.iteritems(), key=lambda (k,v): (v,k), reverse=True):
     print "%s: %s" % (key, value)
   
