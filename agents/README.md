@@ -14,7 +14,7 @@ Get Agents
 
 ### getsubjects.py
 
-Goes through our EADs, generates a list of dictionaries of agent elements, and uses this dictionary to generate the **corpname.csv**, **famname.csv*** and **persname.csv*** CSVs to be used in OpenRefine. The section that generates the **persname.csv** CSV is currently commented out because Walker took this over (see Walker's [persname parsing scripts](https://github.com/walkerdb/bentley_code/tree/master/main_projects/persname_parsing).
+Goes through our EADs, generates a list of dictionaries of unique agent elements, and uses this dictionary to generate the **corpname.csv**, **famname.csv*** and **persname.csv*** CSVs to be used in OpenRefine. The section that generates the **persname.csv** CSV is currently commented out because Walker took this over (see Walker's [persname parsing scripts](https://github.com/walkerdb/bentley_code/tree/master/main_projects/persname_parsing).
 
 ### corpname.csv
 
@@ -54,4 +54,28 @@ What we're left with after Walker's persname parsing scripts.
 Post Agents
 -----------
 
-###
+### create_json_then_post-corpname.py
+
+Creates the JSON expected by the ArchivesSpace API for corpname elements, programmatically posts them to ArchivesSpace and returns the **corpname-uris.csv** CSV with the URI for each unique subject.
+
+### corpname-uris.csv
+
+Output of the **create_json_then_post-corpname.py** script.
+
+### create_json_then_post-famname.py
+
+Creates the JSON expected by the ArchivesSpace API for famname elements, programmatically posts them to ArchivesSpace and returns the **famname-uris.csv** CSV with the URI for each unique subject.
+
+### famname-uris.csv
+
+Output of the **create_json_then_post-famname.py** script.
+
+### create_json_then_post-persname.py
+
+Creates the JSON expected by the ArchivesSpace API for persname elements, programmatically posts them to ArchivesSpace and returns the **persname-uris.csv** CSV with the URI for each unique subject.
+
+### persname-uris.csv
+
+Output of the **create_json_then_post-persname.py** script.
+
+
