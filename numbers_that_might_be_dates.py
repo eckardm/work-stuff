@@ -56,18 +56,24 @@ for filename in tqdm(os.listdir(ead_folder)):
             
             # find numbers that might be dates
             numbers_that_might_be_dates = re.findall('\s\d{4}\-?\d{4}?', unittitle_string_without_unitdate)
-          
+            
             # go through them
             for number_that_might_be_date in numbers_that_might_be_dates:
             
-               # if it's not a range
+                # get the xpath for the report
+                number_that_might_be_date_xpath = ead_tree.getpath(number_that_might_be_date)
+                
+                # get the context for the report
+                context = unittitle_string_without_unitdate.replace('<unittitle>', '').replace('</unittitle>', '').strip()
+
+                # if it's not a range
                 if "-" not in number_that_might_be_date:
                     # see if they are in the appropriate date range and don't have quotes
                     if 1800 <= int(number_that_might_be_date[:-4]) <= 2015 and not unittitle_string_without_unitdate.split(number_that_might_be_date)[1].startswith('"'):
                         # add one to the counter
                         counter += 1
              
-               # if it is a range
+                # if it is a range
                 else:
                     # get the start date
                     number_that_might_be_date_start = number_that_might_be_date.split('-')[0].strip()
