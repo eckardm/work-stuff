@@ -27,6 +27,9 @@ ead_folder = 'C:/Users/eckardm/vandura/Real_Masters_all'
 # counter
 counter = 0
 
+# histogram
+histogram = {}
+
 # where do we want to output report
 numbers_that_might_be_dates_report = 'numbers_that_might_be_dates_report.csv'
 
@@ -82,6 +85,12 @@ for filename in tqdm(os.listdir(ead_folder)):
                         # add one to the counter
                         counter += 1
                         
+                        # update the histogram
+                        if filename not in histogram:
+                            histogram[filename] = 1
+                        else:
+                            histogram[filename] += 1
+                        
                         # open the report in super append mode
                         with open(numbers_that_might_be_dates_report, 'ab') as csv_file:
                             # create the writer
@@ -101,6 +110,12 @@ for filename in tqdm(os.listdir(ead_folder)):
                         # add one to the counter
                         counter += 1
                         
+                        # update the histogram
+                        if filename not in histogram:
+                            histogram[filename] = 1
+                        else:
+                            histogram[filename] += 1
+                        
                         # open the report in super append mode
                         with open(numbers_that_might_be_dates_report, 'ab') as csv_file:
                             # create the writer
@@ -109,5 +124,5 @@ for filename in tqdm(os.listdir(ead_folder)):
                             csv_file_writer.writerow([filename, number_that_might_be_date_xpath, number_that_might_be_date, context])
             
 # print it out
-print 'found: ' + str(counter)
+print 'Found ' + str(counter) + ' suspicious numbers in ' + str(len(histogram)) + ' files.'
   
