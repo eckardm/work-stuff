@@ -126,4 +126,9 @@ for filename in tqdm(os.listdir(ead_folder)):
             
 # print it out
 print 'Found ' + str(counter) + ' suspicious numbers in ' + str(len(histogram)) + ' files.'
+
+print "Here's the historgram:"
+
+for key, value in sorted(histogram.iteritems(), key=lambda (k,v): (v,k), reverse=True):
+    print "%s: %s" % (key, value)
   
