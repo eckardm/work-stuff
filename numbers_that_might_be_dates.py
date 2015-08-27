@@ -30,8 +30,8 @@ counter = 0
 # where do we want to output report
 numbers_that_might_be_dates_report = 'numbers_that_might_be_dates_report.csv'
 
-# create the headers in that output report in write mode
-with open(numbers_that_might_be_dates_report, 'w') as csv_file:
+# create the headers in that output report in super write mode
+with open(numbers_that_might_be_dates_report, 'wb') as csv_file:
     # create the writer
     csv_file_writer = csv.writer(csv_file)
     # write the headers
@@ -61,7 +61,7 @@ for filename in tqdm(os.listdir(ead_folder)):
             for number_that_might_be_date in numbers_that_might_be_dates:
             
                 # get the xpath for the report
-                number_that_might_be_date_xpath = ead_tree.getpath(number_that_might_be_date)
+                number_that_might_be_date_xpath = ead_tree.getpath(unittitle)
                 
                 # get the context for the report
                 context = unittitle_string_without_unitdate.replace('<unittitle>', '').replace('</unittitle>', '').strip()
@@ -70,9 +70,17 @@ for filename in tqdm(os.listdir(ead_folder)):
                 if "-" not in number_that_might_be_date:
                     # see if they are in the appropriate date range and don't have quotes
                     if 1800 <= int(number_that_might_be_date[:-4]) <= 2015 and not unittitle_string_without_unitdate.split(number_that_might_be_date)[1].startswith('"'):
+                        
                         # add one to the counter
                         counter += 1
-             
+                        
+                        # open the report in super append mode
+                        with open(numbers_that_might_be_dates_report, 'ab') as csv_file:
+                            # create the writer
+                            csv_file_writer = csv.writer(csv_file)
+                            # write the row
+                            csv_file_writer.writerow([filename, number_that_might_be_date_xpath, number_that_might_be_date, context])
+                        
                 # if it is a range
                 else:
                     # get the start date
@@ -81,8 +89,16 @@ for filename in tqdm(os.listdir(ead_folder)):
                     number_that_might_be_date_end = number_that_might_be_date.split('-')[1]
                     # see if they are in the appropriate date range and don't have quotes
                     if 1800 <= int(number_that_might_be_date_start) and int(number_that_might_be_date_end) <= 2015 and not unittitle_string_without_unitdate.split(number_that_might_be_date_end)[1].startswith('"'):
+                        
                         # add one to the counter
                         counter += 1
+                        
+                        # open the report in super append mode
+                        with open(numbers_that_might_be_dates_report, 'ab') as csv_file:
+                            # create the writer
+                            csv_file_writer = csv.writer(csv_file)
+                            # write the row
+                            csv_file_writer.writerow([filename, number_that_might_be_date_xpath, number_that_might_be_date, context])
                         
 # print it out
 print 'found: ' + str(counter)
