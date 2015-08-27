@@ -14,7 +14,7 @@ Get Agents
 
 ### getsubjects.py
 
-Goes through our EADs, generates a list of dictionaries of agent elements, and uses this dictionary to generate the **corpname.csv**, **famname.csv*** and **persname.csv*** to be used in OpenRefine.
+Goes through our EADs, generates a list of dictionaries of agent elements, and uses this dictionary to generate the **corpname.csv**, **famname.csv*** and **persname.csv*** CSVs to be used in OpenRefine. The section that generates the **persname.csv** CSV is currently commented out because Walker took this over (see Walker's [persname parsing scripts](https://github.com/walkerdb/bentley_code/tree/master/main_projects/persname_parsing).
 
 ### corpname.csv
 
@@ -28,3 +28,30 @@ Output of the **getsubjects.py** script for famname elements.
 
 Output of the **getsubjects.py** script for persname elements.
 
+Parse Agents
+------------
+
+### corpname.json
+
+OpenRefine JSON used for parsing the **corpname.csv** CSV.
+
+### agents-corpname.csv
+
+Output of OpenRefine after **corpname.json** has been used.
+
+### famname.json
+
+OpenRefine JSON used for parsing the **famname.csv** CSV.
+
+### agents-famname.csv
+
+Output of OpenRefine after **famname.json** has been used.
+
+### agents-persname.csv
+
+What we're left with after Walker's persname parsing scripts.
+
+Post Agents
+-----------
+
+###
