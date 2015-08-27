@@ -65,40 +65,43 @@ for filename in tqdm(os.listdir(ead_folder)):
                 
                 # get the context for the report
                 context = unittitle_string_without_unitdate.replace('<unittitle>', '').replace('</unittitle>', '').strip()
+                
+                # if this is not a nested title
+                if '<title' not in context and '<unittitle' not in context:
 
-                # if it's not a range
-                if "-" not in number_that_might_be_date:
-                    # see if they are in the appropriate date range and don't have quotes
-                    if 1800 <= int(number_that_might_be_date[:-4]) <= 2015 and not unittitle_string_without_unitdate.split(number_that_might_be_date)[1].startswith('"'):
-                        
-                        # add one to the counter
-                        counter += 1
-                        
-                        # open the report in super append mode
-                        with open(numbers_that_might_be_dates_report, 'ab') as csv_file:
-                            # create the writer
-                            csv_file_writer = csv.writer(csv_file)
-                            # write the row
-                            csv_file_writer.writerow([filename, number_that_might_be_date_xpath, number_that_might_be_date, context])
-                        
-                # if it is a range
-                else:
-                    # get the start date
-                    number_that_might_be_date_start = number_that_might_be_date.split('-')[0].strip()
-                    # get the end date
-                    number_that_might_be_date_end = number_that_might_be_date.split('-')[1]
-                    # see if they are in the appropriate date range and don't have quotes
-                    if 1800 <= int(number_that_might_be_date_start) and int(number_that_might_be_date_end) <= 2015 and not unittitle_string_without_unitdate.split(number_that_might_be_date_end)[1].startswith('"'):
-                        
-                        # add one to the counter
-                        counter += 1
-                        
-                        # open the report in super append mode
-                        with open(numbers_that_might_be_dates_report, 'ab') as csv_file:
-                            # create the writer
-                            csv_file_writer = csv.writer(csv_file)
-                            # write the row
-                            csv_file_writer.writerow([filename, number_that_might_be_date_xpath, number_that_might_be_date, context])
+                    # if it's not a range
+                    if "-" not in number_that_might_be_date:
+                        # see if they are in the appropriate date range and don't have quotes
+                        if 1800 <= int(number_that_might_be_date[:-4]) <= 2015 and not unittitle_string_without_unitdate.split(number_that_might_be_date)[1].startswith('"'):
+                            
+                            # add one to the counter
+                            counter += 1
+                            
+                            # open the report in super append mode
+                            with open(numbers_that_might_be_dates_report, 'ab') as csv_file:
+                                # create the writer
+                                csv_file_writer = csv.writer(csv_file)
+                                # write the row
+                                csv_file_writer.writerow([filename, number_that_might_be_date_xpath, number_that_might_be_date, context])
+                            
+                    # if it is a range
+                    else:
+                        # get the start date
+                        number_that_might_be_date_start = number_that_might_be_date.split('-')[0].strip()
+                        # get the end date
+                        number_that_might_be_date_end = number_that_might_be_date.split('-')[1]
+                        # see if they are in the appropriate date range and don't have quotes
+                        if 1800 <= int(number_that_might_be_date_start) and int(number_that_might_be_date_end) <= 2015 and not unittitle_string_without_unitdate.split(number_that_might_be_date_end)[1].startswith('"'):
+                            
+                            # add one to the counter
+                            counter += 1
+                            
+                            # open the report in super append mode
+                            with open(numbers_that_might_be_dates_report, 'ab') as csv_file:
+                                # create the writer
+                                csv_file_writer = csv.writer(csv_file)
+                                # write the row
+                                csv_file_writer.writerow([filename, number_that_might_be_date_xpath, number_that_might_be_date, context])
                         
 # print it out
 print 'found: ' + str(counter)
