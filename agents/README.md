@@ -54,6 +54,8 @@ What we're left with after Walker's persname parsing scripts.
 Post Agents
 -----------
 
+This was inspired by Dallas's [post subjects script](https://github.com/djpillen/bentley_scripts/blob/master/post_subjects.py). 
+
 ### create_json_then_post-corpname.py
 
 Creates the JSON expected by the ArchivesSpace API for corpname elements, programmatically posts them to ArchivesSpace and returns the **corpname-uris.csv** CSV with the URI for each unique subject.
@@ -78,4 +80,39 @@ Creates the JSON expected by the ArchivesSpace API for persname elements, progra
 
 Output of the **create_json_then_post-persname.py** script.
 
+Miscellaneous
+-------------
 
+### check_geogname.py
+
+There were some corpname elements that looked suspiciously like geogname elements. 
+
+This script goes through the **corpname.csv** CSV to check to see if any of the corpname elements return hits through the VIAF API.
+
+### make_name_source_dictionary.py
+
+Many agents had missing or inaccurate source attributes. 
+
+This script goes through the EADs and builds a dictionary of agents and their source attributes. It then then goes back through the EADs and tries to add the appropriate source attribute to any source that's missing one. 
+
+### no_source_report.py
+
+Many agents had missing or inaccurate source attributes. 
+
+This script generates a simple report of agents that don't have source attributes.
+
+### report.py
+
+Many agents had missing or inaccurate source attributes. 
+
+This script generates a simple report of agents and the variety and number of their source attributes.
+
+### update_corpnames.py
+
+Many agents had missing or inaccurate source attributes. 
+
+This script goes through the EADs and builds adds a source attribute value of "lcnaf" to any remaining coprname elements.
+
+### update_persnames.py
+
+This script goes through the EADs and builds adds a source attribute value of "lcnaf" to any remaining persname elements.
