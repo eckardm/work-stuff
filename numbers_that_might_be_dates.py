@@ -25,10 +25,10 @@ preliminaries'''
 ead_folder = 'C:/Users/eckardm/vandura/Real_Masters_all'
 
 # counter
-counter = 0
+suspicious_number_counter = 0
 
 # histogram
-histogram = {}
+file_counter = {}
 
 # where do we want to output report
 numbers_that_might_be_dates_report = 'numbers_that_might_be_dates_report.csv'
