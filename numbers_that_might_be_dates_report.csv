@@ -40,7 +40,6 @@ assasist.xml,/ead/archdesc/dsc/c01[2]/c02[2]/did/unittitle, 1970-1979,(primarily
 assasist.xml,/ead/archdesc/dsc/c01[2]/c02[2]/c03[11]/c04[28]/c05[3]/did/unittitle, 1975-1980,"Computarization, 1975-1980"
 assasist.xml,/ead/archdesc/dsc/c01[2]/c02[2]/c03[24]/c04[1]/did/unittitle, 1971-1982,(primarily 1971-1982)
 asstpres.xml,/ead/archdesc/dsc/c01[6]/c02[35]/did/unittitle, 1954-1955,"Hobbs Airfield, 1954-1955,1968"
-asstpres.xml,/ead/archdesc/dsc/c01[8]/c02[6]/did/unittitle, 19401978,"Biological Station, Executive Committee, 19401978"
 athdept.xml,/ead/archdesc/dsc/c01[1]/c02[9]/c03[2]/c04[3]/c05[5]/did/unittitle, 1980-1198,"Reunion team photo, ca 1980-11985"
 athdept.xml,/ead/archdesc/dsc/c01[1]/c02[12]/c03[3]/c04[1]/c05[1]/c06[2]/did/unittitle, 1987-2001,1987-2001/02
 athdept.xml,/ead/archdesc/dsc/c01[1]/c02[26]/c03[2]/c04[3]/c05[1]/c06[1]/did/unittitle, 1994-2000,"Season Files and Media guides,  1994-20001"
@@ -49,6 +48,7 @@ athdept.xml,/ead/archdesc/dsc/c01[1]/c02[34]/c03[1]/c04[1]/did/unittitle, 1860-1
 athdept.xml,/ead/archdesc/dsc/c01[3]/c02[4]/c03[1]/c04[19]/c05[1]/did/unittitle, 1986-1992,"General, 1986-1992-1993"
 atkinsd.xml,/ead/archdesc/dsc/c01[3]/c02[2]/c03[57]/did/unittitle, 1993-1994,"Panko, Walter, 1993-19944"
 axelrods.xml,/ead/archdesc/dsc/c01[3]/c02[20]/did/unittitle, 1977-1981,"University of California at Irvine, 1977-19811"
+axelrods.xml,/ead/archdesc/dsc/c01[4]/c02[1]/c03[15]/did/unittitle, 1949-1957,"Terris, Dr. Milton 1949-1957,  (New York Medical College)"
 bachbarb.xml,/ead/archdesc/dsc/c01[4]/c02[3]/did/unittitle, 1980-1982,Ann Arbor Democratic Party (Chair 1980-1982)
 bakerdea.xml,/ead/archdesc/dsc/c01[5]/c02[2]/c03[4]/did/unittitle, 1994-1995,"Open Meeting Act/Freedom of Information Requests re. 1987/1988 Search, 1994-1995"
 bakerhf.xml,/ead/archdesc/dsc/c01[2]/c02[3]/did/unittitle, 1910-1912,"Papers, concerning the Conference of Progressive State Granges, 1910-1912"
@@ -92,11 +92,11 @@ bhl.xml,/ead/archdesc/dsc/c01[2]/c02[2]/c03[5]/c04[18]/did/unittitle, 1972-1998,
 bhl.xml,/ead/archdesc/dsc/c01[3]/c02[3]/c03[48]/did/unittitle, 1910-1930,"Goin' north: Black Detroit and the great migration  (copy prints separately cataloged as Going north: Black Detroit and the great migration, 1910-1930)"
 bhl.xml,/ead/archdesc/dsc/c01[5]/c02[6]/did/unittitle, 1965-1969,"Alternative proposals. Jickling and Lyman, architects. Renderings, site plans and floor plans. Twenty-eight sheets, 1965-1969. Blue line prints."
 bhl.xml,/ead/archdesc/dsc/c01[5]/c02[7]/did/unittitle, 1965-1969,"Alternative proposals. Jickling and Lyman, architects. Renderings, site plans and floor plans. Twenty-eight sheets, 1965-1969. Blue line prints."
+bhlpubs.xml,/ead/archdesc/dsc/c01[1]/c02[3]/c03[11]/did/unittitle, 1918-1919,"No. 11, American Intervention in Northern Russia 1918-1919 The Polar Bear Expedition: A Guide to the Resources in the Michigan Historical Collections,"
 biciath.xml,/ead/archdesc/dsc/c01[3]/c02[18]/did/unittitle, 1948-1951,"Engagements accepted, 1948-1951/52"
 biciath.xml,/ead/archdesc/dsc/c01[3]/c02[68]/c03[5]/did/unittitle, 1897-1903,"Data on teams, 1897-1903."
 biciath.xml,/ead/archdesc/dsc/c01[3]/c02[69]/did/unittitle, 1947-1951,"Golf Course Club House (progress reports, 1947-1951)"
 biciath.xml,/ead/archdesc/dsc/c01[3]/c02[80]/did/unittitle, 1893-1905,"Account books of Charles Baird, 1893-1905"
-bimedcom.xml,/ead/archdesc/dsc/c01[1]/c02[3]/c03[80]/did/unittitle, 19781982,"Gronvall, John A.  19781982"
 bimedcom.xml,/ead/archdesc/dsc/c01[3]/c02[3]/c03[1]/did/unittitle, 1970-1973,(Classes of 1970-1973)
 binkcoll.xml,/ead/archdesc/dsc/c01[2]/c02[38]/did/unittitle, 1934-1983,"Sadowski, George, 1934-1983)"
 birkertg.xml,/ead/archdesc/dsc/c01[1]/c02[3]/c03[1]/did/unittitle, 1946-1947,"""Schrifttumsverzeichnis fur Architektur-Studierende"" (Student Reading List), Winter Semester, 1946-1947. Notebook with drawings of student projects"
@@ -119,7 +119,7 @@ busadmin.xml,/ead/archdesc/dsc/c01[2]/c02[2]/c03[2]/c04[1]/did/unittitle, 1963-1
 butleri.xml,/ead/archdesc/dsc/c01[2]/c02[1]/c03[1]/did/unittitle, 1923-1925,Letters from Irene Butler to William Butler  (mainly 1923-1925)
 butleri.xml,/ead/archdesc/dsc/c01[2]/c02[1]/c03[2]/did/unittitle, 1923-1925,Letters from William Butler to Irene Butler  (mainly 1923-1925)
 caasum.xml,/ead/archdesc/dsc/c01[1]/c02[5]/c03[13]/c04[1]/c05[7]/did/unittitle, 1987-1988,"National Conferences on South Africa and Apartheid, 1987-1988"
-caasum.xml,/ead/archdesc/dsc/c01[3]/c02[10]/c03[118]/did/unittitle, 1971-1991,"Wagaw, Teshome, Publications, 1971-1991(3 folders)"
+caasum.xml,/ead/archdesc/dsc/c01[3]/c02[10]/c03[118]/did/unittitle, 1971-1991,"Wagaw, Teshome, Publications, 1971-1991"
 caasum.xml,/ead/archdesc/dsc/c01[4]/c02[1]/c03[18]/did/unittitle, 1962-1974,"Obika Gray: State Power and Formats of Opposition: Post Independence Jamaica, 1962-1974"
 caasum.xml,/ead/archdesc/dsc/c01[4]/c02[4]/c03[14]/did/unittitle, 1880-1930,"Neil Foley: The New South in the Southwest: Anglos, Blacks and Chicanos in Central Texas 1880-1930"
 caasum.xml,/ead/archdesc/dsc/c01[4]/c02[4]/c03[43]/did/unittitle, 1890-1920,"Nancy Mirabal: Extending the Taboo: Afro-Cubans in Ybor City, 1890-1920"
@@ -144,36 +144,37 @@ chholysp.xml,/ead/archdesc/dsc/c01[4]/c02[3]/did/unittitle, 1995-1999,Parish Sta
 choffman.xml,/ead/archdesc/dsc/c01[11]/c02[3]/c03[6]/c04[5]/c05[8]/c06[1]/did/unittitle, 1950-1953,"Minutes, 1950-1953"
 churchm.xml,/ead/archdesc/dsc/c01[7]/c02[2]/c03[1]/did/unittitle, 1948-1965,"Annual Report, 1948-1965"
 cianciol.xml,/ead/archdesc/dsc/c01[2]/c02[1]/c03[13]/did/unittitle, 1983-1988,"Trotter House, Financial, 1983-1988l"
+classstud.xml,/ead/archdesc/dsc/c01[1]/c02[21]/did/unittitle, 1949-1950,"Scott, Thomas (Novelists responses 1949-1950 about importance of Latin study) Letters Collection,"
 cmenas.xml,/ead/archdesc/dsc/c01[4]/c02[2]/c03[14]/c04[1]/c05[5]/did/unittitle, 1986-1919,"Salman Jayyusi, 1986-191990"
 cmenas.xml,/ead/archdesc/dsc/c01[9]/c02[10]/did/unittitle, 1991-1919,"Travel, 1991-191993"
 coledavd.xml,/ead/archdesc/dsc/c01[1]/c02[3]/c03[1]/c04[8]/did/unittitle, 1975-1989,notes (includes list of seminar themes from 1975-1989)
-coledavd.xml,/ead/archdesc/dsc/c01[3]/c02[2]/c03[11]/c04[3]/did/unittitle, 19972002,"Invest in France Agency, 19972002"
 colemanc.xml,/ead/archdesc/dsc/c01[1]/c02[33]/did/unittitle, 1945-1953,"Deconcentration and decartelization in West Germany, 1945-1953 by J.F.J. Gillen"
 communic.xml,/ead/archdesc/dsc/c01[7]/c02[1]/c03[8]/did/unittitle, 1980-1981,(primarily 1980-1981)
+converse.xml,/ead/archdesc/dsc/c01[1]/c02[5]/did/unittitle, 1890-1960,"""The Survey Research Center at Michigan: From the Margins of Government"" and ""The Academic Establishment of Survey Research: A Summary and Evaluation"" (Chapters from Survey Research in the United States: Roots and Emergence 1890-1960,  by Jean Converse)"
 copehelg.xml,/ead/archdesc/dsc/c01/c02[3]/did/unittitle, 1804-1987,"James Jones Family of Meade, Michigan, 1804-1987, booklet by H. G. Cope, updated"
 cowleshc.xml,/ead/archdesc/dsc/c01[6]/c02[3]/did/unittitle, 1910-1911,Evaporation averages 1910-1911
 cranecar.xml,/ead/archdesc/dsc/c01[1]/c02[4]/c03[2]/did/unittitle, 1896-1897,"Condensed Program, Calendar of Meetings, 1896-1897"
 cranehh.xml,/ead/archdesc/dsc/c01[1]/did/unittitle, 1938-1958,"Correspondence, 1938-1958"
 cranehh.xml,/ead/archdesc/dsc/c01[1]/c02[3]/c03[6]/did/unittitle, 1948-1952,"Crane, Henry H., 1948-1952"
 cranehh.xml,/ead/archdesc/dsc/c01[1]/c02[3]/c03[7]/did/unittitle, 1953-1955,"Crane, Henry H., 1953-1955"
-cranehh.xml,/ead/archdesc/dsc/c01[1]/c02[14]/c03[2]/did/unittitle, 1939-1958,"Oxnam, G. Bromley, 1939-1958 (3 folders)"
+cranehh.xml,/ead/archdesc/dsc/c01[1]/c02[14]/c03[2]/did/unittitle, 1939-1958,"Oxnam, G. Bromley, 1939-1958"
 cranehh.xml,/ead/archdesc/dsc/c01[1]/c02[15]/c03[3]/did/unittitle, 1939-1945,"Phillips, John M, 1939-1945"
 cranehh.xml,/ead/archdesc/dsc/c01[1]/c02[15]/c03[4]/did/unittitle, 1945-1958,"Phillips (John M.) family, 1945-1958 (2 folders)"
-cranehh.xml,/ead/archdesc/dsc/c01[1]/c02[15]/c03[6]/did/unittitle, 1946-1958,"Price, Bill and Helen, 1946-1958 (2 folders)"
-cranehh.xml,/ead/archdesc/dsc/c01[1]/c02[16]/c03[2]/did/unittitle, 1939-1958,"Reisner, Ensworth, 1939-1958 (2 folders)"
+cranehh.xml,/ead/archdesc/dsc/c01[1]/c02[15]/c03[6]/did/unittitle, 1946-1958,"Price, Bill and Helen, 1946-1958"
+cranehh.xml,/ead/archdesc/dsc/c01[1]/c02[16]/c03[2]/did/unittitle, 1939-1958,"Reisner, Ensworth, 1939-1958"
 cranehh.xml,/ead/archdesc/dsc/c01[1]/c02[16]/c03[4]/did/unittitle, 1952-1954,"Rosenberg case, 1952-1954"
 cranehh.xml,/ead/archdesc/dsc/c01[1]/c02[16]/c03[5]/did/unittitle, 1939-1958,"Round Table of Christians and Jews, 1939-1958"
 cranehh.xml,/ead/archdesc/dsc/c01[1]/c02[17]/c03[3]/did/unittitle, 1943-1957,"Safran, John (and family), 1943-1957 (2 folders)"
-cranehh.xml,/ead/archdesc/dsc/c01[1]/c02[20]/c03[2]/did/unittitle, 1940-1958,"Vandercook, Del C., 1940-1958 (3 folders)"
+cranehh.xml,/ead/archdesc/dsc/c01[1]/c02[20]/c03[2]/did/unittitle, 1940-1958,"Vandercook, Del C., 1940-1958"
 cranevw.xml,/ead/archdesc/dsc/c01[2]/c02[15]/did/unittitle, 1969-1973,Clippings  and 1969-1973concerning Benjamin Franklin
 cranevw.xml,/ead/archdesc/dsc/c01[4]/c02[12]/did/unittitle, 1929-1930,"Dictionary of American Biography, 1929-19301932 Edward McCrady, Jr., Henry Woodward, Arthur L. Cross"
 cranevw.xml,/ead/archdesc/dsc/c01[4]/c02[28]/did/unittitle, 1929-1959,"Reviews, 1929-1959by Verner W. Crane"
 crislerh.xml,/ead/archdesc/dsc/c01[5]/did/unittitle, 1923-1947,"Football Material, 1923-1947"
 crumpjen.xml,/ead/archdesc/dsc/c01[2]/c02[2]/c03[3]/did/unittitle, 1969-1977,"Medical care in Washtenaw County, clippings, 1969-19773"
-cssmith.xml,/ead/archdesc/dsc/c01[1]/c02[3]/did/unittitle, 1921-1923,"Stenographer's notepads of correspondence and other writings, 1921-1923 (2 folders)"
+cssmith.xml,/ead/archdesc/dsc/c01[1]/c02[3]/did/unittitle, 1921-1923,"Stenographer's notepads of correspondence and other writings, 1921-1923"
+culvermm.xml,/ead/archdesc/dsc/c01[2]/c02[8]/did/unittitle, 1809-1896,"Stephen Mills 1809-1896 his life, his times, and his house,"
 dawsonro.xml,/ead/archdesc/dsc/c01/did/unittitle, 1918-1920,"In Bolshevik hands, 1918-1920"
 dejong.xml,/ead/archdesc/dsc/c01[3]/c02[17]/c03[1]/did/unittitle, 1949-1963,"Budgets, 1949-1963/64 (scattered)"
-dentpub.xml,/ead/archdesc/dsc/c01[1]/c02[10]/c03[3]/did/unittitle, 20092010,Commencement Programs  20092010
 dentsch.xml,/ead/archdesc/dsc/c01[1]/c02[1]/c03[6]/c04[4]/did/unittitle, 1873-1895,"Ledger from Dr. James, 1873-1895"
 dentsch.xml,/ead/archdesc/dsc/c01[2]/c02[1]/c03[3]/c04[1]/c05[1]/c06[11]/did/unittitle, 1935-1950,"Universities, 1935-1950"
 dentsch.xml,/ead/archdesc/dsc/c01[2]/c02[3]/c03[2]/c04[32]/did/unittitle, 1985-1987,"Radiation Policy Committee, 1985-1987'"
@@ -185,12 +186,11 @@ dpgmed.xml,/ead/archdesc/dsc/c01[2]/c02[22]/c03/did/unittitle, 1932-1944,Committ
 dpgmed.xml,/ead/archdesc/dsc/c01[3]/c02[3]/c03[5]/c04[21]/did/unittitle, 1979-1985,"Radiology, 1979-1985"
 dpgmed.xml,/ead/archdesc/dsc/c01[6]/c02/did/unittitle, 1953-1964,"Television Committee, 1953-1964/65"
 drda.xml,/ead/archdesc/dsc/c01[7]/c02[14]/c03[4]/c04[3]/did/unittitle, 1920-1953,"White, Albert E. (Director 1920-1953)"
-drda.xml,/ead/archdesc/dsc/c01[7]/c02[21]/c03[5]/c04[1]/did/unittitle, 19561958,"Reports, 19561958"
 drda.xml,/ead/archdesc/dsc/c01[8]/c02[1]/c03[1]/c04[4]/c05[1]/did/unittitle, 1959-1964,"Sawyer, Ralph A. (V-P 1959-1964)"
 drda.xml,/ead/archdesc/dsc/c01[8]/c02[1]/c03[1]/c04[4]/c05[2]/did/unittitle, 1964-1972,"Norman, Arthur G. (V-P 1964-1972)"
 duderst.xml,/ead/archdesc/dsc/c01[1]/c02[2]/c03[6]/c04[1]/did/unittitle, 1989-1990,Major Presentations for 1989-1990 and List of Talks
 duderst.xml,/ead/archdesc/dsc/c01[1]/c02[9]/c03[20]/did/unittitle, 1977-1979,"Faculty Awards, 1977-1979`"
-duffivan.xml,/ead/archdesc/dsc/c01[1]/c02[6]/did/unittitle, 1983-1984,Sabbaticals  1983-1984(3 folders)
+duffivan.xml,/ead/archdesc/dsc/c01[1]/c02[6]/did/unittitle, 1983-1984,Sabbaticals  1983-1984
 duncant.xml,/ead/archdesc/dsc/c01[3]/c02[7]/did/unittitle, 1945-1954,"Tours Abroad, 1945-1954-1955"
 durbanl.xml,/ead/archdesc/dsc/c01[2]/c02[2]/c03[4]/c04[6]/c05[3]/did/unittitle, 1959-1967,"Profile of the Detroit Negro, 1959-1967"
 durbanl.xml,/ead/archdesc/dsc/c01[4]/c02[1]/c03[1]/c04[3]/c05[2]/did/unittitle, 1957-1960,"Topical File, 1957-1960"
@@ -212,11 +212,8 @@ engcomm.xml,/ead/archdesc/dsc/c01[5]/c02/c03/c04[6]/c05[81]/did/unittitle, 1990-
 engcomm.xml,/ead/archdesc/dsc/c01[5]/c02/c03/c04[6]/c05[82]/did/unittitle, 1992-1993,"NAC Members as of 1992-1993-Frederick Buckman, Donald Frey, Sam Fuller, Ken Kohrs, Early"
 engcomm.xml,/ead/archdesc/dsc/c01[5]/c02/c03/c04[6]/c05[88]/did/unittitle, 2000-2001,NAC Directory 2000-2001/Mark Baker/ Lawrence Burns/ M. Eskew/ M. Korybalski/ Doug Rothwell/ R. Scott/ Peter Staudhammer/ Charla Wise
 englerj.xml,/ead/archdesc/dsc/c01[2]/c02[2]/c03[7]/c04[267]/did/unittitle, 1991-1993,Remarks: Great Lakes Accomplishments 1991-1993; American Association of State Highway and Transportation Officials (AASHTO)
-englerj.xml,/ead/archdesc/dsc/c01[2]/c02[2]/c03[10]/c04[4]/did/unittitle, 19960624,"Press Conference: ""Angler Harassment Bill"" Signing (Michigan Fisherman's Rights Act) at Brenke Fish Ladder, Lansing, Michigan, 19960624"
-englerj.xml,/ead/archdesc/dsc/c01[2]/c02[2]/c03[10]/c04[12]/did/unittitle, 19960828,"Press Conference: ""Welfare Reform Implementation,"", 19960828"
 englerj.xml,/ead/archdesc/dsc/c01[2]/c02[9]/c03[3]/c04[35]/did/unittitle, 1994-1997,Great Lakes Sea Lamprey Control (Background Letters from 1994-1997)
 englishd.xml,/ead/archdesc/dsc/c01[1]/c02[2]/c03[2]/c04[1]/did/unittitle, 1975-1976,"Carduner, Jean R. (Associate Dean) 1975-1976)"
-epismich.xml,/ead/archdesc/dsc/c01[5]/c02[4]/c03[2]/did/unittitle, 1960-1980,"<genreform normal=""Photographs"">Photographs</genreform>,  (bulk, 1960-1980)"
 esgeorge.xml,/ead/archdesc/dsc/c01[1]/c02[5]/c03[1]/did/unittitle, 1947-1948,"Applications and Awards, 1947-1948"
 esgeorge.xml,/ead/archdesc/dsc/c01[3]/c02[7]/c03[3]/c04[17]/did/unittitle, 1960-1961,"McNeil, Richard, 1960-1961Metzger, Lee H."
 esquire.xml,/ead/archdesc/dsc/c01[6]/c02[1]/did/unittitle, 1959-1960,"Manuscripts purchased, 1959-1960"
@@ -247,7 +244,7 @@ gmwill.xml,/ead/archdesc/dsc/c01[1]/c02[1]/c03[6]/c04[1]/c05[15]/did/unittitle, 
 gmwill.xml,/ead/archdesc/dsc/c01[1]/c02[1]/c03[8]/c04[2]/c05[59]/c06[5]/did/unittitle, 1955-1956,"Re: Fort Custer Station Hospital, 1955-1956"
 gmwill.xml,/ead/archdesc/dsc/c01[1]/c02[1]/c03[8]/c04[2]/c05[93]/c06[3]/did/unittitle, 1953-1956,"Workmen's Compensation Study Committee, 1953-1956"
 gmwill.xml,/ead/archdesc/dsc/c01[1]/c02[1]/c03[10]/c04[1]/c05[64]/did/unittitle, 1957-1958,"International Students Day, 1957-1958"
-gmwill.xml,/ead/archdesc/dsc/c01[1]/c02[1]/c03[10]/c04[1]/c05[65]/did/unittitle, 1957-1958,"International Students Day, 1957-1958 (11 folders)"
+gmwill.xml,/ead/archdesc/dsc/c01[1]/c02[1]/c03[10]/c04[1]/c05[65]/did/unittitle, 1957-1958,"International Students Day, 1957-1958"
 gmwill.xml,/ead/archdesc/dsc/c01[1]/c02[1]/c03[11]/c04[1]/c05[18]/did/unittitle, 1983-1984,[Box number eliminated during the 1983-1984 reprocessing of the Williams Collection]
 gmwill.xml,/ead/archdesc/dsc/c01[1]/c02[1]/c03[11]/c04[1]/c05[37]/did/unittitle, 1983-1984,[Box number eliminated during the 1983-1984 reappraisal of the Williams Collection]
 gmwill.xml,/ead/archdesc/dsc/c01[1]/c02[1]/c03[11]/c04[1]/c05[117]/did/unittitle, 1983-1984,[Box number eliminated during the 1983-1984 reprocessing of the Williams Collection]
@@ -271,14 +268,14 @@ goodmang.xml,/ead/archdesc/dsc/c01[7]/c02[1]/did/unittitle, 1943-1945,Company A 
 goodmang.xml,/ead/archdesc/dsc/c01[7]/c02[2]/did/unittitle, 1943-1945,Company A Classes of 1943-1945/U.S. Army Intelligence Part Two
 granholm.xml,/ead/archdesc/dsc/c01[2]/c02[1]/c03[10]/c04[2]/did/unittitle, 1997-1998,Prevailing Wage  (photocopies from 1997-1998)
 granholm.xml,/ead/archdesc/dsc/c01[2]/c02[1]/c03[23]/c04[5]/c05[8]/did/unittitle, 1988-2000,Cemetery Investigations  (photocopies from 1988-2000)
-granholm.xml,/ead/archdesc/dsc/c01[2]/c02[1]/c03[52]/c04[28]/did/unittitle, 1999-2003,"University of Michigan/Gratz &amp; Grutter Cases/Amicus Filing, 1999-2003(4 folders)"
+granholm.xml,/ead/archdesc/dsc/c01[2]/c02[1]/c03[52]/c04[28]/did/unittitle, 1999-2003,"University of Michigan/Gratz &amp; Grutter Cases/Amicus Filing, 1999-2003"
 granholm.xml,/ead/archdesc/dsc/c01[2]/c02[2]/c03[6]/c04[37]/c05[6]/did/unittitle, 2003-2007,"Proposal 7, Continue Executive Branch Streamlining, 2003-2007`"
 granholm.xml,/ead/archdesc/dsc/c01[2]/c02[10]/c03[120]/c04[90]/did/unittitle, 2001-2002,"Documents for Governor, (photocopies from 2001-2002)"
 granholm.xml,/ead/archdesc/dsc/c01[8]/c02[8]/c03[1]/c04[10]/did/unittitle, 2002-2003,SB 393 -- Charter Schools  (bulk 2002-2003)
+hartjane.xml,/ead/archdesc/dsc/c01[1]/c02[10]/did/unittitle, 1930-1933,"Album of photocopied clippings and letters from 1930-1933 and given to Jane Hart on the occasion of the first Philip A. Hart Memorial Lectureship and the dedication of the Philip A. Hart Moot Court Room, Georgetown University,"
 hartphil.xml,/ead/archdesc/dsc/c01[9]/c02[4]/c03[1]/did/unittitle, 1949-1950,"State Securities Commissioner papers, 1949-1950/ candidate for Secretary of State"
-hartphil.xml,/ead/archdesc/dsc/c01[11]/c02[3]/c03[98]/did/unittitle, 19750124,"Senator Hart, 19750124 [85193-564]"
 hathmary.xml,/ead/archdesc/dsc/c01[2]/did/unittitle, 1981-1990,First Presbyterian  1981-1990
-herbarium.xml,/ead/archdesc/dsc/c01[1]/c02[3]/c03[4]/c04[34]/did/unittitle, 19521945,"Dayton, William A., 19521945 U.S. Forest Service"
+herbarium.xml,/ead/archdesc/dsc/c01[1]/c02[7]/c03[19]/did/unittitle, 1837-1937,"Botany at the University of Michigan through the First Century 1837-1937 manuscript,"
 herbarium.xml,/ead/archdesc/dsc/c01[1]/c02[7]/c03[83]/did/unittitle, 1912-1913,"(Seed coat pigments -- cowpea, 1912-1913)"
 herbertj.xml,/ead/archdesc/dsc/c01[5]/c02[4]/did/unittitle, 1954-1960,"Mrs. Imogene Herbert Correspondence, 1954-1960"
 heuselt.xml,/ead/archdesc/dsc/c01[6]/c02[4]/did/unittitle, 1968-1970,Board of Education Policies and Administrative Regulations (adopted 1968-1970)
@@ -294,22 +291,21 @@ housing.xml,/ead/archdesc/dsc/c01[1]/c02[1]/c03[44]/did/unittitle, 1966-1969,"In
 housing.xml,/ead/archdesc/dsc/c01[1]/c02[3]/c03[12]/did/unittitle, 1970-1976,"Audit Reports, 1970-1976"
 hubbellt.xml,/ead/archdesc/dsc/c01[2]/did/unittitle, 1852-1930,Hussey Family  (primarily 1852-1930)
 icc.xml,/ead/archdesc/dsc/c01[3]/c02[5]/did/unittitle, 1938-1953,"(Including Owen House Book, 1938-1953)"
+icc.xml,/ead/archdesc/dsc/c01[6]/c02[4]/c03[2]/did/unittitle, 1940-1943,Congress 1940-1943 alumni as of
 ilssa.xml,/ead/archdesc/dsc/c01[2]/c02[3]/did/unittitle, 1974-1975,"ILSSA: Records, Activities, and Publications for the Year: 1974-1975."
 infolib.xml,/ead/archdesc/dsc/c01[2]/c02[3]/c03[29]/did/unittitle, 1975-1977,"Enrollment, 1975-1977;1985"
 inhumpub.xml,/ead/archdesc/dsc/c01[1]/c02[1]/did/unittitle, 1987-1998,"Annual Reports, 1987-1998/99"
 insthum.xml,/ead/archdesc/dsc/c01[2]/c02[6]/c03[2]/c04[3]/c05[1]/did/unittitle, 1992-1993,"Richard Wagner, writer, Berlin; writer in residence, Oberlin College, 1992-1993. Conference session: ""Ethnic Minorities in the National State: The Case of German-Romanians"""
 interloc.xml,/ead/archdesc/dsc/c01[1]/c02[2]/c03[6]/c04[2]/did/unittitle, 1931-1932,"Purchase of Pennington property, 1931-1932"
 interloc.xml,/ead/archdesc/dsc/c01[2]/c02[6]/c03[2]/c04[3]/c05[1]/did/unittitle, 1973-1975,"General (Marshall, Edwin, 1973-1975)"
-interloc.xml,/ead/archdesc/dsc/c01[5]/c02[1]/c03[1]/c04[3]/c05[1]/did/unittitle, 19411962,"Alumni directories, 19411962"
 interloc.xml,/ead/archdesc/dsc/c01[5]/c02[1]/c03[3]/c04[11]/did/unittitle, 1967-1968,"Student handbooks, 1964-74 (missing 1967-1968)"
 interloc.xml,/ead/archdesc/dsc/c01[6]/c02[5]/did/unittitle, 1927-1942,"Early Camp, 1927-45 (mainly 1927-1942)"
-intermed.xml,/ead/archdesc/dsc/c01[3]/c02[13]/c03[7]/did/unittitle, 19771982,"Personnel, 19771982-1983"
 intermed.xml,/ead/archdesc/dsc/c01[4]/c02[20]/c03[3]/did/unittitle, 1976-1978,"Appendix A, 1976-19781981-1982"
 intermed.xml,/ead/archdesc/dsc/c01[4]/c02[26]/did/unittitle, 1975-1978,"Consultation Service, 1975-19781981"
-intermed.xml,/ead/archdesc/dsc/c01[4]/c02[48]/did/unittitle, 19751979,"Medical Records Department, 19751979"
 intermed.xml,/ead/archdesc/dsc/c01[4]/c02[50]/did/unittitle, 1977-1978,"Medical Science III--Planning, 1977-19781981"
 intfratc.xml,/ead/archdesc/dsc/c01[3]/c02[14]/did/unittitle, 1960-1985,Fraternity Membership Statistics  (bulk 1960-1985)
 itdrec.xml,/ead/archdesc/dsc/c01[1]/c02[1]/c03[7]/c04[10]/c05[16]/did/unittitle, 1985-1987,"Networking, 1985-1987)"
+jeffalex.xml,/ead/archdesc/dsc/c01[2]/c02[3]/c03[30]/did/unittitle, 1945-1946,"Freeman Field Incident 1945-1946,"
 johnstct.xml,/ead/archdesc/dsc/c01[1]/c02[2]/c03[13]/c04[6]/did/unittitle, 1903-1911,"C.T. Johnston, far right (when State Engineer of Wy? 1903-1911)"
 johnstct.xml,/ead/archdesc/dsc/c01[1]/c02[2]/c03[13]/c04[7]/did/unittitle, 1903-1911,"C.T. Johnston, far right (when State Engineer of Wy? 1903-1911)"
 kahnalb.xml,/ead/archdesc/dsc/c01[2]/c02[5]/did/unittitle, 1903-2014,"Newspaper and Journal Articles, 1903-2014"
@@ -320,7 +316,7 @@ kellaahc.xml,/ead/archdesc/dsc/c01[2]/c02[2]/c03[17]/c04[5]/did/unittitle, 1971-
 kellaahc.xml,/ead/archdesc/dsc/c01[2]/c02[2]/c03[22]/c04[3]/did/unittitle, 1949-1956,"Articles/Clippings, 1949-1956 and"
 kelloggj.xml,/ead/archdesc/dsc/c01[5]/c02[12]/c03[1]/did/unittitle, 1895-1901,"Board, 1895-1901and"
 kelseymu.xml,/ead/archdesc/dsc/c01[5]/c02[5]/c03[3]/c04[3]/c05[1]/c06[22]/did/unittitle, 1900-1909,"List of books purchased. April 1, 1900-1909. Numbered and priced."
-kennedycg.xml,/ead/archdesc/dsc/c01[7]/c02[3]/c03[2]/c04[3]/did/unittitle, 1976-1978,"Dockets No. 101-105, 1976-1978(80 folders)"
+kennedycg.xml,/ead/archdesc/dsc/c01[7]/c02[3]/c03[2]/c04[3]/did/unittitle, 1976-1978,"Dockets No. 101-105, 1976-1978"
 kingjoral.xml,/ead/archdesc/dsc/c01[1]/c02[2]/c03[7]/did/unittitle, 1976-1979,"Hutchins, Carol (Michigan State University Basketball Player, 1976-1979)"
 kingjoral.xml,/ead/archdesc/dsc/c01[1]/c02[2]/c03[9]/did/unittitle, 1979-1983,"Maynard, Olivia [Libby] (Chair, Michigan Democratic Party, 1979-1983)"
 kingjoral.xml,/ead/archdesc/dsc/c01[1]/c02[2]/c03[11]/did/unittitle, 1989-1991,"Rivers, Lynn (Law Clerk, 1989-1991)"
@@ -343,7 +339,6 @@ leachjam.xml,/ead/archdesc/dsc/c01[3]/c02[8]/c03[1]/c04[38]/did/unittitle, 1956-
 leithem.xml,/ead/archdesc/dsc/c01[3]/c02[1]/c03[9]/did/unittitle, 1954-1972,"[Best, D.C. and E. N. Leith, ""An Optical Technique for Simultaneous Beamforming and Cross-Correlation""]  (ca. 1954-1972)"
 lewishbp.xml,/ead/archdesc/dsc/c01/c02[31]/c03[4]/did/unittitle, 1856-1943,"Russell Henry Chittenden, 1856-1943."
 lewishbp.xml,/ead/archdesc/dsc/c01/c02[40]/c03[2]/did/unittitle, 1887-1954,"Proteins in nutrition. Lewis, Howard Bishop, 1887-1954. Pamphlets and Reprints."
-lewishow.xml,/ead/archdesc/dsc/c01[3]/c02[7]/c03[1]/did/unittitle, 19421943,"Graduate Student Service Deferments, 19421943"
 libclip.xml,/ead/archdesc/dsc/c01[1]/c02[1]/c03[165]/did/unittitle, 1948-1952,Association for Independent Men (AIM) 1948-1952.
 libclip.xml,/ead/archdesc/dsc/c01[1]/c02[2]/c03[23]/did/unittitle, 1945-1954,"Bands-Symphony Band, 1945-1954."
 libclip.xml,/ead/archdesc/dsc/c01[1]/c02[4]/c03[43]/did/unittitle, 1926-1939,Discipline Committee 1926-1939.
@@ -372,7 +367,6 @@ lombardp.xml,/ead/archdesc/dsc/c01/c02[11]/did/unittitle, 1822-1922,"""Greetings
 lorche.xml,/ead/archdesc/dsc/c01[11]/c02[36]/c03[1]/c04[5]/did/unittitle, 1947-1949,Correspondence concerning restorations  (bulk 1947-1949)
 lsacoll.xml,/ead/archdesc/dsc/c01[1]/c02[56]/did/unittitle, 1975-1992,(span 1975-1992)
 lsacoll.xml,/ead/archdesc/dsc/c01[4]/did/unittitle, 1933-2007,"Executive Committee, 1933-2007"
-lsacoll.xml,/ead/archdesc/dsc/c01[14]/c02[2]/c03[1]/c04[15]/c05[2]/did/unittitle, 19791985,"Course Fees, 19791985"
 lsacoll.xml,/ead/archdesc/dsc/c01[14]/c02[2]/c03[1]/c04[54]/c05[3]/did/unittitle, 1985-1991,Scientific Literacy  (bulk 1985-1991)
 lsacoll.xml,/ead/archdesc/dsc/c01[14]/c02[3]/c03[1]/did/unittitle, 1997-2000,Centers/Departments/Programs  (bulk 1997-2000)
 lsapub.xml,/ead/archdesc/dsc/c01[2]/c02[15]/c03[1]/did/unittitle, 1958-1975,"Annual Reports, 1958-1975/76"
@@ -423,12 +417,12 @@ mimediaf.xml,/ead/archdesc/dsc/c01[2]/c02[180]/did/unittitle, 1964-1965,"Faculty
 mimediaf.xml,/ead/archdesc/dsc/c01[7]/c02[36]/c03[1]/did/unittitle, 1962-1963,"Michigan Reports, 1962-1963"
 mimediaf.xml,/ead/archdesc/dsc/c01[7]/c02[36]/c03[2]/did/unittitle, 1963-1964,"Michigan Reports, 1963-1964"
 mimediaf.xml,/ead/archdesc/dsc/c01[7]/c02[36]/c03[3]/did/unittitle, 1964-1965,"Michigan Report, 1964-1965"
+mipolhis.xml,/ead/archdesc/dsc/c01/c02[3]/did/unittitle, 1965-1969,"Elly Peterson, Michigan Republican Chair 1965-1969 Interviewed by Bill Ballenger,"
 mmsa.xml,/ead/archdesc/dsc/c01[1]/c02[5]/did/unittitle, 1990-1992,"Financial Material, 1990-1992."
 morc.xml,/ead/archdesc/dsc/c01[3]/c02[8]/c03[1]/c04[3]/did/unittitle, 1979-1980,"State Plan for Comprehensive Mental Health Services (1976), 1979-1980 update"
 morganfa.xml,/ead/archdesc/dsc/c01[2]/c02[1]/did/unittitle, 1829-1858,Autobiography (covering the years 1829-1858)
 mullinsr.xml,/ead/archdesc/dsc/c01[3]/c02[35]/did/unittitle, 2000-2001,"Miscellaneous materials related to the 'Fight for Freedom' banquet and Midwest Region III Training Conference , 2000-2001"
 mullinsr.xml,/ead/archdesc/dsc/c01[4]/c02[16]/did/unittitle, 1995-1996,"Greater Ypsilanti Leadership Council, 1995-1996."
-muncyr.xml,/ead/archdesc/dsc/c01[2]/c02[4]/c03[4]/c04[15]/did/unittitle, 19741976,"Miller, W.Z., 19741976"
 muschba.xml,/ead/archdesc/dsc/c01[4]/c02[58]/c03/did/unittitle, 1939-1940,"[Beaux-Arts Institute of Design, Department of Mural Decoration, program design showing a movie theater lounge. 27th school year 1939-1940]"
 muschba.xml,/ead/archdesc/dsc/c01[4]/c02[66]/c03/c04[1]/c05[41]/did/unittitle, 8021-1074,"Subdivision map, property of F.A. Muschenheim, situate Hampton Bays, Long Island, N.Y. [showing a U.S. Geological Survey of Riverhead Quadrangle, a key map, a plat map, a typical layout of well and cesspool, and a plan and sectional elevation of a typical leaching cesspool [with notes] : A 8021-1074 / Theodore F. Squires, Licensed Land Surveyor No. 15683"
 muszool.xml,/ead/archdesc/dsc/c01[4]/c02/did/unittitle, 1837-1939,"Index to Regents Proceedings, 1837-1939, concerning the Museum of Zoology"
@@ -452,8 +446,6 @@ oiapum.xml,/ead/archdesc/dsc/c01[3]/c02[14]/did/unittitle, 1990-1992,"Executive 
 oiapum.xml,/ead/archdesc/dsc/c01[3]/c02[46]/c03[4]/did/unittitle, 1990-1992,"Executive Committee Meeting, 1990-1992"
 olsonwc.xml,/ead/archdesc/dsc/c01[4]/c02[2]/c03[2]/did/unittitle, 1892-1930,"Historical Summary, 1892-1930 and proceedings"
 ophthal.xml,/ead/archdesc/dsc/c01[2]/c02[1]/c03[1]/c04[10]/did/unittitle, 1971-1986,1971-1986)
-orgtrop.xml,/ead/archdesc/dsc/c01[12]/c02[6]/did/unittitle, 19581962,"Meeting Notes, 195819621963"
-osbornst.xml,/ead/archdesc/dsc/c01[21]/c02[3]/c03[13]/did/unittitle, 19727374,"Daybook, 19727374"
 ovpr.xml,/ead/archdesc/dsc/c01[1]/c02[2]/c03[2]/did/unittitle, 1964-1972,Reference  (primarily 1964-1972)
 ovpr.xml,/ead/archdesc/dsc/c01[1]/c02[2]/c03[2]/c04/c05[13]/did/unittitle, 1966-1967,"Willow Run Laboratories, general  (primarily 1966-1967)"
 ovpr.xml,/ead/archdesc/dsc/c01[1]/c02[2]/c03[2]/c04/c05[14]/c06/did/unittitle, 1964-1975,[see also A. Geoffrey Norman series reference  (primarily 1964-1975) (boxes 3-11)]
@@ -470,11 +462,13 @@ parsonsj.xml,/ead/archdesc/dsc/c01[8]/c02[1]/c03[4]/did/unittitle, 1972-1971,Cha
 penningt.xml,/ead/archdesc/dsc/c01[3]/c02[5]/did/unittitle, 1847-1884,"The Reverend John Andrew Wilson, D.D., (1810-1885), VI Rector of St. Luke's Episcopal Church, Ypsilanti, Michigan, 1847-1884"
 penningt.xml,/ead/archdesc/dsc/c01[3]/c02[6]/did/unittitle, 1840-1846,"The Reverend Henry P. Powers, (1805-1865), V Rector of St. Luke's Church, Ypsilanti, Michigan, 1840-1846"
 penningt.xml,/ead/archdesc/dsc/c01[3]/c02[12]/did/unittitle, 1896-1914,"The Reverend William Hothersall Gardam, DCL, DD, (1851-1914), Eleventh Rector of Historic Saint Luke's Episcopal Church, Ypsilanti, Michigan, 1896-1914."
+penningt.xml,/ead/archdesc/dsc/c01[3]/c02[15]/did/unittitle, 1862-1937,"D. Felix Lamond 1862-1937, ""A Musicians Musician"" (Notes for an article),"
 pepinge.xml,/ead/archdesc/dsc/c01/c02[1]/did/unittitle, 1918-1919,"Transcript of diary, 1918-1919 and military papers"
 personel.xml,/ead/archdesc/dsc/c01[3]/c02[1]/c03[16]/did/unittitle, 1979-1980,(includes 1979-1980)
 personel.xml,/ead/archdesc/dsc/c01[5]/c02[2]/c03[12]/did/unittitle, 1980-1985,Faculty Personnel Policy (Review 1980-1985)
 peterell.xml,/ead/archdesc/dsc/c01[2]/c02[25]/did/unittitle, 1971-1978,"Speeches, undated, 1971-19783"
 phoenix.xml,/ead/archdesc/dsc/c01[2]/c02[6]/c03[7]/c04[8]/did/unittitle, 1949-1951,"Region VIII, 1949-1951"
+physiol.xml,/ead/archdesc/dsc/c01[3]/c02[1]/c03[2]/c04[1]/did/unittitle, 1938-1958,"Groups 1897, 1938-1958,  (includes some negatives)"
 pillsbwp.xml,/ead/archdesc/dsc/c01/c02[7]/did/unittitle, 1879-1945,Clarence Stone Yoakum. 1879-1945.
 pillsbwp.xml,/ead/archdesc/dsc/c01/c02[12]/did/unittitle, 1873-1940,Edouard Claparede. 1873-1940.
 pillsbwp.xml,/ead/archdesc/dsc/c01/c02[16]/did/unittitle, 1873-1954,Harvey A. Carr: 1873-1954.
@@ -534,7 +528,6 @@ riegled.xml,/ead/archdesc/dsc/c01[2]/c02[13]/c03[213]/did/unittitle, 20150512,20
 riegled.xml,/ead/archdesc/dsc/c01[2]/c02[13]/c03[751]/did/unittitle, 20070310,1287011001 -- 2007031002
 robinshn.xml,/ead/archdesc/dsc/c01[5]/c02[2]/did/unittitle, 1980-1984,"Report of the ad hoc committee for corrections and/or codifications of the 1980-1984 A.M.E. Discipline, Bishop Hubert N. Robinson, chairman"
 romneyg.xml,/ead/archdesc/dsc/c01[1]/c02[2]/c03[5]/c04[7]/c05[1]/c06[1]/did/unittitle, 1967-1968,New Programs for 1967-1968
-romneyg.xml,/ead/archdesc/dsc/c01[4]/c02[3]/c03[115]/did/unittitle, 19671006,"Address to National Conference of Editorial Writers, Nashville, Tenn., footage (October 6, Romney speaks of his recent tour of American cities; transcript included), 19671006"
 romneyg.xml,/ead/archdesc/dsc/c01[5]/c02[1]/c03[12]/c04[6]/did/unittitle, 1963-1964,GR message on 1963-1964 Budget to Legislature
 salinewo.xml,/ead/archdesc/dsc/c01/c02[2]/did/unittitle, 1910-1984,"Clippings, ca. 1910-1984"
 salum.xml,/ead/archdesc/dsc/c01[1]/c02[13]/did/unittitle, 1982-1984,"SOAP (Office of Student Organizations, Activities, and Programs Annual Reports, 1982-1984."
@@ -542,8 +535,8 @@ satacad.xml,/ead/archdesc/dsc/c01[2]/c02[5]/did/unittitle, 1971-2001,"Black Educ
 satacad.xml,/ead/archdesc/dsc/c01[4]/c02[22]/did/unittitle, 1976-1997,"Slauson Junior High School, 1976-1997"
 secbapt.xml,/ead/archdesc/dsc/c01[3]/c02[4]/did/unittitle, 1927-1989,Weekly  (primarily 1927-1989)
 sectryvp.xml,/ead/archdesc/dsc/c01[4]/c02[10]/c03[28]/did/unittitle, 1996-2001,"Anderson, John, 1996-2001"
+shengb.xml,/ead/archdesc/dsc/c01[14]/c02/c03[1]/c04[5]/c05[1]/did/unittitle, 1966-1976,"H'un (Lacerations): In Memoriam 1966-1976 (1988),"
 sierram.xml,/ead/archdesc/dsc/c01[7]/c02[2]/did/unittitle, 1988-2005,(Bulk dates 1988-2005)
-sincljl.xml,/ead/archdesc/dsc/c01[4]/c02[4]/c03[2]/c04[1]/did/unittitle, 19780823,"VO25.06M, Counselor Tech. Tr., 19780823"
 sineymar.xml,/ead/archdesc/dsc/c01/c02[4]/c03[2]/did/unittitle, 1815-1871,History 98. Europe 1815-1871. Professor H.M. Ehrmann
 sineymar.xml,/ead/archdesc/dsc/c01/c02[6]/c03[2]/did/unittitle, 1870-1914,History 34. British Foreign Policy 1870-1914. Professor S. Morley Scott
 sineymar.xml,/ead/archdesc/dsc/c01/c02[9]/c03/did/unittitle, 1871-1914,History 108. Europe 1871-1914. Professor H.M. Ehrmann
@@ -557,7 +550,7 @@ snre.xml,/ead/archdesc/dsc/c01[13]/did/unittitle, 1983-1989,"Associate Dean's Co
 snrepub.xml,/ead/archdesc/dsc/c01[1]/c02[6]/c03[3]/did/unittitle, 1988-2004,"Program degree requirements, 1988-2004/2005"
 socwork.xml,/ead/archdesc/dsc/c01[1]/c02[16]/did/unittitle, 1968-1969,"Faculty Advisory Committee, 1968-1969"
 soepubs.xml,/ead/archdesc/dsc/c01[3]/c02[4]/did/unittitle, 1975-1992,"Brochures, ca. 1975-1992"
-solarcar.xml,/ead/archdesc/dsc/c01[3]/c02[5]/c03[3]/did/unittitle, 1996-1997,"Chassis, 1996-1997(3 folders)"
+solarcar.xml,/ead/archdesc/dsc/c01[3]/c02[5]/c03[3]/did/unittitle, 1996-1997,"Chassis, 1996-1997"
 solarcar.xml,/ead/archdesc/dsc/c01[6]/c02[4]/c03[1]/did/unittitle, 1993-1994,"The University of Michigan Solar Car Team -- National Champs, 1993-1994."
 strodtmn.xml,/ead/archdesc/dsc/c01[14]/c02/did/unittitle, 1972-1982,"University Of Michigan Rehabilitation Patient Care Unit, 1972-1982"
 sturgiss.xml,/ead/archdesc/dsc/c01[1]/c02[1]/c03[21]/did/unittitle, 1885-1917,"Old UM Library, stood from 1883. Photo taken sometime between 1885-1917."
@@ -603,7 +596,7 @@ tibbitsc.xml,/ead/archdesc/dsc/c01[2]/c02[3]/c03[5]/did/unittitle, 1940-1948,"Di
 triangle.xml,/ead/archdesc/dsc/c01[4]/c02[2]/did/unittitle, 1996-1997,"Bias Crime Response Task Force Reports, 1996-1997."
 turcotte.xml,/ead/archdesc/dsc/c01[4]/c02[3]/c03[6]/did/unittitle, 1956-1960,"Class Photo Directories, 1956-1960"
 turcotte.xml,/ead/archdesc/dsc/c01[6]/c02[2]/c03[2]/c04[1]/did/unittitle, 1962-1963,"First Assistant Operations, 1962-1963"
-turkusat.xml,/ead/archdesc/dsc/c01[35]/c02[25]/c03/did/unittitle, 1915-1922,"from: Hilma Myllymaki. N.Y., N.J., Ont., 1915-1922(18 items)"
+turkusat.xml,/ead/archdesc/dsc/c01[35]/c02[25]/c03/did/unittitle, 1915-1922,"from: Hilma Myllymaki. N.Y., N.J., Ont., 1915-1922"
 uaao.xml,/ead/archdesc/dsc/c01[3]/c02[3]/did/unittitle, 1994-1998,"Booklets, 1994-1998"
 ugradlib.xml,/ead/archdesc/dsc/c01[1]/c02[2]/c03[4]/did/unittitle, 1958-1980,"Circulation, 1958-1980/81"
 ulibrary.xml,/ead/archdesc/dsc/c01[1]/c02[1]/c03[1]/c04[1160]/did/unittitle, 1912-1919,"Toronto Public Library, 1912-191943"
@@ -676,7 +669,7 @@ umussoc.xml,/ead/archdesc/dsc/c01[8]/c02[2]/c03[37]/did/unittitle, 1891-1927,"G.
 umussoc.xml,/ead/archdesc/dsc/c01[8]/c02[2]/c03[38]/did/unittitle, 1968-1987,"Gail Rector, UMS President, 1968-1987"
 umussoc.xml,/ead/archdesc/dsc/c01[8]/c02[2]/c03[39]/did/unittitle, 1892-1925,"James H. Wade, Board of Directors, 1892-1925"
 umussoc.xml,/ead/archdesc/dsc/c01[8]/c02[2]/c03[40]/did/unittitle, 1942-1968,"Henry F. Vaughan, Board of Directors, 1942-1968"
-unhealth.xml,/ead/archdesc/dsc/c01[3]/c02[18]/c03[3]/did/unittitle, 1989-1995,"Smoke-Free, 1989-1995(7 folders)"
+unhealth.xml,/ead/archdesc/dsc/c01[3]/c02[18]/c03[3]/did/unittitle, 1989-1995,"Smoke-Free, 1989-1995"
 vandenbh.xml,/ead/archdesc/dsc/c01[2]/c02[3]/did/unittitle, 1938-1949,"Scrapbook, 1938-1949"
 vanderlg.xml,/ead/archdesc/dsc/c01[4]/c02[7]/c03[50]/did/unittitle, 1865-1885,Statistical Study of Michigan. Supreme Court Cases 1865-1885. Compiled by David Haughey
 vpaastaf.xml,/ead/archdesc/dsc/c01[8]/c02[2]/c03[2]/c04[21]/c05[11]/did/unittitle, 1983-1984,Vice Presidents (includes associates and assistants; materials re:  academic year primarily from 1983-1984)
@@ -686,9 +679,9 @@ vpaastaf.xml,/ead/archdesc/dsc/c01[15]/c02[1]/did/unittitle, 1990-1997,Topical F
 vpaastaf.xml,/ead/archdesc/dsc/c01[20]/c02/c03/c04[3]/did/unittitle, 1997-1999,"Marshall Symposium, 1997-1999"
 vpcfo.xml,/ead/archdesc/dsc/c01[1]/c02[1]/c03[76]/c04[8]/c05[4]/did/unittitle, 1968-1974,"Review Committee on Structure, 1968-1974[see also ""Hospital: Administration""]Medical Costs (Educational Costs in a Teaching Hospital)"
 vpcfo.xml,/ead/archdesc/dsc/c01[1]/c02[4]/c03[101]/c04[2]/did/unittitle, 1979-1981,Miscellaneous  (except 1979-1981)
-vpcfo.xml,/ead/archdesc/dsc/c01[2]/c02[1]/c03[2]/c04[28]/did/unittitle, 1992-2001,"Organization, 1992-2001(2 folders)"
-vpcfo.xml,/ead/archdesc/dsc/c01[2]/c02[2]/c03[1]/c04[2]/c05[15]/did/unittitle, 1999-2002,"Life Sciences Institute, 1999-2002(2 folders)"
-vpcfo.xml,/ead/archdesc/dsc/c01[2]/c02[2]/c03[3]/c04[2]/did/unittitle, 2002-2003,"Budget, 2002-2003(2 folders)"
+vpcfo.xml,/ead/archdesc/dsc/c01[2]/c02[1]/c03[2]/c04[28]/did/unittitle, 1992-2001,"Organization, 1992-2001"
+vpcfo.xml,/ead/archdesc/dsc/c01[2]/c02[2]/c03[1]/c04[2]/c05[15]/did/unittitle, 1999-2002,"Life Sciences Institute, 1999-2002"
+vpcfo.xml,/ead/archdesc/dsc/c01[2]/c02[2]/c03[3]/c04[2]/did/unittitle, 2002-2003,"Budget, 2002-2003"
 vpcfopub.xml,/ead/archdesc/dsc/c01[2]/c02[2]/c03[2]/c04[1]/did/unittitle, 1991-1995,"FY 1991-1995 Analysis of Revenues and expenditures by Department, Part One"
 vpcfopub.xml,/ead/archdesc/dsc/c01[2]/c02[2]/c03[2]/c04[2]/did/unittitle, 1991-1995,"FY 1991-1995 Analysis of Revenues and expenditures by Department, Part Two"
 vpdev.xml,/ead/archdesc/dsc/c01[2]/c02[2]/c03[1]/c04[3]/c05[1]/did/unittitle, 1890-1930,[classes: 1890-1930]
@@ -727,6 +720,7 @@ vpsaff.xml,/ead/archdesc/dsc/c01[7]/c02[2]/c03[85]/c04[5]/did/unittitle, 1984-19
 vpsaff.xml,/ead/archdesc/dsc/c01[7]/c02[2]/c03[90]/c04[1]/did/unittitle, 1982-1985,"General  (bulk, 1982-1985)"
 wallm60m.xml,/ead/archdesc/dsc/c01[7]/c02[2]/c03[32]/did/unittitle, 1977-2002,"Arafat, Yasser (Transcripts 1977-2002)"
 warnermt.xml,/ead/archdesc/dsc/c01[3]/c02[5]/did/unittitle, 1948-1953,"Missions, primarily Telluride  (bulk 1948-1953) (2 folders)"
+wascohs.xml,/ead/archdesc/dsc/c01[4]/c02[1]/c03[8]/did/unittitle, 1831-1832,"8. Unity Block, SW corner Ann and Fifth Avenue. The First Methodist Church built 1831-1832 sold to Unitarians who worshipped there from 1867 to 1882. Torn down ca. 1930."
 washrain.xml,/ead/archdesc/dsc/c01[2]/c02[69]/c03[48]/did/unittitle, 2001-2007,"Miscellaneous, 2001-2007(?)"
 washuw.xml,/ead/archdesc/dsc/c01[1]/c02[12]/c03[2]/did/unittitle, 1942-1951,(mainly 1942-1951)
 wats.xml,/ead/archdesc/dsc/c01[2]/c02[4]/did/unittitle, 1872-1922,"Workshop IV: Ideologies of Revolution, Nation, and Empire: Political Ideas, parties, and practices at the end of the Ottoman Empire, 1872-1922. Salzburg Seminar, Institute for Historical Justice and Reconciliation"
@@ -734,7 +728,7 @@ wctf.xml,/ead/archdesc/dsc/c01[3]/c02[3]/c03[2]/c04[3]/did/unittitle, 1987-1988,
 willmseb.xml,/ead/archdesc/dsc/c01[1]/c02[169]/did/unittitle, 1904-1900,"Tucker, E.S., 1904-19006"
 wislanlu.xml,/ead/archdesc/dsc/c01[1]/did/unittitle, 1872-1922,"Letterpress books, 1872-1922"
 wleague.xml,/ead/archdesc/dsc/c01[2]/c02[2]/c03[4]/did/unittitle, 1934-2007,"Membership Lists and Miscellaneous, 1934-2007(scattered)"
-wleague.xml,/ead/archdesc/dsc/c01[3]/c02[1]/c03[2]/did/unittitle, 1928-1965,"Minutes, 1928-1965(14 folders)"
+wleague.xml,/ead/archdesc/dsc/c01[3]/c02[1]/c03[2]/did/unittitle, 1928-1965,"Minutes, 1928-1965"
 wleague.xml,/ead/archdesc/dsc/c01[6]/c02[2]/did/unittitle, 1933-1935,Michigan League Presidents and Women's League  and 1933-1935)
 wohlfld.xml,/ead/archdesc/dsc/c01[2]/did/unittitle, 1975-1977,Mothers Alert Detroit (MAD)  (primarily 1975-1977)
 woodjcp.xml,/ead/archdesc/dsc/c01/c02[34]/did/unittitle, 1825-1925,"Then and now, 1825-1925. A medical drama in two acts"
