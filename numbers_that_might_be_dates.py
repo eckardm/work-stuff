@@ -78,8 +78,8 @@ for filename in tqdm(os.listdir(ead_folder)):
                 if (context.endswith(number_that_might_be_date) == False and ('"' in context.split(number_that_might_be_date)[0] and '"' in context.split(number_that_might_be_date)[1])):
                     continue
                     
-                # turns out facport.xml has a bunch of persnames
-                if filename == 'facport.xml':
+                # turns out facport.xml has a bunch of persnames, so does regport
+                if filename == 'facport.xml' or filename == 'regport.xml':
                     continue
 
                 # if it's not a range
