@@ -140,7 +140,7 @@ make the report'''
 print 'Found ' + str(counter) + ' numbers that might be dates in ' + str(len(histogram)) + ' files.'
 
 # print the histogram
-print "Here's the historgram:"
+print "Here's the histogram:"
 for key, value in sorted(histogram.iteritems(), key=lambda (k,v): (v,k), reverse=True):
     print "%s: %s" % (key, value)
   
