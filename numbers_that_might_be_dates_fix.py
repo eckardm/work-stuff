@@ -74,12 +74,25 @@ with open(numbers_that_might_be_dates, 'r') as corrected_csv:
         ead_tree = ET.parse(join(test_eads, filename))
         
         # my understanding is that this is just the way this works
-        number_to_be_corrected = ead_tree.xpath(xpath)[0]
+        unittitle_to_be_corrected = ead_tree.xpath(xpath)[0]
         
-        print ET.tostring(number_to_be_corrected).replace(number_that_is_date, corrected_date)
+        # corrected unittitle
+        corrected_unittitle = ET.tostring(unittitle_to_be_corrected).replace(number_that_is_date, corrected_date)
+        
+        # this next little bit is rediculous
+        if 'primarily ' in corrected_unittitle:
+            corrected_unittitle = corrected_unittitle.replace('primarily ', '').replace(number_that_is_date, 'primarily ' + number_that_is_date)
+        if 'mainly ' in corrected_unittitle:
+            corrected_unittitle = corrected_unittitle.replace('mainly ', '').replace(number_that_is_date, 'mainly ' + number_that_is_date)
+        if 'bulk ' in corrected_unittitle:
+            corrected_unittitle = corrected_unittitle.replace('bulk ', '').replace(number_that_is_date, 'bulk ' + number_that_is_date)
+        if 'ca. ' in corrected_unittitle:
+            corrected_unittitle = corrected_unittitle.replace('ca. ', '').replace(number_that_is_date, 'ca. ' + number_that_is_date)
+        if 'circa ' in corrected_unittitle:
+            corrected_unittitle = corrected_unittitle.replace('circa ', '').replace(number_that_is_date, 'circa ' + number_that_is_date)
+        
+        print corrected_unittitle
         
         '''
         write it!'''
-        
-            
         
