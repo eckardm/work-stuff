@@ -19,7 +19,7 @@ preliminaries'''
 numbers_that_might_be_dates = 'numbers_that_might_be_dates_report-no-typos-no-not-dates.csv'
 
 # where are the test eads?
-test_eads = 'C:/Users/eckardm/Public/Documents/Real_Masters_all'
+test_eads = 'C:/Users/Public/Documents/Real_Masters_all'
 
 #where are the production eads?
 production_eads = 'C:/Users/eckardm/GitHub/vandura/Real_Masters_all'
@@ -59,7 +59,7 @@ with open(numbers_that_might_be_dates, 'r') as corrected_csv:
         normal = begin_date + '/' + end_date
         
         # corrected date, accounting for certainty
-        if 'ca. ' in context:
+        if 'ca. ' in context or 'circa ' in context:
             corrected_date = '<unitdate normal="' + normal + '" type="' + type + '" certainty="approximate">' + number_that_is_date + '</unitdate>'
         else:
             corrected_date = '<unitdate normal="' + normal + '" type="' + type + '">' + number_that_is_date + '</unitdate>'
@@ -67,5 +67,19 @@ with open(numbers_that_might_be_dates, 'r') as corrected_csv:
         print corrected_date
 
 
-'''
-update the finding aids'''
+        '''
+        update the finding aids'''
+        
+        # open the corresponding ead
+        ead_tree = ET.parse(join(test_eads, filename))
+        
+        # my understanding is that this is just the way this works
+        number_to_be_corrected = ead_tree.xpath(xpath)[0]
+        
+        print ET.tostring(number_to_be_corrected).replace(number_that_is_date, corrected_date)
+        
+        '''
+        write it!'''
+        
+            
+        
