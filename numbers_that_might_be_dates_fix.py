@@ -21,7 +21,7 @@ numbers_that_might_be_dates = 'numbers_that_might_be_dates_report-no-typos-no-no
 # where are the test eads?
 test_eads = 'C:/Users/Public/Documents/Real_Masters_all'
 
-#where are the production eads?
+# where are the production eads?
 production_eads = 'C:/Users/eckardm/vandura/Real_Masters_all'
 
 
@@ -72,7 +72,7 @@ with open(numbers_that_might_be_dates, 'r') as corrected_csv:
         update the finding aids'''
         
         # open the ead in question
-        ead_in = open(join(production_eads, filename), 'r')
+        ead_in = open(join(test_eads, filename), 'r')
         
         # make a tree out of it for lxml
         ead_tree = ET.parse(ead_in)
@@ -96,14 +96,14 @@ with open(numbers_that_might_be_dates, 'r') as corrected_csv:
             corrected_unittitle = corrected_unittitle.replace('circa ', '').replace(number_that_is_date, 'circa ' + number_that_is_date)
             
         # make it happen, and the index is just a wierd lxml thing
-        unittitle_to_be_corrected[0].text = corrected_unittitle
+        unittitle_to_be_corrected[0].text = ET.fromstring(corrected_unittitle)
         
         
         '''
         write it!'''
         
         # open the corresponding ead
-        with open(join(production_eads, filename), mode="w") as see_i_am_making_all_things_new:
+        with open(join(test_eads, filename), mode="w") as see_i_am_making_all_things_new:
             # and write the corrected unittitle
             see_i_am_making_all_things_new.write(ET.tostring(ead_tree, xml_declaration=True, encoding='utf-8', pretty_print=True))
             
