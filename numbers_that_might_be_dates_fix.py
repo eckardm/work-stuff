@@ -45,6 +45,9 @@ with open(numbers_that_might_be_dates, 'r') as corrected_csv:
         number_that_is_date = row[2]
         context = row[4]
         
+        # keep up with where we are
+        print 'Correcting ' + number_that_is_date + ' in ' + filename + ' at ' + xpath + '.'
+        
         # break down number that might be dates
         begin_date = number_that_is_date[:4]
         end_date = number_that_is_date[-4:]
@@ -63,21 +66,22 @@ with open(numbers_that_might_be_dates, 'r') as corrected_csv:
             corrected_date = '<unitdate normal="' + normal + '" type="' + type + '" certainty="approximate">' + number_that_is_date + '</unitdate>'
         else:
             corrected_date = '<unitdate normal="' + normal + '" type="' + type + '">' + number_that_is_date + '</unitdate>'
-            
-        print corrected_date
 
 
         '''
         update the finding aids'''
         
-        # open the corresponding ead
-        ead_tree = ET.parse(join(test_eads, filename))
+        # open the ead in question
+        ead_in = open(join(test_eads, filename), 'r')
         
-        # my understanding is that this is just the way this works
-        unittitle_to_be_corrected = ead_tree.xpath(xpath)[0]
+        # make a tree out of it for lxml
+        ead_tree = ET.parse(ead_in)
         
-        # corrected unittitle
-        corrected_unittitle = ET.tostring(unittitle_to_be_corrected).replace(number_that_is_date, corrected_date)
+        # find the unittitle that needs to be corrected
+        unittitle_to_be_corrected = ead_tree.xpath(xpath)
+        
+        # corrected unittitle, and the index is just a wierd lxml thing
+        corrected_unittitle = ET.tostring(unittitle_to_be_corrected[0]).replace(number_that_is_date, corrected_date)
         
         # this next little bit is rediculous
         if 'primarily ' in corrected_unittitle:
@@ -90,9 +94,17 @@ with open(numbers_that_might_be_dates, 'r') as corrected_csv:
             corrected_unittitle = corrected_unittitle.replace('ca. ', '').replace(number_that_is_date, 'ca. ' + number_that_is_date)
         if 'circa ' in corrected_unittitle:
             corrected_unittitle = corrected_unittitle.replace('circa ', '').replace(number_that_is_date, 'circa ' + number_that_is_date)
+            
+        # make it happen, and the index is just a wierd lxml thing
+        unittitle_to_be_corrected[0].text = corrected_unittitle
         
-        print corrected_unittitle
         
         '''
         write it!'''
         
+        # open the corresponding ead
+        with open(join(test_eads, filename), mode="w") as see_i_am_making_all_things_new:
+            # and write the corrected unittitle
+            see_i_am_making_all_things_new.write(ET.tostring(ead_tree, xml_declaration=True, encoding='utf-8', pretty_print=True))
+            
+print "That's it, we're done!"
