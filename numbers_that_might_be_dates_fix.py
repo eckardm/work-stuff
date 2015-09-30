@@ -53,7 +53,7 @@ with open(numbers_that_might_be_dates, 'r') as corrected_csv:
         end_date = number_that_is_date[-4:]
 
         # account for bulk
-        if 'primarily ' in context or 'mainly ' in context or 'bulk ' in context:
+        if 'primarily ' in context or 'mainly ' in context or 'bulk ' in context or 'mostly ' in context:
             type = "bulk"
         else:
             type = "inclusive"
@@ -78,10 +78,10 @@ with open(numbers_that_might_be_dates, 'r') as corrected_csv:
         ead_tree = ET.parse(ead_in)
         
         # find the unittitle that needs to be corrected
-        unittitle_to_be_corrected = ead_tree.xpath(xpath)
+        unittitle_to_be_corrected = ead_tree.xpath(xpath).
         
         # corrected unittitle, and the index is just a wierd lxml thing
-        corrected_unittitle = ET.tostring(unittitle_to_be_corrected[0]).replace(number_that_is_date, corrected_date)
+        corrected_unittitle = ET.tostring(unittitle_to_be_corrected[0]).replace(number_that_is_date, corrected_date).replace('<unittitle>', '').replace('</unittitle>', '')
         
         # this next little bit is rediculous
         if 'primarily ' in corrected_unittitle:
@@ -90,17 +90,21 @@ with open(numbers_that_might_be_dates, 'r') as corrected_csv:
             corrected_unittitle = corrected_unittitle.replace('mainly ', '').replace(number_that_is_date, 'mainly ' + number_that_is_date)
         if 'bulk ' in corrected_unittitle:
             corrected_unittitle = corrected_unittitle.replace('bulk ', '').replace(number_that_is_date, 'bulk ' + number_that_is_date)
+        if 'mostly ' in corrected_unittitle:
+            corrected_unittitle = corrected_unittitle.replace('mostly ', '').replace(number_that_is_date, 'mostly ' + number_that_is_date)
         if 'ca. ' in corrected_unittitle:
             corrected_unittitle = corrected_unittitle.replace('ca. ', '').replace(number_that_is_date, 'ca. ' + number_that_is_date)
         if 'circa ' in corrected_unittitle:
             corrected_unittitle = corrected_unittitle.replace('circa ', '').replace(number_that_is_date, 'circa ' + number_that_is_date)
             
         # make it happen, and the index is just a wierd lxml thing
-        unittitle_to_be_corrected[0].text = ET.fromstring(corrected_unittitle)
+        unittitle_to_be_corrected[0].text = corrected_unittitle
         
-        
+
         '''
-        write it!'''
+        write it!
+        '''
+        
         
         # open the corresponding ead
         with open(join(test_eads, filename), mode="w") as see_i_am_making_all_things_new:
