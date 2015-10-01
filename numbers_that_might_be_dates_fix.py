@@ -112,4 +112,4 @@ with open(numbers_that_might_be_dates, 'r') as corrected_csv:
             # and write the corrected unittitle
             ead_out.write(ET.tostring(ead_tree, xml_declaration=True, encoding='utf-8', pretty_print=True))
             
-print "That's it, we're done!"
+print "That's it, we're done! DON'T FORGET TO DO THE ACADEMIC YEARS!"
