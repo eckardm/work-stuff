@@ -77,11 +77,11 @@ with open(numbers_that_might_be_dates, 'r') as corrected_csv:
         # make a tree out of it for lxml
         ead_tree = ET.parse(ead_in)
         
-        # find the unittitle that needs to be corrected
-        unittitle_to_be_corrected = ead_tree.xpath(xpath).
+        # find the unittitle that needs to be corrected, and the index is just a wierd lxml thing
+        unittitle_to_be_corrected = ead_tree.xpath(xpath)[0]
         
-        # corrected unittitle, and the index is just a wierd lxml thing
-        corrected_unittitle = ET.tostring(unittitle_to_be_corrected[0]).replace(number_that_is_date, corrected_date).replace('<unittitle>', '').replace('</unittitle>', '')
+        # corrected unittitle
+        corrected_unittitle = ET.tostring(unittitle_to_be_corrected).replace(number_that_is_date, corrected_date)
         
         # this next little bit is rediculous
         if 'primarily ' in corrected_unittitle:
@@ -97,18 +97,19 @@ with open(numbers_that_might_be_dates, 'r') as corrected_csv:
         if 'circa ' in corrected_unittitle:
             corrected_unittitle = corrected_unittitle.replace('circa ', '').replace(number_that_is_date, 'circa ' + number_that_is_date)
             
-        # make it happen, and the index is just a wierd lxml thing
-        unittitle_to_be_corrected[0].text = corrected_unittitle
+        print 'Corrected version: ' + corrected_unittitle
+
+        # make it happen
+        unittitle_to_be_corrected = ET.fromstring(corrected_unittitle)
         
 
         '''
         write it!
         '''
         
-        
         # open the corresponding ead
-        with open(join(test_eads, filename), mode="w") as see_i_am_making_all_things_new:
+        with open(join(test_eads, filename), mode="w") as ead_out:
             # and write the corrected unittitle
-            see_i_am_making_all_things_new.write(ET.tostring(ead_tree, xml_declaration=True, encoding='utf-8', pretty_print=True))
+            ead_out.write(ET.tostring(ead_tree, xml_declaration=True, encoding='utf-8', pretty_print=True))
             
 print "That's it, we're done!"
