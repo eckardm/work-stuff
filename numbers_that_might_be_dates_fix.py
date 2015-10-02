@@ -72,7 +72,7 @@ with open(numbers_that_might_be_dates, 'r') as corrected_csv:
         update the finding aids'''
         
         # open the ead in question
-        ead_in = open(join(test_eads, filename), 'r')
+        ead_in = open(join(production_eads, filename), 'r')
         
         # make a tree out of it for lxml
         ead_tree = ET.parse(ead_in)
@@ -104,16 +104,14 @@ with open(numbers_that_might_be_dates, 'r') as corrected_csv:
         index = list(parent).index(unittitle_to_be_corrected)
         parent.remove(unittitle_to_be_corrected)
         parent.insert(index, ET.fromstring(corrected_unittitle))
-        
-        
-        
+
 
         '''
         write it!
         '''
         
         # open the corresponding ead
-        with open(join(test_eads, filename), mode="w") as ead_out:
+        with open(join(production_eads, filename), mode="w") as ead_out:
             # and write the corrected unittitle
             ead_out.write(ET.tostring(ead_tree, xml_declaration=True, encoding='utf-8', pretty_print=True))
             
