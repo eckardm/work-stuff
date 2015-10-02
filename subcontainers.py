@@ -2,6 +2,7 @@ import os
 import csv
 from lxml import etree
 
+    
 ead_path = r'C:\Users\eckardm\vandura\Real_Masters_all'
 
 eads = [ead for ead in os.listdir(ead_path) if ead.endswith(".xml")]
