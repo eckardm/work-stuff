@@ -83,7 +83,7 @@ with open(numbers_that_might_be_dates, 'r') as corrected_csv:
         # corrected unittitle
         corrected_unittitle = ET.tostring(unittitle_to_be_corrected).replace(number_that_is_date, corrected_date)
         
-        # this next little bit is rediculous
+        # this next little bit is ridiculous
         if 'primarily ' in corrected_unittitle:
             corrected_unittitle = corrected_unittitle.replace('primarily ', '').replace(number_that_is_date, 'primarily ' + number_that_is_date)
         if 'mainly ' in corrected_unittitle:
