@@ -100,7 +100,12 @@ with open(numbers_that_might_be_dates, 'r') as corrected_csv:
         print 'Corrected version: ' + corrected_unittitle
 
         # make it happen
-        unittitle_to_be_corrected = ET.fromstring(corrected_unittitle)
+        parent = unittitle_to_be_corrected.getparent()
+        index = list(parent).index(unittitle_to_be_corrected)
+        parent.remove(unittitle_to_be_corrected)
+        parent.insert(index, ET.fromstring(corrected_unittitle))
+        
+        
         
 
         '''
