@@ -17,52 +17,59 @@ preliminaries'''
 # where are the logs?
 path = r'C:\Users\Public\Documents\server-logs'
 
+def parse_logs(path):
 
-'''
-time for business'''
+    # bentley front computer ip adresses (best faith effort as of 2015-10-12)
+    front_computers = ['141.211.39.59', '141.211.39.6', '141.211.39.69', '141.211.39.22', '141.211.39.19', '141.211.39.119', '141.211.39.56']
 
-# go through folder
-for filename in os.listdir(path):
 
-    # csv filenames for total and bentley removed
-    output_csv_filename = filename.replace('.txt', '') + '_parsed.csv'
-    output_csv_filename_no_bhl = filename.replace('.txt', '') + '_parsed-noBHL.csv'
-    
-    # only do this if we haven't done it before
-    if filename.endswith('.csv') or output_csv_filename in os.listdir(path) or output_csv_filename_no_bhl in os.listdir(path):
-        continue
-    else:
+    '''
+    time for business'''
 
-        # write the csv headers for total
-        with open(join(path, output_csv_filename), 'wb') as output_csv:
-            writer = csv.writer(output_csv)
-            writer.writerow(['User', 'Time', 'Request', 'Status Code', 'Referrer', 'Browswer'])
+    # go through folder
+    for filename in os.listdir(path):
 
-        # write the csv headers for no bhl
-        with open(join(path, output_csv_filename_no_bhl), 'wb') as output_csv:
-            writer = csv.writer(output_csv)
-            writer.writerow(['User', 'Time', 'Request', 'Status Code', 'Referrer', 'Browswer'])
+        # csv filenames for total and bentley removed
+        output_csv_filename = filename.replace('.txt', '') + '_parsed.csv'
+        output_csv_filename_no_bhl = filename.replace('.txt', '') + '_parsed-noBHL.csv'
+        
+        # only do this if we haven't done it before
+        if filename.endswith('.csv') or output_csv_filename in os.listdir(path) or output_csv_filename_no_bhl in os.listdir(path):
+            continue
+        else:
 
-        # open each log
-        log = open(join(path, filename), 'r')
-        # go through log
-        for line in tqdm(log, desc=filename):
-            
-            # parse the line
-            user = line.split(' - - ')[0]
-            time = line.split('[')[1].split(']')[0]
-            request = line.split('"')[1]
-            status_code = line.split('" ')[1].split(' ')[0]
-            referrer = line.split('"')[3]
-            browser = line.split('"')[5]
-
-            # write the row for the total csv
-            with open(join(path, output_csv_filename), 'ab') as output_csv:
+            # write the csv headers for total
+            with open(join(path, output_csv_filename), 'wb') as output_csv:
                 writer = csv.writer(output_csv)
-                writer.writerow([user, time, request, status_code, referrer, browser])
+                writer.writerow(['User', 'Time', 'Request', 'Status Code', 'Referrer', 'Browswer'])
 
-            # write the row for the no bentley csv
-            if 'access_log' not in user:
-                with open(join(path, output_csv_filename_no_bhl), 'ab') as output_csv:
+            # write the csv headers for no bhl
+            with open(join(path, output_csv_filename_no_bhl), 'wb') as output_csv:
+                writer = csv.writer(output_csv)
+                writer.writerow(['User', 'Time', 'Request', 'Status Code', 'Referrer', 'Browswer'])
+
+            # open each log
+            log = open(join(path, filename), 'r')
+            # go through log
+            for line in tqdm(log, desc=filename):
+                
+                # parse the line
+                user = line.split(' - - ')[0]
+                time = line.split('[')[1].split(']')[0]
+                request = line.split('"')[1]
+                status_code = line.split('" ')[1].split(' ')[0]
+                referrer = line.split('"')[3]
+                browser = line.split('"')[5]
+
+                # write the row for the total csv
+                with open(join(path, output_csv_filename), 'ab') as output_csv:
                     writer = csv.writer(output_csv)
                     writer.writerow([user, time, request, status_code, referrer, browser])
+
+                # write the row for the no bentley csv
+                    if 'access_log' not in user or user.split(':')[1] in front_computers:
+                        with open(join(path, output_csv_filename_no_bhl), 'ab') as output_csv:
+                            writer = csv.writer(output_csv)
+                            writer.writerow([user, time, request, status_code, referrer, browser])
+
+parse_logs(path)
