@@ -24,16 +24,22 @@ time for business'''
 # go through folder
 for filename in os.listdir(path):
 
-    # csv filename
-    output_csv_filename = filename + '_parsed.csv'
+    # csv filenames for total and bentley removed
+    output_csv_filename = filename.replace('.txt', '') + '_parsed.csv'
+    output_csv_filename_no_bhl = filename.replace('.txt', '') + '_parsed-noBHL.csv'
     
     # only do this if we haven't done it before
-    if filename.endswith('.csv') or output_csv_filename in os.listdir(path):
+    if filename.endswith('.csv') or output_csv_filename in os.listdir(path) or output_csv_filename_no_bhl in os.listdir(path):
         continue
     else:
 
-        # write the csv headers
+        # write the csv headers for total
         with open(join(path, output_csv_filename), 'wb') as output_csv:
+            writer = csv.writer(output_csv)
+            writer.writerow(['User', 'Time', 'Request', 'Status Code', 'Referrer', 'Browswer'])
+
+        # write the csv headers for no bhl
+        with open(join(path, output_csv_filename_no_bhl), 'wb') as output_csv:
             writer = csv.writer(output_csv)
             writer.writerow(['User', 'Time', 'Request', 'Status Code', 'Referrer', 'Browswer'])
 
@@ -50,8 +56,13 @@ for filename in os.listdir(path):
             referrer = line.split('"')[3]
             browser = line.split('"')[5]
 
-            # write the row
+            # write the row for the total csv
             with open(join(path, output_csv_filename), 'ab') as output_csv:
                 writer = csv.writer(output_csv)
                 writer.writerow([user, time, request, status_code, referrer, browser])
-                
+
+            # write the row for the no bentley csv
+            if 'access_log' not in user:
+                with open(join(path, output_csv_filename_no_bhl), 'ab') as output_csv:
+                    writer = csv.writer(output_csv)
+                    writer.writerow([user, time, request, status_code, referrer, browser])
