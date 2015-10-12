@@ -8,6 +8,9 @@ from os.path import join
 # csv implements classes to read and write tabular data in csv format
 import csv
 
+# matplotlib is a python 2d plotting library which produces publication quality figures in a variety of hardcopy formats and interactive environments across platforms, you'll need to install it
+import matplotlib.pyplot as plt
+
 
 '''
 preliminaries'''
@@ -18,6 +21,12 @@ path = r'C:\Users\Public\Documents\server-logs'
 # set up some counters
 total_users = 0
 total_users_no_bhl = 0
+
+# set up some lists for matplotlib
+month_by_day_total_users = []
+users_by_day_total_users = []
+month_by_day_total_users_no_bhl = []
+users_by_day_total_users_no_bhl = []
 
 
 '''
@@ -46,11 +55,13 @@ for filename in os.listdir(path):
 				if user not in users:
 					users.append(user)
 
-			# get the number of users
+			# get the number of users and add it to list
 			row_count = len(users)
+			users_by_month_total_users.append(row_count)
 
-			# get the date
-			date = filename.split('_')[1][:4] + '-' + filename.split('_')[1][-2:]
+			# get the date and add it to list
+			date = filename.split('_')[1]
+			month_by_month_total_users.append(date)
 
 			# print the results, for now
 			print 'monthly total users', date, row_count
@@ -78,11 +89,13 @@ for filename in os.listdir(path):
 				if user not in users:
 					users.append(user)
 
-			# get the number of users
+			# get the number of users and add it to list
 			row_count = len(users)
+			users_by_month_total_users_no_bhl.append(row_count)
 
-			# get the date
-			date = filename.split('_')[1][:4] + '-' + filename.split('_')[1][-2:]
+			# get the date and add it to list
+			date = filename.split('_')[1]
+			month_by_month_total_users_no_bhl.append(date)
 
 			# print the results for now
 			print 'monthly total users no bhl', date, row_count
@@ -95,3 +108,17 @@ print 'total users', total_users
 
 # print total no bhl
 print 'total users no bhl', total_users_no_bhl
+
+# matplotlib for total users
+plt.suptitle('Total Users Over Time', fontsize = 14, fontweight = 'bold')
+plt.plot(month_by_month_total_users, users_by_month_total_users)
+plt.xlabel('Date')
+plt.ylabel('Users')
+plt.show()
+
+# matplotlib for total users no bhl
+plt.suptitle('Total Users Over Time (No BHL Users)', fontsize = 14, fontweight = 'bold')
+plt.plot(month_by_month_total_users_no_bhl, users_by_month_total_users_no_bhl)
+plt.xlabel('Date')
+plt.ylabel('Users')
+plt.show()
