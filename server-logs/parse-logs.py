@@ -72,4 +72,9 @@ def parse_logs(path):
                             writer = csv.writer(output_csv)
                             writer.writerow([user, time, request, status_code, referrer, browser])
 
+
+'''
+run the function'''
+
+# here we go
 parse_logs(path)

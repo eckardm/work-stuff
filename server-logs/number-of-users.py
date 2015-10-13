@@ -15,8 +15,7 @@ import matplotlib.dates as mdates
 # seaborn is a python visualization library based on matplotlib
 import seaborn as sns
 
-import numpy as np
-
+# datetime supplies classes for manipulating dates and times in both simple and complex ways 
 import datetime as dt
 
 
