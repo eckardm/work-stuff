@@ -11,6 +11,9 @@ import csv
 # matplotlib is a python 2d plotting library which produces publication quality figures in a variety of hardcopy formats and interactive environments across platforms, you'll need to install it
 import matplotlib.pyplot as plt
 
+# seaborn is a python visualization library based on matplotlib
+import seaborn as sns
+
 
 '''
 preliminaries'''
@@ -23,10 +26,10 @@ total_users = 0
 total_users_no_bhl = 0
 
 # set up some lists for matplotlib
-month_by_day_total_users = []
-users_by_day_total_users = []
-month_by_day_total_users_no_bhl = []
-users_by_day_total_users_no_bhl = []
+month_by_month_total_users = []
+users_by_month_total_users = []
+month_by_month_total_users_no_bhl = []
+users_by_month_total_users_no_bhl = []
 
 
 '''
