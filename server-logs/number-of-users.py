@@ -208,7 +208,7 @@ def number_of_users(path):
 	x_total_users_no_bhl = [dt.datetime.strptime(d, '%Y%m%d').date() for d in days_total_users_no_bhl]
 
 	# matplotlib for total users
-	plt.suptitle('Number of Users')
+	plt.suptitle('Number of Users', fontsize = 'x-large')
 	plt.gca().xaxis.set_major_formatter(mdates.DateFormatter('%m/%d/%Y'))
 	plt.gca().xaxis.set_major_locator(mdates.DayLocator())
 	plt.plot(x_total_users, users_per_day_total_users, label = "Total Users")
