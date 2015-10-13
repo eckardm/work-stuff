@@ -25,23 +25,23 @@ path = r'C:\Users\Public\Documents\server-logs'
 total_users = 0
 total_users_no_bhl = 0
 
-# set up some lists for matplotlib
-month_by_month_total_users = []
-users_by_month_total_users = []
-month_by_month_total_users_no_bhl = []
-users_by_month_total_users_no_bhl = []
+# set up some lists for matplotlib and seaborn
+day_total_users = []
+users_per_day_total_users = []
+day_total_users_no_bhl = []
+users_per_day_total_users_no_bhl = []
 
 
 '''
-let's get down to business'''
+first, let's break up the csv by days'''
 
 # go through each file in logs
 for filename in os.listdir(path):
-
 	# if it's a parsed total csv
 	if filename.endswith('_parsed.csv'):
-		# set up a list of users
-		users = []
+
+		# set up an empty list for the days
+		dates = []
 
 		# open it
 		with open(join(path, filename), 'rb') as csv_file:
@@ -49,6 +49,52 @@ for filename in os.listdir(path):
 			reader = csv.reader(csv_file)
 			# skip the first line
 			next(reader, None)
+
+			# go through each row
+			for row in reader: 
+				
+				# find the day
+				day = row[1][:11]
+				# add them to the list if they are unique
+				if day not in dates:
+					dates.append(day)
+
+
+		'''
+		now, let's go through the days list and get the number of users'''
+
+		# empty list for users
+		users = []
+
+		# for each of those days
+		for date in dates:
+
+			# reopen the csv
+			with open(join(path,filename), 'rb') as csv_file:
+				# read it
+				reader = csv.reader(csv_file)
+
+				# go through each row
+				for row in reader:
+
+					# find the user and day
+					user = row[0]
+					day = row[1][:11]
+
+					# find the number of users per day
+					if day == date:
+						# if we have a unique user, add it to the users list
+						if user not in users:
+							users.append(user)
+						else:
+							continue
+
+			print date, len(users)
+
+
+
+
+'''
 
 			# go through each row
 			for row in reader: 
@@ -125,3 +171,4 @@ plt.plot(month_by_month_total_users_no_bhl, users_by_month_total_users_no_bhl)
 plt.xlabel('Date')
 plt.ylabel('Users')
 plt.show()
+'''
