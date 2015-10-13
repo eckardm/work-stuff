@@ -10,11 +10,14 @@ import csv
 
 # matplotlib is a python 2d plotting library which produces publication quality figures in a variety of hardcopy formats and interactive environments across platforms, you'll need to install it
 import matplotlib.pyplot as plt
+import matplotlib.dates as mdates
 
 # seaborn is a python visualization library based on matplotlib
 import seaborn as sns
 
 import numpy as np
+
+import datetime as dt
 
 
 '''
@@ -84,14 +87,14 @@ def number_of_users(path):
 			'''
 			now, let's go through the days list and get the number of total users'''
 
-			# empty list for users
-			users = []
-
 			# for each of those days
 			for date in dates:
 
+				# empty list for users
+				users = []
+
 				# add formatted date to totals
-				formatted_date = float(date[-4:] + months[date[3:6]] + date[:2])
+				formatted_date = date[-4:] + months[date[3:6]] + date[:2]
 				days_total_users.append(formatted_date)
 
 				# reopen the csv
@@ -153,14 +156,14 @@ def number_of_users(path):
 			'''
 			now, let's go through the days list and get the number of total users no bhl'''
 
-			# empty list for users
-			users = []
-
 			# for each of those days
 			for date in dates:
 
+				# empty list for users
+				users = []
+
 				# add formatted date to totals
-				formatted_date = float(date[-4:] + months[date[3:6]] + date[:2])
+				formatted_date = date[-4:] + months[date[3:6]] + date[:2]
 				days_total_users_no_bhl.append(formatted_date)
 
 				# reopen the csv
@@ -200,14 +203,22 @@ def number_of_users(path):
 	# print total no bhl
 	print 'total users no bhl', total_users_no_bhl
 
+	# let's get the dates to display
+	x_total_users = [dt.datetime.strptime(d, '%Y%m%d').date() for d in days_total_users]
+	x_total_users_no_bhl = [dt.datetime.strptime(d, '%Y%m%d').date() for d in days_total_users_no_bhl]
+
 	# matplotlib for total users
 	plt.suptitle('Number of Users')
-	plt.plot(days_total_users, users_per_day_total_users, label = "Total Users")
-	plt.plot(days_total_users_no_bhl, users_per_day_total_users_no_bhl, label = "Total Users (No BHL)")
+	plt.gca().xaxis.set_major_formatter(mdates.DateFormatter('%m/%d/%Y'))
+	plt.gca().xaxis.set_major_locator(mdates.DayLocator())
+	plt.plot(x_total_users, users_per_day_total_users, label = "Total Users")
+	plt.plot(x_total_users_no_bhl, users_per_day_total_users_no_bhl, label = "Total Users (No BHL)")
+	plt.gcf().autofmt_xdate()
 	plt.xlabel('Date')
 	plt.ylabel('Users')
 	plt.legend()
 	plt.show()
+
 
 '''
 run the function'''
