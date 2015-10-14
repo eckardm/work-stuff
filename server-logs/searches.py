@@ -136,3 +136,10 @@ def searches(path):
 
 	print searches_histogram_total
 	print searches_histogram_total_no_bhl
+
+
+'''
+run it!'''
+
+# here we go
+searches(path)
