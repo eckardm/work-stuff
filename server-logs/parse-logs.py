@@ -61,6 +61,9 @@ def parse_logs(path):
                 referrer = line.split('"')[3]
                 browser = line.split('"')[5]
 
+                if 'bot' in browser or 'Bot' in browser or 'spider' in browser or 'Spider' in browser:
+                    continue
+
                 # write the row for the total csv
                 with open(join(path, output_csv_filename), 'ab') as output_csv:
                     writer = csv.writer(output_csv)
