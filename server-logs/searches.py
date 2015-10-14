@@ -8,6 +8,8 @@ from os.path import join
 # csv implements classes to read and write tabular data in csv format
 import csv
 
+from collections import Counter	
+
 
 '''
 preliminaries'''
@@ -132,10 +134,24 @@ def searches(path):
 								text_file.write(search + '\n')
 
 	'''
-	for now, just print the searches, in the future these should be historgrams?'''
+	histograms'''
 
-	print searches_histogram_total
-	print searches_histogram_total_no_bhl
+	# print them in order for total
+	with open('searches-counter.txt', 'w') as text_file:
+		c = Counter(searches_histogram_total)
+		for k, v in c.most_common(25):
+			with open('searches-counter.txt', 'a') as text_file:
+				text_file.write(k + ': ' + str(v) + '\n')
+
+	# print them in order for total no bhl
+	with open('searches-counter-noBHL.txt', 'w') as text_file:
+		c = Counter(searches_histogram_total_no_bhl)
+		for k, v in c.most_common(25):
+			with open('searches-counter-noBHL.txt', 'a') as text_file:
+				text_file.write(k + ': ' + str(v) + '\n')
+
+
+	
 
 
 '''
