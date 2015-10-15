@@ -8,6 +8,7 @@ from os.path import join
 # csv implements classes to read and write tabular data in csv format
 import csv
 
+# collections implements specialized container datatypes providing alternatives to python’s general purpose built-in containers, dict, list, set, and tuple
 from collections import Counter	
 
 
@@ -20,9 +21,7 @@ path = r'C:\Users\Public\Documents\server-logs'
 def searches(path):
 
 	# set up some empty histogram dictionaries
-
 	searches_histogram_total = {}
-
 	searches_histogram_total_no_bhl = {}
 
 
@@ -149,9 +148,6 @@ def searches(path):
 		for k, v in c.most_common(16):
 			with open('searches-counter-noBHL.txt', 'a') as text_file:
 				text_file.write(k + ': ' + str(v) + '\n')
-
-
-	
 
 
 '''
