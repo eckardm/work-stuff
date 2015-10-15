@@ -139,14 +139,14 @@ def searches(path):
 	# print them in order for total
 	with open('searches-counter.txt', 'w') as text_file:
 		c = Counter(searches_histogram_total)
-		for k, v in c.most_common(25):
+		for k, v in c.most_common(16):
 			with open('searches-counter.txt', 'a') as text_file:
 				text_file.write(k + ': ' + str(v) + '\n')
 
 	# print them in order for total no bhl
 	with open('searches-counter-noBHL.txt', 'w') as text_file:
 		c = Counter(searches_histogram_total_no_bhl)
-		for k, v in c.most_common(25):
+		for k, v in c.most_common(16):
 			with open('searches-counter-noBHL.txt', 'a') as text_file:
 				text_file.write(k + ': ' + str(v) + '\n')
 
