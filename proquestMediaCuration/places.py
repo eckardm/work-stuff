@@ -28,7 +28,6 @@ for filename in os.listdir(path):
 			for place in set(places):
 				stanford_ner_places.append(place)
 
-
 	print the_title
 	print the_filename
 	for i in proquest_places:

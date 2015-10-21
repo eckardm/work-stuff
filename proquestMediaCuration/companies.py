@@ -28,7 +28,6 @@ for filename in os.listdir(path):
 			for company in set(companies):
 				stanford_ner_companies.append(company)
 
-
 	print the_title
 	print the_filename
 	for i in proquest_companies:
