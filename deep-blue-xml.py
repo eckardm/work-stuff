@@ -16,7 +16,7 @@ dc_rights_copyright = ET.SubElement(audio_item, 'dc.rights.copyright')
 dc_rights_copyright.text = "This recording may be protected by copyright law. Every audio, visual, or textual work has copyright protection unless that protection has expired over time or its creator has placed it in the public domain. It is the responsibility of anyone interested in reproducing, broadcasting or publishing content from the Bentley Historical Library collections to determine copyright holders and secure permissions accordingly."
 dc_date_open = ET.SubElement(audio_item, 'dc.date.open')
 dc_description = ET.SubElement(audio_item, 'dc.description')
-dc_descriptoin.text = "Content note: The sound recording(s) associated with this repository item derive from a single audio reel tape. A single tape may yield multiple audio files if there were variations in tape stock, speed, or channels (i.e. stereo or mono). For more information see http://deepblue.lib.umich.edu/handle/2027.42/108126."
+dc_description.text = "Content note: The sound recording(s) associated with this repository item derive from a single audio reel tape. A single tape may yield multiple audio files if there were variations in tape stock, speed, or channels (i.e., stereo or mono). For more information see: http://deepblue.lib.umich.edu/handle/2027.42/108126."
 dc_abstract = ET.SubElement(audio_item, 'dc.abstract') # repeatable
 
 bitstream = ET.SubElement(audio_item, 'bitstream')
