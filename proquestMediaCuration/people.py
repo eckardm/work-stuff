@@ -30,8 +30,35 @@ for filename in os.listdir(path):
 
 	print the_title
 	print the_filename
+	if len(proquest_people) > len(stanford_ner_people):
+		difference = len(proquest_people) - len(stanford_ner_people)
+		i = 1
+		while i <= difference:
+			stanford_ner_people.append('')
+			i += 1
+		for iter in proquest_people:
+			print 'PROQUEST: ' + iter + '\tNER: ' + stanford_ner_people[proquest_people.index(iter)]
+
+		for i in stanford_ner_people:
+			if i in proquest_people:
+				print 'SHARED: ' + i
+	else:
+		difference = len(stanford_ner_people) - len(proquest_people)
+		i = 1
+		while i <= difference:
+			proquest_people.append('')
+			i += 1
+		for iter in stanford_ner_people:
+			print 'PROQUEST: ' + iter + ', NER: ' + proquest_people[stanford_ner_people.index(iter)]
+
+		for i in proquest_people:
+			if i in stanford_ner_people:
+				print 'SHARED: ' + i
+
 	for i in proquest_people:
-		print 'pq', i
+		if i not in stanford_ner_people and i != '':
+			print 'UNIQUE TO PROQUEST: ' + i
 	for i in stanford_ner_people:
-		print 's', i
+		if i not in proquest_people and i != '':
+			print 'UNIQUE TO NER: ' + i
 			
