@@ -4,6 +4,10 @@ from lxml import etree
 import re
 import csv
 
+import matplotlib.pyplot as plt
+from matplotlib_venn import venn2
+import seaborn as sns
+
 path = 'C:\Users\Public\Documents\proquestMediaCuration'
 
 for filename in os.listdir(path):
@@ -22,16 +26,35 @@ for filename in os.listdir(path):
 			proquest_places.append(place.text)
 
 		with open(join(path, filename.replace('.xml', '-TAGGED.txt')), 'r') as f:
-    
 			raw = f.read()
 			places = re.findall('(?<=<LOCATION>)(.*?)(?=</LOCATION>)', raw)
 			for place in set(places):
 				stanford_ner_places.append(place)
 
-	print the_title
-	print the_filename
-	for i in proquest_places:
-		print 'pq', i
-	for i in stanford_ner_places:
-		print 's', i
+		venn2([set(proquest_places), set(stanford_ner_places)], set_labels=('ProQuest', 'Standford NER'))
+		plt.suptitle(the_title + '\nPlaces', fontsize='x-large') 	
+		plt.savefig(the_filename + '-PLACES.png')
+
+		with open('places.txt', 'a') as f:
 			
+			f.write('FILENAME\n')
+			f.write(the_filename + '\n')
+			f.write('TITLE\n')
+			f.write(the_title + '\n')
+			
+			f.write('SHARED\n')
+			for i in proquest_places:
+				if i in stanford_ner_places:
+					f.write(i + '\n')
+
+			f.write('PROQUEST\n')
+			for i in proquest_places:
+				if i not in stanford_ner_places:
+					f.write(i + '\n')
+
+			f.write('STANFORD NER\n')
+			for i in stanford_ner_places:
+				if i not in proquest_places:
+					f.write(i + '\n')
+
+			f.write('\n\n')

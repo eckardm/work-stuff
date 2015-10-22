@@ -4,6 +4,10 @@ from lxml import etree
 import re
 import csv
 
+import matplotlib.pyplot as plt
+from matplotlib_venn import venn2
+import seaborn as sns
+
 path = 'C:\Users\Public\Documents\proquestMediaCuration'
 
 for filename in os.listdir(path):
@@ -22,43 +26,35 @@ for filename in os.listdir(path):
 			proquest_people.append(person.text)
 
 		with open(join(path, filename.replace('.xml', '-TAGGED.txt')), 'r') as f:
-    
 			raw = f.read()
 			people = re.findall('(?<=<PERSON>)(.*?)(?=</PERSON>)', raw)
-			for person in set(people):
+			for person in people:
 				stanford_ner_people.append(person)
 
-	print the_title
-	print the_filename
-	if len(proquest_people) > len(stanford_ner_people):
-		difference = len(proquest_people) - len(stanford_ner_people)
-		i = 1
-		while i <= difference:
-			stanford_ner_people.append('')
-			i += 1
-		for iter in proquest_people:
-			print 'PROQUEST: ' + iter + '\tNER: ' + stanford_ner_people[proquest_people.index(iter)]
+		venn2([set(proquest_people), set(stanford_ner_people)], set_labels=('ProQuest', 'Standford NER'))
+		plt.suptitle(the_title + '\nPeople', fontsize='x-large') 	
+		plt.savefig(the_filename + '-PEOPLE.png')
 
-		for i in stanford_ner_people:
-			if i in proquest_people:
-				print 'SHARED: ' + i
-	else:
-		difference = len(stanford_ner_people) - len(proquest_people)
-		i = 1
-		while i <= difference:
-			proquest_people.append('')
-			i += 1
-		for iter in stanford_ner_people:
-			print 'PROQUEST: ' + iter + ', NER: ' + proquest_people[stanford_ner_people.index(iter)]
-
-		for i in proquest_people:
-			if i in stanford_ner_people:
-				print 'SHARED: ' + i
-
-	for i in proquest_people:
-		if i not in stanford_ner_people and i != '':
-			print 'UNIQUE TO PROQUEST: ' + i
-	for i in stanford_ner_people:
-		if i not in proquest_people and i != '':
-			print 'UNIQUE TO NER: ' + i
+		with open('people.txt', 'a') as f:
 			
+			f.write('FILENAME\n')
+			f.write(the_filename + '\n')
+			f.write('TITLE\n')
+			f.write(the_title + '\n')
+			
+			f.write('SHARED\n')
+			for i in proquest_people:
+				if i in stanford_ner_people:
+					f.write(i + '\n')
+
+			f.write('PROQUEST\n')
+			for i in proquest_people:
+				if i not in stanford_ner_people:
+					f.write(i + '\n')
+
+			f.write('STANFORD NER\n')
+			for i in stanford_ner_people:
+				if i not in proquest_people:
+					f.write(i + '\n')
+
+			f.write('\n\n')
