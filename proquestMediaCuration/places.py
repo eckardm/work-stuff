@@ -37,24 +37,22 @@ for filename in os.listdir(path):
 
 		with open('places.txt', 'a') as f:
 			
-			f.write('FILENAME\n')
-			f.write(the_filename + '\n')
-			f.write('TITLE\n')
 			f.write(the_title + '\n')
-			
+			f.write(the_filename + '\n')
+
 			f.write('SHARED\n')
 			for i in proquest_places:
 				if i in stanford_ner_places:
-					f.write(i + '\n')
+					f.write(sorted(i) + '\n')
 
 			f.write('PROQUEST\n')
 			for i in proquest_places:
 				if i not in stanford_ner_places:
-					f.write(i + '\n')
+					f.write(sorted(i) + '\n')
 
 			f.write('STANFORD NER\n')
 			for i in stanford_ner_places:
 				if i not in proquest_places:
-					f.write(i + '\n')
+					f.write(sorted(i) + '\n')
 
 			f.write('\n\n')
