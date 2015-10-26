@@ -22,7 +22,7 @@ try:
 					E("dc.rights.copyright", "This recording may be protected by copyright law. Every audio, visual, or textual work has copyright protection unless that protection has expired over time or its creator has placed it in the public domain. It is the responsibility of anyone interested in reproducing, broadcasting or publishing content from the Bentley Historical Library collections to determine copyright holders and secure permissions accordingly."),
 					E("dc.date.open", "2015"),
 					E("dc.description", "Content note: The sound recording(s) associated with this repository item derive from a single audio reel tape. A single tape may yield multiple audio files if there were variations in tape stock, speed, or channels (i.e., stereo or mono). For more information see: http://deepblue.lib.umich.edu/handle/2027.42/108126."),
-					E("dc.abstract", row_dict["NoteContent"]),
+					E("dc.abstract", row_dict["NoteContent"]), # need info in []s
 					E("bitstream",
 						E("dc.title.filename"),
 						E("dc.description.filename"),
