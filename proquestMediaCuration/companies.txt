@@ -1,401 +1,733 @@
-FILENAME
-vcs_umichiganannarbor-0869D7C0-6D33-11E5-81D2-AA948412B401
-TITLE
 Willis Ward; Football, 1932-1934; Track, 1933-1935 (automated transcription)
+vcs_umichiganannarbor-0869D7C0-6D33-11E5-81D2-AA948412B401
 SHARED
 Democratic Party
 PROQUEST
 Ford Motor Co
 STANFORD NER
-Google
 Ford Motor Company
+Google
 
 
-FILENAME
-vcs_umichiganannarbor-46D45854-6D0C-11E5-AC93-84FCBF16AE04
-TITLE
 Bentley Historical Library Dedication "Local History is Alive and Well" ([R187B])
+vcs_umichiganannarbor-46D45854-6D0C-11E5-AC93-84FCBF16AE04
 SHARED
-Smith College
 Congress
-University
 Michigan Historical Collections
+Smith College
+University
 University of Michigan
 University of Wisconsin
 PROQUEST
 Al
 STANFORD NER
-Commission on Higher Education
-American Democracy in World Perspective
-Detroit Urban League
-University's Stearns Collection of Musical Instruments
-American Democracy
-Bureau
-New York Times
-Impact of Technological Innovation on Women and Families
-Congressional
-Bob Warner
-Parliament
-Northwestern University
-State Department
 American Association of University Presidents
-Harvard
-Cincinnati Population
-Grand Lodge of Michigan Masons
-London Times
+American Democracy
+American Democracy in World Perspective
+Bentley Historical Library
 Board of Regents
-Oxford University
-University of Illinois
+Bob Warner
+Bureau
+Cincinnati Population
+Clark University
+Columbia University
+Commission on Higher Education
+Congressional
+Delta Sigma Delta
+Detroit Urban League
+Grand Lodge of Michigan Masons
+Harvard
 Huntington Library
+Impact of Technological Innovation on Women and Families
+London Times
+National Historical Publications Commission
+New York Times
+Newberry Library
+Northwestern University
+Organization of American Historians
+Oxford University
+Parliament
+Populist Party
+State Department
+Steuben Glass
+Turner
+University of Illinois
 University of Michigan the Bentley Historical Library
 University of Virginia
-Newberry Library
-Populist Party
-Organization of American Historians
 University's School of Music
-National Historical Publications Commission
-Delta Sigma Delta
-Turner
-Columbia University
-Bentley Historical Library
-Clark University
-Steuben Glass
+University's Stearns Collection of Musical Instruments
 
 
-FILENAME
-vcs_umichiganannarbor-4E25C2A2-6D0A-11E5-AC93-84FCBF16AE04
-TITLE
 Dedication ceremonies at Post, Texas
+vcs_umichiganannarbor-4E25C2A2-6D0A-11E5-AC93-84FCBF16AE04
 SHARED
 Post
 PROQUEST
 CW
 STANFORD NER
-Postum Company
-Postum
 CW Post
 Illinois Agricultural Works
 Miss Post
+Postum
+Postum Company
 
 
-FILENAME
-vcs_umichiganannarbor-5FC5E1F6-6D1C-11E5-B6D4-60938412B401
-TITLE
 Hopwood Ceremonies Arthur Miller (''Recognition''); introduced by Arno Bader ([R225B])(automated transcription)
+vcs_umichiganannarbor-5FC5E1F6-6D1C-11E5-B6D4-60938412B401
 SHARED
 University of Michigan
 White House
 PROQUEST
 STANFORD NER
+Ascii
 Congress
-Time Magazine
 National Institute of Arts and Letters
 New York Times Book
 Society of the world
-Ascii
 St Louis
+Time Magazine
 
 
-FILENAME
-vcs_umichiganannarbor-68B2FC32-C1B8-11E4-B2FE-4D628412B401
-TITLE
 John F. Kennedy Farewell Speech; ([R149A])
+vcs_umichiganannarbor-68B2FC32-C1B8-11E4-B2FE-4D628412B401
 SHARED
 Democratic Party
 PROQUEST
 STANFORD NER
-Duke
 Congress
-Federal Reserve Board
+Duke
 Federal Aid to Education Bill
-National Committee
-Senate
-NATO
+Federal Reserve Board
 House of Congress
 Margaret Price
+NATO
+National Committee
 Princeton University
+Senate
 
 
-FILENAME
-vcs_umichiganannarbor-74B4329E-6D34-11E5-9EE8-86948412B401
-TITLE
 To the Cornflower and the Maize Program #1: The Classical Greek on the Old Frontier
         ([R21A]) (automated transcription)
+vcs_umichiganannarbor-74B4329E-6D34-11E5-9EE8-86948412B401
 SHARED
-Hamilton College
 Clements Historical Library
-University
-State University
+Hamilton College
 Michigan Historical
+State University
+University
 University of Michigan
 PROQUEST
 Declaration of Independence
 Reverend Father Gabriel
 STANFORD NER
 CAS
-Indians
+CNN
 Congress
+Exeter Academy
+Harvard
+Indians
+Philip Berkeley
+Princeton
+Princeton University
+Social Sciences
+Supreme Court
+Union new University of Michigan
 University of
 Williams Winchell Douglas
-Princeton
-Philip Berkeley
-Exeter Academy
-Union new University of Michigan
-Supreme Court
-Harvard
 Yale
-CNN
-Social Sciences
-Princeton University
 
 
-FILENAME
-vcs_umichiganannarbor-80B134BA-6D0D-11E5-96E0-47FCBF16AE04
-TITLE
 Hopwood Ceremonies Arthur Miller ("Recognition"); introduced by Arno Bader ([R225B])
+vcs_umichiganannarbor-80B134BA-6D0D-11E5-96E0-47FCBF16AE04
 SHARED
 University of Michigan
 White House
 PROQUEST
 Crucible
 STANFORD NER
-Hopwood Committee
-Ezra Pound
-Congress
 Army
-Horizontal Lines
-Time magazine
-National Institute of Arts and Letters
-Northville
-James F. Coats
-Times Book Review
-University of New Mexico
-New York Times
-University of Kansas
-Marquette
-Trim Bissell
+Congress
 Ergo
+Ezra Pound
+Hopwood Committee
+Horizontal Lines
+James F. Coats
+Marquette
+National Institute of Arts and Letters
+New York Times
 New York Times Book Review
+Northville
+Time magazine
+Times Book Review
+Trim Bissell
+University of Kansas
+University of New Mexico
 
 
-FILENAME
-vcs_umichiganannarbor-8ADFAFA2-6D35-11E5-9776-5B948412B401
-TITLE
 John F. Kennedy Farewell Speech; ([R149A]) (automated transcription)
+vcs_umichiganannarbor-8ADFAFA2-6D35-11E5-9776-5B948412B401
 SHARED
 Congress
 Democratic Party
 PROQUEST
 New Deal
 STANFORD NER
-Voice of America
 Marshall Plan NATO
-Senate
-National Committee
 National Academy of the Democratic
+National Committee
 Princeton University
+Senate
+Voice of America
 
 
-FILENAME
-vcs_umichiganannarbor-9D6E3EBA-6D0B-11E5-AC93-84FCBF16AE04
-TITLE
 Dr. Martin Luther King, "Going Forward By Going Backwards"
+vcs_umichiganannarbor-9D6E3EBA-6D0B-11E5-AC93-84FCBF16AE04
 SHARED
 PROQUEST
 Merritt Parkway
 STANFORD NER
-Mayo Clinic
 Central Methodist Church
+Church
 Gallup
 Harvard
-Church
+Mayo Clinic
 
 
-FILENAME
-vcs_umichiganannarbor-B584F740-6D34-11E5-9776-5B948412B401
-TITLE
 Esther Holmes and Matilda Holmes  (automated transcription)
+vcs_umichiganannarbor-B584F740-6D34-11E5-9776-5B948412B401
 SHARED
 PROQUEST
 STANFORD NER
-Congress
 Church church church
+Congress
 
 
-FILENAME
-vcs_umichiganannarbor-C1AF0B88-6D2E-11E5-8CD9-61948412B401
-TITLE
 Dr. Martin Luther King, ''Going Forward By Going Backwards'' (automated transcription)
+vcs_umichiganannarbor-C1AF0B88-6D2E-11E5-8CD9-61948412B401
 SHARED
 PROQUEST
-United Methodist Church
 Merritt Parkway
+United Methodist Church
 STANFORD NER
+Gallup
+Harvard
+Methodist Church
 Nasa
 Negro
-Harvard
-Gallup
-Methodist Church
 Westminster Abbey
 
 
-FILENAME
-vcs_umichiganannarbor-D51D0A42-6D21-11E5-B209-84938412B401
-TITLE
 Bentley Historical Library Dedication ''Local History is Alive and Well'' ([R187B]) (automated transcription)
+vcs_umichiganannarbor-D51D0A42-6D21-11E5-B209-84938412B401
 SHARED
-Smith College
 Congress
+Smith College
 University of Michigan
 University of Wisconsin
 PROQUEST
 STANFORD NER
-CLIOS
-Detroit Urban League
-Bureau
-New York Times
-Historical Society
-Eugene Power
-Bentley Historical Library
-Bentley Library
-Northwestern University
-State Department
-Press TV
-Harvard
 American Association of University
-Columbia University
-Protestant
-Oxford University
+Bentley Historical Library
 Bentley Historical Society
-Huntington Library
-Eighth District
-MIT Billington
-University of Virginia
-UNH
-Warner
-Populist Party
+Bentley Library
+Bureau
+CLIOS
 Clark University at Smith College
-University of Michigan School
+Columbia University
+Detroit Urban League
+Eighth District
+Eugene Power
+Harvard
+Historical Society
+Huntington Library
+MIT Billington
+New York Times
+Northwestern University
+Oxford University
+Populist Party
+Press TV
+Protestant
+State Department
+UNH
 University of Illinois
+University of Michigan School
+University of Virginia
+Warner
 
 
-FILENAME
-vcs_umichiganannarbor-D60B38F6-C1BA-11E4-B2FE-4D628412B401
-TITLE
 Esther Holmes and Matilda Holmes
+vcs_umichiganannarbor-D60B38F6-C1BA-11E4-B2FE-4D628412B401
 SHARED
 PROQUEST
 Walters
 STANFORD NER
 
 
-FILENAME
-vcs_umichiganannarbor-D9B0CF32-6D24-11E5-9EE8-86948412B401
-TITLE
 Chronological events; Angela Davis; ''Fighting Racism and Sexism in the 1980's'' (automated transcription)'
+vcs_umichiganannarbor-D9B0CF32-6D24-11E5-9EE8-86948412B401
 SHARED
 PROQUEST
 STANFORD NER
-Senate
 BT
-United democratic
 Christian
 National University
+Senate
+United democratic
 
 
-FILENAME
-vcs_umichiganannarbor-DCC84E98-C1B7-11E4-9857-29628412B401
-TITLE
 To the Cornflower and the Maize Program #1: "The Classical Greek on the Old Frontier" ([R21A])
+vcs_umichiganannarbor-DCC84E98-C1B7-11E4-9857-29628412B401
 SHARED
+Catholepistemiad
 Hamilton College
 Michigan Historical Collections
-University of Michigania
-Catholepistemiad
 University of Michigan
+University of Michigania
 PROQUEST
-Declaration of Independence
-University at Ann Arbor
 Cass
-Reverend Father Gabriel Richard
 Corn Flour
+Declaration of Independence
+Reverend Father Gabriel Richard
 Reverend John Montieth
+University at Ann Arbor
 STANFORD NER
 Board of Trustees
-Supreme Court
+Clement's Historical Library
+Clements Historical Library
+Congress
+Exeter Academy
+Harvard
+Indians
 Mason
+New York Regents
+Princeton
+Princeton University
+Prussian University System
 St. Anne's Church
 State University
-Congress
-Clements Historical Library
-Harvard
-University of Michigan Broadcasting Service
-Princeton University
-Clement's Historical Library
-Indians
-Princeton
+Supreme Court
 University
+University of Michigan Broadcasting Service
 University of Virginia
 Yale
-Exeter Academy
-Prussian University System
-New York Regents
 
 
-FILENAME
-vcs_umichiganannarbor-F62823FA-C1BB-11E4-8B1E-50628412B401
-TITLE
 Willis Ward; Football, 1932-1934; Track, 1933-1935
+vcs_umichiganannarbor-F62823FA-C1BB-11E4-8B1E-50628412B401
 SHARED
-Detroit College of Law
 Democratic Party
+Detroit College of Law
 University of Michigan
 PROQUEST
 General Motors Corp
 STANFORD NER
-White Panthers
-University Club
-Ford Motor Company
-Detroit  College of Law
 DAC
+Detroit  College of Law
+Detroit Club
 Ford
-University of Michigan Law School
-Wayne State
-Harvard
-School Board
+Ford Motor Company
 General Motors
 General Telephone
+Harvard
+School Board
 Topeka Board of Education
-Detroit Club
+University Club
+University of Michigan Law School
+Wayne State
+White Panthers
 
 
-FILENAME
-vcs_umichiganannarbor-FA53F472-6D0A-11E5-A4C6-68FABF16AE04
-TITLE
 Chronological events; Angela Davis; "Fighting Racism and Sexism in the 1980's"
+vcs_umichiganannarbor-FA53F472-6D0A-11E5-A4C6-68FABF16AE04
 SHARED
 PROQUEST
 International Longshoreman Worker
 STANFORD NER
-Colgate
-Latin American Solidarity Committee
-UCAR
 16th District Court
-UC Berkeley
-International Longshoreman Worker's Union
-United Coalition
-Ford
-Citicorp
 Black Women's Club Movement
-United Democratic Front
-GM
+Citicorp
+Colgate
+Ford
 Free South Africa Coordinating Committee
+GM
+International Longshoreman Worker's Union
+Latin American Solidarity Committee
+UC Berkeley
+UCAR
+United Coalition
+United Democratic Front
 
 
-FILENAME
-vcs_umichiganannarbor-FB9BF0E6-6D23-11E5-B7A8-64FFBF16AE04
-TITLE
 Dedication ceremonies at Post, Texas (automated transcription)
+vcs_umichiganannarbor-FB9BF0E6-6D23-11E5-B7A8-64FFBF16AE04
+SHARED
+PROQUEST
+STANFORD NER
+Paypal
+
+
+Willis Ward; Football, 1932-1934; Track, 1933-1935 (automated transcription)
+vcs_umichiganannarbor-0869D7C0-6D33-11E5-81D2-AA948412B401
+SHARED
+Democratic Party
+PROQUEST
+Ford Motor Co
+STANFORD NER
+Ford Motor Company
+Google
+
+
+Bentley Historical Library Dedication "Local History is Alive and Well" ([R187B])
+vcs_umichiganannarbor-46D45854-6D0C-11E5-AC93-84FCBF16AE04
+SHARED
+Congress
+Michigan Historical Collections
+Smith College
+University
+University of Michigan
+University of Wisconsin
+PROQUEST
+Al
+STANFORD NER
+American Association of University Presidents
+American Democracy
+American Democracy in World Perspective
+Bentley Historical Library
+Board of Regents
+Bob Warner
+Bureau
+Cincinnati Population
+Clark University
+Columbia University
+Commission on Higher Education
+Congressional
+Delta Sigma Delta
+Detroit Urban League
+Grand Lodge of Michigan Masons
+Harvard
+Huntington Library
+Impact of Technological Innovation on Women and Families
+London Times
+National Historical Publications Commission
+New York Times
+Newberry Library
+Northwestern University
+Organization of American Historians
+Oxford University
+Parliament
+Populist Party
+State Department
+Steuben Glass
+Turner
+University of Illinois
+University of Michigan the Bentley Historical Library
+University of Virginia
+University's School of Music
+University's Stearns Collection of Musical Instruments
+
+
+Dedication ceremonies at Post, Texas
+vcs_umichiganannarbor-4E25C2A2-6D0A-11E5-AC93-84FCBF16AE04
+SHARED
+Post
+PROQUEST
+CW
+STANFORD NER
+CW Post
+Illinois Agricultural Works
+Miss Post
+Postum
+Postum Company
+
+
+Hopwood Ceremonies Arthur Miller (''Recognition''); introduced by Arno Bader ([R225B])(automated transcription)
+vcs_umichiganannarbor-5FC5E1F6-6D1C-11E5-B6D4-60938412B401
+SHARED
+University of Michigan
+White House
+PROQUEST
+STANFORD NER
+Ascii
+Congress
+National Institute of Arts and Letters
+New York Times Book
+Society of the world
+St Louis
+Time Magazine
+
+
+John F. Kennedy Farewell Speech; ([R149A])
+vcs_umichiganannarbor-68B2FC32-C1B8-11E4-B2FE-4D628412B401
+SHARED
+Democratic Party
+PROQUEST
+STANFORD NER
+Congress
+Duke
+Federal Aid to Education Bill
+Federal Reserve Board
+House of Congress
+Margaret Price
+NATO
+National Committee
+Princeton University
+Senate
+
+
+To the Cornflower and the Maize Program #1: The Classical Greek on the Old Frontier
+        ([R21A]) (automated transcription)
+vcs_umichiganannarbor-74B4329E-6D34-11E5-9EE8-86948412B401
+SHARED
+Clements Historical Library
+Hamilton College
+Michigan Historical
+State University
+University
+University of Michigan
+PROQUEST
+Declaration of Independence
+Reverend Father Gabriel
+STANFORD NER
+CAS
+CNN
+Congress
+Exeter Academy
+Harvard
+Indians
+Philip Berkeley
+Princeton
+Princeton University
+Social Sciences
+Supreme Court
+Union new University of Michigan
+University of
+Williams Winchell Douglas
+Yale
+
+
+Hopwood Ceremonies Arthur Miller ("Recognition"); introduced by Arno Bader ([R225B])
+vcs_umichiganannarbor-80B134BA-6D0D-11E5-96E0-47FCBF16AE04
+SHARED
+University of Michigan
+White House
+PROQUEST
+Crucible
+STANFORD NER
+Army
+Congress
+Ergo
+Ezra Pound
+Hopwood Committee
+Horizontal Lines
+James F. Coats
+Marquette
+National Institute of Arts and Letters
+New York Times
+New York Times Book Review
+Northville
+Time magazine
+Times Book Review
+Trim Bissell
+University of Kansas
+University of New Mexico
+
+
+John F. Kennedy Farewell Speech; ([R149A]) (automated transcription)
+vcs_umichiganannarbor-8ADFAFA2-6D35-11E5-9776-5B948412B401
+SHARED
+Congress
+Democratic Party
+PROQUEST
+New Deal
+STANFORD NER
+Marshall Plan NATO
+National Academy of the Democratic
+National Committee
+Princeton University
+Senate
+Voice of America
+
+
+Dr. Martin Luther King, "Going Forward By Going Backwards"
+vcs_umichiganannarbor-9D6E3EBA-6D0B-11E5-AC93-84FCBF16AE04
+SHARED
+PROQUEST
+Merritt Parkway
+STANFORD NER
+Central Methodist Church
+Church
+Gallup
+Harvard
+Mayo Clinic
+
+
+Esther Holmes and Matilda Holmes  (automated transcription)
+vcs_umichiganannarbor-B584F740-6D34-11E5-9776-5B948412B401
+SHARED
+PROQUEST
+STANFORD NER
+Church church church
+Congress
+
+
+Dr. Martin Luther King, ''Going Forward By Going Backwards'' (automated transcription)
+vcs_umichiganannarbor-C1AF0B88-6D2E-11E5-8CD9-61948412B401
+SHARED
+PROQUEST
+Merritt Parkway
+United Methodist Church
+STANFORD NER
+Gallup
+Harvard
+Methodist Church
+Nasa
+Negro
+Westminster Abbey
+
+
+Bentley Historical Library Dedication ''Local History is Alive and Well'' ([R187B]) (automated transcription)
+vcs_umichiganannarbor-D51D0A42-6D21-11E5-B209-84938412B401
+SHARED
+Congress
+Smith College
+University of Michigan
+University of Wisconsin
+PROQUEST
+STANFORD NER
+American Association of University
+Bentley Historical Library
+Bentley Historical Society
+Bentley Library
+Bureau
+CLIOS
+Clark University at Smith College
+Columbia University
+Detroit Urban League
+Eighth District
+Eugene Power
+Harvard
+Historical Society
+Huntington Library
+MIT Billington
+New York Times
+Northwestern University
+Oxford University
+Populist Party
+Press TV
+Protestant
+State Department
+UNH
+University of Illinois
+University of Michigan School
+University of Virginia
+Warner
+
+
+Esther Holmes and Matilda Holmes
+vcs_umichiganannarbor-D60B38F6-C1BA-11E4-B2FE-4D628412B401
+SHARED
+PROQUEST
+Walters
+STANFORD NER
+
+
+Chronological events; Angela Davis; ''Fighting Racism and Sexism in the 1980's'' (automated transcription)'
+vcs_umichiganannarbor-D9B0CF32-6D24-11E5-9EE8-86948412B401
+SHARED
+PROQUEST
+STANFORD NER
+BT
+Christian
+National University
+Senate
+United democratic
+
+
+To the Cornflower and the Maize Program #1: "The Classical Greek on the Old Frontier" ([R21A])
+vcs_umichiganannarbor-DCC84E98-C1B7-11E4-9857-29628412B401
+SHARED
+Catholepistemiad
+Hamilton College
+Michigan Historical Collections
+University of Michigan
+University of Michigania
+PROQUEST
+Cass
+Corn Flour
+Declaration of Independence
+Reverend Father Gabriel Richard
+Reverend John Montieth
+University at Ann Arbor
+STANFORD NER
+Board of Trustees
+Clement's Historical Library
+Clements Historical Library
+Congress
+Exeter Academy
+Harvard
+Indians
+Mason
+New York Regents
+Princeton
+Princeton University
+Prussian University System
+St. Anne's Church
+State University
+Supreme Court
+University
+University of Michigan Broadcasting Service
+University of Virginia
+Yale
+
+
+Willis Ward; Football, 1932-1934; Track, 1933-1935
+vcs_umichiganannarbor-F62823FA-C1BB-11E4-8B1E-50628412B401
+SHARED
+Democratic Party
+Detroit College of Law
+University of Michigan
+PROQUEST
+General Motors Corp
+STANFORD NER
+DAC
+Detroit  College of Law
+Detroit Club
+Ford
+Ford Motor Company
+General Motors
+General Telephone
+Harvard
+School Board
+Topeka Board of Education
+University Club
+University of Michigan Law School
+Wayne State
+White Panthers
+
+
+Chronological events; Angela Davis; "Fighting Racism and Sexism in the 1980's"
+vcs_umichiganannarbor-FA53F472-6D0A-11E5-A4C6-68FABF16AE04
+SHARED
+PROQUEST
+International Longshoreman Worker
+STANFORD NER
+16th District Court
+Black Women's Club Movement
+Citicorp
+Colgate
+Ford
+Free South Africa Coordinating Committee
+GM
+International Longshoreman Worker's Union
+Latin American Solidarity Committee
+UC Berkeley
+UCAR
+United Coalition
+United Democratic Front
+
+
+Dedication ceremonies at Post, Texas (automated transcription)
+vcs_umichiganannarbor-FB9BF0E6-6D23-11E5-B7A8-64FFBF16AE04
 SHARED
 PROQUEST
 STANFORD NER

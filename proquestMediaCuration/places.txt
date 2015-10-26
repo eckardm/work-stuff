@@ -1,7 +1,5 @@
-FILENAME
-vcs_umichiganannarbor-0869D7C0-6D33-11E5-81D2-AA948412B401
-TITLE
 Willis Ward; Football, 1932-1934; Track, 1933-1935 (automated transcription)
+vcs_umichiganannarbor-0869D7C0-6D33-11E5-81D2-AA948412B401
 SHARED
 Britain
 Iowa
@@ -10,555 +8,521 @@ STANFORD NER
 Michigan
 
 
-FILENAME
-vcs_umichiganannarbor-46D45854-6D0C-11E5-AC93-84FCBF16AE04
-TITLE
 Bentley Historical Library Dedication "Local History is Alive and Well" ([R187B])
+vcs_umichiganannarbor-46D45854-6D0C-11E5-AC93-84FCBF16AE04
 SHARED
-Newark
-Nebraska
 Bay City
-England
-Illinois
-New Hampshire
-Pittsburgh
-Detroit
-Seward County
-France
-Wisconsin
-Jacksonville
-Chelsea
-Cambridge
-Pennsylvania
 Bentley Library
 California
-Pasadena
-Chicago
+Cambridge
 Charlottesville
+Chelsea
+Chicago
+Detroit
+England
+France
+Illinois
+Jacksonville
 Madison
-United States
 Michigan
+Nebraska
+New Hampshire
+Newark
+Pasadena
+Pennsylvania
+Pittsburgh
+Seward County
+United States
+Wisconsin
 PROQUEST
-Reform
 Arvella Bentley
-Negro
-northern California
 Billington
 Dumas Malone
-early America
-London Times
-Steuben Glass
-southern California
-Oklahoma
 Kansas
+London Times
+Negro
+Oklahoma
+Reform
+Steuben Glass
+early America
+northern California
+southern California
 STANFORD NER
-ROBBEN
-Denver
-Utah
+8th District
 Alsace
 America
-Massachusetts
-8th District
-Ohio
+Battle Creek
 Big Rapids
 Charlotte
-Battle Creek
-Tulare County
+Denver
 Manchester
+Massachusetts
+Ohio
+ROBBEN
+Tulare County
+Utah
 
 
-FILENAME
-vcs_umichiganannarbor-4E25C2A2-6D0A-11E5-AC93-84FCBF16AE04
-TITLE
 Dedication ceremonies at Post, Texas
+vcs_umichiganannarbor-4E25C2A2-6D0A-11E5-AC93-84FCBF16AE04
 SHARED
-Garza County
-Chicago
-Texas
 Battle Creek
+Chicago
+Garza County
+Texas
 West Texas
 PROQUEST
 Lynn
-Topsey
-Postum
 Post
+Postum
+Topsey
 STANFORD NER
 Post City
 
 
-FILENAME
-vcs_umichiganannarbor-5FC5E1F6-6D1C-11E5-B6D4-60938412B401
-TITLE
 Hopwood Ceremonies Arthur Miller (''Recognition''); introduced by Arno Bader ([R225B])(automated transcription)
+vcs_umichiganannarbor-5FC5E1F6-6D1C-11E5-B6D4-60938412B401
 SHARED
+America
+Bridgeport Connecticut
 Broadway
+Cambridge Massachusetts
+Detroit
+Europe
+Illinois
+Iran
+Kansas
 Korea
 Lodz
-Illinois
-Washington
-Miami Oklahoma
-Bridgeport Connecticut
-Europe
-Midland Michigan
-Skokie Illinois
-Kansas
 Mexico
-New York
-Detroit
-Iran
-Cambridge Massachusetts
+Miami Oklahoma
 Michigan
-America
+Midland Michigan
+New York
+Skokie Illinois
+Washington
 PROQUEST
-Chad Walsh
-particular Korea
-Maplewood
-Holton
-Charles
-Lolita
-Patricia
-Donna Rover
-Bromberg Assaf
 Ann
+Bromberg Assaf
+Chad Walsh
+Charles
+Donna Rover
+Holton
+Lolita
+Maplewood
+Patricia
+particular Korea
 STANFORD NER
-White House
-USA
-Maplewood new Jersey
-York
 Manchester Michigan
+Maplewood new Jersey
+USA
+White House
+York
 
 
-FILENAME
-vcs_umichiganannarbor-68B2FC32-C1B8-11E4-B2FE-4D628412B401
-TITLE
 John F. Kennedy Farewell Speech; ([R149A])
+vcs_umichiganannarbor-68B2FC32-C1B8-11E4-B2FE-4D628412B401
 SHARED
 PROQUEST
 STANFORD NER
-States
-Michigan
-United States
-Franklin Roosevelt
-Los Angeles
 America
-Upper Peninsula
+Franklin Roosevelt
 Latin America
+Los Angeles
+Michigan
+States
+United States
+Upper Peninsula
 
 
-FILENAME
-vcs_umichiganannarbor-74B4329E-6D34-11E5-9EE8-86948412B401
-TITLE
 To the Cornflower and the Maize Program #1: The Classical Greek on the Old Frontier
         ([R21A]) (automated transcription)
+vcs_umichiganannarbor-74B4329E-6D34-11E5-9EE8-86948412B401
 SHARED
-Gotham
-Clinton New York
-US
-New Hampshire
 Athens
-France
 Cambridge
-Washington
+Clinton New York
+Detroit
+France
+Gotham
+Michigan
+New Hampshire
 New York
 Tallahassee
+US
 United States
-Detroit
-Michigan
+Washington
 PROQUEST
+Ann Arbor
 Carolina
 Cass
-Woodbridge
 Docs
 Los
 West
-Ann Arbor
+Woodbridge
 STANFORD NER
-Virginia
-North Carolina
 Lodz
+North Carolina
 Oxford
+Virginia
 
 
-FILENAME
-vcs_umichiganannarbor-80B134BA-6D0D-11E5-96E0-47FCBF16AE04
-TITLE
 Hopwood Ceremonies Arthur Miller ("Recognition"); introduced by Arno Bader ([R225B])
+vcs_umichiganannarbor-80B134BA-6D0D-11E5-96E0-47FCBF16AE04
 SHARED
-Korea
-Wall Lake
-Grosse Point Park
-Maplewood
+America
+Bridgeport
 Chappaqua
 Connecticut
-Bridgeport
-US
-Washington
-Mexico
-Oak Park
-New Jersey
-Europe
-Illinois
-New York
-Grand Rapids
-Saginaw
 Detroit
+Europe
+Grand Rapids
+Grosse Point Park
+Illinois
+Korea
+Maplewood
+Mexico
 Michigan
-America
+New Jersey
+New York
+Oak Park
+Saginaw
+US
+Wall Lake
+Washington
 PROQUEST
-Skokie, Illinois
-Northville, Michigan
-Melville
-Hamlet
-Grand
-Manchester, Michigan
-Dostoevsky
-Faulkner
-Lolita
-Midland, Michigan
-Marquette
-Hopwood
-Miami, Oklahoma
 Ann Arbor
 Cambridge, Massachusetts
+Dostoevsky
+Faulkner
+Grand
+Hamlet
+Hopwood
+Lolita
+Manchester, Michigan
+Marquette
+Melville
+Miami, Oklahoma
+Midland, Michigan
+Northville, Michigan
+Skokie, Illinois
 STANFORD NER
-White House
-USA
-Oklahoma
-Milan
-Miami
-Massachusetts
-Houghton Lake Heights
-Dangs
 Cambridge
+Dangs
 Hemingway
-Midland
+Houghton Lake Heights
 Manchester
+Massachusetts
+Miami
+Midland
+Milan
+Oklahoma
 Skokie
+USA
+White House
 
 
-FILENAME
-vcs_umichiganannarbor-8ADFAFA2-6D35-11E5-9776-5B948412B401
-TITLE
 John F. Kennedy Farewell Speech; ([R149A]) (automated transcription)
+vcs_umichiganannarbor-8ADFAFA2-6D35-11E5-9776-5B948412B401
 SHARED
 America
-Latin America
 Illinois
+Latin America
 Michigan
 United States
 PROQUEST
-Thad
-Franklin Roosevelt
-Woodrow Wilson
 Edmund Burke
+Franklin Roosevelt
+Thad
+Woodrow Wilson
 STANFORD NER
-Roosevelt
 Los Angeles
+Roosevelt
 
 
-FILENAME
-vcs_umichiganannarbor-9D6E3EBA-6D0B-11E5-AC93-84FCBF16AE04
-TITLE
 Dr. Martin Luther King, "Going Forward By Going Backwards"
+vcs_umichiganannarbor-9D6E3EBA-6D0B-11E5-AC93-84FCBF16AE04
 SHARED
-Merritt Parkway
-Nigeria
-Indonesia
+Africa
+America
+Asia
+Boston
+Boston Massachusetts
+Bridgeport
 Chicago
+China
+Detroit
+England
+India
+Indonesia
+Japan
+Jerusalem
+London
+Merritt Parkway
 Middle East
+Nazareth
+New York
+New York City
+Nigeria
 Pakistan
 West Africa
-Bridgeport
-Boston Massachusetts
-Japan
-New York
-China
-London
-Detroit
-Asia
-England
-New York City
-Boston
-India
-America
-Africa
-Nazareth
-Jerusalem
 PROQUEST
 Bridgeport, Connecticut
 Kano, Nigeria
-Westminster Abbey
-Paris, France
 Mayo Clinic
+Paris, France
 West
+Westminster Abbey
 STANFORD NER
-Paris
-France
 Connecticut
+France
 Kano
+Paris
 
 
-FILENAME
-vcs_umichiganannarbor-B584F740-6D34-11E5-9776-5B948412B401
-TITLE
 Esther Holmes and Matilda Holmes  (automated transcription)
+vcs_umichiganannarbor-B584F740-6D34-11E5-9776-5B948412B401
 SHARED
 China
+Iraq
 Israel
 Paris
-Iraq
 PROQUEST
 Berkus
 STANFORD NER
 Austin
 
 
-FILENAME
-vcs_umichiganannarbor-C1AF0B88-6D2E-11E5-8CD9-61948412B401
-TITLE
 Dr. Martin Luther King, ''Going Forward By Going Backwards'' (automated transcription)
+vcs_umichiganannarbor-C1AF0B88-6D2E-11E5-8CD9-61948412B401
 SHARED
-Congo Nigeria
-Nigeria
-Indonesia
-Chicago
-Paris
-Middle East
-Pakistan
-West Africa
-Bridgeport
-Russia
-Japan
-New York
-China
-London
-Detroit
-Asia
-England
-New York City
-Boston
-India
-Nazareth
-America
 Africa
+America
+Asia
+Boston
+Bridgeport
+Chicago
+China
+Congo Nigeria
+Detroit
+England
+India
+Indonesia
+Japan
 Jerusalem
+London
+Middle East
+Nazareth
+New York
+New York City
+Nigeria
+Pakistan
+Paris
+Russia
+West Africa
 PROQUEST
-Bridgeport, Connecticut
 Boston, Massachusetts
-Westminster Abbey
+Bridgeport, Connecticut
 Mayo Clinic
-West
 Nasa
 Negro
+West
+Westminster Abbey
 STANFORD NER
 Connecticut
-Massachusetts
-San Agustin
 Earth
+Massachusetts
 Merritt Parkway
+San Agustin
 
 
-FILENAME
-vcs_umichiganannarbor-D51D0A42-6D21-11E5-B209-84938412B401
-TITLE
 Bentley Historical Library Dedication ''Local History is Alive and Well'' ([R187B]) (automated transcription)
+vcs_umichiganannarbor-D51D0A42-6D21-11E5-B209-84938412B401
 SHARED
-Newark
-Bay City
-Utah
 Africa
-England
-US
-Germany
-New Hampshire
-Pittsburgh
-Jacksonville Illinois
-Southern California
-France
-Manchester
-Chelsea
-Oklahoma
-Turkey
-Cincinnati
-Cambridge
-Kansas
-Pennsylvania
+Bay City
 California
-Pasadena
-Detroit
-Chicago
-Wisconsin
+Cambridge
 Charlottesville
+Chelsea
+Chicago
+Cincinnati
+Detroit
+England
+France
+Germany
+Jacksonville Illinois
+Kansas
 Madison
-United States
+Manchester
 Michigan
+New Hampshire
+Newark
+Oklahoma
+Pasadena
+Pennsylvania
+Pittsburgh
+Southern California
+Turkey
+US
+United States
+Utah
+Wisconsin
 PROQUEST
-Nebraska
-northern California
-early America
-Madonna
-Nora
-London Times
+Bentley Library
 Dumas
 Kool-Aid Jim
-Seward
-Bentley Library
+London Times
+Madonna
 Michigan Historical
+Nebraska
+Nora
+Seward
+early America
+northern California
 STANFORD NER
-Denver
 Alsace
 America
-Massachusetts
-Wellington
-Persepolis
-Grand Lodge
 Battle Creek
+Denver
+Grand Lodge
 London
+Massachusetts
+Persepolis
 Seward county Nebraska
+Wellington
 
 
-FILENAME
-vcs_umichiganannarbor-D60B38F6-C1BA-11E4-B2FE-4D628412B401
-TITLE
 Esther Holmes and Matilda Holmes
+vcs_umichiganannarbor-D60B38F6-C1BA-11E4-B2FE-4D628412B401
 SHARED
 China
 Manistee
 PROQUEST
 Minnie
 STANFORD NER
-Third Street
 Leonards
+Third Street
 
 
-FILENAME
-vcs_umichiganannarbor-D9B0CF32-6D24-11E5-9EE8-86948412B401
-TITLE
 Chronological events; Angela Davis; ''Fighting Racism and Sexism in the 1980's'' (automated transcription)'
+vcs_umichiganannarbor-D9B0CF32-6D24-11E5-9EE8-86948412B401
 SHARED
-South America
-Michigan
-Latin America
-Seneca
-San Francisco
 Iraq
+Latin America
+Michigan
 Michigan Union
+San Francisco
+Seneca
 South Africa
+South America
 PROQUEST
-Miley
 Lexington, Kentucky
+Miley
 United
 STANFORD NER
-Lexington
 Kentucky
+Lexington
 Logan
 Vegas
 
 
-FILENAME
-vcs_umichiganannarbor-DCC84E98-C1B7-11E4-9857-29628412B401
-TITLE
 To the Cornflower and the Maize Program #1: "The Classical Greek on the Old Frontier" ([R21A])
+vcs_umichiganannarbor-DCC84E98-C1B7-11E4-9857-29628412B401
 SHARED
-Tappan
-New Hampshire
 Athens
-Maumee River
-France
 Cambridge
-Washington
+Detroit
+France
+Maumee River
+Michigan
+New Hampshire
 New York
 Tallahassee
+Tappan
 United States
-Detroit
-Michigan
+Washington
 PROQUEST
+Andrew Jackson
+Bates Street
 Carolina
 Cass
-English, Latin
-Cooley
-Bates Street
-Douglas
-south Adams Avenue
-Larned
-Clinton, New York
-Andrew Jackson
-West
 Catholepistemiad
+Clinton, New York
+Cooley
+Douglas
+English, Latin
+Larned
+West
+south Adams Avenue
 STANFORD NER
-Clinton
-North Carolina
 Adams Avenue
-Oxford
+Clinton
 Grand Circus Park
+North Carolina
+Oxford
 
 
-FILENAME
-vcs_umichiganannarbor-F62823FA-C1BB-11E4-8B1E-50628412B401
-TITLE
 Willis Ward; Football, 1932-1934; Track, 1933-1935
+vcs_umichiganannarbor-F62823FA-C1BB-11E4-8B1E-50628412B401
 SHARED
 America
-Chicago
-Illinois
 Atlantic City
-Dixie
 California
+Chicago
+Dixie
+Illinois
 Kansas
-Vietnam
-Michigan State
 Michigan
+Michigan State
+Vietnam
 PROQUEST
 Detroit
-Western
-Michigan Bell
-Falkland
 Detroit Club
+Falkland
+Michigan Bell
+Western
 STANFORD NER
 Albion
 North
 South
 
 
-FILENAME
-vcs_umichiganannarbor-FA53F472-6D0A-11E5-A4C6-68FABF16AE04
-TITLE
 Chronological events; Angela Davis; "Fighting Racism and Sexism in the 1980's"
+vcs_umichiganannarbor-FA53F472-6D0A-11E5-A4C6-68FABF16AE04
 SHARED
+Africa
 America
 Berkeley
-Africa
-Florida
-United States
-San Francisco
 California
-Nicaragua
 England
-US
-Michigan Union
+Florida
 Honduras
+Michigan Union
+Nicaragua
+San Francisco
 South Africa
+US
+United States
 PROQUEST
+Ann Arbor
 Botha
 Lexington, Kentucky
-Teresa
-Noriega
 Main Street
-Ann Arbor
+Noriega
+Teresa
 STANFORD NER
-White House
-Sharpeville
 Death Valley Days
-Lexington
 Federal Building
-Kentucky
 Hutchin
+Kentucky
+Lexington
+Sharpeville
+White House
 
 
-FILENAME
-vcs_umichiganannarbor-FB9BF0E6-6D23-11E5-B7A8-64FFBF16AE04
-TITLE
 Dedication ceremonies at Post, Texas (automated transcription)
+vcs_umichiganannarbor-FB9BF0E6-6D23-11E5-B7A8-64FFBF16AE04
 SHARED
 Texas
 PROQUEST
@@ -566,7 +530,1079 @@ Garza
 Lancaster
 west Texas
 STANFORD NER
-Lancaster county
 Garza county
+Lancaster county
+
+
+Willis Ward; Football, 1932-1934; Track, 1933-1935 (automated transcription)
+vcs_umichiganannarbor-0869D7C0-6D33-11E5-81D2-AA948412B401
+SHARED
+Britain
+Iowa
+PROQUEST
+STANFORD NER
+Michigan
+
+
+Bentley Historical Library Dedication "Local History is Alive and Well" ([R187B])
+vcs_umichiganannarbor-46D45854-6D0C-11E5-AC93-84FCBF16AE04
+SHARED
+Bay City
+Bentley Library
+California
+Cambridge
+Charlottesville
+Chelsea
+Chicago
+Detroit
+England
+France
+Illinois
+Jacksonville
+Madison
+Michigan
+Nebraska
+New Hampshire
+Newark
+Pasadena
+Pennsylvania
+Pittsburgh
+Seward County
+United States
+Wisconsin
+PROQUEST
+Arvella Bentley
+Billington
+Dumas Malone
+Kansas
+London Times
+Negro
+Oklahoma
+Reform
+Steuben Glass
+early America
+northern California
+southern California
+STANFORD NER
+8th District
+Alsace
+America
+Battle Creek
+Big Rapids
+Charlotte
+Denver
+Manchester
+Massachusetts
+Ohio
+ROBBEN
+Tulare County
+Utah
+
+
+Dedication ceremonies at Post, Texas
+vcs_umichiganannarbor-4E25C2A2-6D0A-11E5-AC93-84FCBF16AE04
+SHARED
+Battle Creek
+Chicago
+Garza County
+Texas
+West Texas
+PROQUEST
+Lynn
+Post
+Postum
+Topsey
+STANFORD NER
+Post City
+
+
+Hopwood Ceremonies Arthur Miller (''Recognition''); introduced by Arno Bader ([R225B])(automated transcription)
+vcs_umichiganannarbor-5FC5E1F6-6D1C-11E5-B6D4-60938412B401
+SHARED
+America
+Bridgeport Connecticut
+Broadway
+Cambridge Massachusetts
+Detroit
+Europe
+Illinois
+Iran
+Kansas
+Korea
+Lodz
+Mexico
+Miami Oklahoma
+Michigan
+Midland Michigan
+New York
+Skokie Illinois
+Washington
+PROQUEST
+Ann
+Bromberg Assaf
+Chad Walsh
+Charles
+Donna Rover
+Holton
+Lolita
+Maplewood
+Patricia
+particular Korea
+STANFORD NER
+Manchester Michigan
+Maplewood new Jersey
+USA
+White House
+York
+
+
+John F. Kennedy Farewell Speech; ([R149A])
+vcs_umichiganannarbor-68B2FC32-C1B8-11E4-B2FE-4D628412B401
+SHARED
+PROQUEST
+STANFORD NER
+America
+Franklin Roosevelt
+Latin America
+Los Angeles
+Michigan
+States
+United States
+Upper Peninsula
+
+
+To the Cornflower and the Maize Program #1: The Classical Greek on the Old Frontier
+        ([R21A]) (automated transcription)
+vcs_umichiganannarbor-74B4329E-6D34-11E5-9EE8-86948412B401
+SHARED
+Athens
+Cambridge
+Clinton New York
+Detroit
+France
+Gotham
+Michigan
+New Hampshire
+New York
+Tallahassee
+US
+United States
+Washington
+PROQUEST
+Ann Arbor
+Carolina
+Cass
+Docs
+Los
+West
+Woodbridge
+STANFORD NER
+Lodz
+North Carolina
+Oxford
+Virginia
+
+
+Hopwood Ceremonies Arthur Miller ("Recognition"); introduced by Arno Bader ([R225B])
+vcs_umichiganannarbor-80B134BA-6D0D-11E5-96E0-47FCBF16AE04
+SHARED
+America
+Bridgeport
+Chappaqua
+Connecticut
+Detroit
+Europe
+Grand Rapids
+Grosse Point Park
+Illinois
+Korea
+Maplewood
+Mexico
+Michigan
+New Jersey
+New York
+Oak Park
+Saginaw
+US
+Wall Lake
+Washington
+PROQUEST
+Ann Arbor
+Cambridge, Massachusetts
+Dostoevsky
+Faulkner
+Grand
+Hamlet
+Hopwood
+Lolita
+Manchester, Michigan
+Marquette
+Melville
+Miami, Oklahoma
+Midland, Michigan
+Northville, Michigan
+Skokie, Illinois
+STANFORD NER
+Cambridge
+Dangs
+Hemingway
+Houghton Lake Heights
+Manchester
+Massachusetts
+Miami
+Midland
+Milan
+Oklahoma
+Skokie
+USA
+White House
+
+
+John F. Kennedy Farewell Speech; ([R149A]) (automated transcription)
+vcs_umichiganannarbor-8ADFAFA2-6D35-11E5-9776-5B948412B401
+SHARED
+America
+Illinois
+Latin America
+Michigan
+United States
+PROQUEST
+Edmund Burke
+Franklin Roosevelt
+Thad
+Woodrow Wilson
+STANFORD NER
+Los Angeles
+Roosevelt
+
+
+Dr. Martin Luther King, "Going Forward By Going Backwards"
+vcs_umichiganannarbor-9D6E3EBA-6D0B-11E5-AC93-84FCBF16AE04
+SHARED
+Africa
+America
+Asia
+Boston
+Boston Massachusetts
+Bridgeport
+Chicago
+China
+Detroit
+England
+India
+Indonesia
+Japan
+Jerusalem
+London
+Merritt Parkway
+Middle East
+Nazareth
+New York
+New York City
+Nigeria
+Pakistan
+West Africa
+PROQUEST
+Bridgeport, Connecticut
+Kano, Nigeria
+Mayo Clinic
+Paris, France
+West
+Westminster Abbey
+STANFORD NER
+Connecticut
+France
+Kano
+Paris
+
+
+Esther Holmes and Matilda Holmes  (automated transcription)
+vcs_umichiganannarbor-B584F740-6D34-11E5-9776-5B948412B401
+SHARED
+China
+Iraq
+Israel
+Paris
+PROQUEST
+Berkus
+STANFORD NER
+Austin
+
+
+Dr. Martin Luther King, ''Going Forward By Going Backwards'' (automated transcription)
+vcs_umichiganannarbor-C1AF0B88-6D2E-11E5-8CD9-61948412B401
+SHARED
+Africa
+America
+Asia
+Boston
+Bridgeport
+Chicago
+China
+Congo Nigeria
+Detroit
+England
+India
+Indonesia
+Japan
+Jerusalem
+London
+Middle East
+Nazareth
+New York
+New York City
+Nigeria
+Pakistan
+Paris
+Russia
+West Africa
+PROQUEST
+Boston, Massachusetts
+Bridgeport, Connecticut
+Mayo Clinic
+Nasa
+Negro
+West
+Westminster Abbey
+STANFORD NER
+Connecticut
+Earth
+Massachusetts
+Merritt Parkway
+San Agustin
+
+
+Bentley Historical Library Dedication ''Local History is Alive and Well'' ([R187B]) (automated transcription)
+vcs_umichiganannarbor-D51D0A42-6D21-11E5-B209-84938412B401
+SHARED
+Africa
+Bay City
+California
+Cambridge
+Charlottesville
+Chelsea
+Chicago
+Cincinnati
+Detroit
+England
+France
+Germany
+Jacksonville Illinois
+Kansas
+Madison
+Manchester
+Michigan
+New Hampshire
+Newark
+Oklahoma
+Pasadena
+Pennsylvania
+Pittsburgh
+Southern California
+Turkey
+US
+United States
+Utah
+Wisconsin
+PROQUEST
+Bentley Library
+Dumas
+Kool-Aid Jim
+London Times
+Madonna
+Michigan Historical
+Nebraska
+Nora
+Seward
+early America
+northern California
+STANFORD NER
+Alsace
+America
+Battle Creek
+Denver
+Grand Lodge
+London
+Massachusetts
+Persepolis
+Seward county Nebraska
+Wellington
+
+
+Esther Holmes and Matilda Holmes
+vcs_umichiganannarbor-D60B38F6-C1BA-11E4-B2FE-4D628412B401
+SHARED
+China
+Manistee
+PROQUEST
+Minnie
+STANFORD NER
+Leonards
+Third Street
+
+
+Chronological events; Angela Davis; ''Fighting Racism and Sexism in the 1980's'' (automated transcription)'
+vcs_umichiganannarbor-D9B0CF32-6D24-11E5-9EE8-86948412B401
+SHARED
+Iraq
+Latin America
+Michigan
+Michigan Union
+San Francisco
+Seneca
+South Africa
+South America
+PROQUEST
+Lexington, Kentucky
+Miley
+United
+STANFORD NER
+Kentucky
+Lexington
+Logan
+Vegas
+
+
+To the Cornflower and the Maize Program #1: "The Classical Greek on the Old Frontier" ([R21A])
+vcs_umichiganannarbor-DCC84E98-C1B7-11E4-9857-29628412B401
+SHARED
+Athens
+Cambridge
+Detroit
+France
+Maumee River
+Michigan
+New Hampshire
+New York
+Tallahassee
+Tappan
+United States
+Washington
+PROQUEST
+Andrew Jackson
+Bates Street
+Carolina
+Cass
+Catholepistemiad
+Clinton, New York
+Cooley
+Douglas
+English, Latin
+Larned
+West
+south Adams Avenue
+STANFORD NER
+Adams Avenue
+Clinton
+Grand Circus Park
+North Carolina
+Oxford
+
+
+Willis Ward; Football, 1932-1934; Track, 1933-1935
+vcs_umichiganannarbor-F62823FA-C1BB-11E4-8B1E-50628412B401
+SHARED
+America
+Atlantic City
+California
+Chicago
+Dixie
+Illinois
+Kansas
+Michigan
+Michigan State
+Vietnam
+PROQUEST
+Detroit
+Detroit Club
+Falkland
+Michigan Bell
+Western
+STANFORD NER
+Albion
+North
+South
+
+
+Chronological events; Angela Davis; "Fighting Racism and Sexism in the 1980's"
+vcs_umichiganannarbor-FA53F472-6D0A-11E5-A4C6-68FABF16AE04
+SHARED
+Africa
+America
+Berkeley
+California
+England
+Florida
+Honduras
+Michigan Union
+Nicaragua
+San Francisco
+South Africa
+US
+United States
+PROQUEST
+Ann Arbor
+Botha
+Lexington, Kentucky
+Main Street
+Noriega
+Teresa
+STANFORD NER
+Death Valley Days
+Federal Building
+Hutchin
+Kentucky
+Lexington
+Sharpeville
+White House
+
+
+Dedication ceremonies at Post, Texas (automated transcription)
+vcs_umichiganannarbor-FB9BF0E6-6D23-11E5-B7A8-64FFBF16AE04
+SHARED
+Texas
+PROQUEST
+Garza
+Lancaster
+west Texas
+STANFORD NER
+Garza county
+Lancaster county
+
+
+Willis Ward; Football, 1932-1934; Track, 1933-1935 (automated transcription)
+vcs_umichiganannarbor-0869D7C0-6D33-11E5-81D2-AA948412B401
+SHARED
+Britain
+Iowa
+PROQUEST
+STANFORD NER
+Michigan
+
+
+Bentley Historical Library Dedication "Local History is Alive and Well" ([R187B])
+vcs_umichiganannarbor-46D45854-6D0C-11E5-AC93-84FCBF16AE04
+SHARED
+Bay City
+Bentley Library
+California
+Cambridge
+Charlottesville
+Chelsea
+Chicago
+Detroit
+England
+France
+Illinois
+Jacksonville
+Madison
+Michigan
+Nebraska
+New Hampshire
+Newark
+Pasadena
+Pennsylvania
+Pittsburgh
+Seward County
+United States
+Wisconsin
+PROQUEST
+Arvella Bentley
+Billington
+Dumas Malone
+Kansas
+London Times
+Negro
+Oklahoma
+Reform
+Steuben Glass
+early America
+northern California
+southern California
+STANFORD NER
+8th District
+Alsace
+America
+Battle Creek
+Big Rapids
+Charlotte
+Denver
+Manchester
+Massachusetts
+Ohio
+ROBBEN
+Tulare County
+Utah
+
+
+Dedication ceremonies at Post, Texas
+vcs_umichiganannarbor-4E25C2A2-6D0A-11E5-AC93-84FCBF16AE04
+SHARED
+Battle Creek
+Chicago
+Garza County
+Texas
+West Texas
+PROQUEST
+Lynn
+Post
+Postum
+Topsey
+STANFORD NER
+Post City
+
+
+Hopwood Ceremonies Arthur Miller (''Recognition''); introduced by Arno Bader ([R225B])(automated transcription)
+vcs_umichiganannarbor-5FC5E1F6-6D1C-11E5-B6D4-60938412B401
+SHARED
+America
+Bridgeport Connecticut
+Broadway
+Cambridge Massachusetts
+Detroit
+Europe
+Illinois
+Iran
+Kansas
+Korea
+Lodz
+Mexico
+Miami Oklahoma
+Michigan
+Midland Michigan
+New York
+Skokie Illinois
+Washington
+PROQUEST
+Ann
+Bromberg Assaf
+Chad Walsh
+Charles
+Donna Rover
+Holton
+Lolita
+Maplewood
+Patricia
+particular Korea
+STANFORD NER
+Manchester Michigan
+Maplewood new Jersey
+USA
+White House
+York
+
+
+John F. Kennedy Farewell Speech; ([R149A])
+vcs_umichiganannarbor-68B2FC32-C1B8-11E4-B2FE-4D628412B401
+SHARED
+PROQUEST
+STANFORD NER
+America
+Franklin Roosevelt
+Latin America
+Los Angeles
+Michigan
+States
+United States
+Upper Peninsula
+
+
+To the Cornflower and the Maize Program #1: The Classical Greek on the Old Frontier
+        ([R21A]) (automated transcription)
+vcs_umichiganannarbor-74B4329E-6D34-11E5-9EE8-86948412B401
+SHARED
+Athens
+Cambridge
+Clinton New York
+Detroit
+France
+Gotham
+Michigan
+New Hampshire
+New York
+Tallahassee
+US
+United States
+Washington
+PROQUEST
+Ann Arbor
+Carolina
+Cass
+Docs
+Los
+West
+Woodbridge
+STANFORD NER
+Lodz
+North Carolina
+Oxford
+Virginia
+
+
+Hopwood Ceremonies Arthur Miller ("Recognition"); introduced by Arno Bader ([R225B])
+vcs_umichiganannarbor-80B134BA-6D0D-11E5-96E0-47FCBF16AE04
+SHARED
+America
+Bridgeport
+Chappaqua
+Connecticut
+Detroit
+Europe
+Grand Rapids
+Grosse Point Park
+Illinois
+Korea
+Maplewood
+Mexico
+Michigan
+New Jersey
+New York
+Oak Park
+Saginaw
+US
+Wall Lake
+Washington
+PROQUEST
+Ann Arbor
+Cambridge, Massachusetts
+Dostoevsky
+Faulkner
+Grand
+Hamlet
+Hopwood
+Lolita
+Manchester, Michigan
+Marquette
+Melville
+Miami, Oklahoma
+Midland, Michigan
+Northville, Michigan
+Skokie, Illinois
+STANFORD NER
+Cambridge
+Dangs
+Hemingway
+Houghton Lake Heights
+Manchester
+Massachusetts
+Miami
+Midland
+Milan
+Oklahoma
+Skokie
+USA
+White House
+
+
+John F. Kennedy Farewell Speech; ([R149A]) (automated transcription)
+vcs_umichiganannarbor-8ADFAFA2-6D35-11E5-9776-5B948412B401
+SHARED
+America
+Illinois
+Latin America
+Michigan
+United States
+PROQUEST
+Edmund Burke
+Franklin Roosevelt
+Thad
+Woodrow Wilson
+STANFORD NER
+Los Angeles
+Roosevelt
+
+
+Dr. Martin Luther King, "Going Forward By Going Backwards"
+vcs_umichiganannarbor-9D6E3EBA-6D0B-11E5-AC93-84FCBF16AE04
+SHARED
+Africa
+America
+Asia
+Boston
+Boston Massachusetts
+Bridgeport
+Chicago
+China
+Detroit
+England
+India
+Indonesia
+Japan
+Jerusalem
+London
+Merritt Parkway
+Middle East
+Nazareth
+New York
+New York City
+Nigeria
+Pakistan
+West Africa
+PROQUEST
+Bridgeport, Connecticut
+Kano, Nigeria
+Mayo Clinic
+Paris, France
+West
+Westminster Abbey
+STANFORD NER
+Connecticut
+France
+Kano
+Paris
+
+
+Esther Holmes and Matilda Holmes  (automated transcription)
+vcs_umichiganannarbor-B584F740-6D34-11E5-9776-5B948412B401
+SHARED
+China
+Iraq
+Israel
+Paris
+PROQUEST
+Berkus
+STANFORD NER
+Austin
+
+
+Dr. Martin Luther King, ''Going Forward By Going Backwards'' (automated transcription)
+vcs_umichiganannarbor-C1AF0B88-6D2E-11E5-8CD9-61948412B401
+SHARED
+Africa
+America
+Asia
+Boston
+Bridgeport
+Chicago
+China
+Congo Nigeria
+Detroit
+England
+India
+Indonesia
+Japan
+Jerusalem
+London
+Middle East
+Nazareth
+New York
+New York City
+Nigeria
+Pakistan
+Paris
+Russia
+West Africa
+PROQUEST
+Boston, Massachusetts
+Bridgeport, Connecticut
+Mayo Clinic
+Nasa
+Negro
+West
+Westminster Abbey
+STANFORD NER
+Connecticut
+Earth
+Massachusetts
+Merritt Parkway
+San Agustin
+
+
+Bentley Historical Library Dedication ''Local History is Alive and Well'' ([R187B]) (automated transcription)
+vcs_umichiganannarbor-D51D0A42-6D21-11E5-B209-84938412B401
+SHARED
+Africa
+Bay City
+California
+Cambridge
+Charlottesville
+Chelsea
+Chicago
+Cincinnati
+Detroit
+England
+France
+Germany
+Jacksonville Illinois
+Kansas
+Madison
+Manchester
+Michigan
+New Hampshire
+Newark
+Oklahoma
+Pasadena
+Pennsylvania
+Pittsburgh
+Southern California
+Turkey
+US
+United States
+Utah
+Wisconsin
+PROQUEST
+Bentley Library
+Dumas
+Kool-Aid Jim
+London Times
+Madonna
+Michigan Historical
+Nebraska
+Nora
+Seward
+early America
+northern California
+STANFORD NER
+Alsace
+America
+Battle Creek
+Denver
+Grand Lodge
+London
+Massachusetts
+Persepolis
+Seward county Nebraska
+Wellington
+
+
+Esther Holmes and Matilda Holmes
+vcs_umichiganannarbor-D60B38F6-C1BA-11E4-B2FE-4D628412B401
+SHARED
+China
+Manistee
+PROQUEST
+Minnie
+STANFORD NER
+Leonards
+Third Street
+
+
+Chronological events; Angela Davis; ''Fighting Racism and Sexism in the 1980's'' (automated transcription)'
+vcs_umichiganannarbor-D9B0CF32-6D24-11E5-9EE8-86948412B401
+SHARED
+Iraq
+Latin America
+Michigan
+Michigan Union
+San Francisco
+Seneca
+South Africa
+South America
+PROQUEST
+Lexington, Kentucky
+Miley
+United
+STANFORD NER
+Kentucky
+Lexington
+Logan
+Vegas
+
+
+To the Cornflower and the Maize Program #1: "The Classical Greek on the Old Frontier" ([R21A])
+vcs_umichiganannarbor-DCC84E98-C1B7-11E4-9857-29628412B401
+SHARED
+Athens
+Cambridge
+Detroit
+France
+Maumee River
+Michigan
+New Hampshire
+New York
+Tallahassee
+Tappan
+United States
+Washington
+PROQUEST
+Andrew Jackson
+Bates Street
+Carolina
+Cass
+Catholepistemiad
+Clinton, New York
+Cooley
+Douglas
+English, Latin
+Larned
+West
+south Adams Avenue
+STANFORD NER
+Adams Avenue
+Clinton
+Grand Circus Park
+North Carolina
+Oxford
+
+
+Willis Ward; Football, 1932-1934; Track, 1933-1935
+vcs_umichiganannarbor-F62823FA-C1BB-11E4-8B1E-50628412B401
+SHARED
+America
+Atlantic City
+California
+Chicago
+Dixie
+Illinois
+Kansas
+Michigan
+Michigan State
+Vietnam
+PROQUEST
+Detroit
+Detroit Club
+Falkland
+Michigan Bell
+Western
+STANFORD NER
+Albion
+North
+South
+
+
+Chronological events; Angela Davis; "Fighting Racism and Sexism in the 1980's"
+vcs_umichiganannarbor-FA53F472-6D0A-11E5-A4C6-68FABF16AE04
+SHARED
+Africa
+America
+Berkeley
+California
+England
+Florida
+Honduras
+Michigan Union
+Nicaragua
+San Francisco
+South Africa
+US
+United States
+PROQUEST
+Ann Arbor
+Botha
+Lexington, Kentucky
+Main Street
+Noriega
+Teresa
+STANFORD NER
+Death Valley Days
+Federal Building
+Hutchin
+Kentucky
+Lexington
+Sharpeville
+White House
+
+
+Dedication ceremonies at Post, Texas (automated transcription)
+vcs_umichiganannarbor-FB9BF0E6-6D23-11E5-B7A8-64FFBF16AE04
+SHARED
+Texas
+PROQUEST
+Garza
+Lancaster
+west Texas
+STANFORD NER
+Garza county
+Lancaster county
 
 
