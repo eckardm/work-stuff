@@ -21,7 +21,7 @@ try:
 					E("dc.date.created", row_dict["Files_Return_Date"][-4:]),
 					E("dc.coverage.temporal", row_dict["ItemDate"]),
 					E("dc.type", row_dict["Audio_Genre"]), # need to account for other rows
-					E("dc.description.restriction"), # talk to Melissa about this
+					# E("dc.description.restriction"),
 					E("dc.rights.access", "This material is available for research only in the Reading Room of the Bentley Historical Library at the University of Michigan (Ann Arbor, MI)."),
 					E("dc.rights.copyright", "This recording may be protected by copyright law. Every audio, visual, or textual work has copyright protection unless that protection has expired over time or its creator has placed it in the public domain. It is the responsibility of anyone interested in reproducing, broadcasting or publishing content from the Bentley Historical Library collections to determine copyright holders and secure permissions accordingly."),
 					E("dc.date.open", "2015"),
