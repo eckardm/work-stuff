@@ -22,8 +22,7 @@ def make_coll_item_nos_and_jpegs(batch):
 			# get jpeg filenames
 			for coll_item_no in os.listdir(batch + collection_id):
 				for filename in os.listdir(batch + collection_id + '/' + coll_item_no):
-					if filename.endswith('.jpg'):
-						coll_item_nos_and_jpegs[coll_item_no].append(filename)
+					coll_item_nos_and_jpegs[coll_item_no].append(filename)
 		
 		# and if we don't, no big deal
 		except:

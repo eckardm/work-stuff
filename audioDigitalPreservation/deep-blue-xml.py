@@ -1,12 +1,13 @@
 # lxml is a pythonic binding for the c libraries libxml2 and libxslt
-import lxml.etree as ET
 from lxml.builder import E
+from lxml import etree as ET
 
 # csv implements classes to read and write tabular data in csv format
 import csv
 
 # os provides a portable way of using operating system dependent functionality
 import os
+from os.path import join
 
 # we made these earlier
 from coll_item_nos_and_dig_file_calcs import coll_item_nos_and_dig_file_calcs
@@ -19,9 +20,11 @@ programs = ['8730', '90139', '87334', '87250', '8738']
 
 # there is one encoding error that keeps throwing this off, for the time being, i'm putting it here
 errors = []
+jpeg_errors = []
 
 # try statement is because of the encoding error, i intend to get rid of it
 try:
+
 	# open the export from beal and go through it
 	with open(r'C:\Users\Public\Documents\audioDigitalPreservationItemView\audioDigitalPreservationItemView.mer') as csv_file:
 		reader = csv.DictReader(csv_file)
@@ -58,7 +61,7 @@ try:
 						if len(dig_file_calc.split('-')) == 5:
 							description = "[Part " + dig_file_calc.split('-')[3] + "] : [Segment " + dig_file_calc.split('-')[4] + "]"
 						elif len(dig_file_calc.split('-')) == 4:
-							description = "[Part " + dig_file_calc.split('-')[3] + "] : "
+							description = "[Part " + dig_file_calc.split('-')[3] + "]"
 
 					# making abstract and appending it
 					abstract = description + " : " + row_dict["NoteContent"]
@@ -112,17 +115,20 @@ try:
 
 				# jpegs
 				# goes through each jpeg associated with folders on the nas box
-				for jpeg in (coll_item_nos_and_jpegs[row_dict["DigFile Calc"]]):
-					audio_item.append(
-						E.bitstream(
-							E("dc.title.filename", jpeg),
-							E("dc.description.filename", "Item Photo"),
-							E("dc.format.mimetype", "image/jpeg")
+				if coll_item_nos_and_jpegs[row_dict["CollItemNo"] + '-1']:
+					for jpeg in (coll_item_nos_and_jpegs[row_dict["CollItemNo"] + '-1']):
+						audio_item.append(
+							E.bitstream(
+								E("dc.title.filename", jpeg),
+								E("dc.description.filename", "Item Photo"),
+								E("dc.format.mimetype", "image/jpeg")
+							)
 						)
-					)
+
 			
-			# for now, dumping these
-			ET.dump(audio_item)
+				# for now, dumping these
+				with open(join('deep-blue-xml', row_dict["DigFile Calc"] + '.xml'), 'w') as xml_file:
+					xml_file.write(ET.tostring(audio_item, encoding='utf-8', pretty_print=True))
 
 # and, keeping up with errors
 except:
@@ -130,4 +136,7 @@ except:
 
 print 'errors'
 for i in errors:
-		print i
+	print i
+print 'jpeg errors'
+for i in jpeg_errors:
+	print i
