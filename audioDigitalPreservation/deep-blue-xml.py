@@ -36,7 +36,7 @@ try:
 					E("dc.date.issued", "2015"),
 					E("dc.date.created", row_dict["Files_Return_Date"][-4:]),
 					E("dc.coverage.temporal", row_dict["ItemDate"]),
-					# this seems inelegant
+					# this seems inelegant, but it has to do with the way beal does the export
 					E("dc.type", str(coll_item_nos_and_audio_genres[row_dict["CollItemNo"]]).replace('[', '').replace(']', '').replace("'", '').replace(',', ';')),
 					# E("dc.description.restriction"),
 					E("dc.rights.access", "This material is available for research only in the Reading Room of the Bentley Historical Library at the University of Michigan (Ann Arbor, MI)."),
