@@ -2,7 +2,7 @@ import os
 from os.path import join
 from lxml import etree
 import nltk
-from nltk.corpus import stopwords
+from nltk.tokenize import RegexpTokenizer
 import csv
 from sklearn.feature_extraction.text import TfidfVectorizer
 
@@ -40,7 +40,8 @@ for filename in os.listdir(path):
 		transcript_raw = transcripts[0].text
 		dictionary["raw"] = transcript_raw
 
-		transcript_text = nltk.word_tokenize(transcript_raw)
+		tokenizer = RegexpTokenizer(r'\w+')
+		transcript_text = tokenizer.tokenize(transcript_raw)
 		dictionary["text"] = transcript_text
 
 		transcript_clean_text = [w.lower() for w in transcript_text]
@@ -73,7 +74,7 @@ def compare(pair, compare_total):
 		if w in set(sorted(pair)[0]["clean_text"]):
 			counter += 1
 	print sorted(pair)[1]["title"]
-	a = float(counter) / float(len(set(sorted(pair)[1]["text"]))) * 100
+	a = float(counter) / float(len(set(sorted(pair)[1]["clean_text"]))) * 100
 	print a
 	return a
 	print '\n'
@@ -89,6 +90,20 @@ def cosine_similarity(pair, cosine_similarity_total):
 	return a
 	print '\n'
 
+bigrams_total = 0
+
+def bigrams(pair, bigrams_total):
+	counter = 0
+	for i in list(nltk.bigrams(sorted(pair)[1]["text"])):
+		print i
+		if i in list(nltk.bigrams(sorted(pair)[0]["text"])):
+			counter += 1
+		print sorted(pair)[1]["title"]
+		a = float(counter) / len(list(nltk.bigrams(sorted(pair)[1]["text"]))) * 100
+		print a
+		return a
+		print '\n'
+
 print '\n\n'
 
 print 'COMPARING SETS\n'
@@ -101,7 +116,7 @@ compare_total += compare(cornflower, compare_total)
 compare_total += compare(esther_holmes, compare_total)
 compare_total += compare(mlk, compare_total)
 compare_total += compare(racism_sexism, compare_total)
-print 'Average: ', compare_total / 9
+print '\nAverage: ', compare_total / 9
 
 print '\n\n'
 
@@ -116,9 +131,19 @@ cosine_similarity_total += cosine_similarity(esther_holmes, cosine_similarity_to
 cosine_similarity_total += cosine_similarity(mlk, cosine_similarity_total)
 cosine_similarity_total += cosine_similarity(racism_sexism, cosine_similarity_total)
 
-print 'Average: ', cosine_similarity_total / 9
+print '\nAverage: ', cosine_similarity_total / 9
 
-	
-#for i in sorted(titles_list):
-	
-#	print i
+print '\n\n'
+
+print 'BIGRAMS\n'
+bigrams_total += bigrams(willis_ward, bigrams_total)
+bigrams_total += bigrams(bhl, bigrams_total)
+bigrams_total += bigrams(post_texas, bigrams_total)
+bigrams_total += bigrams(arthur_miller, bigrams_total)
+bigrams_total += bigrams(jfk, bigrams_total)
+bigrams_total += bigrams(cornflower, bigrams_total)
+bigrams_total += bigrams(esther_holmes, bigrams_total)
+bigrams_total += bigrams(mlk, bigrams_total)
+bigrams_total += bigrams(racism_sexism, bigrams_total)
+
+print '\nAverage: ', bigrams_total / 9
