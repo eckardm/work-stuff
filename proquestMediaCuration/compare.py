@@ -94,7 +94,6 @@ def cosine_similarity(pair, cosine_similarity_total):
 
 bigrams_total = 0
 
-import math
 def bigrams(pair, bigrams_total):
 	counter = 0
 	for dct in pair:
@@ -163,6 +162,8 @@ print 'BIGRAMS\n'
 for list_dai in list_sho:
 	bigrams_total += bigrams(list_dai, bigrams_total)
 print '\nAverage: ', bigrams_total / 9
+
+print '\n\n'
 
 print 'TRIGRAMS\n'
 for list_dai in list_sho:
