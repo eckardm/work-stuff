@@ -94,17 +94,54 @@ def cosine_similarity(pair, cosine_similarity_total):
 
 bigrams_total = 0
 
+import math
 def bigrams(pair, bigrams_total):
 	counter = 0
-	for i in set(nltk.bigrams(sorted(pair)[1]["text"])):
-		print i
-		if i in set(nltk.bigrams(sorted(pair)[0]["text"])):
+	for dct in pair:
+		if "automated" in dct.get("title", ""):
+			automated_text = dct["text"]
+		else:
+			manual_text = dct["text"]
+
+	automated_bigrams = set(nltk.bigrams(automated_text))
+	manual_bigrams = set(nltk.bigrams(manual_text))
+
+	for bigram in automated_bigrams:
+		if bigram in manual_bigrams:
 			counter += 1
-		print sorted(pair)[1]["title"]
-		a = float(counter) / len(set(nltk.bigrams(sorted(pair)[1]["text"]))) * 100
-		print a
-		return a
-		print '\n'
+
+	print sorted(pair)[1]["title"]
+
+	a = float(counter) / len(set(nltk.bigrams(sorted(pair)[1]["text"]))) * 100
+
+	print a
+	return a
+	print '\n'
+
+trigrams_total = 0
+
+def trigrams(pair, trigrams_total):
+	counter = 0
+	for dct in pair:
+		if "automated" in dct.get("title", ""):
+			automated_text = dct["text"]
+		else:
+			manual_text = dct["text"]
+
+	automated_bigrams = set(nltk.trigrams(automated_text))
+	manual_bigrams = set(nltk.trigrams(manual_text))
+
+	for bigram in automated_bigrams:
+		if bigram in manual_bigrams:
+			counter += 1
+
+	print sorted(pair)[1]["title"]
+
+	a = float(counter) / len(set(nltk.trigrams(sorted(pair)[1]["text"]))) * 100
+
+	print a
+	return a
+	print '\n'
 
 print '\n\n'
 
@@ -126,3 +163,8 @@ print 'BIGRAMS\n'
 for list_dai in list_sho:
 	bigrams_total += bigrams(list_dai, bigrams_total)
 print '\nAverage: ', bigrams_total / 9
+
+print 'TRIGRAMS\n'
+for list_dai in list_sho:
+	trigrams_total += trigrams(list_dai, trigrams_total)
+print '\nAverage: ', trigrams_total / 9
