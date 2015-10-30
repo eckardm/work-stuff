@@ -66,6 +66,8 @@ for filename in os.listdir(path):
 		elif 'Racism' in title:
 			racism_sexism.append(dictionary)
 
+list_sho = [willis_ward, bhl, post_texas, arthur_miller, jfk, cornflower, esther_holmes, mlk, racism_sexism]
+
 compare_total = 0
 
 def compare(pair, compare_total):
@@ -94,12 +96,12 @@ bigrams_total = 0
 
 def bigrams(pair, bigrams_total):
 	counter = 0
-	for i in list(nltk.bigrams(sorted(pair)[1]["text"])):
+	for i in set(nltk.bigrams(sorted(pair)[1]["text"])):
 		print i
-		if i in list(nltk.bigrams(sorted(pair)[0]["text"])):
+		if i in set(nltk.bigrams(sorted(pair)[0]["text"])):
 			counter += 1
 		print sorted(pair)[1]["title"]
-		a = float(counter) / len(list(nltk.bigrams(sorted(pair)[1]["text"]))) * 100
+		a = float(counter) / len(set(nltk.bigrams(sorted(pair)[1]["text"]))) * 100
 		print a
 		return a
 		print '\n'
@@ -107,43 +109,20 @@ def bigrams(pair, bigrams_total):
 print '\n\n'
 
 print 'COMPARING SETS\n'
-compare_total += compare(willis_ward, compare_total)
-compare_total += compare(bhl, compare_total)
-compare_total += compare(post_texas, compare_total)
-compare_total += compare(arthur_miller, compare_total)
-compare_total += compare(jfk, compare_total)
-compare_total += compare(cornflower, compare_total)
-compare_total += compare(esther_holmes, compare_total)
-compare_total += compare(mlk, compare_total)
-compare_total += compare(racism_sexism, compare_total)
+for list_dai in list_sho:
+	compare_total += compare(list_dai, compare_total)
 print '\nAverage: ', compare_total / 9
 
 print '\n\n'
 
 print 'COSINE SIMILARITY\n'
-cosine_similarity_total += cosine_similarity(willis_ward, cosine_similarity_total)
-cosine_similarity_total += cosine_similarity(bhl, cosine_similarity_total)
-cosine_similarity_total += cosine_similarity(post_texas, cosine_similarity_total)
-cosine_similarity_total += cosine_similarity(arthur_miller, cosine_similarity_total)
-cosine_similarity_total += cosine_similarity(jfk, cosine_similarity_total)
-cosine_similarity_total += cosine_similarity(cornflower, cosine_similarity_total)
-cosine_similarity_total += cosine_similarity(esther_holmes, cosine_similarity_total)
-cosine_similarity_total += cosine_similarity(mlk, cosine_similarity_total)
-cosine_similarity_total += cosine_similarity(racism_sexism, cosine_similarity_total)
-
+for list_dai in list_sho:
+	cosine_similarity_total += cosine_similarity(list_dai, cosine_similarity_total)
 print '\nAverage: ', cosine_similarity_total / 9
 
 print '\n\n'
 
 print 'BIGRAMS\n'
-bigrams_total += bigrams(willis_ward, bigrams_total)
-bigrams_total += bigrams(bhl, bigrams_total)
-bigrams_total += bigrams(post_texas, bigrams_total)
-bigrams_total += bigrams(arthur_miller, bigrams_total)
-bigrams_total += bigrams(jfk, bigrams_total)
-bigrams_total += bigrams(cornflower, bigrams_total)
-bigrams_total += bigrams(esther_holmes, bigrams_total)
-bigrams_total += bigrams(mlk, bigrams_total)
-bigrams_total += bigrams(racism_sexism, bigrams_total)
-
+for list_dai in list_sho:
+	bigrams_total += bigrams(list_dai, bigrams_total)
 print '\nAverage: ', bigrams_total / 9
