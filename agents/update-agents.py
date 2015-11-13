@@ -3,33 +3,53 @@ import os
 from os.path import join
 import csv
 
-# where are the eads?
 path = 'C:/Users/eckardm/GitHub/vandura/Real_Masters_all'
 
-# uris
-csvs = ['persname-uris.csv', 'corpname-uris.csv', 'famname-uris.csv']
+persnames_dic = {}
+with open('persname-uris.csv', 'rb') as original_and_uri:
+	reader = csv.reader(original_and_uri):
+	next(reader, None)
+	for row in reader:
+		original = row[0]
+		uri = row[1]
+		persnames[original] = uri
 
-def uri_attribute(agent_type):
-	for filename in os.listdir(path):
+corpnames_dic = {}
+with open('corpname-uris.csv', 'rb') as original_and_uri:
+	reader = csv.reader(original_and_uri):
+	next(reader, None)
+	for row in reader:
+		original = row[0]
+		uri = row[1]
+		corpnames[original] = uri
+
+famnames_dic = {}
+with open('famname-uris.csv', 'rb') as original_and_uri:
+	reader = csv.reader(original_and_uri):
+	next(reader, None)
+	for row in reader:
+		original = row[0]
+		uri = row[1]
+		famnames[original] = uri
+
+for filename in os.listdir(path):
 	tree = etree.parse(join(path, filename))
-	agent_types = tree.xpath('//controlaccess/' + agent_type)
-	for agent_type in agent_types:
-		if agent_type == original or agent_type.split('--')[0] == original:
-			xpath = tree.getpath(agent_type):
-			xpath.attrib['ref'] = uri
-				with open(join(path, filename), 'w') as ead_out:
-                ead_out.write(etree.tostring(tree, encoding='utf-8', xml_declaration=True))
-
-def update_agents([csvs]):
-	for csv in csvs:
-		with open(csv, 'rb') as original_and_uri:
-			reader = csv.reader(csv):
-			next(reader, None)
-			for row in reader:
-				original = row[0]
-				uri = row[1]
-				for i in ['persname', 'corpname', 'famname']:
-					if csv.startswith(i):
-						uri_attribute(i)
-
-update_agents(csvs)
+	agents = tree.xpath('//controlaccess/*')
+	for agent in agents:
+		if agent.tag == 'persname':
+			if '--' in agent.text:
+				agent.attrib['ref'] = persnames_dic[agent.text.split('--')[0]]
+			else:
+				agent.attrib['ref'] = persnames_dic[agent.text]
+		elif agent.tag == 'corpname':
+			if '--' in agent.text:
+				agent.attrib['ref'] = corpnames_dic[agent.text.split('--')[0]]
+			else:
+				agent.attrib['ref'] = corpnames_dic[agent.text]
+		elif agent.tag == 'famname':
+			if '--' in agent.text:
+				agent.attrib['ref'] = famnames_dic[agent.text.split('--')[0]]
+			else:
+				agent.attrib['ref'] = famnames_dic[agent.text]
+		with open(join(path, filename), 'w') as see_i_am_making_all_things_new:
+                see_i_am_making_all_things_new.write(etree.tostring(tree, encoding='utf-8', xml_declaration=True))
