@@ -1,4 +1,9 @@
+import os
+import csv
 
+# two things
+# go through and see if any created dates are not equal to modified dates
+# go through and delete these files os.remove() 
 
 # these are the program files to delete
 program_files = [
