@@ -5,7 +5,7 @@ import csv
 from tqdm import *
 
 # where are the eads?
-ead_path = 'C:/Users/eckardm/GitHub/vandura/Real_Masters_all'
+ead_path = r'C:\Users\eckardm\without-reservations\Real_Masters_all'
 
 # where are the temp files?
 persname_temp = 'persname_temp.csv'
