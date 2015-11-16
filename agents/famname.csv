@@ -22,7 +22,6 @@ famname,TRUE,,lcnaf,,Carr family.
 famname,TRUE,,lcnaf,,Cavanagh Family
 famname,TRUE,,lcnaf,,Chapin family
 famname,TRUE,,lcnaf,,Chipman family
-famname,TRUE,,lcnaf,,Clarke family
 famname,TRUE,,lcnaf,,Clarke family.
 famname,TRUE,,lcnaf,,Clippert family.
 famname,TRUE,,lcnaf,,Conant family.
@@ -63,7 +62,6 @@ famname,TRUE,,lcnaf,,Kennedy family.
 famname,TRUE,,lcnaf,,Kibler family.
 famname,TRUE,,lcnaf,,Littlefield family.
 famname,TRUE,,lcnaf,,Ludwig family.
-famname,TRUE,,lcnaf,,McCreery family
 famname,TRUE,,lcnaf,,McCreery family.
 famname,TRUE,,lcnaf,,McDonald family.
 famname,TRUE,,lcnaf,,McMahon family.
@@ -78,6 +76,7 @@ famname,TRUE,,lcnaf,,Nisbett family.
 famname,TRUE,,lcnaf,,Norris family.
 famname,TRUE,,lcnaf,,O’Brien Family
 famname,TRUE,,lcnaf,,Palmer family.
+famname,TRUE,,lcnaf,,"Palmer family (Pontiac, Mich.)"
 famname,TRUE,,lcnaf,,Patterson family.
 famname,TRUE,,lcnaf,,Pattengill family.
 famname,TRUE,,lcnaf,,Pierson family.
@@ -108,7 +107,6 @@ famname,TRUE,,lcnaf,,Todd family.
 famname,TRUE,,lcnaf,,Tower Family
 famname,TRUE,,lcnaf,,Tuomy family.
 famname,TRUE,,lcnaf,,Twichell family.
-famname,TRUE,,lcnaf,,Upjohn family
 famname,TRUE,,lcnaf,,Upjohn family.
 famname,TRUE,,lcnaf,,Vandenberg family.
 famname,TRUE,,lcnaf,,Ward family.
@@ -168,6 +166,7 @@ famname,TRUE,http://id.loc.gov/authorities/names/n81055151,lcnaf,,Kellogg family
 famname,TRUE,http://id.loc.gov/authorities/names/n50052200,lcnaf,,Kellogg family.
 famname,TRUE,,lcnaf,,Kelly family.
 famname,TRUE,http://id.loc.gov/authorities/names/n84192953,lcnaf,,Stockdale family.
+famname,TRUE,,lcnaf,,Kevorkian family.
 famname,TRUE,,lcnaf,,Smith family.
 famname,TRUE,,lcnaf,,White family.
 famname,TRUE,,lcnaf,,Leslie family.
