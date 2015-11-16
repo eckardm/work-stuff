@@ -38,18 +38,18 @@ for filename in os.listdir(path):
 	for agent in agents:
 		if agent.tag == 'persname':
 			if '--' in agent.text:
-				agent.attrib['ref'] = persnames_dic[agent.text.split('--')[0]]
+				agent.attrib['ref'] = persnames_dic[agent.text.split('--')[0].strip()]
 			else:
-				agent.attrib['ref'] = persnames_dic[agent.text]
+				agent.attrib['ref'] = persnames_dic[agent.text.strip()]
 		elif agent.tag == 'corpname':
 			if '--' in agent.text:
-				agent.attrib['ref'] = corpnames_dic[agent.text.split('--')[0]]
+				agent.attrib['ref'] = corpnames_dic[agent.text.split('--')[0].strip()]
 			else:
-				agent.attrib['ref'] = corpnames_dic[agent.text]
+				agent.attrib['ref'] = corpnames_dic[agent.text.strip()]
 		elif agent.tag == 'famname':
 			if '--' in agent.text:
-				agent.attrib['ref'] = famnames_dic[agent.text.split('--')[0]]
+				agent.attrib['ref'] = famnames_dic[agent.text.split('--')[0].strip()]
 			else:
-				agent.attrib['ref'] = famnames_dic[agent.text]
+				agent.attrib['ref'] = famnames_dic[agent.text.strip()]
 		with open(join(path, filename), 'w') as see_i_am_making_all_things_new:
                 see_i_am_making_all_things_new.write(etree.tostring(tree, encoding='utf-8', xml_declaration=True))
