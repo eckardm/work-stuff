@@ -3,7 +3,7 @@ import os
 from os.path import join
 import csv
 
-path = 'C:/Users/eckardm/GitHub/vandura/Real_Masters_all'
+path = r'C:\Users\eckardm\without-reservations\Real_Masters_all'
 
 persnames_dic = {}
 with open('persname-uris.csv', 'rb') as original_and_uri:
