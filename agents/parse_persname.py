@@ -118,7 +118,7 @@ if __name__ == "__main__":
 			n = parse_persname(persname, source, auth)
 			output.append([persname, n.title.encode("utf-8"), n.primary.encode("utf-8"), n.secondary.encode("utf-8"), n.suffix.encode("utf-8"), n.fuller_form.encode("utf-8"), n.birth_date, n.death_date, n.auth, n.source])
 
-	with open("parsed_persnames.csv", mode="wb") as f:
+	with open("agents-persname.csv", mode="wb") as f:
 		headers = ["original name", "title", "primary", "secondary", "suffix", "fuller form", "birth date", "death date", "auth link", "source"]
 		writer = csv.writer(f)
 		writer.writerow(headers)
