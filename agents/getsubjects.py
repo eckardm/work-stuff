@@ -39,8 +39,7 @@ for filename in tqdm(os.listdir(ead_path)):
         for controlaccess_subelement in elements:
             if controlaccess_subelement.text:
                 dictionary['Type'] = controlaccess_subelement.tag
-                items = controlaccess_subelement.text.strip().split('--')[0]
-                dictionary['ORIGINAL'] = [text.strip() for text in items]
+                dictionary['ORIGINAL'] = controlaccess_subelement.text.strip().split('--')[0].strip()
                 if 'authfilenumber' in controlaccess_subelement.attrib:
                     dictionary['Authority ID'] = controlaccess_subelement.get('authfilenumber')
                 if 'source' in controlaccess_subelement.attrib:
