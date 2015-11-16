@@ -45,6 +45,8 @@ with open(famname_out, 'wb') as famname_csv:
     famname_header_writer = csv.writer(famname_csv)
     famname_header_writer.writerow(famname_headers)
 
+unique_list = [dict(tupleized) for tupleized in set(tuple(item.items()) for item in list_)]
+
 for dictionary_item in tqdm(unique_list):        
     famname_row = ['famname', 'TRUE']
     if dictionary_item['Type'] == 'famname':
