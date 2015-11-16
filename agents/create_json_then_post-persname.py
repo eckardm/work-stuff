@@ -30,7 +30,7 @@ with open(persname_uris, 'wb') as persname_uris_csv_file:
 
 # preliminaries for using archivesspace api
 # base url
-base_url = 'http://localhost:8089'
+base_url = 'http://141.211.39.87:8089'
 # username default
 username = 'admin'
 # password default
