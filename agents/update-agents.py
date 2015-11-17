@@ -46,7 +46,7 @@ for filename in os.listdir(path):
 	tree = etree.parse(join(path, filename))
 	agents = tree.xpath('//controlaccess/*')
 	for agent in agents:
-		agent_text = agent.text.split('--')[0].strip()
+		agent_text = agent.text.split('--')[0].strip().encode('utf-8')
 		print agent_text
 		if agent.tag == "persname":
 			agent.attrib["ref"] = match(persnames_dic, agent_text)
