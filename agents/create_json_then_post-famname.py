@@ -164,5 +164,5 @@ with open(famname_csv, 'r') as famname_csv_file:
             famname_uris_csv_file_writer = csv.writer(famname_uris_csv_file)
             # write the headers
             if "status" in famnames:
-                famname_uris_csv_file_writer.writerow([original, famnames["uri"]])
+                famname_uris_csv_file_writer.writerow([original.encode('utf-8'), famnames["uri"]])
         

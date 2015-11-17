@@ -50,11 +50,11 @@ for filename in os.listdir(path):
 		print agent_text
 		if agent.tag == "persname":
 			agent.attrib["ref"] = match(persnames_dic, agent_text)
-			'''
+
 		elif agent.tag == 'corpname':
 			agent.attrib["ref"] = match(corpnames_dic, agent_text)
 		elif agent.tag == 'famname':
 			agent.attrib["ref"] = match(famnames_dic, agent_text)
-			'''
+
 	with open(join(path, filename), 'w') as see_i_am_making_all_things_new:
 		see_i_am_making_all_things_new.write(etree.tostring(tree, encoding='utf-8', xml_declaration=True))

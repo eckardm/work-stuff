@@ -234,5 +234,5 @@ with open(persname_csv, 'r') as persname_csv_file:
             persname_uris_csv_file_writer = csv.writer(persname_uris_csv_file)
             # write the headers
             if "status" in persnames:
-                persname_uris_csv_file_writer.writerow([original, persnames["uri"]])
+                persname_uris_csv_file_writer.writerow([original.encode('utf-8'), persnames["uri"]])
         
