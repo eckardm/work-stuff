@@ -15,7 +15,7 @@ for filename in os.listdir(path):
 		ead_tree = etree.parse(join(path, filename))
 		elements = ead_tree.xpath(origination_xpath) + ead_tree.xpath(controlaccess_xpath)
 		for element in elements:
-			if element.tag in ["famname", "corpname", "persname"]:
+			if element.tag in ["persname"]:
 				with open('cluster.csv', 'ab') as csv_file:
 					writer = csv.writer(csv_file)
 					writer.writerow([element.text.encode('utf-8')])
