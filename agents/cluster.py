@@ -9,6 +9,8 @@ origination_xpath =  '//origination/*'
 controlaccess_xpath = '//controlaccess/*'
 
 
+
+
 for filename in os.listdir(path):
 	if filename.endswith('xml'):
 		print filename
@@ -18,4 +20,4 @@ for filename in os.listdir(path):
 			if element.tag in ["persname"]:
 				with open('cluster.csv', 'ab') as csv_file:
 					writer = csv.writer(csv_file)
-					writer.writerow([element.text.split('--')[0].strip().rstrip('.').encode('utf-8')])
+					writer.writerow([element.text.split('--')[0].encode('utf-8')])
