@@ -20,15 +20,8 @@ session_token = authorization["session"]
 headers = {'X-ArchivesSpace-Session': session_token}
 
 
-people_ids = requests.get('http://141.211.39.87:8089/agents/corporate_entities?all_ids=true', headers=headers).json()
+people_ids = requests.get('http://141.211.39.87:8089/agents/people?all_ids=true', headers=headers).json()
 
 for i in tqdm(people_ids[5:]):
-    delete_ = requests.delete('http://141.211.39.87:8089/agents/corporate_entities/' + str(i), headers=headers)
-    print delete_
-
-
-people_ids = requests.get('http://141.211.39.87:8089/agents/families?all_ids=true', headers=headers).json()
-
-for i in tqdm(people_ids[5:]):
-    delete_ = requests.delete('http://141.211.39.87:8089/agents/families/' + str(i), headers=headers)
+    delete_ = requests.delete('http://141.211.39.87:8089/agents/people/' + str(i), headers=headers)
     print delete_
