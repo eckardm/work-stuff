@@ -39,7 +39,7 @@ for filename in os.listdir(path):
         agent_text = agent.text.split('--')[0].strip().rstrip('.').encode('utf-8')
         
         if agent_text in dictionary:
-            agent.text = dictionary[agent_text]
+            agent.text = dictionary[agent_text].encode('utf-8')
 
 
         with open(join(path, filename), 'w') as see_i_am_making_all_things_new:
