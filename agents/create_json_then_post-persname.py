@@ -54,7 +54,21 @@ go through csv, create a list of dictionaries for each entry'''
 
 '''
 for reference
-
+   "dates_of_existence": [
+    {
+      "lock_version": 0,
+      "expression": "b. 1986",
+      "begin": "1986",
+      "created_by": "admin",
+      "last_modified_by": "admin",
+      "create_time": "2015-11-17T14:06:59Z",
+      "system_mtime": "2015-11-17T14:06:59Z",
+      "user_mtime": "2015-11-17T14:06:59Z",
+      "date_type": "single",
+      "label": "existence",
+      "jsonmodel_type": "date"
+    }
+  ],
   "names": [
     {
       "lock_version": 0,
@@ -65,7 +79,6 @@ for reference
       "suffix": "Suffix",
       "fuller_form": "Fuller Form",
       "number": "Number",
-      "dates": "Dates",
       "qualifier": "Qualifier",
       "sort_name": "Primary Part of Name, Rest of Name, Prefix, Suffix, Title, Number (Fuller Form), Dates (Qualifier)",
       "sort_name_auto_generate": true,
@@ -125,8 +138,10 @@ with open(persname_csv, 'r') as persname_csv_file:
         row_dictionary = {}
         # empty list for persname dictionaries
         persname_list = []
+        dates_list = []
         # empty dictionary
         persname_dictionary = {}
+        dates_dictionary = {}
         
         # add to dictionary
         # if family name exists
@@ -160,7 +175,17 @@ with open(persname_csv, 'r') as persname_csv_file:
         # if dates exists
         if dates:
             # append them
-            persname_dictionary["dates"] = dates
+            dates_dictionary["expression"] = dates
+            dates_dictionary["label"] = "existence"
+            if dates.startswith('b') or dates.startswith('d'):
+                dates_dictionary["begin"] = dates[-4:]
+                dates_dictionary["date_type"] = 'single'
+            else:
+                dates_dictionary["begin"] = dates[:4]
+                dates_dictionary["end"] = dates[-4:]
+                dates_dictionary["date_type"] = 'range'
+            dates_list.append(dates_dictionary)
+
         # if authority id exists
         if authority_id:
             # add it to dictionary
@@ -181,6 +206,7 @@ with open(persname_csv, 'r') as persname_csv_file:
         
         # add list to dictionary
         row_dictionary["names"] = persname_list
+        row_dictionary["dates_of_existence"] = dates_list
         
         
         '''

@@ -23,7 +23,8 @@ def grab_persnames(input_dir):
 			auth = persname.attrib.get("authfilenumber", "")
 			source = persname.attrib.get("source")
 			attribs = [auth, source]
-			name = persname.text.encode("utf-8")
+			# making this just grab everything before the --
+			name = persname.text.split('--')[0].encode("utf-8")
 			if name in persnames_dict:
 				if auth and not persnames_dict[name]:
 					persnames_dict[name] = attribs
