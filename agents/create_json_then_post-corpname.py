@@ -178,5 +178,5 @@ with open(corpname_csv, 'r') as corpname_csv_file:
             corpname_uris_csv_file_writer = csv.writer(corpname_uris_csv_file)
             # write the headers
             if "status" in corpnames:
-                corpname_uris_csv_file_writer.writerow([original, corpnames["uri"]])
+                corpname_uris_csv_file_writer.writerow([original.encode('utf-8'), corpnames["uri"]])
         
