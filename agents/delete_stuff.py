@@ -22,15 +22,15 @@ headers = {'X-ArchivesSpace-Session': session_token}
 
 people_ids = requests.get('http://141.211.39.87:8089/agents/people?all_ids=true', headers=headers).json()
 
-for i in tqdm(people_ids[5:]):
+for i in tqdm(people_ids[5:], desc="People"):
     delete_ = requests.delete('http://141.211.39.87:8089/agents/people/' + str(i), headers=headers)
 
 corp_ids = requests.get('http://141.211.39.87:8089/agents/corporate_entities?all_ids=true', headers=headers).json()
 
-for i in tqdm(corp_ids):
+for i in tqdm(corp_ids, desc="Corporate Entities"):
     delete_ = requests.delete('http://141.211.39.87:8089/agents/corporate_entities/' + str(i), headers=headers)
 
 fam_ids = requests.get('http://141.211.39.87:8089/agents/families?all_ids=true', headers=headers).json()
 
-for i in tqdm(fam_ids):
+for i in tqdm(fam_ids, desc="Families"):
     delete_ = requests.delete('http://141.211.39.87:8089/agents/families/' + str(i), headers=headers)
