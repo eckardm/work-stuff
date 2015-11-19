@@ -37,7 +37,7 @@ for filename in tqdm(os.listdir(ead_path)):
             dictionary = {}
             if controlaccess_subelement.tag in ["famname", "corpname"]:
                 dictionary['Type'] = controlaccess_subelement.tag
-                dictionary['ORIGINAL'] = controlaccess_subelement.text.split("--")[0].strip().replace("Växjö".decode('utf-8'), 'VAXJO').replace('Universität'.decode('utf-8'), 'UNIVERSITAT').replace('München'.decode('utf-8'), 'MUNCHEN')
+                dictionary['ORIGINAL'] = controlaccess_subelement.text.split("--")[0].strip().replace("Växjö".decode('utf-8'), 'VAXJO').replace('Universität'.decode('utf-8'), 'UNIVERSITAT').replace('München'.decode('utf-8'), 'MUNCHEN').replace('Montrèal, Quèbec'.decode('utf-8'), 'MONTREAL, QUEBEC')
                 if 'authfilenumber' in controlaccess_subelement.attrib:
                     dictionary['Authority ID'] = controlaccess_subelement.get('authfilenumber')
                 if 'source' in controlaccess_subelement.attrib:
