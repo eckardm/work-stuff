@@ -56,7 +56,7 @@ famname,TRUE,,lcnaf,,Carlisle family.,,Carlisle,,Family
 famname,TRUE,,lcnaf,,Gray family.,,Gray,,Family
 famname,TRUE,,lcnaf,,McDonald family.,,McDonald,,Family
 famname,TRUE,,lcnaf,,LeFavour family.,,LeFavour,,Family
-famname,TRUE,,lcnaf,,Kresge family.,,Kresge,,Family
+famname,TRUE,,lcnaf,,Clippert family.,,Clippert,,Family
 famname,TRUE,,lcnaf,,Early family.,,Early,,Family
 famname,TRUE,,lcnaf,,Murphy family.,,Murphy,,Family
 famname,TRUE,,lcnaf,,Prescott family.,,Prescott,,Family
@@ -104,7 +104,7 @@ famname,TRUE,,lcnaf,,Broek family.,,Broek,,Family
 famname,TRUE,,lcnaf,,Ballard family.,,Ballard,,Family
 famname,TRUE,,lcnaf,,Clarke family.,,Clarke,,Family
 famname,TRUE,,lcnaf,,Backus family.,,Backus,,Family
-famname,TRUE,,lcnaf,,BanÃ©r family.,,Banér,,Family
+famname,TRUE,,lcnaf,,BanÃ©r family.,,BanÃ©r,,Family
 famname,TRUE,,lcnaf,,Hamblen family.,,Hamblen,,Family
 famname,TRUE,,lcnaf,,Sparrow family.,,Sparrow,,Family
 famname,TRUE,,lcnaf,,Herbert family.,,Herbert,,Family
@@ -153,7 +153,7 @@ famname,TRUE,,lcnaf,,Burch family.,,Burch,,Family
 famname,TRUE,,lcnaf,,Poole family.,,Poole,,Family
 famname,TRUE,,lcnaf,,Ingram family.,,Ingram,,Family
 famname,TRUE,,lcnaf,,Strong family.,,Strong,,Family
-famname,TRUE,,lcnaf,,Oâ€™Brien Family,,O'Brien,,Family
+famname,TRUE,,lcnaf,,Oâ€™Brien Family,,Oâ€™Brien,,Family
 famname,TRUE,,lcnaf,,Emrich family.,,Emrich,,Family
 famname,TRUE,,lcnaf,,Newman family.,,Newman,,Family
 famname,TRUE,,lcnaf,,Glynn family.,,Glynn,,Family
@@ -186,6 +186,7 @@ famname,TRUE,,lcnaf,,Kevorkian family.,,Kevorkian,,Family
 famname,TRUE,,lcnaf,,Clark family.,,Clark,,Family
 famname,TRUE,,lcnaf,,Raab family.,,Raab,,Family
 famname,TRUE,,lcnaf,,Stuart family.,,Stuart,,Family
+famname,TRUE,,lcnaf,,Kresge family.,,Kresge,,Family
 famname,TRUE,,lcnaf,,Livingston family.,,Livingston,,Family
 famname,TRUE,,lcnaf,,Scripps family.,,Scripps,,Family
 famname,TRUE,,lcnaf,,Heath family.,,Heath,,Family
@@ -347,7 +348,6 @@ famname,TRUE,,lcnaf,,Arbogast family.,,Arbogast,,Family
 famname,TRUE,,lcnaf,,Van Aken family.,,Van Aken,,Family
 famname,TRUE,,lcnaf,,Quixley family.,,Quixley,,Family
 famname,TRUE,,lcnaf,,Todd family.,,Todd,,Family
-famname,TRUE,,lcnaf,,Clippert family.,,Clippert,,Family
 famname,TRUE,,lcnaf,,Dunn family.,,Dunn,,Family
 famname,TRUE,,lcnaf,,Squire family.,,Squire,,Family
 famname,TRUE,,lcnaf,,Gilchrist Family,,Gilchrist,,Family
