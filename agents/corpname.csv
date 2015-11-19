@@ -13,6 +13,7 @@ corpname,TRUE,,lcnaf,,Ann Arbor (Mich.). Park Commission.
 corpname,TRUE,,lcnaf,,Fry and Kasurin.
 corpname,TRUE,,lcnaf,,University of Michigan. News and Information Services.
 corpname,TRUE,,lcnaf,,Mason Hall (University of Michigan : 1841-1950)
+corpname,TRUE,http://id.loc.gov/authorities/names/no96022625.html,lcnaf,,Pittsfield Charter Township (Mich.)
 corpname,TRUE,http://id.loc.gov/authorities/names/n88276979,lcnaf,,University of Michigan. Office for the Study of Automotive Transportation.
 corpname,TRUE,,lcnaf,,University of Michigan. School of Public Policy.
 corpname,TRUE,,lcnaf,,"Independent Order of Odd Fellows. Wolverine Lodge no. 197 (Milan, Mich.)"
@@ -24,7 +25,7 @@ corpname,TRUE,http://id.loc.gov/authorities/names/no2006131153,lcnaf,,Direct Act
 corpname,TRUE,,lcnaf,,University of Michigan. Adult Lifestyle Program.
 corpname,TRUE,,lcnaf,,Michigan Organization for the Repeal of Abortion Laws.
 corpname,TRUE,,lcnaf,,Michigan Youth Commission.
-corpname,TRUE,,lcnaf,,General Motors Corporation. Oldsmobile Division
+corpname,TRUE,,lcnaf,,Winton Motor Carriage Company
 corpname,TRUE,,lcnaf,,"Church of the Incarnation (Detroit, Mich.)"
 corpname,TRUE,,lcnaf,,University of Michigan. Women in Science and Engineering Program.
 corpname,TRUE,http://id.loc.gov/authorities/names/no99078114,lcnaf,,"McNamee, Porter, and Seeley."
@@ -48,6 +49,7 @@ corpname,TRUE,,lcnaf,,Campaign for Equality (Organization)
 corpname,TRUE,,lcnaf,,"Tuomy Hills Gas Station (Ann Arbor, Mich.)"
 corpname,TRUE,,lcnaf,,Latin American Solidarity Committee.
 corpname,TRUE,,lcnaf,,Detroit Digital Justice Coalition.
+corpname,TRUE,http://id.loc.gov/authorities/names/n87842574,lcnaf,,University of Michigan. Dept. of Psychiatry.
 corpname,TRUE,http://id.loc.gov/authorities/names/no2010107047,lcnaf,,University of Michigan. Center for International Business Education.
 corpname,TRUE,,lcnaf,,Union Party (1936-1938)
 corpname,TRUE,,lcnaf,,University of Michigan. Faculty Women's Club.
@@ -152,6 +154,7 @@ corpname,TRUE,,lcnaf,,Citizens to Save Our State.
 corpname,TRUE,,lcnaf,,Oxford Housing (University of Michigan)
 corpname,TRUE,http://id.loc.gov/authorities/names/n2009050737,lcnaf,,Edmund Fitzgerald (Ship)
 corpname,TRUE,,lcnaf,,University of Michigan. Dept. of Law. Class of 1886.
+corpname,TRUE,http://id.loc.gov/authorities/names/n50075624,lcnaf,,Protestants and Other Americans United for Separation of Church and State.
 corpname,TRUE,,lcnaf,,"Miles-Sinclair House (Ann Arbor, Mich.)"
 corpname,TRUE,http://id.loc.gov/authorities/names/nr98001334,lcnaf,,Liz Lerman Dance Exchange.
 corpname,TRUE,,lcnaf,,Statewide Technical Assistance Network in Special Education.
@@ -159,7 +162,7 @@ corpname,TRUE,http://id.loc.gov/authorities/names/n90709792,lcnaf,,University of
 corpname,TRUE,,lcnaf,,"St. James Episcopal Church (Cheboygan, Mich.)"
 corpname,TRUE,,lcnaf,,University of Michigan. Department of Physiology.
 corpname,TRUE,,lcnaf,,University of Michigan. College of Pharmacy.
-corpname,TRUE,,lcnaf,,Winton Motor Carriage Company
+corpname,TRUE,,lcnaf,,General Motors Corporation. Oldsmobile Division
 corpname,TRUE,,lcnaf,,"First United Methodist Church of Ann Arbor (Ann Arbor, Mich.)"
 corpname,TRUE,http://id.loc.gov/authorities/names/n50059474,lcnaf,,"Grand Rapids Public Library (Grand Rapids, Mich.)"
 corpname,TRUE,http://id.loc.gov/authorities/names/n79145172,lcnaf,,University of Michigan. Center for South and Southeast Asian Studies.
@@ -192,7 +195,7 @@ corpname,TRUE,,lcnaf,,"Metropolitan Christian Church (Ann Arbor, Mich.)"
 corpname,TRUE,,lcnaf,,University of Michigan. Alumnae Club of Ann Arbor. Lucille B. Conger Alumnae Group.
 corpname,TRUE,,lcnaf,,Methodist Church (U.S.)
 corpname,TRUE,,lcnaf,,Beta Theta Pi. Lambda Chapter (University of Michigan)
-corpname,TRUE,,lcnaf,,"St. Hilda’s Episcopal Church (River Rouge, Mich.)."
+corpname,TRUE,,lcnaf,,"Immanuel United Church of Christ (Detroit, Mich.)"
 corpname,TRUE,http://id.loc.gov/authorities/names/n79063583,lcnaf,,American Historical Association.
 corpname,TRUE,,lcnaf,,Democratic Party (U.S.). Commission on Rules.
 corpname,TRUE,http://id.loc.gov/authorities/names/no95060104,lcnaf,,States' Rights Democratic Party.
@@ -279,10 +282,11 @@ corpname,TRUE,,lcnaf,,Boyne City Railroad Company.
 corpname,TRUE,,lcnaf,,Macmillan Company.
 corpname,TRUE,http://id.loc.gov/authorities/names/n00032708,lcnaf,,"United States. Army. Michigan Cavalry Regiment, 5th (1862-1865)"
 corpname,TRUE,http://id.loc.gov/authorities/names/n80057268,lcnaf,,Amateur Athletic Union of the United States.
+corpname,TRUE,http://id.loc.gov/authorities/names/n84026219,lcnaf,,Council on Adoptable Children.
 corpname,TRUE,,lcnaf,,Recycle Ann Arbor.
 corpname,TRUE,,lcnaf,,"Esquire, Inc."
 corpname,TRUE,,lcnaf,,Citizens for Michigan.
-corpname,TRUE,http://id.loc.gov/authorities/names/n79107874,lcsh,,United States. Congress. House.
+corpname,TRUE,,lcnaf,,"Hayden, Stone & Co."
 corpname,TRUE,,lcnaf,,University of Michigan. Ross School of Business.
 corpname,TRUE,,lcnaf,,University of Michigan. Pathology Laboratories.
 corpname,TRUE,,lcnaf,,Labor Party of Washtenaw County.
@@ -383,7 +387,6 @@ corpname,TRUE,,lcnaf,,"First Methodist Church (Grand Rapids, Mich.)"
 corpname,TRUE,,lcnaf,,"Republican National Convention (22nd : 1940 : Philadelphia, Pa.)"
 corpname,TRUE,,lcnaf,,Clinton Machine Company.
 corpname,TRUE,,lcnaf,,"Moore, Park & Sharp."
-corpname,TRUE,http://id.loc.gov/authorities/names/n87889933,lcnaf,,Protestants and Other Americans United for Separation of Church and State.
 corpname,TRUE,,lcnaf,,College Democrats (University of Michigan)
 corpname,TRUE,http://id.loc.gov/authorities/names/n86134555,lcnaf,,Michigan Central Railroad Company.
 corpname,TRUE,,lcnaf,,Kerner Plus 10 Conference (1977: University of Michigan)
@@ -412,6 +415,7 @@ corpname,TRUE,,lcnaf,,Michigan College Association.
 corpname,TRUE,,lcnaf,,"First Presbyterian Church (Saline, Mich.)"
 corpname,TRUE,,lcnaf,,Williams Professorship Fund (University of Michigan)
 corpname,TRUE,,lcnaf,,Disciples of Christ
+corpname,TRUE,http://id.loc.gov/authorities/names/n82166172,lcnaf,,University of Michigan. Architecture and Planning Research Laboratory.
 corpname,TRUE,http://id.loc.gov/authorities/names/n87870911,lcnaf,,American Genetic Association.
 corpname,TRUE,,lcnaf,,"Ellington Grange, No. 1650 (Tuscola County, Mich.)"
 corpname,TRUE,,lcnaf,,Michigan Tax Information Council.
@@ -677,13 +681,14 @@ corpname,TRUE,,lcnaf,,University of Michigan. Dept. of Endodontics.
 corpname,TRUE,,lcnaf,,Wellness HIV/AIDS Services.
 corpname,TRUE,,lcnaf,,East Jordan & Southern Railroad Company.
 corpname,TRUE,,lcnaf,,American National Red Cross. Washtenaw County Chapter.
-corpname,TRUE,http://id.loc.gov/authorities/names/n2004071923,lcnaf,,Merchants Delivery Company.
+corpname,TRUE,http://id.loc.gov/authorities/names/n91014292,lcnaf,,Solvay Process Company.
 corpname,TRUE,,lcnaf,,University of Michigan. Sesquicentennial Celebration.
 corpname,TRUE,http://id.loc.gov/authorities/names/n82144169,lcnaf,,New York World's Fair (1939-1940)
 corpname,TRUE,http://id.loc.gov/authorities/names/nr94006081,lcnaf,,Menominee River Boom Company.
 corpname,TRUE,,lcnaf,,"Pioneer Grange, No. 811 (Oscoda County, Mich.)"
 corpname,TRUE,,lcnaf,,Republican National Committee (U.S.)
 corpname,TRUE,,lcnaf,,Huber Automobile Company
+corpname,TRUE,http://id.loc.gov/authorities/names/n83234941,lcnaf,,Detroit University School.
 corpname,TRUE,http://id.loc.gov/authorities/names/n84181417,lcnaf,,Motown Record Corporation.
 corpname,TRUE,,lcnaf,,East Medical Building (University of Michigan)
 corpname,TRUE,,lcnaf,,University of Michigan. Housing Division.
@@ -784,6 +789,7 @@ corpname,TRUE,,lcnaf,,"Riverside Cemetery Association (Vassar, Mich.)"
 corpname,TRUE,,lcnaf,,University of Michigan. Dept. of Anatomy and Cell Biology.
 corpname,TRUE,,lcnaf,,Cutler & Savidge Lumber Company.
 corpname,TRUE,,lcnaf,,"Morrissey, Lewis A."
+corpname,TRUE,http://id.loc.gov/authorities/names/n87818792,lcnaf,,American Committee for the Protection of the Foreign Born.
 corpname,TRUE,,lcnaf,,Alan M. Voorhees & Associates.
 corpname,TRUE,,lcnaf,,Society of Minority Engineering Students (University of Michigan)
 corpname,TRUE,,lcnaf,,Fenton & Long Lake Railroad.
@@ -797,7 +803,7 @@ corpname,TRUE,,lcnaf,,Detroit Classical Academy.
 corpname,TRUE,,lcnaf,,"Washtenaw-Wayne Pomona Grange, No. 7 (Washtenaw County, Mich.)"
 corpname,TRUE,http://id.loc.gov/authorities/names/n87132628,lcnaf,,Ann Arbor (Mich.). Community Planning and Management.
 corpname,TRUE,,lcnaf,,Advances in Surgery Conference.
-corpname,TRUE,,lcnaf,,"Immanuel United Church of Christ (Detroit, Mich.)"
+corpname,TRUE,,lcnaf,,"St. Philip’s and St. Stephen’s Episcopal Church (Detroit, Mich.)."
 corpname,TRUE,,lcnaf,,"Sheriff's House (Ann Arbor, Mich.)"
 corpname,TRUE,,lcnaf,,"Shaw College (Detroit, Mich.)"
 corpname,TRUE,,lcnaf,,Ann Arbor High School (Mich.). Class of 1939.
@@ -1094,6 +1100,7 @@ corpname,TRUE,,lcnaf,,Michigan.
 corpname,TRUE,,lcnaf,,University of Michigan. Women of Color Task Force.
 corpname,TRUE,,lcnaf,,Michigan Children's Aid Society.
 corpname,TRUE,,lcnaf,,"Spring Arbor College (Spring Arbor, Mich.)"
+corpname,TRUE,http://id.loc.gov/authorities/names/n86841636,lcnaf,,Grand Lodge of Michigan.
 corpname,TRUE,,lcnaf,,University of Michigan. Alumnae Council.
 corpname,TRUE,,lcnaf,,Technical Network Inc.
 corpname,TRUE,,lcnaf,,University of Michigan. Residence Hall Libraries.
@@ -1626,7 +1633,6 @@ corpname,TRUE,,lcnaf,,"Messiah Lutheran Church (Constantine, Mich.)"
 corpname,TRUE,,lcnaf,,"Genesee County Pomona Grange, No. 48 (Genesee County, Mich.)"
 corpname,TRUE,,lcnaf,,University of Michigan. Class of 1871.
 corpname,TRUE,http://id.loc.gov/authorities/names/n79036111,lcnaf,,National Research Council (U.S.). Maritime Transportation Research Board.
-corpname,TRUE,http://id.loc.gov/authorities/names/n79126993,lcsh,,Henry Ford Museum and Greenfield Village.
 corpname,TRUE,,lcnaf,,"Ann Arbor Friends Meeting (Ann Arbor, Mich.)"
 corpname,TRUE,,lcnaf,,"Lapeer Grange, No. 246 (Lapeer County, Mich.)"
 corpname,TRUE,,lcnaf,,Michigan. Displaced Persons Commission.
@@ -1822,7 +1828,6 @@ corpname,TRUE,http://id.loc.gov/authorities/names/n85184142,lcnaf,,"Gridiron Clu
 corpname,TRUE,,lcnaf,,Student Christian Association Building (University of Michigan)
 corpname,TRUE,,lcnaf,,"St. James Lutheran Church (Jackson, Mich.)"
 corpname,TRUE,,lcnaf,,University of Michigan. Department of Obstetrics and Gynecology.
-corpname,TRUE,http://id.loc.gov/authorities/names/n82063886,lcsh,,University of Michigan. School of Music.
 corpname,TRUE,,lcnaf,,University of Michigan. Center for Ultrafast Optical Science.
 corpname,TRUE,,lcnaf,,Mystic Order of Veiled Prophets of the Enchanted Realm
 corpname,TRUE,,lcnaf,,Bentley Historical Library. Polar Bear Project.
@@ -1838,6 +1843,7 @@ corpname,TRUE,,lcnaf,,University of Michigan. Dept. of Medicine and Surgery. Cla
 corpname,TRUE,,lcnaf,,League of Small and Subject Nationalities.
 corpname,TRUE,,lcnaf,,Michigan. State Planning Commission.
 corpname,TRUE,,lcnaf,,"Youth Opportunity Council (Detroit, Mich.)"
+corpname,TRUE,http://id.loc.gov/authorities/names/n80008759,lcnaf,,"World's Columbian Exposition (1893: Chicago, Ill.)"
 corpname,TRUE,,lcnaf,,Socialist House (University of Michigan)
 corpname,TRUE,,lcnaf,,Ann Arbor and Ypsilanti Electric Railway Company.
 corpname,TRUE,,lcnaf,,"Danforth House (Ann Arbor, Mich.)"
@@ -1878,11 +1884,13 @@ corpname,TRUE,,lcnaf,,"Forest Lawn, No. 1720 (Tuscola County, Mich.)"
 corpname,TRUE,,lcnaf,,University of Michigan. Emergency Medicine.
 corpname,TRUE,,lcnaf,,Menominee River Brewing Company.
 corpname,TRUE,,lcnaf,,Buick Motor Company
+corpname,TRUE,http://id.loc.gov/authorities/names/n83234941,lcnaf,,University of Detroit.
 corpname,TRUE,,lcnaf,,University of Michigan. University Committee on Computer Policy and Utilization.
 corpname,TRUE,,lcnaf,,"United States. Army. Missouri Cavalry, 2nd."
 corpname,TRUE,http://id.loc.gov/authorities/names/nr93051866,lcnaf,,Rural Credit League of America.
 corpname,TRUE,,lcnaf,,United Coalition Against Racism (University of Michigan)
 corpname,TRUE,,lcnaf,,"E.A. Densmore General Store (Dansville, Mich.)"
+corpname,TRUE,http://id.loc.gov/authorities/names/n79021846,lcnaf,,University of Michigan
 corpname,TRUE,,lcnaf,,"Forest Hill Cemetery (Ann Arbor, Mich.)"
 corpname,TRUE,,lcnaf,,"Michigan Bell Telephone Company Building (Bay City, Mich.)"
 corpname,TRUE,http://id.loc.gov/authorities/names/nr91037275,lcnaf,,Free Soil Party (U.S.)
@@ -1932,7 +1940,7 @@ corpname,TRUE,,lcnaf,,Michigan Women in Science.
 corpname,TRUE,,lcnaf,,MERIT Computer Network.
 corpname,TRUE,,lcnaf,,Thunder Bay Community Health Services.
 corpname,TRUE,,lcnaf,,"Dav-Joy-Lin-Dex Community Council (Detroit, Mich.)"
-corpname,TRUE,,lcnaf,,Pennsylvania Museum of Art.
+corpname,TRUE,http://id.loc.gov/authorities/names/n79106618,lcnaf,,University of Michigan. Survey Research.
 corpname,TRUE,http://id.loc.gov/authorities/names/no99020933,lcnaf,,National Reform Association.
 corpname,TRUE,,lcnaf,,Eastern Michigan University
 corpname,TRUE,,lcnaf,,"Casa de Unidad (Detroit, Mich.)"
@@ -1956,7 +1964,7 @@ corpname,TRUE,,lcnaf,,"St. Mark's Episcopal Church (Detroit, Mich. : 1927-)"
 corpname,TRUE,,lcnaf,,University of Michigan. Dept. of Physical Education.
 corpname,TRUE,,lcnaf,,University of Michigan. Class of 1895.
 corpname,TRUE,,lcnaf,,South Haven and Eastern Railroad Company.
-corpname,TRUE,http://id.loc.gov/authorities/names/n91078299,lcnaf,,Michigan. Legislature. House of Representatives. House Republican Policy Committee.
+corpname,TRUE,http://id.loc.gov/authorities/names/n86076218,lcnaf,,Michigan State Dental Association.
 corpname,TRUE,http://id.loc.gov/authorities/names/n79059877,lcnaf,,United States. Selective Service System.
 corpname,TRUE,,lcnaf,,University of Michigan. Neuroscience Program.
 corpname,TRUE,,lcnaf,,University of Michigan. University Committee on the Use and Care of Animals.
@@ -2034,7 +2042,6 @@ corpname,TRUE,,lcnaf,,University of Michigan. Henry Russel Lectureship Committee
 corpname,TRUE,http://id.loc.gov/authorities/names/n79064543,lcnaf,,Howard University.
 corpname,TRUE,,lcnaf,,"Welsh United Presbyterian Church (Detroit, Mich.)"
 corpname,TRUE,,lcnaf,,University of Michigan. War historian.
-corpname,TRUE,,lcnaf,,Manhattan Project (U.S.)
 corpname,TRUE,,lcnaf,,American Brass Company
 corpname,TRUE,,lcnaf,,"Hoyem, Basso, Adams and Martin."
 corpname,TRUE,http://id.loc.gov/authorities/names/n80152331,lcnaf,,International Military Tribunal for the Far East.
@@ -2644,7 +2651,7 @@ corpname,TRUE,,lcnaf,,"Majestic Theatre (Ann Arbor, Mich.)"
 corpname,TRUE,,lcnaf,,James Foster Foundation.
 corpname,TRUE,,lcnaf,,United States. Army. Students’ Army Training Corps (University of Michigan)
 corpname,TRUE,,lcnaf,,"Faith Lutheran Church (Flat Rock, Mich.)"
-corpname,TRUE,,lcnaf,,"Saginaw, Tuscola and Huron Railroad Company."
+corpname,TRUE,,lcnaf,,Trailblazers of Washtenaw County.
 corpname,TRUE,http://id.loc.gov/authorities/names/n2011011680,lcnaf,,Washtenaw County Road Commission.
 corpname,TRUE,http://id.loc.gov/authorities/names/n79062941,lcnaf,,American Library Association.
 corpname,TRUE,,lcnaf,,Episcopal Student Foundation.
@@ -2795,7 +2802,6 @@ corpname,TRUE,,lcnaf,,Lawrence Institute of Technology.
 corpname,TRUE,http://id.loc.gov/authorities/names/n84212123,lcnaf,,University of Michigan. Solid State Electronics Laboratory.
 corpname,TRUE,,lcnaf,,University of Michigan. Office of the Vice President and Secretary of the University
 corpname,TRUE,http://id.loc.gov/authorities/names/n81095986,lcnaf,,Word of God (Religious community)
-corpname,TRUE,,lcnaf,,"Arbor-A, Inc."
 corpname,TRUE,,lcnaf,,National Liberal League.
 corpname,TRUE,,lcnaf,,University of Michigan. School of Art & Design.
 corpname,TRUE,,lcnaf,,Atlantic and Gulf Railroad Company.
@@ -2822,6 +2828,7 @@ corpname,TRUE,,lcnaf,,Jackson Automobile Company.
 corpname,TRUE,,lcnaf,,Washtenaw County (Mich.). Prosecuting Attorney.
 corpname,TRUE,,lcnaf,,"Woodland Mall (Grand Rapids, Mich.)"
 corpname,TRUE,,lcnaf,,East Engineering Building (University of Michigan)
+corpname,TRUE,http://id.loc.gov/authorities/names/n99046417,lcnaf,,Arab Community for Economic and Social Services.
 corpname,TRUE,,lcnaf,,"Forest Grange, No. 823 (Saginaw County, Mich.)"
 corpname,TRUE,,lcnaf,,Michigan. Relicted Lands Commission.
 corpname,TRUE,,lcnaf,,Evangelical and Reformed Church
@@ -2837,6 +2844,7 @@ corpname,TRUE,,lcnaf,,University of Michigan. Dept. of Forestry.
 corpname,TRUE,http://id.loc.gov/authorities/names/n2014049750,lcnaf,,"International Congress of Women (1915 : Hague, Netherlands)"
 corpname,TRUE,,lcnaf,,University of Michigan. Campus Broadcasting Network.
 corpname,TRUE,,lcnaf,,"H.S. Holmes Mercantile Company (Chelsea, Mich.)"
+corpname,TRUE,http://id.loc.gov/authorities/names/n90709792,lcnaf,,University of Michigan. Programs for Educational Opportunity.
 corpname,TRUE,,lcnaf,,Union Terminal Piers (Firm)
 corpname,TRUE,,lcnaf,,Erie Railroad.
 corpname,TRUE,,lcnaf,,Ann Arbor (Mich.). Dept. of Parks and Recreation.
@@ -3108,6 +3116,7 @@ corpname,TRUE,,lcnaf,,B'nai B'rith. Anti-defamation League.
 corpname,TRUE,,lcnaf,,Religious Films Development Project.
 corpname,TRUE,,lcnaf,,Martin-Parry Corporation
 corpname,TRUE,http://id.loc.gov/authorities/names/n81004153,lcnaf,,Seismological Society of America. Eastern Section.
+corpname,TRUE,,lcnaf,,Ann Arbor (Mich.)
 corpname,TRUE,http://id.loc.gov/authorities/names/n79006582,lcnaf,,Association of American Geographers.
 corpname,TRUE,,lcnaf,,Chicago and Michigan Lake Shore Railroad Company.
 corpname,TRUE,,lcnaf,,"Goodrich Grange, No. 887 (Genesee County, Mich.)"
@@ -3257,6 +3266,7 @@ corpname,TRUE,,lcnaf,,American Union Against Militarism.
 corpname,TRUE,,lcnaf,,Ann Arbor (Mich.). Community Renewal Program.
 corpname,TRUE,,lcnaf,,Alliance for American Rights and Responsibilities.
 corpname,TRUE,,lcnaf,,"Michigan Association for Health, Physical Education, Recreation, and Dance."
+corpname,TRUE,http://id.loc.gov/authorities/names/n86802766,lcnaf,,Michigan Diabetes Research and Training Center.
 corpname,TRUE,,lcnaf,,Task Force on Biblical Authority.
 corpname,TRUE,,lcnaf,,University of Michigan. Dept. of Germanic Languages and Literatures.
 corpname,TRUE,http://id.loc.gov/authorities/names/n79053025,lcnaf,,American Camping Association.
@@ -3315,7 +3325,7 @@ corpname,TRUE,,lcnaf,,University of Michigan. Alumni Association.
 corpname,TRUE,,lcnaf,,"Emmanuel United Church of Christ (Royal Oak, Mich.)"
 corpname,TRUE,http://id.loc.gov/authorities/names/n50077871,lcnaf,,Harper Hospital.
 corpname,TRUE,,lcnaf,,"SS. Cornelius and Cyprian Church (Bunker Hill, Mich.)"
-corpname,TRUE,,lcnaf,,University of Detroit.
+corpname,TRUE,,lcnaf,,Manhattan Project (U.S.)
 corpname,TRUE,,lcnaf,,Equality Michigan.
 corpname,TRUE,,lcnaf,,"Frieze House (Ann Arbor, Mich.)"
 corpname,TRUE,,lcnaf,,Lippitt and Associates.
@@ -3441,7 +3451,6 @@ corpname,TRUE,,lcnaf,,Association of Schools of Public Health.
 corpname,TRUE,,lcnaf,,Freedom Council.
 corpname,TRUE,http://id.loc.gov/authorities/names/n88031223,lcnaf,,Michigan. Great Lakes and Water Resources Planning Commission.
 corpname,TRUE,http://id.loc.gov/authorities/names/n79063288,lcnaf,,Brooklyn Museum.
-corpname,TRUE,http://id.loc.gov/authorities/names/n79049133,lcsh,,United States. Congress. House. Committee on Education and Labor.
 corpname,TRUE,,lcnaf,,"Postum Company, Inc."
 corpname,TRUE,,lcnaf,,University of Nashville.
 corpname,TRUE,http://id.loc.gov/authorities/names/n84212687,lcnaf,,Culver Military Academy.
@@ -3628,7 +3637,6 @@ corpname,TRUE,http://id.loc.gov/authorities/names/n80081553,lcnaf,,Great Norther
 corpname,TRUE,,lcnaf,,Michigan Equal Suffrage Association.
 corpname,TRUE,,lcnaf,,Washtenaw Council on Alcoholism (Mich.)
 corpname,TRUE,,lcnaf,,"Zion Lutheran Church (Cadillac, Mich.)"
-corpname,TRUE,,lcnaf,,Detroit University School.
 corpname,TRUE,http://id.loc.gov/authorities/names/n80081634,lcnaf,,Michigan Council for the Arts.
 corpname,TRUE,,lcnaf,,Michigan Authors' Association.
 corpname,TRUE,,lcnaf,,"United Church of Christ (Clinton, Mich.)"
@@ -3688,7 +3696,7 @@ corpname,TRUE,http://id.loc.gov/authorities/names/n80073732,lcnaf,,"Internationa
 corpname,TRUE,http://id.loc.gov/authorities/names/n50001644,lcnaf,,National Bank of Detroit.
 corpname,TRUE,,lcnaf,,"St. Thomas Lutheran Church (Sterling Heights, Mich.)"
 corpname,TRUE,http://id.loc.gov/authorities/names/no91004755,lcnaf,,Wellness Networks (Organization)
-corpname,TRUE,http://id.loc.gov/authorities/names/n2004021043,lcnaf,,University of Michigan. Detroit Observatory.
+corpname,TRUE,http://id.loc.gov/authorities/names/n85203482,lcnaf,,Michigan. Governor (1983- : Blanchard)
 corpname,TRUE,,lcnaf,,University of Michigan. Bureau of Psychological Services.
 corpname,TRUE,,lcnaf,,University of Michigan. Dept. of Screen Arts & Cultures.
 corpname,TRUE,,lcnaf,,"St. Paul's Episcopal Church (Jackson, Mich.)"
@@ -3823,6 +3831,7 @@ corpname,TRUE,,lcnaf,,"World War, 1939-1945."
 corpname,TRUE,http://id.loc.gov/authorities/names/no88000499,lcnaf,,Detroit (Mich.). Board of Water Commissioners.
 corpname,TRUE,,lcnaf,,National Association for the Advancement of Colored People. Battle Creek (Mich.)
 corpname,TRUE,,lcnaf,,"St. Mark's Episcopal Church (Paw Paw, Mich.)"
+corpname,TRUE,http://id.loc.gov/authorities/names/n2004021043,lcnaf,,University of Michigan. Detroit Observatory.
 corpname,TRUE,http://id.loc.gov/authorities/names/n94117968,lcnaf,,Savage Grace (Musical group)
 corpname,TRUE,,lcnaf,,University of Michigan. Student Legal Services.
 corpname,TRUE,http://id.loc.gov/authorities/names/nr93040335,lcnaf,,University of Michigan. Native American Student Association.
@@ -4008,9 +4017,10 @@ corpname,TRUE,,lcnaf,,Michigan Naval Brigade.
 corpname,TRUE,,lcnaf,,United States. Commission on Influenza.
 corpname,TRUE,,lcnaf,,"Bruce Armada Grange, No. 657 (Macomb County, Mich.)"
 corpname,TRUE,,lcnaf,,"Camp St. Mary's (Memphis, Mich.)"
+corpname,TRUE,http://id.loc.gov/authorities/names/n79022219.html,lcnaf,,Ann Arbor (Mich.)
 corpname,TRUE,http://id.loc.gov/authorities/names/n84104374,lcnaf,,Michigan State Federation of Women's Clubs.
 corpname,TRUE,,lcnaf,,"St. Hilda's Episcopal Church (River Rouge, Mich.)"
-corpname,TRUE,,lcnaf,,Trailblazers of Washtenaw County.
+corpname,TRUE,,lcnaf,,"Saginaw, Tuscola and Huron Railroad Company."
 corpname,TRUE,,lcnaf,,"Maple Hill Grange, No. 691 (Antrim County, Mich.)"
 corpname,TRUE,http://id.loc.gov/authorities/names/n84055092,lcnaf,,United States. Resettlement Administration.
 corpname,TRUE,,lcnaf,,American Businessmen's Research Foundation.
@@ -4128,6 +4138,7 @@ corpname,TRUE,,lcnaf,,"Welch Manufacturing Company (Grand Rapids, Mich.)"
 corpname,TRUE,,lcnaf,,"St. Mark's Episcopal Church (Marine City, Mich.)"
 corpname,TRUE,,lcnaf,,Michigan Society for Crippled Children.
 corpname,TRUE,,lcnaf,,Atomic Bomb Casualty Commission.
+corpname,TRUE,http://id.loc.gov/authorities/names/n79141035,lcnaf,,Inter-university Consortium for Political Research.
 corpname,TRUE,http://id.loc.gov/authorities/names/n80149088,lcnaf,,Freemasons.
 corpname,TRUE,http://id.loc.gov/authorities/names/n83042258,lcnaf,,Norfolk and Western Railway Company.
 corpname,TRUE,,lcnaf,,"First Congregational Church (Eastmanville, Mich.)"
@@ -4603,6 +4614,7 @@ corpname,TRUE,,lcnaf,,"Schlede House (Ann Arbor, Mich.)"
 corpname,TRUE,http://id.loc.gov/authorities/names/n79027101,lcnaf,,Sierra Club.
 corpname,TRUE,,lcnaf,,"Vail House (Ann Arbor, Mich.)"
 corpname,TRUE,,lcnaf,,Penrod/Hiawatha Company.
+corpname,TRUE,http://id.loc.gov/authorities/names/n85141168,lcnaf,,National Archive on Computerized Data on Aging (U.S.)
 corpname,TRUE,http://id.loc.gov/authorities/names/n88638230,lcnaf,,University of Michigan. Television Center.
 corpname,TRUE,,lcnaf,,Iron League of Pennsylvania.
 corpname,TRUE,http://id.loc.gov/authorities/names/n80049704,lcnaf,,National Association for the Advancement of Colored People.
@@ -4766,7 +4778,6 @@ corpname,TRUE,,lcnaf,,United States. Health Care Financing Administration.
 corpname,TRUE,,lcnaf,,University of Michigan. Anatomical Donations Program.
 corpname,TRUE,http://id.loc.gov/authorities/names/n79107928,lcnaf,,University of Michigan. Great Lakes Research Division.
 corpname,TRUE,http://id.loc.gov/authorities/names/no2009151217,lcnaf,,"Shakespeare Company (Kalamazoo, Mich.)"
-corpname,TRUE,http://id.loc.gov/authorities/names/n85001063,lcsh,,Cerro Tololo Inter-American Observatory.
 corpname,TRUE,http://id.loc.gov/authorities/names/n85087248,lcnaf,,National Council for Prevention of War (U.S.)
 corpname,TRUE,,lcnaf,,Ann Arbor-Ypsilanti Urban Area Transportation Study Committee.
 corpname,TRUE,,lcnaf,,"First United Methodist Church of Ypsilanti (Ypsilanti, Mich.)"
@@ -4829,7 +4840,6 @@ corpname,TRUE,,lcnaf,,Vulcans (University of Michigan)
 corpname,TRUE,http://id.loc.gov/authorities/names/n89118800,lcnaf,,Copper Range Company.
 corpname,TRUE,,lcnaf,,Central Michigan University
 corpname,TRUE,,lcnaf,,"University of Michigan. College of Literature, Science and the Arts. Class of 1926."
-corpname,TRUE,,lcnaf,,"St. Philip’s and St. Stephen’s Episcopal Church (Detroit, Mich.)."
 corpname,TRUE,,lcnaf,,University of Michigan. Program in International Business.
 corpname,TRUE,http://id.loc.gov/authorities/names/no2003026838,lcnaf,,Partisan Prohibition Historical Society.
 corpname,TRUE,,lcnaf,,University of Michigan. Athlete Department.
@@ -5034,7 +5044,7 @@ corpname,TRUE,,lcnaf,,International Order of King’s Daughters and Sons. Michig
 corpname,TRUE,,lcnaf,,"United States. Army. Michigan Infantry Regiment, 4th (1861-1864). Company D."
 corpname,TRUE,,lcnaf,,"Marion Center Grange, No. 956 (Charlevoix County, Mich.)"
 corpname,TRUE,,lcnaf,,United Asian American Organizations.
-corpname,TRUE,http://id.loc.gov/authorities/names/n91014292,lcnaf,,Solvay Process Company.
+corpname,TRUE,http://id.loc.gov/authorities/names/n2004071923,lcnaf,,Merchants Delivery Company.
 corpname,TRUE,,lcnaf,,Battle Creek Area Urban League Guild.
 corpname,TRUE,,lcnaf,,One United Michigan (Organization)
 corpname,TRUE,,lcnaf,,University of Michigan. Program in Comparative Studies of Social Transformations.
@@ -5113,6 +5123,7 @@ corpname,TRUE,,lcnaf,,Pontiac High School (Mich.)
 corpname,TRUE,,lcnaf,,Detroit news.
 corpname,TRUE,,lcnaf,,Michigan Indian Foundation.
 corpname,TRUE,http://id.loc.gov/authorities/names/n98023666,lcnaf,,"First Congregational Church (Bay City, Mich.)"
+corpname,TRUE,http://id.loc.gov/authorities/names/n84004439,lcnaf,,University of Michigan. Dept. of the History of Art.
 corpname,TRUE,,lcnaf,,Michigan. Legislature (37th : 1893)
 corpname,TRUE,http://id.loc.gov/authorities/names/n81036989,lcnaf,,Long Island University.
 corpname,TRUE,,lcnaf,,United States. Office of Rubber Investigations.
@@ -5383,7 +5394,7 @@ corpname,TRUE,,lcnaf,,Bay View Reading Club.
 corpname,TRUE,,lcnaf,,Brandeis University.
 corpname,TRUE,,lcnaf,,National Lifers of America
 corpname,TRUE,,lcnaf,,Michigan Life Insurance Company.
-corpname,TRUE,http://id.loc.gov/authorities/names/n79079580,lcsh,,American Civil Liberties Union.
+corpname,TRUE,,lcnaf,,"Arbor-A, Inc."
 corpname,TRUE,,lcnaf,,"Trinity Episcopal Church (Mackinac Island, Mich.)"
 corpname,TRUE,,lcnaf,,"St. Stephen Lutheran Church (Rockford, Mich.)"
 corpname,TRUE,,lcnaf,,Washtenaw County (Mich.). Division of Building Inspection.
@@ -5541,7 +5552,6 @@ corpname,TRUE,,lcnaf,,Republican Party (U.S. : 1854- )
 corpname,TRUE,,lcnaf,,Detroit School of Government.
 corpname,TRUE,,lcnaf,,Peoples Campaign for Choice.
 corpname,TRUE,,lcnaf,,University of Michigan. Center for Ethics in Public Life.
-corpname,TRUE,,lcnaf,,Evangelical and Reformed Church. Michigan-Indiana Synod.
 corpname,TRUE,,lcnaf,,Michigan Football Centennial Committee.
 corpname,TRUE,,lcnaf,,KMS Industries.
 corpname,TRUE,,lcnaf,,University of Michigan. Barbour Scholarships for Oriental Women Committee.
@@ -5667,6 +5677,7 @@ corpname,TRUE,,lcnaf,,Ann Arbor Private Hospital (Mich.)
 corpname,TRUE,,lcnaf,,University of Michigan. Dept. of Bacteriology.
 corpname,TRUE,,lcnaf,,University of Michigan. School of Music.
 corpname,TRUE,http://id.loc.gov/authorities/names/n50060401,lcnaf,,United States. War Production Board.
+corpname,TRUE,,lcnaf,,Pennsylvania Museum of Art.
 corpname,TRUE,,lcnaf,,Memorial Christian Foundation.
 corpname,TRUE,http://id.loc.gov/authorities/names/n81139762,lcnaf,,University of Michigan. Extension Service.
 corpname,TRUE,,lcnaf,,Mackinac Bridge Authority (Mich.)
@@ -5720,7 +5731,6 @@ corpname,TRUE,,lcnaf,,"St. Augustine's Episcopal Church (Detroit, Mich.)"
 corpname,TRUE,,lcnaf,,University of Michigan. Department of Physical Medicine and Rehabilitation.
 corpname,TRUE,,lcnaf,,"United States. Army. Illinois Infantry Regiment, 1st (1898). Company K."
 corpname,TRUE,,lcnaf,,Dansk Soldaterforening Michigan.
-corpname,TRUE,http://id.loc.gov/authorities/names/no94022928,lcsh,,Artrain.
 corpname,TRUE,,lcnaf,,University of Michigan. Department of Psychology.
 corpname,TRUE,,lcnaf,,"Christ Episcopal Church (Homer, Mich.)"
 corpname,TRUE,http://id.loc.gov/authorities/names/n83071452,lcnaf,,Ferris State College.
@@ -5828,6 +5838,7 @@ corpname,TRUE,http://id.loc.gov/authorities/names/n85251919,lcnaf,,"Michigan Aca
 corpname,TRUE,http://id.loc.gov/authorities/names/n83073385,lcnaf,,Catholic Church. Archdiocese of Detroit (Mich.)
 corpname,TRUE,http://id.loc.gov/authorities/names/n82277089,lcnaf,,Zonta International.
 corpname,TRUE,http://id.loc.gov/authorities/names/n50065387,lcnaf,,Poetry Society of America.
+corpname,TRUE,http://id.loc.gov/authorities/names/n91078299,lcnaf,,Michigan. Legislature. House of Representatives. House Republican Policy Committee.
 corpname,TRUE,,lcnaf,,American Friends Service Committee. Michigan Area Office.
 corpname,TRUE,,lcnaf,,University of Michigan. Ocean Engineering Laboratory.
 corpname,TRUE,,lcnaf,,"Rose Township Grange, No. 1826 (Oakland County, Mich.)"
@@ -5863,6 +5874,7 @@ corpname,TRUE,http://id.loc.gov/authorities/names/n85145583,lcnaf,,American Inst
 corpname,TRUE,,lcnaf,,General Baptist State Convention of Michigan.
 corpname,TRUE,,lcnaf,,"Calvary Evangelical Lutheran Church (Clarkston, Mich.)"
 corpname,TRUE,,lcnaf,,"First Lutheran Church (Montcalm County, Mich.)"
+corpname,TRUE,,lcnaf,,"St. Hilda's Episcopal Church (River Rouge, Mich.)."
 corpname,TRUE,,lcnaf,,University of Michigan. Academic Women's Caucus.
 corpname,TRUE,,lcnaf,,Michigan. Dept. of Treasury.
 corpname,TRUE,http://id.loc.gov/authorities/names/n92066771,lcnaf,,Detroit (Mich.). Civil Service Commission.
@@ -5870,7 +5882,7 @@ corpname,TRUE,,lcnaf,,Ann Arbor (Mich.). Community Development Dept.
 corpname,TRUE,,lcnaf,,Community Health Service Project.
 corpname,TRUE,,lcnaf,,Alice and Edith Hamilton Award (University of Michigan)
 corpname,TRUE,,lcnaf,,Ann Arbor courier.
-corpname,TRUE,,lcnaf,,"Hayden, Stone & Co."
+corpname,TRUE,,lcnaf,,Evangelical and Reformed Church. Michigan-Indiana Synod.
 corpname,TRUE,,lcnaf,,Northern Michigan Planned Parenthood.
 corpname,TRUE,,lcnaf,,Michigan Association for the Promotion of Holiness.
 corpname,TRUE,,lcnaf,,Wayne State University. Artists Society.
