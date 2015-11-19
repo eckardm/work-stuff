@@ -199,7 +199,7 @@ corpname,TRUE,,lcnaf,,"Immanuel United Church of Christ (Detroit, Mich.)",Immanu
 corpname,TRUE,http://id.loc.gov/authorities/names/n79063583,lcnaf,,American Historical Association.,American Historical Association,,,,,
 corpname,TRUE,,lcnaf,,Democratic Party (U.S.). Commission on Rules.,Democratic Party (U.S.),Commission on Rules,,,,
 corpname,TRUE,http://id.loc.gov/authorities/names/no95060104,lcnaf,,States' Rights Democratic Party.,States' Rights Democratic Party,,,,,
-corpname,TRUE,,lcnaf,,Barristers Society (University of Michigan),Barristers Society,,,,,University of Michigan
+corpname,TRUE,,lcnaf,,Schoolcraft Iron Company.,Schoolcraft Iron Company,,,,,
 corpname,TRUE,http://id.loc.gov/authorities/names/n82104723,lcnaf,,"Gordon College (Rawalpindi, Pakistan)",Gordon College,,,,,"Rawalpindi, Pakistan"
 corpname,TRUE,,lcnaf,,Michigan Pride (Organization),Michigan Pride,,,,,Organization
 corpname,TRUE,,lcnaf,,University of Michigan. Program in Comparative Study of Social Transformations.,University of Michigan,Program in Comparative Study of Social Transformations,,,,
@@ -590,7 +590,6 @@ corpname,TRUE,,lcnaf,,University of Michigan. A. Alfred Taubman College of Archi
 corpname,TRUE,,lcnaf,,"St. Alfred's Episcopal Church (Oxford, Mich.)",St. Alfred's Episcopal Church,,,,,"Oxford, Mich."
 corpname,TRUE,,lcnaf,,Michigan. Michigan Environmental Protection Act (1970),Michigan,Michigan Environmental Protection Act,,,,1970
 corpname,TRUE,http://id.loc.gov/authorities/names/n90691369,lcnaf,,Post War World Council.,Post War World Council,,,,,
-corpname,TRUE,,lcnaf,,"Emigrantinstitutet (VÃ¤xjÃ¶, Sweden).",Emigrantinstitutet,,,,,"VÃ¤xjÃ¶, Sweden"
 corpname,TRUE,,lcnaf,,Psi Upsilon Fraternity. Phi Chapter (University of Michigan),Psi Upsilon Fraternity,Phi Chapter,,,,University of Michigan
 corpname,TRUE,http://id.loc.gov/authorities/names/n86078716,lcnaf,,Alpha Kappa Alpha Sorority.,Alpha Kappa Alpha Sorority,,,,,
 corpname,TRUE,,lcnaf,,National Council of Juvenile Court Justices.,National Council of Juvenile Court Justices,,,,,
@@ -2516,7 +2515,6 @@ corpname,TRUE,,lcnaf,,University of Michigan Alumnae Club of Ann Arbor. Sara Bro
 corpname,TRUE,http://id.loc.gov/authorities/names/n50064788,lcnaf,,United States. National Recovery Administration.,United States,National Recovery Administration,,,,
 corpname,TRUE,http://id.loc.gov/authorities/names/n80089976,lcnaf,,Hudson's Bay Company.,Hudson's Bay Company,,,,,
 corpname,TRUE,,lcnaf,,"Birmingham Temple (Farmington Hills, Mich.)",Birmingham Temple,,,,,"Farmington Hills, Mich."
-corpname,TRUE,,lcnaf,,UniversitÃ¤t Leipzig.,UniversitÃ¤t Leipzig,,,,,
 corpname,TRUE,http://id.loc.gov/authorities/names/n92054525,lcnaf,,Housewives' League of Detroit.,Housewives' League of Detroit,,,,,
 corpname,TRUE,http://id.loc.gov/authorities/names/n78019930,lcnaf,,International Mycological Congress.,International Mycological Congress,,,,,
 corpname,TRUE,,lcnaf,,Haven Hall (University of Michigan : 1863-1950),Haven Hall,,,,,University of Michigan : 1863-1950
@@ -4006,7 +4004,7 @@ corpname,TRUE,,lcnaf,,University of Michigan. Office of University Relations and
 corpname,TRUE,,lcnaf,,"Clonlara School (Ann Arbor, Mich.)",Clonlara School,,,,,"Ann Arbor, Mich."
 corpname,TRUE,,lcnaf,,"Daughters of the American Revolution. Ypsilanti Chapter (Ypsilanti, Mich.)",Daughters of the American Revolution,Ypsilanti Chapter,,,,"Ypsilanti, Mich."
 corpname,TRUE,,lcnaf,,University of Michigan. Exhibit Museum.,University of Michigan,Exhibit Museum,,,,
-corpname,TRUE,,lcnaf,,Schoolcraft Iron Company.,Schoolcraft Iron Company,,,,,
+corpname,TRUE,,lcnaf,,Barristers Society (University of Michigan),Barristers Society,,,,,University of Michigan
 corpname,TRUE,,lcnaf,,"Geneva Grange, No. 1227 (Midland County, Mich.)","Geneva Grange, No. 1227",,,,,"Midland County, Mich."
 corpname,TRUE,http://id.loc.gov/authorities/names/n79099281,lcnaf,,United States. Army. Signal Corps.,United States,Army,Signal Corps,,,
 corpname,TRUE,,lcnaf,,Bay County Council on Juvenile Delinquency (Mich.),Bay County Council on Juvenile Delinquency (Mich.),,,,,
@@ -4733,6 +4731,7 @@ corpname,TRUE,,lcnaf,,"Projected Books, inc.","Projected Books, Inc.",,,,,
 corpname,TRUE,,lcnaf,,General Motors Corporation. Chevrolet Motor Division,General Motors Corporation,Chevrolet Motor Division,,,,
 corpname,TRUE,,lcnaf,,Race Betterment Foundation.,Race Betterment Foundation,,,,,
 corpname,TRUE,,lcnaf,,Pere Marquette Railway.,Pere Marquette Railway,,,,,
+corpname,TRUE,,lcnaf,,UNIVERSITAT Leipzig.,UNIVERSITAT Leipzig,,,,,
 corpname,TRUE,http://id.loc.gov/authorities/names/n90719462,lcnaf,,Emergency Peace Federation (U.S.),Emergency Peace Federation,,,,,U.S.
 corpname,TRUE,,lcnaf,,Atwell-Hicks.,Atwell-Hicks,,,,,
 corpname,TRUE,,lcnaf,,"University of Michigan Division of Atomic, Molecular and Optical Physics.","University of Michigan Division of Atomic, Molecular and Optical Physics",,,,,
@@ -5117,6 +5116,7 @@ corpname,TRUE,,lcnaf,,International Black Appeal.,International Black Appeal,,,,
 corpname,TRUE,,lcnaf,,University of Michigan. Faculty and Staff Assistance Program.,University of Michigan,Faculty and Staff Assistance Program,,,,
 corpname,TRUE,,lcnaf,,Grand Rapids and Indiana Railway Company,Grand Rapids and Indiana Railway Company,,,,,
 corpname,TRUE,http://id.loc.gov/authorities/names/n86804886,lcnaf,,Michigan Student Assembly.,Michigan Student Assembly,,,,,
+corpname,TRUE,,lcnaf,,UNIVERSITAT MUNCHEN.,UNIVERSITAT MUNCHEN,,,,,
 corpname,TRUE,,lcnaf,,"St. Paul's Episcopal Church (Flint, Mich.)",St. Paul's Episcopal Church,,,,,"Flint, Mich."
 corpname,TRUE,,lcnaf,,Pontiac High School (Mich.),Pontiac High School (Mich.),,,,,
 corpname,TRUE,,lcnaf,,Detroit news.,Detroit news,,,,,
@@ -5710,7 +5710,6 @@ corpname,TRUE,,lcnaf,,"Littlefield Presbyterian Church (Dearborn, Mich.)",Little
 corpname,TRUE,,lcnaf,,"Holmes Literary Society (Ann Arbor, Mich.)",Holmes Literary Society,,,,,"Ann Arbor, Mich."
 corpname,TRUE,http://id.loc.gov/authorities/names/n50040225,lcnaf,,General Foods Corporation.,General Foods Corporation,,,,,
 corpname,TRUE,,lcnaf,,United States. President's Task Force on Women's Rights and Responsibilities.,United States,President's Task Force on Women's Rights and Responsibilities,,,,
-corpname,TRUE,,lcnaf,,UniversitÃ¤t MÃ¼nchen.,UniversitÃ¤t MÃ¼nchen,,,,,
 corpname,TRUE,,lcnaf,,"St. Johnâ€™s Episcopal Church (Temperance, Mich.)",St. Johnâ€™s Episcopal Church,,,,,"Temperance, Mich."
 corpname,TRUE,,lcnaf,,Pictured Rocks National Lakeshore Advisory Commission.,Pictured Rocks National Lakeshore Advisory Commission,,,,,
 corpname,TRUE,,lcnaf,,"White House Conference on Child Health and Protection (1930 : Washington, D.C.)",White House Conference on Child Health and Protection,,,,,"1930 : Washington, D.C."
@@ -5863,6 +5862,7 @@ corpname,TRUE,http://id.loc.gov/authorities/names/n80041531,lcnaf,,Western Unita
 corpname,TRUE,,lcnaf,,American Family Association.,American Family Association,,,,,
 corpname,TRUE,http://id.loc.gov/authorities/names/n2002135975,lcnaf,,Detroit College of Medicine and Surgery.,Detroit College of Medicine and Surgery,,,,,
 corpname,TRUE,,lcnaf,,University of Michigan. Department of Ophthalmology,University of Michigan,Department of Ophthalmology,,,,
+corpname,TRUE,,lcnaf,,"Emigrantinstitutet (VAXJO, Sweden).",Emigrantinstitutet,,,,,"VAXJO, Sweden"
 corpname,TRUE,,lcnaf,,"Belle Isle Bridge (Detroit, Mich.)",Belle Isle Bridge,,,,,"Detroit, Mich."
 corpname,TRUE,http://id.loc.gov/authorities/names/n79066082,lcnaf,,American Friends Service Committee.,American Friends Service Committee,,,,,
 corpname,TRUE,,lcnaf,,"Metropolitan Organizing Strategy Enabling Strength (Detroit, Mich.)",Metropolitan Organizing Strategy Enabling Strength,,,,,"Detroit, Mich."
