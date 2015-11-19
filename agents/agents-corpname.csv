@@ -778,7 +778,6 @@ corpname,TRUE,,lcnaf,,United States. Dept. of Housing and Urban Development.,Uni
 corpname,TRUE,,lcnaf,,Calumet and Hecla Mining Company.,Calumet and Hecla Mining Company,,,,,
 corpname,TRUE,,lcnaf,,"Louis Sands Salt and Lumber Company (Manistee, Mich.)",Louis Sands Salt and Lumber Company,,,,,"Manistee, Mich."
 corpname,TRUE,,lcnaf,,Central Pacific Railway Company.,Central Pacific Railway Company,,,,,
-corpname,TRUE,,lcnaf,,"Canadian Express Company (MontrÃ¨al, QuÃ¨bec)",Canadian Express Company,,,,,"MontrÃ¨al, QuÃ¨bec"
 corpname,TRUE,,lcnaf,,Michigan Sea Grant Program.,Michigan Sea Grant Program,,,,,
 corpname,TRUE,http://id.loc.gov/authorities/names/n79007717,lcnaf,,American Association of State Highway Officials.,American Association of State Highway Officials,,,,,
 corpname,TRUE,http://id.loc.gov/authorities/names/n92081612,lcnaf,,Women's Research Club (University of Michigan),Women's Research Club,,,,,University of Michigan
@@ -5294,6 +5293,7 @@ corpname,TRUE,,lcnaf,,Michigan Dental Association. Women's Auxiliary.,Michigan D
 corpname,TRUE,,lcnaf,,"Settlement Lutheran Church (Gowen, Mich.)",Settlement Lutheran Church,,,,,"Gowen, Mich."
 corpname,TRUE,,lcnaf,,"Fruit Ridge Grange, No. 276 (Lenawee County, Mich.)","Fruit Ridge Grange, No. 276",,,,,"Lenawee County, Mich."
 corpname,TRUE,,lcnaf,,United States. War Dept. Citizens' Military Training Camps.,United States,War Department Citizens' Military Training Camps,,,,
+corpname,TRUE,,lcnaf,,"Canadian Express Company (MONTREAL, QUEBEC)",Canadian Express Company,,,,,"MONTREAL, QUEBEC"
 corpname,TRUE,,lcnaf,,"Northern Express Company (St. Paul, Minn.)",Northern Express Company,,,,,"St. Paul, Minn."
 corpname,TRUE,,lcnaf,,Taxpayers United for Tax Limitation.,Taxpayers United for Tax Limitation,,,,,
 corpname,TRUE,,lcnaf,,E.G. Williams & Bro.,E.G. Williams & Bro,,,,,
