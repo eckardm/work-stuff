@@ -24,15 +24,17 @@ for filename in os.listdir(path):
 		the_filename = filename.replace('.xml', '')
 		the_title = title[0].text.encode('utf-8').strip()
 		for person in people:
-			proquest_people.append(person.text)
-			total_proquest.append(person.text)
+			proquest_people.append(person.text.lower())
+			total_proquest.append(person.text.lower())
 
 		with open(join(path, filename.replace('.xml', '-TAGGED.txt')), 'r') as f:
 			raw = f.read()
 			people = re.findall('(?<=<PERSON>)(.*?)(?=</PERSON>)', raw)
+
 			for person in people:
-				stanford_ner_people.append(person)
-				total_stanford_ner.append(person)
+				if len(person.split(' ')) >= 2:
+					stanford_ner_people.append(person.lower())
+					total_stanford_ner.append(person.lower())
 
 		# venn2([set(proquest_people), set(stanford_ner_people)], set_labels=('ProQuest', 'Standford NER'))
 		# plt.suptitle(the_title + '\nPeople', fontsize='x-large') 	
@@ -60,6 +62,6 @@ for filename in os.listdir(path):
 
 			f.write('\n\n')
 
-venn2([set(total_proquest), set(total_stanford_ner)], set_labels=('ProQuest (Total)', 'Standford NER(Total)'))
+venn2([set(total_proquest), set(total_stanford_ner)], set_labels=('ProQuest (Total)', 'Stanford NER(Total)'))
 plt.suptitle('People (Total)', fontsize='x-large') 	
 plt.show()			
