@@ -95,9 +95,9 @@ with open(famname_csv, 'r') as famname_csv_file:
         # original
         original = row[5]
         # family name
-        family_name = row[7]
+        family_name = row[7].encode('utf-8')
         # qualifier
-        qualifier = row[9]
+        qualifier = row[9].encode('utf-8')
         # authority id
         authority_id = row[2]
         # source

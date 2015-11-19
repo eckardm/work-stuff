@@ -97,13 +97,13 @@ with open(corpname_csv, 'r') as corpname_csv_file:
         # original
         original = row[5]
         # primary name
-        primary_name = row[6]
+        primary_name = row[6].decode('utf-8')
         # subordinate name 1
-        subordinate_name_1 = row[7]
+        subordinate_name_1 = row[7].decode('utf-8')
         # subordinate name 2
-        subordinate_name_2 = row[8]
+        subordinate_name_2 = row[8].decode('utf-8')
         # qualifier
-        qualifier = row[11]
+        qualifier = row[11].decode('utf-8')
         # authority id
         authority_id = row[2]
         # source
@@ -120,19 +120,19 @@ with open(corpname_csv, 'r') as corpname_csv_file:
         # if primary name exists
         if primary_name:
             # append it
-            corpname_dictionary["primary_name"] = primary_name
+            corpname_dictionary["primary_name"] = primary_name.encode('utf-8')
         # if subordinate name exists
         if subordinate_name_1:
             # append it
-            corpname_dictionary["subordinate_name_1"] = subordinate_name_1
+            corpname_dictionary["subordinate_name_1"] = subordinate_name_1.encode('utf-8')
         # if a second subordinate name exists
         if subordinate_name_2:
             # append it
-            corpname_dictionary["subordinate_name_2"] = subordinate_name_2
+            corpname_dictionary["subordinate_name_2"] = subordinate_name_2.encode('utf-8')
         # if a qualifer exists
         if qualifier:
             # append it
-            corpname_dictionary["qualifier"] = qualifier
+            corpname_dictionary["qualifier"] = qualifier.encode('utf-8')
         # if authority id exists
         if authority_id:
             # add it to dictionary

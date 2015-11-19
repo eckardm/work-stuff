@@ -116,17 +116,17 @@ with open(persname_csv, 'r') as persname_csv_file:
         # prefix
         prefix = row[1]
         # title
-        title = row[2]
+        title = row[2].encode('utf-8')
         # primary name
-        primary_name = row[3]
+        primary_name = row[3].encode('utf-8')
         # rest of name
-        rest_of_name = row[4]
+        rest_of_name = row[4].encode('utf-8')
         # suffix
         suffix = row[5]
         # number
         number = row[6]
         # fuller form
-        fuller_form = row[7]
+        fuller_form = row[7].encode('utf-8')
         # dates
         dates = row[8]
         # authority id
