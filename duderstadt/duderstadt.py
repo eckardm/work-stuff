@@ -76,5 +76,12 @@ for root, dirs, files in os.walk("C:\Users\eckardm\work-stuff\duderstadt\duderst
             restricted_files.append(name)
 
 # identify converted files
+converted_files = {}
+with open("convertedFiles_9811_0003.csv", mode="rb") as converted_files_csv:
+    reader = csv.reader(converted_files_csv)
+    for row in reader:
+        original_path = row[0].split("; ")[1].replace('"', "").strip()
+        converted_path = row[0].split("; ")[2].replace('"', "").strip()
+        converted_files[original_path] = converted_path
 
 # write metadata
