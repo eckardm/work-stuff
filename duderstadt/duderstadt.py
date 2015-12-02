@@ -85,5 +85,8 @@ with open("convertedFiles_9811_0003.csv", mode="rb") as converted_files_csv:
         converted_files[original_path] = converted_path
 
 # get metadata
+'''
+File | Name	| Author | Date of Publication or Speech | Title
+-----|------|--------|-------------------------------|------'''
 
 # write metadata
