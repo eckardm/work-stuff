@@ -53,7 +53,7 @@ import datetime
 datetime_rightnow = datetime.datetime.fromtimestamp(rightnow).strftime('%Y-%m-%d %H:%M:%S')
 # put the dictionary in constants.py
 with open(constants, "a") as txt_file:
-    txt_file.write('# dictionary for eadid (key) and titleproper (value) accruate as of ' + datetime_rightnow + '\neadids_and_unittitles = ' + str(eadids_and_unittitles))
+    txt_file.write('# dictionary for eadid (key) and titleproper (value) accurate as of ' + datetime_rightnow + '\neadids_and_unittitles = ' + str(eadids_and_unittitles))
 
 # print that dictionary got created
 print '\rDictionary with ' + str(counter) + ' entries and accurate as of ' + datetime_rightnow + ' created.'
