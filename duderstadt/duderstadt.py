@@ -84,4 +84,6 @@ with open("convertedFiles_9811_0003.csv", mode="rb") as converted_files_csv:
         converted_path = row[0].split("; ")[2].replace('"', "").strip()
         converted_files[original_path] = converted_path
 
+# get metadata
+
 # write metadata
