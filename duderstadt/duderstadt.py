@@ -77,6 +77,7 @@ for root, dirs, files in os.walk("C:\Users\eckardm\work-stuff\duderstadt\duderst
 
 # identify converted files
 converted_files = {}
+
 with open("convertedFiles_9811_0003.csv", mode="rb") as converted_files_csv:
     reader = csv.reader(converted_files_csv)
     for row in reader:
@@ -88,5 +89,6 @@ with open("convertedFiles_9811_0003.csv", mode="rb") as converted_files_csv:
 '''
 File | Name	| Author | Date of Publication or Speech | Title
 -----|------|--------|-------------------------------|------'''
+
 
 # write metadata
