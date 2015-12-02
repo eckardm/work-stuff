@@ -68,6 +68,12 @@ with open("deepBlue_9811_0003.csv", mode="wb") as metadata:
         writer.writerow(metadata_header)
 
 # identify restricted files
+restricted_files = []
+
+for root, dirs, files in os.walk("C:\Users\eckardm\work-stuff\duderstadt\duderstadt"):
+    for name in files:
+        if "restricted" in root:
+            restricted_files.append(name)
 
 # identify converted files
 
