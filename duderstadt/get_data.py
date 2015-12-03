@@ -5,9 +5,6 @@ import os
 import urllib
 import time
 
-'''
-i think this should still work. i didn't change anything, but it's not tested...'''
-
 # scrape data
 base_url = "http://bentley.umich.edu/elecrec/d/duderstadt/"
 
