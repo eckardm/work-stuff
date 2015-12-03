@@ -48,11 +48,11 @@ for anchor in soup("a"):
                 metadata_dictionary["title"] = "Fresh Convocation 6.0"
                 metadata_dictionary["date"] = "undated"
                 metadata_dictionary["href"] = folder_anchor["href"]
-            elif folder_anchor.text == "MLK Closing, 1/151/14/90"
+            elif folder_anchor.text == "MLK Closing, 1/151/14/90":
                 metadata_dictionary["title"] = "MLK Closing"
                 metadata_dictionary["date"] = "1990-01-15"
                 metadata_dictionary["href"] = folder_anchor["href"]
-            elif folder_anchor.text == "MLK Welcome, 1/141/14/90"
+            elif folder_anchor.text == "MLK Welcome, 1/141/14/90":
                 metadata_dictionary["title"] = "MLK Welcome"
                 metadata_dictionary["date"] = "1990-01-14"
                 metadata_dictionary["href"] = folder_anchor["href"]
