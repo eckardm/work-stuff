@@ -56,6 +56,10 @@ for anchor in soup("a"):
                 metadata_dictionary["title"] = "MLK Welcome"
                 metadata_dictionary["date"] = "1990-01-14"
                 metadata_dictionary["href"] = folder_anchor["href"]
+            elif folder_anchor.text == "State of Univ. l0/2/89, 3/":
+                metadata_dictionary["title"] = "State of Univ"
+                metadata_dictionary["date"] = "1989-10-02"
+                metadata_dictionary["href"] = folder_anchor["href"]
             else:
                 metadata_dictionary["title"] = re.findall("(.*)(?=\d+\/\d+\/\d+)", folder_anchor.text)[0].strip().rstrip(",")
                 metadata_dictionary["date"] = re.findall("\d+\/\d+\/\d+", folder_anchor.text)[0]
