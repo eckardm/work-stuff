@@ -96,7 +96,7 @@ for root, dirs, files in os.walk("C:\Users\eckardm\work-stuff\duderstadt\9811_00
 
             for iter_var in converted_files:
                 if "\\".join(iter_var.split("\\")[4:]) == "\\".join(root.split("\\")[6:]) + "\\" + name:
-                    dc_title_filename = name + " | " + str(converted_files[iter_var].split("\\")[:-1])
+                    dc_title_filename = name + " | " + str(converted_files[iter_var].split("\\")[-1:]).replace("'", "").replace("[", "").replace("]", "")
                     dc_description_filename = "Access version | Preservation version"
                 else:
                     dc_title_filename = name
@@ -119,4 +119,4 @@ for root, dirs, files in os.walk("C:\Users\eckardm\work-stuff\duderstadt\9811_00
             
             with open("deepBlue_9811_0003.csv", mode="ab") as metadata_csv:
                 writer = csv.writer(metadata_csv)
-                writer.writerow([identifier_other, dc_title, dc_description_abstract, dc_contributor_author, dc_contributor_other, dc_date_issued, dc_date_created, dc_coverage_temporal, dc_title_filename, dc_description_filename, dc_description_filename, dc_type, dc_rights_access, dc_date_open, dc_rights_copyright, dc_language_iso])
+                writer.writerow([identifier_other, dc_title, dc_description_abstract, dc_contributor_author, dc_contributor_other, dc_date_issued, dc_date_created, dc_coverage_temporal, dc_title_filename, dc_description_filename, dc_type, dc_rights_access, dc_date_open, dc_rights_copyright, dc_language_iso])
