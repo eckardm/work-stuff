@@ -62,7 +62,7 @@ for root, _, files in os.walk("C:\Users\eckardm\work-stuff\duderstadt\9811_0003"
         identifier_other = base_string + number
         identifier_counter += 1
         
-        href = "../" + root.split("\\")[-2:][0] + "/" + root.split("\\")[-2:][1] + "/" + name
+        href = "../" + root.split("\\")[-2:][0] + "/" + root.split("\\")[-2:][1] + "/" + name.split("-")[-1]
         for dct in metadata:
             if dct["href"] == href:
                 title = dct["title"]
@@ -91,15 +91,15 @@ for root, _, files in os.walk("C:\Users\eckardm\work-stuff\duderstadt\9811_0003"
         
         dc_coverage_temporal = ""
         
-        dc_title_filename = name
+        dc_title_filename = "-".join(root.split("\\")[6:]) + "-" + name
         
         dc_description_filename = ""
         
         for original_path in converted_files:
             converted_file_sub_path = "\\".join(original_path.split("\\")[4:])
-            current_sub_path = "\\".join(root.split("\\")[6:]) + "\\" + name
+            current_sub_path = "\\".join(root.split("\\")[6:]) + "\\" + name.split("-")[-1]
             if converted_file_sub_path == current_sub_path:
-                dc_title_filename = name + " | " + converted_files[original_path].split("\\")[-1]
+                dc_title_filename = name + " | " + "-".join(converted_files[original_path].split("\\")[4:])
                 dc_description_filename = "Access version | Preservation version"
         
         dc_type = "Office Documents"
