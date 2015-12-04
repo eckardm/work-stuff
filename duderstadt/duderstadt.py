@@ -62,14 +62,16 @@ for root, _, files in os.walk("C:\Users\eckardm\work-stuff\duderstadt\9811_0003"
         identifier_other = base_string + number
         identifier_counter += 1
         
+        dc_title = ""
+        
+        dc_date = ""
+        
         href = "../" + root.split("\\")[-2:][0] + "/" + root.split("\\")[-2:][1] + "/" + name.split("-")[-1]
         for dct in metadata:
             if dct["href"] == href:
-                title = dct["title"]
+                dc_title = dct["title"]
                 date = dct["date"]
                 
-        dc_title = title
-        
         dc_description_abstract = ""
         
         dc_contributor_author = "Duderstadt, James J."
@@ -91,7 +93,7 @@ for root, _, files in os.walk("C:\Users\eckardm\work-stuff\duderstadt\9811_0003"
         
         dc_coverage_temporal = ""
         
-        dc_title_filename = "-".join(root.split("\\")[6:]) + "-" + name
+        dc_title_filename = name
         
         dc_description_filename = ""
         
