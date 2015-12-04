@@ -64,13 +64,26 @@ for root, _, files in os.walk("C:\Users\eckardm\work-stuff\duderstadt\9811_0003"
         
         dc_title = ""
         
-        dc_date = ""
+        dc_date_created = ""
         
         href = "../" + root.split("\\")[-2:][0] + "/" + root.split("\\")[-2:][1] + "/" + name.split("-")[-1]
         for dct in metadata:
             if dct["href"] == href:
                 dc_title = dct["title"]
-                date = dct["date"]
+                dc_date_created = dct["date"]
+        
+                # does this need to be in YYYY-MM-DD format? i'm going to guess probably. what should get passed to finding aids?
+                if not dc_date_created:
+                    continue
+                if "-" in dc_date_created or dc_date_created == "undated" or dc_date_created == "1989":
+                    continue
+                try:
+                    dc_date_created = datetime.datetime.strptime(dc_date_created, "%m/%d/%y")
+                # maybe this is the best thing to do? can't tell how these are typos.
+                except:
+                    dc_date_created = datetime.datetime.strptime(dc_date_created, "%d/%m/%y")
+                dc_date_created = dc_date_created.strftime("%Y-%m-%d")
+                
                 
         dc_description_abstract = ""
         
@@ -80,16 +93,7 @@ for root, _, files in os.walk("C:\Users\eckardm\work-stuff\duderstadt\9811_0003"
         
         dc_date_issued = "2015"
         
-        # does this need to be in YYYY-MM-DD format? i'm going to guess probably. what should get passed to finding aids?
-        if "-" in date or date == "undated" or date == "1989":
-            dc_date_created = date
-        else:
-            try:
-                dc_date_created = datetime.datetime.strptime(date, "%m/%d/%y")
-            # maybe this is the best thing to do? can't tell how these are typos.
-            except:
-                dc_date_created = datetime.datetime.strptime(date, "%d/%m/%y")
-            dc_date_created = dc_date_created.strftime("%Y-%m-%d")
+
         
         dc_coverage_temporal = ""
         
