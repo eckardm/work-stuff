@@ -52,9 +52,11 @@ def parse_logs(path):
             log = open(join(path, filename), 'r')
             # go through log
             for line in tqdm(log, desc=filename):
-                
-                # parse the line
-                user = line.split(' - - ')[0]
+            
+                if "201509" in filename:
+                    user = line.split(' - - ')[0]
+                else:
+                    user = line.split(' - ')[0]
                 time = line.split('[')[1].split(']')[0]
                 request = line.split('"')[1]
                 status_code = line.split('" ')[1].split(' ')[0]
