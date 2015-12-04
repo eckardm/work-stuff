@@ -56,7 +56,7 @@ def parse_logs(path):
                 if "201509" in filename:
                     user = line.split(' - - ')[0]
                 else:
-                    user = line.split(' - ')[0]
+                    user = line.split(' [')[0]
                 time = line.split('[')[1].split(']')[0]
                 request = line.split('"')[1]
                 status_code = line.split('" ')[1].split(' ')[0]
@@ -72,7 +72,7 @@ def parse_logs(path):
                     writer.writerow([user, time, request, status_code, referrer, browser])
 
                 # write the row for the no bentley csv
-                    if 'access_log' not in user or user.split(':')[1] in front_computers:
+                    if 'access_log' not in user or user.split(':')[1] in front_computers or user.startswith("141."):
                         with open(join(path, output_csv_filename_no_bhl), 'ab') as output_csv:
                             writer = csv.writer(output_csv)
                             writer.writerow([user, time, request, status_code, referrer, browser])
