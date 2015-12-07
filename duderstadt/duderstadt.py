@@ -3,6 +3,7 @@ import csv
 import re
 import time
 import datetime
+from fuzzywuzzy import fuzz, process
 
 # write headers for metadata
 with open("deepBlue_9811_0003-TEMP.csv", mode="wb") as metadata_csv:
@@ -171,10 +172,22 @@ with open("deepBlue_9811_0003-TEMP.csv", mode="rb") as metadata_input:
                 row[9] = "Original version | " + row[9]
             with open("deepBlue_9811_0003.csv", mode="ab") as metadata_output:
                 writer = csv.writer(metadata_output)
-                writer.writerow(row)                
+                writer.writerow(row)
+        # this is fairly inexact
+        elif process.extractOne(row[1], originals)[1] > 96:
+            row[8] = process.extractOne(row[1], originals)[0] + " | " + row[8]
+            if not row[9]:
+                row[9] = "Original version | Access and preservation version"
+            else:
+                row[9] = "Original version | " + row[9]
+            with open("deepBlue_9811_0003.csv", mode="ab") as metadata_output:
+                writer = csv.writer(metadata_output)
+                writer.writerow(row)
         else:
             with open("deepBlue_9811_0003.csv", mode="ab") as metadata_output:
                 writer = csv.writer(metadata_output)
                 writer.writerow(row)
                 
 os.remove("deepBlue_9811_0003-TEMP.csv")
+
+# go through and if DC.TITLE.FILENAME but not DC.TITLE, add to folder based on first part of DC.TITLE.FILENAME, then do manual zipping and adding of metadata? at that point, stop messing with metadata?
