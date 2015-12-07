@@ -5,6 +5,26 @@ import time
 import datetime
 
 # write headers for metadata
+with open("deepBlue_9811_0003-TEMP.csv", mode="wb") as metadata_csv:
+    writer = csv.writer(metadata_csv)
+    writer.writerow([
+    "IDENTIFIER.OTHER", 
+    "DC.TITLE", 
+    "DC.DESCRIPTION.ABSTRACT", 
+    "DC.CONTRIBUTOR.AUTHOR", 
+    "DC.CONTRIBUTOR.OTHER", 
+    "DC.DATE.ISSUED", 
+    "DC.DATE.CREATED", 
+    "DC.COVERAGE.TEMPORAL", 
+    "DC.TITLE.FILENAME ", 
+    "DC.DESCRIPTION.FILENAME", 
+    "DC.TYPE", 
+    "DC.RIGHTS.ACCESS", 
+    "DC.DATE.OPEN", 
+    "DC.RIGHTS.COPYRIGHT", 
+    "DC.LANGUAGE.ISO"
+])
+
 with open("deepBlue_9811_0003.csv", mode="wb") as metadata_csv:
     writer = csv.writer(metadata_csv)
     writer.writerow([
@@ -44,7 +64,7 @@ from metadata import metadata
 # write metadata
 identifier_counter = 1
 
-for root, _, files in os.walk("C:\Users\eckardm\work-stuff\duderstadt\9811_0003"):
+for _, _, files in os.walk("C:\Users\eckardm\work-stuff\duderstadt\9811_0003"):
     for name in files:
         if "_bhl-" in name:
             continue
@@ -114,7 +134,7 @@ for root, _, files in os.walk("C:\Users\eckardm\work-stuff\duderstadt\9811_0003"
         # i think this is right.
         dc_language_iso = "en_US"
         
-        with open("deepBlue_9811_0003.csv", mode="ab") as metadata_csv:
+        with open("deepBlue_9811_0003-TEMP.csv", mode="ab") as metadata_csv:
             writer = csv.writer(metadata_csv)
             writer.writerow([
                 identifier_other, 
@@ -132,3 +152,29 @@ for root, _, files in os.walk("C:\Users\eckardm\work-stuff\duderstadt\9811_0003"
                 dc_date_open, 
                 dc_rights_copyright, 
                 dc_language_iso])
+                
+# add originals
+originals = []
+for root, _, names in os.walk("Y:\unprocessed\9811_0001\data\original-records"):
+    for name in names:
+        originals.append(name)
+        
+with open("deepBlue_9811_0003-TEMP.csv", mode="rb") as metadata_input:
+    reader = csv.reader(metadata_input)
+    next(reader, None)
+    for row in reader:
+        if row[1] in originals:
+            row[8] = dc_title + " | " + row[8]
+            if not row[9]:
+                row[9] = "Original version | Access and preservation version"
+            else:
+                row[9] = "Original version | " + row[9]
+            with open("deepBlue_9811_0003.csv", mode="ab") as metadata_output:
+                writer = csv.writer(metadata_output)
+                writer.writerow(row)                
+        else:
+            with open("deepBlue_9811_0003.csv", mode="ab") as metadata_output:
+                writer = csv.writer(metadata_output)
+                writer.writerow(row)
+                
+os.remove("deepBlue_9811_0003-TEMP.csv")
