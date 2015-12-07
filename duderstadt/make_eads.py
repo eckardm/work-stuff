@@ -1,4 +1,9 @@
 import csv
+import requests
+from bs4 import BeautifulSoup
+import time
+
+import re
 
 # identify elements in csv
 '''
@@ -48,11 +53,29 @@ with open("data.csv", mode="rb") as dspace_stats:
         # default
         accessrestrict = None
         
-        # get date
+        # i'm a conscientious scraper
+        headers = {"user-agent": "Duderstadt Scraper: eckardm at umich (dot) com"}
+        full_meta = "http://deepblue.lib.umich.edu/handle/" + row["handle"] + "?show=full"
+        data = requests.get(full_meta, headers=headers)
+        soup = BeautifulSoup(data.text)
+        
+        meta_tags = soup("meta")
+        for meta_tag in meta_tags:
+        
+            # get date
+            if meta_tag.get("name") == "citation_date":
+                unitdate = meta_tag.get("content", "")
+            
+            # get file extension
+            if meta_tag.get("name") == "citation_pdf_url":
+                physfacet = meta_tag["content"][-4:].upper() + " file"
+                
+                # account for restricted files
+                if "restricted" in meta_tag["content"]:
+                    accessrestrict = "[ER Restricted until July 1, 2030]"
 
-        # get file extension
-
-        # account for restricted files
+            # i'm a conscientious scraper
+            time.sleep(1)
 
         # make xml
 
