@@ -93,8 +93,6 @@ for root, _, files in os.walk("C:\Users\eckardm\work-stuff\duderstadt\9811_0003"
         
         dc_date_issued = "2015"
         
-
-        
         dc_coverage_temporal = ""
         
         dc_title_filename = name
