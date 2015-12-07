@@ -25,14 +25,6 @@ with open("deepBlue_9811_0003.csv", mode="wb") as metadata_csv:
     "DC.LANGUAGE.ISO"
 ])
 
-# identify restricted files
-restricted_files = []
-
-for root, dirs, files in os.walk("C:\Users\eckardm\work-stuff\duderstadt\duderstadt"):
-    for name in files:
-        if "restricted" in root:
-            restricted_files.append(name)
-
 # identify converted files
 converted_files = {}
 
@@ -66,7 +58,7 @@ for root, _, files in os.walk("C:\Users\eckardm\work-stuff\duderstadt\9811_0003"
         
         dc_date_created = ""
         
-        href = "../" + root.split("\\")[-2:][0] + "/" + root.split("\\")[-2:][1] + "/" + name.split("-")[-1]
+        href = "../" + "/".join(name.split("-"))
         for dct in metadata:
             if dct["href"] == href:
                 dc_title = dct["title"]
@@ -101,15 +93,16 @@ for root, _, files in os.walk("C:\Users\eckardm\work-stuff\duderstadt\9811_0003"
         
         for original_path in converted_files:
             converted_file_sub_path = "\\".join(original_path.split("\\")[4:])
-            current_sub_path = "\\".join(root.split("\\")[6:]) + "\\" + name.split("-")[-1]
+            current_sub_path = "\\".join(name.split("-"))
             if converted_file_sub_path == current_sub_path:
                 dc_title_filename = name + " | " + "-".join(converted_files[original_path].split("\\")[4:])
                 dc_description_filename = "Access version | Preservation version"
         
         dc_type = "Office Documents"
         
-        if name in restricted_files:
-            dc_rights_access = "Closed for research use."
+        # identify restricted files
+        if "restricted" in name:
+            dc_rights_access = "[ER Restricted until July 1, 2030]"
             dc_date_open = "2030-07-01"
         else:
             dc_rights_access = "Collection is open for research."
