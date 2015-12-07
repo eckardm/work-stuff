@@ -189,5 +189,3 @@ with open("deepBlue_9811_0003-TEMP.csv", mode="rb") as metadata_input:
                 writer.writerow(row)
                 
 os.remove("deepBlue_9811_0003-TEMP.csv")
-
-# go through and if DC.TITLE.FILENAME but not DC.TITLE, add to folder based on first part of DC.TITLE.FILENAME, then do manual zipping and adding of metadata? at that point, stop messing with metadata?
