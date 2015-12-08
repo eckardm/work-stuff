@@ -1,10 +1,17 @@
 import os
+import csv
 
 information_packages = []
 
 for root, _, files in os.walk("C:\Users\eckardm\work-stuff\duderstadt\9811_0001\data\original-records"):
+ 
+    information_package = {}
+
     for name in files:
-        
+    
+        if name == "Archivist Note":
+            continue
+    
         information_package = {}
         
         if "Speeches" in root:
@@ -136,7 +143,7 @@ for root, _, files in os.walk("C:\Users\eckardm\work-stuff\duderstadt\9811_0001\
             
         information_package["unittitle"] = name
         
+        information_package["original"] = name
+        information_package["original_location"] = os.path.join(root, name)
+        
         information_packages.append(information_package)
-
-for information_package in information_packages:
-    print information_package
