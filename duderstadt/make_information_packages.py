@@ -147,14 +147,43 @@ for root, _, files in os.walk("C:\Users\eckardm\work-stuff\duderstadt\9811_0001\
         information_package["original"] = name
         information_package["original_location"] = os.path.join(root, name)
         
-        information_package["unitdate"] = ""
-        information_package["preservation"] = ""
-        information_package["preservation_location"] = ""
-        
         for metadata_dictionary in metadata:
             if fuzz.token_sort_ratio(metadata_dictionary["title"], name) > 95:
+                
                 information_package["unitdate"] = metadata_dictionary.get("date", "")
-                information_package["preservation"] = metadata_dictionary.get("href", "")
-                information_package["preservation_location"] = metadata_dictionary.get("href", "")
+                information_package["preservation"] = metadata_dictionary.get("href", "n/a").split("/")[-1]
+                information_package["preservation_location"] = metadata_dictionary.get("href", "n/a").replace("..", "C:/Users/eckardm/work-stuff/duderstadt/9811_0001/data")
         
         information_packages.append(information_package)
+
+'''
+import csv
+with open("temp.csv", mode="wb") as temp:
+        writer = csv.writer(temp)
+        writer.writerow([
+            "series", 
+            "subseries", 
+            "accessrestrict", 
+            "unittitle", 
+            "original", 
+            "original_location", 
+            "unitdate", 
+            "preservation", 
+            "preservation_location"
+        ])
+
+for information_package in information_packages:
+    with open("temp.csv", mode="ab") as temp:
+        writer = csv.writer(temp)
+        writer.writerow([
+            information_package.get("series"), 
+            information_package.get("subseries"), 
+            information_package.get("accessrestrict"), 
+            information_package.get("unittitle"), 
+            information_package.get("original"), 
+            information_package.get("original_location"), 
+            information_package.get("unitdate"), 
+            information_package.get("preservation"), 
+            information_package.get("preservation_location")
+        ])'''
+        
