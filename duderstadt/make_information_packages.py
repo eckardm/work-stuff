@@ -1,5 +1,6 @@
 import os
-import csv
+from metadata import metadata
+from fuzzywuzzy import fuzz
 
 information_packages = []
 
@@ -28,7 +29,7 @@ for root, _, files in os.walk("C:\Users\eckardm\work-stuff\duderstadt\9811_0001\
             if "1990-1991 Speeches" in root:
                 information_package["subseries"] = "1990-1991 Speeches"
             if "1991-92" in root:
-                information_package["subseries"] = "1991-92"
+                information_package["subseries"] = "1991-1992 Speeches"
             if "1992-1993 Speeches" in root:
                 information_package["subseries"] = "1992-1993 Speeches"
             if "1994-1995 Speeches" in root:
@@ -145,5 +146,15 @@ for root, _, files in os.walk("C:\Users\eckardm\work-stuff\duderstadt\9811_0001\
         
         information_package["original"] = name
         information_package["original_location"] = os.path.join(root, name)
+        
+        information_package["unitdate"] = ""
+        information_package["preservation"] = ""
+        information_package["preservation_location"] = ""
+        
+        for metadata_dictionary in metadata:
+            if fuzz.token_sort_ratio(metadata_dictionary["title"], name) > 95:
+                information_package["unitdate"] = metadata_dictionary.get("date", "")
+                information_package["preservation"] = metadata_dictionary.get("href", "")
+                information_package["preservation_location"] = metadata_dictionary.get("href", "")
         
         information_packages.append(information_package)
