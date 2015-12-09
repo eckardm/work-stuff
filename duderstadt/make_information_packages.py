@@ -204,5 +204,3 @@ for information_package in information_packages:
 # zip up anything without metadata based on series (manual)
 # create deepblue metadata
 # create ead
-
-        
