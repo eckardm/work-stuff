@@ -1,6 +1,8 @@
 import os
-from metadata import metadata
+import cPickle as pickle
 from fuzzywuzzy import fuzz
+
+metadata = pickle.load(open("metadata.p", "rb"))
 
 information_packages = []
 
@@ -194,6 +196,7 @@ for information_package in information_packages:
 # write series, subseries, accessrestrict, unittitle, original, original_location based on files and finding aid <-- done
 # get metadata from html <-- done
 # write unitdate, preservation, preservation_location based on metadata <-- done
+# refactor <-- in progress
 # write autopro and autopro_location based on convertedFiles
 # account for exceptions: restrictions in restricted folders, 1994-1995 speeches and 1996-1997 Position Papers
 # run things that do not have preservation or autopro through autopro
