@@ -147,16 +147,20 @@ for root, _, files in os.walk("C:\Users\eckardm\work-stuff\duderstadt\9811_0001\
         information_package["original"] = name
         information_package["original_location"] = os.path.join(root, name)
         
+        information_package["unitdate"] = "n/a"
+        information_package["preservation"] = "n/a"
+        information_package["preservation_location"] = "n/a"
+        
         for metadata_dictionary in metadata:
             if fuzz.token_sort_ratio(metadata_dictionary["title"], name) > 95:
                 
                 information_package["unitdate"] = metadata_dictionary.get("date", "")
-                information_package["preservation"] = metadata_dictionary.get("href", "n/a").split("/")[-1]
-                information_package["preservation_location"] = metadata_dictionary.get("href", "n/a").replace("..", "C:/Users/eckardm/work-stuff/duderstadt/9811_0001/data")
+                information_package["preservation"] = metadata_dictionary.get("href", "").split("/")[-1]
+                information_package["preservation_location"] = metadata_dictionary.get("href", "").replace("..", "C:/Users/eckardm/work-stuff/duderstadt/9811_0001/data")
         
         information_packages.append(information_package)
 
-'''
+
 import csv
 with open("temp.csv", mode="wb") as temp:
         writer = csv.writer(temp)
@@ -185,5 +189,17 @@ for information_package in information_packages:
             information_package.get("unitdate"), 
             information_package.get("preservation"), 
             information_package.get("preservation_location")
-        ])'''
+        ])
+        
+# write series, subseries, accessrestrict, unittitle, original, original_location based on files and finding aid <-- done
+# get metadata from html <-- done
+# write unitdate, preservation, preservation_location based on metadata <-- done
+# write autopro and autopro_location based on convertedFiles
+# account for exceptions: restrictions in restricted folders, 1994-1995 speeches and 1996-1997 Position Papers
+# run things that do not have preservation or autopro through autopro
+# update information packages
+# zip up anything without metadata based on series (manual)
+# create deepblue metadata
+# create ead
+
         
