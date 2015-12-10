@@ -213,7 +213,7 @@ for information_package in information_packages:
             information_package.get("autopro_location")
         ])
         
-pickle.dump(converted_files, open("information_packages.p", "wb"))
+pickle.dump(information_packages, open("information_packages.p", "wb"))
  
 # to-dos 
 # write series, subseries, accessrestrict, unittitle, original, original_location based on files and finding aid <-- done
