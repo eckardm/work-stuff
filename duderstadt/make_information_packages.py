@@ -2,7 +2,8 @@ import os
 import cPickle as pickle
 from fuzzywuzzy import fuzz
 
-metadata = pickle.load(open("metadata.p", "rb"))
+metadata = pickle.load(open("metadata.p", mode="rb"))
+converted_files = pickle.load(open("converted_files.p", mode="rb"))
 
 information_packages = []
 
@@ -157,12 +158,28 @@ for root, _, files in os.walk("C:\Users\eckardm\work-stuff\duderstadt\9811_0001\
                 
                 information_package["unitdate"] = metadata_dictionary.get("date", "")
                 information_package["preservation"] = metadata_dictionary.get("href", "").split("/")[-1]
-                information_package["preservation_location"] = metadata_dictionary.get("href", "").replace("..", "C:/Users/eckardm/work-stuff/duderstadt/9811_0001/data")
-        
+                information_package["preservation_location"] = metadata_dictionary.get("href", "").replace("..", "C:\Users\eckardm\work-stuff\duderstadt\9811_0001\data").replace("/", "\\")
+                
         information_packages.append(information_package)
-
-
-import csv
+        
+for information_package in information_packages:
+    
+    shortened_preservation_location = "\\".join(information_package.get("preservation_location", "").split("\\")[7:])
+    
+    autopro = "n/a"
+    autopro_location = "n/a"
+    
+    for converted_file in converted_files:
+        shortened_original_location = "\\".join(converted_file.split("\\")[4:]).replace('"', "")
+        if shortened_original_location == shortened_preservation_location:
+            autopro = converted_files.get(converted_file, "").split("\\")[-1].replace('"', "")
+            autopro_location = "C:\Users\eckardm\work-stuff\duderstadt\converted_files" + "\\" + "-".join(converted_files.get(converted_file, "").split("\\")[4:]).replace('"', "")
+            
+    information_package["autopro"] = autopro
+    information_package["autopro_location"] = autopro_location
+    
+# temp
+    import csv
 with open("temp.csv", mode="wb") as temp:
         writer = csv.writer(temp)
         writer.writerow([
@@ -174,7 +191,9 @@ with open("temp.csv", mode="wb") as temp:
             "original_location", 
             "unitdate", 
             "preservation", 
-            "preservation_location"
+            "preservation_location",
+            "autopro",
+            "autopro_location"
         ])
 
 for information_package in information_packages:
@@ -189,15 +208,18 @@ for information_package in information_packages:
             information_package.get("original_location"), 
             information_package.get("unitdate"), 
             information_package.get("preservation"), 
-            information_package.get("preservation_location")
+            information_package.get("preservation_location"),
+            information_package.get("autopro"),
+            information_package.get("autopro_location")
         ])
-        
+ 
+# to-dos 
 # write series, subseries, accessrestrict, unittitle, original, original_location based on files and finding aid <-- done
 # get metadata from html <-- done
 # write unitdate, preservation, preservation_location based on metadata <-- done
 # refactor <-- in progress
-# write autopro and autopro_location based on convertedFiles
-# account for exceptions: restrictions in restricted folders, 1994-1995 speeches and 1996-1997 Position Papers
+# write autopro and autopro_location based on convertedFiles <-- done
+# account for exceptions: restrictions in restricted folders (no metadata for these, no way to match up to original files, Speeches\JJDS5c\S5restricted, Speeches\JJDS6\restricted, Speeches\JJDS7\S7restricted, Speeches\JJDS9a\S9restricted--no way to guarantee that original restricted version gets restricted), 1994-1995 speeches (no in original-records but in JJDS9a and b) and 1996-1997 Position Papers (just add these to previous subseries or make new one)
 # run things that do not have preservation or autopro through autopro
 # update information packages
 # zip up anything without metadata based on series (manual)
