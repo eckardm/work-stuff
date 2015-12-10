@@ -179,7 +179,7 @@ for information_package in information_packages:
     information_package["autopro_location"] = autopro_location
     
 # temp
-    import csv
+import csv
 with open("temp.csv", mode="wb") as temp:
         writer = csv.writer(temp)
         writer.writerow([
@@ -212,6 +212,8 @@ for information_package in information_packages:
             information_package.get("autopro"),
             information_package.get("autopro_location")
         ])
+        
+pickle.dump(converted_files, open("information_packages.p", "wb"))
  
 # to-dos 
 # write series, subseries, accessrestrict, unittitle, original, original_location based on files and finding aid <-- done
