@@ -10,11 +10,10 @@ for root, _, files in os.walk("C:\Users\eckardm\work-stuff\duderstadt\9811_0001\
  
     information_package = {}
 
-    for name in files:
+    names = [name for name in files if name != "Archivist Note"]
     
-        if name == "Archivist Note":
-            continue
-    
+    for name in names:
+
         information_package = {}
         
         if "Speeches" in root:
