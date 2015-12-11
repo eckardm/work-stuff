@@ -1,5 +1,6 @@
-import os
 import cPickle as pickle
+import os
+from tqdm import *
 from fuzzywuzzy import fuzz
 
 metadata = pickle.load(open("metadata.p", mode="rb"))
@@ -7,13 +8,15 @@ converted_files = pickle.load(open("converted_files.p", mode="rb"))
 
 information_packages = []
 
-for root, _, files in os.walk("C:\Users\eckardm\work-stuff\duderstadt\9811_0001\data\original-records"):
+print "Creating initial information packages..."
+
+for root, _, files in tqdm(os.walk("C:\Users\eckardm\work-stuff\duderstadt\9811_0001\data\original-records")):
  
     information_package = {}
 
     names = [name for name in files if name != "Archivist Note"]
     
-    for name in names:
+    for name in tqdm(names, desc="\\" + "\\".join(root.split("\\")[7:])):
 
         information_package = {}
         
@@ -78,7 +81,9 @@ for root, _, files in os.walk("C:\Users\eckardm\work-stuff\duderstadt\9811_0001\
             if "1986-1987 Position Papers" in root or "1987-1988 Position Papers" in root or "1988-1989 Position Papers" in root or "1989-1990 Position Papers" in root or "1990-1991 Position Papers" in root:
                 information_package["subseries"] = "1986-1991 Position Papers"
             elif "1991-1992 Position Papers" in root or "1992-1993 Position Papers" in root or "1993-1994 Position Papers" in root or "1994-1995 Position Papers" in root or "1995-1996 Position Papers" in root:
-                information_package["subseries"] = "1991-1996 Position Papers" # what about 1996-1997 Position Papers?
+                information_package["subseries"] = "1991-1996 Position Papers"
+            elif "1996-1997 Position Papers" in root:
+                information_package["subseries"] = "1996-1997 Position Papers"
             
             information_package["accessrestrict"] = True
             
@@ -154,7 +159,7 @@ for root, _, files in os.walk("C:\Users\eckardm\work-stuff\duderstadt\9811_0001\
         information_package["preservation_location"] = "n/a"
         
         for metadata_dictionary in metadata:
-            if fuzz.token_sort_ratio(metadata_dictionary["title"], name) > 95:
+            if fuzz.token_sort_ratio(metadata_dictionary.get("title", ""), name) > 95:
                 
                 information_package["unitdate"] = metadata_dictionary.get("date", "")
                 information_package["preservation"] = metadata_dictionary.get("href", "").split("/")[-1]
@@ -162,7 +167,37 @@ for root, _, files in os.walk("C:\Users\eckardm\work-stuff\duderstadt\9811_0001\
                 
         information_packages.append(information_package)
         
-for information_package in information_packages:
+# 1995-1996 Speeches
+print "Accounting for known errors..."
+
+speeches = []
+
+for root, _, files in os.walk("C:\Users\eckardm\work-stuff\duderstadt\9811_0001\data\Speeches"):
+    for name in tqdm(files):
+        if "JJDS9a" in root or "JJDS9b" in root:
+            speech = {}
+            speech["series"] = "Speeches"
+            speech["subseries"] = "1995-1996 Speeches"
+            speech["accessrestrict"] = False
+            speech["original"] = "n/a"
+            speech["original_location"] = "n/a"
+            
+            speech["preservation"] = name
+            speech["preservation_location"] = os.path.join(root, name)
+            
+            speech["unittitle"] = ""
+            speech["unitdate"] = ""
+            
+            for metadata_dictionary in metadata:
+                if metadata_dictionary.get("href", "").split("/")[-1] == name:
+                    speech["unittitle"] = metadata_dictionary.get("title", "")
+                    speech["unitdate"] = metadata_dictionary.get("date", "")
+                    
+            information_packages.append(speech)
+                    
+print "Accounting for converted files..."
+        
+for information_package in tqdm(information_packages):
     
     shortened_preservation_location = "\\".join(information_package.get("preservation_location", "").split("\\")[7:])
     
