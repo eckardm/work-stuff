@@ -214,16 +214,3 @@ for information_package in information_packages:
         ])
         
 pickle.dump(information_packages, open("information_packages.p", "wb"))
- 
-# to-dos 
-# write series, subseries, accessrestrict, unittitle, original, original_location based on files and finding aid <-- done
-# get metadata from html <-- done
-# write unitdate, preservation, preservation_location based on metadata <-- done
-# refactor <-- in progress
-# write autopro and autopro_location based on convertedFiles <-- done
-# account for exceptions: restrictions in restricted folders (no metadata for these, no way to match up to original files, Speeches\JJDS5c\S5restricted, Speeches\JJDS6\restricted, Speeches\JJDS7\S7restricted, Speeches\JJDS9a\S9restricted--no way to guarantee that original restricted version gets restricted), 1994-1995 speeches (no in original-records but in JJDS9a and b) and 1996-1997 Position Papers (just add these to previous subseries or make new one)
-# run things that do not have preservation or autopro through autopro
-# update information packages
-# zip up anything without metadata based on series (manual)
-# create deepblue metadata
-# create ead
