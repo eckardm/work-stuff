@@ -213,6 +213,13 @@ for information_package in tqdm(information_packages):
     information_package["autopro"] = autopro
     information_package["autopro_location"] = autopro_location
     
+print "Accounting for restricted files..."
+
+for information_package in tqdm(information_packages):
+
+    if "restricted" in information_package.get("original_location", ""):
+        informatino_package["accessrestrict"] = True
+    
 # temp
 import csv
 with open("temp.csv", mode="wb") as temp:
@@ -249,3 +256,6 @@ for information_package in information_packages:
         ])
         
 pickle.dump(information_packages, open("information_packages.p", "wb"))
+
+print "Alright, we're done!"
+
