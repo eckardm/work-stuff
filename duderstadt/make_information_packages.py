@@ -154,7 +154,7 @@ for root, _, files in tqdm(os.walk("C:\Users\eckardm\work-stuff\duderstadt\9811_
         information_package["original"] = name
         information_package["original_location"] = os.path.join(root, name)
         
-        information_package["unitdate"] = "n/a"
+        information_package["unitdate"] = ""
         information_package["preservation"] = "n/a"
         information_package["preservation_location"] = "n/a"
         
@@ -190,6 +190,9 @@ for root, _, files in os.walk("C:\Users\eckardm\work-stuff\duderstadt\9811_0001\
             
             for metadata_dictionary in metadata:
                 if metadata_dictionary.get("href", "").split("/")[-1] == name:
+                    speech["unittitle"] = metadata_dictionary.get("title", "")
+                    speech["unitdate"] = metadata_dictionary.get("date", "")
+                elif metadata_dictionary.get("href", "").split("/")[-1][:-4] == name[:-4]:
                     speech["unittitle"] = metadata_dictionary.get("title", "")
                     speech["unitdate"] = metadata_dictionary.get("date", "")
                     
