@@ -2,6 +2,7 @@ import cPickle as pickle
 import os
 from tqdm import *
 from fuzzywuzzy import fuzz
+from collections import defaultdict
 
 metadata = pickle.load(open("metadata.p", mode="rb"))
 converted_files = pickle.load(open("converted_files.p", mode="rb"))
@@ -167,41 +168,11 @@ for root, _, files in tqdm(os.walk("C:\Users\eckardm\work-stuff\duderstadt\9811_
                 
         information_packages.append(information_package)
         
-# 1995-1996 Speeches
-print "Accounting for known errors..."
-
-speeches = []
-
-for root, _, files in os.walk("C:\Users\eckardm\work-stuff\duderstadt\9811_0001\data\Speeches"):
-    for name in tqdm(files):
-        if "JJDS9a" in root or "JJDS9b" in root:
-            speech = {}
-            speech["series"] = "Speeches"
-            speech["subseries"] = "1995-1996 Speeches"
-            speech["accessrestrict"] = False
-            speech["original"] = "n/a"
-            speech["original_location"] = "n/a"
-            
-            speech["preservation"] = name
-            speech["preservation_location"] = os.path.join(root, name)
-            
-            speech["unittitle"] = ""
-            speech["unitdate"] = ""
-            
-            for metadata_dictionary in metadata:
-                if metadata_dictionary.get("href", "").split("/")[-1] == name:
-                    speech["unittitle"] = metadata_dictionary.get("title", "")
-                    speech["unitdate"] = metadata_dictionary.get("date", "")
-                elif metadata_dictionary.get("href", "").split("/")[-1][:-4] == name[:-4]:
-                    speech["unittitle"] = metadata_dictionary.get("title", "")
-                    speech["unitdate"] = metadata_dictionary.get("date", "")
-                    
-            information_packages.append(speech)
-                    
+# autopro'd files
 print "Accounting for converted files..."
         
 for information_package in tqdm(information_packages):
-    
+
     shortened_preservation_location = "\\".join(information_package.get("preservation_location", "").split("\\")[7:])
     
     autopro = "n/a"
@@ -215,14 +186,95 @@ for information_package in tqdm(information_packages):
             
     information_package["autopro"] = autopro
     information_package["autopro_location"] = autopro_location
-    
+
 print "Accounting for restricted files..."
 
 for information_package in tqdm(information_packages):
 
     if "restricted" in information_package.get("preservation_location", ""):
         information_package["accessrestrict"] = True
+        
+# 1995-1996 Speeches
+print "Accounting for known errors..."
+speeches_that_go_together = defaultdict(list)
+
+for root, _, files in os.walk("C:\Users\eckardm\work-stuff\duderstadt\9811_0001\data\Speeches"):
+    for name in tqdm(files):
+        if "JJDS9a" in root or "JJDS9b" in root:
+        
+            filename = name[:-4]
+            
+            if name not in speeches_that_go_together[filename]:
+                speeches_that_go_together[filename].append(name)
+
+speeches = []
+
+for key, value in speeches_that_go_together.iteritems():
     
+    speech = {}
+    
+    speech["series"] = "Speeches"
+    speech["subseries"] = "1995-1996 Speeches"
+    speech["accessrestrict"] = False
+    speech["original"] = "n/a"
+    speech["original_location"] = "n/a"
+    
+    if len(value) == 1:
+        speech["preservation"] = value[0]
+        if os.path.isfile(os.path.join("C:\Users\eckardm\work-stuff\duderstadt\9811_0001\data\Speeches\JJDS9a", value[0])) == True:
+            speech["preservation_location"] = os.path.join("C:\Users\eckardm\work-stuff\duderstadt\9811_0001\data\Speeches\JJDS9a", value[0])
+        else:
+            speech["preservation_location"] = os.path.join("C:\Users\eckardm\work-stuff\duderstadt\9811_0001\data\Speeches\JJDS9b", value[0])
+        for filename in os.listdir("C:\Users\eckardm\work-stuff\duderstadt\converted_files"):
+            if filename.startswith("Speeches-JJD9a-" + key + "_bhl-") and value[0][:-3] in filename:
+                speech["autopro"] = filename
+                speech["autopro_location"] = os.path.join("C:\Users\eckardm\work-stuff\duderstadt\converted_files", filename)
+    
+    else:
+        speech["preservation"] = value[0] + " | " + value[1]
+        if os.path.isfile(os.path.join("C:\Users\eckardm\work-stuff\duderstadt\9811_0001\data\Speeches\JJDS9a", value[0])) == True:
+            speech["preservation_location"] = os.path.join("C:\Users\eckardm\work-stuff\duderstadt\9811_0001\data\Speeches\JJDS9a", value[0]) + " | " + os.path.join("C:\Users\eckardm\work-stuff\duderstadt\9811_0001\data\Speeches\JJDS9a", value[1])
+        else:
+            speech["preservation_location"] = os.path.join("C:\Users\eckardm\work-stuff\duderstadt\9811_0001\data\Speeches\JJDS9b", value[0]) + " | " + os.path.join("C:\Users\eckardm\work-stuff\duderstadt\9811_0001\data\Speeches\JJDS9b", value[1])
+
+    speech["unittitle"] = ""
+    speech["unitdate"] = ""
+    
+    for metadata_dictionary in metadata:
+
+        if metadata_dictionary.get("href", "").split("/")[-1][:-4] == key:
+            speech["unittitle"] = metadata_dictionary.get("title", "")
+            speech["unitdate"] = metadata_dictionary.get("date", "")
+
+    speeches.append(speech)
+
+autoprod_speeches_that_go_together = defaultdict(list)    
+    
+for filename in os.listdir("C:\Users\eckardm\work-stuff\duderstadt\converted_files"):
+    if "JJDS9a" in filename or "JJDS9b" in filename:
+        
+        root = filename.split("_bhl-")[0]
+        
+        autoprod_speeches_that_go_together[root].append(filename)
+    
+for key, value in autoprod_speeches_that_go_together.iteritems():
+
+    if len(value) == 1:
+        autopro = value[0]
+        autopro_location = os.path.join("C:\Users\eckardm\work-stuff\duderstadt\converted_files", value[0])
+        
+    else:
+        autopro = value[0] + " | " + value[1]
+        autopro_location = os.path.join("C:\Users\eckardm\work-stuff\duderstadt\converted_files", value[0]) + " | " + os.path.join("C:\Users\eckardm\work-stuff\duderstadt\converted_files", value[1])
+        
+    for speech in speeches:
+        if "-".join(speech.get("preservation_location").split(" | ")[0].split("\\")[7:]).split(".")[0] == key:
+            speech["autopro"] = autopro
+            speech["autopro_location"] = autopro_location
+        
+for speech in speeches:
+    information_packages.append(speech)
+        
 # temp
 import csv
 with open("temp.csv", mode="wb") as temp:

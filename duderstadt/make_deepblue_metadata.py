@@ -1,7 +1,6 @@
 import csv
 import cPickle as pickle
 import os
-import shutil
 import datetime
 
 # write headers for metadata
@@ -43,7 +42,6 @@ for information_package in information_packages:
         dc_title = information_package.get("series", "") + " - " + information_package.get("subseries", "") + " - " + information_package.get("unittitle", "")
     else:
         dc_title = ""
-        shutil.copy2(information_package.get("preservation_location"), "1995-1996_Speeches-Other")
     
     dc_description_abstract = ""
     
@@ -71,6 +69,17 @@ for information_package in information_packages:
                 dc_coverage_temporal = datetime.datetime.strptime(information_package.get("unitdate", ""), "%d/%m/%y")
                 dc_coverage_temporal = dc_coverage_temporal.strftime("%Y-%m-%d")
                 
+    '''
+    if original and not preservation
+    if original and preservation and not autopro
+    if original and preservation and autopro
+    if not original and one preservation and not autopro
+    if not original and two preservation and not autpro
+    if not original and one preservation and one autopro
+    if not original and one preservation and two autopro
+    if not original and two preservation and one autopro
+    if not original and two preservation and two autopro'''
+                
     if information_package.get("original", "") != "n/a" and information_package.get("preservation", "") == "n/a":
         dc_title_filename = information_package.get("original", "")
         dc_description_filename = ""
@@ -88,12 +97,18 @@ for information_package in information_packages:
 
     if information_package.get("original", "") == "n/a" and information_package.get("preservation", "") != "n/a" and information_package.get("autopro", "") == "n/a":
         dc_title_filename = information_package.get("preservation", "")
-        dc_description_filename = "Preservation version"
-        location = information_package.get("preservation_location", "").replace("C:\Users\eckardm\work-stuff\duderstadt", "")
+        if "|" not in information_package.get("preservation", ""):
+            dc_description_filename = "Preservation version"
+        else:
+            dc_description_filename = "Preservation version 1 | Preservation version 2"
+        location = information_package.get("preservation", "")
 
     if information_package.get("original", "") == "n/a" and information_package.get("preservation", "") != "n/a" and information_package.get("autopro", "") != "n/a":
         dc_title_filename = information_package.get("preservation", "") + " | " + information_package.get("autopro", "")
-        dc_description_filename = "Preservation version 1 | Preservation version 2"
+        if "|" not in information_package.get("preservation", ""):
+            dc_description_filename = "Preservation version 1 | Preservation version 2"
+        else:
+            dc_description_filename = "Preservation version 1 | Preservation version 2 | Preservation version 3"
         location = information_package.get("preservation_location", "").replace("C:\Users\eckardm\work-stuff\duderstadt", "") + " | " + information_package.get("autopro_location", "").replace("C:\Users\eckardm\work-stuff\duderstadt", "")
 
     if information_package.get("series", "") == "Digital Images":
@@ -101,7 +116,7 @@ for information_package in information_packages:
     elif information_package.get("series", "") == "Presentations":
         dc_type = "Presentation"
     else:
-        dc_type = "Other"
+        dc_type = "Office Documents"
     
     if information_package.get("accessrestrict") == True:
         dc_rights_access = "[ER Restricted until July 1, 2030]"
