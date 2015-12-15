@@ -96,7 +96,12 @@ for information_package in information_packages:
         dc_description_filename = "Preservation version 1 | Preservation version 2"
         location = information_package.get("preservation", "").replace("C:\Users\eckardm\work-stuff\duderstadt", "") + " | " + information_package.get("autopro", "").replace("C:\Users\eckardm\work-stuff\duderstadt", "")
 
-    dc_type = ""
+    if information_package.get("series", "") == "Presentations":
+        dc_type = "Presentation"
+    if information_package.get("series", "") == "Digital Images":
+        dc_type = "Image"
+    else:
+        dc_type = "Other"
     
     if information_package.get("accessrestrict") == True:
         dc_rights_access = "[ER Restricted until July 1, 2030]"
@@ -107,7 +112,7 @@ for information_package in information_packages:
 
     dc_rights_copyright = "Copyright has been transferred to the Regents of the University of Michigan."
     
-    dc_language_iso = ""
+    dc_language_iso = "en"
 
     with open("deepBlue_9811_0001.csv", mode="ab") as metadata_csv:
         writer = csv.writer(metadata_csv)
