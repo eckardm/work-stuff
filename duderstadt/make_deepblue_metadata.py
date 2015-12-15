@@ -94,7 +94,7 @@ for information_package in information_packages:
     if information_package.get("original", "") == "n/a" and information_package.get("preservation", "") != "n/a" and information_package.get("autopro", "") != "n/a":
         dc_title_filename = information_package.get("preservation", "") + " | " + information_package.get("autopro", "")
         dc_description_filename = "Preservation version 1 | Preservation version 2"
-        location = information_package.get("preservation", "").replace("C:\Users\eckardm\work-stuff\duderstadt", "") + " | " + information_package.get("autopro", "").replace("C:\Users\eckardm\work-stuff\duderstadt", "")
+        location = information_package.get("preservation_location", "").replace("C:\Users\eckardm\work-stuff\duderstadt", "") + " | " + information_package.get("autopro_location", "").replace("C:\Users\eckardm\work-stuff\duderstadt", "")
 
     if information_package.get("series", "") == "Digital Images":
         dc_type = "Image"
