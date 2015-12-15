@@ -96,10 +96,10 @@ for information_package in information_packages:
         dc_description_filename = "Preservation version 1 | Preservation version 2"
         location = information_package.get("preservation", "").replace("C:\Users\eckardm\work-stuff\duderstadt", "") + " | " + information_package.get("autopro", "").replace("C:\Users\eckardm\work-stuff\duderstadt", "")
 
-    if information_package.get("series", "") == "Presentations":
-        dc_type = "Presentation"
     if information_package.get("series", "") == "Digital Images":
         dc_type = "Image"
+    elif information_package.get("series", "") == "Presentations":
+        dc_type = "Presentation"
     else:
         dc_type = "Other"
     
@@ -108,7 +108,7 @@ for information_package in information_packages:
         dc_date_open = "2030-07-01"
     else:
         dc_rights_access = "Collection is open for research."
-        dc_date_open = "2015"
+        dc_date_open = "2015-12-15"
 
     dc_rights_copyright = "Copyright has been transferred to the Regents of the University of Michigan."
     
