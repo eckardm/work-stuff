@@ -225,6 +225,8 @@ for key, value in speeches_that_go_together.iteritems():
         speech["preservation"] = value[0]
         if os.path.isfile(os.path.join("C:\Users\eckardm\work-stuff\duderstadt\9811_0001\data\Speeches\JJDS9a", value[0])) == True:
             speech["preservation_location"] = os.path.join("C:\Users\eckardm\work-stuff\duderstadt\9811_0001\data\Speeches\JJDS9a", value[0])
+        elif os.path.isfile(os.path.join("C:\Users\eckardm\work-stuff\duderstadt\9811_0001\data\Speeches\JJDS9a\S9restricted", value[0])) == True:
+            speech["preservation_location"] = os.path.join("C:\Users\eckardm\work-stuff\duderstadt\9811_0001\data\Speeches\JJDS9a\S9restricted", value[0])
         else:
             speech["preservation_location"] = os.path.join("C:\Users\eckardm\work-stuff\duderstadt\9811_0001\data\Speeches\JJDS9b", value[0])
         for filename in os.listdir("C:\Users\eckardm\work-stuff\duderstadt\converted_files"):
@@ -236,6 +238,8 @@ for key, value in speeches_that_go_together.iteritems():
         speech["preservation"] = value[0] + " | " + value[1]
         if os.path.isfile(os.path.join("C:\Users\eckardm\work-stuff\duderstadt\9811_0001\data\Speeches\JJDS9a", value[0])) == True:
             speech["preservation_location"] = os.path.join("C:\Users\eckardm\work-stuff\duderstadt\9811_0001\data\Speeches\JJDS9a", value[0]) + " | " + os.path.join("C:\Users\eckardm\work-stuff\duderstadt\9811_0001\data\Speeches\JJDS9a", value[1])
+        elif os.path.isfile(os.path.join("C:\Users\eckardm\work-stuff\duderstadt\9811_0001\data\Speeches\JJDS9a\S9restricted", value[0])) == True:
+            speech["preservation_location"] = os.path.join("C:\Users\eckardm\work-stuff\duderstadt\9811_0001\data\Speeches\JJDS9a\S9restricted", value[0]) + " | " + os.path.join("C:\Users\eckardm\work-stuff\duderstadt\9811_0001\data\Speeches\JJDS9a\S9restricted", value[1])
         else:
             speech["preservation_location"] = os.path.join("C:\Users\eckardm\work-stuff\duderstadt\9811_0001\data\Speeches\JJDS9b", value[0]) + " | " + os.path.join("C:\Users\eckardm\work-stuff\duderstadt\9811_0001\data\Speeches\JJDS9b", value[1])
 

@@ -55670,7 +55670,7 @@ sa(dp10789
 g3
 g10640
 sg7
-S'C:\\Users\\eckardm\\work-stuff\\duderstadt\\9811_0001\\data\\Speeches\\JJDS9b\\jjd1555.doc'
+S'C:\\Users\\eckardm\\work-stuff\\duderstadt\\9811_0001\\data\\Speeches\\JJDS9a\\S9restricted\\jjd1555.doc'
 p10790
 sg5
 S''
