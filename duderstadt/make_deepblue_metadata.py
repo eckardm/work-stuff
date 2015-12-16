@@ -16,7 +16,7 @@ with open("deepBlue_9811_0001.csv", mode="wb") as metadata_csv:
     "DC.DATE.CREATED", 
     "DC.COVERAGE.TEMPORAL", 
     "DC.TITLE.FILENAME ", 
-    "LOCATION",
+    "RELATIVE_PATH",
     "DC.DESCRIPTION.FILENAME", 
     "DC.TYPE", 
     "DC.RIGHTS.ACCESS", 
@@ -26,8 +26,6 @@ with open("deepBlue_9811_0001.csv", mode="wb") as metadata_csv:
 ])
 
 information_packages = pickle.load(open("information_packages.p", mode="rb"))
-
-os.mkdir("1995-1996_Speeches-Other")
 
 counter = 1
 
@@ -69,48 +67,52 @@ for information_package in information_packages:
                 dc_coverage_temporal = datetime.datetime.strptime(information_package.get("unitdate", ""), "%d/%m/%y")
                 dc_coverage_temporal = dc_coverage_temporal.strftime("%Y-%m-%d")
                 
-    '''
-    if original and not preservation
-    if original and preservation and not autopro
-    if original and preservation and autopro
-    if not original and one preservation and not autopro
-    if not original and two preservation and not autpro
-    if not original and one preservation and one autopro
-    if not original and one preservation and two autopro
-    if not original and two preservation and one autopro
-    if not original and two preservation and two autopro'''
-                
+    # if original and not preservation
     if information_package.get("original", "") != "n/a" and information_package.get("preservation", "") == "n/a":
         dc_title_filename = information_package.get("original", "")
         dc_description_filename = ""
         location = information_package.get("original_location", "").replace("C:\Users\eckardm\work-stuff\duderstadt", "")
-
+    # if original and preservation and not autopro
     if information_package.get("original", "") != "n/a" and information_package.get("preservation", "") != "n/a" and information_package.get("autopro", "") == "n/a": 
         dc_title_filename = information_package.get("original", "") + " | " + information_package.get("preservation", "")
         dc_description_filename = "Original version | Preservation version"
         location = information_package.get("original_location", "").replace("C:\Users\eckardm\work-stuff\duderstadt", "") + " | " + information_package.get("preservation_location", "").replace("C:\Users\eckardm\work-stuff\duderstadt", "")
-
-    if information_package.get("original", "") != "n/a" and information_package.get("preservation", "") != "n/a" and information_package.get("autopro", "") != "n/a": 
+    # if original and preservation and autopro
+    if information_package.get("original", "") != "n/a" and information_package.get("preservation", "") != "n/a" and information_package.get("autopro", "") != "n/a":
         dc_title_filename = information_package.get("original", "") + " | " + information_package.get("preservation", "") + " | " + information_package.get("autopro", "")
-        dc_description_filename = "Original version | Preservation version 1 | Preservation version 2"
-        location = information_package.get("original_location", "").replace("C:\Users\eckardm\work-stuff\duderstadt", "") + " | " + information_package.get("preservation_location", "").replace("C:\Users\eckardm\work-stuff\duderstadt", "") + " | " + information_package.get("autopro_location", "").replace("C:\Users\eckardm\work-stuff\duderstadt", "")
-
-    if information_package.get("original", "") == "n/a" and information_package.get("preservation", "") != "n/a" and information_package.get("autopro", "") == "n/a":
+        dc_description_filename = "Original version | Preservation version | Subsequent preservation version"
+        location = information_package.get("original_location", "").replace("C:\Users\eckardm\work-stuff\duderstadt", "") + " | " + information_package.get("preservation_location", "").replace("C:\Users\eckardm\work-stuff\duderstadt", "") +  " | " + information_package.get("autopro_location", "").replace("C:\Users\eckardm\work-stuff\duderstadt", "")
+    # if not original and one preservation and not autopro
+    if information_package.get("original", "") == "n/a" and " | " not in information_package.get("preservation", "") and information_package.get("autopro", "") == "n/a":
         dc_title_filename = information_package.get("preservation", "")
-        if "|" not in information_package.get("preservation", ""):
-            dc_description_filename = "Preservation version"
-        else:
-            dc_description_filename = "Preservation version 1 | Preservation version 2"
-        location = information_package.get("preservation", "")
-
-    if information_package.get("original", "") == "n/a" and information_package.get("preservation", "") != "n/a" and information_package.get("autopro", "") != "n/a":
+        dc_description_filename = "Preservation version"
+        location = information_package.get("preservation_location", "").replace("C:\Users\eckardm\work-stuff\duderstadt", "")
+    # if not original and two preservation and not autpro
+    if information_package.get("original", "") == "n/a" and " | " in information_package.get("preservation", "") and information_package.get("autopro", "") == "n/a":
+        dc_title_filename = information_package.get("preservation", "")
+        dc_description_filename = dc_description_filename = "Preservation version 1 | Preservation version 2"
+        location = information_package.get("preservation_location", "").replace("C:\Users\eckardm\work-stuff\duderstadt", "")
+    # if not original and one preservation and one autopro
+    if information_package.get("original", "") == "n/a" and " | " not in information_package.get("preservation", "") and " | " not in information_package.get("autopro", "") != "n/a":
         dc_title_filename = information_package.get("preservation", "") + " | " + information_package.get("autopro", "")
-        if "|" not in information_package.get("preservation", ""):
-            dc_description_filename = "Preservation version 1 | Preservation version 2"
-        else:
-            dc_description_filename = "Preservation version 1 | Preservation version 2 | Preservation version 3"
-        location = information_package.get("preservation_location", "").replace("C:\Users\eckardm\work-stuff\duderstadt", "") + " | " + information_package.get("autopro_location", "").replace("C:\Users\eckardm\work-stuff\duderstadt", "")
-
+        dc_description_filename = "Preservation version | Subsequent preservation version"
+        location = information_package.get("preservation_location", "").replace("C:\Users\eckardm\work-stuff\duderstadt", "") +  " | " + information_package.get("autopro_location", "").replace("C:\Users\eckardm\work-stuff\duderstadt", "")
+    # if not original and one preservation and two autopro
+    if information_package.get("original", "") == "n/a" and " | " not in information_package.get("preservation", "") and " | " in information_package.get("autopro", "") != "n/a":
+        dc_title_filename = information_package.get("preservation", "") + " | " + information_package.get("autopro", "")
+        dc_description_filename = "Preservation version | Subsequent preservation version 1 | Subsequent preservation version 2"
+        location = information_package.get("preservation_location", "").replace("C:\Users\eckardm\work-stuff\duderstadt", "") +  " | " + information_package.get("autopro_location", "").replace("C:\Users\eckardm\work-stuff\duderstadt", "")
+    # if not original and two preservation and one autopro
+    if information_package.get("original", "") == "n/a" and " | " in information_package.get("preservation", "") and " | " not in information_package.get("autopro", "") != "n/a":
+        dc_title_filename = information_package.get("preservation", "") + " | " + information_package.get("autopro", "")
+        dc_description_filename = "Preservation version 1 | Preservation version 2 | Subsequent preservation version"
+        location = information_package.get("preservation_location", "").replace("C:\Users\eckardm\work-stuff\duderstadt", "") +  " | " + information_package.get("autopro_location", "").replace("C:\Users\eckardm\work-stuff\duderstadt", "")
+    # if not original and two preservation and two autopro
+    if information_package.get("original", "") == "n/a" and " | " in information_package.get("preservation", "") and " | " in information_package.get("autopro", "") != "n/a":
+        dc_title_filename = information_package.get("preservation", "") + " | " + information_package.get("autopro", "")
+        dc_description_filename = "Preservation version 1 | Preservation version 2 | Subsequent preservation version 1 | Subsequent preservation version 2"
+        location = information_package.get("preservation_location", "").replace("C:\Users\eckardm\work-stuff\duderstadt", "") +  " | " + information_package.get("autopro_location", "").replace("C:\Users\eckardm\work-stuff\duderstadt", "")
+                
     if information_package.get("series", "") == "Digital Images":
         dc_type = "Image"
     elif information_package.get("series", "") == "Presentations":

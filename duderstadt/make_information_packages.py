@@ -218,6 +218,8 @@ for key, value in speeches_that_go_together.iteritems():
     speech["accessrestrict"] = False
     speech["original"] = "n/a"
     speech["original_location"] = "n/a"
+    speech["autopro"] = "n/a"
+    speech["autopro_location"] = "n/a"
     
     if len(value) == 1:
         speech["preservation"] = value[0]
