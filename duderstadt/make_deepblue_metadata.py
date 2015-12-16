@@ -37,7 +37,7 @@ for information_package in information_packages:
     counter += 1
     
     if information_package.get("unittitle", ""):
-        dc_title = information_package.get("series", "") + " - " + information_package.get("subseries", "") + " - " + information_package.get("unittitle", "")
+        dc_title = "Digital Documents" + " - " + "1986-1997" + " - " + information_package.get("series", "") + " - " + information_package.get("subseries", "") + " - " + information_package.get("unittitle", "")
     else:
         dc_title = ""
     
