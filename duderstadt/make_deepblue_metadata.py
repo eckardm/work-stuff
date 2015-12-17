@@ -47,25 +47,28 @@ for information_package in information_packages:
         
     dc_contributor_other = ""
         
-    dc_date_issued = "2015"
-    
     dc_date_created = "2015"
     
     if not information_package.get("unitdate", ""):
         dc_coverage_temporal = "undated"
+        dc_date_issued = "undated"
     
     else:
         if "-" in information_package.get("unitdate", "") or information_package.get("unitdate", "") == "undated" or information_package.get("unitdate", "") == "1989":
             continue
         elif information_package.get("unitdate", "") == "6/89":
             dc_coverage_temporal = "1989-06"
+            dc_date_issued = "1989-06"
         else:
             try:
                 dc_coverage_temporal = datetime.datetime.strptime(information_package.get("unitdate", ""), "%m/%d/%y")
+                dc_date_issued = datetime.datetime.strptime(information_package.get("unitdate", ""), "%m/%d/%y")
             # maybe this is the best thing to do? can't tell how these are typos.
             except:
                 dc_coverage_temporal = datetime.datetime.strptime(information_package.get("unitdate", ""), "%d/%m/%y")
                 dc_coverage_temporal = dc_coverage_temporal.strftime("%Y-%m-%d")
+                dc_date_issued = datetime.datetime.strptime(information_package.get("unitdate", ""), "%d/%m/%y")
+                dc_date_issued = dc_coverage_temporal.strftime("%Y-%m-%d")
                 
     # if original and not preservation
     if information_package.get("original", "") != "n/a" and information_package.get("preservation", "") == "n/a":
