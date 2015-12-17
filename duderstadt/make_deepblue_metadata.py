@@ -37,7 +37,7 @@ for information_package in information_packages:
     counter += 1
     
     if information_package.get("unittitle", ""):
-        dc_title = "Digital Documents" + " - " + "1986-1997" + " - " + information_package.get("series", "") + " - " + information_package.get("subseries", "") + " - " + information_package.get("unittitle", "")
+        dc_title = "Digital Documents" + " - " + "University of Michigan Presidency, 1986-1997" + " - " + information_package.get("series", "") + " - " + information_package.get("subseries", "") + " - " + information_package.get("unittitle", "")
     else:
         dc_title = ""
     
@@ -128,7 +128,7 @@ for information_package in information_packages:
         dc_date_open = "2030-07-01"
     else:
         dc_rights_access = "Collection is open for research."
-        dc_date_open = "2015-12-15"
+        dc_date_open = "2015-12-17"
 
     dc_rights_copyright = "Copyright has been transferred to the Regents of the University of Michigan."
     
