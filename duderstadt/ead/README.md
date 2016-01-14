@@ -3,7 +3,7 @@ Duderstadt EAD
 
 Description
 -----------
-Use DSpace stats  and metadata scraped from DSpace full item record to update Duderstadt EAD with component physloc, unitdate, physdesc/physfacet, dao href and dao/daodesc, as well as accessrestrict where appropriate.
+Use DSpace stats and metadata scraped from DSpace full item record to update Duderstadt EAD with component physloc, unitdate, physdesc/physfacet, dao href and dao/daodesc, as well as accessrestrict where appropriate.
 
 Considerations: 
 
