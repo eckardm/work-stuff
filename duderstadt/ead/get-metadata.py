@@ -35,7 +35,7 @@ with open("data.txt", mode="rb") as csvfile:
         full_item_record = "http://deepblue.lib.umich.edu/handle/" + row["handle"] + "?show=full"
         
         print "(" + str(count).zfill(4) + "/1316) Getting metadata for " + row["handle"] + "..."
-
+        
         metadata_dictionary = {}
         
         data = requests.get(full_item_record, headers=headers)
@@ -58,11 +58,11 @@ with open("data.txt", mode="rb") as csvfile:
         
         if soup.find("td", text="dc.rights.access"):
             metadata_dictionary["accessrestrict"] = soup.find("td", text="dc.rights.access").find_next("td").text
-            
+        
         metadata_list.append(metadata_dictionary)
         
         # from robots.txt
-        time.sleep(15)
         count += 1
+        time.sleep(15)
 
 pickle.dump(metadata_list, open("metadata.p", mode="wb"))
