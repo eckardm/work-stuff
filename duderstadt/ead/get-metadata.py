@@ -61,6 +61,7 @@ with open("data.txt", mode="rb") as csvfile:
             
         metadata_list.append(metadata_dictionary)
         
+        # from robots.txt
         time.sleep(15)
         count += 1
 
