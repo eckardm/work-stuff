@@ -23,7 +23,7 @@ import pickle
   </accessrestrict>
 </c02>'''
 
-headers = {"user-agent": "Duderstadt scraper v.0.1 - please contact eckardm@umich.edu if there are any issues"}
+headers = {"user-agent": "Duderstadt scraper v.0.2 - please contact eckardm@umich.edu if there are any issues"}
 
 metadata_list = []
 
@@ -34,9 +34,13 @@ with open("data.txt", mode="rb") as csvfile:
     for row in reader:
         full_item_record = "http://deepblue.lib.umich.edu/handle/" + row["handle"] + "?show=full"
         
+        metadata_dictionary = {}
+        
         print "(" + str(count).zfill(4) + "/1316) Getting metadata for " + row["handle"] + "..."
         
-        metadata_dictionary = {}
+        if row["handle"] in metadata_dictionary.values():
+            print "Already got metadata for " + row["handle"] + "!"
+            continue
         
         data = requests.get(full_item_record, headers=headers)
         soup = BeautifulSoup(data.text, "lxml")
