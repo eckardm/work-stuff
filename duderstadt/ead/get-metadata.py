@@ -23,7 +23,7 @@ import pickle
   </accessrestrict>
 </c02>'''
 
-headers = {"user-agent": "Duderstadt scraper v.0.1 - please contact eckardm@umich.edu if there are any issues"}
+headers = {"user-agent": "Duderstadt scraper v.1.0 - please contact eckardm@umich.edu if there are any issues"}
 
 metadata_list = []
 
