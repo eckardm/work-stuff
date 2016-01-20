@@ -41,13 +41,21 @@ umich_presidency_scopecontent_p = etree.SubElement(umich_presidency_scopecontent
 umich_presidency_scopecontent_p.text = "Digital documents from Duderstadt's tenure as University President."
 
 # build out speeches series
+# populate speeches series
 # build out idea files series
+# populate idea files series
 # build out strategy series
+# populate strategy series
 # build out position papers series
+# populate position papers series
 # build out presentations series
+# populate presentations series
 # build out write files series
+# populate write files series
 # build out legacy series
+# populate legacy series
 # build out digital images series
+# populate digital images series
 
 # build out faculty archives series
 faculty_archives_c02 = etree.SubElement(digital_docs_c01, "c02")
@@ -99,7 +107,7 @@ for sorted_metadatum in sorted_metadata:
     sorted_metadatum_unitdate = etree.SubElement(sorted_metadatum_unittitle, "unitdate")
     sorted_metadatum_unitdate.text = sorted_metadatum["unitdate"]
     sorted_metadatum_unitdate.attrib["type"] = "inclusive"
-    # sorted_metadatum_unitdate.attrib["normal"] = 
+    sorted_metadatum_unitdate.attrib["normal"] = sorted_metadatum["unitdate"]   
     sorted_metadatum_physdesc = etree.SubElement(sorted_metadatum_did, "physdesc")
     sorted_metadatum_physfacet = etree.SubElement(sorted_metadatum_physdesc, "physfacet")
     sorted_metadatum_physfacet.text = sorted_metadatum["physfacet"]
