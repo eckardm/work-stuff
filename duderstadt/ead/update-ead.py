@@ -2556,3 +2556,5 @@ for sorted_metadatum in sorted_metadata:
     
 with open("duderst-updated.xml", mode="w") as ead_out:
     ead_out.write(etree.tostring(digital_docs_c01, pretty_print=True, encoding="utf-8", xml_declaration=True))
+    
+# update ead
