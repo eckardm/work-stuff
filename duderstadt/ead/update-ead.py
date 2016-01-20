@@ -6,6 +6,7 @@ from operator import itemgetter
 Digital Documents - University of Michigan Presidency, 1986-1997 - Speeches - 1989-1990 Speeches - Alumni 5.0'''
 
 metadata = pickle.load(open("metadata.p", mode="rb"))
+sorted_metadata = sorted(metadata, key=itemgetter("unitdate"), reverse=False)
 
 # build out digital docs subgroup
 digital_docs_c01 = etree.Element("c01")
@@ -76,6 +77,37 @@ speeches_86_87_extent.attrib["altrender"] = "materialtype spaceoccupied"
 speeches_86_87_extent.text = "37 digital files" # <-- will need to be updated
 
 # populate 1986-1987 speeches subseries
+for sorted_metadatum in sorted_metadata:
+
+    if sorted_metadatum["unittitle"].startswith("Digital Documents" + " - " + "University of Michigan Presidency, 1986-1997" + " - " + "Speeches" + " - " + "1986-1987 Speeches"):
+        
+        print "Creating XML for " + sorted_metadatum["unittitle"] + "..."
+        
+        sorted_metadatum_c05 = etree.SubElement(speeches_86_87_c04, "c05")
+        sorted_metadatum_c05.attrib["level"] = "file"
+        sorted_metadatum_did = etree.SubElement(sorted_metadatum_c03, "did")
+        sorted_metadatum_physloc = etree.SubElement(sorted_metadatum_did, "physloc")
+        sorted_metadatum_physloc.text = "Online"
+        sorted_metadatum_unittitle = etree.SubElement(sorted_metadatum_did, "unittitle")
+        sorted_metadatum_unittitle.text = sorted_metadatum["unittitle"].decode("utf-8") + ", "
+        sorted_metadatum_unitdate = etree.SubElement(sorted_metadatum_unittitle, "unitdate")
+        sorted_metadatum_unitdate.text = sorted_metadatum["unitdate"]
+        sorted_metadatum_unitdate.attrib["type"] = "inclusive"
+        sorted_metadatum_unitdate.attrib["normal"] = sorted_metadatum["unitdate"]   
+        sorted_metadatum_physdesc = etree.SubElement(sorted_metadatum_did, "physdesc")
+        sorted_metadatum_physfacet = etree.SubElement(sorted_metadatum_physdesc, "physfacet")
+        sorted_metadatum_physfacet.text = sorted_metadatum["physfacet"]
+        sorted_metadatum_dao = etree.SubElement(sorted_metadatum_did, "dao")
+        sorted_metadatum_dao.attrib["show"] = "new"
+        sorted_metadatum_dao.attrib["actuate"] = "onrequest"
+        sorted_metadatum_dao.attrib["href"] = sorted_metadatum["dao"]
+        sorted_metadatum_daodesc = etree.SubElement(sorted_metadatum_dao, "daodesc")
+        sorted_metadatum_daodesc_p = etree.SubElement(sorted_metadatum_daodesc, "p")
+        sorted_metadatum_daodesc_p.text = "[view item]"
+        if "accessrestrict" in sorted_metadatum:
+            sorted_metadatum_accessrestrict = etree.SubElement(sorted_metadatum_c03, "accessrestrict")
+            sorted_metadatum_accessrestrict_p = etree.SubElement(sorted_metadatum_accessrestrict, "p")
+            sorted_metadatum_accessrestrict_p.text = sorted_metadatum["accessrestrict"]
 
 # build out 1987-1988 speeches subseries
 speeches_87_88_c04 = etree.SubElement(speeches_c03, "c04")
@@ -92,6 +124,37 @@ speeches_87_88_extent.attrib["altrender"] = "materialtype spaceoccupied"
 speeches_87_88_extent.text = "54 digital files" # <-- will need to be updated
 
 # populate 1987-1988 speeches subseries
+for sorted_metadatum in sorted_metadata:
+
+    if sorted_metadatum["unittitle"].startswith("Digital Documents" + " - " + "University of Michigan Presidency, 1986-1997" + " - " + "Speeches" + " - " + "1987-1988 Speeches"):
+        
+        print "Creating XML for " + sorted_metadatum["unittitle"] + "..."
+        
+        sorted_metadatum_c05 = etree.SubElement(speeches_88_88_c04, "c05")
+        sorted_metadatum_c05.attrib["level"] = "file"
+        sorted_metadatum_did = etree.SubElement(sorted_metadatum_c03, "did")
+        sorted_metadatum_physloc = etree.SubElement(sorted_metadatum_did, "physloc")
+        sorted_metadatum_physloc.text = "Online"
+        sorted_metadatum_unittitle = etree.SubElement(sorted_metadatum_did, "unittitle")
+        sorted_metadatum_unittitle.text = sorted_metadatum["unittitle"].decode("utf-8") + ", "
+        sorted_metadatum_unitdate = etree.SubElement(sorted_metadatum_unittitle, "unitdate")
+        sorted_metadatum_unitdate.text = sorted_metadatum["unitdate"]
+        sorted_metadatum_unitdate.attrib["type"] = "inclusive"
+        sorted_metadatum_unitdate.attrib["normal"] = sorted_metadatum["unitdate"]   
+        sorted_metadatum_physdesc = etree.SubElement(sorted_metadatum_did, "physdesc")
+        sorted_metadatum_physfacet = etree.SubElement(sorted_metadatum_physdesc, "physfacet")
+        sorted_metadatum_physfacet.text = sorted_metadatum["physfacet"]
+        sorted_metadatum_dao = etree.SubElement(sorted_metadatum_did, "dao")
+        sorted_metadatum_dao.attrib["show"] = "new"
+        sorted_metadatum_dao.attrib["actuate"] = "onrequest"
+        sorted_metadatum_dao.attrib["href"] = sorted_metadatum["dao"]
+        sorted_metadatum_daodesc = etree.SubElement(sorted_metadatum_dao, "daodesc")
+        sorted_metadatum_daodesc_p = etree.SubElement(sorted_metadatum_daodesc, "p")
+        sorted_metadatum_daodesc_p.text = "[view item]"
+        if "accessrestrict" in sorted_metadatum:
+            sorted_metadatum_accessrestrict = etree.SubElement(sorted_metadatum_c03, "accessrestrict")
+            sorted_metadatum_accessrestrict_p = etree.SubElement(sorted_metadatum_accessrestrict, "p")
+            sorted_metadatum_accessrestrict_p.text = sorted_metadatum["accessrestrict"]
 
 # build out 1988-1989 speeches subseries
 speeches_88_89_c04 = etree.SubElement(speeches_c03, "c04")
@@ -108,6 +171,37 @@ speeches_88_89_extent.attrib["altrender"] = "materialtype spaceoccupied"
 speeches_88_89_extent.text = "124 digital files" # <-- will need to be updated
 
 # populate 1988-1989 speeches subseries
+for sorted_metadatum in sorted_metadata:
+
+    if sorted_metadatum["unittitle"].startswith("Digital Documents" + " - " + "University of Michigan Presidency, 1986-1997" + " - " + "Speeches" + " - " + "1988-1989 Speeches"):
+        
+        print "Creating XML for " + sorted_metadatum["unittitle"] + "..."
+        
+        sorted_metadatum_c05 = etree.SubElement(speeches_88_89_c04, "c05")
+        sorted_metadatum_c05.attrib["level"] = "file"
+        sorted_metadatum_did = etree.SubElement(sorted_metadatum_c03, "did")
+        sorted_metadatum_physloc = etree.SubElement(sorted_metadatum_did, "physloc")
+        sorted_metadatum_physloc.text = "Online"
+        sorted_metadatum_unittitle = etree.SubElement(sorted_metadatum_did, "unittitle")
+        sorted_metadatum_unittitle.text = sorted_metadatum["unittitle"].decode("utf-8") + ", "
+        sorted_metadatum_unitdate = etree.SubElement(sorted_metadatum_unittitle, "unitdate")
+        sorted_metadatum_unitdate.text = sorted_metadatum["unitdate"]
+        sorted_metadatum_unitdate.attrib["type"] = "inclusive"
+        sorted_metadatum_unitdate.attrib["normal"] = sorted_metadatum["unitdate"]   
+        sorted_metadatum_physdesc = etree.SubElement(sorted_metadatum_did, "physdesc")
+        sorted_metadatum_physfacet = etree.SubElement(sorted_metadatum_physdesc, "physfacet")
+        sorted_metadatum_physfacet.text = sorted_metadatum["physfacet"]
+        sorted_metadatum_dao = etree.SubElement(sorted_metadatum_did, "dao")
+        sorted_metadatum_dao.attrib["show"] = "new"
+        sorted_metadatum_dao.attrib["actuate"] = "onrequest"
+        sorted_metadatum_dao.attrib["href"] = sorted_metadatum["dao"]
+        sorted_metadatum_daodesc = etree.SubElement(sorted_metadatum_dao, "daodesc")
+        sorted_metadatum_daodesc_p = etree.SubElement(sorted_metadatum_daodesc, "p")
+        sorted_metadatum_daodesc_p.text = "[view item]"
+        if "accessrestrict" in sorted_metadatum:
+            sorted_metadatum_accessrestrict = etree.SubElement(sorted_metadatum_c03, "accessrestrict")
+            sorted_metadatum_accessrestrict_p = etree.SubElement(sorted_metadatum_accessrestrict, "p")
+            sorted_metadatum_accessrestrict_p.text = sorted_metadatum["accessrestrict"]
 
 # build out 1989-1990 speeches subseries
 speeches_89_90_c04 = etree.SubElement(speeches_c03, "c04")
@@ -124,6 +218,37 @@ speeches_89_90_extent.attrib["altrender"] = "materialtype spaceoccupied"
 speeches_89_90_extent.text = "132 digital files" # <-- will need to be updated
 
 # populate 1989-1990 speeches subseries
+for sorted_metadatum in sorted_metadata:
+
+    if sorted_metadatum["unittitle"].startswith("Digital Documents" + " - " + "University of Michigan Presidency, 1986-1997" + " - " + "Speeches" + " - " + "1989-1990 Speeches"):
+        
+        print "Creating XML for " + sorted_metadatum["unittitle"] + "..."
+        
+        sorted_metadatum_c05 = etree.SubElement(speeches_89_90_c04, "c05")
+        sorted_metadatum_c05.attrib["level"] = "file"
+        sorted_metadatum_did = etree.SubElement(sorted_metadatum_c03, "did")
+        sorted_metadatum_physloc = etree.SubElement(sorted_metadatum_did, "physloc")
+        sorted_metadatum_physloc.text = "Online"
+        sorted_metadatum_unittitle = etree.SubElement(sorted_metadatum_did, "unittitle")
+        sorted_metadatum_unittitle.text = sorted_metadatum["unittitle"].decode("utf-8") + ", "
+        sorted_metadatum_unitdate = etree.SubElement(sorted_metadatum_unittitle, "unitdate")
+        sorted_metadatum_unitdate.text = sorted_metadatum["unitdate"]
+        sorted_metadatum_unitdate.attrib["type"] = "inclusive"
+        sorted_metadatum_unitdate.attrib["normal"] = sorted_metadatum["unitdate"]   
+        sorted_metadatum_physdesc = etree.SubElement(sorted_metadatum_did, "physdesc")
+        sorted_metadatum_physfacet = etree.SubElement(sorted_metadatum_physdesc, "physfacet")
+        sorted_metadatum_physfacet.text = sorted_metadatum["physfacet"]
+        sorted_metadatum_dao = etree.SubElement(sorted_metadatum_did, "dao")
+        sorted_metadatum_dao.attrib["show"] = "new"
+        sorted_metadatum_dao.attrib["actuate"] = "onrequest"
+        sorted_metadatum_dao.attrib["href"] = sorted_metadatum["dao"]
+        sorted_metadatum_daodesc = etree.SubElement(sorted_metadatum_dao, "daodesc")
+        sorted_metadatum_daodesc_p = etree.SubElement(sorted_metadatum_daodesc, "p")
+        sorted_metadatum_daodesc_p.text = "[view item]"
+        if "accessrestrict" in sorted_metadatum:
+            sorted_metadatum_accessrestrict = etree.SubElement(sorted_metadatum_c03, "accessrestrict")
+            sorted_metadatum_accessrestrict_p = etree.SubElement(sorted_metadatum_accessrestrict, "p")
+            sorted_metadatum_accessrestrict_p.text = sorted_metadatum["accessrestrict"]
 
 # build out 1990-1991 speeches subseries
 speeches_90_91_c04 = etree.SubElement(speeches_c03, "c04")
@@ -140,6 +265,37 @@ speeches_90_91_extent.attrib["altrender"] = "materialtype spaceoccupied"
 speeches_90_91_extent.text = "214 digital files" # <-- will need to be updated
 
 # populate 1990-1991 speeches subseries
+for sorted_metadatum in sorted_metadata:
+
+    if sorted_metadatum["unittitle"].startswith("Digital Documents" + " - " + "University of Michigan Presidency, 1986-1997" + " - " + "Speeches" + " - " + "1990-1991 Speeches"):
+        
+        print "Creating XML for " + sorted_metadatum["unittitle"] + "..."
+        
+        sorted_metadatum_c05 = etree.SubElement(speeches_90_91_c04, "c05")
+        sorted_metadatum_c05.attrib["level"] = "file"
+        sorted_metadatum_did = etree.SubElement(sorted_metadatum_c03, "did")
+        sorted_metadatum_physloc = etree.SubElement(sorted_metadatum_did, "physloc")
+        sorted_metadatum_physloc.text = "Online"
+        sorted_metadatum_unittitle = etree.SubElement(sorted_metadatum_did, "unittitle")
+        sorted_metadatum_unittitle.text = sorted_metadatum["unittitle"].decode("utf-8") + ", "
+        sorted_metadatum_unitdate = etree.SubElement(sorted_metadatum_unittitle, "unitdate")
+        sorted_metadatum_unitdate.text = sorted_metadatum["unitdate"]
+        sorted_metadatum_unitdate.attrib["type"] = "inclusive"
+        sorted_metadatum_unitdate.attrib["normal"] = sorted_metadatum["unitdate"]   
+        sorted_metadatum_physdesc = etree.SubElement(sorted_metadatum_did, "physdesc")
+        sorted_metadatum_physfacet = etree.SubElement(sorted_metadatum_physdesc, "physfacet")
+        sorted_metadatum_physfacet.text = sorted_metadatum["physfacet"]
+        sorted_metadatum_dao = etree.SubElement(sorted_metadatum_did, "dao")
+        sorted_metadatum_dao.attrib["show"] = "new"
+        sorted_metadatum_dao.attrib["actuate"] = "onrequest"
+        sorted_metadatum_dao.attrib["href"] = sorted_metadatum["dao"]
+        sorted_metadatum_daodesc = etree.SubElement(sorted_metadatum_dao, "daodesc")
+        sorted_metadatum_daodesc_p = etree.SubElement(sorted_metadatum_daodesc, "p")
+        sorted_metadatum_daodesc_p.text = "[view item]"
+        if "accessrestrict" in sorted_metadatum:
+            sorted_metadatum_accessrestrict = etree.SubElement(sorted_metadatum_c03, "accessrestrict")
+            sorted_metadatum_accessrestrict_p = etree.SubElement(sorted_metadatum_accessrestrict, "p")
+            sorted_metadatum_accessrestrict_p.text = sorted_metadatum["accessrestrict"]
 
 # build out 1991-1992 speeches subseries
 speeches_91_92_c04 = etree.SubElement(speeches_c03, "c04")
@@ -156,6 +312,37 @@ speeches_91_92_extent.attrib["altrender"] = "materialtype spaceoccupied"
 speeches_91_92_extent.text = "52 digital files" # <-- will need to be updated
 
 # populate 1991-1992 speeches subseries
+for sorted_metadatum in sorted_metadata:
+
+    if sorted_metadatum["unittitle"].startswith("Digital Documents" + " - " + "University of Michigan Presidency, 1986-1997" + " - " + "Speeches" + " - " + "1991-1992 Speeches"):
+        
+        print "Creating XML for " + sorted_metadatum["unittitle"] + "..."
+        
+        sorted_metadatum_c05 = etree.SubElement(speeches_91_92_c04, "c05")
+        sorted_metadatum_c05.attrib["level"] = "file"
+        sorted_metadatum_did = etree.SubElement(sorted_metadatum_c03, "did")
+        sorted_metadatum_physloc = etree.SubElement(sorted_metadatum_did, "physloc")
+        sorted_metadatum_physloc.text = "Online"
+        sorted_metadatum_unittitle = etree.SubElement(sorted_metadatum_did, "unittitle")
+        sorted_metadatum_unittitle.text = sorted_metadatum["unittitle"].decode("utf-8") + ", "
+        sorted_metadatum_unitdate = etree.SubElement(sorted_metadatum_unittitle, "unitdate")
+        sorted_metadatum_unitdate.text = sorted_metadatum["unitdate"]
+        sorted_metadatum_unitdate.attrib["type"] = "inclusive"
+        sorted_metadatum_unitdate.attrib["normal"] = sorted_metadatum["unitdate"]   
+        sorted_metadatum_physdesc = etree.SubElement(sorted_metadatum_did, "physdesc")
+        sorted_metadatum_physfacet = etree.SubElement(sorted_metadatum_physdesc, "physfacet")
+        sorted_metadatum_physfacet.text = sorted_metadatum["physfacet"]
+        sorted_metadatum_dao = etree.SubElement(sorted_metadatum_did, "dao")
+        sorted_metadatum_dao.attrib["show"] = "new"
+        sorted_metadatum_dao.attrib["actuate"] = "onrequest"
+        sorted_metadatum_dao.attrib["href"] = sorted_metadatum["dao"]
+        sorted_metadatum_daodesc = etree.SubElement(sorted_metadatum_dao, "daodesc")
+        sorted_metadatum_daodesc_p = etree.SubElement(sorted_metadatum_daodesc, "p")
+        sorted_metadatum_daodesc_p.text = "[view item]"
+        if "accessrestrict" in sorted_metadatum:
+            sorted_metadatum_accessrestrict = etree.SubElement(sorted_metadatum_c03, "accessrestrict")
+            sorted_metadatum_accessrestrict_p = etree.SubElement(sorted_metadatum_accessrestrict, "p")
+            sorted_metadatum_accessrestrict_p.text = sorted_metadatum["accessrestrict"]
 
 # build out 1992-1993 speeches subseries
 speeches_92_93_c04 = etree.SubElement(speeches_c03, "c04")
@@ -172,6 +359,37 @@ speeches_92_93_extent.attrib["altrender"] = "materialtype spaceoccupied"
 speeches_92_93_extent.text = "36 digital files" # <-- will need to be updated
 
 # populate 1992-1993 speeches subseries
+for sorted_metadatum in sorted_metadata:
+
+    if sorted_metadatum["unittitle"].startswith("Digital Documents" + " - " + "University of Michigan Presidency, 1986-1997" + " - " + "Speeches" + " - " + "1992-1993 Speeches"):
+        
+        print "Creating XML for " + sorted_metadatum["unittitle"] + "..."
+        
+        sorted_metadatum_c05 = etree.SubElement(speeches_92_93_c04, "c05")
+        sorted_metadatum_c05.attrib["level"] = "file"
+        sorted_metadatum_did = etree.SubElement(sorted_metadatum_c03, "did")
+        sorted_metadatum_physloc = etree.SubElement(sorted_metadatum_did, "physloc")
+        sorted_metadatum_physloc.text = "Online"
+        sorted_metadatum_unittitle = etree.SubElement(sorted_metadatum_did, "unittitle")
+        sorted_metadatum_unittitle.text = sorted_metadatum["unittitle"].decode("utf-8") + ", "
+        sorted_metadatum_unitdate = etree.SubElement(sorted_metadatum_unittitle, "unitdate")
+        sorted_metadatum_unitdate.text = sorted_metadatum["unitdate"]
+        sorted_metadatum_unitdate.attrib["type"] = "inclusive"
+        sorted_metadatum_unitdate.attrib["normal"] = sorted_metadatum["unitdate"]   
+        sorted_metadatum_physdesc = etree.SubElement(sorted_metadatum_did, "physdesc")
+        sorted_metadatum_physfacet = etree.SubElement(sorted_metadatum_physdesc, "physfacet")
+        sorted_metadatum_physfacet.text = sorted_metadatum["physfacet"]
+        sorted_metadatum_dao = etree.SubElement(sorted_metadatum_did, "dao")
+        sorted_metadatum_dao.attrib["show"] = "new"
+        sorted_metadatum_dao.attrib["actuate"] = "onrequest"
+        sorted_metadatum_dao.attrib["href"] = sorted_metadatum["dao"]
+        sorted_metadatum_daodesc = etree.SubElement(sorted_metadatum_dao, "daodesc")
+        sorted_metadatum_daodesc_p = etree.SubElement(sorted_metadatum_daodesc, "p")
+        sorted_metadatum_daodesc_p.text = "[view item]"
+        if "accessrestrict" in sorted_metadatum:
+            sorted_metadatum_accessrestrict = etree.SubElement(sorted_metadatum_c03, "accessrestrict")
+            sorted_metadatum_accessrestrict_p = etree.SubElement(sorted_metadatum_accessrestrict, "p")
+            sorted_metadatum_accessrestrict_p.text = sorted_metadatum["accessrestrict"]
 
 # build out 1994-1995 speeches subseries
 speeches_94_95_c04 = etree.SubElement(speeches_c03, "c04")
@@ -188,6 +406,37 @@ speeches_94_95_extent.attrib["altrender"] = "materialtype spaceoccupied"
 speeches_94_95_extent.text = "27 digital files" # <-- will need to be updated
 
 # populate 1994-1995 speeches subseries
+for sorted_metadatum in sorted_metadata:
+
+    if sorted_metadatum["unittitle"].startswith("Digital Documents" + " - " + "University of Michigan Presidency, 1986-1997" + " - " + "Speeches" + " - " + "1994-1995 Speeches"):
+        
+        print "Creating XML for " + sorted_metadatum["unittitle"] + "..."
+        
+        sorted_metadatum_c05 = etree.SubElement(speeches_94_95_c04, "c05")
+        sorted_metadatum_c05.attrib["level"] = "file"
+        sorted_metadatum_did = etree.SubElement(sorted_metadatum_c03, "did")
+        sorted_metadatum_physloc = etree.SubElement(sorted_metadatum_did, "physloc")
+        sorted_metadatum_physloc.text = "Online"
+        sorted_metadatum_unittitle = etree.SubElement(sorted_metadatum_did, "unittitle")
+        sorted_metadatum_unittitle.text = sorted_metadatum["unittitle"].decode("utf-8") + ", "
+        sorted_metadatum_unitdate = etree.SubElement(sorted_metadatum_unittitle, "unitdate")
+        sorted_metadatum_unitdate.text = sorted_metadatum["unitdate"]
+        sorted_metadatum_unitdate.attrib["type"] = "inclusive"
+        sorted_metadatum_unitdate.attrib["normal"] = sorted_metadatum["unitdate"]   
+        sorted_metadatum_physdesc = etree.SubElement(sorted_metadatum_did, "physdesc")
+        sorted_metadatum_physfacet = etree.SubElement(sorted_metadatum_physdesc, "physfacet")
+        sorted_metadatum_physfacet.text = sorted_metadatum["physfacet"]
+        sorted_metadatum_dao = etree.SubElement(sorted_metadatum_did, "dao")
+        sorted_metadatum_dao.attrib["show"] = "new"
+        sorted_metadatum_dao.attrib["actuate"] = "onrequest"
+        sorted_metadatum_dao.attrib["href"] = sorted_metadatum["dao"]
+        sorted_metadatum_daodesc = etree.SubElement(sorted_metadatum_dao, "daodesc")
+        sorted_metadatum_daodesc_p = etree.SubElement(sorted_metadatum_daodesc, "p")
+        sorted_metadatum_daodesc_p.text = "[view item]"
+        if "accessrestrict" in sorted_metadatum:
+            sorted_metadatum_accessrestrict = etree.SubElement(sorted_metadatum_c03, "accessrestrict")
+            sorted_metadatum_accessrestrict_p = etree.SubElement(sorted_metadatum_accessrestrict, "p")
+            sorted_metadatum_accessrestrict_p.text = sorted_metadatum["accessrestrict"]
 
 # build out 1995-1996 speeches subseries
 speeches_95_96_c04 = etree.SubElement(speeches_c03, "c04")
@@ -204,6 +453,37 @@ speeches_95_96_extent.attrib["altrender"] = "materialtype spaceoccupied"
 speeches_95_96_extent.text = "135 digital files" # <-- will need to be updated
 
 # populate 1995-1996 speeches subseries
+for sorted_metadatum in sorted_metadata:
+
+    if sorted_metadatum["unittitle"].startswith("Digital Documents" + " - " + "University of Michigan Presidency, 1986-1997" + " - " + "Speeches" + " - " + "1995-1996 Speeches"):
+        
+        print "Creating XML for " + sorted_metadatum["unittitle"] + "..."
+        
+        sorted_metadatum_c05 = etree.SubElement(speeches_95_96_c04, "c05")
+        sorted_metadatum_c05.attrib["level"] = "file"
+        sorted_metadatum_did = etree.SubElement(sorted_metadatum_c03, "did")
+        sorted_metadatum_physloc = etree.SubElement(sorted_metadatum_did, "physloc")
+        sorted_metadatum_physloc.text = "Online"
+        sorted_metadatum_unittitle = etree.SubElement(sorted_metadatum_did, "unittitle")
+        sorted_metadatum_unittitle.text = sorted_metadatum["unittitle"].decode("utf-8") + ", "
+        sorted_metadatum_unitdate = etree.SubElement(sorted_metadatum_unittitle, "unitdate")
+        sorted_metadatum_unitdate.text = sorted_metadatum["unitdate"]
+        sorted_metadatum_unitdate.attrib["type"] = "inclusive"
+        sorted_metadatum_unitdate.attrib["normal"] = sorted_metadatum["unitdate"]   
+        sorted_metadatum_physdesc = etree.SubElement(sorted_metadatum_did, "physdesc")
+        sorted_metadatum_physfacet = etree.SubElement(sorted_metadatum_physdesc, "physfacet")
+        sorted_metadatum_physfacet.text = sorted_metadatum["physfacet"]
+        sorted_metadatum_dao = etree.SubElement(sorted_metadatum_did, "dao")
+        sorted_metadatum_dao.attrib["show"] = "new"
+        sorted_metadatum_dao.attrib["actuate"] = "onrequest"
+        sorted_metadatum_dao.attrib["href"] = sorted_metadatum["dao"]
+        sorted_metadatum_daodesc = etree.SubElement(sorted_metadatum_dao, "daodesc")
+        sorted_metadatum_daodesc_p = etree.SubElement(sorted_metadatum_daodesc, "p")
+        sorted_metadatum_daodesc_p.text = "[view item]"
+        if "accessrestrict" in sorted_metadatum:
+            sorted_metadatum_accessrestrict = etree.SubElement(sorted_metadatum_c03, "accessrestrict")
+            sorted_metadatum_accessrestrict_p = etree.SubElement(sorted_metadatum_accessrestrict, "p")
+            sorted_metadatum_accessrestrict_p.text = sorted_metadatum["accessrestrict"]
 
 # build out athletic talks-speeches subseries
 athletic_talks_c04 = etree.SubElement(speeches_c03, "c04")
@@ -220,6 +500,37 @@ athletic_talks_extent.attrib["altrender"] = "materialtype spaceoccupied"
 athletic_talks_extent.text = "12 digital files" # <-- will need to be updated
 
 # populate athletic talks-speeches subseries
+for sorted_metadatum in sorted_metadata:
+
+    if sorted_metadatum["unittitle"].startswith("Digital Documents" + " - " + "University of Michigan Presidency, 1986-1997" + " - " + "Speeches" + " - " + "Athletic Talks-Speeches"):
+        
+        print "Creating XML for " + sorted_metadatum["unittitle"] + "..."
+        
+        sorted_metadatum_c05 = etree.SubElement(athletic_talks_c04, "c05")
+        sorted_metadatum_c05.attrib["level"] = "file"
+        sorted_metadatum_did = etree.SubElement(sorted_metadatum_c03, "did")
+        sorted_metadatum_physloc = etree.SubElement(sorted_metadatum_did, "physloc")
+        sorted_metadatum_physloc.text = "Online"
+        sorted_metadatum_unittitle = etree.SubElement(sorted_metadatum_did, "unittitle")
+        sorted_metadatum_unittitle.text = sorted_metadatum["unittitle"].decode("utf-8") + ", "
+        sorted_metadatum_unitdate = etree.SubElement(sorted_metadatum_unittitle, "unitdate")
+        sorted_metadatum_unitdate.text = sorted_metadatum["unitdate"]
+        sorted_metadatum_unitdate.attrib["type"] = "inclusive"
+        sorted_metadatum_unitdate.attrib["normal"] = sorted_metadatum["unitdate"]   
+        sorted_metadatum_physdesc = etree.SubElement(sorted_metadatum_did, "physdesc")
+        sorted_metadatum_physfacet = etree.SubElement(sorted_metadatum_physdesc, "physfacet")
+        sorted_metadatum_physfacet.text = sorted_metadatum["physfacet"]
+        sorted_metadatum_dao = etree.SubElement(sorted_metadatum_did, "dao")
+        sorted_metadatum_dao.attrib["show"] = "new"
+        sorted_metadatum_dao.attrib["actuate"] = "onrequest"
+        sorted_metadatum_dao.attrib["href"] = sorted_metadatum["dao"]
+        sorted_metadatum_daodesc = etree.SubElement(sorted_metadatum_dao, "daodesc")
+        sorted_metadatum_daodesc_p = etree.SubElement(sorted_metadatum_daodesc, "p")
+        sorted_metadatum_daodesc_p.text = "[view item]"
+        if "accessrestrict" in sorted_metadatum:
+            sorted_metadatum_accessrestrict = etree.SubElement(sorted_metadatum_c03, "accessrestrict")
+            sorted_metadatum_accessrestrict_p = etree.SubElement(sorted_metadatum_accessrestrict, "p")
+            sorted_metadatum_accessrestrict_p.text = sorted_metadatum["accessrestrict"]
 
 # build out idea files series
 idea_files_c03 = etree.SubElement(umich_presidency_c02, "c03")
@@ -262,6 +573,37 @@ ideas_86_87_date.attrib["normal"] = "2030-07-01"
 ideas_86_87_date.text = "July 1, 2030"
 
 # populate 1986-1987 ideas subseries
+for sorted_metadatum in sorted_metadata:
+
+    if sorted_metadatum["unittitle"].startswith("Digital Documents" + " - " + "University of Michigan Presidency, 1986-1997" + " - " + "Idea Files" + " - " + "1986-1987 Ideas"):
+        
+        print "Creating XML for " + sorted_metadatum["unittitle"] + "..."
+        
+        sorted_metadatum_c05 = etree.SubElement(ideas_86_87_c04, "c05")
+        sorted_metadatum_c05.attrib["level"] = "file"
+        sorted_metadatum_did = etree.SubElement(sorted_metadatum_c03, "did")
+        sorted_metadatum_physloc = etree.SubElement(sorted_metadatum_did, "physloc")
+        sorted_metadatum_physloc.text = "Online"
+        sorted_metadatum_unittitle = etree.SubElement(sorted_metadatum_did, "unittitle")
+        sorted_metadatum_unittitle.text = sorted_metadatum["unittitle"].decode("utf-8") + ", "
+        sorted_metadatum_unitdate = etree.SubElement(sorted_metadatum_unittitle, "unitdate")
+        sorted_metadatum_unitdate.text = sorted_metadatum["unitdate"]
+        sorted_metadatum_unitdate.attrib["type"] = "inclusive"
+        sorted_metadatum_unitdate.attrib["normal"] = sorted_metadatum["unitdate"]   
+        sorted_metadatum_physdesc = etree.SubElement(sorted_metadatum_did, "physdesc")
+        sorted_metadatum_physfacet = etree.SubElement(sorted_metadatum_physdesc, "physfacet")
+        sorted_metadatum_physfacet.text = sorted_metadatum["physfacet"]
+        sorted_metadatum_dao = etree.SubElement(sorted_metadatum_did, "dao")
+        sorted_metadatum_dao.attrib["show"] = "new"
+        sorted_metadatum_dao.attrib["actuate"] = "onrequest"
+        sorted_metadatum_dao.attrib["href"] = sorted_metadatum["dao"]
+        sorted_metadatum_daodesc = etree.SubElement(sorted_metadatum_dao, "daodesc")
+        sorted_metadatum_daodesc_p = etree.SubElement(sorted_metadatum_daodesc, "p")
+        sorted_metadatum_daodesc_p.text = "[view item]"
+        if "accessrestrict" in sorted_metadatum:
+            sorted_metadatum_accessrestrict = etree.SubElement(sorted_metadatum_c03, "accessrestrict")
+            sorted_metadatum_accessrestrict_p = etree.SubElement(sorted_metadatum_accessrestrict, "p")
+            sorted_metadatum_accessrestrict_p.text = sorted_metadatum["accessrestrict"]
 
 # build out 1987-1988 ideas subseries
 ideas_87_88_c04 = etree.SubElement(idea_files_c03, "c04")
@@ -285,6 +627,37 @@ ideas_87_88_date.attrib["normal"] = "2030-07-01"
 ideas_87_88_date.text = "July 1, 2030"
 
 # populate 1987-1988 ideas subseries
+for sorted_metadatum in sorted_metadata:
+
+    if sorted_metadatum["unittitle"].startswith("Digital Documents" + " - " + "University of Michigan Presidency, 1986-1997" + " - " + "Idea Files" + " - " + "1987-1988 Ideas"):
+        
+        print "Creating XML for " + sorted_metadatum["unittitle"] + "..."
+        
+        sorted_metadatum_c05 = etree.SubElement(ideas_87_88_c04, "c05")
+        sorted_metadatum_c05.attrib["level"] = "file"
+        sorted_metadatum_did = etree.SubElement(sorted_metadatum_c03, "did")
+        sorted_metadatum_physloc = etree.SubElement(sorted_metadatum_did, "physloc")
+        sorted_metadatum_physloc.text = "Online"
+        sorted_metadatum_unittitle = etree.SubElement(sorted_metadatum_did, "unittitle")
+        sorted_metadatum_unittitle.text = sorted_metadatum["unittitle"].decode("utf-8") + ", "
+        sorted_metadatum_unitdate = etree.SubElement(sorted_metadatum_unittitle, "unitdate")
+        sorted_metadatum_unitdate.text = sorted_metadatum["unitdate"]
+        sorted_metadatum_unitdate.attrib["type"] = "inclusive"
+        sorted_metadatum_unitdate.attrib["normal"] = sorted_metadatum["unitdate"]   
+        sorted_metadatum_physdesc = etree.SubElement(sorted_metadatum_did, "physdesc")
+        sorted_metadatum_physfacet = etree.SubElement(sorted_metadatum_physdesc, "physfacet")
+        sorted_metadatum_physfacet.text = sorted_metadatum["physfacet"]
+        sorted_metadatum_dao = etree.SubElement(sorted_metadatum_did, "dao")
+        sorted_metadatum_dao.attrib["show"] = "new"
+        sorted_metadatum_dao.attrib["actuate"] = "onrequest"
+        sorted_metadatum_dao.attrib["href"] = sorted_metadatum["dao"]
+        sorted_metadatum_daodesc = etree.SubElement(sorted_metadatum_dao, "daodesc")
+        sorted_metadatum_daodesc_p = etree.SubElement(sorted_metadatum_daodesc, "p")
+        sorted_metadatum_daodesc_p.text = "[view item]"
+        if "accessrestrict" in sorted_metadatum:
+            sorted_metadatum_accessrestrict = etree.SubElement(sorted_metadatum_c03, "accessrestrict")
+            sorted_metadatum_accessrestrict_p = etree.SubElement(sorted_metadatum_accessrestrict, "p")
+            sorted_metadatum_accessrestrict_p.text = sorted_metadatum["accessrestrict"]
 
 # build out 1988-1989 ideas subseries
 ideas_88_89_c04 = etree.SubElement(idea_files_c03, "c04")
@@ -308,6 +681,38 @@ ideas_88_89_date.attrib["normal"] = "2030-07-01"
 ideas_88_89_date.text = "July 1, 2030"
 
 # populate 1988-1989 ideas subseries
+for sorted_metadatum in sorted_metadata:
+
+    if sorted_metadatum["unittitle"].startswith("Digital Documents" + " - " + "University of Michigan Presidency, 1986-1997" + " - " + "Idea Files" + " - " + "1988-1989 Ideas"):
+        
+        print "Creating XML for " + sorted_metadatum["unittitle"] + "..."
+        
+        sorted_metadatum_c05 = etree.SubElement(ideas_88_89_c04, "c05")
+        sorted_metadatum_c05.attrib["level"] = "file"
+        sorted_metadatum_did = etree.SubElement(sorted_metadatum_c03, "did")
+        sorted_metadatum_physloc = etree.SubElement(sorted_metadatum_did, "physloc")
+        sorted_metadatum_physloc.text = "Online"
+        sorted_metadatum_unittitle = etree.SubElement(sorted_metadatum_did, "unittitle")
+        sorted_metadatum_unittitle.text = sorted_metadatum["unittitle"].decode("utf-8") + ", "
+        sorted_metadatum_unitdate = etree.SubElement(sorted_metadatum_unittitle, "unitdate")
+        sorted_metadatum_unitdate.text = sorted_metadatum["unitdate"]
+        sorted_metadatum_unitdate.attrib["type"] = "inclusive"
+        sorted_metadatum_unitdate.attrib["normal"] = sorted_metadatum["unitdate"]   
+        sorted_metadatum_physdesc = etree.SubElement(sorted_metadatum_did, "physdesc")
+        sorted_metadatum_physfacet = etree.SubElement(sorted_metadatum_physdesc, "physfacet")
+        sorted_metadatum_physfacet.text = sorted_metadatum["physfacet"]
+        sorted_metadatum_dao = etree.SubElement(sorted_metadatum_did, "dao")
+        sorted_metadatum_dao.attrib["show"] = "new"
+        sorted_metadatum_dao.attrib["actuate"] = "onrequest"
+        sorted_metadatum_dao.attrib["href"] = sorted_metadatum["dao"]
+        sorted_metadatum_daodesc = etree.SubElement(sorted_metadatum_dao, "daodesc")
+        sorted_metadatum_daodesc_p = etree.SubElement(sorted_metadatum_daodesc, "p")
+        sorted_metadatum_daodesc_p.text = "[view item]"
+        if "accessrestrict" in sorted_metadatum:
+            sorted_metadatum_accessrestrict = etree.SubElement(sorted_metadatum_c03, "accessrestrict")
+            sorted_metadatum_accessrestrict_p = etree.SubElement(sorted_metadatum_accessrestrict, "p")
+            sorted_metadatum_accessrestrict_p.text = sorted_metadatum["accessrestrict"]
+
 
 # build out 1989-1990 ideas subseries
 ideas_89_90_c04 = etree.SubElement(idea_files_c03, "c04")
@@ -331,6 +736,37 @@ ideas_89_90_date.attrib["normal"] = "2030-07-01"
 ideas_89_90_date.text = "July 1, 2030"
 
 # populate 1989-1990 ideas subseries
+for sorted_metadatum in sorted_metadata:
+
+    if sorted_metadatum["unittitle"].startswith("Digital Documents" + " - " + "University of Michigan Presidency, 1986-1997" + " - " + "Idea Files" + " - " + "1989-1990 Ideas"):
+        
+        print "Creating XML for " + sorted_metadatum["unittitle"] + "..."
+        
+        sorted_metadatum_c05 = etree.SubElement(ideas_89_90_c04, "c05")
+        sorted_metadatum_c05.attrib["level"] = "file"
+        sorted_metadatum_did = etree.SubElement(sorted_metadatum_c03, "did")
+        sorted_metadatum_physloc = etree.SubElement(sorted_metadatum_did, "physloc")
+        sorted_metadatum_physloc.text = "Online"
+        sorted_metadatum_unittitle = etree.SubElement(sorted_metadatum_did, "unittitle")
+        sorted_metadatum_unittitle.text = sorted_metadatum["unittitle"].decode("utf-8") + ", "
+        sorted_metadatum_unitdate = etree.SubElement(sorted_metadatum_unittitle, "unitdate")
+        sorted_metadatum_unitdate.text = sorted_metadatum["unitdate"]
+        sorted_metadatum_unitdate.attrib["type"] = "inclusive"
+        sorted_metadatum_unitdate.attrib["normal"] = sorted_metadatum["unitdate"]   
+        sorted_metadatum_physdesc = etree.SubElement(sorted_metadatum_did, "physdesc")
+        sorted_metadatum_physfacet = etree.SubElement(sorted_metadatum_physdesc, "physfacet")
+        sorted_metadatum_physfacet.text = sorted_metadatum["physfacet"]
+        sorted_metadatum_dao = etree.SubElement(sorted_metadatum_did, "dao")
+        sorted_metadatum_dao.attrib["show"] = "new"
+        sorted_metadatum_dao.attrib["actuate"] = "onrequest"
+        sorted_metadatum_dao.attrib["href"] = sorted_metadatum["dao"]
+        sorted_metadatum_daodesc = etree.SubElement(sorted_metadatum_dao, "daodesc")
+        sorted_metadatum_daodesc_p = etree.SubElement(sorted_metadatum_daodesc, "p")
+        sorted_metadatum_daodesc_p.text = "[view item]"
+        if "accessrestrict" in sorted_metadatum:
+            sorted_metadatum_accessrestrict = etree.SubElement(sorted_metadatum_c03, "accessrestrict")
+            sorted_metadatum_accessrestrict_p = etree.SubElement(sorted_metadatum_accessrestrict, "p")
+            sorted_metadatum_accessrestrict_p.text = sorted_metadatum["accessrestrict"]
 
 # build out 1990-1991 ideas subseries
 ideas_90_91_c04 = etree.SubElement(idea_files_c03, "c04")
@@ -354,6 +790,37 @@ ideas_90_91_date.attrib["normal"] = "2030-07-01"
 ideas_90_91_date.text = "July 1, 2030"
 
 # populate 1990-1991 ideas subseries
+for sorted_metadatum in sorted_metadata:
+
+    if sorted_metadatum["unittitle"].startswith("Digital Documents" + " - " + "University of Michigan Presidency, 1986-1997" + " - " + "Idea Files" + " - " + "1990-1991 Ideas"):
+        
+        print "Creating XML for " + sorted_metadatum["unittitle"] + "..."
+        
+        sorted_metadatum_c05 = etree.SubElement(ideas_90_91_c04, "c05")
+        sorted_metadatum_c05.attrib["level"] = "file"
+        sorted_metadatum_did = etree.SubElement(sorted_metadatum_c03, "did")
+        sorted_metadatum_physloc = etree.SubElement(sorted_metadatum_did, "physloc")
+        sorted_metadatum_physloc.text = "Online"
+        sorted_metadatum_unittitle = etree.SubElement(sorted_metadatum_did, "unittitle")
+        sorted_metadatum_unittitle.text = sorted_metadatum["unittitle"].decode("utf-8") + ", "
+        sorted_metadatum_unitdate = etree.SubElement(sorted_metadatum_unittitle, "unitdate")
+        sorted_metadatum_unitdate.text = sorted_metadatum["unitdate"]
+        sorted_metadatum_unitdate.attrib["type"] = "inclusive"
+        sorted_metadatum_unitdate.attrib["normal"] = sorted_metadatum["unitdate"]   
+        sorted_metadatum_physdesc = etree.SubElement(sorted_metadatum_did, "physdesc")
+        sorted_metadatum_physfacet = etree.SubElement(sorted_metadatum_physdesc, "physfacet")
+        sorted_metadatum_physfacet.text = sorted_metadatum["physfacet"]
+        sorted_metadatum_dao = etree.SubElement(sorted_metadatum_did, "dao")
+        sorted_metadatum_dao.attrib["show"] = "new"
+        sorted_metadatum_dao.attrib["actuate"] = "onrequest"
+        sorted_metadatum_dao.attrib["href"] = sorted_metadatum["dao"]
+        sorted_metadatum_daodesc = etree.SubElement(sorted_metadatum_dao, "daodesc")
+        sorted_metadatum_daodesc_p = etree.SubElement(sorted_metadatum_daodesc, "p")
+        sorted_metadatum_daodesc_p.text = "[view item]"
+        if "accessrestrict" in sorted_metadatum:
+            sorted_metadatum_accessrestrict = etree.SubElement(sorted_metadatum_c03, "accessrestrict")
+            sorted_metadatum_accessrestrict_p = etree.SubElement(sorted_metadatum_accessrestrict, "p")
+            sorted_metadatum_accessrestrict_p.text = sorted_metadatum["accessrestrict"]
 
 # build out 1991-1992 ideas subseries
 ideas_91_92_c04 = etree.SubElement(idea_files_c03, "c04")
@@ -377,6 +844,37 @@ ideas_91_92_date.attrib["normal"] = "2030-07-01"
 ideas_91_92_date.text = "July 1, 2030"
 
 # populate 1991-1992 ideas subseries
+for sorted_metadatum in sorted_metadata:
+
+    if sorted_metadatum["unittitle"].startswith("Digital Documents" + " - " + "University of Michigan Presidency, 1986-1997" + " - " + "Idea Files" + " - " + "1991-1992 Ideas"):
+        
+        print "Creating XML for " + sorted_metadatum["unittitle"] + "..."
+        
+        sorted_metadatum_c05 = etree.SubElement(ideas_91_92_c04, "c05")
+        sorted_metadatum_c05.attrib["level"] = "file"
+        sorted_metadatum_did = etree.SubElement(sorted_metadatum_c03, "did")
+        sorted_metadatum_physloc = etree.SubElement(sorted_metadatum_did, "physloc")
+        sorted_metadatum_physloc.text = "Online"
+        sorted_metadatum_unittitle = etree.SubElement(sorted_metadatum_did, "unittitle")
+        sorted_metadatum_unittitle.text = sorted_metadatum["unittitle"].decode("utf-8") + ", "
+        sorted_metadatum_unitdate = etree.SubElement(sorted_metadatum_unittitle, "unitdate")
+        sorted_metadatum_unitdate.text = sorted_metadatum["unitdate"]
+        sorted_metadatum_unitdate.attrib["type"] = "inclusive"
+        sorted_metadatum_unitdate.attrib["normal"] = sorted_metadatum["unitdate"]   
+        sorted_metadatum_physdesc = etree.SubElement(sorted_metadatum_did, "physdesc")
+        sorted_metadatum_physfacet = etree.SubElement(sorted_metadatum_physdesc, "physfacet")
+        sorted_metadatum_physfacet.text = sorted_metadatum["physfacet"]
+        sorted_metadatum_dao = etree.SubElement(sorted_metadatum_did, "dao")
+        sorted_metadatum_dao.attrib["show"] = "new"
+        sorted_metadatum_dao.attrib["actuate"] = "onrequest"
+        sorted_metadatum_dao.attrib["href"] = sorted_metadatum["dao"]
+        sorted_metadatum_daodesc = etree.SubElement(sorted_metadatum_dao, "daodesc")
+        sorted_metadatum_daodesc_p = etree.SubElement(sorted_metadatum_daodesc, "p")
+        sorted_metadatum_daodesc_p.text = "[view item]"
+        if "accessrestrict" in sorted_metadatum:
+            sorted_metadatum_accessrestrict = etree.SubElement(sorted_metadatum_c03, "accessrestrict")
+            sorted_metadatum_accessrestrict_p = etree.SubElement(sorted_metadatum_accessrestrict, "p")
+            sorted_metadatum_accessrestrict_p.text = sorted_metadatum["accessrestrict"]
 
 # build out 1992-1993 ideas subseries
 ideas_92_93_c04 = etree.SubElement(idea_files_c03, "c04")
@@ -400,6 +898,37 @@ ideas_92_93_date.attrib["normal"] = "2030-07-01"
 ideas_92_93_date.text = "July 1, 2030"
 
 # populate 1992-1993 ideas subseries
+for sorted_metadatum in sorted_metadata:
+
+    if sorted_metadatum["unittitle"].startswith("Digital Documents" + " - " + "University of Michigan Presidency, 1986-1997" + " - " + "Idea Files" + " - " + "1992-1993 Ideas"):
+        
+        print "Creating XML for " + sorted_metadatum["unittitle"] + "..."
+        
+        sorted_metadatum_c05 = etree.SubElement(ideas_92_93_c04, "c05")
+        sorted_metadatum_c05.attrib["level"] = "file"
+        sorted_metadatum_did = etree.SubElement(sorted_metadatum_c03, "did")
+        sorted_metadatum_physloc = etree.SubElement(sorted_metadatum_did, "physloc")
+        sorted_metadatum_physloc.text = "Online"
+        sorted_metadatum_unittitle = etree.SubElement(sorted_metadatum_did, "unittitle")
+        sorted_metadatum_unittitle.text = sorted_metadatum["unittitle"].decode("utf-8") + ", "
+        sorted_metadatum_unitdate = etree.SubElement(sorted_metadatum_unittitle, "unitdate")
+        sorted_metadatum_unitdate.text = sorted_metadatum["unitdate"]
+        sorted_metadatum_unitdate.attrib["type"] = "inclusive"
+        sorted_metadatum_unitdate.attrib["normal"] = sorted_metadatum["unitdate"]   
+        sorted_metadatum_physdesc = etree.SubElement(sorted_metadatum_did, "physdesc")
+        sorted_metadatum_physfacet = etree.SubElement(sorted_metadatum_physdesc, "physfacet")
+        sorted_metadatum_physfacet.text = sorted_metadatum["physfacet"]
+        sorted_metadatum_dao = etree.SubElement(sorted_metadatum_did, "dao")
+        sorted_metadatum_dao.attrib["show"] = "new"
+        sorted_metadatum_dao.attrib["actuate"] = "onrequest"
+        sorted_metadatum_dao.attrib["href"] = sorted_metadatum["dao"]
+        sorted_metadatum_daodesc = etree.SubElement(sorted_metadatum_dao, "daodesc")
+        sorted_metadatum_daodesc_p = etree.SubElement(sorted_metadatum_daodesc, "p")
+        sorted_metadatum_daodesc_p.text = "[view item]"
+        if "accessrestrict" in sorted_metadatum:
+            sorted_metadatum_accessrestrict = etree.SubElement(sorted_metadatum_c03, "accessrestrict")
+            sorted_metadatum_accessrestrict_p = etree.SubElement(sorted_metadatum_accessrestrict, "p")
+            sorted_metadatum_accessrestrict_p.text = sorted_metadatum["accessrestrict"]
 
 # build out 1993-1994 ideas subseries
 ideas_93_94_c04 = etree.SubElement(idea_files_c03, "c04")
@@ -423,6 +952,37 @@ ideas_93_94_date.attrib["normal"] = "2030-07-01"
 ideas_93_94_date.text = "July 1, 2030"
 
 # populate 1993-1994 ideassubseries
+for sorted_metadatum in sorted_metadata:
+
+    if sorted_metadatum["unittitle"].startswith("Digital Documents" + " - " + "University of Michigan Presidency, 1986-1997" + " - " + "Idea Files" + " - " + "1993-1994 Ideas"):
+        
+        print "Creating XML for " + sorted_metadatum["unittitle"] + "..."
+        
+        sorted_metadatum_c05 = etree.SubElement(ideas_93_94_c04, "c05")
+        sorted_metadatum_c05.attrib["level"] = "file"
+        sorted_metadatum_did = etree.SubElement(sorted_metadatum_c03, "did")
+        sorted_metadatum_physloc = etree.SubElement(sorted_metadatum_did, "physloc")
+        sorted_metadatum_physloc.text = "Online"
+        sorted_metadatum_unittitle = etree.SubElement(sorted_metadatum_did, "unittitle")
+        sorted_metadatum_unittitle.text = sorted_metadatum["unittitle"].decode("utf-8") + ", "
+        sorted_metadatum_unitdate = etree.SubElement(sorted_metadatum_unittitle, "unitdate")
+        sorted_metadatum_unitdate.text = sorted_metadatum["unitdate"]
+        sorted_metadatum_unitdate.attrib["type"] = "inclusive"
+        sorted_metadatum_unitdate.attrib["normal"] = sorted_metadatum["unitdate"]   
+        sorted_metadatum_physdesc = etree.SubElement(sorted_metadatum_did, "physdesc")
+        sorted_metadatum_physfacet = etree.SubElement(sorted_metadatum_physdesc, "physfacet")
+        sorted_metadatum_physfacet.text = sorted_metadatum["physfacet"]
+        sorted_metadatum_dao = etree.SubElement(sorted_metadatum_did, "dao")
+        sorted_metadatum_dao.attrib["show"] = "new"
+        sorted_metadatum_dao.attrib["actuate"] = "onrequest"
+        sorted_metadatum_dao.attrib["href"] = sorted_metadatum["dao"]
+        sorted_metadatum_daodesc = etree.SubElement(sorted_metadatum_dao, "daodesc")
+        sorted_metadatum_daodesc_p = etree.SubElement(sorted_metadatum_daodesc, "p")
+        sorted_metadatum_daodesc_p.text = "[view item]"
+        if "accessrestrict" in sorted_metadatum:
+            sorted_metadatum_accessrestrict = etree.SubElement(sorted_metadatum_c03, "accessrestrict")
+            sorted_metadatum_accessrestrict_p = etree.SubElement(sorted_metadatum_accessrestrict, "p")
+            sorted_metadatum_accessrestrict_p.text = sorted_metadatum["accessrestrict"]
 
 # build out 1994-1995 ideas subseries
 ideas_94_95_c04 = etree.SubElement(idea_files_c03, "c04")
@@ -446,6 +1006,37 @@ ideas_94_95_date.attrib["normal"] = "2030-07-01"
 ideas_94_95_date.text = "July 1, 2030"
 
 # populate 1994-1995 ideas subseries
+for sorted_metadatum in sorted_metadata:
+
+    if sorted_metadatum["unittitle"].startswith("Digital Documents" + " - " + "University of Michigan Presidency, 1986-1997" + " - " + "Idea Files" + " - " + "1994-1995 Ideas"):
+        
+        print "Creating XML for " + sorted_metadatum["unittitle"] + "..."
+        
+        sorted_metadatum_c05 = etree.SubElement(ideas_94_95_c04, "c05")
+        sorted_metadatum_c05.attrib["level"] = "file"
+        sorted_metadatum_did = etree.SubElement(sorted_metadatum_c03, "did")
+        sorted_metadatum_physloc = etree.SubElement(sorted_metadatum_did, "physloc")
+        sorted_metadatum_physloc.text = "Online"
+        sorted_metadatum_unittitle = etree.SubElement(sorted_metadatum_did, "unittitle")
+        sorted_metadatum_unittitle.text = sorted_metadatum["unittitle"].decode("utf-8") + ", "
+        sorted_metadatum_unitdate = etree.SubElement(sorted_metadatum_unittitle, "unitdate")
+        sorted_metadatum_unitdate.text = sorted_metadatum["unitdate"]
+        sorted_metadatum_unitdate.attrib["type"] = "inclusive"
+        sorted_metadatum_unitdate.attrib["normal"] = sorted_metadatum["unitdate"]   
+        sorted_metadatum_physdesc = etree.SubElement(sorted_metadatum_did, "physdesc")
+        sorted_metadatum_physfacet = etree.SubElement(sorted_metadatum_physdesc, "physfacet")
+        sorted_metadatum_physfacet.text = sorted_metadatum["physfacet"]
+        sorted_metadatum_dao = etree.SubElement(sorted_metadatum_did, "dao")
+        sorted_metadatum_dao.attrib["show"] = "new"
+        sorted_metadatum_dao.attrib["actuate"] = "onrequest"
+        sorted_metadatum_dao.attrib["href"] = sorted_metadatum["dao"]
+        sorted_metadatum_daodesc = etree.SubElement(sorted_metadatum_dao, "daodesc")
+        sorted_metadatum_daodesc_p = etree.SubElement(sorted_metadatum_daodesc, "p")
+        sorted_metadatum_daodesc_p.text = "[view item]"
+        if "accessrestrict" in sorted_metadatum:
+            sorted_metadatum_accessrestrict = etree.SubElement(sorted_metadatum_c03, "accessrestrict")
+            sorted_metadatum_accessrestrict_p = etree.SubElement(sorted_metadatum_accessrestrict, "p")
+            sorted_metadatum_accessrestrict_p.text = sorted_metadatum["accessrestrict"]
 
 # build out strategy series
 strategy_c03 = etree.SubElement(umich_presidency_c02, "c03")
@@ -490,6 +1081,37 @@ strategy_86_97_date.attrib["normal"] = "2030-07-01"
 strategy_86_97_date.text = "July 1, 2030"
 
 # populate 1986-1997 subseries
+for sorted_metadatum in sorted_metadata:
+
+    if sorted_metadatum["unittitle"].startswith("Digital Documents" + " - " + "University of Michigan Presidency, 1986-1997" + " - " + "Strategy" + " - " + "1986-1997"):
+        
+        print "Creating XML for " + sorted_metadatum["unittitle"] + "..."
+        
+        sorted_metadatum_c05 = etree.SubElement(strategy_86_97_c04, "c05")
+        sorted_metadatum_c05.attrib["level"] = "file"
+        sorted_metadatum_did = etree.SubElement(sorted_metadatum_c03, "did")
+        sorted_metadatum_physloc = etree.SubElement(sorted_metadatum_did, "physloc")
+        sorted_metadatum_physloc.text = "Online"
+        sorted_metadatum_unittitle = etree.SubElement(sorted_metadatum_did, "unittitle")
+        sorted_metadatum_unittitle.text = sorted_metadatum["unittitle"].decode("utf-8") + ", "
+        sorted_metadatum_unitdate = etree.SubElement(sorted_metadatum_unittitle, "unitdate")
+        sorted_metadatum_unitdate.text = sorted_metadatum["unitdate"]
+        sorted_metadatum_unitdate.attrib["type"] = "inclusive"
+        sorted_metadatum_unitdate.attrib["normal"] = sorted_metadatum["unitdate"]   
+        sorted_metadatum_physdesc = etree.SubElement(sorted_metadatum_did, "physdesc")
+        sorted_metadatum_physfacet = etree.SubElement(sorted_metadatum_physdesc, "physfacet")
+        sorted_metadatum_physfacet.text = sorted_metadatum["physfacet"]
+        sorted_metadatum_dao = etree.SubElement(sorted_metadatum_did, "dao")
+        sorted_metadatum_dao.attrib["show"] = "new"
+        sorted_metadatum_dao.attrib["actuate"] = "onrequest"
+        sorted_metadatum_dao.attrib["href"] = sorted_metadatum["dao"]
+        sorted_metadatum_daodesc = etree.SubElement(sorted_metadatum_dao, "daodesc")
+        sorted_metadatum_daodesc_p = etree.SubElement(sorted_metadatum_daodesc, "p")
+        sorted_metadatum_daodesc_p.text = "[view item]"
+        if "accessrestrict" in sorted_metadatum:
+            sorted_metadatum_accessrestrict = etree.SubElement(sorted_metadatum_c03, "accessrestrict")
+            sorted_metadatum_accessrestrict_p = etree.SubElement(sorted_metadatum_accessrestrict, "p")
+            sorted_metadatum_accessrestrict_p.text = sorted_metadatum["accessrestrict"]
 
 # build out position papers series
 position_papers_c03 = etree.SubElement(umich_presidency_c02, "c03")
@@ -532,6 +1154,37 @@ position_papers_86_91_date.attrib["normal"] = "2030-07-01"
 position_papers_86_91_date.text = "July 1, 2030"
 
 # populate 1986-1991 position papers subseries
+for sorted_metadatum in sorted_metadata:
+
+    if sorted_metadatum["unittitle"].startswith("Digital Documents" + " - " + "University of Michigan Presidency, 1986-1997" + " - " + "Position Papers" + " - " + "1986-1991 Position Papers"):
+        
+        print "Creating XML for " + sorted_metadatum["unittitle"] + "..."
+        
+        sorted_metadatum_c05 = etree.SubElement(position_papers_86_91_c04, "c05")
+        sorted_metadatum_c05.attrib["level"] = "file"
+        sorted_metadatum_did = etree.SubElement(sorted_metadatum_c03, "did")
+        sorted_metadatum_physloc = etree.SubElement(sorted_metadatum_did, "physloc")
+        sorted_metadatum_physloc.text = "Online"
+        sorted_metadatum_unittitle = etree.SubElement(sorted_metadatum_did, "unittitle")
+        sorted_metadatum_unittitle.text = sorted_metadatum["unittitle"].decode("utf-8") + ", "
+        sorted_metadatum_unitdate = etree.SubElement(sorted_metadatum_unittitle, "unitdate")
+        sorted_metadatum_unitdate.text = sorted_metadatum["unitdate"]
+        sorted_metadatum_unitdate.attrib["type"] = "inclusive"
+        sorted_metadatum_unitdate.attrib["normal"] = sorted_metadatum["unitdate"]   
+        sorted_metadatum_physdesc = etree.SubElement(sorted_metadatum_did, "physdesc")
+        sorted_metadatum_physfacet = etree.SubElement(sorted_metadatum_physdesc, "physfacet")
+        sorted_metadatum_physfacet.text = sorted_metadatum["physfacet"]
+        sorted_metadatum_dao = etree.SubElement(sorted_metadatum_did, "dao")
+        sorted_metadatum_dao.attrib["show"] = "new"
+        sorted_metadatum_dao.attrib["actuate"] = "onrequest"
+        sorted_metadatum_dao.attrib["href"] = sorted_metadatum["dao"]
+        sorted_metadatum_daodesc = etree.SubElement(sorted_metadatum_dao, "daodesc")
+        sorted_metadatum_daodesc_p = etree.SubElement(sorted_metadatum_daodesc, "p")
+        sorted_metadatum_daodesc_p.text = "[view item]"
+        if "accessrestrict" in sorted_metadatum:
+            sorted_metadatum_accessrestrict = etree.SubElement(sorted_metadatum_c03, "accessrestrict")
+            sorted_metadatum_accessrestrict_p = etree.SubElement(sorted_metadatum_accessrestrict, "p")
+            sorted_metadatum_accessrestrict_p.text = sorted_metadatum["accessrestrict"]
 
 # build out 1991-1996 position papers subseries
 position_papers_91_96_c04 = etree.SubElement(position_papers_c03, "c04")
@@ -555,6 +1208,37 @@ position_papers_91_96_date.attrib["normal"] = "2030-07-01"
 position_papers_91_96_date.text = "July 1, 2030"
 
 # populate 1991-1996 position papers subseries
+for sorted_metadatum in sorted_metadata:
+
+    if sorted_metadatum["unittitle"].startswith("Digital Documents" + " - " + "University of Michigan Presidency, 1986-1997" + " - " + "Position Papers" + " - " + "1991-1996 Position Papers"):
+        
+        print "Creating XML for " + sorted_metadatum["unittitle"] + "..."
+        
+        sorted_metadatum_c05 = etree.SubElement(position_papers_91_96_c04, "c05")
+        sorted_metadatum_c05.attrib["level"] = "file"
+        sorted_metadatum_did = etree.SubElement(sorted_metadatum_c03, "did")
+        sorted_metadatum_physloc = etree.SubElement(sorted_metadatum_did, "physloc")
+        sorted_metadatum_physloc.text = "Online"
+        sorted_metadatum_unittitle = etree.SubElement(sorted_metadatum_did, "unittitle")
+        sorted_metadatum_unittitle.text = sorted_metadatum["unittitle"].decode("utf-8") + ", "
+        sorted_metadatum_unitdate = etree.SubElement(sorted_metadatum_unittitle, "unitdate")
+        sorted_metadatum_unitdate.text = sorted_metadatum["unitdate"]
+        sorted_metadatum_unitdate.attrib["type"] = "inclusive"
+        sorted_metadatum_unitdate.attrib["normal"] = sorted_metadatum["unitdate"]   
+        sorted_metadatum_physdesc = etree.SubElement(sorted_metadatum_did, "physdesc")
+        sorted_metadatum_physfacet = etree.SubElement(sorted_metadatum_physdesc, "physfacet")
+        sorted_metadatum_physfacet.text = sorted_metadatum["physfacet"]
+        sorted_metadatum_dao = etree.SubElement(sorted_metadatum_did, "dao")
+        sorted_metadatum_dao.attrib["show"] = "new"
+        sorted_metadatum_dao.attrib["actuate"] = "onrequest"
+        sorted_metadatum_dao.attrib["href"] = sorted_metadatum["dao"]
+        sorted_metadatum_daodesc = etree.SubElement(sorted_metadatum_dao, "daodesc")
+        sorted_metadatum_daodesc_p = etree.SubElement(sorted_metadatum_daodesc, "p")
+        sorted_metadatum_daodesc_p.text = "[view item]"
+        if "accessrestrict" in sorted_metadatum:
+            sorted_metadatum_accessrestrict = etree.SubElement(sorted_metadatum_c03, "accessrestrict")
+            sorted_metadatum_accessrestrict_p = etree.SubElement(sorted_metadatum_accessrestrict, "p")
+            sorted_metadatum_accessrestrict_p.text = sorted_metadatum["accessrestrict"]
 
 # build out 1996-1997 position papers subseries
 position_papers_96_97_c04 = etree.SubElement(position_papers_c03, "c04")
@@ -578,7 +1262,38 @@ position_papers_96_97_date.attrib["normal"] = "2030-07-01"
 position_papers_96_97_date.text = "July 1, 2030"
 
 # populate 1996-1997 position papers subseries
+for sorted_metadatum in sorted_metadata:
 
+    if sorted_metadatum["unittitle"].startswith("Digital Documents" + " - " + "University of Michigan Presidency, 1986-1997" + " - " + "Position Papers" + " - " + "1996-1997 Position Papers"):
+        
+        print "Creating XML for " + sorted_metadatum["unittitle"] + "..."
+        
+        sorted_metadatum_c05 = etree.SubElement(position_papers_96_97_c04, "c05")
+        sorted_metadatum_c05.attrib["level"] = "file"
+        sorted_metadatum_did = etree.SubElement(sorted_metadatum_c03, "did")
+        sorted_metadatum_physloc = etree.SubElement(sorted_metadatum_did, "physloc")
+        sorted_metadatum_physloc.text = "Online"
+        sorted_metadatum_unittitle = etree.SubElement(sorted_metadatum_did, "unittitle")
+        sorted_metadatum_unittitle.text = sorted_metadatum["unittitle"].decode("utf-8") + ", "
+        sorted_metadatum_unitdate = etree.SubElement(sorted_metadatum_unittitle, "unitdate")
+        sorted_metadatum_unitdate.text = sorted_metadatum["unitdate"]
+        sorted_metadatum_unitdate.attrib["type"] = "inclusive"
+        sorted_metadatum_unitdate.attrib["normal"] = sorted_metadatum["unitdate"]   
+        sorted_metadatum_physdesc = etree.SubElement(sorted_metadatum_did, "physdesc")
+        sorted_metadatum_physfacet = etree.SubElement(sorted_metadatum_physdesc, "physfacet")
+        sorted_metadatum_physfacet.text = sorted_metadatum["physfacet"]
+        sorted_metadatum_dao = etree.SubElement(sorted_metadatum_did, "dao")
+        sorted_metadatum_dao.attrib["show"] = "new"
+        sorted_metadatum_dao.attrib["actuate"] = "onrequest"
+        sorted_metadatum_dao.attrib["href"] = sorted_metadatum["dao"]
+        sorted_metadatum_daodesc = etree.SubElement(sorted_metadatum_dao, "daodesc")
+        sorted_metadatum_daodesc_p = etree.SubElement(sorted_metadatum_daodesc, "p")
+        sorted_metadatum_daodesc_p.text = "[view item]"
+        if "accessrestrict" in sorted_metadatum:
+            sorted_metadatum_accessrestrict = etree.SubElement(sorted_metadatum_c03, "accessrestrict")
+            sorted_metadatum_accessrestrict_p = etree.SubElement(sorted_metadatum_accessrestrict, "p")
+            sorted_metadatum_accessrestrict_p.text = sorted_metadatum["accessrestrict"]
+            
 # build out presentations series
 presentations_c03 = etree.SubElement(umich_presidency_c02, "c03")
 presentations_c03.attrib["level"] = "series"
@@ -615,6 +1330,37 @@ presentations_87_88_extent.attrib["altrender"] = "materialtype spaceoccupied"
 presentations_87_88_extent.text = "1 digital files" # <-- will need to be updated
 
 # populate 1987-1988 presentations subseries
+for sorted_metadatum in sorted_metadata:
+
+    if sorted_metadatum["unittitle"].startswith("Digital Documents" + " - " + "University of Michigan Presidency, 1986-1997" + " - " + "Presentations" + " - " + "1987-1988 Presentations"):
+        
+        print "Creating XML for " + sorted_metadatum["unittitle"] + "..."
+        
+        sorted_metadatum_c05 = etree.SubElement(presentations_87_88_c04, "c05")
+        sorted_metadatum_c05.attrib["level"] = "file"
+        sorted_metadatum_did = etree.SubElement(sorted_metadatum_c03, "did")
+        sorted_metadatum_physloc = etree.SubElement(sorted_metadatum_did, "physloc")
+        sorted_metadatum_physloc.text = "Online"
+        sorted_metadatum_unittitle = etree.SubElement(sorted_metadatum_did, "unittitle")
+        sorted_metadatum_unittitle.text = sorted_metadatum["unittitle"].decode("utf-8") + ", "
+        sorted_metadatum_unitdate = etree.SubElement(sorted_metadatum_unittitle, "unitdate")
+        sorted_metadatum_unitdate.text = sorted_metadatum["unitdate"]
+        sorted_metadatum_unitdate.attrib["type"] = "inclusive"
+        sorted_metadatum_unitdate.attrib["normal"] = sorted_metadatum["unitdate"]   
+        sorted_metadatum_physdesc = etree.SubElement(sorted_metadatum_did, "physdesc")
+        sorted_metadatum_physfacet = etree.SubElement(sorted_metadatum_physdesc, "physfacet")
+        sorted_metadatum_physfacet.text = sorted_metadatum["physfacet"]
+        sorted_metadatum_dao = etree.SubElement(sorted_metadatum_did, "dao")
+        sorted_metadatum_dao.attrib["show"] = "new"
+        sorted_metadatum_dao.attrib["actuate"] = "onrequest"
+        sorted_metadatum_dao.attrib["href"] = sorted_metadatum["dao"]
+        sorted_metadatum_daodesc = etree.SubElement(sorted_metadatum_dao, "daodesc")
+        sorted_metadatum_daodesc_p = etree.SubElement(sorted_metadatum_daodesc, "p")
+        sorted_metadatum_daodesc_p.text = "[view item]"
+        if "accessrestrict" in sorted_metadatum:
+            sorted_metadatum_accessrestrict = etree.SubElement(sorted_metadatum_c03, "accessrestrict")
+            sorted_metadatum_accessrestrict_p = etree.SubElement(sorted_metadatum_accessrestrict, "p")
+            sorted_metadatum_accessrestrict_p.text = sorted_metadatum["accessrestrict"]
 
 # build out 1988-1989 presentations subseries
 presentations_88_89_c04 = etree.SubElement(presentations_c03, "c04")
@@ -631,6 +1377,37 @@ presentations_88_89_extent.attrib["altrender"] = "materialtype spaceoccupied"
 presentations_88_89_extent.text = "5 digital files" # <-- will need to be updated
 
 # populate 1988-1989 presentations subseries
+for sorted_metadatum in sorted_metadata:
+
+    if sorted_metadatum["unittitle"].startswith("Digital Documents" + " - " + "University of Michigan Presidency, 1986-1997" + " - " + "Presentations" + " - " + "1988-1989 Presentations"):
+        
+        print "Creating XML for " + sorted_metadatum["unittitle"] + "..."
+        
+        sorted_metadatum_c05 = etree.SubElement(presentations_88_89_c04, "c05")
+        sorted_metadatum_c05.attrib["level"] = "file"
+        sorted_metadatum_did = etree.SubElement(sorted_metadatum_c03, "did")
+        sorted_metadatum_physloc = etree.SubElement(sorted_metadatum_did, "physloc")
+        sorted_metadatum_physloc.text = "Online"
+        sorted_metadatum_unittitle = etree.SubElement(sorted_metadatum_did, "unittitle")
+        sorted_metadatum_unittitle.text = sorted_metadatum["unittitle"].decode("utf-8") + ", "
+        sorted_metadatum_unitdate = etree.SubElement(sorted_metadatum_unittitle, "unitdate")
+        sorted_metadatum_unitdate.text = sorted_metadatum["unitdate"]
+        sorted_metadatum_unitdate.attrib["type"] = "inclusive"
+        sorted_metadatum_unitdate.attrib["normal"] = sorted_metadatum["unitdate"]   
+        sorted_metadatum_physdesc = etree.SubElement(sorted_metadatum_did, "physdesc")
+        sorted_metadatum_physfacet = etree.SubElement(sorted_metadatum_physdesc, "physfacet")
+        sorted_metadatum_physfacet.text = sorted_metadatum["physfacet"]
+        sorted_metadatum_dao = etree.SubElement(sorted_metadatum_did, "dao")
+        sorted_metadatum_dao.attrib["show"] = "new"
+        sorted_metadatum_dao.attrib["actuate"] = "onrequest"
+        sorted_metadatum_dao.attrib["href"] = sorted_metadatum["dao"]
+        sorted_metadatum_daodesc = etree.SubElement(sorted_metadatum_dao, "daodesc")
+        sorted_metadatum_daodesc_p = etree.SubElement(sorted_metadatum_daodesc, "p")
+        sorted_metadatum_daodesc_p.text = "[view item]"
+        if "accessrestrict" in sorted_metadatum:
+            sorted_metadatum_accessrestrict = etree.SubElement(sorted_metadatum_c03, "accessrestrict")
+            sorted_metadatum_accessrestrict_p = etree.SubElement(sorted_metadatum_accessrestrict, "p")
+            sorted_metadatum_accessrestrict_p.text = sorted_metadatum["accessrestrict"]
 
 # build out 1989-1990 presentations subseries
 presentations_98_90_c04 = etree.SubElement(presentations_c03, "c04")
@@ -647,7 +1424,38 @@ presentations_98_90_extent.attrib["altrender"] = "materialtype spaceoccupied"
 presentations_98_90_extent.text = "8 digital files" # <-- will need to be updated
 
 # populate 1989-1990 presentations subseries
+for sorted_metadatum in sorted_metadata:
 
+    if sorted_metadatum["unittitle"].startswith("Digital Documents" + " - " + "University of Michigan Presidency, 1986-1997" + " - " + "Presentations" + " - " + "1989-1990 Presentations"):
+        
+        print "Creating XML for " + sorted_metadatum["unittitle"] + "..."
+        
+        sorted_metadatum_c05 = etree.SubElement(presentations_89_90_c04, "c05")
+        sorted_metadatum_c05.attrib["level"] = "file"
+        sorted_metadatum_did = etree.SubElement(sorted_metadatum_c03, "did")
+        sorted_metadatum_physloc = etree.SubElement(sorted_metadatum_did, "physloc")
+        sorted_metadatum_physloc.text = "Online"
+        sorted_metadatum_unittitle = etree.SubElement(sorted_metadatum_did, "unittitle")
+        sorted_metadatum_unittitle.text = sorted_metadatum["unittitle"].decode("utf-8") + ", "
+        sorted_metadatum_unitdate = etree.SubElement(sorted_metadatum_unittitle, "unitdate")
+        sorted_metadatum_unitdate.text = sorted_metadatum["unitdate"]
+        sorted_metadatum_unitdate.attrib["type"] = "inclusive"
+        sorted_metadatum_unitdate.attrib["normal"] = sorted_metadatum["unitdate"]   
+        sorted_metadatum_physdesc = etree.SubElement(sorted_metadatum_did, "physdesc")
+        sorted_metadatum_physfacet = etree.SubElement(sorted_metadatum_physdesc, "physfacet")
+        sorted_metadatum_physfacet.text = sorted_metadatum["physfacet"]
+        sorted_metadatum_dao = etree.SubElement(sorted_metadatum_did, "dao")
+        sorted_metadatum_dao.attrib["show"] = "new"
+        sorted_metadatum_dao.attrib["actuate"] = "onrequest"
+        sorted_metadatum_dao.attrib["href"] = sorted_metadatum["dao"]
+        sorted_metadatum_daodesc = etree.SubElement(sorted_metadatum_dao, "daodesc")
+        sorted_metadatum_daodesc_p = etree.SubElement(sorted_metadatum_daodesc, "p")
+        sorted_metadatum_daodesc_p.text = "[view item]"
+        if "accessrestrict" in sorted_metadatum:
+            sorted_metadatum_accessrestrict = etree.SubElement(sorted_metadatum_c03, "accessrestrict")
+            sorted_metadatum_accessrestrict_p = etree.SubElement(sorted_metadatum_accessrestrict, "p")
+            sorted_metadatum_accessrestrict_p.text = sorted_metadatum["accessrestrict"]
+            
 # build out 1990-1991 presentations subseries
 presentations_90_91_c04 = etree.SubElement(presentations_c03, "c04")
 presentations_90_91_c04.attrib["level"] = "subseries"
@@ -663,6 +1471,37 @@ presentations_90_91_extent.attrib["altrender"] = "materialtype spaceoccupied"
 presentations_90_91_extent.text = "13 digital files" # <-- will need to be updated
 
 # populate 1990-1991 presentations subseries
+for sorted_metadatum in sorted_metadata:
+
+    if sorted_metadatum["unittitle"].startswith("Digital Documents" + " - " + "University of Michigan Presidency, 1986-1997" + " - " + "Presentations" + " - " + "1990-1991 Presentations"):
+        
+        print "Creating XML for " + sorted_metadatum["unittitle"] + "..."
+        
+        sorted_metadatum_c05 = etree.SubElement(presentations_90_91_c04, "c05")
+        sorted_metadatum_c05.attrib["level"] = "file"
+        sorted_metadatum_did = etree.SubElement(sorted_metadatum_c03, "did")
+        sorted_metadatum_physloc = etree.SubElement(sorted_metadatum_did, "physloc")
+        sorted_metadatum_physloc.text = "Online"
+        sorted_metadatum_unittitle = etree.SubElement(sorted_metadatum_did, "unittitle")
+        sorted_metadatum_unittitle.text = sorted_metadatum["unittitle"].decode("utf-8") + ", "
+        sorted_metadatum_unitdate = etree.SubElement(sorted_metadatum_unittitle, "unitdate")
+        sorted_metadatum_unitdate.text = sorted_metadatum["unitdate"]
+        sorted_metadatum_unitdate.attrib["type"] = "inclusive"
+        sorted_metadatum_unitdate.attrib["normal"] = sorted_metadatum["unitdate"]   
+        sorted_metadatum_physdesc = etree.SubElement(sorted_metadatum_did, "physdesc")
+        sorted_metadatum_physfacet = etree.SubElement(sorted_metadatum_physdesc, "physfacet")
+        sorted_metadatum_physfacet.text = sorted_metadatum["physfacet"]
+        sorted_metadatum_dao = etree.SubElement(sorted_metadatum_did, "dao")
+        sorted_metadatum_dao.attrib["show"] = "new"
+        sorted_metadatum_dao.attrib["actuate"] = "onrequest"
+        sorted_metadatum_dao.attrib["href"] = sorted_metadatum["dao"]
+        sorted_metadatum_daodesc = etree.SubElement(sorted_metadatum_dao, "daodesc")
+        sorted_metadatum_daodesc_p = etree.SubElement(sorted_metadatum_daodesc, "p")
+        sorted_metadatum_daodesc_p.text = "[view item]"
+        if "accessrestrict" in sorted_metadatum:
+            sorted_metadatum_accessrestrict = etree.SubElement(sorted_metadatum_c03, "accessrestrict")
+            sorted_metadatum_accessrestrict_p = etree.SubElement(sorted_metadatum_accessrestrict, "p")
+            sorted_metadatum_accessrestrict_p.text = sorted_metadatum["accessrestrict"]
 
 # build out 1991-1992 presentations subseries
 presentations_91_92_c04 = etree.SubElement(presentations_c03, "c04")
@@ -679,7 +1518,38 @@ presentations_91_92_extent.attrib["altrender"] = "materialtype spaceoccupied"
 presentations_91_92_extent.text = "17 digital files" # <-- will need to be updated
 
 # populate 1991-1992 presentations subseries
+for sorted_metadatum in sorted_metadata:
 
+    if sorted_metadatum["unittitle"].startswith("Digital Documents" + " - " + "University of Michigan Presidency, 1986-1997" + " - " + "Presentations" + " - " + "1991-1992 Presentations"):
+        
+        print "Creating XML for " + sorted_metadatum["unittitle"] + "..."
+        
+        sorted_metadatum_c05 = etree.SubElement(presentations_91_92_c04, "c05")
+        sorted_metadatum_c05.attrib["level"] = "file"
+        sorted_metadatum_did = etree.SubElement(sorted_metadatum_c03, "did")
+        sorted_metadatum_physloc = etree.SubElement(sorted_metadatum_did, "physloc")
+        sorted_metadatum_physloc.text = "Online"
+        sorted_metadatum_unittitle = etree.SubElement(sorted_metadatum_did, "unittitle")
+        sorted_metadatum_unittitle.text = sorted_metadatum["unittitle"].decode("utf-8") + ", "
+        sorted_metadatum_unitdate = etree.SubElement(sorted_metadatum_unittitle, "unitdate")
+        sorted_metadatum_unitdate.text = sorted_metadatum["unitdate"]
+        sorted_metadatum_unitdate.attrib["type"] = "inclusive"
+        sorted_metadatum_unitdate.attrib["normal"] = sorted_metadatum["unitdate"]   
+        sorted_metadatum_physdesc = etree.SubElement(sorted_metadatum_did, "physdesc")
+        sorted_metadatum_physfacet = etree.SubElement(sorted_metadatum_physdesc, "physfacet")
+        sorted_metadatum_physfacet.text = sorted_metadatum["physfacet"]
+        sorted_metadatum_dao = etree.SubElement(sorted_metadatum_did, "dao")
+        sorted_metadatum_dao.attrib["show"] = "new"
+        sorted_metadatum_dao.attrib["actuate"] = "onrequest"
+        sorted_metadatum_dao.attrib["href"] = sorted_metadatum["dao"]
+        sorted_metadatum_daodesc = etree.SubElement(sorted_metadatum_dao, "daodesc")
+        sorted_metadatum_daodesc_p = etree.SubElement(sorted_metadatum_daodesc, "p")
+        sorted_metadatum_daodesc_p.text = "[view item]"
+        if "accessrestrict" in sorted_metadatum:
+            sorted_metadatum_accessrestrict = etree.SubElement(sorted_metadatum_c03, "accessrestrict")
+            sorted_metadatum_accessrestrict_p = etree.SubElement(sorted_metadatum_accessrestrict, "p")
+            sorted_metadatum_accessrestrict_p.text = sorted_metadatum["accessrestrict"]
+            
 # build out 1992-1993 presentations subseries
 presentations_92_93_c04 = etree.SubElement(presentations_c03, "c04")
 presentations_92_93_c04.attrib["level"] = "subseries"
@@ -695,6 +1565,37 @@ presentations_92_93_extent.attrib["altrender"] = "materialtype spaceoccupied"
 presentations_92_93_extent.text = "3 digital files" # <-- will need to be updated
 
 # populate 1992-1993 presentations subseries
+for sorted_metadatum in sorted_metadata:
+
+    if sorted_metadatum["unittitle"].startswith("Digital Documents" + " - " + "University of Michigan Presidency, 1986-1997" + " - " + "Presentations" + " - " + "1992-1993 Presentations"):
+        
+        print "Creating XML for " + sorted_metadatum["unittitle"] + "..."
+        
+        sorted_metadatum_c05 = etree.SubElement(presentations_92_93_c04, "c05")
+        sorted_metadatum_c05.attrib["level"] = "file"
+        sorted_metadatum_did = etree.SubElement(sorted_metadatum_c03, "did")
+        sorted_metadatum_physloc = etree.SubElement(sorted_metadatum_did, "physloc")
+        sorted_metadatum_physloc.text = "Online"
+        sorted_metadatum_unittitle = etree.SubElement(sorted_metadatum_did, "unittitle")
+        sorted_metadatum_unittitle.text = sorted_metadatum["unittitle"].decode("utf-8") + ", "
+        sorted_metadatum_unitdate = etree.SubElement(sorted_metadatum_unittitle, "unitdate")
+        sorted_metadatum_unitdate.text = sorted_metadatum["unitdate"]
+        sorted_metadatum_unitdate.attrib["type"] = "inclusive"
+        sorted_metadatum_unitdate.attrib["normal"] = sorted_metadatum["unitdate"]   
+        sorted_metadatum_physdesc = etree.SubElement(sorted_metadatum_did, "physdesc")
+        sorted_metadatum_physfacet = etree.SubElement(sorted_metadatum_physdesc, "physfacet")
+        sorted_metadatum_physfacet.text = sorted_metadatum["physfacet"]
+        sorted_metadatum_dao = etree.SubElement(sorted_metadatum_did, "dao")
+        sorted_metadatum_dao.attrib["show"] = "new"
+        sorted_metadatum_dao.attrib["actuate"] = "onrequest"
+        sorted_metadatum_dao.attrib["href"] = sorted_metadatum["dao"]
+        sorted_metadatum_daodesc = etree.SubElement(sorted_metadatum_dao, "daodesc")
+        sorted_metadatum_daodesc_p = etree.SubElement(sorted_metadatum_daodesc, "p")
+        sorted_metadatum_daodesc_p.text = "[view item]"
+        if "accessrestrict" in sorted_metadatum:
+            sorted_metadatum_accessrestrict = etree.SubElement(sorted_metadatum_c03, "accessrestrict")
+            sorted_metadatum_accessrestrict_p = etree.SubElement(sorted_metadatum_accessrestrict, "p")
+            sorted_metadatum_accessrestrict_p.text = sorted_metadatum["accessrestrict"]
 
 # build out 1993-1994 presentations subseries
 presentations_93_94_c04 = etree.SubElement(presentations_c03, "c04")
@@ -711,6 +1612,37 @@ presentations_93_94_extent.attrib["altrender"] = "materialtype spaceoccupied"
 presentations_93_94_extent.text = "1 digital files" # <-- will need to be updated
 
 # populate 1993-1994 presentations subseries
+for sorted_metadatum in sorted_metadata:
+
+    if sorted_metadatum["unittitle"].startswith("Digital Documents" + " - " + "University of Michigan Presidency, 1986-1997" + " - " + "Presentations" + " - " + "1993-1994 Presentations"):
+        
+        print "Creating XML for " + sorted_metadatum["unittitle"] + "..."
+        
+        sorted_metadatum_c05 = etree.SubElement(presentations_93_94_c04, "c05")
+        sorted_metadatum_c05.attrib["level"] = "file"
+        sorted_metadatum_did = etree.SubElement(sorted_metadatum_c03, "did")
+        sorted_metadatum_physloc = etree.SubElement(sorted_metadatum_did, "physloc")
+        sorted_metadatum_physloc.text = "Online"
+        sorted_metadatum_unittitle = etree.SubElement(sorted_metadatum_did, "unittitle")
+        sorted_metadatum_unittitle.text = sorted_metadatum["unittitle"].decode("utf-8") + ", "
+        sorted_metadatum_unitdate = etree.SubElement(sorted_metadatum_unittitle, "unitdate")
+        sorted_metadatum_unitdate.text = sorted_metadatum["unitdate"]
+        sorted_metadatum_unitdate.attrib["type"] = "inclusive"
+        sorted_metadatum_unitdate.attrib["normal"] = sorted_metadatum["unitdate"]   
+        sorted_metadatum_physdesc = etree.SubElement(sorted_metadatum_did, "physdesc")
+        sorted_metadatum_physfacet = etree.SubElement(sorted_metadatum_physdesc, "physfacet")
+        sorted_metadatum_physfacet.text = sorted_metadatum["physfacet"]
+        sorted_metadatum_dao = etree.SubElement(sorted_metadatum_did, "dao")
+        sorted_metadatum_dao.attrib["show"] = "new"
+        sorted_metadatum_dao.attrib["actuate"] = "onrequest"
+        sorted_metadatum_dao.attrib["href"] = sorted_metadatum["dao"]
+        sorted_metadatum_daodesc = etree.SubElement(sorted_metadatum_dao, "daodesc")
+        sorted_metadatum_daodesc_p = etree.SubElement(sorted_metadatum_daodesc, "p")
+        sorted_metadatum_daodesc_p.text = "[view item]"
+        if "accessrestrict" in sorted_metadatum:
+            sorted_metadatum_accessrestrict = etree.SubElement(sorted_metadatum_c03, "accessrestrict")
+            sorted_metadatum_accessrestrict_p = etree.SubElement(sorted_metadatum_accessrestrict, "p")
+            sorted_metadatum_accessrestrict_p.text = sorted_metadatum["accessrestrict"]
 
 # build out 1994-1995 presentations subseries
 presentations_94_95_c04 = etree.SubElement(presentations_c03, "c04")
@@ -727,6 +1659,37 @@ presentations_94_95_extent.attrib["altrender"] = "materialtype spaceoccupied"
 presentations_94_95_extent.text = "2 digital files" # <-- will need to be updated
 
 # populate 1994-1995 presentations subseries
+for sorted_metadatum in sorted_metadata:
+
+    if sorted_metadatum["unittitle"].startswith("Digital Documents" + " - " + "University of Michigan Presidency, 1986-1997" + " - " + "Presentations" + " - " + "1994-1995 Presentations"):
+        
+        print "Creating XML for " + sorted_metadatum["unittitle"] + "..."
+        
+        sorted_metadatum_c05 = etree.SubElement(presentations_94_95_c04, "c05")
+        sorted_metadatum_c05.attrib["level"] = "file"
+        sorted_metadatum_did = etree.SubElement(sorted_metadatum_c03, "did")
+        sorted_metadatum_physloc = etree.SubElement(sorted_metadatum_did, "physloc")
+        sorted_metadatum_physloc.text = "Online"
+        sorted_metadatum_unittitle = etree.SubElement(sorted_metadatum_did, "unittitle")
+        sorted_metadatum_unittitle.text = sorted_metadatum["unittitle"].decode("utf-8") + ", "
+        sorted_metadatum_unitdate = etree.SubElement(sorted_metadatum_unittitle, "unitdate")
+        sorted_metadatum_unitdate.text = sorted_metadatum["unitdate"]
+        sorted_metadatum_unitdate.attrib["type"] = "inclusive"
+        sorted_metadatum_unitdate.attrib["normal"] = sorted_metadatum["unitdate"]   
+        sorted_metadatum_physdesc = etree.SubElement(sorted_metadatum_did, "physdesc")
+        sorted_metadatum_physfacet = etree.SubElement(sorted_metadatum_physdesc, "physfacet")
+        sorted_metadatum_physfacet.text = sorted_metadatum["physfacet"]
+        sorted_metadatum_dao = etree.SubElement(sorted_metadatum_did, "dao")
+        sorted_metadatum_dao.attrib["show"] = "new"
+        sorted_metadatum_dao.attrib["actuate"] = "onrequest"
+        sorted_metadatum_dao.attrib["href"] = sorted_metadatum["dao"]
+        sorted_metadatum_daodesc = etree.SubElement(sorted_metadatum_dao, "daodesc")
+        sorted_metadatum_daodesc_p = etree.SubElement(sorted_metadatum_daodesc, "p")
+        sorted_metadatum_daodesc_p.text = "[view item]"
+        if "accessrestrict" in sorted_metadatum:
+            sorted_metadatum_accessrestrict = etree.SubElement(sorted_metadatum_c03, "accessrestrict")
+            sorted_metadatum_accessrestrict_p = etree.SubElement(sorted_metadatum_accessrestrict, "p")
+            sorted_metadatum_accessrestrict_p.text = sorted_metadatum["accessrestrict"]
 
 # build out 1995-1996 presentations subseries
 presentations_95_96_c04 = etree.SubElement(presentations_c03, "c04")
@@ -743,6 +1706,37 @@ presentations_95_96_extent.attrib["altrender"] = "materialtype spaceoccupied"
 presentations_95_96_extent.text = "3 digital files" # <-- will need to be updated
 
 # populate 1995-1996 presentations subseries
+for sorted_metadatum in sorted_metadata:
+
+    if sorted_metadatum["unittitle"].startswith("Digital Documents" + " - " + "University of Michigan Presidency, 1986-1997" + " - " + "Presentations" + " - " + "1995-1996 Presentations"):
+        
+        print "Creating XML for " + sorted_metadatum["unittitle"] + "..."
+        
+        sorted_metadatum_c05 = etree.SubElement(presentations_95_96_c04, "c05")
+        sorted_metadatum_c05.attrib["level"] = "file"
+        sorted_metadatum_did = etree.SubElement(sorted_metadatum_c03, "did")
+        sorted_metadatum_physloc = etree.SubElement(sorted_metadatum_did, "physloc")
+        sorted_metadatum_physloc.text = "Online"
+        sorted_metadatum_unittitle = etree.SubElement(sorted_metadatum_did, "unittitle")
+        sorted_metadatum_unittitle.text = sorted_metadatum["unittitle"].decode("utf-8") + ", "
+        sorted_metadatum_unitdate = etree.SubElement(sorted_metadatum_unittitle, "unitdate")
+        sorted_metadatum_unitdate.text = sorted_metadatum["unitdate"]
+        sorted_metadatum_unitdate.attrib["type"] = "inclusive"
+        sorted_metadatum_unitdate.attrib["normal"] = sorted_metadatum["unitdate"]   
+        sorted_metadatum_physdesc = etree.SubElement(sorted_metadatum_did, "physdesc")
+        sorted_metadatum_physfacet = etree.SubElement(sorted_metadatum_physdesc, "physfacet")
+        sorted_metadatum_physfacet.text = sorted_metadatum["physfacet"]
+        sorted_metadatum_dao = etree.SubElement(sorted_metadatum_did, "dao")
+        sorted_metadatum_dao.attrib["show"] = "new"
+        sorted_metadatum_dao.attrib["actuate"] = "onrequest"
+        sorted_metadatum_dao.attrib["href"] = sorted_metadatum["dao"]
+        sorted_metadatum_daodesc = etree.SubElement(sorted_metadatum_dao, "daodesc")
+        sorted_metadatum_daodesc_p = etree.SubElement(sorted_metadatum_daodesc, "p")
+        sorted_metadatum_daodesc_p.text = "[view item]"
+        if "accessrestrict" in sorted_metadatum:
+            sorted_metadatum_accessrestrict = etree.SubElement(sorted_metadatum_c03, "accessrestrict")
+            sorted_metadatum_accessrestrict_p = etree.SubElement(sorted_metadatum_accessrestrict, "p")
+            sorted_metadatum_accessrestrict_p.text = sorted_metadatum["accessrestrict"]
 
 # build out 1996-1997 presentations subseries
 presentations_96_97_c04 = etree.SubElement(presentations_c03, "c04")
@@ -759,63 +1753,737 @@ presentations_96_97_extent.attrib["altrender"] = "materialtype spaceoccupied"
 presentations_96_97_extent.text = "11 digital files" # <-- will need to be updated
 
 # populate 1996-1997 presentations subseries
+for sorted_metadatum in sorted_metadata:
+
+    if sorted_metadatum["unittitle"].startswith("Digital Documents" + " - " + "University of Michigan Presidency, 1986-1997" + " - " + "Presentations" + " - " + "1996-1997 Presentations"):
+        
+        print "Creating XML for " + sorted_metadatum["unittitle"] + "..."
+        
+        sorted_metadatum_c05 = etree.SubElement(presentations_96_97_c04, "c05")
+        sorted_metadatum_c05.attrib["level"] = "file"
+        sorted_metadatum_did = etree.SubElement(sorted_metadatum_c03, "did")
+        sorted_metadatum_physloc = etree.SubElement(sorted_metadatum_did, "physloc")
+        sorted_metadatum_physloc.text = "Online"
+        sorted_metadatum_unittitle = etree.SubElement(sorted_metadatum_did, "unittitle")
+        sorted_metadatum_unittitle.text = sorted_metadatum["unittitle"].decode("utf-8") + ", "
+        sorted_metadatum_unitdate = etree.SubElement(sorted_metadatum_unittitle, "unitdate")
+        sorted_metadatum_unitdate.text = sorted_metadatum["unitdate"]
+        sorted_metadatum_unitdate.attrib["type"] = "inclusive"
+        sorted_metadatum_unitdate.attrib["normal"] = sorted_metadatum["unitdate"]   
+        sorted_metadatum_physdesc = etree.SubElement(sorted_metadatum_did, "physdesc")
+        sorted_metadatum_physfacet = etree.SubElement(sorted_metadatum_physdesc, "physfacet")
+        sorted_metadatum_physfacet.text = sorted_metadatum["physfacet"]
+        sorted_metadatum_dao = etree.SubElement(sorted_metadatum_did, "dao")
+        sorted_metadatum_dao.attrib["show"] = "new"
+        sorted_metadatum_dao.attrib["actuate"] = "onrequest"
+        sorted_metadatum_dao.attrib["href"] = sorted_metadatum["dao"]
+        sorted_metadatum_daodesc = etree.SubElement(sorted_metadatum_dao, "daodesc")
+        sorted_metadatum_daodesc_p = etree.SubElement(sorted_metadatum_daodesc, "p")
+        sorted_metadatum_daodesc_p.text = "[view item]"
+        if "accessrestrict" in sorted_metadatum:
+            sorted_metadatum_accessrestrict = etree.SubElement(sorted_metadatum_c03, "accessrestrict")
+            sorted_metadatum_accessrestrict_p = etree.SubElement(sorted_metadatum_accessrestrict, "p")
+            sorted_metadatum_accessrestrict_p.text = sorted_metadatum["accessrestrict"]
 
 # build out write files series
 write_files_c03 = etree.SubElement(umich_presidency_c02, "c03")
 write_files_c03.attrib["level"] = "series"
 write_files_did = etree.SubElement(write_files_c03, "did")
 write_files_unittitle = etree.SubElement(write_files_did, "unittitle")
-write_files_unittitle.text = "" + ", "
+write_files_unittitle.text = "Write Files" + ", "
 write_files_unitdate = etree.SubElement(write_files_unittitle, "unitdate")
-write_files_unitdate.text = "YYYY-YYYY"
+write_files_unitdate.text = "1988-1997"
 write_files_unitdate.attrib["type"] = "inclusive"
-write_files_unitdate.attrib["normal"] = "YYYY/YYYY"
+write_files_unitdate.attrib["normal"] = "1988/1997"
 write_files_physdesc = etree.SubElement(write_files_did, "physdesc")
 write_files_physdesc.attrib["altrender"] = "whole"
 write_files_extent = etree.SubElement(write_files_physdesc, "extent")
 write_files_extent.attrib["altrender"] = "materialtype spaceoccupied"
-write_files_extent.text = "328 digital files" # <-- will need to be updated
+write_files_extent.text = "588 digital files" # <-- will need to be updated
 write_files_scopecontent = etree.SubElement(write_files_c03, "scopecontent")
 write_files_scopecontent_p = etree.SubElement(write_files_scopecontent, "p")
-write_files_scopecontent_p.text = ""
+write_files_scopecontent_p.text = "The Write Files series (588 digital files, 1987-1997) is composed entirely of Microsoft Word text files. Researchers will find a variety of 'traditional' business formats such as correspondence, agendas, and memorandums contained within the Write Files series. However, note that there is often an absence of descriptive information, such as the receiver's name and address, date, and signature line. The absence of this information is a reflection of the distributive work process practiced in President Duderstadt's office--a process afforded by networked computer technology. The correspondence includes letters of recommendation, thank-you's, and communication to persons not only at the University of Michigan but to persons throughout the country including U.S. presidents Gerald Ford and George Bush and Michigan governors James Blanchard and John Engler. It is important to note that Duderstadt often used the recipient's name or initials to name the file. For example, 'Blanchard-1/89' and 'H & V-11/10' are communications to Governor James Blanchard in January 1989 and Harold and Vivian Shapiro on November 10th respectively."
+
+# build out 1988 and earlier write files
+write_files_88_earlier_c04 = etree.SubElement(write_files_c03, "c04")
+write_files_88_earlier_c04.attrib["level"] = "subseries"
+write_files_88_earlier_did = etree.SubElement(write_files_88_earlier_c04, "did")
+write_files_88_earlier_physloc = etree.SubElement(write_files_88_earlier_did, "physloc")
+write_files_88_earlier_physloc.text = "Online"
+write_files_88_earlier_unittitle = etree.SubElement(write_files_88_earlier_did, "unittitle")
+write_files_88_earlier_unittitle.text = "1988 and earlier Write Files"
+write_files_88_earlier_physdesc = etree.SubElement(write_files_88_earlier_did, "physdesc")
+write_files_88_earlier_physdesc.attrib["altrender"] = "whole"
+write_files_88_earlier_extent = etree.SubElement(write_files_88_earlier_physdesc, "extent")
+write_files_88_earlier_extent.attrib["altrender"] = "materialtype spaceoccupied"
+write_files_88_earlier_extent.text = "19 digital files" # <-- will need to be updated
+write_files_88_earlier_accessrestrict = etree.SubElement(write_files_88_earlier_c04, "accessrestrict")
+write_files_88_earlier_accessrestrict_p = etree.SubElement(write_files_88_earlier_accessrestrict, "p")
+write_files_88_earlier_accessrestrict_p.text = "RESTRICTED until "
+write_files_88_earlier_date = etree.SubElement(write_files_88_earlier_accessrestrict_p, "date")
+write_files_88_earlier_date.attrib["type"] = "restriction"
+write_files_88_earlier_date.attrib["normal"] = "2030-07-01"
+write_files_88_earlier_date.text = "July 1, 2030"
+
+# populate 1988 and earlier write subseries
+for sorted_metadatum in sorted_metadata:
+
+    if sorted_metadatum["unittitle"].startswith("Digital Documents" + " - " + "University of Michigan Presidency, 1986-1997" + " - " + "Write Files" + " - " + "1988 and earlier 1988 Write Files"):
+        
+        print "Creating XML for " + sorted_metadatum["unittitle"] + "..."
+        
+        sorted_metadatum_c05 = etree.SubElement(write_files_88_earlier_c04, "c05")
+        sorted_metadatum_c05.attrib["level"] = "file"
+        sorted_metadatum_did = etree.SubElement(sorted_metadatum_c03, "did")
+        sorted_metadatum_physloc = etree.SubElement(sorted_metadatum_did, "physloc")
+        sorted_metadatum_physloc.text = "Online"
+        sorted_metadatum_unittitle = etree.SubElement(sorted_metadatum_did, "unittitle")
+        sorted_metadatum_unittitle.text = sorted_metadatum["unittitle"].decode("utf-8") + ", "
+        sorted_metadatum_unitdate = etree.SubElement(sorted_metadatum_unittitle, "unitdate")
+        sorted_metadatum_unitdate.text = sorted_metadatum["unitdate"]
+        sorted_metadatum_unitdate.attrib["type"] = "inclusive"
+        sorted_metadatum_unitdate.attrib["normal"] = sorted_metadatum["unitdate"]   
+        sorted_metadatum_physdesc = etree.SubElement(sorted_metadatum_did, "physdesc")
+        sorted_metadatum_physfacet = etree.SubElement(sorted_metadatum_physdesc, "physfacet")
+        sorted_metadatum_physfacet.text = sorted_metadatum["physfacet"]
+        sorted_metadatum_dao = etree.SubElement(sorted_metadatum_did, "dao")
+        sorted_metadatum_dao.attrib["show"] = "new"
+        sorted_metadatum_dao.attrib["actuate"] = "onrequest"
+        sorted_metadatum_dao.attrib["href"] = sorted_metadatum["dao"]
+        sorted_metadatum_daodesc = etree.SubElement(sorted_metadatum_dao, "daodesc")
+        sorted_metadatum_daodesc_p = etree.SubElement(sorted_metadatum_daodesc, "p")
+        sorted_metadatum_daodesc_p.text = "[view item]"
+        if "accessrestrict" in sorted_metadatum:
+            sorted_metadatum_accessrestrict = etree.SubElement(sorted_metadatum_c03, "accessrestrict")
+            sorted_metadatum_accessrestrict_p = etree.SubElement(sorted_metadatum_accessrestrict, "p")
+            sorted_metadatum_accessrestrict_p.text = sorted_metadatum["accessrestrict"]
+
+# build out 1988-1989 write files subseries
+write_files_88_89_c04 = etree.SubElement(write_files_c03, "c04")
+write_files_88_89_c04.attrib["level"] = "subseries"
+write_files_88_89_did = etree.SubElement(write_files_88_89_c04, "did")
+write_files_88_89_physloc = etree.SubElement(write_files_88_89_did, "physloc")
+write_files_88_89_physloc.text = "Online"
+write_files_88_89_unittitle = etree.SubElement(write_files_88_89_did, "unittitle")
+write_files_88_89_unittitle.text = "1988-1989 Write Files"
+write_files_88_89_physdesc = etree.SubElement(write_files_88_89_did, "physdesc")
+write_files_88_89_physdesc.attrib["altrender"] = "whole"
+write_files_88_89_extent = etree.SubElement(write_files_88_89_physdesc, "extent")
+write_files_88_89_extent.attrib["altrender"] = "materialtype spaceoccupied"
+write_files_88_89_extent.text = "19 digital files" # <-- will need to be updated
+write_files_88_89_accessrestrict = etree.SubElement(write_files_88_89_c04, "accessrestrict")
+write_files_88_89_accessrestrict_p = etree.SubElement(write_files_88_89_accessrestrict, "p")
+write_files_88_89_accessrestrict_p.text = "RESTRICTED until "
+write_files_88_89_date = etree.SubElement(write_files_88_89_accessrestrict_p, "date")
+write_files_88_89_date.attrib["type"] = "restriction"
+write_files_88_89_date.attrib["normal"] = "2030-07-01"
+write_files_88_89_date.text = "July 1, 2030"
+
+# populate 1988-1989 write files subseries
+for sorted_metadatum in sorted_metadata:
+
+    if sorted_metadatum["unittitle"].startswith("Digital Documents" + " - " + "University of Michigan Presidency, 1986-1997" + " - " + "Write Files" + " - " + "1988-1989 Write Files"):
+        
+        print "Creating XML for " + sorted_metadatum["unittitle"] + "..."
+        
+        sorted_metadatum_c05 = etree.SubElement(write_files_88_89_c04, "c05")
+        sorted_metadatum_c05.attrib["level"] = "file"
+        sorted_metadatum_did = etree.SubElement(sorted_metadatum_c03, "did")
+        sorted_metadatum_physloc = etree.SubElement(sorted_metadatum_did, "physloc")
+        sorted_metadatum_physloc.text = "Online"
+        sorted_metadatum_unittitle = etree.SubElement(sorted_metadatum_did, "unittitle")
+        sorted_metadatum_unittitle.text = sorted_metadatum["unittitle"].decode("utf-8") + ", "
+        sorted_metadatum_unitdate = etree.SubElement(sorted_metadatum_unittitle, "unitdate")
+        sorted_metadatum_unitdate.text = sorted_metadatum["unitdate"]
+        sorted_metadatum_unitdate.attrib["type"] = "inclusive"
+        sorted_metadatum_unitdate.attrib["normal"] = sorted_metadatum["unitdate"]   
+        sorted_metadatum_physdesc = etree.SubElement(sorted_metadatum_did, "physdesc")
+        sorted_metadatum_physfacet = etree.SubElement(sorted_metadatum_physdesc, "physfacet")
+        sorted_metadatum_physfacet.text = sorted_metadatum["physfacet"]
+        sorted_metadatum_dao = etree.SubElement(sorted_metadatum_did, "dao")
+        sorted_metadatum_dao.attrib["show"] = "new"
+        sorted_metadatum_dao.attrib["actuate"] = "onrequest"
+        sorted_metadatum_dao.attrib["href"] = sorted_metadatum["dao"]
+        sorted_metadatum_daodesc = etree.SubElement(sorted_metadatum_dao, "daodesc")
+        sorted_metadatum_daodesc_p = etree.SubElement(sorted_metadatum_daodesc, "p")
+        sorted_metadatum_daodesc_p.text = "[view item]"
+        if "accessrestrict" in sorted_metadatum:
+            sorted_metadatum_accessrestrict = etree.SubElement(sorted_metadatum_c03, "accessrestrict")
+            sorted_metadatum_accessrestrict_p = etree.SubElement(sorted_metadatum_accessrestrict, "p")
+            sorted_metadatum_accessrestrict_p.text = sorted_metadatum["accessrestrict"]
+
+# build out 1989-1990 write files subseries
+write_files_89_90_c04 = etree.SubElement(write_files_c03, "c04")
+write_files_89_90_c04.attrib["level"] = "subseries"
+write_files_89_90_did = etree.SubElement(write_files_89_90_c04, "did")
+write_files_89_90_physloc = etree.SubElement(write_files_89_90_did, "physloc")
+write_files_89_90_physloc.text = "Online"
+write_files_89_90_unittitle = etree.SubElement(write_files_89_90_did, "unittitle")
+write_files_89_90_unittitle.text = "1989-1990 Write Files"
+write_files_89_90_physdesc = etree.SubElement(write_files_89_90_did, "physdesc")
+write_files_89_90_physdesc.attrib["altrender"] = "whole"
+write_files_89_90_extent = etree.SubElement(write_files_89_90_physdesc, "extent")
+write_files_89_90_extent.attrib["altrender"] = "materialtype spaceoccupied"
+write_files_89_90_extent.text = "50 digital files" # <-- will need to be updated
+write_files_89_90_accessrestrict = etree.SubElement(write_files_89_90_c04, "accessrestrict")
+write_files_89_90_accessrestrict_p = etree.SubElement(write_files_89_90_accessrestrict, "p")
+write_files_89_90_accessrestrict_p.text = "RESTRICTED until "
+write_files_89_90_date = etree.SubElement(write_files_89_90_accessrestrict_p, "date")
+write_files_89_90_date.attrib["type"] = "restriction"
+write_files_89_90_date.attrib["normal"] = "2030-07-01"
+write_files_89_90_date.text = "July 1, 2030"
+
+# populate 1989-1990 write files subseries
+for sorted_metadatum in sorted_metadata:
+
+    if sorted_metadatum["unittitle"].startswith("Digital Documents" + " - " + "University of Michigan Presidency, 1986-1997" + " - " + "Write Files" + " - " + "1989-1990 Write Files"):
+        
+        print "Creating XML for " + sorted_metadatum["unittitle"] + "..."
+        
+        sorted_metadatum_c05 = etree.SubElement(write_files_89_90_c04, "c05")
+        sorted_metadatum_c05.attrib["level"] = "file"
+        sorted_metadatum_did = etree.SubElement(sorted_metadatum_c03, "did")
+        sorted_metadatum_physloc = etree.SubElement(sorted_metadatum_did, "physloc")
+        sorted_metadatum_physloc.text = "Online"
+        sorted_metadatum_unittitle = etree.SubElement(sorted_metadatum_did, "unittitle")
+        sorted_metadatum_unittitle.text = sorted_metadatum["unittitle"].decode("utf-8") + ", "
+        sorted_metadatum_unitdate = etree.SubElement(sorted_metadatum_unittitle, "unitdate")
+        sorted_metadatum_unitdate.text = sorted_metadatum["unitdate"]
+        sorted_metadatum_unitdate.attrib["type"] = "inclusive"
+        sorted_metadatum_unitdate.attrib["normal"] = sorted_metadatum["unitdate"]   
+        sorted_metadatum_physdesc = etree.SubElement(sorted_metadatum_did, "physdesc")
+        sorted_metadatum_physfacet = etree.SubElement(sorted_metadatum_physdesc, "physfacet")
+        sorted_metadatum_physfacet.text = sorted_metadatum["physfacet"]
+        sorted_metadatum_dao = etree.SubElement(sorted_metadatum_did, "dao")
+        sorted_metadatum_dao.attrib["show"] = "new"
+        sorted_metadatum_dao.attrib["actuate"] = "onrequest"
+        sorted_metadatum_dao.attrib["href"] = sorted_metadatum["dao"]
+        sorted_metadatum_daodesc = etree.SubElement(sorted_metadatum_dao, "daodesc")
+        sorted_metadatum_daodesc_p = etree.SubElement(sorted_metadatum_daodesc, "p")
+        sorted_metadatum_daodesc_p.text = "[view item]"
+        if "accessrestrict" in sorted_metadatum:
+            sorted_metadatum_accessrestrict = etree.SubElement(sorted_metadatum_c03, "accessrestrict")
+            sorted_metadatum_accessrestrict_p = etree.SubElement(sorted_metadatum_accessrestrict, "p")
+            sorted_metadatum_accessrestrict_p.text = sorted_metadatum["accessrestrict"]
+
+# build out 1990-1991 write files subseries
+write_files_90_91_c04 = etree.SubElement(write_files_c03, "c04")
+write_files_90_91_c04.attrib["level"] = "subseries"
+write_files_90_91_did = etree.SubElement(write_files_90_91_c04, "did")
+write_files_90_91_physloc = etree.SubElement(write_files_90_91_did, "physloc")
+write_files_90_91_physloc.text = "Online"
+write_files_90_91_unittitle = etree.SubElement(write_files_90_91_did, "unittitle")
+write_files_90_91_unittitle.text = "1990-1991 Write Files"
+write_files_90_91_physdesc = etree.SubElement(write_files_90_91_did, "physdesc")
+write_files_90_91_physdesc.attrib["altrender"] = "whole"
+write_files_90_91_extent = etree.SubElement(write_files_90_91_physdesc, "extent")
+write_files_90_91_extent.attrib["altrender"] = "materialtype spaceoccupied"
+write_files_90_91_extent.text = "74 digital files" # <-- will need to be updated
+write_files_90_91_accessrestrict = etree.SubElement(write_files_90_91_c04, "accessrestrict")
+write_files_90_91_accessrestrict_p = etree.SubElement(write_files_90_91_accessrestrict, "p")
+write_files_90_91_accessrestrict_p.text = "RESTRICTED until "
+write_files_90_91_date = etree.SubElement(write_files_90_91_accessrestrict_p, "date")
+write_files_90_91_date.attrib["type"] = "restriction"
+write_files_90_91_date.attrib["normal"] = "2030-07-01"
+write_files_90_91_date.text = "July 1, 2030"
+
+# populate 1990-1991 write files subseries
+for sorted_metadatum in sorted_metadata:
+
+    if sorted_metadatum["unittitle"].startswith("Digital Documents" + " - " + "University of Michigan Presidency, 1986-1997" + " - " + "Write Files" + " - " + "1990-1991 Write Files"):
+        
+        print "Creating XML for " + sorted_metadatum["unittitle"] + "..."
+        
+        sorted_metadatum_c05 = etree.SubElement(write_files_90_91_c04, "c05")
+        sorted_metadatum_c05.attrib["level"] = "file"
+        sorted_metadatum_did = etree.SubElement(sorted_metadatum_c03, "did")
+        sorted_metadatum_physloc = etree.SubElement(sorted_metadatum_did, "physloc")
+        sorted_metadatum_physloc.text = "Online"
+        sorted_metadatum_unittitle = etree.SubElement(sorted_metadatum_did, "unittitle")
+        sorted_metadatum_unittitle.text = sorted_metadatum["unittitle"].decode("utf-8") + ", "
+        sorted_metadatum_unitdate = etree.SubElement(sorted_metadatum_unittitle, "unitdate")
+        sorted_metadatum_unitdate.text = sorted_metadatum["unitdate"]
+        sorted_metadatum_unitdate.attrib["type"] = "inclusive"
+        sorted_metadatum_unitdate.attrib["normal"] = sorted_metadatum["unitdate"]   
+        sorted_metadatum_physdesc = etree.SubElement(sorted_metadatum_did, "physdesc")
+        sorted_metadatum_physfacet = etree.SubElement(sorted_metadatum_physdesc, "physfacet")
+        sorted_metadatum_physfacet.text = sorted_metadatum["physfacet"]
+        sorted_metadatum_dao = etree.SubElement(sorted_metadatum_did, "dao")
+        sorted_metadatum_dao.attrib["show"] = "new"
+        sorted_metadatum_dao.attrib["actuate"] = "onrequest"
+        sorted_metadatum_dao.attrib["href"] = sorted_metadatum["dao"]
+        sorted_metadatum_daodesc = etree.SubElement(sorted_metadatum_dao, "daodesc")
+        sorted_metadatum_daodesc_p = etree.SubElement(sorted_metadatum_daodesc, "p")
+        sorted_metadatum_daodesc_p.text = "[view item]"
+        if "accessrestrict" in sorted_metadatum:
+            sorted_metadatum_accessrestrict = etree.SubElement(sorted_metadatum_c03, "accessrestrict")
+            sorted_metadatum_accessrestrict_p = etree.SubElement(sorted_metadatum_accessrestrict, "p")
+            sorted_metadatum_accessrestrict_p.text = sorted_metadatum["accessrestrict"]
+            
+# build out 1991-1992 write files subseries
+write_files_91_92_c04 = etree.SubElement(write_files_c03, "c04")
+write_files_91_92_c04.attrib["level"] = "subseries"
+write_files_91_92_did = etree.SubElement(write_files_91_92_c04, "did")
+write_files_91_92_physloc = etree.SubElement(write_files_91_92_did, "physloc")
+write_files_91_92_physloc.text = "Online"
+write_files_91_92_unittitle = etree.SubElement(write_files_91_92_did, "unittitle")
+write_files_91_92_unittitle.text = "1991-1992 Write Files"
+write_files_91_92_physdesc = etree.SubElement(write_files_91_92_did, "physdesc")
+write_files_91_92_physdesc.attrib["altrender"] = "whole"
+write_files_91_92_extent = etree.SubElement(write_files_91_92_physdesc, "extent")
+write_files_91_92_extent.attrib["altrender"] = "materialtype spaceoccupied"
+write_files_91_92_extent.text = "54 digital files" # <-- will need to be updated
+write_files_91_92_accessrestrict = etree.SubElement(write_files_91_92_c04, "accessrestrict")
+write_files_91_92_accessrestrict_p = etree.SubElement(write_files_91_92_accessrestrict, "p")
+write_files_91_92_accessrestrict_p.text = "RESTRICTED until "
+write_files_91_92_date = etree.SubElement(write_files_91_92_accessrestrict_p, "date")
+write_files_91_92_date.attrib["type"] = "restriction"
+write_files_91_92_date.attrib["normal"] = "2030-07-01"
+write_files_91_92_date.text = "July 1, 2030"
+
+# populate 1991-1992 write files subseries
+for sorted_metadatum in sorted_metadata:
+
+    if sorted_metadatum["unittitle"].startswith("Digital Documents" + " - " + "University of Michigan Presidency, 1986-1997" + " - " + "Write Files" + " - " + "1991-1992 Write Files"):
+        
+        print "Creating XML for " + sorted_metadatum["unittitle"] + "..."
+        
+        sorted_metadatum_c05 = etree.SubElement(write_files_91_92_c04, "c05")
+        sorted_metadatum_c05.attrib["level"] = "file"
+        sorted_metadatum_did = etree.SubElement(sorted_metadatum_c03, "did")
+        sorted_metadatum_physloc = etree.SubElement(sorted_metadatum_did, "physloc")
+        sorted_metadatum_physloc.text = "Online"
+        sorted_metadatum_unittitle = etree.SubElement(sorted_metadatum_did, "unittitle")
+        sorted_metadatum_unittitle.text = sorted_metadatum["unittitle"].decode("utf-8") + ", "
+        sorted_metadatum_unitdate = etree.SubElement(sorted_metadatum_unittitle, "unitdate")
+        sorted_metadatum_unitdate.text = sorted_metadatum["unitdate"]
+        sorted_metadatum_unitdate.attrib["type"] = "inclusive"
+        sorted_metadatum_unitdate.attrib["normal"] = sorted_metadatum["unitdate"]   
+        sorted_metadatum_physdesc = etree.SubElement(sorted_metadatum_did, "physdesc")
+        sorted_metadatum_physfacet = etree.SubElement(sorted_metadatum_physdesc, "physfacet")
+        sorted_metadatum_physfacet.text = sorted_metadatum["physfacet"]
+        sorted_metadatum_dao = etree.SubElement(sorted_metadatum_did, "dao")
+        sorted_metadatum_dao.attrib["show"] = "new"
+        sorted_metadatum_dao.attrib["actuate"] = "onrequest"
+        sorted_metadatum_dao.attrib["href"] = sorted_metadatum["dao"]
+        sorted_metadatum_daodesc = etree.SubElement(sorted_metadatum_dao, "daodesc")
+        sorted_metadatum_daodesc_p = etree.SubElement(sorted_metadatum_daodesc, "p")
+        sorted_metadatum_daodesc_p.text = "[view item]"
+        if "accessrestrict" in sorted_metadatum:
+            sorted_metadatum_accessrestrict = etree.SubElement(sorted_metadatum_c03, "accessrestrict")
+            sorted_metadatum_accessrestrict_p = etree.SubElement(sorted_metadatum_accessrestrict, "p")
+            sorted_metadatum_accessrestrict_p.text = sorted_metadatum["accessrestrict"]
+            
+# build out 1992-1993 write files subseries
+write_files_92_93_c04 = etree.SubElement(write_files_c03, "c04")
+write_files_92_93_c04.attrib["level"] = "subseries"
+write_files_92_93_did = etree.SubElement(write_files_92_93_c04, "did")
+write_files_92_93_physloc = etree.SubElement(write_files_92_93_did, "physloc")
+write_files_92_93_physloc.text = "Online"
+write_files_92_93_unittitle = etree.SubElement(write_files_92_93_did, "unittitle")
+write_files_92_93_unittitle.text = "1992-1993 Write Files"
+write_files_92_93_physdesc = etree.SubElement(write_files_92_93_did, "physdesc")
+write_files_92_93_physdesc.attrib["altrender"] = "whole"
+write_files_92_93_extent = etree.SubElement(write_files_92_93_physdesc, "extent")
+write_files_92_93_extent.attrib["altrender"] = "materialtype spaceoccupied"
+write_files_92_93_extent.text = "120 digital files" # <-- will need to be updated
+write_files_92_93_accessrestrict = etree.SubElement(write_files_92_93_c04, "accessrestrict")
+write_files_92_93_accessrestrict_p = etree.SubElement(write_files_92_93_accessrestrict, "p")
+write_files_92_93_accessrestrict_p.text = "RESTRICTED until "
+write_files_92_93_date = etree.SubElement(write_files_92_93_accessrestrict_p, "date")
+write_files_92_93_date.attrib["type"] = "restriction"
+write_files_92_93_date.attrib["normal"] = "2030-07-01"
+write_files_92_93_date.text = "July 1, 2030"
+
+# populate 1992-1993 write files subseries
+for sorted_metadatum in sorted_metadata:
+
+    if sorted_metadatum["unittitle"].startswith("Digital Documents" + " - " + "University of Michigan Presidency, 1986-1997" + " - " + "Write Files" + " - " + "1992-1993 Write Files"):
+        
+        print "Creating XML for " + sorted_metadatum["unittitle"] + "..."
+        
+        sorted_metadatum_c05 = etree.SubElement(write_files_92_93_c04, "c05")
+        sorted_metadatum_c05.attrib["level"] = "file"
+        sorted_metadatum_did = etree.SubElement(sorted_metadatum_c03, "did")
+        sorted_metadatum_physloc = etree.SubElement(sorted_metadatum_did, "physloc")
+        sorted_metadatum_physloc.text = "Online"
+        sorted_metadatum_unittitle = etree.SubElement(sorted_metadatum_did, "unittitle")
+        sorted_metadatum_unittitle.text = sorted_metadatum["unittitle"].decode("utf-8") + ", "
+        sorted_metadatum_unitdate = etree.SubElement(sorted_metadatum_unittitle, "unitdate")
+        sorted_metadatum_unitdate.text = sorted_metadatum["unitdate"]
+        sorted_metadatum_unitdate.attrib["type"] = "inclusive"
+        sorted_metadatum_unitdate.attrib["normal"] = sorted_metadatum["unitdate"]   
+        sorted_metadatum_physdesc = etree.SubElement(sorted_metadatum_did, "physdesc")
+        sorted_metadatum_physfacet = etree.SubElement(sorted_metadatum_physdesc, "physfacet")
+        sorted_metadatum_physfacet.text = sorted_metadatum["physfacet"]
+        sorted_metadatum_dao = etree.SubElement(sorted_metadatum_did, "dao")
+        sorted_metadatum_dao.attrib["show"] = "new"
+        sorted_metadatum_dao.attrib["actuate"] = "onrequest"
+        sorted_metadatum_dao.attrib["href"] = sorted_metadatum["dao"]
+        sorted_metadatum_daodesc = etree.SubElement(sorted_metadatum_dao, "daodesc")
+        sorted_metadatum_daodesc_p = etree.SubElement(sorted_metadatum_daodesc, "p")
+        sorted_metadatum_daodesc_p.text = "[view item]"
+        if "accessrestrict" in sorted_metadatum:
+            sorted_metadatum_accessrestrict = etree.SubElement(sorted_metadatum_c03, "accessrestrict")
+            sorted_metadatum_accessrestrict_p = etree.SubElement(sorted_metadatum_accessrestrict, "p")
+            sorted_metadatum_accessrestrict_p.text = sorted_metadatum["accessrestrict"]
+
+# build out 1993-1994 write files subseries
+write_files_93_94_c04 = etree.SubElement(write_files_c03, "c04")
+write_files_93_94_c04.attrib["level"] = "subseries"
+write_files_93_94_did = etree.SubElement(write_files_93_94_c04, "did")
+write_files_93_94_physloc = etree.SubElement(write_files_93_94_did, "physloc")
+write_files_93_94_physloc.text = "Online"
+write_files_93_94_unittitle = etree.SubElement(write_files_93_94_did, "unittitle")
+write_files_93_94_unittitle.text = "1993-1994 Write Files"
+write_files_93_94_physdesc = etree.SubElement(write_files_93_94_did, "physdesc")
+write_files_93_94_physdesc.attrib["altrender"] = "whole"
+write_files_93_94_extent = etree.SubElement(write_files_93_94_physdesc, "extent")
+write_files_93_94_extent.attrib["altrender"] = "materialtype spaceoccupied"
+write_files_93_94_extent.text = "114 digital files" # <-- will need to be updated
+write_files_93_94_accessrestrict = etree.SubElement(write_files_93_94_c04, "accessrestrict")
+write_files_93_94_accessrestrict_p = etree.SubElement(write_files_93_94_accessrestrict, "p")
+write_files_93_94_accessrestrict_p.text = "RESTRICTED until "
+write_files_93_94_date = etree.SubElement(write_files_93_94_accessrestrict_p, "date")
+write_files_93_94_date.attrib["type"] = "restriction"
+write_files_93_94_date.attrib["normal"] = "2030-07-01"
+write_files_93_94_date.text = "July 1, 2030"
+
+# populate 1993-1994 write files subseries
+for sorted_metadatum in sorted_metadata:
+
+    if sorted_metadatum["unittitle"].startswith("Digital Documents" + " - " + "University of Michigan Presidency, 1986-1997" + " - " + "Write Files" + " - " + "1993-1994 Write Files"):
+        
+        print "Creating XML for " + sorted_metadatum["unittitle"] + "..."
+        
+        sorted_metadatum_c05 = etree.SubElement(write_files_93_94_c04, "c05")
+        sorted_metadatum_c05.attrib["level"] = "file"
+        sorted_metadatum_did = etree.SubElement(sorted_metadatum_c03, "did")
+        sorted_metadatum_physloc = etree.SubElement(sorted_metadatum_did, "physloc")
+        sorted_metadatum_physloc.text = "Online"
+        sorted_metadatum_unittitle = etree.SubElement(sorted_metadatum_did, "unittitle")
+        sorted_metadatum_unittitle.text = sorted_metadatum["unittitle"].decode("utf-8") + ", "
+        sorted_metadatum_unitdate = etree.SubElement(sorted_metadatum_unittitle, "unitdate")
+        sorted_metadatum_unitdate.text = sorted_metadatum["unitdate"]
+        sorted_metadatum_unitdate.attrib["type"] = "inclusive"
+        sorted_metadatum_unitdate.attrib["normal"] = sorted_metadatum["unitdate"]   
+        sorted_metadatum_physdesc = etree.SubElement(sorted_metadatum_did, "physdesc")
+        sorted_metadatum_physfacet = etree.SubElement(sorted_metadatum_physdesc, "physfacet")
+        sorted_metadatum_physfacet.text = sorted_metadatum["physfacet"]
+        sorted_metadatum_dao = etree.SubElement(sorted_metadatum_did, "dao")
+        sorted_metadatum_dao.attrib["show"] = "new"
+        sorted_metadatum_dao.attrib["actuate"] = "onrequest"
+        sorted_metadatum_dao.attrib["href"] = sorted_metadatum["dao"]
+        sorted_metadatum_daodesc = etree.SubElement(sorted_metadatum_dao, "daodesc")
+        sorted_metadatum_daodesc_p = etree.SubElement(sorted_metadatum_daodesc, "p")
+        sorted_metadatum_daodesc_p.text = "[view item]"
+        if "accessrestrict" in sorted_metadatum:
+            sorted_metadatum_accessrestrict = etree.SubElement(sorted_metadatum_c03, "accessrestrict")
+            sorted_metadatum_accessrestrict_p = etree.SubElement(sorted_metadatum_accessrestrict, "p")
+            sorted_metadatum_accessrestrict_p.text = sorted_metadatum["accessrestrict"]
+
+# build out 1994-1995 write files subseries
+write_files_94_95_c04 = etree.SubElement(write_files_c03, "c04")
+write_files_94_95_c04.attrib["level"] = "subseries"
+write_files_94_95_did = etree.SubElement(write_files_94_95_c04, "did")
+write_files_94_95_physloc = etree.SubElement(write_files_94_95_did, "physloc")
+write_files_94_95_physloc.text = "Online"
+write_files_94_95_unittitle = etree.SubElement(write_files_94_95_did, "unittitle")
+write_files_94_95_unittitle.text = "1994-1995 Write Files"
+write_files_94_95_physdesc = etree.SubElement(write_files_94_95_did, "physdesc")
+write_files_94_95_physdesc.attrib["altrender"] = "whole"
+write_files_94_95_extent = etree.SubElement(write_files_94_95_physdesc, "extent")
+write_files_94_95_extent.attrib["altrender"] = "materialtype spaceoccupied"
+write_files_94_95_extent.text = "55 digital files" # <-- will need to be updated
+write_files_94_95_accessrestrict = etree.SubElement(write_files_94_95_c04, "accessrestrict")
+write_files_94_95_accessrestrict_p = etree.SubElement(write_files_94_95_accessrestrict, "p")
+write_files_94_95_accessrestrict_p.text = "RESTRICTED until "
+write_files_94_95_date = etree.SubElement(write_files_94_95_accessrestrict_p, "date")
+write_files_94_95_date.attrib["type"] = "restriction"
+write_files_94_95_date.attrib["normal"] = "2030-07-01"
+write_files_94_95_date.text = "July 1, 2030"
+
+# populate 1994-1995 write files subseries
+for sorted_metadatum in sorted_metadata:
+
+    if sorted_metadatum["unittitle"].startswith("Digital Documents" + " - " + "University of Michigan Presidency, 1986-1997" + " - " + "Write Files" + " - " + "1994-1995 Write Files"):
+        
+        print "Creating XML for " + sorted_metadatum["unittitle"] + "..."
+        
+        sorted_metadatum_c05 = etree.SubElement(write_files_94_95_c04, "c05")
+        sorted_metadatum_c05.attrib["level"] = "file"
+        sorted_metadatum_did = etree.SubElement(sorted_metadatum_c03, "did")
+        sorted_metadatum_physloc = etree.SubElement(sorted_metadatum_did, "physloc")
+        sorted_metadatum_physloc.text = "Online"
+        sorted_metadatum_unittitle = etree.SubElement(sorted_metadatum_did, "unittitle")
+        sorted_metadatum_unittitle.text = sorted_metadatum["unittitle"].decode("utf-8") + ", "
+        sorted_metadatum_unitdate = etree.SubElement(sorted_metadatum_unittitle, "unitdate")
+        sorted_metadatum_unitdate.text = sorted_metadatum["unitdate"]
+        sorted_metadatum_unitdate.attrib["type"] = "inclusive"
+        sorted_metadatum_unitdate.attrib["normal"] = sorted_metadatum["unitdate"]   
+        sorted_metadatum_physdesc = etree.SubElement(sorted_metadatum_did, "physdesc")
+        sorted_metadatum_physfacet = etree.SubElement(sorted_metadatum_physdesc, "physfacet")
+        sorted_metadatum_physfacet.text = sorted_metadatum["physfacet"]
+        sorted_metadatum_dao = etree.SubElement(sorted_metadatum_did, "dao")
+        sorted_metadatum_dao.attrib["show"] = "new"
+        sorted_metadatum_dao.attrib["actuate"] = "onrequest"
+        sorted_metadatum_dao.attrib["href"] = sorted_metadatum["dao"]
+        sorted_metadatum_daodesc = etree.SubElement(sorted_metadatum_dao, "daodesc")
+        sorted_metadatum_daodesc_p = etree.SubElement(sorted_metadatum_daodesc, "p")
+        sorted_metadatum_daodesc_p.text = "[view item]"
+        if "accessrestrict" in sorted_metadatum:
+            sorted_metadatum_accessrestrict = etree.SubElement(sorted_metadatum_c03, "accessrestrict")
+            sorted_metadatum_accessrestrict_p = etree.SubElement(sorted_metadatum_accessrestrict, "p")
+            sorted_metadatum_accessrestrict_p.text = sorted_metadatum["accessrestrict"]
+            
+# build out 1995-1996 write files subseries
+write_files_95_96_c04 = etree.SubElement(write_files_c03, "c04")
+write_files_95_96_c04.attrib["level"] = "subseries"
+write_files_95_96_did = etree.SubElement(write_files_95_96_c04, "did")
+write_files_95_96_physloc = etree.SubElement(write_files_95_96_did, "physloc")
+write_files_95_96_physloc.text = "Online"
+write_files_95_96_unittitle = etree.SubElement(write_files_95_96_did, "unittitle")
+write_files_95_96_unittitle.text = "1995-1996 Write Files"
+write_files_95_96_physdesc = etree.SubElement(write_files_95_96_did, "physdesc")
+write_files_95_96_physdesc.attrib["altrender"] = "whole"
+write_files_95_96_extent = etree.SubElement(write_files_95_96_physdesc, "extent")
+write_files_95_96_extent.attrib["altrender"] = "materialtype spaceoccupied"
+write_files_95_96_extent.text = "75 digital files" # <-- will need to be updated
+write_files_95_96_accessrestrict = etree.SubElement(write_files_95_96_c04, "accessrestrict")
+write_files_95_96_accessrestrict_p = etree.SubElement(write_files_95_96_accessrestrict, "p")
+write_files_95_96_accessrestrict_p.text = "RESTRICTED until "
+write_files_95_96_date = etree.SubElement(write_files_95_96_accessrestrict_p, "date")
+write_files_95_96_date.attrib["type"] = "restriction"
+write_files_95_96_date.attrib["normal"] = "2030-07-01"
+write_files_95_96_date.text = "July 1, 2030"
+
+# populate 1995-1996 write files subseries
+for sorted_metadatum in sorted_metadata:
+
+    if sorted_metadatum["unittitle"].startswith("Digital Documents" + " - " + "University of Michigan Presidency, 1986-1997" + " - " + "Write Files" + " - " + "1995-1996 Write Files"):
+        
+        print "Creating XML for " + sorted_metadatum["unittitle"] + "..."
+        
+        sorted_metadatum_c05 = etree.SubElement(write_files_95_96_c04, "c05")
+        sorted_metadatum_c05.attrib["level"] = "file"
+        sorted_metadatum_did = etree.SubElement(sorted_metadatum_c03, "did")
+        sorted_metadatum_physloc = etree.SubElement(sorted_metadatum_did, "physloc")
+        sorted_metadatum_physloc.text = "Online"
+        sorted_metadatum_unittitle = etree.SubElement(sorted_metadatum_did, "unittitle")
+        sorted_metadatum_unittitle.text = sorted_metadatum["unittitle"].decode("utf-8") + ", "
+        sorted_metadatum_unitdate = etree.SubElement(sorted_metadatum_unittitle, "unitdate")
+        sorted_metadatum_unitdate.text = sorted_metadatum["unitdate"]
+        sorted_metadatum_unitdate.attrib["type"] = "inclusive"
+        sorted_metadatum_unitdate.attrib["normal"] = sorted_metadatum["unitdate"]   
+        sorted_metadatum_physdesc = etree.SubElement(sorted_metadatum_did, "physdesc")
+        sorted_metadatum_physfacet = etree.SubElement(sorted_metadatum_physdesc, "physfacet")
+        sorted_metadatum_physfacet.text = sorted_metadatum["physfacet"]
+        sorted_metadatum_dao = etree.SubElement(sorted_metadatum_did, "dao")
+        sorted_metadatum_dao.attrib["show"] = "new"
+        sorted_metadatum_dao.attrib["actuate"] = "onrequest"
+        sorted_metadatum_dao.attrib["href"] = sorted_metadatum["dao"]
+        sorted_metadatum_daodesc = etree.SubElement(sorted_metadatum_dao, "daodesc")
+        sorted_metadatum_daodesc_p = etree.SubElement(sorted_metadatum_daodesc, "p")
+        sorted_metadatum_daodesc_p.text = "[view item]"
+        if "accessrestrict" in sorted_metadatum:
+            sorted_metadatum_accessrestrict = etree.SubElement(sorted_metadatum_c03, "accessrestrict")
+            sorted_metadatum_accessrestrict_p = etree.SubElement(sorted_metadatum_accessrestrict, "p")
+            sorted_metadatum_accessrestrict_p.text = sorted_metadatum["accessrestrict"]
+
+# build out 1996-1997 write files subseries
+write_files_96_97_c04 = etree.SubElement(write_files_c03, "c04")
+write_files_96_97_c04.attrib["level"] = "subseries"
+write_files_96_97_did = etree.SubElement(write_files_96_97_c04, "did")
+write_files_96_97_physloc = etree.SubElement(write_files_96_97_did, "physloc")
+write_files_96_97_physloc.text = "Online"
+write_files_96_97_unittitle = etree.SubElement(write_files_96_97_did, "unittitle")
+write_files_96_97_unittitle.text = "1996-1997 Write Files"
+write_files_96_97_physdesc = etree.SubElement(write_files_96_97_did, "physdesc")
+write_files_96_97_physdesc.attrib["altrender"] = "whole"
+write_files_96_97_extent = etree.SubElement(write_files_96_97_physdesc, "extent")
+write_files_96_97_extent.attrib["altrender"] = "materialtype spaceoccupied"
+write_files_96_97_extent.text = "8 digital files" # <-- will need to be updated
+write_files_96_97_accessrestrict = etree.SubElement(write_files_96_97_c04, "accessrestrict")
+write_files_96_97_accessrestrict_p = etree.SubElement(write_files_96_97_accessrestrict, "p")
+write_files_96_97_accessrestrict_p.text = "RESTRICTED until "
+write_files_96_97_date = etree.SubElement(write_files_96_97_accessrestrict_p, "date")
+write_files_96_97_date.attrib["type"] = "restriction"
+write_files_96_97_date.attrib["normal"] = "2030-07-01"
+write_files_96_97_date.text = "July 1, 2030"
+
+# populate 1996-1997 write files subseries
+for sorted_metadatum in sorted_metadata:
+
+    if sorted_metadatum["unittitle"].startswith("Digital Documents" + " - " + "University of Michigan Presidency, 1986-1997" + " - " + "Write Files" + " - " + "1996-1997 Write Files"):
+        
+        print "Creating XML for " + sorted_metadatum["unittitle"] + "..."
+        
+        sorted_metadatum_c05 = etree.SubElement(write_files_96_97_c04, "c05")
+        sorted_metadatum_c05.attrib["level"] = "file"
+        sorted_metadatum_did = etree.SubElement(sorted_metadatum_c03, "did")
+        sorted_metadatum_physloc = etree.SubElement(sorted_metadatum_did, "physloc")
+        sorted_metadatum_physloc.text = "Online"
+        sorted_metadatum_unittitle = etree.SubElement(sorted_metadatum_did, "unittitle")
+        sorted_metadatum_unittitle.text = sorted_metadatum["unittitle"].decode("utf-8") + ", "
+        sorted_metadatum_unitdate = etree.SubElement(sorted_metadatum_unittitle, "unitdate")
+        sorted_metadatum_unitdate.text = sorted_metadatum["unitdate"]
+        sorted_metadatum_unitdate.attrib["type"] = "inclusive"
+        sorted_metadatum_unitdate.attrib["normal"] = sorted_metadatum["unitdate"]   
+        sorted_metadatum_physdesc = etree.SubElement(sorted_metadatum_did, "physdesc")
+        sorted_metadatum_physfacet = etree.SubElement(sorted_metadatum_physdesc, "physfacet")
+        sorted_metadatum_physfacet.text = sorted_metadatum["physfacet"]
+        sorted_metadatum_dao = etree.SubElement(sorted_metadatum_did, "dao")
+        sorted_metadatum_dao.attrib["show"] = "new"
+        sorted_metadatum_dao.attrib["actuate"] = "onrequest"
+        sorted_metadatum_dao.attrib["href"] = sorted_metadatum["dao"]
+        sorted_metadatum_daodesc = etree.SubElement(sorted_metadatum_dao, "daodesc")
+        sorted_metadatum_daodesc_p = etree.SubElement(sorted_metadatum_daodesc, "p")
+        sorted_metadatum_daodesc_p.text = "[view item]"
+        if "accessrestrict" in sorted_metadatum:
+            sorted_metadatum_accessrestrict = etree.SubElement(sorted_metadatum_c03, "accessrestrict")
+            sorted_metadatum_accessrestrict_p = etree.SubElement(sorted_metadatum_accessrestrict, "p")
+            sorted_metadatum_accessrestrict_p.text = sorted_metadatum["accessrestrict"]
 
 # build out legacy series
 legacy_c03 = etree.SubElement(umich_presidency_c02, "c03")
 legacy_c03.attrib["level"] = "series"
 legacy_did = etree.SubElement(legacy_c03, "did")
 legacy_unittitle = etree.SubElement(legacy_did, "unittitle")
-legacy_unittitle.text = "" + ", "
+legacy_unittitle.text = "Legacy" + ", "
 legacy_unitdate = etree.SubElement(legacy_unittitle, "unitdate")
-legacy_unitdate.text = "YYYY-YYYY"
+legacy_unitdate.text = "circa 1996"
 legacy_unitdate.attrib["type"] = "inclusive"
-legacy_unitdate.attrib["normal"] = "YYYY/YYYY"
+legacy_unitdate.attrib["normal"] = "1996"
+legacy_unitdate.attrib["certainty"] = "approximate"
 legacy_physdesc = etree.SubElement(legacy_did, "physdesc")
 legacy_physdesc.attrib["altrender"] = "whole"
 legacy_extent = etree.SubElement(legacy_physdesc, "extent")
 legacy_extent.attrib["altrender"] = "materialtype spaceoccupied"
-legacy_extent.text = "328 digital files" # <-- will need to be updated
+legacy_extent.text = "36 digital files" # <-- will need to be updated
 legacy_scopecontent = etree.SubElement(legacy_c03, "scopecontent")
 legacy_scopecontent_p = etree.SubElement(legacy_scopecontent, "p")
-legacy_scopecontent_p.text = ""
+legacy_scopecontent_p.text = "The Legacy Documents series (36 digital files, ca. 1996) contains the drafts of the digital records that resulted in a number of printed publications written by Duderstadt together entitled 'Legacy Documents.' The files in the 'Sunflower' sub-folder are those files that resulted in the publication entitled 'A Growing Season: A Report from the President . . .The University of Michigan, 1986-1996.' A complete set of printed 'Legacy' documents including 'A Growing Season...' is in the Paper Documents series Publications."
+
+# build out 1996 subseries
+legacy_96_c04 = etree.SubElement(presentations_c03, "c04")
+legacy_96_c04.attrib["level"] = "subseries"
+legacy_96_did = etree.SubElement(legacy_96_c04, "did")
+legacy_96_physloc = etree.SubElement(legacy_96_did, "physloc")
+legacy_96_physloc.text = "Online"
+legacy_96_unittitle = etree.SubElement(legacy_96_did, "unittitle")
+legacy_96_unittitle.text = "1996"
+legacy_96_physdesc = etree.SubElement(legacy_96_did, "physdesc")
+legacy_96_physdesc.attrib["altrender"] = "whole"
+legacy_96_extent = etree.SubElement(legacy_96_physdesc, "extent")
+legacy_96_extent.attrib["altrender"] = "materialtype spaceoccupied"
+legacy_96_extent.text = "36 digital files" # <-- will need to be updated
+
+# populate 1996 subseries
+for sorted_metadatum in sorted_metadata:
+
+    if sorted_metadatum["unittitle"].startswith("Digital Documents" + " - " + "University of Michigan Presidency, 1986-1997" + " - " + "Legacy" + " - " + "1996"):
+        
+        print "Creating XML for " + sorted_metadatum["unittitle"] + "..."
+        
+        sorted_metadatum_c05 = etree.SubElement(legacy_96_c04, "c05")
+        sorted_metadatum_c05.attrib["level"] = "file"
+        sorted_metadatum_did = etree.SubElement(sorted_metadatum_c03, "did")
+        sorted_metadatum_physloc = etree.SubElement(sorted_metadatum_did, "physloc")
+        sorted_metadatum_physloc.text = "Online"
+        sorted_metadatum_unittitle = etree.SubElement(sorted_metadatum_did, "unittitle")
+        sorted_metadatum_unittitle.text = sorted_metadatum["unittitle"].decode("utf-8") + ", "
+        sorted_metadatum_unitdate = etree.SubElement(sorted_metadatum_unittitle, "unitdate")
+        sorted_metadatum_unitdate.text = sorted_metadatum["unitdate"]
+        sorted_metadatum_unitdate.attrib["type"] = "inclusive"
+        sorted_metadatum_unitdate.attrib["normal"] = sorted_metadatum["unitdate"]   
+        sorted_metadatum_physdesc = etree.SubElement(sorted_metadatum_did, "physdesc")
+        sorted_metadatum_physfacet = etree.SubElement(sorted_metadatum_physdesc, "physfacet")
+        sorted_metadatum_physfacet.text = sorted_metadatum["physfacet"]
+        sorted_metadatum_dao = etree.SubElement(sorted_metadatum_did, "dao")
+        sorted_metadatum_dao.attrib["show"] = "new"
+        sorted_metadatum_dao.attrib["actuate"] = "onrequest"
+        sorted_metadatum_dao.attrib["href"] = sorted_metadatum["dao"]
+        sorted_metadatum_daodesc = etree.SubElement(sorted_metadatum_dao, "daodesc")
+        sorted_metadatum_daodesc_p = etree.SubElement(sorted_metadatum_daodesc, "p")
+        sorted_metadatum_daodesc_p.text = "[view item]"
+        if "accessrestrict" in sorted_metadatum:
+            sorted_metadatum_accessrestrict = etree.SubElement(sorted_metadatum_c03, "accessrestrict")
+            sorted_metadatum_accessrestrict_p = etree.SubElement(sorted_metadatum_accessrestrict, "p")
+            sorted_metadatum_accessrestrict_p.text = sorted_metadatum["accessrestrict"]
 
 # build out digital images series
 digital_images_c03 = etree.SubElement(umich_presidency_c02, "c03")
 digital_images_c03.attrib["level"] = "series"
 digital_images_did = etree.SubElement(digital_images_c03, "did")
 digital_images_unittitle = etree.SubElement(digital_images_did, "unittitle")
-digital_images_unittitle.text = "" + ", "
+digital_images_unittitle.text = "Digital Images" + ", "
 digital_images_unitdate = etree.SubElement(digital_images_unittitle, "unitdate")
-digital_images_unitdate.text = "YYYY-YYYY"
+digital_images_unitdate.text = "circa 1996"
 digital_images_unitdate.attrib["type"] = "inclusive"
-digital_images_unitdate.attrib["normal"] = "YYYY/YYYY"
+digital_images_unitdate.attrib["normal"] = "1996"
+digital_images_unitdate.attrib["certainty"] = "approximate"
 digital_images_physdesc = etree.SubElement(digital_images_did, "physdesc")
 digital_images_physdesc.attrib["altrender"] = "whole"
 digital_images_extent = etree.SubElement(digital_images_physdesc, "extent")
 digital_images_extent.attrib["altrender"] = "materialtype spaceoccupied"
-digital_images_extent.text = "328 digital files" # <-- will need to be updated
+digital_images_extent.text = "55 digital files" # <-- will need to be updated
 digital_images_scopecontent = etree.SubElement(digital_images_c03, "scopecontent")
 digital_images_scopecontent_p = etree.SubElement(digital_images_scopecontent, "p")
-digital_images_scopecontent_p.text = ""
+digital_images_scopecontent_p.text = "The Digital Images series (55 digital files, ca. 1996) provides a look at the many buildings either newly constructed or renovated during Duderstadt's presidential tenure at Michigan. The Ann Arbor campus underwent major changes to the Central, North, Athletic, and Medical campuses. New construction projects include the Media Union, Cancer &amp; Geriatrics Center, Medical Science Research Building, Lurie Engineering Center and Bell Tower, Donald Canham Natatorium, and the Glenn E. Schembechler Hall. Major renovation and improvement projects include Angell Hall, CC Little, Chemistry Building, and Health Service. Included in this series are images of the buildings constructed on the U-M Dearborn and Flint campuses. A complete listing of all construction and renovation projects is highlighted in a special booklet titled 'Rebuilding the University, The University of Michigan 1986-1996.' A copy of this document is in the Paper Documents series Publications."
+
+# build out 1996 subseries
+digital_images_96_c04 = etree.SubElement(presentations_c03, "c04")
+digital_images_96_c04.attrib["level"] = "subseries"
+digital_images_96_did = etree.SubElement(digital_images_96_c04, "did")
+digital_images_96_physloc = etree.SubElement(digital_images_96_did, "physloc")
+digital_images_96_physloc.text = "Online"
+digital_images_96_unittitle = etree.SubElement(digital_images_96_did, "unittitle")
+digital_images_96_unittitle.text = "1996"
+digital_images_96_physdesc = etree.SubElement(digital_images_96_did, "physdesc")
+digital_images_96_physdesc.attrib["altrender"] = "whole"
+digital_images_96_extent = etree.SubElement(digital_images_96_physdesc, "extent")
+digital_images_96_extent.attrib["altrender"] = "materialtype spaceoccupied"
+digital_images_96_extent.text = "36 digital files" # <-- will need to be updated
+digital_images_96_accessrestrict = etree.SubElement(digital_images_96_c04, "accessrestrict")
+digital_images_96_accessrestrict_p = etree.SubElement(digital_images_96_accessrestrict, "p")
+digital_images_96_accessrestrict_p.text = "RESTRICTED until "
+digital_images_96_date = etree.SubElement(digital_images_96_accessrestrict_p, "date")
+digital_images_96_date.attrib["type"] = "restriction"
+digital_images_96_date.attrib["normal"] = "2030-07-01"
+digital_images_96_date.text = "July 1, 2030"
+
+# populate 1996 subseries
+for sorted_metadatum in sorted_metadata:
+
+    if sorted_metadatum["unittitle"].startswith("Digital Documents" + " - " + "University of Michigan Presidency, 1986-1997" + " - " + "Digital Images" + " - " + "1996"):
+        
+        print "Creating XML for " + sorted_metadatum["unittitle"] + "..."
+        
+        sorted_metadatum_c05 = etree.SubElement(digital_images_96_c04, "c05")
+        sorted_metadatum_c05.attrib["level"] = "file"
+        sorted_metadatum_did = etree.SubElement(sorted_metadatum_c03, "did")
+        sorted_metadatum_physloc = etree.SubElement(sorted_metadatum_did, "physloc")
+        sorted_metadatum_physloc.text = "Online"
+        sorted_metadatum_unittitle = etree.SubElement(sorted_metadatum_did, "unittitle")
+        sorted_metadatum_unittitle.text = sorted_metadatum["unittitle"].decode("utf-8") + ", "
+        sorted_metadatum_unitdate = etree.SubElement(sorted_metadatum_unittitle, "unitdate")
+        sorted_metadatum_unitdate.text = sorted_metadatum["unitdate"]
+        sorted_metadatum_unitdate.attrib["type"] = "inclusive"
+        sorted_metadatum_unitdate.attrib["normal"] = sorted_metadatum["unitdate"]   
+        sorted_metadatum_physdesc = etree.SubElement(sorted_metadatum_did, "physdesc")
+        sorted_metadatum_physfacet = etree.SubElement(sorted_metadatum_physdesc, "physfacet")
+        sorted_metadatum_physfacet.text = sorted_metadatum["physfacet"]
+        sorted_metadatum_dao = etree.SubElement(sorted_metadatum_did, "dao")
+        sorted_metadatum_dao.attrib["show"] = "new"
+        sorted_metadatum_dao.attrib["actuate"] = "onrequest"
+        sorted_metadatum_dao.attrib["href"] = sorted_metadatum["dao"]
+        sorted_metadatum_daodesc = etree.SubElement(sorted_metadatum_dao, "daodesc")
+        sorted_metadatum_daodesc_p = etree.SubElement(sorted_metadatum_daodesc, "p")
+        sorted_metadatum_daodesc_p.text = "[view item]"
+        if "accessrestrict" in sorted_metadatum:
+            sorted_metadatum_accessrestrict = etree.SubElement(sorted_metadatum_c03, "accessrestrict")
+            sorted_metadatum_accessrestrict_p = etree.SubElement(sorted_metadatum_accessrestrict, "p")
+            sorted_metadatum_accessrestrict_p.text = sorted_metadatum["accessrestrict"]
 
 # build out faculty archives series
 faculty_archives_c02 = etree.SubElement(digital_docs_c01, "c02")
@@ -851,8 +2519,6 @@ faculty_archives_scopecontent_p.text = "Includes speeches, presentations, writin
 </c02>'''
 
 # populate faculty archives series
-sorted_metadata = sorted(metadata, key=itemgetter("unitdate"), reverse=False)
-
 for sorted_metadatum in sorted_metadata:
 
     if sorted_metadatum["unittitle"].startswith("Digital Documents" + " - " + "University of Michigan Presidency, 1986-1997"):

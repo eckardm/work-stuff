@@ -411,38 +411,179 @@
           </physdesc>
         </did>
       </c04>
+      <c04 level="subseries">
+        <did>
+          <physloc>Online</physloc>
+          <unittitle>1996</unittitle>
+          <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">36 digital files</extent>
+          </physdesc>
+        </did>
+      </c04>
+      <c04 level="subseries">
+        <did>
+          <physloc>Online</physloc>
+          <unittitle>1996</unittitle>
+          <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">36 digital files</extent>
+          </physdesc>
+        </did>
+        <accessrestrict>
+          <p>RESTRICTED until <date type="restriction" normal="2030-07-01">July 1, 2030</date></p>
+        </accessrestrict>
+      </c04>
     </c03>
     <c03 level="series">
       <did>
-        <unittitle>, <unitdate type="inclusive" normal="YYYY/YYYY">YYYY-YYYY</unitdate></unittitle>
+        <unittitle>Write Files, <unitdate type="inclusive" normal="1988/1997">1988-1997</unitdate></unittitle>
         <physdesc altrender="whole">
-          <extent altrender="materialtype spaceoccupied">328 digital files</extent>
+          <extent altrender="materialtype spaceoccupied">588 digital files</extent>
         </physdesc>
       </did>
       <scopecontent>
-        <p></p>
+        <p>The Write Files series (588 digital files, 1987-1997) is composed entirely of Microsoft Word text files. Researchers will find a variety of 'traditional' business formats such as correspondence, agendas, and memorandums contained within the Write Files series. However, note that there is often an absence of descriptive information, such as the receiver's name and address, date, and signature line. The absence of this information is a reflection of the distributive work process practiced in President Duderstadt's office--a process afforded by networked computer technology. The correspondence includes letters of recommendation, thank-you's, and communication to persons not only at the University of Michigan but to persons throughout the country including U.S. presidents Gerald Ford and George Bush and Michigan governors James Blanchard and John Engler. It is important to note that Duderstadt often used the recipient's name or initials to name the file. For example, 'Blanchard-1/89' and 'H &amp; V-11/10' are communications to Governor James Blanchard in January 1989 and Harold and Vivian Shapiro on November 10th respectively.</p>
+      </scopecontent>
+      <c04 level="subseries">
+        <did>
+          <physloc>Online</physloc>
+          <unittitle>1988 and earlier Write Files</unittitle>
+          <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">19 digital files</extent>
+          </physdesc>
+        </did>
+        <accessrestrict>
+          <p>RESTRICTED until <date type="restriction" normal="2030-07-01">July 1, 2030</date></p>
+        </accessrestrict>
+      </c04>
+      <c04 level="subseries">
+        <did>
+          <physloc>Online</physloc>
+          <unittitle>1988-1989 Write Files</unittitle>
+          <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">19 digital files</extent>
+          </physdesc>
+        </did>
+        <accessrestrict>
+          <p>RESTRICTED until <date type="restriction" normal="2030-07-01">July 1, 2030</date></p>
+        </accessrestrict>
+      </c04>
+      <c04 level="subseries">
+        <did>
+          <physloc>Online</physloc>
+          <unittitle>1989-1990 Write Files</unittitle>
+          <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">50 digital files</extent>
+          </physdesc>
+        </did>
+        <accessrestrict>
+          <p>RESTRICTED until <date type="restriction" normal="2030-07-01">July 1, 2030</date></p>
+        </accessrestrict>
+      </c04>
+      <c04 level="subseries">
+        <did>
+          <physloc>Online</physloc>
+          <unittitle>1990-1991 Write Files</unittitle>
+          <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">74 digital files</extent>
+          </physdesc>
+        </did>
+        <accessrestrict>
+          <p>RESTRICTED until <date type="restriction" normal="2030-07-01">July 1, 2030</date></p>
+        </accessrestrict>
+      </c04>
+      <c04 level="subseries">
+        <did>
+          <physloc>Online</physloc>
+          <unittitle>1991-1992 Write Files</unittitle>
+          <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">54 digital files</extent>
+          </physdesc>
+        </did>
+        <accessrestrict>
+          <p>RESTRICTED until <date type="restriction" normal="2030-07-01">July 1, 2030</date></p>
+        </accessrestrict>
+      </c04>
+      <c04 level="subseries">
+        <did>
+          <physloc>Online</physloc>
+          <unittitle>1992-1993 Write Files</unittitle>
+          <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">120 digital files</extent>
+          </physdesc>
+        </did>
+        <accessrestrict>
+          <p>RESTRICTED until <date type="restriction" normal="2030-07-01">July 1, 2030</date></p>
+        </accessrestrict>
+      </c04>
+      <c04 level="subseries">
+        <did>
+          <physloc>Online</physloc>
+          <unittitle>1993-1994 Write Files</unittitle>
+          <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">114 digital files</extent>
+          </physdesc>
+        </did>
+        <accessrestrict>
+          <p>RESTRICTED until <date type="restriction" normal="2030-07-01">July 1, 2030</date></p>
+        </accessrestrict>
+      </c04>
+      <c04 level="subseries">
+        <did>
+          <physloc>Online</physloc>
+          <unittitle>1994-1995 Write Files</unittitle>
+          <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">55 digital files</extent>
+          </physdesc>
+        </did>
+        <accessrestrict>
+          <p>RESTRICTED until <date type="restriction" normal="2030-07-01">July 1, 2030</date></p>
+        </accessrestrict>
+      </c04>
+      <c04 level="subseries">
+        <did>
+          <physloc>Online</physloc>
+          <unittitle>1995-1996 Write Files</unittitle>
+          <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">75 digital files</extent>
+          </physdesc>
+        </did>
+        <accessrestrict>
+          <p>RESTRICTED until <date type="restriction" normal="2030-07-01">July 1, 2030</date></p>
+        </accessrestrict>
+      </c04>
+      <c04 level="subseries">
+        <did>
+          <physloc>Online</physloc>
+          <unittitle>1996-1997 Write Files</unittitle>
+          <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">8 digital files</extent>
+          </physdesc>
+        </did>
+        <accessrestrict>
+          <p>RESTRICTED until <date type="restriction" normal="2030-07-01">July 1, 2030</date></p>
+        </accessrestrict>
+      </c04>
+    </c03>
+    <c03 level="series">
+      <did>
+        <unittitle>Legacy, <unitdate type="inclusive" normal="1996" certainty="approximate">circa 1996</unitdate></unittitle>
+        <physdesc altrender="whole">
+          <extent altrender="materialtype spaceoccupied">36 digital files</extent>
+        </physdesc>
+      </did>
+      <scopecontent>
+        <p>The Legacy Documents series (36 digital files, ca. 1996) contains the drafts of the digital records that resulted in a number of printed publications written by Duderstadt together entitled 'Legacy Documents.' The files in the 'Sunflower' sub-folder are those files that resulted in the publication entitled 'A Growing Season: A Report from the President . . .The University of Michigan, 1986-1996.' A complete set of printed 'Legacy' documents including 'A Growing Season...' is in the Paper Documents series Publications.</p>
       </scopecontent>
     </c03>
     <c03 level="series">
       <did>
-        <unittitle>, <unitdate type="inclusive" normal="YYYY/YYYY">YYYY-YYYY</unitdate></unittitle>
+        <unittitle>Digital Images, <unitdate type="inclusive" normal="1996" certainty="approximate">circa 1996</unitdate></unittitle>
         <physdesc altrender="whole">
-          <extent altrender="materialtype spaceoccupied">328 digital files</extent>
+          <extent altrender="materialtype spaceoccupied">55 digital files</extent>
         </physdesc>
       </did>
       <scopecontent>
-        <p></p>
-      </scopecontent>
-    </c03>
-    <c03 level="series">
-      <did>
-        <unittitle>, <unitdate type="inclusive" normal="YYYY/YYYY">YYYY-YYYY</unitdate></unittitle>
-        <physdesc altrender="whole">
-          <extent altrender="materialtype spaceoccupied">328 digital files</extent>
-        </physdesc>
-      </did>
-      <scopecontent>
-        <p></p>
+        <p>The Digital Images series (55 digital files, ca. 1996) provides a look at the many buildings either newly constructed or renovated during Duderstadt's presidential tenure at Michigan. The Ann Arbor campus underwent major changes to the Central, North, Athletic, and Medical campuses. New construction projects include the Media Union, Cancer &amp;amp; Geriatrics Center, Medical Science Research Building, Lurie Engineering Center and Bell Tower, Donald Canham Natatorium, and the Glenn E. Schembechler Hall. Major renovation and improvement projects include Angell Hall, CC Little, Chemistry Building, and Health Service. Included in this series are images of the buildings constructed on the U-M Dearborn and Flint campuses. A complete listing of all construction and renovation projects is highlighted in a special booklet titled 'Rebuilding the University, The University of Michigan 1986-1996.' A copy of this document is in the Paper Documents series Publications.</p>
       </scopecontent>
     </c03>
   </c02>
