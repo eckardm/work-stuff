@@ -27,6 +27,23 @@ with open("deepBlue_9811_0001.csv", mode="wb") as metadata_csv:
 
 information_packages = pickle.load(open("information_packages.p", mode="rb"))
 
+print "Collecting information to make the DC.FILENAME.DESCRIPTION the FORMAT_NAME from DROID report or 'Original format not identified' from DROID for all original files..."
+
+file_path_and_format_name = {}
+
+with open("DROID_9811_0003.csv", mode="rb") as droid_report:
+    reader = csv.DictReader(droid_report)
+    for row in reader:
+        file_path = row["FILE_PATH"]
+        format_name = row["FORMAT_NAME"]
+        if len(format_name) == 0:
+            format_name = "Original version: Original format not identified"
+        if format_name != "Original version: Original format not identified":
+            format_name = "Original version: " + format_name
+        file_path_and_format_name[file_path] = format_name
+        
+print "Making DeepBlue metadata..."
+        
 counter = 1
 
 for information_package in information_packages:
@@ -73,17 +90,23 @@ for information_package in information_packages:
     # if original and not preservation
     if information_package.get("original", "") != "n/a" and information_package.get("preservation", "") == "n/a":
         dc_title_filename = information_package.get("original", "")
-        dc_description_filename = ""
+        try:
+            dc_description_filename = file_path_and_format_name[information_package["original_location"]]
+        except:
+            dc_description_filename = "Original version: Original format not identified"
         location = information_package.get("original_location", "").replace("C:\Users\eckardm\work-stuff\duderstadt", "")
     # if original and preservation and not autopro
     if information_package.get("original", "") != "n/a" and information_package.get("preservation", "") != "n/a" and information_package.get("autopro", "") == "n/a": 
         dc_title_filename = information_package.get("original", "") + " | " + information_package.get("preservation", "")
-        dc_description_filename = "Original version | Preservation version"
+        try:
+            dc_description_filename = file_path_and_format_name[information_package["original_location"]] + " | Preservation version"
+        except:
+            dc_description_filename = "Original version: Original format not identified" + " | Preservation version"
         location = information_package.get("original_location", "").replace("C:\Users\eckardm\work-stuff\duderstadt", "") + " | " + information_package.get("preservation_location", "").replace("C:\Users\eckardm\work-stuff\duderstadt", "")
     # if original and preservation and autopro
     if information_package.get("original", "") != "n/a" and information_package.get("preservation", "") != "n/a" and information_package.get("autopro", "") != "n/a":
         dc_title_filename = information_package.get("original", "") + " | " + information_package.get("preservation", "") + " | " + information_package.get("autopro", "")
-        dc_description_filename = "Original version | Preservation version | Subsequent preservation version"
+        dc_description_filename = file_path_and_format_name[information_package["original_location"]] + " | Preservation version | Subsequent preservation version"
         location = information_package.get("original_location", "").replace("C:\Users\eckardm\work-stuff\duderstadt", "") + " | " + information_package.get("preservation_location", "").replace("C:\Users\eckardm\work-stuff\duderstadt", "") +  " | " + information_package.get("autopro_location", "").replace("C:\Users\eckardm\work-stuff\duderstadt", "")
     # if not original and one preservation and not autopro
     if information_package.get("original", "") == "n/a" and " | " not in information_package.get("preservation", "") and information_package.get("autopro", "") == "n/a":
