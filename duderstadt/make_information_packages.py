@@ -281,24 +281,6 @@ for key, value in autoprod_speeches_that_go_together.iteritems():
 for speech in speeches:
     information_packages.append(speech)
         
-# temp
-import csv
-with open("temp.csv", mode="wb") as temp:
-        writer = csv.writer(temp)
-        writer.writerow([
-            "series", 
-            "subseries", 
-            "accessrestrict", 
-            "unittitle", 
-            "original", 
-            "original_location", 
-            "unitdate", 
-            "preservation", 
-            "preservation_location",
-            "autopro",
-            "autopro_location"
-        ])
-
 for information_package in information_packages:
     with open("temp.csv", mode="ab") as temp:
         writer = csv.writer(temp)
