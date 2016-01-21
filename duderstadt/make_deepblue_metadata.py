@@ -93,7 +93,7 @@ for information_package in information_packages:
         try:
             dc_description_filename = file_path_and_format_name[information_package["original_location"]]
         except:
-            dc_description_filename = "Original version: Original format not identified"
+            dc_description_filename = "Original version: Original format not identified" # <-- I manually checked these...
         location = information_package.get("original_location", "").replace("C:\Users\eckardm\work-stuff\duderstadt", "")
     # if original and preservation and not autopro
     if information_package.get("original", "") != "n/a" and information_package.get("preservation", "") != "n/a" and information_package.get("autopro", "") == "n/a": 
@@ -101,7 +101,7 @@ for information_package in information_packages:
         try:
             dc_description_filename = file_path_and_format_name[information_package["original_location"]] + " | Preservation version"
         except:
-            dc_description_filename = "Original version: Original format not identified" + " | Preservation version"
+            dc_description_filename = "Original version: Original format not identified" + " | Preservation version" # <-- I manually checked these...
         location = information_package.get("original_location", "").replace("C:\Users\eckardm\work-stuff\duderstadt", "") + " | " + information_package.get("preservation_location", "").replace("C:\Users\eckardm\work-stuff\duderstadt", "")
     # if original and preservation and autopro
     if information_package.get("original", "") != "n/a" and information_package.get("preservation", "") != "n/a" and information_package.get("autopro", "") != "n/a":
