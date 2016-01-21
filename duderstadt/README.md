@@ -1,3 +1,10 @@
+The Zombie Project
+==================
+
+![George A. Romero's Night of the Living Dead is considered a progenitor of the fictional zombie of modern culture.](https://upload.wikimedia.org/wikipedia/commons/5/56/Zombies_NightoftheLivingDead.jpg)
+
+Because it never dies!
+
 This is a legacy cleanup-type project. We had some files taken from CDs belonging to Duderstadt. Some of these got processed for a FOIA request and put online. This project attempts to reconcile all of the legacy data (account for and update what got processed, account for and attempt to process what didn't get processed, and account for everything else he's added since then).
 
 Do the heavy lifting in these parts:
