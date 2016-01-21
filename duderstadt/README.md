@@ -12,7 +12,7 @@ Do the heavy lifting in these parts:
     * original
     * original_location
     * unitdate
-    * preservation
+    * preservation (best that can be done here using fuzzywuzzy)
     * preservation_location
     * autopro
     * autopro_location
