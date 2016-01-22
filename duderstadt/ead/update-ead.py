@@ -77,7 +77,7 @@ def make_c03_series(unittitle_text, unitdate_text, extent_text, scopecontent_p1_
     else:
         unitdate.attrib["normal"] = unitdate_text.replace("circa ", "")
     if unitdate_text.startswith("circa"):
-        unitdate.attrib["certainty"] = "approximate"
+        unitdate.attrib["certainty"] = "Approximate"
     physdesc = etree.SubElement(did, "physdesc")
     physdesc.attrib["altrender"] = "whole"
     extent = etree.SubElement(physdesc, "extent")
