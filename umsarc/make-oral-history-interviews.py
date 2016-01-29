@@ -29,7 +29,10 @@ for name in oral_history_interviews:
         if len(interviewer) > 0:
             metadata_dict["interviewer"] = interviewer        
             
-        date = ""
+        date = soup.find(text="Date: ")
+        if date:
+            date = date.parent.parent.find_next_siblings("td")[0].text.strip()
+            metadata_dict["date"] = date
         
         suggested_citation = ""
         
