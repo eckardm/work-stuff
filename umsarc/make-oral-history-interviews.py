@@ -1,5 +1,6 @@
 import os
 from bs4 import BeautifulSoup
+import re
 
 oral_history_interviews = [name for name in os.listdir("substance.abuse.history") if "oral_history_interviews&findAll=true&mode=single&recordID=" in name and "&nextMode=list" not in name]
 
@@ -19,7 +20,10 @@ for name in oral_history_interviews:
             interviewee = "Jewell Sloan (University of Kentucky)"
         metadata_dict["interviewee"] = interviewee  
         
-        biographical_note = ""
+        biographical_note = soup.find(text=re.compile("^Biographical"))
+        if biographical_note:
+            biographical_note = biographical_note.parent.parent.find_next_siblings("td")[0].encode("utf-8")
+            metadata_dict["biographical_note"] = biographical_note
         
         interviewer = soup.find(text="Interviewer(s): ").parent.parent.find_next_siblings("td")[0].text.strip()
         if len(interviewer) > 0:
