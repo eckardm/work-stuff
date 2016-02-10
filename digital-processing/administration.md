@@ -27,4 +27,4 @@ See the following explanation of processing configuration choices:
   * **Store AIP location** should be checked and set to **aip storage (bhl-archivematica)**. This is managed by MLibrary.
   * **Store DIP location** should not be checked. It is not applicable as we will not be creating DIPs.
   
-**Administration** | [Transfer](transfer.md) | [Appraisal](appraisal.md) | [Ingest](ingest.md)
+**Administration** | [Appraisal](appraisal.md) | [Ingest](ingest.md)
