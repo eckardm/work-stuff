@@ -1,7 +1,7 @@
 Administration
 ==============
 
-The Processing Configuration page of the Administration tab provides archivists with an easy form to configure processing defaultsfor a transfer or SIP. Changing the options using the web interface will write the necessary XML behind the scenes.
+The Processing Configuration page of the Administration tab provides archivists with an easy form to configure processing defaults for a transfer or SIP. Changing the options using the web interface will write the necessary XML behind the scenes.
 
 ![Processing Configuration](processing-configuration.png)
 
@@ -21,9 +21,9 @@ See the following explanation of processing configuration choices:
   * **Select file format identification command (Transfer)** should be checked and set to **Seigfried version 1.0.0 PUID runs Identify using Siegfried**. Siegfried, while slower, especially for larger files, is sometimes more accurate than FIDO and is better at recognizing contaner formats, such as the Office Open XML format.
   * **Select file format identification command (Ingest)** should be checked and set to **Seigfried version 1.0.0 PUID runs Identify using Siegfried**. See above.
   * **Select file format identification command (Submission documentation & metadata)** should be checked and be set to **Seigfried version 1.0.0 PUID runs Identify using Siegfried**. See above.
-  * **Delete packages after extraction** should be checked and set to *Yes*, as we're most interested in preserving what's contained in the packages, not the packages themselves.
+  * **Delete packages after extraction** should be checked and set to **Yes**, as we're most interested in preserving what's contained in the packages, not the packages themselves.
   * **Select compression algorithm** should be checked and set to **Uncompressed**. Compression adds a layer of complexity to an AIP, making it harder to preserve, and will only be considered if storage becomes an issue.
-  * **Select compressing level ** should not be checked. It is not applicable because we will not be compressing AIPs.
+  * **Select compressing level** should not be checked. It is not applicable because we will not be compressing AIPs.
   * **Store AIP location** should be checked and set to **aip storage (bhl-archivematica)**. This is managed by MLibrary.
   * **Store DIP location** should not be checked. It is not applicable as we will not be creating DIPs.
   
