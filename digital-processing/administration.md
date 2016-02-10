@@ -1,14 +1,30 @@
 Administration
 ==============
 
-Sesame snaps jelly croissant biscuit cotton candy lollipop gingerbread oat cake carrot cake. Wafer tiramisu cookie apple pie. Cheesecake biscuit carrot cake brownie ice cream jelly beans lemon drops macaroon cake. Wafer donut sweet caramels lollipop oat cake gingerbread. Biscuit carrot cake chupa chups. Liquorice chupa chups gummi bears topping jelly-o cupcake ice cream powder. Ice cream topping dessert wafer cheesecake tart caramels. Brownie carrot cake cake cupcake gummi bears sweet roll topping. Marshmallow tart chocolate cake. Jelly fruitcake soufflé candy caramels pie halvah. Pudding cake cake candy canes. Jelly beans jelly-o pie jelly-o chocolate. Tootsie roll danish soufflé pastry.
+The Processing Configuration page of the Administration tab provides archivists with an easy form to configure processing defaultsfor a transfer or SIP. Changing the options using the web interface will write the necessary XML behind the scenes.
 
-Fruitcake jujubes bear claw cupcake donut halvah macaroon halvah. Bear claw tart pudding pudding marshmallow jelly-o. Apple pie tootsie roll cotton candy caramels chocolate. Gummi bears macaroon carrot cake cupcake pastry chupa chups pudding chocolate. Danish cheesecake chocolate jujubes. Bear claw topping chocolate. Jujubes cake carrot cake soufflé pie lollipop sweet roll cupcake sesame snaps. Gingerbread biscuit oat cake. Powder candy canes wafer candy canes. Cookie chupa chups jujubes ice cream halvah sesame snaps. Tiramisu marzipan powder dragée. Gummies marshmallow chupa chups carrot cake.
+![Processing Configuration](processing-configuration.png)
 
-Oat cake donut brownie bear claw ice cream gummies marshmallow powder macaroon. Biscuit jelly cake muffin chocolate bar. Candy bonbon lemon drops gummies caramels cake cookie cookie icing. Jujubes cotton candy powder chupa chups cupcake cupcake. Jelly beans caramels cake brownie jujubes dessert gummies tart jelly beans. Tart tart croissant bonbon pudding sesame snaps. Toffee topping soufflé gummi bears chocolate cake marzipan. Sugar plum bonbon bonbon caramels jelly beans. Donut apple pie brownie jelly-o dragée oat cake bonbon tart. Wafer carrot cake chocolate halvah chocolate bar jelly-o. Cupcake gingerbread jelly jelly halvah tootsie roll wafer jelly. Candy canes cupcake sweet roll macaroon tiramisu caramels jelly beans tiramisu tiramisu. Sesame snaps cupcake toffee toffee cookie brownie.
+See the following explanation of processing configuration choices:
 
-Jelly beans brownie sweet biscuit sweet roll pastry. Dragée halvah candy canes toffee gingerbread liquorice. Macaroon tart icing marzipan croissant pie muffin jujubes. Tiramisu pastry brownie. Pie bonbon cupcake icing lemon drops soufflé sweet donut. Soufflé sugar plum cake jujubes gummi bears. Chocolate cake donut gummi bears. Gingerbread tart ice cream oat cake chocolate bar sugar plum. Jelly chupa chups tiramisu wafer toffee. Chocolate sugar plum chupa chups. Caramels soufflé apple pie. Cheesecake sugar plum muffin. Pie fruitcake sugar plum candy gummi bears.
-
-Dessert lollipop danish muffin. Chocolate lollipop caramels sesame snaps dragée caramels jujubes. Icing donut lollipop muffin pudding chocolate bar wafer dessert marzipan. Wafer cake candy croissant brownie chocolate bar fruitcake toffee. Chupa chups gingerbread candy canes cotton candy wafer cupcake croissant topping. Soufflé tiramisu macaroon donut cotton candy. Chocolate bar chocolate fruitcake. Brownie sesame snaps powder chocolate bar. Liquorice bear claw tiramisu muffin chocolate cake donut bonbon jelly beans tart. Pie sesame snaps chocolate cake candy. Soufflé croissant cheesecake halvah halvah pie. Sweet roll jelly cheesecake chocolate carrot cake liquorice. Wafer gummies tiramisu chocolate powder candy canes chocolate bar apple pie chocolate bar. Gummi bears topping gingerbread jelly-o.
-
+  * **Send transfer to quarantine** should be checked and set to **No** unless we need to quarantine a transfer to allow for virus definitions to update.
+  * **Approve normalization** should be checked and set to **Yes** because we want to process material as efficiently as possible and it is unrealistic to *manually* approve normalization for every file.
+  * **Store AIP** should be checked and set to **Yes** so that, again, we're processing material as efficiently as possible, 
+  * **Transcribe files (OCR)** should be checked and set to **Yes** due to the enormous potential of Optical Character Recognition (OCR) for improving access to material.
+  * **Generate transfer structure report** should be checked and set to **Yes**. [Original order](http://www2.archivists.org/glossary/terms/o/original-order) is a fundamental principle of archives allowing us to preserve existing relationships and evidential significance that can be inferred from the context of the records and exploit the record creator's mechanisms to access the records.
+  * **Remove from quarantine after** should not be checked. It is not applicable because we will not be sending digital objects to quarantine.
+  * **Create SIP(s)** should be checked and set to **Send to backlog**, as this will allow us make use of the Appraisal tab later.
+  * **Extract packages** should be checked and set to **Yes** so that content from zipped or otherwise packaged content will be extracted.
+  * **Normalize** should be checked and set to **Normalize for preservation**, which will create preservation copies of the original objects. Note that the original objects are always kept along with their normalized versions.
+  * **Reminder: add metadata if desired** should not be checked. This will allow us to enter PREMIS Rights Statements during Ingest.
+  * **Examine contents** should be checked and set to **Yes**. This will allow us to check for Personally Identifiable Information (PII), like Social Security numbers and credit card numbers, during the Appraisal step.
+  * **Select file format identification command (Transfer)** should be checked and set to **Seigfried version 1.0.0 PUID runs Identify using Siegfried**. Siegfried, while slower, especially for larger files, is sometimes more accurate than FIDO and is better at recognizing contaner formats, such as the Office Open XML format.
+  * **Select file format identification command (Ingest)** should be checked and set to **Seigfried version 1.0.0 PUID runs Identify using Siegfried**. See above.
+  * **Select file format identification command (Submission documentation & metadata)** should be checked and be set to **Seigfried version 1.0.0 PUID runs Identify using Siegfried**. See above.
+  * **Delete packages after extraction** should be checked and set to *Yes*, as we're most interested in preserving what's contained in the packages, not the packages themselves.
+  * **Select compression algorithm** should be checked and set to **Uncompressed**. Compression adds a layer of complexity to an AIP, making it harder to preserve, and will only be considered if storage becomes an issue.
+  * **Select compressing level ** should not be checked. It is not applicable because we will not be compressing AIPs.
+  * **Store AIP location** should be checked and set to **aip storage (bhl-archivematica)**. This is managed by MLibrary.
+  * **Store DIP location** should not be checked. It is not applicable as we will not be creating DIPs.
+  
 **Administration** | [Transfer](transfer.md) | [Appraisal](appraisal.md) | [Ingest](ingest.md)
