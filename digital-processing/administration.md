@@ -5,7 +5,7 @@ The Processing Configuration page of the Administration tab provides archivists 
 
 ![Processing Configuration](processing-configuration.png)
 
-Please consult with the Assistant Archivist for Digital Curation before changing any processing defaults.
+Please consult with the Assistant Archivist for Digital Curation before changing any processing defaults---while they should work for the majority of collections, there will undoubtably be exceptions to these rules! See the following explanations for more information:
 
   * **Send transfer to quarantine** should be checked and set to **No** unless we need to quarantine a transfer to allow for virus definitions to update.
   * **Approve normalization** should be checked and set to **Yes** because we want to process material as efficiently as possible and it is unrealistic to *manually* approve normalization for every file.
