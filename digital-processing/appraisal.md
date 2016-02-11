@@ -23,7 +23,7 @@ Search the backlog by **Accession number** to pull up all transfers associated w
 
 ![Searching the Backlog by Accession Number](backlog-accession-number.png)
 
-Alternatively, search the backlog using the **Path** option to search by transfer title (part of the path). *Note that Archivematica sanitzes file and folder names as part of it's initial Transfer microservices--any spaces will have been replaced with underscores and will need to be searched with them.*
+Alternatively, search the backlog using the **Path** option to search by transfer title (part of the path). *Note that Archivematica sanitzes file and folder names as part of it's initial Transfer microservices--any spaces will have been replaced with underscores and this is they way they'll need to be searched.*
 
 ![Searching the Backlog by Path](backlog-path.png)
 
