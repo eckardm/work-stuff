@@ -16,8 +16,8 @@ The design of the Appraisal tab is based on the idea of having different "panes"
 
 ![Toggling](toggling.png)
 
-Backlog
--------
+Backlog and Initial Survey
+--------------------------
 
 Search the backlog by **Accession number** to pull up all transfers associated with a particular accession.
 
@@ -29,7 +29,7 @@ Alternatively, search the backlog using the **Path** option to search by transfe
 
 *Note that in the image above, Events_2006 is crossed out because the everything in that transfer has already been ingested.*
 
-To explore a transfer, click on folder icons to expand the contents of that folder. To collapse the contents of a particular folder, click again on the icon. Digital content is located in the "objects" folder. Tags may be applied in the **Backlog** pane---see **Tagging** below.
+To begin and inital survey of a transfer, click on folder icons to expand the contents of that folder. To collapse the contents of a particular folder, click again on the icon. Digital content is located in the "objects" folder. Tags may be applied in the **Backlog** pane---see **Tagging** below.
 
 ![Exploring a Transfer](explore-transfer.png)
 
@@ -40,7 +40,7 @@ Select one or more folders from the backlog search results by clicking on the fo
 
 ### Objects
 
-Click on **Objects** in the **Analysis** pane to see a report of file types and sizes and sizes. Click **Report** to see information on file format, PRONOM PUID (clicking on this field will take you to a summary from PRONOM's technical registry), Archivematica FPR Group, number of files and size in tabular form. Columns can be sorted alphanumerically by clicking on the column header.
+Click on **Objects** in the **Analysis** pane to see a report of file types and sizes and sizes extracted during the initial **Transfer** of material. Click **Report** to see information on file format, PRONOM PUID (clicking on this field will take you to a summary from PRONOM's technical registry), Archivematica FPR Group, number of files and size in tabular form. Columns can be sorted alphanumerically by clicking on the column header.
 
 ![Report](report.png)
 
@@ -64,7 +64,11 @@ Click on **Tags** in the **Analysis** pane to see a see a report of tags that ha
 
 ### Examine contents
 
-Click on **Examine Contents** in the **Analysis** pane to see [bulk_extractor](http://forensicswiki.org/wiki/Bulk_extractor) log content for Personably Identifiable Information (PII), including Social Security numbers, as well as credit card numbers. Click on a file name to see a tabular view of content and surrounding context from the bulk_extractor report. Click on **Bulk Extractor logs** to download the logs for local analysis in BEViewer, if necessary. To add files to the **File List** pane, select the ccheckboxes of the files you'd like to populate the **File List** pane and select **Add checked files to filelist**. Alternatively, select every file for popultating the **File List** pane by clicking the chckbox next to the **Filename** column header. Files may be previewed and tags may be applied from the **Examine Contents** pane---see [**Preview file**](appraisal.md#preview-file) and [**Tagging**](appraisal.md#tagging) below.
+Personally identifiable information (PII) includes data such Social Security numbers (SSN) or credit card numbers that may be used to steal an individual’s identity or perpetrate fraud in some manner. To mitigate potential risks and make a best effort to protect the privacy of our donors, Archivematica employs bulk_extractor and its 'accounts' scanner to identify PII. 
+
+Click on **Examine Contents** in the **Analysis** pane to see [bulk_extractor](http://forensicswiki.org/wiki/Bulk_extractor) log content for PII, including Social Security numbers, as well as credit card numbers. Click on a file name to see a tabular view of content and surrounding context from the bulk_extractor report. Click on **Bulk Extractor logs** to download the logs for local analysis in BEViewer, if necessary. To add files to the **File List** pane, select the ccheckboxes of the files you'd like to populate the **File List** pane and select **Add checked files to filelist**. Alternatively, select every file for popultating the **File List** pane by clicking the chckbox next to the **Filename** column header. Files may be previewed and tags may be applied from the **Examine Contents** pane---see [**Preview file**](appraisal.md#preview-file) and [**Tagging**](appraisal.md#tagging) below.
+
+If the accession contains actual PII, consider tagging the file to note the occurrence of PII. You can use these tags to assign appropriate access restrictions to content or Separate it if it is determined to be a non-essential record during. 
 
 ![Examine contents](examine-contents.png)
 
@@ -74,12 +78,47 @@ To preview a file in **Preview file** in the **Analysis** pane, click on a filen
   
 ![Preview file](preview-file.png)
 
-If your browser has a viewer for the format, it will appear. Otherwise, you will be prompted to download or open the file. Alternatively, all files can be downloaded for local analysis by clicking **(Download)**.:
+If your browser has a viewer for the format, it will appear. Otherwise, you will be prompted to download or open the file. Alternatively, all files can be downloaded for local analysis by clicking **(Download)**. To manually review files:
 
   * Use **Quick View Plus** to review the content of most files.
-  * Use **VLC Media Player** to review the content of audio/video files.
-  * Use **IrfanView** to review the content of raster images.
+  
+  Quick View Plus should be used in most cases when you need to review content, as it can view more than 300 different file formats and will not change the "last accessed" time stored in the file system metadata.
+  
+  After opening Quick View Plus, use the mouse or arrow keys (right and left arrows may be used to expand/collapse subfolders) to navigate to the appropriate directory in the folder pane. Once the appropriate folder has been selected, a list of its contents (both subfolders and files) will be displayed in the file pane. You may use the mouse or the tab key to move to the file pane; then, whatever file is highlighted will appear in the viewing environment. Please note that very large files (especially email) may take longer to open. 
+  
+  ![Quick View Plus](quickviewplus.png)
+  
+  While viewing a file, you may search for text in the ribbon’s text box, zoom in/out (for images only) and adjust the document size so that it fits entirely in the view are or is fit to the area’s width.
+  
+  *Note that in some cases, .PDF files may not render properly in Quick View Plus, with formatting issues for text and missing or incomplete images and other visual aspects. It may therefore be necessary to review these files in Adobe Reader.
+  
+  * Use **IrfanView Thumbnails** to review the content of raster images.
+    
+  After opening IrfanView Thumbnails, navigate to the appropriate file or folder in the left-hand folder pane.
+  
+  ![IrfanView Thumbnails folder pane](irfanview-1.png)
+  
+  Once you have selected a folder with images, IrfanView will automatically load thumbnails of all image files into the viewing pane. You may then click on a thumbnail to take a closer look at the full-scale or use the navigation pane to browse to other folders.
+  
+  ![IrfanView Thumnailes viewing pane](irfanview-2.png)
+  
   * Use **Inkscape** to review the content of vector images.
+  
+  Inkscape may be used to view vector image files (such as .SVG, .AI, .WMF, etc.) that cannot be opened in IrfanView or Quick View Plus. After opening Inkscape and you will then need to click on the open file icon (or use File > Open in the navigation menu) to access vector image files.
+  
+  ![Inkscape](inkscape.png)
+  
+  * Use **VLC Media Player** to review the content of audio/video files.
+  
+  After opening VLC Media player, you may use the Media menu to open a single file or an entire folder (in which case, all audio/video files withing the folder will be added to a playlist).
+  
+  ![VLC Media Player Media menu](vlc-1.png)
+  
+  Play controls are located at the bottom of the VLC Media Player window. In addition to Play, Pause and Stop buttons, the archivist may fast forward or reverse prgress by adjusting the slider on the progress bar.
+  
+  ![VLC Media Player controls](vlc-2.png)
+  
+  If there are multiple files in a playlist, you may click the arrow keys to move to the next/previous item in a playlist.
 
 Tagging
 -------
