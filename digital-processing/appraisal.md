@@ -90,7 +90,7 @@ If your browser has a viewer for the format, it will appear. Otherwise, you will
   
   While viewing a file, you may search for text in the ribbon’s text box, zoom in/out (for images only) and adjust the document size so that it fits entirely in the view are or is fit to the area’s width.
   
-  *Note that in some cases, .PDF files may not render properly in Quick View Plus, with formatting issues for text and missing or incomplete images and other visual aspects. It may therefore be necessary to review these files in Adobe Reader.
+  *Note that in some cases, .PDF files may not render properly in Quick View Plus, with formatting issues for text and missing or incomplete images and other visual aspects. It may therefore be necessary to review these files in Adobe Reader.*
   
   * Use **IrfanView Thumbnails** to review the content of raster images.
     
