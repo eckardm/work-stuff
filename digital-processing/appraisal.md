@@ -3,9 +3,9 @@ Appraisal
 
 [Appraisal](http://www2.archivists.org/glossary/terms/a/appraisal), or the process of determining whether records and other materials have permanent (archival) value, is a fundamental archival principle. The Appraisal feature in Archivematica allows archivists to:
 
-  1. review and appraise files; 
+  1. review and appraise files in a particular transfer; 
   2. logically arrange digital content with archival description from ArchivesSpace; and
-  3. deposit AIPs from Archivematica into DSpace, including metadata linked from ArchivesSpace.
+  3. ingest SIPs and deposit AIPs from Archivematica into DSpace, including metadata linked from ArchivesSpace.
   
 ![Appraisal and Arrangement tab](appraisal-arrangment.png)
   
@@ -14,11 +14,18 @@ Toggling
 
 The design of the Appraisal tab is based on the idea of having different "panes" which can be toggled on and off as needed. When the tab is loaded, the **Backlog** and **Analysis** panes are loaded. Clicking on the other pane options (i.e., **File List** or **ArchivesSpace**) will load those panes; any pane can be removed from view by clicking again.
 
+![Toggling](toggling.png)
+
 Backlog
 -------
 
-Oat cake donut brownie bear claw ice cream gummies marshmallow powder macaroon. Biscuit jelly cake muffin chocolate bar. Candy bonbon lemon drops gummies caramels cake cookie cookie icing. Jujubes cotton candy powder chupa chups cupcake cupcake. Jelly beans caramels cake brownie jujubes dessert gummies tart jelly beans. Tart tart croissant bonbon pudding sesame snaps. Toffee topping soufflé gummi bears chocolate cake marzipan. Sugar plum bonbon bonbon caramels jelly beans. Donut apple pie brownie jelly-o dragée oat cake bonbon tart. Wafer carrot cake chocolate halvah chocolate bar jelly-o. Cupcake gingerbread jelly jelly halvah tootsie roll wafer jelly. Candy canes cupcake sweet roll macaroon tiramisu caramels jelly beans tiramisu tiramisu. Sesame snaps cupcake toffee toffee cookie brownie.
+Search the backlog by **Accession number** to pull up all transfers associated with a particular accession.
 
+![Searching the Backlog by Accession Number](backlog-accession-number.png)
+
+Alternatively, search the backlog using the **Path** option to search by transfer title.
+
+![Searching the Backlog by Path](backlog-path.png)
 
 Analysis
 --------
