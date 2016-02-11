@@ -1,12 +1,18 @@
 Appraisal
 =========
 
-Sesame snaps jelly croissant biscuit cotton candy lollipop gingerbread oat cake carrot cake. Wafer tiramisu cookie apple pie. Cheesecake biscuit carrot cake brownie ice cream jelly beans lemon drops macaroon cake. Wafer donut sweet caramels lollipop oat cake gingerbread. Biscuit carrot cake chupa chups. Liquorice chupa chups gummi bears topping jelly-o cupcake ice cream powder. Ice cream topping dessert wafer cheesecake tart caramels. Brownie carrot cake cake cupcake gummi bears sweet roll topping. Marshmallow tart chocolate cake. Jelly fruitcake soufflé candy caramels pie halvah. Pudding cake cake candy canes. Jelly beans jelly-o pie jelly-o chocolate. Tootsie roll danish soufflé pastry.
+[Appraisal](http://www2.archivists.org/glossary/terms/a/appraisal), or the process of determining whether records and other materials have permanent (archival) value, is a fundamental archival principle. The Appraisal feature in Archivematica allows archivists to:
 
+  1. review and appraise files; 
+  2. logically arrange digital content with archival description from ArchivesSpace; and
+  3. deposit AIPs from Archivematica into DSpace, including metadata linked from ArchivesSpace.
+  
+![Appraisal and Arrangement tab](appraisal-arrangment.png)
+  
 Toggling
 --------
 
-Fruitcake jujubes bear claw cupcake donut halvah macaroon halvah. Bear claw tart pudding pudding marshmallow jelly-o. Apple pie tootsie roll cotton candy caramels chocolate. Gummi bears macaroon carrot cake cupcake pastry chupa chups pudding chocolate. Danish cheesecake chocolate jujubes. Bear claw topping chocolate. Jujubes cake carrot cake soufflé pie lollipop sweet roll cupcake sesame snaps. Gingerbread biscuit oat cake. Powder candy canes wafer candy canes. Cookie chupa chups jujubes ice cream halvah sesame snaps. Tiramisu marzipan powder dragée. Gummies marshmallow chupa chups carrot cake.
+The design of the Appraisal tab is based on the idea of having different "panes" which can be toggled on and off as needed. When the tab is loaded, the **Backlog** and **Analysis** panes are loaded. Clicking on the other pane options (i.e., **File List** or **ArchivesSpace**) will load those panes; any pane can be removed from view by clicking again.
 
 Backlog
 -------
