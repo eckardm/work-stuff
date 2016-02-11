@@ -1,5 +1,5 @@
-Appraisal
-=========
+Appraisal and Arrangement
+=========================
 
 [Appraisal](http://www2.archivists.org/glossary/terms/a/appraisal), or the process of determining whether records and other materials have permanent (archival) value, is a fundamental archival principle. The Appraisal feature in Archivematica allows archivists to:
 
@@ -23,11 +23,11 @@ Search the backlog by **Accession number** to pull up all transfers associated w
 
 ![Searching the Backlog by Accession Number](backlog-accession-number.png)
 
-Alternatively, search the backlog using the **Path** option to search by transfer title (part of the path). Note that Archivematica sanitzes file and folder names as part of it's initial **Transfer** microservices--any spaces will have been replaced with underscores.
+Alternatively, search the backlog using the **Path** option to search by transfer title (part of the path). *Note that Archivematica sanitzes file and folder names as part of it's initial **Transfer** microservices--any spaces will have been replaced with underscores.*
 
 ![Searching the Backlog by Path](backlog-path.png)
 
-Note that in the image above, Events_2006 is crossed out because the everything in that transfer has already been ingested.
+*Note that in the image above, Events_2006 is crossed out because the everything in that transfer has already been ingested.*
 
 To explore a transfer, click on folder icons to expand the contents of that folder. To collapse the contents of a particular folder, click again on the icon. Digital content is located in the "objects" folder. Tags may be applied in the **Backlog** pane---see **Tagging** below.
 
@@ -36,23 +36,25 @@ To explore a transfer, click on folder icons to expand the contents of that fold
 Appraisal
 ---------
 
-Select one or more folders from the backlog search results by clicking on the folder's name. You can choose an entire transfer, a folder within a transfer or individual files. 
+Select one or more folders from the backlog search results by clicking on the folder name to being the appraisal process. You can choose an entire transfer, a folder within a transfer or individual files. Click on the folder name again to deselect that folder, or click **Deselect all** to deselect all.
 
 ### Objects
 
-Click on **Objects** in the **Analysis** pane to see a report of file types and sizes and sizes. Click **Report** to see information on file format, PRONOM PUID (clicking on this field will take you to a summary from PRONOM's technical registry), Archivematica FPR Group, number of files and size in tabular form.
+Click on **Objects** in the **Analysis** pane to see a report of file types and sizes and sizes. Click **Report** to see information on file format, PRONOM PUID (clicking on this field will take you to a summary from PRONOM's technical registry), Archivematica FPR Group, number of files and size in tabular form. Columns can be sorted alphanumerically by clicking on the column header.
 
-![Report]()
+![Report](report.png)
 
 Click on **Visualizations** to see information on formats by either total number of files or total size of files in a pie chart.
 
-![Visualizations]()
+![Visualizations](visualizations.png)
 
 ### File list
 
-Ensure that the **File List** pane is toggled on. Clicking on a format type in the **Objects** report or a wedge of the pie chart visualization will populate the **File List** pane with information on files of that format type, including filename, size and last modified date. Tags may be applied and files may be previewed from the **File List** pane---see **Tagging** and **Preview file** below.
+Ensure that the **File List** pane is toggled on. Clicking on a format type in the **Objects** report or a wedge of the pie chart visualization will populate the **File List** pane with information on files of that format type, including filename, size and last modified date. Use the **Date range start** and **Date range end** fields to limit results by date. Tags may be applied and files may be previewed from the **File List** pane---see **Tagging** and **Preview file** below.
 
 ![File List](file-list.png)
+
+In the image above, Exchangeable Image File Format (Compressed) 2.2 was selected in the **Objects** report in the **Analysis pane**.
 
 ### Tags
 
@@ -64,7 +66,7 @@ Click on **Tags** in the **Analysis** pane to see a see a report of tags that ha
 
 Click on **Examine Contents** in the **Analysis** pane to see [bulk_extractor](http://forensicswiki.org/wiki/Bulk_extractor) log content for Personably Identifiable Information (PII), including Social Security numbers, as well as credit card numbers. Click on a file name to see a tabular view of content and surrounding context from the bulk_extractor report. Click on **Bulk Extractor logs** to download the logs for local analysis in BEViewer, if necessary. Tags may be applied and files may be previewed from **Examine contents**---see **Tagging** and **Preview file** below. 
 
-!
+![Examine contents](examine-contents.png)
 
 ### Preview file
 
@@ -75,30 +77,35 @@ To preview a file in **Preview file** in the **Analysis** pane, click on a filen
   * Use **IrfanView** to review the content of raster images.
   * Use **Inkscape** to review the content of vector images.
   
-!
+![Preview file](preview-file.png)
 
 Tagging
 -------
 
-Dessert lollipop danish muffin. Chocolate lollipop caramels sesame snaps dragée caramels jujubes. Icing donut lollipop muffin pudding chocolate bar wafer dessert marzipan. Wafer cake candy croissant brownie chocolate bar fruitcake toffee. Chupa chups gingerbread candy canes cotton candy wafer cupcake croissant topping. Soufflé tiramisu macaroon donut cotton candy. Chocolate bar chocolate fruitcake. Brownie sesame snaps powder chocolate bar. Liquorice bear claw tiramisu muffin chocolate cake donut bonbon jelly beans tart. Pie sesame snaps chocolate cake candy. Soufflé croissant cheesecake halvah halvah pie. Sweet roll jelly cheesecake chocolate carrot cake liquorice. Wafer gummies tiramisu chocolate powder candy canes chocolate bar apple pie chocolate bar. Gummi bears topping gingerbread jelly-o.
+Tags can be applied from the **Backlog** pane, the **File List** pane and from **Examine Contents** in the **Analysis** pane. Applying tags allows you to populated the **Backlog** pane with only tagged content of your choosing, particularly in preparation for [Arrangment to ArchivesSpace](arrangement.md). Possible use cases for tags include:
 
-### From the **Backlog**
+  * Tag everything that you plan to arrang in a specific series or file.
+  * Tag sensitive or restricted content as you identify it through analysis.
+  * Apply tags as a simple *aide memoire* while processing---it's like a virtual Post-it note.
 
-Dessert lollipop danish muffin. Chocolate lollipop caramels sesame snaps dragée caramels jujubes. Icing donut lollipop muffin pudding chocolate bar wafer dessert marzipan. Wafer cake candy croissant brownie chocolate bar fruitcake toffee. Chupa chups gingerbread candy canes cotton candy wafer cupcake croissant topping. Soufflé tiramisu macaroon donut cotton candy. Chocolate bar chocolate fruitcake. Brownie sesame snaps powder chocolate bar. Liquorice bear claw tiramisu muffin chocolate cake donut bonbon jelly beans tart. Pie sesame snaps chocolate cake candy. Soufflé croissant cheesecake halvah halvah pie. Sweet roll jelly cheesecake chocolate carrot cake liquorice. Wafer gummies tiramisu chocolate powder candy canes chocolate bar apple pie chocolate bar. Gummi bears topping gingerbread jelly-o.
+### From the **Backlog** pane
 
-!
+To apply tags in the **Backlog** pane, select the names of the folders or files you'd like to tag, enter the tag and select **Add tag to selected files**. To remove tags, click the minus sign next to the tag.
 
-### From the **File List**
+![Tagging from the Backog pane](tags-backlog.png)
 
-Dessert lollipop danish muffin. Chocolate lollipop caramels sesame snaps dragée caramels jujubes. Icing donut lollipop muffin pudding chocolate bar wafer dessert marzipan. Wafer cake candy croissant brownie chocolate bar fruitcake toffee. Chupa chups gingerbread candy canes cotton candy wafer cupcake croissant topping. Soufflé tiramisu macaroon donut cotton candy. Chocolate bar chocolate fruitcake. Brownie sesame snaps powder chocolate bar. Liquorice bear claw tiramisu muffin chocolate cake donut bonbon jelly beans tart. Pie sesame snaps chocolate cake candy. Soufflé croissant cheesecake halvah halvah pie. Sweet roll jelly cheesecake chocolate carrot cake liquorice. Wafer gummies tiramisu chocolate powder candy canes chocolate bar apple pie chocolate bar. Gummi bears topping gingerbread jelly-o.
+### From the **File List** pane
 
-!
+To apply tags in the **File List** pane, select the checkboxes of the files you'd like to tag, enter the tag and select **Add tag to selected files**. Alternatively, select every file for tagging by clicking the checkbox next to the **Filename** column header. To remove tags, click the minus sign next to the tag.
 
+![Tagging from the File List pane](tags-filelist.png)
 
+### From **Examine Contents** in the **Analysis** pane
 
-Arrangement to ArchivesSpace
-----------------------------
+To apply tags in **Examine Contents** in the **Analyis** pane, select the checkboxes of the files you'd like to tag, enter the tag and select **Add tag to selected files**. Alternatively, select every file for tagging by clicking the checkbox next to the **Filename** column header. 
 
-Dessert lollipop danish muffin. Chocolate lollipop caramels sesame snaps dragée caramels jujubes. Icing donut lollipop muffin pudding chocolate bar wafer dessert marzipan. Wafer cake candy croissant brownie chocolate bar fruitcake toffee. Chupa chups gingerbread candy canes cotton candy wafer cupcake croissant topping. Soufflé tiramisu macaroon donut cotton candy. Chocolate bar chocolate fruitcake. Brownie sesame snaps powder chocolate bar. Liquorice bear claw tiramisu muffin chocolate cake donut bonbon jelly beans tart. Pie sesame snaps chocolate cake candy. Soufflé croissant cheesecake halvah halvah pie. Sweet roll jelly cheesecake chocolate carrot cake liquorice. Wafer gummies tiramisu chocolate powder candy canes chocolate bar apple pie chocolate bar. Gummi bears topping gingerbread jelly-o.
+*Note that tags added in **Examine Contents** in the **Analysis** pane will not show up there, even though they have been applied and can be viewed or removed, for example, in the **Backlog** pane.*
 
-[Administration](administration.md) | **Appraisal** | [Ingest](ingest.md)
+![Tagging from Examine Contents in the Analysis pane](tags-examine-contents.png)
+
+[Administration](administration.md) | **Appraisal** | [Arrangement](arrangement.md) | [Ingest](ingest.md)

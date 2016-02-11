@@ -31,4 +31,4 @@ This feature allows archivists to:
 
 This section of the manual will provide an overview of the digital processing workflow and more detailed guidelines for individual steps.
 
-[Administration](administration.md) | [Appraisal](appraisal.md) | [Ingest](ingest.md)
+[Administration](administration.md) | [Appraisal and Arrangement](appraisal.md) | [Ingest](ingest.md)

@@ -27,4 +27,4 @@ Please consult with the Assistant Archivist for Digital Curation before changing
   * **Store AIP location** should be checked and set to **aip storage (bhl-archivematica)**. This is managed by MLibrary.
   * **Store DIP location** should not be checked. It is not applicable as we will not be creating DIPs.
   
-**Administration** | [Appraisal](appraisal.md) | [Ingest](ingest.md)
+**Administration** | [Appraisal](appraisal.md) | [Arrangement](arrangement.md) | [Ingest](ingest.md)
