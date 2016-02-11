@@ -1,46 +1,46 @@
-Appraisal and Arrangement
-=========================
+Appraisal tab
+=============
 
 [Appraisal](http://www2.archivists.org/glossary/terms/a/appraisal), or the process of determining whether records and other materials have permanent (archival) value, is a fundamental archival principle. The Appraisal feature in Archivematica allows archivists to:
 
   * review and appraise files in a particular transfer; 
   * logically arrange digital content with archival description from ArchivesSpace; and
   * ingest SIPs and deposit AIPs from Archivematica into DSpace, including metadata linked from ArchivesSpace.
-  
-![Appraisal and Arrangement tab](appraisal-arrangment.png)
 
 Preliminaries
 -------------
 
-The design of the Appraisal tab is based on the idea of having different "panes" which can be toggled on and off as needed. When the tab is loaded, the **Backlog** and **Analysis** panes are loaded. Clicking on the other pane options (i.e., **File List** or **ArchivesSpace**) will load those panes; any pane can be removed from view by clicking again.
+The design of the Appraisal tab is based on the idea of having different "panes" which can be toggled on and off as needed. When the Appraisal tab is loaded, the **Backlog** and **Analysis** panes display. Clicking on the other pane options (i.e., **File List** or **ArchivesSpace**) will load those panes; any pane can be removed from view by clicking again.
 
 ![Toggling](toggling.png)
 
-Backlog and Initial Survey
+Backlog pane and Initial Survey
 --------------------------
 
 Search the backlog by **Accession number** to pull up all transfers associated with a particular accession.
 
 ![Searching the Backlog by Accession Number](backlog-accession-number.png)
 
-Alternatively, search the backlog using the **Path** option to search by transfer title (part of the path). *Note that Archivematica sanitzes file and folder names as part of it's initial Transfer microservices--any spaces will have been replaced with underscores and this is they way they'll need to be searched.*
+Alternatively, search the backlog using the **Path** option to search by transfer title (part of the path). *Note that Archivematica sanitizes file and folder names as part of its initial Transfer microservices--any spaces will have been replaced with underscores and this is the way they'll need to be searched.*
 
 ![Searching the Backlog by Path](backlog-path.png)
 
-*Note that in the image above, Events_2006 is crossed out because the everything in that transfer has already been ingested.*
+*Note that in the image above, Events_2006 is crossed out because all the files in that transfer have already been ingested.*
 
-To begin and inital survey of a transfer, click on folder icons to expand the contents of that folder. To collapse the contents of a particular folder, click again on the icon. Digital content is located in the "objects" folder. Tags may be applied in the **Backlog** pane---see **Tagging** below.
+To begin an inital survey of a transfer, click on folder icons to expand the contents of that folder. To collapse the contents of a particular folder, click again on the icon. *Note that files in the transfer are located in the "objects" folder.* 
+
+Tags may be applied in the **Backlog** pane---see [**Tagging**](appraisal.md#tagging) below.
 
 ![Exploring a Transfer](explore-transfer.png)
 
 Appraisal
 ---------
 
-Select one or more folders from the backlog search results by clicking on the folder name to being the appraisal process. You can choose an entire transfer, a folder within a transfer or individual files. Click on the folder name again to deselect that folder, or click **Deselect all** to deselect all.
+Select one or more folders from the **Backlog** pane search results by clicking on the folder name to being the appraisal process. You can choose an entire transfer, a folder within a transfer or individual files. Click on the folder name again to deselect that folder, or click **Deselect all** to deselect all folders.
 
 ### Objects
 
-Click on **Objects** in the **Analysis** pane to see a report of file types and sizes and sizes extracted during the initial **Transfer** of material. Click **Report** to see information on file format, PRONOM PUID (clicking on this field will take you to a summary from PRONOM's technical registry), Archivematica FPR Group, number of files and size in tabular form. Columns can be sorted alphanumerically by clicking on the column header.
+Click on **Objects** in the **Analysis** pane to see a report of file types and sizes extracted during the initial **Transfer** of material. Click **Report** to see information on file format, PRONOM PUID (clicking on this field will take you to a summary from PRONOM's technical registry), Archivematica FPR Group, number of files and size in tabular form. Columns can be sorted alphanumerically by clicking on column headers.
 
 ![Report](report.png)
 
@@ -48,9 +48,9 @@ Click on **Visualizations** to see information on formats by either total number
 
 ![Visualizations](visualizations.png)
 
-### File list
+### File list pane
 
-Ensure that the **File List** pane is toggled on. Clicking on a format type in the **Objects** report or a wedge of the pie chart visualization will populate the **File List** pane with information on files of that format type, including path and filename, size and last modified date. Use the **Date range start** and **Date range end** fields to limit results by date. Files may be previewed and tags may be applied from the **File List** pane---see [**Preview file**](appraisal.md#preview-file) and [**Tagging**](appraisal.md#tagging) below.
+Ensure that the **File List** pane is toggled on. Clicking on a format type in the **Objects** report or a wedge of the pie chart visualization in the **Analysis** pane will populate the **File List** pane with information on files of that format type, including path and filename, size, last modified date and tags. Use the **Date range start** and **Date range end** fields to limit results by date. Files may be previewed and tags may be applied from the **File List** pane---see [**Preview file**](appraisal.md#preview-file) and [**Tagging**](appraisal.md#tagging) below.
 
 ![File List](file-list.png)
 
@@ -64,11 +64,11 @@ Click on **Tags** in the **Analysis** pane to see a see a report of tags that ha
 
 ### Examine contents
 
-Personally identifiable information (PII) includes data such Social Security numbers (SSN) or credit card numbers that may be used to steal an individual’s identity or perpetrate fraud in some manner. To mitigate potential risks and make a best effort to protect the privacy of our donors, Archivematica employs bulk_extractor and its 'accounts' scanner to identify PII. 
+Personally identifiable information (PII) includes data such Social Security numbers (SSN) or credit card numbers that may be used to steal an individual’s identity or perpetrate fraud in some manner. To mitigate potential risks and make a best effort to protect the privacy of our donors, Archivematica employs [bulk_extractor](http://forensicswiki.org/wiki/Bulk_extractor) and its "accounts" scanner to identify PII. 
 
-Click on **Examine Contents** in the **Analysis** pane to see [bulk_extractor](http://forensicswiki.org/wiki/Bulk_extractor) log content for PII, including Social Security numbers, as well as credit card numbers. Click on a file name to see a tabular view of content and surrounding context from the bulk_extractor report. Click on **Bulk Extractor logs** to download the logs for local analysis in BEViewer, if necessary. Files may be previewed and tags may be applied from the **Examine Contents** pane---see [**Preview file**](appraisal.md#preview-file) and [**Tagging**](appraisal.md#tagging) below.
+Click on **Examine Contents** in the **Analysis** pane to see bulk_extractor log content for PII. Click on a file name to see a tabular view of content and surrounding context from the bulk_extractor report. Click on **Bulk Extractor logs** to download the logs for local analysis in BEViewer, if necessary. Files may be previewed and tags may be applied from the **Examine Contents** pane---see [**Preview file**](appraisal.md#preview-file) and [**Tagging**](appraisal.md#tagging) below.
 
-If the accession contains actual PII, consider tagging the file to note the occurrence of PII. You can use these tags to assign appropriate access restrictions to content or Separate it if it is determined to be a non-essential record during. 
+If the accession contains actual PII, consider tagging the file to note the occurrence of PII. You can use these tags to assign appropriate access restrictions to content or separate it if it is determined to be a non-essential record. 
 
 ![Examine contents](examine-contents.png)
 
@@ -92,16 +92,12 @@ If your browser has a viewer for the format, it will appear. Otherwise, you will
   
   *Note that in some cases, .PDF files may not render properly in Quick View Plus, with formatting issues for text and missing or incomplete images and other visual aspects. It may therefore be necessary to review these files in Adobe Reader.*
   
-  * Use **IrfanView Thumbnails** to review the content of raster images.
+  * Use **IrfanView** to review the content of raster images.
     
-  After opening IrfanView Thumbnails, navigate to the appropriate file or folder in the left-hand folder pane.
+  After opening IrfanView, you will need to click on the open file icon (or use File > Open... in the navigation menu) to access raster image files.
   
-  ![IrfanView Thumbnails folder pane](irfanview-1.png)
-  
-  Once you have selected a folder with images, IrfanView will automatically load thumbnails of all image files into the viewing pane. You may then click on a thumbnail to take a closer look at the full-scale or use the navigation pane to browse to other folders.
-  
-  ![IrfanView Thumnailes viewing pane](irfanview-2.png)
-  
+  ![IrfanView folder pane](irfanview-1.png)
+   
   * Use **Inkscape** to review the content of vector images.
   
   Inkscape may be used to view vector image files (such as .SVG, .AI, .WMF, etc.) that cannot be opened in IrfanView or Quick View Plus. After opening Inkscape and you will then need to click on the open file icon (or use File > Open in the navigation menu) to access vector image files.

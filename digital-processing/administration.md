@@ -1,5 +1,5 @@
-Administration
-==============
+Administration tab
+==================
 
 The Processing Configuration page of the Administration tab provides archivists with an easy form to configure processing defaults for a transfer or SIP. Changing the options using the web interface will write the necessary XML behind the scenes.
 
