@@ -10,7 +10,7 @@ Fruitcake jujubes bear claw cupcake donut halvah macaroon halvah. Bear claw tart
 
 ***
 
-[Digital Processing][digital-processing.md]
+[Digital Processing](digital-processing.md)
   * [Administration](administration.md)
   * [Appraisal](appraisal.md)
   * [Arrangement](arrangement.md)
