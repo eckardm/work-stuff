@@ -50,7 +50,7 @@ Click on **Visualizations** to see information on formats by either total number
 
 ### File list
 
-Ensure that the **File List** pane is toggled on. Clicking on a format type in the **Objects** report or a wedge of the pie chart visualization will populate the **File List** pane with information on files of that format type, including filename, size and last modified date. Use the **Date range start** and **Date range end** fields to limit results by date. Files may be previewed and tags may be applied from the **File List** pane---see [**Preview file**](appraisal.md#preview-file) and [**Tagging**](appraisal.md#tagging) below.
+Ensure that the **File List** pane is toggled on. Clicking on a format type in the **Objects** report or a wedge of the pie chart visualization will populate the **File List** pane with information on files of that format type, including path and filename, size and last modified date. Use the **Date range start** and **Date range end** fields to limit results by date. Files may be previewed and tags may be applied from the **File List** pane---see [**Preview file**](appraisal.md#preview-file) and [**Tagging**](appraisal.md#tagging) below.
 
 ![File List](file-list.png)
 
@@ -66,7 +66,7 @@ Click on **Tags** in the **Analysis** pane to see a see a report of tags that ha
 
 Personally identifiable information (PII) includes data such Social Security numbers (SSN) or credit card numbers that may be used to steal an individual’s identity or perpetrate fraud in some manner. To mitigate potential risks and make a best effort to protect the privacy of our donors, Archivematica employs bulk_extractor and its 'accounts' scanner to identify PII. 
 
-Click on **Examine Contents** in the **Analysis** pane to see [bulk_extractor](http://forensicswiki.org/wiki/Bulk_extractor) log content for PII, including Social Security numbers, as well as credit card numbers. Click on a file name to see a tabular view of content and surrounding context from the bulk_extractor report. Click on **Bulk Extractor logs** to download the logs for local analysis in BEViewer, if necessary. To add files to the **File List** pane, select the ccheckboxes of the files you'd like to populate the **File List** pane and select **Add checked files to filelist**. Alternatively, select every file for popultating the **File List** pane by clicking the chckbox next to the **Filename** column header. Files may be previewed and tags may be applied from the **Examine Contents** pane---see [**Preview file**](appraisal.md#preview-file) and [**Tagging**](appraisal.md#tagging) below.
+Click on **Examine Contents** in the **Analysis** pane to see [bulk_extractor](http://forensicswiki.org/wiki/Bulk_extractor) log content for PII, including Social Security numbers, as well as credit card numbers. Click on a file name to see a tabular view of content and surrounding context from the bulk_extractor report. Click on **Bulk Extractor logs** to download the logs for local analysis in BEViewer, if necessary. Files may be previewed and tags may be applied from the **Examine Contents** pane---see [**Preview file**](appraisal.md#preview-file) and [**Tagging**](appraisal.md#tagging) below.
 
 If the accession contains actual PII, consider tagging the file to note the occurrence of PII. You can use these tags to assign appropriate access restrictions to content or Separate it if it is determined to be a non-essential record during. 
 
