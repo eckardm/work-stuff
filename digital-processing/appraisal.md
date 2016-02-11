@@ -64,6 +64,8 @@ Click on **Tags** in the **Analysis** pane to see a see a report of tags that ha
 
 Click on **Examine Contents** in the **Analysis** pane to see [bulk_extractor](http://forensicswiki.org/wiki/Bulk_extractor) log content for Personably Identifiable Information (PII), including Social Security numbers, as well as credit card numbers. Click on a file name to see a tabular view of content and surrounding context from the bulk_extractor report. Click on **Bulk Extractor logs** to download the logs for local analysis in BEViewer, if necessary. Tags may be applied and files may be previewed from **Examine contents**---see **Tagging** and **Preview file** below. 
 
+!
+
 ### Preview file
 
 To preview a file in **Preview file** in the **Analysis** pane, click on a filename from the **File List** pane or **Examine contents** in the **Analysis** pane. If your browser has a viewer for the format, it will appear. Alternatively, all files can be downloaded for local analysis:
@@ -72,11 +74,27 @@ To preview a file in **Preview file** in the **Analysis** pane, click on a filen
   * Use **VLC Media Player** to review the content of audio/video files.
   * Use **IrfanView** to review the content of raster images.
   * Use **Inkscape** to review the content of vector images.
+  
+!
 
 Tagging
 -------
 
 Dessert lollipop danish muffin. Chocolate lollipop caramels sesame snaps dragée caramels jujubes. Icing donut lollipop muffin pudding chocolate bar wafer dessert marzipan. Wafer cake candy croissant brownie chocolate bar fruitcake toffee. Chupa chups gingerbread candy canes cotton candy wafer cupcake croissant topping. Soufflé tiramisu macaroon donut cotton candy. Chocolate bar chocolate fruitcake. Brownie sesame snaps powder chocolate bar. Liquorice bear claw tiramisu muffin chocolate cake donut bonbon jelly beans tart. Pie sesame snaps chocolate cake candy. Soufflé croissant cheesecake halvah halvah pie. Sweet roll jelly cheesecake chocolate carrot cake liquorice. Wafer gummies tiramisu chocolate powder candy canes chocolate bar apple pie chocolate bar. Gummi bears topping gingerbread jelly-o.
+
+### From the **Backlog**
+
+Dessert lollipop danish muffin. Chocolate lollipop caramels sesame snaps dragée caramels jujubes. Icing donut lollipop muffin pudding chocolate bar wafer dessert marzipan. Wafer cake candy croissant brownie chocolate bar fruitcake toffee. Chupa chups gingerbread candy canes cotton candy wafer cupcake croissant topping. Soufflé tiramisu macaroon donut cotton candy. Chocolate bar chocolate fruitcake. Brownie sesame snaps powder chocolate bar. Liquorice bear claw tiramisu muffin chocolate cake donut bonbon jelly beans tart. Pie sesame snaps chocolate cake candy. Soufflé croissant cheesecake halvah halvah pie. Sweet roll jelly cheesecake chocolate carrot cake liquorice. Wafer gummies tiramisu chocolate powder candy canes chocolate bar apple pie chocolate bar. Gummi bears topping gingerbread jelly-o.
+
+!
+
+### From the **File List**
+
+Dessert lollipop danish muffin. Chocolate lollipop caramels sesame snaps dragée caramels jujubes. Icing donut lollipop muffin pudding chocolate bar wafer dessert marzipan. Wafer cake candy croissant brownie chocolate bar fruitcake toffee. Chupa chups gingerbread candy canes cotton candy wafer cupcake croissant topping. Soufflé tiramisu macaroon donut cotton candy. Chocolate bar chocolate fruitcake. Brownie sesame snaps powder chocolate bar. Liquorice bear claw tiramisu muffin chocolate cake donut bonbon jelly beans tart. Pie sesame snaps chocolate cake candy. Soufflé croissant cheesecake halvah halvah pie. Sweet roll jelly cheesecake chocolate carrot cake liquorice. Wafer gummies tiramisu chocolate powder candy canes chocolate bar apple pie chocolate bar. Gummi bears topping gingerbread jelly-o.
+
+!
+
+
 
 Arrangement to ArchivesSpace
 ----------------------------
