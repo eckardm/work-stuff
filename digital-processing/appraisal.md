@@ -78,7 +78,7 @@ To preview a file in **Preview file** in the **Analysis** pane, click on a filen
   
 ![Preview file](preview-file.png)
 
-If your browser has a viewer for the format, it will appear. Otherwise, you will be prompted to download or open the file. Alternatively, all files can be downloaded for local analysis by clicking **(Download)**. To manually review files:
+If your browser has a viewer for the format, it will appear. Otherwise, you will be prompted to download or open the file. Alternatively, all files can be downloaded for local analysis by clicking **(Download)**. Use the following programs to manually review files:
 
   * Use **Quick View Plus** to review the content of most files.
   
