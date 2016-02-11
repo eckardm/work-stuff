@@ -29,7 +29,7 @@ Please consult with the Assistant Archivist for Digital Curation before changing
   
 ***
 
-**Digital Processing**
+[Digital Processing][digital-processing.md]
   * **Administration**
   * [Appraisal](appraisal.md)
   * [Arrangement](arrangement.md)
