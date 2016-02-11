@@ -149,4 +149,10 @@ To apply tags in **Examine Contents** in the **Analyis** pane, select the checkb
 
 ![Tagging from Examine Contents in the Analysis pane](tags-examine-contents.png)
 
-[Administration](administration.md) | **Appraisal** | [Arrangement](arrangement.md) | [Ingest](ingest.md)
+***
+
+**Digital Processing**
+  * [Administration](administration.md)
+  * **Appraisal**
+  * [Arrangement](arrangement.md)
+  * [Ingest](ingest.md)

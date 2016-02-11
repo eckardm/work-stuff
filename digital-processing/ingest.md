@@ -8,4 +8,10 @@ PREMIS Rights Statements
 
 Fruitcake jujubes bear claw cupcake donut halvah macaroon halvah. Bear claw tart pudding pudding marshmallow jelly-o. Apple pie tootsie roll cotton candy caramels chocolate. Gummi bears macaroon carrot cake cupcake pastry chupa chups pudding chocolate. Danish cheesecake chocolate jujubes. Bear claw topping chocolate. Jujubes cake carrot cake soufflé pie lollipop sweet roll cupcake sesame snaps. Gingerbread biscuit oat cake. Powder candy canes wafer candy canes. Cookie chupa chups jujubes ice cream halvah sesame snaps. Tiramisu marzipan powder dragée. Gummies marshmallow chupa chups carrot cake.
 
-[Administration](administration.md) | [Appraisal](appraisal.md) | [Arrangement](arrangement.md) | **Ingest**
+***
+
+**Digital Processing**
+  * [Administration](administration.md)
+  * [Appraisal](appraisal.md)
+  * [Arrangement](arrangement.md)
+  * **Ingest**

@@ -6,4 +6,10 @@ Dessert lollipop danish muffin. Chocolate lollipop caramels sesame snaps dragée
 Separations
 -----------
 
-[Administration](administration.md) | [Appraisal](appraisal.md) | **Arrangement** | [Ingest](ingest.md)
+***
+
+**Digital Processing**
+  * [Administration](administration.md)
+  * [Appraisal](appraisal.md)
+  * **Arrangement**
+  * [Ingest](ingest.md)
