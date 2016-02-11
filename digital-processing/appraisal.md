@@ -70,14 +70,18 @@ Click on **Examine Contents** in the **Analysis** pane to see [bulk_extractor](h
 
 ### Preview file
 
-To preview a file in **Preview file** in the **Analysis** pane, click on a filename from the **File List** pane or **Examine contents** in the **Analysis** pane. If your browser has a viewer for the format, it will appear. Alternatively, all files can be downloaded for local analysis:
+To preview a file in **Preview file** in the **Analysis** pane, click on a filename from the **File List** pane or **Examine contents** in the **Analysis** pane. 
+  
+![Preview file](preview-file.png)
+
+If your browser has a viewer for the format, it will appear. Alternatively, all files can be downloaded for local analysis by clicking **(Download)**.:
 
   * Use **Quick View Plus** to review the content of most files.
   * Use **VLC Media Player** to review the content of audio/video files.
   * Use **IrfanView** to review the content of raster images.
   * Use **Inkscape** to review the content of vector images.
   
-![Preview file](preview-file.png)
+![Download file](download-file.png)
 
 Tagging
 -------
