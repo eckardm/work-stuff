@@ -3,9 +3,9 @@ Appraisal and Arrangement
 
 [Appraisal](http://www2.archivists.org/glossary/terms/a/appraisal), or the process of determining whether records and other materials have permanent (archival) value, is a fundamental archival principle. The Appraisal feature in Archivematica allows archivists to:
 
-  1. review and appraise files in a particular transfer; 
-  2. logically arrange digital content with archival description from ArchivesSpace; and
-  3. ingest SIPs and deposit AIPs from Archivematica into DSpace, including metadata linked from ArchivesSpace.
+  * review and appraise files in a particular transfer; 
+  * logically arrange digital content with archival description from ArchivesSpace; and
+  * ingest SIPs and deposit AIPs from Archivematica into DSpace, including metadata linked from ArchivesSpace.
   
 ![Appraisal and Arrangement tab](appraisal-arrangment.png)
 

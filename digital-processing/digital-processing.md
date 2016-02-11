@@ -25,9 +25,9 @@ We now employ [Archivematica](https://www.archivematica.org/en/), a web- and sta
 
 This feature allows archivists to:
 
-  1. review and appraise files; 
-  2. logically arrange digital content with archival description from ArchivesSpace; and
-  3. deposit AIPs from Archivematica into DSpace, including metadata linked from ArchivesSpace.
+  * review and appraise files in a particular transfer; 
+  * logically arrange digital content with archival description from ArchivesSpace; and
+  * ingest SIPs and deposit AIPs from Archivematica into DSpace, including metadata linked from ArchivesSpace.
 
 This section of the manual will provide an overview of the digital processing workflow and more detailed guidelines for individual steps.
 
