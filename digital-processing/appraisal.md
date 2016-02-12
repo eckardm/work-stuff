@@ -1,7 +1,7 @@
 Appraisal tab
 =============
 
-[Appraisal](http://www2.archivists.org/glossary/terms/a/appraisal), or the process of determining whether records and other materials have permanent (archival) value, is a fundamental archival principle. The Appraisal feature in Archivematica allows archivists to:
+[Appraisal](http://www2.archivists.org/glossary/terms/a/appraisal), or the process of determining whether records and other materials have permanent (archival) value, is also a fundamental archival principle. The Appraisal feature in Archivematica allows archivists to:
 
   * review and appraise files in a particular transfer; 
   * logically arrange digital content with archival description from ArchivesSpace; and
@@ -9,6 +9,14 @@ Appraisal tab
 
 Preliminaries
 -------------
+
+Before digital processing can begin, an **Accession**, with an Identifier, must be created in ArchivesSpace and a **Resource** must have been spawned from it.
+
+![Spawning a Resource from an Accession](resource-from-accession.png)
+
+In addition, digital content must be transferred into Archivematica and sent to the backlog using the **Transfer** pane. This will most likely have been done by the Assistant Archivist for Digital Curation.
+
+![Transfer](transfer.png)
 
 The design of the Appraisal tab is based on the idea of having different "panes" which can be toggled on and off as needed. When the Appraisal tab is loaded, the **Backlog** and **Analysis** panes display. Clicking on the other pane options (i.e., **File List** or **ArchivesSpace**) will load those panes; any pane can be removed from view by clicking again.
 
@@ -150,5 +158,5 @@ To apply tags in **Examine Contents** in the **Analyis** pane, select the checkb
 [Digital Processing](digital-processing.md)
   * [Administration](administration.md)
   * **Appraisal**
-  * [Arrangement](arrangement.md)
+  * [Description and Arrangement](arrangement.md)
   * [Ingest](ingest.md)

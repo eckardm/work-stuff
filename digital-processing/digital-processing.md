@@ -36,5 +36,5 @@ This section of the manual will provide an overview of the digital processing wo
 **Digital Processing**
   * [Administration](administration.md)
   * [Appraisal](appraisal.md)
-  * [Arrangement](arrangement.md)
+  * [Description and Arrangement](arrangement.md)
   * [Ingest](ingest.md)
