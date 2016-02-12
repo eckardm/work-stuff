@@ -31,8 +31,6 @@ Search the backlog by **Accession number** to pull up all transfers associated w
 
 Alternatively, search the backlog using the **Path** option to search by transfer title (part of the path). *Note that Archivematica sanitizes file and folder names as part of its initial Transfer microservices--any spaces will have been replaced with underscores and this is the way they'll need to be searched.*
 
-![Searching the Backlog by Path](backlog-path.png)
-
 *Note that in the image above, Events_2006 is crossed out because all the files in that transfer have already been ingested.*
 
 To begin an inital survey of a transfer, click on folder icons to expand the contents of that folder. To collapse the contents of a particular folder, click again on the icon. *Note that files in the transfer are located in the "objects" folder.* 
