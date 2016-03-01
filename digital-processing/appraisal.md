@@ -10,7 +10,7 @@ Appraisal tab
 Preliminaries
 -------------
 
-Before digital processing can begin, an **Accession**, with an Identifier, must be created in ArchivesSpace and a **Resource** must have been spawned from it.
+Before digital processing can begin, an **Accession**, with an Identifier, must be created in ArchivesSpace and a **Resource** for it must exist.
 
 ![Spawning a Resource from an Accession](resource-from-accession.png)
 
@@ -56,7 +56,7 @@ Click on **Visualizations** to see information on formats by either total number
 
 ### File list pane
 
-Ensure that the **File List** pane is toggled on. Clicking on a format type in the **Objects** report or a wedge of the pie chart visualization in the **Analysis** pane will populate the **File List** pane with information on files of that format type, including path and filename, size, last modified date and tags. Use the **Date range start** and **Date range end** fields to limit results by date. Files may be previewed and tags may be applied from the **File List** pane---see [**Preview file**](appraisal.md#preview-file) and [**Tagging**](appraisal.md#tagging) below.
+Ensure that the **File List** pane is toggled on. Files in folders or selected individually in the **Backlog** pane populate the **File List**, and clicking on a format type in the **Objects** report or a wedge of the pie chart visualization in the **Analysis** pane will facet the **File List** pane with information on files of that format type, including path and filename, size, last modified date and tags. Use the **Date range start** and **Date range end** fields to limit results by date. Files may be previewed and tags may be applied from the **File List** pane---see [**Preview file**](appraisal.md#preview-file) and [**Tagging**](appraisal.md#tagging) below.
 
 ![File List](file-list.png)
 
