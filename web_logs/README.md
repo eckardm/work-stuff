@@ -1,5 +1,5 @@
 #Exploring the Bentley's web logs
-A relatively simple interface to extract summarized info from the Bentley's server logs. Brought to you by Walker!
+A relatively simple interface to extract summarized info from the Bentley's server logs. Brought to you by Walker! I'm trying to add to it using [Best Practices for Google Analytics in Digital Libraries](https://docs.google.com/document/d/1QmiLJEZXGAY-s7BG_nyF6EUAqcyH0mhQ7j2VPpLpxCQ/edit#) as a guide.
 
 ##Requirements:
 
