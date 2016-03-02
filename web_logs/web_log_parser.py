@@ -141,6 +141,8 @@ class BentleyWebLogParser(object):
 
         return Counter(searches).most_common(n=limit)
         
+# * * *
+        
     def browser_families(self, limit=None, start_date="", end_date=""):
         browser_families_sho = []
         for log in self.logs_filtered_by_time_range(start_date, end_date):
@@ -156,8 +158,9 @@ class BentleyWebLogParser(object):
             os_families_sho.append(os_family_dai)
             
         return Counter(os_families_sho).most_common(n=limit)
+        
+# * * *
             
-
     def unique_users_per_search_term(self, limit=None, start_date="", end_date=""):
         searches = set()
         for log in self.logs_filtered_by_time_range(start_date, end_date):
@@ -171,7 +174,6 @@ class BentleyWebLogParser(object):
             result.append(search[1])
 
         return Counter(result).most_common(n=limit)
-
 
     def visit_count_by_staff_member(self, start_date="", end_date=""):
         users = []
@@ -225,6 +227,8 @@ class BentleyWebLogParser(object):
                 queries.append(query[0].lower())
 
         return queries
+        
+# * * *
     
     @staticmethod
     def get_browser_family(log):
@@ -237,6 +241,8 @@ class BentleyWebLogParser(object):
         os_family = log.get("request_header_user_agent__os__family", "")
 
         return os_family
+        
+# * * *
         
     def add_logs(self, filepath):
         print("adding logs from {}...".format(filepath))

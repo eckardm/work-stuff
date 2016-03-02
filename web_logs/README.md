@@ -1,5 +1,5 @@
 #Exploring the Bentley's web logs
-A relatively simple interface to extract summarized info from the Bentley's server logs.
+A relatively simple interface to extract summarized info from the Bentley's server logs. Brought to you by Walker!
 
 ##Requirements:
 
@@ -173,6 +173,35 @@ Get a list of where our traffic is coming from:
  (u'http://quod.lib.umich.edu/cgi/f/findaid/findaid-idx?c=bhlead;page=boolean', 301),
  (u'http://bentley.umich.edu/legacy-support/EAD/ead_kl.php', 298),
  (u'https://www.google.ca', 286),
+ (...)
+]
+```
+
+Get a list of browser families:
+```python
+>>> parser.browser_families()
+[(u'Windows 7', 57137), 
+ (u'Mac OS X', 26435), 
+ (u'Windows 8.1', 7116),
+ (u'iOS', 6212), 
+ (u'Windows 10', 5710), 
+ (u'Windows XP', 5373), 
+ (u'Android', 3179), 
+ (u'Windows 8', 2448)
+ (...)
+]
+```
+
+Get a list of operating system families:
+```python
+>>> parser.os_families()
+[(u'Chrome', 51484), 
+ (u'Firefox', 34241), 
+ (u'IE', 12089), 
+ (u'Safari', 11996), 
+ (u'Mobile Safari', 6212), 
+ (u'Chrome Mobile', 2106), 
+ (u'Opera', 859)
  (...)
 ]
 ```
