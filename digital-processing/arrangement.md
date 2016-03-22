@@ -1,6 +1,6 @@
 ## Description and Arrangement to ArchivesSpace
 
-The Bentley Historical Library makes use of ArchivesSpace, an open source archives information management application, to create and manage **Resources**, whcih allow an archivist to record information about the intellectual and physcial characteristics of archival materials, as well as contextual information about creators and topics. The **ArchivesSpace** pane in the **Appraisal** tab in Archivematica pull data from **Resources** in our instance of ArchivesSpace in order to facilitae archival description and arrangement for digital content.
+The Bentley Historical Library makes use of ArchivesSpace, an open source archives information management application, to create and manage **Resources**, which allow an archivist to record information about the intellectual and physcial characteristics of archival materials, as well as contextual information about creators and topics. The **ArchivesSpace** pane in the Appraisal tab in Archivematica pull and pushes data to and from **Resources** in our instance of ArchivesSpace in order to facilitae archival description and arrangement for digital content.
 
 This procedure provides you with an opportunity to gain full intellectual control of the content so that it can be meaningfully described in an ArchivesSpace **Resource** and packaged in a manner that will facilitate its long-term preservation, management and access. Take time to review files during appraisal! Familiarity with the content is essential for the production of rich metadata and informative **Resources**; it is therefore recommended that you:
 
@@ -15,13 +15,13 @@ Ensure that the **ArchivesSpace** pane is toggled on. Digital content will be dr
 
 Enter the **Resource** Identifier (accession number) in the **ArchivesSpace** pane and click **Search ArchivesSpace** to pull up the appropriate **Resource**. *Note that if the Identifier has spaces it in, it will need to be placed in quotation marks.*
 
-![Searching the ArchivesSpace pane](searching-archivesspace-pane.png)
+![Searching the ArchivesSpace pane](images/searching-archivesspace-pane.png)
 
 Alternatively, search the **ArchivesSpace** pane by Title to pull up the appropriate **Resource**.
 
-A **Resource** with existing hierarchy can be expanded by clicking on the arrow or the folder icon next to the **Archival Object** title. *Note that the **ArchivesSpace** pane will indicate that it is loading; please be patient!*
+A **Resource** with existing hierarchy can be expanded by clicking on the arrow or the folder icon next to the **Archival Object** title. *Note that the **ArchivesSpace** pane will indicate that it is loading; please be patient!* To collapse that heirarchy, click again on the arrow or folder icon.
 
-![Resources in the ArchivesSpace pane](archivesspace-pane.png)
+![Resources in the ArchivesSpace pane](images/archivesspace-pane.png)
 
 *Note that Archival Objects without children will not have an arrow or folder icon next to their title.*
   
@@ -31,27 +31,59 @@ The Society of American Archivists (SAA) offers the following definition of [arc
 
 > The process of analyzing, organizing and recording details about the formal elements of a record or collections of records, such as creator, title, dates and contents, to facilitate the work's identification, management and understanding.
 
+In ArchivesSpace, this type of description is added to intellectual entities called **Archival Objects**.
+
 #### Add New Child Record
 
-In order to add a new child record (Archival Object) to an existing Archival Object, select an **Archival Object** by clicking on its title and click **Add New Child Record**. Enter a free text title and select a level of description from the dropdown. Optionally, enter a free text date expression as well as normalized begin and end dates (you may either type the date in YYYY-MM-DD format or use the calendar icon to bring up a calendar interface), a free text general note or a free text conditions governing access note. Please use Bentley Historical Library conventions for crafting conditions governing access notes. You may expand the general and conditions governing access note fields by clicking and dragging the bottom right corner.
+In order to add a new child record (Archival Object) to an existing Archival Object, select an Archival Object by clicking on its title and click **Add New Child Record**. Enter a free text title and select a level of description from the dropdown. Optionally, enter a free text date expression as well as normalized begin and end dates (you may either type the date in YYYY-MM-DD format or use the calendar icon to bring up a calendar interface), a free text general note or a free text conditions governing access note. Please use Bentley Historical Library conventions for crafting conditions governing access notes. You may expand the general and conditions governing access note fields by clicking and dragging the bottom right corner.
 
 ![Add New Child Record](create-child-record.png)
 
-After you click **Save**, Archivematica will write the **Archival Object** to the appopriate **Resource** in ArchivesSpace. You may cancel by clicking **Cancel**.
+After you click **Save**, Archivematica will write the Archival Object to the appopriate Resource in ArchivesSpace. You may cancel by clicking **Cancel**.
 
 #### Edit Metadata
 
-Dessert lollipop danish muffin. Chocolate lollipop caramels sesame snaps dragée caramels jujubes. Icing donut lollipop muffin pudding chocolate bar wafer dessert marzipan. Wafer cake candy croissant brownie chocolate bar fruitcake toffee. Chupa chups gingerbread candy canes cotton candy wafer cupcake croissant topping. Soufflé tiramisu macaroon donut cotton candy. Chocolate bar chocolate fruitcake. Brownie sesame snaps powder chocolate bar. Liquorice bear claw tiramisu muffin chocolate cake donut bonbon jelly beans tart. Pie sesame snaps chocolate cake candy. Soufflé croissant cheesecake halvah halvah pie. Sweet roll jelly cheesecake chocolate carrot cake liquorice. Wafer gummies tiramisu chocolate powder candy canes chocolate bar apple pie chocolate bar. Gummi bears topping gingerbread jelly-o.
+In order to edit an existing existing Archival Object, select an Archival Object by clicking on its title and click **Edit Metadata**. Edit the free text title and edit the level of description form the dropdown. Optionally, edit the free text general note or free text condititons governing access note.
+
+![Edit Metadata](images/edit-metadata.png)
+
+After you click **Save**, Archivematica will write the Archival Object to the appopriate Resource in ArchivesSpace. You may cancel by clicking **Cancel**.
 
 #### Add New Digital Object Component
 
-Dessert lollipop danish muffin. Chocolate lollipop caramels sesame snaps dragée caramels jujubes. Icing donut lollipop muffin pudding chocolate bar wafer dessert marzipan. Wafer cake candy croissant brownie chocolate bar fruitcake toffee. Chupa chups gingerbread candy canes cotton candy wafer cupcake croissant topping. Soufflé tiramisu macaroon donut cotton candy. Chocolate bar chocolate fruitcake. Brownie sesame snaps powder chocolate bar. Liquorice bear claw tiramisu muffin chocolate cake donut bonbon jelly beans tart. Pie sesame snaps chocolate cake candy. Soufflé croissant cheesecake halvah halvah pie. Sweet roll jelly cheesecake chocolate carrot cake liquorice. Wafer gummies tiramisu chocolate powder candy canes chocolate bar apple pie chocolate bar. Gummi bears topping gingerbread jelly-o.
+In order to associate digital objects with intellectual entities, object entities called **Digital Objects** and their component **Digital Object Components** must be added to **Archival Objects**. To add a new digital object component to an existing Archival Object, select an Archival Object by clicking on its title and click **Add New Digital Object Component**. Enter a free text title. Optionally, add free text label.
+
+![Add New Digital Object Component](images/add-new-digital-object-component.png)
+
+Click **Save**. You may cancel by clicking **Cancel**.
 
 #### Edit Rights Metadata
 
-Dessert lollipop danish muffin. Chocolate lollipop caramels sesame snaps dragée caramels jujubes. Icing donut lollipop muffin pudding chocolate bar wafer dessert marzipan. Wafer cake candy croissant brownie chocolate bar fruitcake toffee. Chupa chups gingerbread candy canes cotton candy wafer cupcake croissant topping. Soufflé tiramisu macaroon donut cotton candy. Chocolate bar chocolate fruitcake. Brownie sesame snaps powder chocolate bar. Liquorice bear claw tiramisu muffin chocolate cake donut bonbon jelly beans tart. Pie sesame snaps chocolate cake candy. Soufflé croissant cheesecake halvah halvah pie. Sweet roll jelly cheesecake chocolate carrot cake liquorice. Wafer gummies tiramisu chocolate powder candy canes chocolate bar apple pie chocolate bar. Gummi bears topping gingerbread jelly-o.
+In order to apply rights metadata with intellectual entities, [PREMIS Rights Statements](http://www.loc.gov/standards/premis/Rights-in-the-PREMIS-Data-Model.pdf) must be added to **Archival Objects**. To add new rights metadata to an existing Archival Object, select an Archival Object by clicking on its title and click **Add Rights Metadata**. In the new tab, click **Add** to add a PREMIS rights statement. 
+
+Field | Value | Description (if needed)
+--- | ---
+Basis | Copyright | 
+Copyright status |  | 
+Copyright jurisdiction |  | 
+Copyright determination date |  | 
+Copyright start date | YYYY-MM-DD | Use today's date.
+Copyright end date |  | Leave blank.
+Open end date | Checked | 
+
+See below:
+
+##### Copyright
+
+If copyright has been transferred to the Board of Regents, fill out a PREMIS rights statement with the following information:
+
+
+
+If copyright has not been transferred, fill out a PREMIS rights statement with the following information:
 
 #### Delete selected
+
+To delete and Archival object, select an Archival Object by clicking its title and click **Delete selected*. At the prompt, select **Yes** to delete or **Cancel** to cancel. Be sure that you want to delete it!
 
 ### Arrangement
 
@@ -60,6 +92,10 @@ The SAA also offers this definition of [arrangement](http://www2.archivists.org/
 > The process of organizing materials with respect to their provenance and orgiinal order, to protect their context and to achieve physical or intellectual control. 
 >
 > The organization and sequence of items within a collection.
+
+#### Faceting by Tags
+
+#### Arrangement to ArchivesSpace 
 
 Dessert lollipop danish muffin. Chocolate lollipop caramels sesame snaps dragée caramels jujubes. Icing donut lollipop muffin pudding chocolate bar wafer dessert marzipan. Wafer cake candy croissant brownie chocolate bar fruitcake toffee. Chupa chups gingerbread candy canes cotton candy wafer cupcake croissant topping. Soufflé tiramisu macaroon donut cotton candy. Chocolate bar chocolate fruitcake. Brownie sesame snaps powder chocolate bar. Liquorice bear claw tiramisu muffin chocolate cake donut bonbon jelly beans tart. Pie sesame snaps chocolate cake candy. Soufflé croissant cheesecake halvah halvah pie. Sweet roll jelly cheesecake chocolate carrot cake liquorice. Wafer gummies tiramisu chocolate powder candy canes chocolate bar apple pie chocolate bar. Gummi bears topping gingerbread jelly-o.
 
