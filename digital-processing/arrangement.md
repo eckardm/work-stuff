@@ -12,13 +12,13 @@ Digital material in the **Backlog** pane can be arranged by dragging and droppin
 
 While not necessary to arrange digital objects, the ability fo facet the **Backlog** pane by tags is meant to facilitate arrangement. To facet by tag, select a tag from the **Tags** dropdown menu. To add additional facets (using OR logic), simply select another facet from the dropdown. Remove facets by clicking the **X** sign.
 
-[Faceting by Tags](iamges/faceting-by-tag.png)
+[Faceting by Tags](images/faceting-by-tag.png)
 
 #### Arrangement to ArchivesSpace 
 
 Before arranging files or folders from the **Backlog** pane to the **ArchivesSpace** pane, ensure that a Digital Object Component has been added. See [**Add New Digital Object Component**](appraisal.md#add-new-digital-object-component) for more information. Click and drag the file or folder onto a digital object component. *Note the only one file or folder may be dragged at a time, although more than one file or folder may be added to an individual componenet.
 
-![Arrangement to ArchivesSpace](iamges/dragging-and-dropping.png)
+![Arrangement to ArchivesSpace](images/dragging-and-dropping.png)
 
 ### Finalize Arrangement
 
