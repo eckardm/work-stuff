@@ -10,7 +10,7 @@
 
 Before digital processing can begin, an **Accession**, with an Identifier, must have bben created in ArchivesSpace and a **Resource** for it must exist. This will most likely have been done by the accessioning archivist.
 
-![Spawning a Resource from an Accession](resource-from-accession.png)
+![Spawning a Resource from an Accession](images/resource-from-accession.png)
 
 In addition, digital content must have been transferred into Archivematica and sent to the backlog using the **Transfer** pane. This will most likely have been done by the Assistant Archivist for Digital Curation.
 
@@ -44,7 +44,7 @@ Select one or more folders from the **Backlog** pane search results by clicking 
 
 Click on **Objects** in the **Analysis** pane to see a report of file types and sizes extracted during the initial **Transfer** of material. Click **Report** to see information on file format, PRONOM PUID (clicking on this field will take you to a summary from PRONOM's technical registry), Archivematica FPR Group, number of files and size in tabular form. Columns can be sorted alphanumerically by clicking on column headers.
 
-![Report](report.png)
+![Report](images/report.png)
 
 Click on **Visualizations** to see information on formats by either total number of files or total size of files in a pie chart.
 
