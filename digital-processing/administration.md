@@ -13,7 +13,7 @@ Option | Default | Explanation
 **Select file format identification command (Transfer)** | Seigfried version 1.0.0 PUID runs Identify using Siegfried. | Siegfried, while slower, especially for larger files, is sometimes more accurate than FIDO and is better at recognizing contaner formats, such as the Office Open XML format.
 **Extract packages** | Yes | Content from zipped or otherwise packaged content will be extracted.
 **Delete packages after extraction | Yes | We're most interested in preserving what's contained in the packages, not the packages themselves.
-**Examine contents** | Yes | This will allow us to check for Personally Identifiable Information (PII), like Social Security numbers and credit card numbers, during Appraisal.
+**Examine contents** | Yes | This will allow us to check for Personally Identifiable Information (PII), like Social Security numbers and credit card numbers, with the Appraisal tab.
 **Create SIP(s)** | Send to backlog | This will allow us make use of the Appraisal tab later. The Assistant Archivist for Digital Curation will keep track of exceptions to this rule. 
 **Select file format identification command (Ingest) | Seigfried version 1.0.0 PUID runs Identify using Siegfried | See above.
 **Normalize** | Normalize for preservation | This will create preservation copies of the original objects. Note that the original objects are always kept along with their normalized versions.

@@ -8,17 +8,17 @@
 
 ### Preliminaries
 
-Before digital processing can begin, an **Accession**, with an Identifier, must be created in ArchivesSpace and a **Resource** for it must exist.
+Before digital processing can begin, an **Accession**, with an Identifier, must have bben created in ArchivesSpace and a **Resource** for it must exist. This will most likely have been done by the accessioning archivist.
 
 ![Spawning a Resource from an Accession](resource-from-accession.png)
 
-In addition, digital content must be transferred into Archivematica and sent to the backlog using the **Transfer** pane. This will most likely have been done by the Assistant Archivist for Digital Curation.
+In addition, digital content must have been transferred into Archivematica and sent to the backlog using the **Transfer** pane. This will most likely have been done by the Assistant Archivist for Digital Curation.
 
-![Transfer](transfer.png)
+![Transfer](images/transfer.png)
 
 The design of the Appraisal tab is based on the idea of having different "panes" which can be toggled on and off as needed. When the Appraisal tab is loaded, the **Backlog** and **Analysis** panes display. Clicking on the other pane options (i.e., **File List** or **ArchivesSpace**) will load those panes; any pane can be removed from view by clicking again.
 
-![Toggling](toggling.png)
+![Toggling](images/toggling.png)
 
 ### Backlog pane and Initial Survey
 
@@ -34,7 +34,7 @@ To begin an inital survey of a transfer, click on folder icons to expand the con
 
 Tags may be applied in the **Backlog** pane---see [**Tagging**](appraisal.md#tagging) below.
 
-![Exploring a Transfer](explore-transfer.png)
+![Exploring a Transfer](images/explore-transfer.png)
 
 ### Appraisal
 
@@ -48,13 +48,13 @@ Click on **Objects** in the **Analysis** pane to see a report of file types and 
 
 Click on **Visualizations** to see information on formats by either total number of files or total size of files in a pie chart.
 
-![Visualizations](visualizations.png)
+![Visualizations](images/visualizations.png)
 
 #### File list pane
 
 Ensure that the **File List** pane is toggled on. Files in folders or selected individually in the **Backlog** pane populate the **File List**, and clicking on a format type in the **Objects** report or a wedge of the pie chart visualization in the **Analysis** pane will facet the **File List** pane with information on files of that format type, including path and filename, size, last modified date and tags. Use the **Date range start** and **Date range end** fields to limit results by date. Files may be previewed and tags may be applied from the **File List** pane---see [**Preview file**](appraisal.md#preview-file) and [**Tagging**](appraisal.md#tagging) below.
 
-![File List](file-list.png)
+![File List](images/file-list.png)
 
 In the image above, Exchangeable Image File Format (Compressed) 2.2 was selected in the **Objects** report in the **Analysis pane**.
 
@@ -62,7 +62,7 @@ In the image above, Exchangeable Image File Format (Compressed) 2.2 was selected
 
 Click on **Tags** in the **Analysis** pane to see a see a report of tags that have been applied to a particular selection in a transfer and their counts. See [**Tagging**](appraisal.md#tagging) below.
 
-![Tags](tags.png)
+![Tags](images/tags.png)
 
 #### Examine contents
 
@@ -72,13 +72,13 @@ Click on **Examine Contents** in the **Analysis** pane to see bulk_extractor log
 
 If the accession contains actual PII, consider tagging the file to note the occurrence of PII. You can use these tags to assign appropriate access restrictions to content or separate it if it is determined to be a non-essential record. 
 
-![Examine contents](examine-contents.png)
+![Examine contents](images/examine-contents.png)
 
 #### Preview file
 
 To preview a file in **Preview file** in the **Analysis** pane, click on a filename from the **File List** pane or **Examine contents** in the **Analysis** pane. 
   
-![Preview file](preview-file.png)
+![Preview file](images/preview-file.png)
 
 If your browser has a viewer for the format, it will appear. Click and drag the bottom right cornor of the window to expand it. Otherwise, you will be prompted to download or open the file. Alternatively, all files can be downloaded for local analysis by clicking **(Download)**. Use the following programs to manually review files:
 
@@ -88,7 +88,7 @@ If your browser has a viewer for the format, it will appear. Click and drag the 
   
   After opening Quick View Plus, use the mouse or arrow keys (right and left arrows may be used to expand/collapse subfolders) to navigate to the appropriate directory in the folder pane. Once the appropriate folder has been selected, a list of its contents (both subfolders and files) will be displayed in the file pane. You may use the mouse or the tab key to move to the file pane; then, whatever file is highlighted will appear in the viewing environment. Please note that very large files (especially email) may take longer to open. 
   
-  ![Quick View Plus](quickviewplus.png)
+  ![Quick View Plus](images/quickviewplus.png)
   
   While viewing a file, you may search for text in the ribbon’s text box, zoom in/out (for images only) and adjust the document size so that it fits entirely in the view are or is fit to the area’s width.
   
@@ -98,7 +98,7 @@ If your browser has a viewer for the format, it will appear. Click and drag the 
     
   After opening IrfanView, you will need to click on the open file icon (or use File > Open... in the navigation menu) to access raster image files.
   
-  ![IrfanView folder pane](irfanview-1.png)
+  ![IrfanView folder pane](images/irfanview-1.png)
    
   * Use **Inkscape** to review the content of vector images.
   
@@ -110,11 +110,11 @@ If your browser has a viewer for the format, it will appear. Click and drag the 
   
   After opening VLC Media player, you may use the Media menu to open a single file or an entire folder (in which case, all audio/video files withing the folder will be added to a playlist).
   
-  ![VLC Media Player Media menu](vlc-1.png)
+  ![VLC Media Player Media menu](images/vlc-1.png)
   
   Play controls are located at the bottom of the VLC Media Player window. In addition to Play, Pause and Stop buttons, the archivist may fast forward or reverse prgress by adjusting the slider on the progress bar.
   
-  ![VLC Media Player controls](vlc-2.png)
+  ![VLC Media Player controls](images/vlc-2.png)
   
   If there are multiple files in a playlist, you may click the arrow keys to move to the next/previous item in a playlist.
 
@@ -130,13 +130,13 @@ Tags can be applied from the **Backlog** pane, the **File List** pane and from *
 
 To apply tags in the **Backlog** pane, select the names of the folders or files you'd like to tag, enter the tag and select **Add tag to selected files**. To remove tags, click the minus sign next to the tag.
 
-![Tagging from the Backog pane](tags-backlog.png)
+![Tagging from the Backog pane](images/tags-backlog.png)
 
 #### From the **File List** pane
 
 To apply tags in the **File List** pane, select the checkboxes of the files you'd like to tag, enter the tag and select **Add tag to selected files**. Alternatively, select every file for tagging by clicking the checkbox next to the **Filename** column header. To remove tags, click the minus sign next to the tag.
 
-![Tagging from the File List pane](tags-filelist.png)
+![Tagging from the File List pane](images/tags-filelist.png)
 
 #### From **Examine Contents** in the **Analysis** pane
 
@@ -144,7 +144,7 @@ To apply tags in **Examine Contents** in the **Analyis** pane, select the checkb
 
 *Note that tags added in Examine Contents in the Analysis pane will not show up there, even though they have been applied and can be viewed or removed, for example, in the Backlog pane.*
 
-![Tagging from Examine Contents in the Analysis pane](tags-examine-contents.png)
+![Tagging from Examine Contents in the Analysis pane](images/tags-examine-contents.png)
 
 ***
 
