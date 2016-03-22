@@ -8,13 +8,15 @@
 
 ### Preliminaries
 
-Before digital processing can begin, an **Accession**, with an Identifier, must have bben created in ArchivesSpace and a **Resource** for it must exist. This will most likely have been done by the accessioning archivist.
+Before digital processing can begin, an **Accession** record, with an Identifier, must have been created in ArchivesSpace and a **Resource** record for it must exist. This will most likely have been done by the accessioning archivist.
 
 ![Spawning a Resource from an Accession](images/resource-from-accession.png)
 
 In addition, digital content must have been transferred into Archivematica and sent to the backlog using the **Transfer** pane. This will most likely have been done by the Assistant Archivist for Digital Curation.
 
 ![Transfer](images/transfer.png)
+
+### Toggling
 
 The design of the Appraisal tab is based on the idea of having different "panes" which can be toggled on and off as needed. When the Appraisal tab is loaded, the **Backlog** and **Analysis** panes display. Clicking on the other pane options (i.e., **File List** or **ArchivesSpace**) will load those panes; any pane can be removed from view by clicking again.
 
@@ -24,7 +26,7 @@ The design of the Appraisal tab is based on the idea of having different "panes"
 
 Search the backlog by **Accession number** to pull up all transfers associated with a particular accession.
 
-![Searching the Backlog by Accession Number](backlog-accession-number.png)
+![Searching the Backlog by Accession Number](images/backlog-accession-number.png)
 
 Alternatively, search the backlog using the **Path** option to search by transfer title (part of the path). *Note that Archivematica sanitizes file and folder names as part of its initial Transfer microservices--any spaces will have been replaced with underscores and this is the way they'll need to be searched.*
 
