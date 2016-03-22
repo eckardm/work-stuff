@@ -31,8 +31,9 @@ If you do change any of the "Born-digital" processing defaults, be sure to hit t
 ***
 
 [Digital Processing](digital-processing.md)
-  * Administration
+  * [Administration](administration.md)
   * [Appraisal](appraisal.md)
-  * [Description and Arrangement](arrangement.md)
+  * [Description](description.md)
+  * [Arrangement](arrangement.md)
   * [Ingest](ingest.md)
 
