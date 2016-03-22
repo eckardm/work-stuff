@@ -21,7 +21,7 @@ Option | Default | Explanation
 **Reminder: add metadata if desired** | Continue | The Appraisal tab allows archivists to create descriptive metadata and PREMIS Rights Statements, so it is not required during Ingest.
 **Transcribe files (OCR)** | Yes | This is due to the enormous potential of Optical Character Recognition (OCR) for improving access to material. 
 **Select file format identification command (Submission documentation & metadata)** | Seigfried version 1.0.0 PUID runs Identify using Siegfried | See above.
-**Select compression algorithm | Uncompressed | Compression adds a layer of complexity to an AIP, making it harder to preserve, and will only be considered if storage costs become an issue. Likewise **Select compressing level** is not applicable and should be set to None.
+**Select compression algorithm** | Uncompressed | Compression adds a layer of complexity to an AIP, making it harder to preserve, and will only be considered if storage costs become an issue. Likewise **Select compressing level** is not applicable and should be set to None.
 **Store AIP** | Yes | We want to process material as efficiently as possible.
 **Store AIP location** | aip storage (bhl-archivematica)| This location managed by MLibrary.
 **Store DIP location** | None | It is not applicable as we will not be creating DIPs.
