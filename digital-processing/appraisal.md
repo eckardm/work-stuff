@@ -144,7 +144,7 @@ To apply tags in the **File List** pane, select the checkboxes of the files you'
 
 #### From **Examine Contents** in the **Analysis** pane
 
-To apply tags in **Examine Contents** in the **Analyis** pane, select the checkboxes of the files you'd like to tag, enter the tag and select **Add tag to selected files**. Alternatively, select every file for tagging by clicking the checkbox next to the **Filename** column header. 
+To apply tags in **Examine Contents** in the **Analyis** pane, select the checkboxes of the files you'd like to tag, enter the tag and select **Add tag to selected files**. Alternatively, select every file for tagging by clicking the checkbox next to the **Filename** column header. To remove tags, click the minus sign next to the tag.
 
 *Note that tags added in Examine Contents in the Analysis pane will not show up there, even though they have been applied and can be viewed or removed, for example, in the Backlog pane.*
 
