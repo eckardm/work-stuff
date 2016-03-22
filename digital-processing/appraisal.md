@@ -154,6 +154,6 @@ To apply tags in **Examine Contents** in the **Analyis** pane, select the checkb
 
 [Digital Processing](digital-processing.md)
   * [Administration](administration.md)
-  * **Appraisal**
+  * Appraisal
   * [Description and Arrangement](arrangement.md)
   * [Ingest](ingest.md)
