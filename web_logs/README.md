@@ -38,11 +38,26 @@ The json files load much faster, since the parser doesn't need to manually proce
 
 
 ###Summarizations
-Get a count of all unique visitors:
+
+#### Content Use and Access Counts
+
+##### Bounce Rate
+
+Get a bounce rate (percent of total number of logs/requests where only one page is viewed by a user):
 ```python
->>> parser.unique_visitor_count()
-18754
+>>> parser.bounce_rate()
+13.9890619821
 ```
+
+##### Download Counts
+
+N/A
+
+##### Time
+
+##### Pageviews
+
+##### Sessions
 
 Any summarization method can take an optional ```start_date``` and ```end_date``` argument (which must be ```yyyy-mm-dd```), which will filter the data to be summarized by those dates:
 ```python
@@ -177,31 +192,102 @@ Get a list of where our traffic is coming from:
 ]
 ```
 
+#### Audience Metrics
+
+##### Location
+
+I don't think we can get this info...
+
+##### Mode of Access
+
 Get a list of browser families:
 ```python
 >>> parser.browser_families()
-[(u'Windows 7', 57137), 
- (u'Mac OS X', 26435), 
- (u'Windows 8.1', 7116),
- (u'iOS', 6212), 
- (u'Windows 10', 5710), 
- (u'Windows XP', 5373), 
- (u'Android', 3179), 
- (u'Windows 8', 2448)
- (...)
-]
-```
-
-Get a list of operating system families:
-```python
->>> parser.os_families()
 [(u'Chrome', 51484), 
  (u'Firefox', 34241), 
  (u'IE', 12089), 
  (u'Safari', 11996), 
  (u'Mobile Safari', 6212), 
  (u'Chrome Mobile', 2106), 
- (u'Opera', 859)
- (...)
+ (u'Opera', 859), 
+ (u'Edge', 719), 
+ (u'Android', 432), 
+ (u'WebKit Nightly', 310), 
+ (u'Opera Mini', 94), 
+ (u'IE Mobile', 88), 
+ (u'Firefox Mobile', 50)
 ]
+```
+
+Get a list of browser versions:
+```python
+>>> parser.browser_versions()
+[(u'Chrome 47.0.2526', 15826), 
+(u'Chrome 46.0.2490', 13171), 
+(u'Chrome 48.0.2564', 11697), 
+(u'Firefox 38', 11325), 
+(u'IE 11', 7195), 
+(u'Firefox 21', 4106), 
+(u'Mobile Safari 9', 3244), 
+(u'Firefox 43', 2840), 
+(u'Firefox 42', 2642), 
+(u'Safari9.0.1', 2319), 
+(u'Firefox 36', 2000), 
+(u'Chrome 27.0.1453', 1976), 
+]
+```
+
+Get a list of operating system families:
+```python
+>>> parser.os_families()
+[(u'Windows 7', 57137), 
+ (u'Mac OS X', 26435), 
+ (u'Windows 8.1', 7116), 
+ (u'iOS', 212), 
+ (u'Windows 10', 5710), 
+ (u'Windows XP', 5373), 
+ (u'Android', 3179), 
+ (u'Windws 8', 2448), 
+ (u'Linux', 2229), 
+ (u'Ubuntu', 1744), 
+]
+```
+
+Get a list of operating system versions:
+```python
+>>> parser.os_versions()
+ [(u'Windows 7', 57137), 
+ (u'Windows 8.1', 7116), 
+ (u'Mac OS X 10.10.5', 5916), 
+ (u'Windows 10', 5710), 
+ (u'Windows XP', 5373), 
+ (u'Mac OS X 10.9.5', 3304), 
+ (u'Mac OS X 10.11.1', 2674), 
+ (u'Windows 8', 2448), 
+ (u'Linux', 2229), 
+]
+```
+
+Get a percentage of mobile requests:
+```python
+>>> parser.mobile_percentage_for_requests()
+5.1143520053
+```
+
+Get a percentage of unique mobile users:
+```python
+>>> parser.unique_mobile_visitor()
+13.5064935065
+```
+
+##### Network Domain / ISP Name
+
+TBD
+
+##### Users
+
+Get a count of all unique visitors:
+```python
+>>> parser.unique_visitor_count()
+18754
 ```

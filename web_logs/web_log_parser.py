@@ -144,20 +144,47 @@ class BentleyWebLogParser(object):
 # * * *
         
     def browser_families(self, limit=None, start_date="", end_date=""):
-        browser_families_sho = []
+        browser_families = []
         for log in self.logs_filtered_by_time_range(start_date, end_date):
-            browser_family_dai = self.get_browser_family(log)
-            browser_families_sho.append(browser_family_dai)
+            browser_family = self.get_browser_family(log)
+            browser_families.append(browser_family)
             
-        return Counter(browser_families_sho).most_common(n=limit)
+        return Counter(browser_families).most_common(n=limit)
         
     def os_families(self, limit=None, start_date="", end_date=""):
-        os_families_sho = []
+        os_families = []
         for log in self.logs_filtered_by_time_range(start_date, end_date):
-            os_family_dai = self.get_os_family(log)
-            os_families_sho.append(os_family_dai)
+            os_family = self.get_os_family(log)
+            os_families.append(os_family)
             
-        return Counter(os_families_sho).most_common(n=limit)
+        return Counter(os_families).most_common(n=limit)
+        
+    def browser_versions(self, limit=None, start_date="", end_date=""):
+        browser_versions = []
+        for log in self.logs_filtered_by_time_range(start_date, end_date):
+            browser_version = self.get_browser_version(log)
+            browser_versions.append(browser_version.strip())
+        
+        return Counter(browser_versions).most_common(n=limit)
+        
+    def os_versions(self, limit=None, start_date="", end_date=""):
+        os_versions = []
+        for log in self.logs_filtered_by_time_range(start_date, end_date):
+            os_version = self.get_os_version(log)
+            os_versions.append(os_version.strip())
+        
+        return Counter(os_versions).most_common(n=limit)
+        
+    def mobile_percentage_for_requests(self, start_date="", end_date=""):
+        mobile = 0
+        total = 0
+        for log in self.logs_filtered_by_time_range(start_date, end_date):
+            total += 1
+            is_mobile = self.is_mobile(log)
+            if is_mobile == True:
+                mobile += 1
+                
+        return float(mobile) / total * 100
         
 # * * *
             
@@ -201,6 +228,33 @@ class BentleyWebLogParser(object):
 
         return len(visitors)
 
+# * * *
+
+    def unique_mobile_visitor(self, start_date="", end_date=""):
+        total = set()
+        visitors = set()
+        for log in self.logs_filtered_by_time_range(start_date, end_date):
+            total.add(log.get("remote_host", ""))
+            if self.is_mobile(log) == True:
+                visitors.add(log.get("remote_host", ""))
+
+        return float(len(visitors)) / len(total) * 100
+        
+    def bounce_rate(self, start_date="", end_date=""):
+        total = 0
+        visitors = []
+        for log in self.logs_filtered_by_time_range(start_date, end_date):
+            total += 1
+            visitors.append(log.get("remote_host", ""))
+        bouncers = 0
+        for visitor, count in Counter(visitors).most_common():
+            if count == 1:
+                bouncers += 1
+                
+        return float(bouncers) / total * 100
+
+# * * *
+
     def bentley_visitor_count(self, start_date="", end_date=""):
         visitors = set()
         for log in self.logs_filtered_by_time_range(start_date, end_date):
@@ -208,7 +262,7 @@ class BentleyWebLogParser(object):
             if "." in visitor:
                 visitors.add(visitor)
         return len(visitors)
-
+        
     def get_referer_counts(self, limit=None, start_date="", end_date=""):
         referers = []
         for log in self.logs_filtered_by_time_range(start_date, end_date):
@@ -241,6 +295,30 @@ class BentleyWebLogParser(object):
         os_family = log.get("request_header_user_agent__os__family", "")
 
         return os_family
+        
+    @staticmethod
+    def get_browser_version(log):
+        browser_version = []
+        browser_version.append(log.get("request_header_user_agent__browser__family", ""))
+        browser_version.append(log.get("request_header_user_agent__browser__version_string", ""))
+        browser_version = " ".join(browser_version)
+            
+        return browser_version
+        
+    @staticmethod
+    def get_os_version(log):
+        os_version = []
+        os_version.append(log.get("request_header_user_agent__os__family", ""))
+        os_version.append(log.get("request_header_user_agent__os__version_string", ""))
+        os_version = " ".join(os_version)
+            
+        return os_version
+        
+    @staticmethod
+    def is_mobile(log):
+        is_mobile = log.get("request_header_user_agent__is_mobile")
+        
+        return is_mobile
         
 # * * *
         

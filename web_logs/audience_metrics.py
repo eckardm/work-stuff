@@ -26,10 +26,9 @@ parser.filter_staff_visits()
 # browser family, version
 # os family, version
 # device (is mobile)
-print parser.os_families()
 
-print "\n"
-print parser.browser_families()
+print parser.bounce_rate_by_requests()
+print parser.bounce_rate_by_unique_users()
 
 
 # network domain
