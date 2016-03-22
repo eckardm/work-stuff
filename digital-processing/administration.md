@@ -1,9 +1,8 @@
-Administration tab
-==================
+## Administration tab
 
 The Processing Configuration page of the Administration tab provides archivists with an easy form to configure processing defaults for a transfer or SIP. Changing the options using the web interface will write the necessary XML behind the scenes.
 
-![Processing Configuration](processing-configuration.png)
+![Processing Configuration](images/processing-configuration.png)
 
 Please consult with the Assistant Archivist for Digital Curation before changing any processing defaults---while they should work for the majority of collections, there will undoubtably be exceptions to these rules! See the following explanations for more information:
 

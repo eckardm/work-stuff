@@ -1,10 +1,8 @@
-Digital Processing
-==================
+## Digital Processing
 
 The Bentley Historical Library's digital processing procedures reflect not only our general policies and the traditional archival functions of appraisal, arrangement and description, but also encompass additional procedures that ensure the authenticity, integrity and security of digital content.
 
-Digital Processing Defined
---------------------------
+### Digital Processing Defined
 
 In this context, "digital processing" corresponds to the Generate AIP function of the [Reference Model for an Open Archival Information System (OAIS)](http://public.ccsds.org/publications/archive/650x0m2.pdf)’s Ingest entity. 
 
@@ -12,8 +10,7 @@ In this context, "digital processing" corresponds to the Generate AIP function o
 
 After associating digital content with an accession record and transfering it into Archivematica, digital processing permits archivists to establish the integrity of materials, assume intellectual control over them and perform preservation events on them (e.g., scans for viruses and personally identifiable information, conversion to preservation formats, recording of descriptive and technical metadata, etc.). This creates one or more Submission Information Packages (SIPs) and transforms them into Archival Information Packages (AIPs) which are then deposited into [Deep Blue](http://deepblue.lib.umich.edu/), a DSpace repository where portions of AIPs usually double as a Dissemination Information Package (DIP). In some cases---e.g., very large audio, video or image files---an additional DIP will be created to make it easier for patrons to download and access materials.
 
-Evolution of Digital Processing Procedures
-------------------------------------------
+### Evolution of Digital Processing Procedures
 
 The Bentley's current digital processing procedures have evolved from both a largely [manual workflow](http://deepblue.lib.umich.edu/handle/2027.42/96439) and also one that made use of [AutomatedProcessor (AutoPro)](http://deepblue.lib.umich.edu/handle/2027.42/97298), a tool developed in-house that made digital processing more efficient and reduced technical barriers, thereby permitting archivists to focus their energies on the traditional archival functions of appraisal, arrangement, and description.
 
