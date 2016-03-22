@@ -61,25 +61,24 @@ Click **Save**. You may cancel by clicking **Cancel**.
 
 In order to apply rights metadata with intellectual entities, [PREMIS Rights Statements](http://www.loc.gov/standards/premis/Rights-in-the-PREMIS-Data-Model.pdf) must be added to **Archival Objects**. To add new rights metadata to an existing Archival Object, select an Archival Object by clicking on its title and click **Add Rights Metadata**. In the new tab, click **Add** to add a PREMIS rights statement. 
 
-Field | Value | Description (if needed)
---- | --- | ---
-Basis | Copyright | 
-Copyright status |  | 
-Copyright jurisdiction |  | 
-Copyright determination date |  | 
-Copyright start date | YYYY-MM-DD | Use today's date.
-Copyright end date |  | Leave blank.
-Open end date | Checked | 
-
-See below:
-
 ##### Copyright
 
-If copyright has been transferred to the Board of Regents, fill out a PREMIS rights statement with the following information:
+Field | Definition | Suggested Values | Description (if needed)
+--- | --- | --- | ---
+Basis | Designation of the basis for the right or permission descriped in the rights statement. | Copyright | 
+Copyright status | Copyright status of the object at the time the rights statement is recorded. | copyrighted OR publicdomain OR unknown | Choose one.
+Copyright jurisdiction | The country whose copyright laws apply. | us | Taken from ISO 3166.
+Copyright determination date | The date that the copyright status recorded in **Copyright status** was determined. | YYYY-MM-DD | This is optional. Use the date of the accession or, alternatively, use today's date.
+Copyright start date | The date the granted copyright commences. | YYYY-MM-DD | Use today's date.
+Copyright end date | The date the granted copyright expires. | YYYY-MM-DD | Leave blank.
+Open end date | | The end date at which the particular copyright applies or is applied to the content. | Checked | 
+Copyright note | Additional information about the copyright status of the object. | "Copyright has been transferred to the Regents of the University of Michigan." OR "Copyright has not been transferred to the Regents of the University of Michigan." | Choose one.
+
+##### License
 
 
 
-If copyright has not been transferred, fill out a PREMIS rights statement with the following information:
+Click **Next**.
 
 #### Delete selected
 
