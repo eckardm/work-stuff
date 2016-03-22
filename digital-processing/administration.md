@@ -1,3 +1,12 @@
+[Digital Processing](digital-processing.md)
+  * [Administration](administration.md)
+  * [Appraisal](appraisal.md)
+  * [Description](description.md)
+  * [Arrangement](arrangement.md)
+  * [Ingest](ingest.md)
+
+***
+
 ## Administration tab
 
 The Processing Configuration page of the Administration tab provides archivists with an easy form to configure processing defaults for a transfer or SIP. Changing the options using the web interface writes the necessary XML behind the scenes.
@@ -28,12 +37,3 @@ Option | Default | Explanation
   
 If you do change any of the "Born-digital" processing defaults, be sure to hit the Save button.
   
-***
-
-[Digital Processing](digital-processing.md)
-  * [Administration](administration.md)
-  * [Appraisal](appraisal.md)
-  * [Description](description.md)
-  * [Arrangement](arrangement.md)
-  * [Ingest](ingest.md)
-

@@ -1,3 +1,12 @@
+[Digital Processing](digital-processing.md)
+  * [Administration](administration.md)
+  * [Appraisal](appraisal.md)
+  * [Description](description.md)
+  * [Arrangement](arrangement.md)
+  * [Ingest](ingest.md)
+
+***
+
 ### Arrangement
 
 The SAA also offers this definition of [arrangement](http://www2.archivists.org/glossary/terms/a/arrangement):
@@ -27,12 +36,3 @@ Once all relevant files and folders have been dragged and dropped onto a Digital
 ### Separations
 
 For the time being, any material that should be separated will be left in the **Backlog** pane.
-
-***
-
-[Digital Processing](digital-processing.md)
-  * [Administration](administration.md)
-  * [Appraisal](appraisal.md)
-  * [Description](description.md)
-  * [Arrangement](arrangement.md)
-  * [Ingest](ingest.md)

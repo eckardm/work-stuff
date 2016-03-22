@@ -1,3 +1,12 @@
+[Digital Processing](digital-processing.md)
+  * [Administration](administration.md)
+  * [Appraisal](appraisal.md)
+  * [Description](description.md)
+  * [Arrangement](arrangement.md)
+  * [Ingest](ingest.md)
+
+***
+
 ## Appraisal tab
 
 [Appraisal](http://www2.archivists.org/glossary/terms/a/appraisal), or the process of determining whether records and other materials have permanent (archival) value, is also a fundamental archival principle. The Appraisal feature in Archivematica allows archivists to:
@@ -149,12 +158,3 @@ To apply tags in **Examine Contents** in the **Analyis** pane, select the checkb
 *Note that tags added in Examine Contents in the Analysis pane will not show up there, even though they have been applied and can be viewed or removed, for example, in the Backlog pane.*
 
 ![Tagging from Examine Contents in the Analysis pane](images/tags-examine-contents.png)
-
-***
-
-[Digital Processing](digital-processing.md)
-  * [Administration](administration.md)
-  * [Appraisal](appraisal.md)
-  * [Description](description.md)
-  * [Arrangement](arrangement.md)
-  * [Ingest](ingest.md)

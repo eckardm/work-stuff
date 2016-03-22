@@ -1,3 +1,12 @@
+[Digital Processing](digital-processing.md)
+  * [Administration](administration.md)
+  * [Appraisal](appraisal.md)
+  * [Description](description.md)
+  * [Arrangement](arrangement.md)
+  * [Ingest](ingest.md)
+
+***
+
 ## Digital Processing
 
 The Bentley Historical Library's digital processing procedures reflect not only our institutional policies and the traditional archival functions of appraisal, arrangement and description, but also encompass additional procedures that ensure the authenticity, integrity and security of digital content.
@@ -28,11 +37,4 @@ This feature allows archivists to:
 
 This section of the manual will provide an overview of the digital processing workflow and more detailed guidelines for individual steps.
 
-***
 
-[Digital Processing](digital-processing.md)
-  * [Administration](administration.md)
-  * [Appraisal](appraisal.md)
-  * [Description](description.md)
-  * [Arrangement](arrangement.md)
-  * [Ingest](ingest.md)

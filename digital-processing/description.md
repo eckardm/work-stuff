@@ -1,3 +1,12 @@
+[Digital Processing](digital-processing.md)
+  * [Administration](administration.md)
+  * [Appraisal](appraisal.md)
+  * [Description](description.md)
+  * [Arrangement](arrangement.md)
+  * [Ingest](ingest.md)
+
+***
+
 ## Description
 
 The Bentley Historical Library makes use of ArchivesSpace, an open source archives information management application, to create and manage **Resources**, which allow an archivist to record information about the intellectual and physcial characteristics of archival materials, as well as contextual information about creators and topics. The **ArchivesSpace** pane in the Appraisal tab in Archivematica pull and pushes data to and from **Resources** in our instance of ArchivesSpace in order to facilitae archival description and arrangement for digital content.
@@ -86,11 +95,3 @@ Access rights should be added only when access is restricted based on Bentley po
 
 To delete and Archival object, select an Archival Object by clicking its title and click **Delete selected**. At the prompt, select **Yes** to delete or **Cancel** to cancel. Be sure that you want to delete it!
 
-***
-
-[Digital Processing](digital-processing.md)
-  * [Administration](administration.md)
-  * [Appraisal](appraisal.md)
-  * [Description](description.md)
-  * [Arrangement](arrangement.md)
-  * [Ingest](ingest.md)
