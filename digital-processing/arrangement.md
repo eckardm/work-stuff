@@ -62,7 +62,7 @@ Click **Save**. You may cancel by clicking **Cancel**.
 In order to apply rights metadata with intellectual entities, [PREMIS Rights Statements](http://www.loc.gov/standards/premis/Rights-in-the-PREMIS-Data-Model.pdf) must be added to **Archival Objects**. To add new rights metadata to an existing Archival Object, select an Archival Object by clicking on its title and click **Add Rights Metadata**. In the new tab, click **Add** to add a PREMIS rights statement. 
 
 Field | Value | Description (if needed)
---- | ---
+--- | --- | ---
 Basis | Copyright | 
 Copyright status |  | 
 Copyright jurisdiction |  | 
