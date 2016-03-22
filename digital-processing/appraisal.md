@@ -22,7 +22,7 @@ The design of the Appraisal tab is based on the idea of having different "panes"
 
 ![Toggling](images/toggling.png)
 
-### Backlog pane and Initial Survey
+### Backlog pane
 
 Search the backlog by **Accession number** to pull up all transfers associated with a particular accession.
 
@@ -30,21 +30,23 @@ Search the backlog by **Accession number** to pull up all transfers associated w
 
 Alternatively, search the backlog using the **Path** option to search by transfer title (part of the path). *Note that Archivematica sanitizes file and folder names as part of its initial Transfer microservices--any spaces will have been replaced with underscores and this is the way they'll need to be searched.*
 
-*Note that in the image above, Events_2006 is crossed out because all the files in that transfer have already been ingested.*
+*Note also that in the image above, Events_2006 is crossed out because all the files in that transfer have already been ingested.*
+
+### Initial survey
 
 To begin an inital survey of a transfer, click on folder icons to expand the contents of that folder. To collapse the contents of a particular folder, click again on the icon. *Note that files in the transfer are located in the "objects" folder.* 
 
-Tags may be applied in the **Backlog** pane---see [**Tagging**](appraisal.md#tagging) below.
+Tags may be applied in the **Backlog** pane---see [Tagging](appraisal.md#tagging) below.
 
 ![Exploring a Transfer](images/explore-transfer.png)
 
 ### Appraisal
 
-Select one or more folders from the **Backlog** pane search results by clicking on the folder name to being the appraisal process. You can choose an entire transfer, a folder within a transfer or individual files. Click on the folder name again to deselect that folder, or click **Deselect all** to deselect all folders.
+Select one or more folders from the **Backlog** pane search results by clicking on the folder name to begin the appraisal process. You can choose an entire transfer (or transfers), a folder (or folders) within a transfer or individual files. Click on the folder name again to deselect that folder, or click **Deselect all** to deselect all folders.
 
 #### Objects
 
-Click on **Objects** in the **Analysis** pane to see a report of file types and sizes extracted during the initial **Transfer** of material. Click **Report** to see information on file format, PRONOM PUID (clicking on this field will take you to a summary from PRONOM's technical registry), Archivematica FPR Group, number of files and size in tabular form. Columns can be sorted alphanumerically by clicking on column headers.
+Click on **Objects** (located in the **Analysis** pane) to see a report of file types and sizes extracted during the initial Transfer of material. Click **Report** to see information on file format, PRONOM PUID (clicking on this field will take you to a summary from PRONOM's technical registry), Archivematica FPR Group, number of files and size in tabular form. Columns can be sorted alphanumerically by clicking on column headers.
 
 ![Report](images/report.png)
 
@@ -54,15 +56,15 @@ Click on **Visualizations** to see information on formats by either total number
 
 #### File list pane
 
-Ensure that the **File List** pane is toggled on. Files in folders or selected individually in the **Backlog** pane populate the **File List**, and clicking on a format type in the **Objects** report or a wedge of the pie chart visualization in the **Analysis** pane will facet the **File List** pane with information on files of that format type, including path and filename, size, last modified date and tags. Use the **Date range start** and **Date range end** fields to limit results by date. Files may be previewed and tags may be applied from the **File List** pane---see [**Preview file**](appraisal.md#preview-file) and [**Tagging**](appraisal.md#tagging) below.
+Ensure that the **File List** pane is toggled on. Files that belong to selections from the **Backlog** pane populate the **File List**, and clicking on a format type in the **Objects** **Reports** or wedge of the pie chart in **Visualizations** (located in the **Analysis** pane) will facet the **File List** pane with information on files of that format type, including path and filename, size, last modified date and tags. Use the **Date range start** and **Date range end** fields to limit results by date. Files may be previewed and tags may be applied from the **File List** pane---see [**Preview file**](appraisal.md#preview-file) and [**Tagging**](appraisal.md#tagging) below.
 
 ![File List](images/file-list.png)
 
-In the image above, Exchangeable Image File Format (Compressed) 2.2 was selected in the **Objects** report in the **Analysis pane**.
+In the image above, Exchangeable Image File Format (Compressed) 2.2 was selected in the **Objects** report.
 
 #### Tags
 
-Click on **Tags** in the **Analysis** pane to see a see a report of tags that have been applied to a particular selection in a transfer and their counts. See [**Tagging**](appraisal.md#tagging) below.
+Click on **Tags** (located in the **Analysis** pane) to see a see a report of tags that have been applied to selections from the **Backlog** pane and their counts. See [**Tagging**](appraisal.md#tagging) below.
 
 ![Tags](images/tags.png)
 
@@ -70,7 +72,7 @@ Click on **Tags** in the **Analysis** pane to see a see a report of tags that ha
 
 Personally identifiable information (PII) includes data such Social Security numbers (SSN) or credit card numbers that may be used to steal an individual’s identity or perpetrate fraud in some manner. To mitigate potential risks and make a best effort to protect the privacy of our donors, Archivematica employs [bulk_extractor](http://forensicswiki.org/wiki/Bulk_extractor) and its "accounts" scanner to identify PII. 
 
-Click on **Examine Contents** in the **Analysis** pane to see bulk_extractor log content for PII. Click on a file name to see a tabular view of content and surrounding context from the bulk_extractor report. Click on **Bulk Extractor logs** to download the logs for local analysis in BEViewer, if necessary. Files may be previewed and tags may be applied from the **Examine Contents** pane---see [**Preview file**](appraisal.md#preview-file) and [**Tagging**](appraisal.md#tagging) below.
+Click on **Examine Contents** (located in the **Analysis** pane) to see bulk_extractor log content for PII. Click on a file name to see a tabular view of content and surrounding context from the bulk_extractor report. Click on **Bulk Extractor logs** to download the logs for local analysis in BEViewer, if necessary. Files may be previewed and tags may be applied from the **Examine Contents** pane---see [**Preview file**](appraisal.md#preview-file) and [**Tagging**](appraisal.md#tagging) below.
 
 If the accession contains actual PII, consider tagging the file to note the occurrence of PII. You can use these tags to assign appropriate access restrictions to content or separate it if it is determined to be a non-essential record. 
 
@@ -78,11 +80,11 @@ If the accession contains actual PII, consider tagging the file to note the occu
 
 #### Preview file
 
-To preview a file in **Preview file** in the **Analysis** pane, click on a filename from the **File List** pane or **Examine contents** in the **Analysis** pane. 
+To preview a file in **Preview file** (located in the **Analysis** pane), click on a filename from the **File List** pane or **Examine contents** in the **Analysis** pane. 
   
 ![Preview file](images/preview-file.png)
 
-If your browser has a viewer for the format, it will appear. Click and drag the bottom right cornor of the window to expand it. Otherwise, you will be prompted to download or open the file. Alternatively, all files can be downloaded for local analysis by clicking **(Download)**. Use the following programs to manually review files:
+If your browser has a viewer for the format, it will appear. Click and drag the bottom right corner of the window to expand it. Otherwise, you will be prompted to download or open the file. Alternatively, all files can be downloaded for local analysis by clicking **(Download)**. Use the following programs to manually review files:
 
   * Use **Quick View Plus** to review the content of most files.
   
@@ -122,7 +124,7 @@ If your browser has a viewer for the format, it will appear. Click and drag the 
 
 ### Tagging
 
-Tags can be applied from the **Backlog** pane, the **File List** pane and from **Examine Contents** in the **Analysis** pane. Applying tags allows you to populated the **Backlog** pane with only tagged content of your choosing, particularly in preparation for [Arrangment to ArchivesSpace](arrangement.md). Possible use cases for tags include:
+Tags can be applied from the **Backlog** pane, the **File List** pane and from **Examine Contents** (located in the **Analysis** pane). Applying tags allows you to populated the **Backlog** pane with only tagged content of your choosing, particularly in preparation for [Arrangment to ArchivesSpace](arrangement.md). Possible use cases for tags include:
 
   * Tag everything that you plan to arrang in a specific series or file.
   * Tag sensitive or restricted content as you identify it through analysis.
