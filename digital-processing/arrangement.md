@@ -12,7 +12,7 @@ Digital material in the **Backlog** pane can be arranged by dragging and droppin
 
 While not necessary to arrange digital objects, the ability fo facet the **Backlog** pane by tags is meant to facilitate arrangement. To facet by tag, select a tag from the **Tags** dropdown menu. To add additional facets (using OR logic), simply select another facet from the dropdown. Remove facets by clicking the **X** sign.
 
-[Faceting by Tags](images/faceting-by-tag.png)
+![Faceting by Tags](images/faceting-by-tag.png)
 
 #### Arrangement to ArchivesSpace 
 
