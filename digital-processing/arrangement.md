@@ -63,6 +63,10 @@ In order to apply rights metadata with intellectual entities, [PREMIS Rights Sta
 
 ##### Copyright
 
+![Copyright](images/copyright.png)
+
+Fill out the template like so:
+
 Field | Definition | Suggested Values | Description (if needed)
 --- | --- | --- | ---
 Basis | Designation of the basis for the right or permission descriped in the rights statement. | Copyright | 
