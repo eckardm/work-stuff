@@ -23,12 +23,12 @@ Option | Default | Explanation
 **Select file format identification command (Submission documentation & metadata)** | Seigfried version 1.0.0 PUID runs Identify using Siegfried | See above.
 **Select compression algorithm | Uncompressed | Compression adds a layer of complexity to an AIP, making it harder to preserve, and will only be considered if storage costs become an issue. Likewise **Select compressing level** is not applicable and should be set to None.
 **Store AIP** should be set to Yes so that we're processing material as efficiently as possible.
-**Store AIP location** should be set to aip storage (bhl-archivematica). This location managed by MLibrary.
+**Store AIP location** | aip storage (bhl-archivematica)| This location managed by MLibrary.
 **Store DIP location** | None | It is not applicable as we will not be creating DIPs.
   
 If you do change any of the "Born-digital" processing defaults, be sure to hit the Save button.
   
-*
+***
 
 [Digital Processing](digital-processing.md)
   * Administration
