@@ -3,6 +3,7 @@ import os
 from tqdm import *
 from fuzzywuzzy import fuzz
 from collections import defaultdict
+import csv
 
 metadata = pickle.load(open("metadata.p", mode="rb"))
 converted_files = pickle.load(open("converted_files.p", mode="rb"))
@@ -160,11 +161,14 @@ for root, _, files in tqdm(os.walk("C:\Users\eckardm\work-stuff\duderstadt\9811_
         information_package["preservation_location"] = "n/a"
         
         for metadata_dictionary in metadata:
-            if fuzz.token_sort_ratio(metadata_dictionary.get("title", ""), name) > 95:
+            if fuzz.token_sort_ratio(metadata_dictionary.get("title", ""), name) > 99:
+                # new checks, trying to reduce duplicates
+                if "19" + metadata_dictionary.get("date", "")[-2:] in information_package.get("subseries"):
+                    if "Speeches" in information_package.get("subseries") or "Presentations" in information_package.get("subseries"):
                 
-                information_package["unitdate"] = metadata_dictionary.get("date", "")
-                information_package["preservation"] = metadata_dictionary.get("href", "").split("/")[-1]
-                information_package["preservation_location"] = metadata_dictionary.get("href", "").replace("..", "C:\Users\eckardm\work-stuff\duderstadt\9811_0001\data").replace("/", "\\")
+                        information_package["unitdate"] = metadata_dictionary.get("date", "")
+                        information_package["preservation"] = metadata_dictionary.get("href", "").split("/")[-1]
+                        information_package["preservation_location"] = metadata_dictionary.get("href", "").replace("..", "C:\Users\eckardm\work-stuff\duderstadt\9811_0001\data").replace("/", "\\")
                 
         information_packages.append(information_package)
         

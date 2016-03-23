@@ -4,7 +4,7 @@ import os
 import datetime
 
 # write headers for metadata
-with open("deepBlue_9811_0001.csv", mode="wb") as metadata_csv:
+with open("deepBlue_9811_0001-20130323.csv", mode="wb") as metadata_csv:
     writer = csv.writer(metadata_csv)
     writer.writerow([
     "IDENTIFIER.OTHER", 
@@ -157,7 +157,7 @@ for information_package in information_packages:
     
     dc_language_iso = "en"
 
-    with open("deepBlue_9811_0001.csv", mode="ab") as metadata_csv:
+    with open("deepBlue_9811_0001-20130323.csv", mode="ab") as metadata_csv:
         writer = csv.writer(metadata_csv)
         writer.writerow([
             identifier_other, 
