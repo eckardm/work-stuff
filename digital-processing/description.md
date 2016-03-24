@@ -44,7 +44,7 @@ In ArchivesSpace, this type of description is added to intellectual entities cal
 
 In order to add a new child record (Archival Object) to an existing Archival Object, select an Archival Object by clicking on its title and click **Add New Child Record**. Enter a free text title and select a level of description from the dropdown. Optionally, enter a free text date expression as well as normalized begin and end dates (you may either type the date in YYYY-MM-DD format or use the calendar icon to bring up a calendar interface), a free text general note or a free text conditions governing access note. Please use Bentley Historical Library conventions for crafting conditions governing access notes. You may expand the general and conditions governing access note fields by clicking and dragging the bottom right corner.
 
-![Add New Child Record](create-child-record.png)
+![Add New Child Record](images/create-child-record.png)
 
 After you click **Save**, Archivematica will write the Archival Object to the appopriate Resource in ArchivesSpace. You may cancel by clicking **Cancel**.
 
