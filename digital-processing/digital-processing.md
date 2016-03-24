@@ -25,7 +25,7 @@ The Bentley's current digital processing procedures have evolved from a highly [
 
 ![AutoPro](images/autopro.png)
 
-For various reasons, however, this too was not a long-term solution. We now employ [Archivematica](https://www.archivematica.org/en/), a web- and standards-based, open-source application that allows institutions to preserve long-term access to trustworthy, authentic and reliable digital content, in our digital processing workflow, as wella as the Appraisal and Arrangement feature, an outcome our Mellon Foundation-funded ArchivesSpace-Archivematica-DSpace Workflow Integration project which concluded in October 2016. 
+For various reasons, however, this too was not a long-term solution. We now employ [Archivematica](https://www.archivematica.org/en/), a web- and standards-based, open-source application that allows institutions to preserve long-term access to trustworthy, authentic and reliable digital content, in our digital processing workflow, as wella as the Appraisal and Arrangement feature, an outcome our Mellon Foundation-funded [ArchivesSpace-Archivematica-DSpace Workflow Integration](http://archival-integration.blogspot.com/) project which concluded in October 2016. 
 
 ![Appraisal and Arrangement tab](images/appraisal-arrangment.png)
 
