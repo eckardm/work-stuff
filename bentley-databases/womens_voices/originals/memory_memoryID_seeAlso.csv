@@ -1,0 +1,1128 @@
+memory,memoryID,seeAlso
+Buildings -- Alumni Memorial Hall,1,0
+Buildings -- Angell Hall,2,0
+Buildings -- Art Gallery,3,0
+Buildings -- Barbour Gymnasium,4,0
+Buildings -- Betsy Barbour House,5,0
+Buildings -- Cat Hole,6,0
+Buildings -- Chemical Laboratory,7,0
+Buildings -- Chemistry Building,8,0
+Buildings -- Dental Building,10,0
+Buildings -- Economics Building,11,0
+Buildings -- Engineering Arch,14,0
+Buildings -- Engineering Building,12,0
+Buildings -- Ferry Field,15,0
+Buildings -- Graduate Study Room,17,0
+Buildings -- Granger Dancing Academy,18,0
+Buildings -- Gymnasium,53,0
+Buildings -- Harris Hall,19,0
+Buildings -- Health Services,20,0
+Buildings -- Helen Newberry Residence,21,0
+Buildings -- Hill Auditorium,22,0
+Buildings -- Law Building,381,0
+Buildings -- League House,24,0
+Buildings -- Library,25,0
+Buildings -- Literary Building,26,0
+"Buildings -- Literature, Science, and Arts Building",23,0
+Buildings -- Main,382,0
+Buildings -- Martha Cook Building,27,739
+Buildings -- Mason Hall,28,0
+Buildings -- McMillan Hall,29,0
+Buildings -- Medical Building,30,0
+Buildings -- Michigan Central Railroad Depot,31,0
+Buildings -- Michigan Daily,388,0
+Buildings -- Michigan League,32,0
+Buildings -- Michigan Union,33,0
+Buildings -- Museum,34,0
+Buildings -- New Library,377,0
+Buildings -- Nichols Hall,35,0
+Buildings -- North Hall,36,0
+Buildings -- Observatory,37,0
+Buildings -- Octagonal House,38,0
+Buildings -- Old East Wing,379,0
+Buildings -- Old Hall,380,0
+Buildings -- Old Library,378,0
+Buildings -- Old Medical Building,383,0
+Buildings -- Old Observatory,384,0
+Buildings -- Old Science Buildings,385,0
+Buildings -- Old University Hall,386,0
+Buildings -- Palmer Field,39,0
+Buildings -- Pharmacy Building,40,0
+Buildings -- President's House,41,0
+Buildings -- Psychology labs,387,0
+Buildings -- Science Building,42,0
+Buildings -- Star Theater,43,0
+Buildings -- Tappan Hall,44,0
+Buildings -- University Hall,46,0
+Buildings -- University Hospital,45,0
+Buildings -- Waterman Gymnasium,48,0
+Buildings -- Wesley Hall,49,0
+Buildings -- West Hall,50,0
+Buildings -- William L. Clements Library,9,0
+Buildings -- Yost Field House,51,0
+Buildings -- YWCA,52,0
+College comparison,54,0
+College comparison -- Barnard,55,0
+College comparison -- Bryn Mawr,58,0
+College comparison -- Smith,59,0
+College comparison -- Vassar,60,0
+College comparison -- Wellesley,61,0
+Events -- current -- &quot;Living Out&quot; Day,63,0
+Events -- current -- 1882 comet,64,0
+Events -- current -- 1890 Pan American's visit,65,0
+Events -- current -- Armistice,66,0
+Events -- current -- Cardinal Mercier visit,67,0
+Events -- current -- Carrie Nation visit,68,0
+Events -- current -- Cyclone - Ypsilanti,69,0
+Events -- current -- Diagonal,70,0
+Events -- current -- Drastic class decrease/size,71,0
+Events -- current -- First Naval unit,72,0
+Events -- current -- Flu epidemic,73,0
+Events -- current -- French commission,74,0
+Events -- current -- General Foch visit,75,0
+Events -- current -- Grover Cleveland visit,76,0
+Events -- current -- Haley's Comet,1357,0
+Events -- current -- Legislative appropriation lost,62,0
+Events -- current -- Legislature mile tax,1359,0
+Events -- current -- Legislature visit,1358,0
+Events -- current -- Liberty Bonds,1360,0
+Events -- current -- Liberty Loan Drive,1361,0
+Events -- current -- Militia/student killed,92,0
+Events -- current -- Paderewski visit ,77,0
+Events -- current -- Pan American Congress,1362,0
+Events -- current -- Plans/League bldg.,78,0
+Events -- current -- Preparing dressings at Angell's home,79,0
+Events -- current -- President Harrison's visit,80,0
+Events -- current -- Riots,91,0
+"Events -- current -- Roosevelt, Train",81,0
+Events -- current -- ROTC drilling,82,0
+Events -- current -- SATC,83,0
+Events -- current -- Saw first women grad,84,0
+Events -- current -- Sec. Hughe's visit,85,0
+Events -- current -- Sec. Luther Wishar,86,0
+Events -- current -- Small pox,87,0
+"Events -- current -- Soldiers, soup trays in streets ",88,0
+Events -- current -- Spanish American War,89,0
+Events -- current -- Spontaneous parade at Martha Cook,90,0
+Events -- current -- Student killed,1363,0
+Events -- current -- Student volunteer,1364,0
+"Events -- current -- Student, State Militia",1365,0
+Events -- current -- Sugar rationing,93,0
+Events -- current -- Theodore Roosevelt,1366,0
+Events -- current -- UM Mission to Bushrah fundraising,94,0
+Events -- current -- Victor Hugo death,95,0
+Events -- current -- Visit of R.E. Olds,96,0
+Events -- current -- vote-military  training,1367,0
+Events -- current -- War meetings,1368,0
+Events -- current -- Women-anti-war,1369,0
+Events -- current -- World War I,97,0
+Events -- Commencement,98,0
+Events -- Conferences ,100,0
+Events -- Convocations,101,0
+Events -- Inaugurations,102,0
+Events -- Lectures,103,0
+"Events -- Lectures -- Abbot, Lyman",105,0
+"Events -- Lectures -- Addams, Jane",106,0
+"Events -- Lectures -- Anthony, Susan B.",107,0
+"Events -- Lectures -- Bryan, William Jennings",104,0
+"Events -- Lectures -- Cleveland, Grover",108,0
+"Events -- Lectures -- Douglas, Lloyd C. ",109,0
+"Events -- Lectures -- Frost, Robert ",110,0
+"Events -- Lectures -- Harper, Dr.",111,0
+"Events -- Lectures -- Holt, Hamilton",112,0
+"Events -- Lectures -- Jordan, David S.",113,0
+"Events -- Lectures -- LaFollette, Robert",114,0
+"Events -- Lectures -- Livermore, Mary ",115,0
+"Events -- Lectures -- Lowell, Amy",116,0
+"Events -- Lectures -- McKinley, William",117,0
+"Events -- Lectures -- Mencken, H.L.",118,0
+"Events -- Lectures -- Miller, Annie J.",119,0
+"Events -- Lectures -- Moody, Dwight L",120,0
+"Events -- Lectures -- Nast, Thomas",127,0
+"Events -- Lectures -- Palmer, Alice F.",121,0
+"Events -- Lectures -- Reed, Thomas B.",123,0
+"Events -- Lectures -- Riley, James Whitcomb ",124,0
+"Events -- Lectures -- Roosevelt, Franklin D.  (Gov. NY)",125,0
+"Events -- Lectures -- Stanley, Prof. (explorer)",122,0
+"Events -- Lectures -- Taylor, Graham ",126,0
+"Events -- Lectures -- Washington, Booker T.",128,0
+"Events -- Lectures -- Willard, Frances ",129,0
+"Events -- Lectures -- Wilson, Woodrow ",130,0
+Events -- Library chimes,131,0
+Events -- Meetings,132,0
+Events -- Memorial services,133,0
+Events -- Open houses,134,0
+Events -- other,1373,0
+Events -- other -- Baccalaureate,1371,0
+Events -- other -- Diamond jubilee,1374,0
+Events -- other -- First AB degrees,1376,0
+Events -- other -- Freshman's Cap,1377,0
+Events -- other -- General Assemblies,1378,0
+Events -- other -- Legislative appropriation,1379,0
+Events -- other -- Michigan League campaign,1380,0
+Events -- other -- Nightgown Parade,1381,0
+Events -- other -- President's sheep on lawn,1382,0
+Events -- other -- School of Ed. established,1383,0
+Events -- other -- UM 75th anniversary,1384,0
+Events -- other -- UM Senate,1385,0
+Events -- other -- Visiting Chinese,1386,0
+Events -- UM Presidents,137,0
+Events -- UM Presidents -- Angell,136,0
+Events -- UM Presidents -- Burton,138,0
+Events -- UM Presidents -- Haven,1387,0
+Events -- UM Presidents -- Hutchins,139,0
+Faculty,140,0
+"Faculty -- Abbe, Cleveland",141,0
+"Faculty -- Abbott, LeRoy C.",142,0
+"Faculty -- Abbott, Nathan",143,0
+"Faculty -- Abbott, Wilbur Cortez",144,0
+"Faculty -- Abel, John Jacob",145,0
+"Faculty -- Abell, Charles E.",146,0
+"Faculty -- Adams, Charles Kendall",147,0
+"Faculty -- Adams, Edward L.",148,0
+"Faculty -- Adams, Henry Carter",149,0
+"Faculty -- Adams, Henry Foster",150,0
+"Faculty -- Agnes Wells, New",151,0
+"Faculty -- Aigler, Ralph W.",152,0
+"Faculty -- Airey, John",153,0
+"Faculty -- Allinger, Henry W.",154,0
+"Faculty -- Ames, Herman V.",155,0
+"Faculty -- Anderson, William B.",156,0
+"Faculty -- Andrews, Prof. ",157,0
+"Faculty -- Angell, James B.",158,0
+"Faculty -- Arthur, Robert",159,0
+"Faculty -- Barnes, Dora M.",160,0
+"Faculty -- Barrett, Albert Moore",161,0
+"Faculty -- Bartlett, Barbara",162,0
+"Faculty -- Becker, Arthur Lynn",163,0
+"Faculty -- Belser, Carl Wiliam",164,0
+"Faculty -- Belser, Martin Luther",165,0
+"Faculty -- Beman, Wooster W.",166,0
+"Faculty -- Bigelow, Catherine L.",167,0
+"Faculty -- Bigelow, Samuel L.",168,0
+"Faculty -- Billard, Jules F.",169,0
+"Faculty -- Bird, James Pyper",170,0
+"Faculty -- Blackburn, Francis A.",171,0
+"Faculty -- Boise, James R.",172,0
+"Faculty -- Boucke, Ewald A.",173,0
+"Faculty -- Bourland, Benjamin P.",174,0
+"Faculty -- Bowles, Oliver",175,0
+"Faculty -- Breakey, William F.",176,0
+"Faculty -- Bredvold, Louis I.",177,0
+"Faculty -- Brown, Everett S.",178,0
+"Faculty -- Brumm, John R.",179,0
+"Faculty -- Bryson, Lyman Lloyd",180,0
+"Faculty -- Bursley, Philip E.",181,0
+"Faculty -- Burt, Benjamin C.",182,0
+"Faculty -- Busby, Eldon D.",183,0
+"Faculty -- Butler, Orma Fitch",184,0
+"Faculty -- Butts, William H.",185,0
+"Faculty -- Campbell, Edward DeMille",186,0
+"Faculty -- Campbell, Oscar James",187,0
+"Faculty -- Campbell, William Aulls",188,0
+"Faculty -- Campbell, William W.",189,0
+Faculty -- Campbell??,190,0
+"Faculty -- Carhart, Henry S.",191,0
+"Faculty -- Case, Ermine C.",192,0
+"Faculty -- Cheever, Henry S.",193,0
+"Faculty -- Cocker, Benjamin F.",194,0
+"Faculty -- Cooley, Charles Horton",195,0
+"Faculty -- Cooley, Lyman Edgar",196,0
+"Faculty -- Cooley, Mortimer E.",197,0
+"Faculty -- Cowden, Mrs. ",198,0
+"Faculty -- Cowden, Roy W.",199,0
+"Faculty -- Cresse, George H.",200,0
+"Faculty -- Crittenden, Albert R.",201,0
+"Faculty -- Cross, Arthur Lyon",202,0
+"Faculty -- Cross, Herbert R.",203,0
+"Faculty -- Cummings, Howard H.",204,0
+"Faculty -- Davis, Calvin O.",205,0
+"Faculty -- Day, William Rufus",206,0
+"Faculty -- de Nancrede, Charles B.",207,0
+"Faculty -- De Pont, Paul R.",208,0
+Faculty -- Dean of Women,209,0
+"Faculty -- Demmon, Isaac Newton",210,0
+"Faculty -- Denison, Charles Simeon",211,0
+"Faculty -- Dennison, Walter",212,0
+"Faculty -- Dewey, John",213,0
+"Faculty -- Diekoff, Tobias",214,0
+"Faculty -- Dieterle, John",215,0
+Faculty -- Doc,216,0
+"Faculty -- Dock, George",217,0
+"Faculty -- D'Ooge, Martin Luther",218,0
+"Faculty -- Douglas, Silas H.",219,0
+"Faculty -- Dow, Earle W.",220,0
+"Faculty -- Drake, Joseph H.",221,0
+"Faculty -- Dunster, Edward S.",222,0
+"Faculty -- Edmonson, James B.",223,0
+"Faculty -- Effinger, John Robert",224,0
+"Faculty -- Estes, Ludovic",225,0
+"Faculty -- Evans, Alice",226,0
+"Faculty -- Farraud, Elizabeth M.",227,0
+Faculty -- Fine Artie,228,0
+"Faculty -- Finlayson, John D.",229,0
+"Faculty -- Finney, Byron A.",230,0
+"Faculty -- Florer, Warren W.",231,0
+"Faculty -- Ford, Corydon La",232,0
+"Faculty -- Foss, Herr?",265,0
+"Faculty -- Francois, Edward C.",233,0
+"Faculty -- Franklin, Edward C.",234,0
+"Faculty -- Frayer, William A.",235,0
+"Faculty -- Freer, Paul C.",236,0
+"Faculty -- Frieze, Henry Simmons",237,0
+"Faculty -- Frothingham, George E.",238,0
+"Faculty -- Gardner, Max William",239,0
+"Faculty -- Gat, Mrs. Eric L. ",240,0
+"Faculty -- Gayley, Charles Mills",241,0
+"Faculty -- George, Conrad",242,0
+"Faculty -- Gillette, Fredericka",243,0
+"Faculty -- Gingerich, Solomon",244,0
+"Faculty -- Glaser, Otto Charles",245,0
+"Faculty -- Glover, James W.",246,0
+"Faculty -- Goddard, Edwin C.",247,0
+"Faculty -- Gomberg, Moses",248,0
+"Faculty -- Goodrich, Marion G.",249,0
+Faculty -- Grace Greenwood,250,0
+"Faculty -- Green, Camilla B.",251,0
+Faculty -- Green??,252,0
+"Faculty -- Grim, Burton G.",253,0
+"Faculty -- Hall, Arthur Graham",254,0
+"Faculty -- Hamilton, Walton H.",255,0
+"Faculty -- Hanford, James H.",256,0
+"Faculty -- Harrington, Mark W.",257,0
+"Faculty -- Hart, Albert Hart",258,0
+"Faculty -- Haven, Erastus O.",259,0
+"Faculty -- Hegner, Robert W.",260,0
+"Faculty -- Hempl, George",261,0
+"Faculty -- Heneage, Gibbes",262,0
+"Faculty -- Hennequin, Alfred",263,0
+"Faculty -- Herdman, William J.",264,0
+"Faculty -- Hildner, Jonathan A.",266,0
+"Faculty -- Hinsdale, Burke Aaron",267,0
+"Faculty -- Hobbs, William H.",268,0
+"Faculty -- Hollister, Richard D.",269,0
+"Faculty -- Holmes, Roy Hinman",270,0
+"Faculty -- Howell, William H.",271,0
+"Faculty -- Huber, Carl",272,0
+"Faculty -- Hudson, Richard",273,0
+"Faculty -- Humphreys, Wilber Ray",274,0
+"Faculty -- Hunt, Alice Louise",275,0
+"Faculty -- Hussey, William Joseph",276,0
+"Faculty -- Hutchins, Harry Burns",277,0
+"Faculty -- Johnson, Elias Finley",278,0
+"Faculty -- Johnson, Otis C.",279,0
+"Faculty -- Johnston, Charles H.",280,0
+"Faculty -- Jones, Charles N.",281,0
+"Faculty -- Jones, Elisha",282,0
+"Faculty -- Jordan, Myra B.",283,0
+"Faculty -- Karpinski, Louis C.",284,0
+"Faculty -- Kelsey, Francis W.",285,0
+"Faculty -- Kent, Carleton V.",286,0
+"Faculty -- Kent, Charles Artemas",287,0
+"Faculty -- King, Katharine",288,0
+"Faculty -- Knowlton, James C.",289,0
+"Faculty -- Kraus, Edward Henry",290,0
+"Faculty -- Kreisler, Fritz ",291,0
+"Faculty -- Kuyper, George Adrian",292,0
+"Faculty -- Lange, Alexis F.",293,0
+"Faculty -- Lange, Carl A.",294,0
+"Faculty -- Langley, John W.",295,0
+"Faculty -- Levi, Moritz",296,0
+Faculty -- Lloyd Douglass,297,0
+"Faculty -- Lyster, Henry F.",298,0
+"Faculty -- MacLean, Donald",299,0
+"Faculty -- Makielski, Leon A.",300,0
+"Faculty -- Mallory, Herbert S.",301,0
+"Faculty -- Markley, Joseph L.",302,0
+Faculty -- Marquis??,303,0
+"Faculty -- McConkey, George M.",304,0
+"Faculty -- McLaughlin, Andrew C.",305,0
+"Faculty -- McLaughlin, William A.",306,0
+"Faculty -- Mead, George Herbert",307,0
+"Faculty -- Meader, Clarence",308,0
+"Faculty -- Mensel, Ernest H.",309,0
+"Faculty -- Merrick, Howard B.",310,0
+"Faculty -- Miller, Walter",311,0
+"Faculty -- Miss Winslow, Miss ",312,0
+"Faculty -- Moore, Earle Vincent",313,0
+"Faculty -- Moore, Samuel??",314,0
+"Faculty -- Morris, George S.",315,0
+"Faculty -- Mosher, Eliza M.",316,0
+Faculty -- Nelson ?,317,0
+"Faculty -- Newcombe, Frederick",318,0
+"Faculty -- Novy, Frederick George",319,0
+"Faculty -- Olney, Edward",320,0
+Faculty -- Paine?,321,0
+"Faculty -- Palmer, Alonzo B.",322,0
+"Faculty -- Parker, Dewitt Henry",323,0
+"Faculty -- Pattengill, Albert H.",324,0
+"Faculty -- Pattengill, Angell",325,0
+"Faculty -- Paxson, Frederick Logan ",326,0
+"Faculty -- Payne, William H.",327,0
+"Faculty -- Pease, Arthur S.",328,0
+"Faculty -- Peckham, George",329,0
+"Faculty -- Peterson, Reuben",330,0
+"Faculty -- Petit, Jean",331,0
+"Faculty -- Phillips, John B.",332,0
+"Faculty -- Phillips, Ulrich Bonnell",333,0
+"Faculty -- Pierce, Edgar",334,0
+"Faculty -- Plaisance, Robert H.",335,0
+"Faculty -- Pollack, James Kerr",336,0
+"Faculty -- Prescott, Benjamin P.",337,0
+"Faculty -- Rankin, Thomas E.",338,0
+"Faculty -- Rebec, George",339,0
+"Faculty -- Reed, John Oren",340,0
+"Faculty -- Reeves, Jesse Siddall",341,0
+"Faculty -- Reighard, Jacob E.",342,0
+"Faculty -- Rogers, Henry Wade",343,0
+"Faculty -- Rolfe, John Carew",344,0
+"Faculty -- Rousseau, Joseph Joachim",345,0
+"Faculty -- Russell, Israel Cook",346,0
+"Faculty -- Sanders, Henry Arthur",347,0
+Faculty -- Scott ??,348,0
+"Faculty -- Scott, Fred Newton",349,0
+"Faculty -- Scott, Harold Phillipi",350,0
+"Faculty -- Scott, Irving Day",351,0
+"Faculty -- Scott, Jonathan French",352,0
+"Faculty -- Sellars, Roy Wood",353,0
+"Faculty -- Sewall, Henry",354,0
+"Faculty -- Shephard, John F.",355,0
+"Faculty -- Smith, Shirley Wheeler",356,0
+"Faculty -- Snyder, Alice Gray",357,0
+"Faculty -- Sober, Hiram Allen",358,0
+"Faculty -- Soule, Byron Avery",359,0
+"Faculty -- Spalding, Volney Morgan",360,0
+"Faculty -- Spence, Adam Knight",361,0
+"Faculty -- Stanley, Augustus A.",362,0
+"Faculty -- Stanley, D'Ooge",363,0
+"Faculty -- Steere, Joseph B.",364,0
+"Faculty -- Stevenson, Orlando Worth",365,0
+"Faculty -- Strauss, Louis A.",366,0
+"Faculty -- Stuart, Duane R.",367,0
+"Faculty -- Sunderland, Edson Read",368,0
+"Faculty -- Tatlock, John S.P.",369,0
+"Faculty -- Taylor, Fred Manville",370,0
+"Faculty -- Thieme, Hugo Paul",371,0
+"Faculty -- Thomas, Calvin",372,0
+"Faculty -- Thomas, Franklin",373,0
+"Faculty -- Thomas, Joseph M.",374,0
+"Faculty -- Thompson, Bradley M.",375,0
+"Faculty -- Tilley, Morris P.",376,0
+"Faculty -- Trueblood, Thomas C.",389,0
+"Faculty -- Tufts, James Hayden",390,0
+"Faculty -- Tyler, Moses Coit",391,0
+"Faculty -- Van Tyne, Claude H.",392,0
+"Faculty -- Vaughan, Victor C.",393,0
+"Faculty -- Wagner, Charles P.",394,0
+"Faculty -- Wahr, Fred B.",395,0
+"Faculty -- Walker, Eloise M.",396,0
+"Faculty -- Walter, Edward Lorraine",397,0
+"Faculty -- Warthin, Aldred Scott",398,0
+"Faculty -- Watson, James Craig",399,0
+"Faculty -- Weeks, Raymond L.",400,0
+"Faculty -- Wells, Elmore H.",401,0
+"Faculty -- Wenley, Robert Mark",402,0
+"Faculty -- Whitney, Allen S.",403,0
+"Faculty -- Wier, Marion Clyde",404,0
+"Faculty -- Willard, Frederic W.",405,0
+"Faculty -- Winchell, Alexander",406,0
+"Faculty -- Winkler, Max",407,0
+"Faculty -- Winter, John Garrett",408,0
+"Faculty -- Wolaver, Samuel Lee",409,0
+"Faculty -- Wood, Arthur Evan",410,0
+"Faculty -- Worcester, Dean C.",411,0
+"Faculty -- Yost, Fielding H.",412,0
+"Faculty -- Yutzy, Simon Menno",413,0
+"Faculty -- Zwiet, Alexander",414,0
+Flora and fauna,415,0
+Flora and fauna -- 1828 memory,416,0
+Flora and fauna -- 1893-94 freeze,417,0
+Flora and fauna -- AA to Ypsilanti & back,418,0
+Flora and fauna -- Ampitheatre,419,0
+Flora and fauna -- Ann Arbor,420,0
+Flora and fauna -- Arboretum,425,0
+Flora and fauna -- Area lakes,426,0
+Flora and fauna -- Birding/Cole,427,0
+Flora and fauna -- Bitter sweets,428,0
+Flora and fauna -- Bob sledding,429,0
+Flora and fauna -- Boulevards,430,0
+Flora and fauna -- Cat Hole Prank,439,0
+Flora and fauna -- Chimes,440,0
+Flora and fauna -- City water,441,0
+Flora and fauna -- Coasting,442,0
+Flora and fauna -- Corkscrew Hill,444,0
+Flora and fauna -- Cup & Saucer Hollow,446,0
+Flora and fauna -- Diagonal walks,447,0
+Flora and fauna -- Dutch Town,448,0
+Flora and fauna -- Field Trips -- Botany,449,0
+Flora and fauna -- Fischers,450,0
+Flora and fauna -- Forest Hills Cemetery,451,0
+Flora and fauna -- Foster's,452,0
+Flora and fauna -- Frog Pond,453,0
+Flora and fauna -- Glen coasting,454,0
+Flora and fauna -- Hiking,455,0
+Flora and fauna -- Hollow,456,0
+Flora and fauna -- Huron River,457,0
+Flora and fauna -- Interurban,461,0
+Flora and fauna -- Lake Whitmore,462,0
+Flora and fauna -- Mack's Tea Room,463,0
+Flora and fauna -- Missing student,464,0
+Flora and fauna -- Mullison horses,465,0
+Flora and fauna -- New Boulevard,466,0
+Flora and fauna -- North Boulevard,467,0
+Flora and fauna -- Observatory Hill,468,0
+Flora and fauna -- Old picket fence,482,0
+Flora and fauna -- Picnics -- hikes,483,0
+Flora and fauna -- Popkins Place/39,490,0
+Flora and fauna -- School Girls Glen,491,0
+Flora and fauna -- Serpentine,492,0
+Flora and fauna -- Skating,484,0
+Flora and fauna -- Sleepy Hollow,493,0
+"Flora and fauna -- Sleet storm, 1921 or 1922",494,0
+Flora and fauna -- Street car,495,0
+Flora and fauna -- Student antics,496,0
+Flora and fauna -- Surrey trip,497,0
+Flora and fauna -- UM campus,498,0
+Flora and fauna -- UM campus -- Chimes,499,0
+Flora and fauna -- UM campus -- Diagonal walks,500,0
+Flora and fauna -- UM campus -- Ferry Field,501,0
+Flora and fauna -- UM campus -- Old cemetery,502,0
+Flora and fauna -- UM campus -- Tobogganing,503,0
+Flora and fauna -- UM campus -- Wild flowers,504,0
+Flora and fauna -- Unpaved streets,505,0
+Flora and fauna -- Washtenaw Ave.  ,508,0
+Flora and fauna -- Whitmore Lake,509,0
+Flora and fauna -- Winter sports,510,0
+Flora and fauna -- Ypsilanti,513,0
+Groups -- athletic,514,0
+Groups -- athletic -- Baseball,515,0
+Groups -- athletic -- Basketball,517,0
+Groups -- athletic -- Big game,518,0
+Groups -- athletic -- Ferry Field game,519,0
+Groups -- athletic -- Field Day,520,0
+Groups -- athletic -- Football,523,0
+Groups -- athletic -- Games,530,0
+Groups -- athletic -- Golf,521,0
+Groups -- athletic -- Hockey,534,0
+Groups -- athletic -- Pep rallies,536,0
+Groups -- athletic -- Tennis,537,0
+Groups -- athletic -- Track,538,0
+Groups -- athletic -- Women's Athletic,539,0
+Groups -- athletic -- Women's basketball,540,0
+Groups -- Athletic-- UM -- Harvard Baseball,541,0
+Groups -- civic,542,0
+Groups -- clubs,544,0
+Groups -- drama and theater  -- Comedy Club,545,1337
+Groups -- clubs -- Cosmopolitan Club,546,0
+Groups -- national origin and foreign interest -- Deutcher Verein,547,0
+Groups -- drama and theater -- Dramatic Club,548,0
+Groups -- clubs -- English Club,549,0
+Groups -- clubs -- Graduate Club,550,0
+Groups -- clubs -- Graduate English Club,551,0
+Groups -- clubs -- Intercollegiate Sociali,552,0
+Groups -- honorary -- Senior Society,553,0
+Groups -- clubs -- Sr. Girls banquet,554,0
+Groups -- literary and debate -- Webster Society,555,0
+Groups -- clubs -- Whisker's Club ,556,0
+Groups -- clubs -- Women's League,557,0
+Groups -- clubs -- Women's Research,558,0
+Groups -- musical -- Choral Union,562,988
+Groups -- literary and debate -- Oratorical Society,565,0
+Groups -- fraternities,568,0
+Groups -- honorary,571,0
+Groups -- honorary -- Athena Literary,572,0
+Groups -- honorary -- Mortarboard,573,0
+Groups -- honorary -- Phi Beta Kappa,574,0
+Groups -- other,576,0
+Events -- other -- All women meeting,578,0
+Social Life -- events -- Class breakfast,583,0
+Events -- other -- Class Day exercise,584,0
+Events -- other -- Class elections,585,0
+Groups -- performing -- concerts,1405,0
+Social Life -- events -- College spreads,589,0
+Groups -- other -- College Temperance Society,590,0
+Groups -- literary and debate -- Debate,591,0
+Social Life -- parties and celebrations -- Jr. girls entertaining Srs.,606,0
+Social Life -- parties and celebrations -- Jr. girl's party for Freshman girls,607,0
+Social Life -- parties and celebrations -- Lute party,608,0
+Groups -- literary and debate -- Lyceum,609,0
+Groups -- literary and debate -- Orational contest,613,0
+Events -- other -- Oratorical contests,614,0
+Faculty -- Dean Hamilton,1404,0
+Events -- other -- Pronunciation contests,619,0
+Groups -- other -- R.O.T.C.,620,0
+Groups -- other -- Radical Club,621,0
+Events -- other -- Red Cross campaign,623,0
+Groups -- other -- SATC,624,0
+Groups -- athletic -- Softball rallies,629,0
+Events -- other -- Spring contests,630,0
+Events -- other -- Star Theater riot,632,0
+Groups -- literary -- Student Lecture Association,633,0
+Groups -- religious -- Student Volunteer,634,0
+Groups -- other -- YWCA,635,0
+Groups -- other -- Symposium (First),639,0
+Social Life -- music and singing -- UM yell,641,0
+Groups -- other -- WCTU,643,0
+Groups -- other -- Student Volunteer,1406,0
+Groups -- performing,653,0
+Groups -- performing -- Band,654,0
+Groups -- drama and theater -- Ben Greet Players,655,0
+Groups -- musical -- Girl's glee club,659,0
+Groups -- musical -- Men's Glee Club,663,0
+Groups -- performing -- Miss Hunt,668,0
+Groups -- drama and theater -- Operas,669,0
+Groups -- musical -- Orchestra,670,0
+Groups -- musical -- Symphony,676,0
+Social Life -- concerts -- Twilight concerts,677,0
+Groups -- musical -- U Chorus,678,0
+Groups -- performing -- Varsity quartet,684,0
+Groups -- performing -- Victors,685,0
+Groups -- religious,688,0
+Groups -- religious -- Baptist Guild,689,0
+Groups -- religious -- Baptist Student Council,690,0
+Groups -- religious -- Bible Class,691,0
+Groups -- religious -- Congregational Church,692,0
+Groups -- religious -- CSA,693,0
+Groups -- religious -- Dr. Ryder,694,0
+Groups -- religious -- Fortnightly Med Club,695,0
+Groups -- religious -- German Sunday school,696,0
+"Groups -- religious -- Member, SCA cabinet",697,0
+Groups -- religious -- Michigan Spirit,698,0
+Groups -- religious -- Morning chapel,699,0
+Groups -- religious -- Mrs. H.S. Carhart,700,0
+Groups -- religious -- Mrs. James Angell's class,701,0
+Groups -- religious -- Prayer Group,703,0
+Groups -- religious -- Presbyterian church,704,0
+Groups -- religious -- Student  Volunteers,706,0
+Groups -- religious -- Student Christian Association,707,0
+Groups -- religious -- Unitarian church,708,0
+Groups -- religious -- Vespers services,709,0
+Groups -- religious -- Wesleyan Guild,710,0
+Groups -- religious -- YMCA,711,0
+Groups -- Scientific -- Field Trips,712,0
+Groups -- service -- Student Volunteer Company,713,0
+Groups -- sororities,714,0
+Groups -- sororities -- Alpha Epsilon Iota,715,0
+Groups -- sororities -- Alpha Omicron Pi,716,0
+Groups -- sororities -- Alpha Xi Delta,717,0
+Groups -- sororities -- Chapter meetings,718,0
+Groups -- sororities -- Delta Chi,719,0
+Groups -- sororities -- Delta Gamma,720,0
+Groups -- sororities -- Gamma Phi Beta,721,0
+Groups -- sororities -- Helen's party,722,0
+Groups -- sororities -- KAO,723,0
+Groups -- sororities -- Kappa Alpha Theta,724,0
+Groups -- sororities -- Kappa Kappa Gamma,725,0
+Groups -- sororities -- Lama Phi Beta,726,0
+Groups -- sororities -- negative,727,0
+Groups -- sororities -- Pi Beta Phi,728,0
+Groups -- sororities -- Sorosis,729,759
+Groups -- sororities -- Theta chapter Alpha,730,0
+Housing -- dormitories,731,0
+Housing -- dormitories -- Adelia Cheever,732,0
+Housing -- dormitories -- Betsy Barbour,733,0
+Housing -- dormitories -- Chapter House,734,0
+Housing -- dormitories -- Cheever home,735,0
+Housing -- dormitories -- Grace Greenwood,736,0
+Housing -- dormitories -- Helen Newberry,737,0
+Housing -- dormitories -- League House,738,0
+Housing -- dormitories -- Martha Cook,739,27
+Housing -- dormitories -- Newberry Hall,740,0
+Housing -- rooming houses,741,0
+Housing -- rooming houses -- Mother Motley,742,0
+Housing -- rooming houses -- Mrs. Altha Merrigr,743,0
+Housing -- rooming houses -- Mrs. Cheever's Rooming House,744,0
+Housing -- rooming houses -- Mrs. Tremper Rooming House,745,0
+Housing -- rooming houses -- Ottmer's,746,0
+Housing -- rooming houses -- YMCA house,747,0
+Housing -- sororities,748,0
+Housing -- sororities -- Alpha Nu,749,0
+Housing -- sororities -- Alpha Phi,750,0
+Housing -- sororities -- Delta Gamma,751,0
+Housing -- sororities -- Kappa Alpha Theta,752,0
+Housing -- sororities -- Kappa Delta,753,0
+Housing -- sororities -- League house,754,0
+Housing -- sororities -- Pi Beta Phi,756,0
+Housing -- sororities -- Pi Phi,757,0
+Housing -- sororities -- Rushing/negative,758,0
+Housing -- sororities -- Sorosis,759,729
+Interpersonal relationships -- friendship,760,0
+Interpersonal relationships -- romantic,761,0
+Learning -- academic freedom,762,0
+Learning -- appreciation of the arts,763,0
+Learning -- competition,764,0
+Learning -- courses,765,0
+Learning -- courses -- Advanced rhetoric,766,0
+Learning -- courses -- Aesthetics,767,0
+Learning -- courses -- American History,768,0
+Learning -- courses -- American Literature,769,0
+Learning -- courses -- Analytic Geometry,770,0
+Learning -- courses -- Anatomy,771,0
+Learning -- courses -- Archaeology,772,0
+Learning -- courses -- Aristophanes,773,0
+Learning -- courses -- Art,774,0
+Learning -- courses -- Astronomy,775,0
+Learning -- courses -- Bacteriology Lab,776,0
+Learning -- courses -- Beginning Philosophy,777,0
+Learning -- courses -- Bible courses,778,0
+Learning -- courses -- Bibliography,779,0
+Learning -- courses -- Biology,780,0
+Learning -- courses -- Biology Labs,781,0
+Learning -- courses -- Book Reviews,782,0
+Learning -- courses -- Botany,783,0
+Learning -- courses -- Browning,784,0
+Learning -- courses -- Business Law,786,0
+Learning -- courses -- Chaucer,787,0
+Learning -- courses -- Chemistry,790,0
+Learning -- courses -- Chemistry Lab,791,0
+Learning -- courses -- Child Hygiene,792,0
+Learning -- courses -- Chinese poetry,793,0
+Learning -- courses -- Choral Union,794,0
+Learning -- courses -- Chorus,795,0
+Learning -- courses -- Classics,796,0
+Learning -- courses -- Comparative Literature,797,0
+Learning -- courses -- Composition,798,0
+Learning -- courses -- Constitutional Law,799,0
+Learning -- courses -- Contemporary Drama,800,0
+Learning -- courses -- Creative Listening,802,0
+Learning -- courses -- Dante,803,0
+Learning -- courses -- Differential equations,804,0
+Learning -- courses -- Dissecting,805,0
+Learning -- courses -- Drawing,806,0
+Learning -- courses -- Economics,807,0
+Learning -- courses -- Education,808,0
+Learning -- courses -- English,809,0
+Learning -- courses -- English Bible,810,0
+Learning -- courses -- English Composition,811,0
+Learning -- courses -- English History,812,0
+Learning -- courses -- English Literature,813,0
+Learning -- courses -- Ethics,814,0
+Learning -- courses -- European History,815,0
+Learning -- courses -- Faerie Queen,816,0
+Learning -- courses -- Faust,817,0
+Learning -- courses -- Fine Arts,819,0
+"Learning -- courses -- Francois, Victor",820,0
+Learning -- courses -- French,821,0
+Learning -- courses -- Freshman Rhetoric,822,0
+Learning -- courses -- General chemistry,823,0
+Learning -- courses -- Geology,824,0
+Learning -- courses -- German,826,0
+Learning -- courses -- German Conversation,827,0
+Learning -- courses -- German Literature,828,0
+Learning -- courses -- German Philosophy,829,0
+Learning -- courses -- Greek,830,0
+Learning -- courses -- Greek Antiquities,831,0
+Learning -- courses -- Greek Archaeology,832,0
+Learning -- courses -- Greek Art,833,0
+Learning -- courses -- Greek Art & Archaeology,834,0
+Learning -- courses -- Greek Drama,835,0
+Learning -- courses -- Greek Grammar,836,0
+Learning -- courses -- Greek Literature,837,0
+Learning -- courses -- Greek Tragedy,838,0
+Learning -- courses -- Gymnasium,839,0
+Learning -- courses -- Health & Hygiene,840,0
+Learning -- courses -- Heat (Lab),841,0
+Learning -- courses -- Hegel,842,0
+Learning -- courses -- History,843,0
+Learning -- courses -- History of Middle Ages,845,0
+Learning -- courses -- History of Music,846,0
+Learning -- courses -- History of Pedagogy,844,0
+Learning -- courses -- History of Treaties,847,0
+Learning -- courses -- Homer,848,0
+Learning -- courses -- Hygiene,849,0
+Learning -- courses -- Idylls of Theocrates,851,0
+Learning -- courses -- Iliad,852,0
+Learning -- courses -- Inorganic Chemistry,853,0
+Learning -- courses -- International Law,854,0
+Learning -- courses -- Interpretive Reading,855,0
+Learning -- courses -- Journalism,856,0
+Learning -- courses -- Languages,858,0
+Learning -- courses -- Latin,859,0
+Learning -- courses -- Law lectures,861,0
+"Learning -- courses -- Library, German",862,0
+Learning -- courses -- Literary Criticism,863,0
+Learning -- courses -- Literature,864,0
+Learning -- courses -- Logic,866,0
+Learning -- courses -- Materia Medica,867,0
+Learning -- courses -- Math,868,0
+Learning -- courses -- Medieval French Art,869,0
+Learning -- courses -- Medieval History,870,0
+Learning -- courses -- Medieval Literature,871,0
+Learning -- courses -- Milton seminar,872,0
+Learning -- courses -- Modern Writers,874,0
+Learning -- courses -- Montaigne,875,0
+Learning -- courses -- Music,876,0
+Learning -- courses -- Musical Instruments,877,0
+Learning -- courses -- Newberry,879,0
+Learning -- courses -- Old French & Italian,880,0
+Learning -- courses -- Oratory Department,881,0
+Learning -- courses -- Organic Chemistry,882,0
+Learning -- courses -- Oriental Art,883,0
+Learning -- courses -- Party Politics,884,0
+Learning -- courses -- Pascal,885,0
+Learning -- courses -- Pathology,886,0
+Learning -- courses -- Pedagogy,887,0
+Learning -- courses -- Philosophy,888,0
+Learning -- courses -- Philosophy of Religion,889,0
+Learning -- courses -- Physical Education,891,0
+Learning -- courses -- Physics,892,0
+Learning -- courses -- Physiology,893,0
+Learning -- courses -- Physiology,894,0
+Learning -- courses -- Political Economy,895,0
+Learning -- courses -- Politics and Government,896,0
+"Learning -- courses -- Pre-seminar, Hygiene",897,0
+Learning -- courses -- Psychology,898,0
+Learning -- courses -- Public Speaking,899,0
+Learning -- courses -- Qualitative Analysis,900,0
+Learning -- courses -- Reading recitals,901,0
+Learning -- courses -- Religion,902,0
+Learning -- courses -- Rhetoric,903,0
+Learning -- courses -- Rhetoric Composition,904,0
+Learning -- courses -- Roman Archaeology,905,0
+Learning -- courses -- Roman History,906,0
+Learning -- courses -- Roman Politics,907,0
+Learning -- courses -- Sanitary Science,908,0
+Learning -- courses -- Sanskrit,909,0
+Learning -- courses -- Shakespeare,910,0
+Learning -- courses -- Short Story,911,0
+Learning -- courses -- Sketching group,912,0
+Learning -- courses -- Social Organizations,913,0
+Learning -- courses -- Sociology,914,0
+"Learning -- courses -- Sociology, Writing",916,0
+Learning -- courses -- Spanish,917,0
+Learning -- courses -- Speech,918,0
+"Learning -- courses -- Spinoza, Philosophy",919,0
+Learning -- courses -- Star chamber,920,0
+Learning -- courses -- Survey English Literature,921,0
+Learning -- courses -- Teutonic Language & Literature,922,0
+Learning -- courses -- UM Biological Camp,923,0
+Learning -- courses -- Wagner,924,0
+Learning -- courses -- Western History,925,0
+Learning -- courses -- Women's gym class,926,0
+"Learning -- courses -- Writing, Browning",927,0
+Learning -- courses -- Written Criticism,928,0
+Learning -- courses -- Zoology,929,0
+Learning -- critical thinking,930,0
+"Faculty -- Kauffman, Calvin H.",935,0
+Learning -- intellectual awareness,939,0
+Learning -- other -- 9th in family to attend UM,940,0
+Learning -- other -- Alma mater is a dura mater,941,0
+Learning -- other -- Appreciation of sciences,942,0
+Learning -- other -- Appt. Asst. Botany at UM,943,0
+Learning -- other -- Blue books,944,0
+Learning -- other -- Courtesy,945,0
+Learning -- other -- Cramming,946,0
+Learning -- other -- Critical reasoning,947,0
+Learning -- other -- Desire to travel,948,0
+Learning -- other -- Discussions,949,0
+Learning -- other -- Effort improve nursing education,950,0
+Learning -- other -- Eight am classes,951,0
+Learning -- other -- Elect Phi Beta Kappa,952,0
+Learning -- other -- Examinations,953,0
+Learning -- other -- Father in 1st UM class,954,0
+Learning -- other -- Fee lines,955,0
+Learning -- other -- Grace Greenwood,956,0
+Learning -- other -- Guest speakers,958,0
+Learning -- other -- Hard work,959,0
+Learning -- other -- High standard medical ethics,960,0
+Learning -- other -- Librarian Davis,962,0
+Learning -- other -- Loan scholarship,963,0
+Learning -- other -- Marion Goodrich,964,0
+Learning -- other -- Medical students/seat,965,0
+Learning -- other -- Missing gym,966,0
+Learning -- other -- Mr.Finney/Library,967,0
+Learning -- other -- Practice Teaching at AAHS,968,0
+Learning -- other -- Prof. Dow's Assistant,969,0
+Learning -- other -- Registration,970,0
+Learning -- other -- Study/work method,971,0
+Learning -- other -- UM spirit,972,0
+Learning -- other -- Women cheating,973,0
+Learning -- other -- Writing papers,974,0
+Publications -- Argonaut,975,0
+Publications -- Castalian,976,0
+Publications -- Chronicle,978,0
+Publications -- Gargoyle,979,0
+Publications -- Inlander,980,0
+Publications -- Inlander,981,0
+Publications -- Michigan Daily,982,0
+Publications -- Oracle,983,0
+Publications -- Stylus,984,0
+Social Life -- concerts,985,0
+Social Life -- concerts -- Band,986,0
+Social Life -- concerts -- Choral Union,988,562
+Social Life -- concerts -- Glee Club,989,0
+Social Life -- concerts -- Marine Band,990,0
+Social Life -- concerts -- May Festival,991,0
+Social Life -- concerts -- Michigan operas,992,0
+Social Life -- concerts -- Organ recitals,994,0
+Social Life -- concerts -- PreFestival concert,995,0
+Social Life -- concerts -- Recitals,1217,0
+Social Life -- dances,997,0
+Social Life -- dances -- Danced with an &quot;Indian&quot;,998,0
+Social Life -- dances -- Engineering dances,999,0
+Social Life -- dances -- Freshman girl's dance,1000,0
+Social Life -- dances -- Granger's,1001,0
+Social Life -- dances -- J Hop,1002,0
+Social Life -- dances -- Junior Prom,1155,0
+Social Life -- dances -- Leap Year Ball,1163,0
+"Social Life -- dances -- Military Ball, 1918",1003,0
+Social Life -- dances -- Senior prom,1004,0
+Social Life -- dances -- Senior Swing out,1252,0
+Social Life -- dances -- Snake dance,1005,0
+Social Life -- dances -- Sophomore prom,1006,0
+Social Life -- dances -- Swing Night,1284,0
+Social Life -- dances -- Swingout,1007,0
+Social Life -- dances -- Union,1008,0
+Social Life -- dances -- Weekly /Michigan Union,1009,0
+Social Life -- events  -- Midnight spreads,1187,0
+Social Life -- events -- Cap Night,1063,0
+Social Life -- events -- Class Night,1072,0
+Social Life -- events -- Cotillion,1087,0
+Social Life -- events -- Faculty evenings,1102,0
+Social Life -- events -- Freshman rush,1121,0
+Social Life -- events -- Freshman Spread,1122,0
+Social Life -- events -- Freshman welcome,1123,0
+Social Life -- events -- Freshman-Sophomore rush,1125,0
+Social Life -- events -- High School girls; spread for,1146,0
+Social Life -- events -- Homecoming,1148,0
+Social Life -- events -- Lantern Night,1157,0
+Social Life -- events -- May Day,1173,0
+Social Life -- events -- Senior breakfast,1234,0
+Social Life -- events -- Senior dinner,1235,0
+Social Life -- events -- Senior Girl's Night,1241,0
+Social Life -- events -- Senior reception,1247,0
+Social Life -- events -- Senior Supper,1251,0
+Social Life -- events -- Senior year events,1370,0
+Social Life -- events -- Shirt tail parade,1255,0
+Social Life -- events -- Tug of War,1290,0
+Social Life -- events -- Christmas Breakfast Martha Cook,1327,0
+Social Life -- faculty wives,1010,0
+"Social Life -- faculty wives -- Andrews, Mrs.",1016,0
+"Social Life -- faculty wives -- Angell, Mrs.",1017,0
+"Social Life -- faculty wives -- Carhart, Mrs.",1018,0
+"Social Life -- faculty wives -- Cheever, Sunderland",1012,0
+"Social Life -- faculty wives -- Dewey, Mrs.",1019,0
+"Social Life -- faculty wives -- D'Ooge, Mrs.",1020,0
+Social Life -- faculty wives -- duPont,1014,0
+"Social Life -- faculty wives -- Gayley-Browne, Mrs.",1021,0
+Social Life -- faculty wives -- Mrs. Jordan,1023,0
+"Social Life -- faculty wives -- Kelsey, Mrs.",1024,0
+"Social Life -- faculty wives -- Lombard, Mrs.",1025,0
+Social Life -- faculty wives -- Markley Dr./Mrs.,1013,0
+"Social Life -- faculty wives -- McLaughlin, Mrs.",1026,0
+"Social Life -- faculty wives -- Morris, George, Mrs.",1011,0
+"Social Life -- faculty wives -- Prescott, Mrs. A",1031,0
+"Social Life -- faculty wives -- Smith, Shirley Mrs.",1027,0
+"Social Life -- faculty wives -- Soule, Hamilton Mrs.",1022,0
+"Social Life -- faculty wives -- Stanley, Mrs.",1028,0
+"Social Life -- faculty wives -- Sunderland, Mrs.",1029,0
+"Social Life -- faculty wives -- Vaughn, Mrs. V.",1030,0
+Groups -- departmental -- Classical Club,1076,0
+Groups -- musical -- French Blue Devils Band,1113,0
+Groups -- national origin and foreign interest -- French Club,1114,0
+Groups -- drama and theater -- Masques Club,1171,0
+Groups -- honorary -- Michigamua initiation,1185,0
+Social Life -- music and singing,1257,0
+Social Life -- music and singing -- 1st class song,1038,0
+Social Life -- music and singing -- Afternoon music,1041,0
+Social Life -- music and singing -- College sings,1080,0
+Social Life -- music and singing -- Dekes singing,1092,0
+Social Life -- music and singing -- Group sings,1136,0
+Social Life -- music and singing -- Hawaiian serenade,1143,0
+Social Life -- music and singing -- last sing of 1913 class,1159,0
+Social Life -- music and singing -- Michigan songs,1183,0
+Social Life -- music and singing -- Senior sings,1248,0
+Social Life -- music and singing -- Serenades,1254,0
+Social Life -- music and singing -- Sings,1259,0
+Social Life -- music and singing -- UM sings,1295,0
+Social Life -- music and singing -- UM songs,1296,0
+Social Life -- music and singing -- Varsity yells,1301,0
+Social Life -- music and singing -- Victors,1302,0
+Social Life -- music and singing -- Yellow and the Blue,1331,0
+Social Life -- other,1034,0
+Social Life -- other -- &quot;Big Four&quot; of outstanding girls,1036,0
+Social Life -- other -- AA people kindness,1040,0
+Social Life -- other -- Alumnae meeting,1044,0
+Social Life -- other -- Ann Arbor homes,1045,0
+Social Life -- other -- Art exhibits,1046,0
+Social Life -- other -- Aurora Borealis,1047,0
+Social Life -- other -- Being part of large crowds,1051,0
+Social Life -- other -- Bloomers incident,1052,0
+Social Life -- other -- Bob sledding,1053,0
+Social Life -- other -- Bon fires,1054,0
+Social Life -- other -- Bonfire/Angell,1055,0
+Social Life -- other -- Boys' good behavior,1056,0
+Social Life -- other -- Boys' negative attitude,1057,0
+Social Life -- other -- Cabaret,1059,0
+Social Life -- other -- Campus chimes,1060,0
+Social Life -- other -- Cap & Gown,1061,0
+Social Life -- other -- Changes women changes in women's character,1064,0
+Social Life -- other -- Chinese Laundry,1065,0
+Social Life -- other -- Choir,1066,0
+Social Life -- other -- Christmas,1068,0
+Social Life -- other -- Church socials,1071,0
+Social Life -- other -- Coasting,1078,0
+Social Life -- other -- Coed,1079,0
+Social Life -- other -- College spirit,1081,0
+Social Life -- other -- Commuter-missed social life/cmps,1083,0
+Social Life -- other -- County Fairs,1089,0
+Social Life -- other -- Developed socially,1093,0
+Social Life -- other -- Disgusting,1094,0
+Social Life -- other -- D'Ooge home,1095,0
+Social Life -- other -- Dress,1096,0
+Social Life -- other -- Entertainments,1099,0
+Social Life -- other -- Epsworth League,1100,0
+Social Life -- other -- Faculty & townspeople quietly entertaining students,1101,0
+Social Life -- other -- Faculty homes,1103,0
+Social Life -- other -- First/Last days,1107,0
+Social Life -- other -- Football games,1109,0
+Social Life -- other -- Free association of men and women,1112,0
+Social Life -- other -- Freshman office,1119,0
+Social Life -- other -- Freshman/continental cocked hat,1124,0
+Social Life -- other -- Fund raiser-women,1126,0
+Social Life -- other -- Girls' manner of dress,1129,0
+Social Life -- other -- Girls not chaperoned,1130,0
+Social Life -- other -- Grafitti-(Greek),1132,0
+Social Life -- other -- Graveyard raid,1134,0
+Events -- other -- Guest lectures,1137,0
+Social Life -- other -- Hardworking men,1141,0
+Social Life -- other -- Hat pool,1142,0
+Social Life -- other -- Hazing,1144,0
+Social Life -- other -- Hikes,1147,0
+Social Life -- other -- Informality,1150,0
+Social Life -- other -- Initiation,1151,0
+Social Life -- other -- Instructor/date,1152,0
+Social Life -- other -- last class (1890)/football rush,1158,0
+Social Life -- other -- League dinner,1160,0
+Social Life -- other -- League House,1161,0
+Social Life -- other -- Library chimes,1165,0
+Social Life -- other -- Maison francaise,1167,0
+Social Life -- other -- Maize & Blue,1168,0
+Social Life -- other -- Making fudge,1169,0
+Social Life -- other -- Mass meetings,1172,0
+Social Life -- other -- Memory M books,1176,0
+Social Life -- other -- Men non-destructive,1177,0
+Social Life -- other -- Men's prank,1178,0
+Social Life -- other -- Messiah,1179,0
+Social Life -- other -- Michigan League,1181,0
+Social Life -- other -- Michigan Union Circus,1184,0
+Social Life -- other -- Miss Greenwood,1188,0
+Social Life -- other -- Mormon acquaintances,1190,0
+Social Life -- other -- Mortarboard,1191,0
+Social Life -- other -- no orent. for grad.students,1197,0
+Social Life -- other -- Open houses,1033,0
+Social Life -- other -- Overall social life,1201,0
+Social Life -- other -- Pep meetings,1208,0
+Social Life -- other -- Picnics,1209,0
+Social Life -- other -- Practical joke,1211,0
+Social Life -- other -- Pranks,1212,0
+Social Life -- other -- President Women's League,1213,0
+Social Life -- other -- Prevailing courtesy,1214,0
+Social Life -- other -- Reprimand re/no socializing at UM,1218,0
+Social Life -- other -- Return from summer,1219,0
+Social Life -- other -- Reunions,1344,0
+Social Life -- other -- Rides to Ypsilanti & Detroit,1035,0
+Social Life -- other -- Roller skating,1220,0
+Social Life -- other -- Rude University men,1222,0
+Social Life -- other -- Rush,1223,0
+Social Life -- other -- Rushing theatre,1230,0
+Social Life -- other -- Saturday at Union,1231,0
+Social Life -- other -- School Girl's Glen,1232,0
+Social Life -- other -- Simple life,1256,0
+Social Life -- other -- Sleighing to Ypsilanti,1260,0
+Social Life -- other -- Social calls,1262,0
+Social Life -- other -- Social life important,1264,0
+Social Life -- other -- Solving world problems,1265,0
+Social Life -- other -- Street car derailment,1273,0
+Social Life -- other -- Student circus,1275,0
+Social Life -- other -- Student meetings,1276,0
+Social Life -- other -- Student mischief,1277,0
+Social Life -- other -- Student Volunteer,1278,0
+Social Life -- other -- Student's Poverty,1279,0
+"Social Life -- other -- Summer camp, Lake Geneva",1280,0
+Social Life -- other -- Sunday dinner/Freeman,1281,0
+Social Life -- other -- Sunday incident,1282,0
+Social Life -- events -- Sunday morning breakfasts,1283,0
+Social Life -- other -- Too much dating,1287,0
+Social Life -- other -- Total-wonderful memory,1288,0
+Social Life -- other -- Town & Gown fight,1289,0
+Social Life -- other -- Twelve tickets for $3.00,1346,0
+Social Life -- other -- Twilight recitals,1294,0
+"Social Life -- other -- UM spirit, enthusiasm",1299,0
+"Social Life -- other -- UM spirit, loyalty",1300,0
+Social Life -- other -- Welcome,1308,0
+Social Life -- other -- Whitney,1309,0
+Social Life -- other -- Whole student body,1311,0
+Social Life -- other -- Wholesome entertainment,1312,0
+Social Life -- other -- Women didn't work hard,1313,0
+Social Life -- other -- Women smoking,1314,0
+Social Life -- other -- Women's dress,1316,0
+Social Life -- other -- Women's League,1317,0
+Social Life -- other -- Ypsi Yell,1332,0
+Social Life -- other -- YWCA,1333,0
+Social Life -- parties and celebrations,1202,0
+Social Life -- events -- Alumnae breakfast,1043,0
+Social Life -- parties and celebrations -- Banquets,1049,0
+Social Life -- parties and celebrations -- Basketball banquet,1050,0
+Social Life -- parties and celebrations -- Class parties,1074,0
+Social Life -- parties and celebrations -- Faculty teas,1104,0
+Social Life -- parties and celebrations -- Fancy dress parties,1105,0
+Social Life -- parties and celebrations -- festivals,1032,0
+Social Life -- parties and celebrations -- Freshman bonfire,1115,0
+Social Life -- parties and celebrations -- Freshman Girl's Party,1118,0
+Social Life -- parties and celebrations -- Freshman reception,1120,0
+Social Life -- parties and celebrations -- Get togethers,1127,0
+Social Life -- parties and celebrations -- Griffon Party,1135,0
+Social Life -- parties and celebrations -- Halloween at &quot;Cup & Saucer&quot; Hollow,1138,0
+Social Life -- parties and celebrations -- Halloween oyster roast,1139,0
+Social Life -- parties and celebrations -- Halloween parties,1140,0
+Social Life -- parties and celebrations -- House Parties,1149,0
+Social Life -- parties and celebrations -- Keg parties at Cat Hollow,1156,0
+Social Life -- parties and celebrations -- League parties,1162,0
+Social Life -- parties and celebrations -- Leap Year Party,1164,0
+Social Life -- parties and celebrations -- Martha Cook parties,1170,0
+Social Life -- parties and celebrations -- Mixer,1189,0
+Social Life -- parties and celebrations -- Mrs. Angell's tea,1193,0
+Social Life -- parties and celebrations -- Promenade-'23,1216,0
+Social Life -- parties and celebrations -- receptions,1341,0
+Social Life -- parties and celebrations -- Roommate's wedding,1221,0
+Social Life -- parties and celebrations -- Senior Girl's Banquet,1236,0
+Social Life -- parties and celebrations -- Senior Law parties,1243,0
+Social Life -- parties and celebrations -- Senior Society party,1250,0
+Social Life -- parties and celebrations -- Spreads,1271,0
+Social Life -- parties and celebrations -- Teas,1286,0
+Social Life -- parties and celebrations -- Washington Birthday celebration,1307,0
+Social Life -- parties and celebrations -- Women's banquet,1315,0
+Social Life -- parties and celebrations -- Women's League banquet,1318,0
+Social Life -- parties and celebrations -- Women's League Masque,1319,0
+Social Life -- parties and celebrations -- Women's League parties,1320,0
+Social Life -- parties and celebrations -- Wyvern house parties,1326,0
+Social Life -- people -- Contact with foreign students,1084,0
+Social Life -- people -- Continual drunkenness some (few) students ,1085,0
+Social Life -- people -- Death of student,1091,0
+Social Life -- people -- Drunken students,1097,0
+Social Life -- people -- Ducking Freshmen,1098,0
+Social Life -- people -- Janitor,1153,0
+Social Life -- people -- Meeting Foreign students,1175,0
+Social Life -- people -- Mrs. Barbour,1194,0
+Social Life -- people -- Mrs. Israel Hall,1196,0
+Social Life -- people -- Noah Cheever family,1198,0
+Social Life -- people -- Professors reachable,1215,0
+Social Life -- people -- Social Director Martha Cook,1263,0
+Social Life -- plays,1334,0
+Social Life -- plays -- Comedy Club Play,1337,545
+Social Life -- plays -- German play,1338,0
+Social Life -- plays -- Greek play in Latin language,1339,0
+Social Life -- plays -- Junior Girls' Play,1335,0
+Social Life -- plays -- Senior Girls' Play,1336,0
+Social Life -- plays -- Whitney Theater,1340,0
+UM Influence -- appreciation of arts,1347,0
+UM Influence -- compete with men,1348,0
+UM Influence -- conduct of life,1349,0
+UM Influence -- negative impression,1350,0
+"UM Influence -- network of friends,  (1921)",1351,0
+UM Influence -- other -- Pres. Burton,1352,0
+UM Influence -- other -- UM spirit,1353,0
+UM Influence -- other; Angell,1354,0
+UM Influence -- sense of civic responsibility,1355,0
+UM Influence -- widened perspective,1356,0

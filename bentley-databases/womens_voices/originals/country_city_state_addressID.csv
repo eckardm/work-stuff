@@ -1,0 +1,2082 @@
+country,city,state,addressID
+Angola,,,1
+Asia Minor,,,2
+Australia,Sydney,,3
+Austria,Vienna,,4
+Belgium,,,5
+Brazil,Sao Paulo,,6
+Bulgaria,Samokov,,7
+Burma,Moulmein,,8
+Burma,Bassein,,9
+Burma,Rangoon,,10
+Canada,Cowley,Alberta,11
+Canada,Vancouver,British Columbia,12
+Canada,Burford,Ontario,13
+Canada,Cobourg,Ontario,14
+Canada,Millbrook,Ontario,15
+Canada,Rockton,Ontario,16
+Canada,Smith's Falls,Ontario,17
+Canada,Strathroy,Ontario,18
+Canada,Strathroy,Ontario,19
+Canada,Waterdown,Ontario,20
+Canada,Watford,Ontario,21
+Canada,Windsor,Ontario,22
+Canada,Woodstock,Ontario,23
+Canada,Amherstburg,,24
+Canada,Bracebridge,,25
+Canada,Brampton,,26
+Canada,Clinton,,27
+Canada,Colborne,,28
+Canada,Edmonton,,29
+Canada,Galt,,30
+Canada,Hamilton,,31
+Canada,Kincadine,,32
+Canada,King's Co.,,33
+Canada,Lansdown,,34
+Canada,London,Ontario,35
+Canada,Moontown,,36
+Canada,N.Easthope,,37
+Canada,,Ontario,38
+Canada,,Ottawa,39
+Canada,,Quebec,40
+Canada,Sarnia,,41
+Canada,Sault Ste Marie,,42
+Canada,St. Thomas,,43
+Canada,St.John,,44
+Canada,Toronto,,45
+Canada,Woodbridge,,46
+Canada,,,47
+China,Chentin,,48
+China,Foo Chow,,49
+China,Foochon,,50
+China,Kiungchow,,51
+China,Kutien,,52
+China,Linchow,,53
+China,Nanchang Kiangsi,,54
+China,Nanking,,55
+China,Peking,,56
+China,Shanghai,,57
+China,Shantung,,58
+China,Swatow,,59
+China,Taianfu,,60
+China,Tientsin,,61
+China,Tsinan,,62
+Cuba,Banes,,63
+Cuba,Ceballos,,64
+Cuba,Havana,,65
+Denmark,,,66
+England,Canterbury,,67
+England,Chester,,68
+England,Crewe,,69
+England,Devonshire,,70
+England,London,,71
+England,Newton Abbott,,72
+England,Oxford,,73
+England,Plymouth,,74
+England,Preston,,75
+England,Runcorn,,76
+England,Yorkshire,,77
+England,,,78
+Finland,Tornes,,79
+France,Strassburgh,Alsace,80
+France,Paris,,81
+France,Reims,,82
+Germany,Balje,,83
+Germany,Berlin,,84
+Germany,Braunschwerg,,85
+Germany,Grosswaltersdorf,,86
+Germany,Hamburg,,87
+Germany,Wurteemberg,,88
+Germany,,,89
+India,Baihar,,90
+India,Bisaspur,,91
+India,Calcutta,,92
+India,Mellore,,93
+India,Punjab,,94
+India,Vellore,,95
+India,,,96
+Ireland,Dublin,,97
+Ireland,Hollymount,,98
+Ireland,Monaghan,,99
+Japan,Nara,,100
+Japan,Tokyo,,101
+Mexico,,,102
+Morocco,,,103
+Netherland,Bummum,,104
+Netherlands,,,105
+Norway,Bergen,,106
+Panama,Canal Zone,,107
+Philippine Islands,,,108
+Poland,,,109
+Puerto Rico,Aguadilla,,110
+Puerto Rico,,,111
+Scotland,Edinburgh,,112
+Scotland,,,113
+Siam,Bangkok,,114
+Spain,Cadiz,,115
+Sweden,Stockholm,,116
+United States,,,117
+USSR,Elizabethgrad,,118
+Wales,Bangor,,119
+United States,Montevallo,AL,120
+United States,Waugh,AL,121
+United States,,AL,122
+United States,Fort Smith,AR,123
+United States,Hot Springs,AR,124
+United States,Little Rock,AR,125
+United States,,AR,126
+United States,Bisbee,AZ,127
+United States,Fort Apache,AZ,128
+United States,Globe,AZ,129
+United States,Lowell,AZ,130
+United States,Nogales,AZ,131
+United States,Phoenix,AZ,132
+United States,Tucson,AZ,133
+United States,Williams,AZ,134
+United States,Winslow,AZ,135
+United States,Alhambra,CA,136
+United States,Anaheim,CA,137
+United States,Arcadia,CA,138
+United States,Arcata,CA,139
+United States,Atascadero,CA,140
+United States,Beaumont,CA,141
+United States,Bell,CA,142
+United States,Belvedere,CA,143
+United States,Berkeley,CA,144
+United States,Betteravia,CA,145
+United States,Burbank,CA,146
+United States,Calabasas,CA,147
+United States,Campbell,CA,148
+United States,Carmel-by-the-Sea,CA,149
+United States,Catalina Island,CA,150
+United States,Cloverdale,CA,151
+United States,Davis,CA,152
+United States,Downey,CA,153
+United States,Durham,CA,154
+United States,El Monte,CA,155
+United States,Eureka,CA,156
+United States,Gardena,CA,157
+United States,Glendale,CA,158
+United States,Gonzales,CA,159
+United States,Hollywood,CA,160
+United States,Huntington Beach,CA,161
+United States,Kerman,CA,162
+United States,La Jolla,CA,163
+United States,La Manda,CA,164
+United States,Las Gatos,CA,165
+United States,Long Beach,CA,166
+United States,Los Angeles,CA,167
+United States,Menlo Park,CA,168
+United States,Menton,CA,169
+United States,Mill Valley,CA,170
+United States,Mills College,CA,171
+United States,Modesta,CA,172
+United States,Moneta,CA,173
+United States,Monrovia,CA,174
+United States,Montreal,CA,175
+United States,Mt Hebron,CA,176
+United States,National City,CA,177
+United States,Oakland,CA,178
+United States,Ontario,CA,179
+United States,Orange,CA,180
+United States,Oxnard,CA,181
+United States,Palo Alto,CA,182
+United States,Pasadena,CA,183
+United States,Petaluna,CA,184
+United States,Point Loma,CA,185
+United States,Pomona,CA,186
+United States,Porterville,CA,187
+United States,Redlands,CA,188
+United States,Richmond,CA,189
+United States,Rivera,CA,190
+United States,Riverside,CA,191
+United States,Sacramento,CA,192
+United States,San Bernardmo,CA,193
+United States,San Diego,CA,194
+United States,San Francisco,CA,195
+United States,San Gabriel,CA,196
+United States,San Jose,CA,197
+United States,Santa Ana,CA,198
+United States,Santa Barbara,CA,199
+United States,Santa Maria,CA,200
+United States,Saratoga,CA,202
+United States,Sausalito,CA,203
+United States,So. Pasadena,CA,204
+United States,Stanford U,CA,205
+United States,Stockton,CA,206
+United States,Tracy,CA,207
+United States,Vallejo,CA,208
+United States,Van Nuys,CA,209
+United States,Ventura,CA,210
+United States,Visalia,CA,211
+United States,Whittier,CA,212
+United States,Woodland,CA,213
+United States,,CA,214
+United States,Aspen,CO,215
+United States,Boulder,CO,216
+United States,Canon City,CO,217
+United States,Colorado Springs,CO,218
+United States,Crawford,CO,219
+United States,Cripple Creek,CO,220
+United States,Denver,CO,221
+United States,Fort Collins,CO,222
+United States,Fraser,CO,223
+United States,Golden,CO,224
+United States,Greeley,CO,225
+United States,Lamar,CO,226
+United States,Las Animas,CO,227
+United States,Nathrop,CO,228
+United States,Pueblo,CO,229
+United States,Rifle,CO,230
+United States,Rosita,CO,231
+United States,Saguache,CO,232
+United States,Sterling,CO,233
+United States,Trinidad,CO,234
+United States,Wheatridge,CO,235
+United States,Bridgeport,CT,236
+United States,Bristol,CT,237
+United States,Canterbury,CT,238
+United States,Cheshire,CT,239
+United States,Danbury,CT,240
+United States,Glastonbury,CT,241
+United States,Groton,CT,242
+United States,Hartford,CT,243
+United States,Litchfield Co,CT,244
+United States,Meriden,CT,245
+United States,Merrow,CT,246
+United States,Middlebury,CT,247
+United States,Middletown,CT,248
+United States,Milford,CT,249
+United States,New Britain,CT,250
+United States,New Haven,CT,251
+United States,New London,CT,252
+United States,Norwich,CT,253
+United States,Orange,CT,254
+United States,South Norwalk,CT,255
+United States,Torrington,CT,256
+United States,W.Hartford,CT,257
+United States,Washington,CT,258
+United States,Waterbury,CT,259
+United States,West Hartford,CT,260
+United States,Woodbury,CT,261
+United States,Takoma Park,DC,262
+United States,Washington,DC,263
+United States,Newark,DE,264
+United States,Wilmington,DE,265
+United States,Cocout Grove,FL,266
+United States,Daytona,FL,267
+United States,DeLand,FL,268
+United States,Dunedin,FL,269
+United States,Fort Lauderdale,FL,270
+United States,Jacksonville,FL,271
+United States,Manderin,FL,272
+United States,Nseppa Island,FL,273
+United States,Seabreeze,FL,274
+United States,St.Cloud,FL,275
+United States,St.Petersburg,FL,276
+United States,Tallahassee,FL,277
+United States,Tampa,FL,278
+United States,Wilbur-by-the-Sea,FL,279
+United States,,FL,280
+United States,Atlanta,GA,281
+United States,Augusta,GA,282
+United States,Cordele,GA,283
+United States,Decatur,GA,284
+United States,Fort Benning,GA,285
+United States,Macon,GA,286
+United States,Mount Airy,GA,287
+United States,Rome,GA,288
+United States,Thomasville,GA,289
+United States,Haiku,HI,290
+United States,Honolulu,HI,291
+United States,Makiki,HI,292
+United States,Wahiawa,HI,293
+United States,Ames,IA,294
+United States,Anamora,IA,295
+United States,Anamosa,IA,296
+United States,Avoca,IA,297
+United States,Boyden,IA,298
+United States,Bridgewater,IA,299
+United States,Burlington,IA,300
+United States,Carroll,IA,301
+United States,Cedar Falls,IA,302
+United States,Cedar Rapids,IA,303
+United States,Centerville,IA,304
+United States,Chariton,IA,305
+United States,Clayton Co.,IA,306
+United States,Clinton,IA,307
+United States,Cresco,IA,308
+United States,Danbury,IA,309
+United States,Davenport,IA,310
+United States,Decorah,IA,311
+United States,Delhi,IA,312
+United States,Derby,IA,313
+United States,Des Moines,IA,314
+United States,Dubuque,IA,315
+United States,Emerson,IA,316
+United States,Fayette,IA,317
+United States,Floyd,IA,318
+United States,Fort Dodge,IA,319
+United States,Fort Madison,IA,320
+United States,Ft.Dodge,IA,321
+United States,Gardengrove,IA,322
+United States,George,IA,323
+United States,Greene,IA,324
+United States,Greenfield,IA,325
+United States,Grinnell,IA,326
+United States,Hampton,IA,327
+United States,Harlon,IA,328
+United States,Indianola,IA,329
+United States,Iowa City,IA,330
+United States,Iowa Falls,IA,331
+United States,Keokuk,IA,332
+United States,Kirkville,IA,333
+United States,Kossuth,IA,334
+United States,Lansing,IA,335
+United States,Le Mars,IA,336
+United States,Manchester,IA,337
+United States,Marion,IA,338
+United States,McGregor,IA,339
+United States,Mediapolis,IA,340
+United States,Moulton,IA,341
+United States,Muscatine,IA,342
+United States,Natrorral,IA,343
+United States,Nevada,IA,344
+United States,Ohumwa,IA,345
+United States,Oreton,IA,346
+United States,Oshaloosa,IA,347
+United States,Ottumwa,IA,348
+United States,Perry,IA,349
+United States,Red Oak,IA,350
+United States,Richland,IA,351
+United States,Seymour,IA,352
+United States,Shenandoah,IA,353
+United States,Sioux City,IA,354
+United States,Sperry,IA,355
+United States,Strawberry Point,IA,356
+United States,Vinton,IA,357
+United States,W.Liberty,IA,358
+United States,Waterloo,IA,359
+United States,What Cheer,IA,360
+United States,White Pigeon,IA,361
+United States,Williams,IA,362
+United States,Williamsburg,IA,363
+United States,Wilton Junction,IA,364
+United States,Winterset,IA,365
+United States,Wyoming,IA,366
+United States,,IA,367
+United States,Boise,ID,368
+United States,Jerome,ID,369
+United States,Lewiston,ID,370
+United States,Montpelier,ID,371
+United States,Pocatello,ID,372
+United States,St. Maries,ID,373
+United States,Alden,IL,374
+United States,Aleda,IL,375
+United States,Alton,IL,376
+United States,Amboy,IL,377
+United States,Amoy,IL,378
+United States,Andover,IL,379
+United States,Anna,IL,380
+United States,Ashton,IL,381
+United States,Atlanta,IL,382
+United States,Aurora,IL,383
+United States,Austin,IL,384
+United States,Batavia,IL,385
+United States,Bates,IL,386
+United States,Beardstown,IL,387
+United States,Belleville,IL,388
+United States,Bloomington,IL,389
+United States,Brimfield,IL,390
+United States,Bristol,IL,391
+United States,Buffalo Prairie,IL,392
+United States,Bushnell,IL,393
+United States,Byron,IL,394
+United States,Cairo,IL,395
+United States,Carlinville,IL,396
+United States,Cass Co.,IL,397
+United States,Centralia,IL,398
+United States,Champaign,IL,399
+United States,Charleston,IL,400
+United States,Chicago,IL,401
+United States,Chinoa,IL,402
+United States,Congress Park,IL,403
+United States,Coulterville,IL,404
+United States,Creston,IL,405
+United States,Danvers,IL,406
+United States,Danville,IL,407
+United States,Decatur,IL,408
+United States,DeKalb,IL,409
+United States,Dixon,IL,410
+United States,Dwight,IL,411
+United States,Effingham,IL,412
+United States,El Paso,IL,413
+United States,Elgin,IL,414
+United States,Evanston,IL,415
+United States,Fairbury,IL,416
+United States,Fairview,IL,417
+United States,Flora,IL,418
+United States,Freeport,IL,419
+United States,Fremont,IL,420
+United States,Galena,IL,421
+United States,Galesburg,IL,422
+United States,Galwa,IL,423
+United States,Geneva,IL,424
+United States,Gibson City,IL,425
+United States,Glencoe,IL,426
+United States,Grand Rapids,IL,427
+United States,Henry,IL,428
+United States,Highland,IL,429
+United States,Highland Park,IL,430
+United States,Hinckley,IL,431
+United States,Hinsdale,IL,432
+United States,Hoopeston,IL,433
+United States,Huntington,IL,444
+United States,Hutsonville,IL,445
+United States,Hyde Park,IL,446
+United States,Industry,IL,447
+United States,Jacksonville,IL,448
+United States,Jefferson,IL,449
+United States,Jerseyville,IL,450
+United States,Joliet,IL,451
+United States,Kankakee,IL,452
+United States,Kenilworth,IL,453
+United States,Kewanee,IL,454
+United States,Kewassee,IL,455
+United States,Knox County,IL,456
+United States,La Grange,IL,457
+United States,La Moille,IL,458
+United States,La Salle Co.,IL,459
+United States,Melrose Park,IL,460
+United States,Mendota,IL,461
+United States,Moline,IL,462
+United States,Monmouth,IL,463
+United States,Monterey,IL,464
+United States,Morris,IL,465
+United States,Mount Carroll,IL,466
+United States,Mount Morris,IL,467
+United States,Mt. Carroll,IL,468
+United States,Naperville,IL,469
+United States,Normal,IL,470
+United States,Oak Park,IL,471
+United States,Odell,IL,472
+United States,Oglesby,IL,473
+United States,Oregon,IL,474
+United States,Ottawa,IL,475
+United States,Palestine,IL,476
+United States,Panna,IL,477
+United States,Paxton,IL,478
+United States,Pearl City,IL,479
+United States,Pekin,IL,480
+United States,Peoria,IL,481
+United States,Peotone,IL,482
+United States,Plainfield,IL,483
+United States,Prairieville,IL,484
+United States,Quincy,IL,485
+United States,Ridgefield,IL,486
+United States,River Forest,IL,487
+United States,Riverside,IL,488
+United States,Rochelle,IL,489
+United States,Rock Island,IL,490
+United States,Rockford,IL,491
+United States,Sandwich,IL,492
+United States,Sibley,IL,493
+United States,Spring Valley,IL,494
+United States,Springfield,IL,495
+United States,Sterling,IL,496
+United States,Streator,IL,497
+United States,Sugar Grove,IL,498
+United States,Sycamore,IL,499
+United States,Tiskilwa,IL,500
+United States,Toulon,IL,501
+United States,Tuscola,IL,502
+United States,Upper Alton,IL,503
+United States,Urbana,IL,504
+United States,Utica,IL,505
+United States,Warrensburg,IL,506
+United States,Wataga,IL,507
+United States,Waukegan,IL,508
+United States,Western Springs,IL,509
+United States,Wheaton,IL,510
+United States,Whiteside Co,IL,511
+United States,Wilmette,IL,512
+United States,Winetka,IL,513
+United States,Winnegago,IL,514
+United States,Winnetka,IL,515
+United States,Wood River,IL,516
+United States,Woodhull,IL,517
+United States,Woodstock,IL,518
+United States,,IL,519
+United States,Akron,IN,520
+United States,Anderson,IN,521
+United States,Attica,IN,522
+United States,Auburn,IN,523
+United States,Bainbridge,IN,524
+United States,Battle Ground,IN,525
+United States,Bippus,IN,526
+United States,Bloomington,IN,527
+United States,Bluffton,IN,528
+United States,Bracken,IN,529
+United States,Bristol,IN,530
+United States,Broad Ripple,IN,531
+United States,Brooksburg,IN,532
+United States,Butler,IN,533
+United States,Cambridge City,IN,534
+United States,Clay Co.,IN,535
+United States,Colfax,IN,536
+United States,Columbia City,IN,537
+United States,Columbus,IN,538
+United States,Corunna,IN,539
+United States,Crown Point,IN,540
+United States,Decatur,IN,541
+United States,Delphi,IN,542
+United States,Elkart,IN,543
+United States,Evansville,IN,544
+United States,Fauland,IN,545
+United States,Fort Wayne,IN,546
+United States,Fountain City,IN,547
+United States,Frankfort,IN,548
+United States,Franklin,IN,549
+United States,Freelandville,IN,550
+United States,Ft. Wayne,IN,551
+United States,Gary,IN,552
+United States,Goshen,IN,554
+United States,Grabil,IN,555
+United States,Greencastle,IN,556
+United States,Greensburg,IN,557
+United States,Hagerstown,IN,558
+United States,Hammond,IN,559
+United States,Hartford City,IN,560
+United States,Huntington,IN,561
+United States,Indianapolis,IN,562
+United States,Irvington,IN,563
+United States,Jeffersonville,IN,564
+United States,Kendallville,IN,565
+United States,Kingston,IN,566
+United States,Knox,IN,567
+United States,La Grange,IN,568
+United States,La Porte,IN,569
+United States,Lafayette,IN,570
+United States,Lapel,IN,571
+United States,Logansport,IN,572
+United States,Madison,IN,573
+United States,Marion,IN,574
+United States,Michigan City,IN,576
+United States,Mishawaka,IN,577
+United States,Milford,IN,578
+United States,Monon,IN,2081
+United States,Miller,IN,579
+United States,Monroeville,IN,2082
+United States,Milroy,IN,580
+United States,Morocco,IN,2083
+United States,Muncie,IN,581
+United States,New Albany,IN,582
+United States,Newcastle,IN,583
+United States,No. Manchester,IN,584
+United States,Noblesville,IN,585
+United States,North Liberty,IN,586
+United States,Oakland City,IN,587
+United States,Ontaro,IN,588
+United States,Pennville,IN,589
+United States,Peru,IN,590
+United States,Pleasant View,IN,591
+United States,Princeton,IN,592
+United States,Remington,IN,593
+United States,Rensselaer,IN,594
+United States,Richmond,IN,595
+United States,Rising Sun,IN,596
+United States,Roann,IN,597
+United States,Roanoke,IN,598
+United States,Rochester,IN,599
+United States,Rockport,IN,600
+United States,Romney,IN,601
+United States,Rush Co.,IN,602
+United States,Shannondale,IN,603
+United States,Shelbyville,IN,604
+United States,South Bend,IN,605
+United States,Spiceland,IN,606
+United States,Terre Haute,IN,607
+United States,Topeka,IN,608
+United States,Union City,IN,609
+United States,Upland,IN,610
+United States,Valparaiso,IN,611
+United States,Van Buren,IN,612
+United States,Vincennes,IN,613
+United States,W. Lafayette,IN,614
+United States,Wabash,IN,615
+United States,Waterloo,IN,616
+United States,West Lafayette,IN,617
+United States,Woodmere,IN,618
+United States,,IN,619
+United States,Atchison,KS,620
+United States,Baileyville,KS,621
+United States,Baldwin,KS,622
+United States,Baxter Springs,KS,623
+United States,Beloit,KS,624
+United States,Cawker City,KS,625
+United States,Clay Center,KS,626
+United States,Elk City,KS,627
+United States,Emporia,KS,628
+United States,Fort Leavenworth,KS,629
+United States,Fort Scott,KS,630
+United States,Fredonia,KS,631
+United States,Ft.Leavenworth,KS,632
+United States,Grenola,KS,633
+United States,Independence,KS,634
+United States,Kansas City,KS,635
+United States,Lawrence,KS,636
+United States,Leavenworth,KS,637
+United States,Liberty,KS,638
+United States,Lyons,KS,639
+United States,Manhattan,KS,640
+United States,McCune,KS,641
+United States,Monrovia,KS,642
+United States,Mound City,KS,643
+United States,Mulvane,KS,644
+United States,New Haven,KS,645
+United States,Paola,KS,646
+United States,Peabody,KS,647
+United States,Pittsburg,KS,648
+United States,Rossville,KS,649
+United States,Seneca,KS,650
+United States,Topeka,KS,651
+United States,Waverly,KS,652
+United States,Wellington,KS,653
+United States,Wichita,KS,654
+United States,Winfield,KS,655
+United States,Ashland,KY,656
+United States,Clay County,KY,657
+United States,Coalton,KY,658
+United States,Cynthiana,KY,659
+United States,Deatsville,KY,660
+United States,Frankfort,KY,661
+United States,Garrard,KY,662
+United States,Lexington,KY,663
+United States,Louisville,KY,664
+United States,Manchester,KY,665
+United States,Owensboro,KY,666
+United States,Paducah,KY,667
+United States,Richmond,KY,668
+United States,Smith,KY,669
+United States,St. Matthews,KY,670
+United States,Versailles,KY,671
+United States,Whitehall,KY,672
+United States,,KY,673
+United States,Alexandria,LA,674
+United States,Dunn,LA,675
+United States,Lake Charles,LA,676
+United States,New Orleans,LA,677
+United States,Abington,MA,678
+United States,Alford,MA,679
+United States,Allston,MA,680
+United States,Amesbury,MA,681
+United States,Amherst,MA,682
+United States,Andover,MA,683
+United States,Arlington,MA,684
+United States,Belmont,MA,685
+United States,Blandford,MA,686
+United States,Boston,MA,687
+United States,Bradford,MA,688
+United States,Brockton,MA,689
+United States,Brookline,MA,690
+United States,Cambridge,MA,691
+United States,Chicopee Falls,MA,692
+United States,Cohasset,MA,693
+United States,Dorchester,MA,694
+United States,Duxbury,MA,695
+United States,East Hampton,MA,696
+United States,East Northfield,MA,697
+United States,East Weymouth,MA,698
+United States,Fall River,MA,699
+United States,Fitchburg,MA,700
+United States,Framingham,MA,701
+United States,Gardner,MA,702
+United States,Gloucester,MA,703
+United States,Granby,MA,704
+United States,Great Barrington,MA,705
+United States,Hanover,MA,706
+United States,Haverhill,MA,707
+United States,Hingham,MA,708
+United States,Holyoke,MA,709
+United States,Hyde Park,MA,710
+United States,Lenox,MA,711
+United States,Lowell,MA,712
+United States,Marlboro,MA,713
+United States,Medford,MA,714
+United States,N.Brookfield,MA,715
+United States,New Bedford,MA,716
+United States,Newburyport,MA,717
+United States,Newton Center,MA,718
+United States,Newton Highlands,MA,719
+United States,Newtonville,MA,720
+United States,Northfield,MA,722
+United States,Palmer,MA,723
+United States,Reading,MA,724
+United States,Rockland,MA,725
+United States,Roxbury,MA,726
+United States,Salisbury,MA,727
+United States,Sheffield,MA,728
+United States,South Hadley,MA,729
+United States,Somerville,MA,730
+United States,Springfield,MA,731
+United States,Taunton,MA,732
+United States,Tewksburg,MA,733
+United States,W.Peabody,MA,734
+United States,Wakefield,MA,735
+United States,Wellesley,MA,736
+United States,West Brookfield,MA,737
+United States,Winthrop,MA,738
+United States,Woburn,MA,739
+United States,Wollaston,MA,740
+United States,Worcester,MA,741
+United States,,MA,742
+United States,Baltimore,MD,743
+United States,Baltimore Co,MD,744
+United States,Barton,MD,745
+United States,Bel-Air,MD,746
+United States,Chevy Chase,MD,747
+United States,Frederick,MD,748
+United States,Frostburg,MD,749
+United States,Hagerstown,MD,750
+United States,Havre de Grace,MD,751
+United States,Moscow Mills,MD,752
+United States,Bangor,ME,753
+United States,Bridgton,ME,754
+United States,Damariscotta,ME,755
+United States,Farmington,ME,756
+United States,Farrington,ME,757
+United States,Kennebunk,ME,758
+United States,Livermore,ME,759
+United States,Niscasset,ME,760
+United States,Orono,ME,761
+United States,Phillips,ME,762
+United States,West Paris,ME,763
+United States,Winthrop,ME,764
+United States,,ME,765
+United States,Ada,MI,766
+United States,Addison,MI,767
+United States,Adrian,MI,768
+United States,Alabaster,MI,769
+United States,Alamo,MI,770
+United States,Albion,MI,771
+United States,Algonac,MI,772
+United States,Allegan,MI,773
+United States,Allegan Co,MI,774
+United States,Alma,MI,775
+United States,Almont,MI,776
+United States,Alpena,MI,777
+United States,Alto,MI,778
+United States,Amasa,MI,779
+United States,Ann Arbor,MI,780
+United States,Armada,MI,781
+United States,Ashland,MI,782
+United States,Atkins,MI,783
+United States,Attica,MI,784
+United States,Au Sable,MI,785
+United States,Auborn,MI,786
+United States,Augusta,MI,787
+United States,Bad Axe,MI,788
+United States,Bancroft,MI,789
+United States,Barker Creek,MI,790
+United States,Bath,MI,791
+United States,Battle Creek,MI,792
+United States,Bay City,MI,793
+United States,Bay Shore,MI,794
+United States,Bear Lake,MI,795
+United States,Bedford,MI,796
+United States,Belding,MI,797
+United States,Belgrade,MI,798
+United States,Bellevue,MI,799
+United States,Benton Harbor,MI,800
+United States,Benzonia,MI,801
+United States,Berrien Springs,MI,802
+United States,Bessemer,MI,803
+United States,Big Rapids,MI,804
+United States,Big Sandy,MI,805
+United States,Birmingham,MI,806
+United States,Blissfield,MI,807
+United States,Boyne City,MI,808
+United States,Bridgeport,MI,809
+United States,Bronson,MI,810
+United States,Brooklyn,MI,811
+United States,Brown City,MI,812
+United States,Buchanan,MI,813
+United States,Bunkerhill,MI,814
+United States,Burr Oak,MI,815
+United States,Bushnell,MI,816
+United States,Byron,MI,817
+United States,Cadillac,MI,818
+United States,Calabar,MI,819
+United States,Calhoun Co,MI,820
+United States,Calumet,MI,821
+United States,Capac,MI,822
+United States,Carleton,MI,823
+United States,Carlisle,MI,824
+United States,Carlton,MI,825
+United States,Caro,MI,826
+United States,Carsonville,MI,827
+United States,Caseville,MI,828
+United States,Casnovia,MI,829
+United States,Cass City,MI,830
+United States,Cass Co.,MI,831
+United States,Cedar Springs,MI,832
+United States,Centerville,MI,833
+United States,Central Lake,MI,834
+United States,Central Park,MI,835
+United States,Charleston,MI,836
+United States,Charlesworth,MI,837
+United States,Charlevoix,MI,838
+United States,Charlotte,MI,839
+United States,Cheboygan,MI,840
+United States,Chelsea,MI,841
+United States,Chesaning,MI,842
+United States,Chicago,MI,843
+United States,Claarkesville,MI,844
+United States,Claire,MI,845
+United States,Clare,MI,846
+United States,Clarkston,MI,847
+United States,Clawson,MI,849
+United States,Clayton,MI,850
+United States,Clifton,MI,851
+United States,Climax,MI,852
+United States,Clinton,MI,853
+United States,Clinton Co.,MI,854
+United States,Clinton County,MI,855
+United States,Coldwater,MI,856
+United States,Coloma,MI,857
+United States,Colon,MI,858
+United States,Columbiaville,MI,859
+United States,Commerce,MI,860
+United States,Concord,MI,861
+United States,Constantine,MI,862
+United States,Coopersville,MI,863
+United States,Coral,MI,864
+United States,Corey Lake,MI,865
+United States,Corunna,MI,866
+United States,Cosco,MI,867
+United States,Covert,MI,868
+United States,Croswell,MI,869
+United States,Crystal Falls,MI,870
+United States,Dansville,MI,871
+United States,Davisburg,MI,872
+United States,Davison,MI,873
+United States,Dayton,MI,874
+United States,Dearborn,MI,875
+United States,Decatur,MI,876
+United States,Deckerville,MI,877
+United States,DeTour,MI,878
+United States,Detroit,MI,879
+United States,DeWitt,MI,880
+United States,Dexter,MI,881
+United States,Douglas,MI,882
+United States,Dowagiac,MI,883
+United States,Drenthe,MI,884
+United States,Dryden,MI,885
+United States,Duffield,MI,886
+United States,Dundee,MI,887
+United States,Duplain,MI,888
+United States,E. Jordan,MI,889
+United States,E. Lansing,MI,890
+United States,Eagle,MI,891
+United States,East Leroy,MI,892
+United States,East Tawas,MI,893
+United States,Eaton Rapids,MI,894
+United States,Eau Claire,MI,895
+United States,Ecorse,MI,896
+United States,Eden,MI,897
+United States,Edwardsburg,MI,898
+United States,Elk Rapids,MI,899
+United States,Elsie,MI,900
+United States,Erie,MI,901
+United States,Escanaba,MI,902
+United States,Essexville,MI,903
+United States,Evart,MI,904
+United States,Fairfield,MI,905
+United States,Farmington,MI,906
+United States,Farwell,MI,907
+United States,Fennville,MI,908
+United States,Fenton,MI,909
+United States,Ferndale,MI,910
+United States,Fitchburg,MI,911
+United States,Flint,MI,912
+United States,Flushing,MI,913
+United States,Ford City,MI,914
+United States,Ford River,MI,915
+United States,Fostoria,MI,916
+United States,Fowlerville,MI,917
+United States,Frankfort,MI,918
+United States,Franklin,MI,919
+United States,Freeland,MI,920
+United States,Freesoil,MI,921
+United States,Fremont,MI,922
+United States,Gagetown,MI,923
+United States,Galesburg,MI,924
+United States,Galien,MI,925
+United States,Ganges,MI,926
+United States,Garden,MI,927
+United States,Gaylord,MI,928
+United States,Genessee Co.,MI,929
+United States,Genoa,MI,930
+United States,Gladwin,MI,931
+United States,Gobles,MI,932
+United States,Gobleville,MI,933
+United States,Goodrich,MI,934
+United States,Grand,MI,935
+United States,Grand Blanc,MI,936
+United States,Grand Haven,MI,937
+United States,Grand Ledge,MI,938
+United States,Grand Marais,MI,939
+United States,Grand Rapids,MI,940
+United States,Grand Traverse Co.,MI,941
+United States,Grosse Ile,MI,2084
+United States,Grass Lake,MI,942
+United States,Grosse Pointe,MI,2085
+United States,Gratton,MI,943
+United States,Grosse Pointe Park,MI,2086
+United States,Grayling,MI,944
+United States,Hadley,MI,2087
+United States,Great Falls,MI,945
+United States,Hamburg,MI,2088
+United States,Green Oak,MI,946
+United States,Hamilton,MI,2089
+United States,Greenville,MI,947
+United States,Hamtramck,MI,2090
+United States,Gregory,MI,948
+United States,Hancock,MI,2091
+United States,Hanover,MI,949
+United States,Harbor Beach,MI,950
+United States,Harbor Springs,MI,951
+United States,Hardin,MI,952
+United States,Harrisville,MI,953
+United States,Hart,MI,954
+United States,Hartford,MI,955
+United States,Hartland,MI,956
+United States,Harvard,MI,957
+United States,Hastings,MI,958
+United States,Henderson,MI,959
+United States,Highland,MI,960
+United States,Highland Park,MI,961
+United States,Hillsdale,MI,962
+United States,Holland,MI,963
+United States,Holloway,MI,964
+United States,Holly,MI,965
+United States,Holt,MI,966
+United States,Holton,MI,967
+United States,Hopkins,MI,968
+United States,Houghton,MI,969
+United States,Howard City,MI,970
+United States,Howell,MI,971
+United States,Hubbardston,MI,972
+United States,Hubbell,MI,973
+United States,Hudson,MI,974
+United States,Hudsonville,MI,975
+United States,Huron City,MI,976
+United States,Huron Co.,MI,977
+United States,Ida,MI,978
+United States,Imlay City,MI,979
+United States,Ingalls,MI,980
+United States,Ingham Co.,MI,981
+United States,Inkster,MI,982
+United States,Ionia,MI,983
+United States,Ionia County,MI,984
+United States,Iron Mountain,MI,985
+United States,Iron River,MI,986
+United States,Ironwood,MI,987
+United States,Irving,MI,988
+United States,Ishpeming,MI,989
+United States,Ithaca,MI,990
+United States,Jackson,MI,991
+United States,Jackson Co.,MI,992
+United States,Johnstown,MI,993
+United States,Jonesville,MI,994
+United States,Kalamazoo,MI,995
+United States,Kalamazoo Co.,MI,996
+United States,Kalishell,MI,999
+United States,Kawkawlin,MI,1000
+United States,Keene,MI,1001
+United States,Kent Co.,MI,1002
+United States,Kent County,MI,1003
+United States,Kinderhook,MI,1004
+United States,Laingsburg,MI,1005
+United States,Lake Linden,MI,1006
+United States,Lake Odessa,MI,1007
+United States,Lakeside,MI,1008
+United States,Lakeview,MI,2092
+United States,Lamb,MI,1009
+United States,Lansing,MI,1010
+United States,Lapeer,MI,1011
+United States,Lapeer Co.,MI,1012
+United States,Laurium,MI,1013
+United States,Lawton,MI,1014
+United States,Lennon,MI,1015
+United States,LeRoy,MI,1016
+United States,Leslie,MI,1017
+United States,Lewiston,MI,1018
+United States,Lexington,MI,1019
+United States,Linden,MI,1020
+United States,Litchfield,MI,1021
+United States,Little Prairie Ronde,MI,1022
+United States,Livingston Co,MI,1023
+United States,Lowell,MI,1024
+United States,Ludington,MI,1025
+United States,Lupton,MI,1026
+United States,Luther,MI,1027
+United States,Lyons,MI,1028
+United States,Mackinac Island,MI,1029
+United States,Mancelona,MI,1030
+United States,Manchester,MI,1031
+United States,Manhattan,MI,1032
+United States,Manistee,MI,1033
+United States,Manistique,MI,1034
+United States,Manton,MI,1035
+United States,Maple City,MI,1036
+United States,Maple Rapids,MI,1037
+United States,Marcellus,MI,1038
+United States,Marine City,MI,1039
+United States,Marion,MI,1040
+United States,Marlette,MI,1041
+United States,Marquette,MI,1042
+United States,Marshall,MI,1043
+United States,Mason,MI,1044
+United States,Mattawan,MI,1045
+United States,Melvin,MI,1046
+United States,Memphis,MI,1047
+United States,Mendon,MI,1048
+United States,Menominee,MI,1049
+United States,Middleton,MI,1050
+United States,Midland,MI,1051
+United States,Milan,MI,1052
+United States,Miles City,MT,1053
+United States,Milford,MI,1054
+United States,Mills,MI,1055
+United States,Missoula,MI,1056
+United States,Mohawk,MI,1057
+United States,Monroe,MI,1058
+United States,Monterey,MI,1059
+United States,Montrose Twnshp,MI,1060
+United States,Morenci,MI,1061
+United States,Morley,MI,1062
+United States,Moscow,MI,1063
+United States,Mount Clemens,MI,1064
+United States,Mount Pleasant,MI,1065
+United States,Muir,MI,1066
+United States,Munger,MI,1067
+United States,Munising,MI,1068
+United States,Munith,MI,1069
+United States,Muskegon,MI,1070
+United States,Muskegon Heights,MI,1071
+United States,Napoleon,MI,1072
+United States,Nashville,MI,1073
+United States,Negaunee,MI,1074
+United States,New Baltimore,MI,1075
+United States,New Era,MI,1076
+United States,Newaygo,MI,1077
+United States,Newberry,MI,1078
+United States,Newport,MI,1079
+United States,Niles,MI,1080
+United States,North Adams,MI,1081
+United States,North Branch,MI,1082
+United States,Northville,MI,1083
+United States,Norvell,MI,1084
+United States,Norway,MI,1085
+United States,Oak Grove,MI,1086
+United States,Oakland County,MI,1087
+United States,Oakwood,MI,1088
+United States,Oceana County,MI,1089
+United States,Old Mission,MI,1090
+United States,Olivet,MI,1091
+United States,Onaway,MI,1092
+United States,Onondaga,MI,1093
+United States,Ontonagon,MI,1094
+United States,Orion,MI,1095
+United States,Ortonville,MI,1096
+United States,Oscoda,MI,1097
+United States,Osseo,MI,1098
+United States,Otisco,MI,1099
+United States,Otsego,MI,1100
+United States,Ottawa Lake,MI,1101
+United States,Ovid,MI,1102
+United States,Owosso,MI,1103
+United States,Oxford,MI,1104
+United States,Painesdale,MI,1105
+United States,Palmer,MI,1106
+United States,Palmyra,MI,1107
+United States,Palo,MI,1108
+United States,Parma,MI,1109
+United States,Paw Paw,MI,1110
+United States,Peck,MI,1111
+United States,Penfield,MI,1112
+United States,Pentwater,MI,1113
+United States,Petersburg,MI,1114
+United States,Petoskey,MI,1115
+United States,Pittsfield,MI,1116
+United States,Pittsford,MI,1117
+United States,Plainwell,MI,1118
+United States,Pleasant Ridge,MI,1119
+United States,Plymouth,MI,1120
+United States,Pontiac,MI,1121
+United States,Port Austin,MI,1122
+United States,Port Hope,MI,1123
+United States,Port Huron,MI,1124
+United States,Port Sanilac,MI,1125
+United States,Quincy,MI,2093
+United States,Portland,MI,1126
+United States,Reading,MI,2094
+United States,Redford,MI,1127
+United States,Redstone,MI,1128
+United States,Reed City,MI,1129
+United States,Republic,MI,1130
+United States,Richland,MI,1131
+United States,Richmond,MI,1132
+United States,Ridgeway,MI,1133
+United States,River Rouge,MI,1134
+United States,Rochester,MI,1135
+United States,Rock Falls,MI,1136
+United States,Rockford,MI,1137
+United States,Rogers,MI,1138
+United States,Rome,MI,1139
+United States,Romeo,MI,1140
+United States,Romulus,MI,1141
+United States,Roscommon,MI,1142
+United States,Rose,MI,1143
+United States,Rose City,MI,1144
+United States,Rosebush,MI,1145
+United States,Royal Oak,MI,1146
+United States,Ruth,MI,1147
+United States,Sagaming,MI,1148
+United States,Saginaw,MI,1149
+United States,Saginaw Co.,MI,1150
+United States,Saint Clair,MI,1151
+United States,Saint Clare,MI,1152
+United States,Saint Johns,MI,1153
+United States,Saint Joseph,MI,1154
+United States,Saline,MI,1155
+United States,Sand Lake,MI,1156
+United States,Saranac,MI,1157
+United States,Saugatuck,MI,1158
+United States,Sault Ste Marie,MI,1159
+United States,Schoolcraft,MI,1160
+United States,Scotts,MI,1161
+United States,Sebewaing,MI,1162
+United States,Seneca,MI,1163
+United States,Shelby,MI,1164
+United States,Shepherd,MI,1165
+United States,Sheridan,MI,1166
+United States,Shiawassee County,MI,1167
+United States,Shiloh,MI,1168
+United States,Sidnow,MI,1169
+United States,Sodus,MI,1170
+United States,Somerset,MI,1171
+United States,South Haven,MI,1172
+United States,South Lyon,MI,1173
+United States,Sparta,MI,1174
+United States,Spring Arbor,MI,1175
+United States,St. Ignace,MI,1176
+United States,St. Joseph Co.,MI,1177
+United States,St. Louis,MI,1178
+United States,St.Charles,MI,1179
+United States,Standish,MI,2095
+United States,Stephenson,MI,1180
+United States,Stevensville,MI,2096
+United States,Stockbridge,MI,1181
+United States,Sturgis,MI,1182
+United States,Superior Twnsp,MI,1183
+United States,Suttons Bay,MI,1184
+United States,Swartz Creek,MI,1185
+United States,Tecumseh,MI,1186
+United States,Thompsonville,MI,1187
+United States,Three Oaks,MI,1188
+United States,Three Rivers,MI,1189
+United States,Tipton,MI,1190
+United States,Traverse City,MI,1191
+United States,Trimountain,MI,1192
+United States,Troy,MI,1193
+United States,Turner,MI,1194
+United States,Tyrone,MI,1195
+United States,Union,MI,1196
+United States,Union City,MI,1197
+United States,Unionville,MI,1198
+United States,Utica,MI,1199
+United States,Van Buren Co,MI,1200
+United States,Vanderbilt,MI,1201
+United States,Vassar,MI,1202
+United States,Vermontville,MI,1203
+United States,Vernon,MI,1204
+United States,Vicksburg,MI,1205
+United States,Vienna,MI,1206
+United States,Vulcan,MI,1207
+United States,W.Highland,MI,1208
+United States,Waconsta,MI,1209
+United States,Waldron,MI,1210
+United States,Walled Lake,MI,1211
+United States,Washington,MI,1212
+United States,Washtenaw Co,MI,1213
+United States,Waterford,MI,1214
+United States,Waterford Centre,MI,1215
+United States,Waterloo,MI,1216
+United States,Watervliet,MI,1217
+United States,Wayne,MI,1218
+United States,Wayne Co.,MI,1219
+United States,West Branch,MI,1220
+United States,West Saginaw,MI,1221
+United States,White Pigeon,MI,1222
+United States,Whitehall,MI,1223
+United States,Whitmore Lake,MI,1224
+United States,Williamston,MI,1225
+United States,Wixom,MI,1226
+United States,Wood County,MI,1227
+United States,Wyandotte,MI,1228
+United States,Yale,MI,1229
+United States,Ypsilanti,MI,1230
+United States,Zeeland,MI,1231
+United States,,MI,1232
+United States,Argyle,MN,1233
+United States,Blue Earth City,MN,1234
+United States,Buhl,MN,1235
+United States,Dasset,MN,1236
+United States,Dover,MN,1237
+United States,Duluth,MN,1238
+United States,Eveleth,MN,1239
+United States,Fairbault,MN,1240
+United States,Fairmount,MN,1241
+United States,Granite Falls,MN,1242
+United States,Houston,MN,1243
+United States,Mankato,MN,1244
+United States,Minneapolis,MN,1245
+United States,Northfield,MN,1246
+United States,Owatonna,MN,1247
+United States,Red Wing,MN,1248
+United States,Rochester,MN,1249
+United States,Saint Paul,MN,1250
+United States,So.St. Paul,MN,1251
+United States,South Bend,MN,1252
+United States,St. Charles,MN,1253
+United States,St. Cloud,MN,1254
+United States,Wheeling,MN,1256
+United States,Winona,MN,1257
+United States,,MN,1258
+United States,Audrian Co.,MO,1259
+United States,Barnard,MO,1260
+United States,Bevier,MO,1261
+United States,Billings,MO,1262
+United States,Brookfield,MO,1263
+United States,Cape Girardeau,MO,1264
+United States,Carthage,MO,1265
+United States,Charleston,MO,1266
+United States,Chilicothe,MO,1267
+United States,Columbia,MO,1268
+United States,Danville,MO,1269
+United States,Fulton,MO,1270
+United States,Hannibal,MO,1271
+United States,Jefferson City,MO,1272
+United States,Kansas City,MO,1273
+United States,Kirksville,MO,1274
+United States,Laddonia,MO,1275
+United States,Macon City,MO,1276
+United States,Maryville,MO,1277
+United States,Miller,MO,1278
+United States,New Florence,MO,1279
+United States,Pattonsburg,MO,1280
+United States,Saint Louis,MO,1281
+United States,Salisbury,MO,1282
+United States,Sweet Springs,MO,2097
+United States,Springfield,MO,1283
+United States,Tarkio,MO,2098
+United States,St.Joseph,MO,1284
+United States,Trenton,MO,2099
+United States,Washington,MO,1285
+United States,Webster Groves,MO,1286
+United States,West Plains,MO,1287
+United States,Gulfport,MS,1288
+United States,Jackson,MS,1289
+United States,Laurel,MS,1290
+United States,Macomb,MS,1291
+United States,Vicksburg,MS,1292
+United States,Zeiglerville,MS,1293
+United States,Helena,MT,1294
+United States,Missoula,MT,1295
+United States,Red Lodge,MT,1296
+United States,Asheville,NC,1297
+United States,Gastonia,NC,1298
+United States,Greensboro,NC,1299
+United States,Kinston,NC,1300
+United States,Montreat,NC,1301
+United States,Raleigh,NC,1302
+United States,Saxapahaw,NC,1303
+United States,Tryon,NC,1304
+United States,Weaverville,NC,1305
+United States,,NC,1306
+United States,Barnes Cnty.,ND,1307
+United States,Bismarck,ND,1308
+United States,Bowbells,ND,1309
+United States,Fargo,ND,1310
+United States,Grand Forks,ND,1311
+United States,Hope,ND,1312
+United States,Jamestown,ND,1313
+United States,Lamore,ND,1314
+United States,McKenzie,ND,1315
+United States,Minot,ND,1316
+United States,Niagara,ND,1317
+United States,Valley City,ND,1318
+United States,Blue Springs,NE,1319
+United States,Crete,NE,1320
+United States,Fairbury,NE,1321
+United States,Hemmingford,NE,1322
+United States,Lincoln,NE,1323
+United States,Omaha,NE,1324
+United States,Plattsmouth,NE,1325
+United States,Wood River,NE,1326
+United States,Brooklyn,NH,1327
+United States,Buffalo,NH,1328
+United States,Catskill,NH,1329
+United States,Claremont,NH,1330
+United States,Clyde,NH,1331
+United States,Concord,NH,1332
+United States,East Weare,NH,1333
+United States,Exeter,NH,1334
+United States,Gilford,NH,1335
+United States,Hampton Falls,NH,1336
+United States,Hanover,NH,1337
+United States,Meredith,NH,1338
+United States,Nashua,NH,1339
+United States,No.Charlestown,NH,1340
+United States,Nottingham,NH,1341
+United States,Portsmouth,NH,1342
+United States,Somerworth,NH,1343
+United States,Atlantic City,NJ,1344
+United States,Barrington,NJ,1345
+United States,Blackwood,NJ,1346
+United States,Bound Brook,NJ,1347
+United States,Caldwell,NJ,1348
+United States,Camden,NJ,1349
+United States,Columbia,NJ,1350
+United States,Crawford,NJ,1351
+United States,Dudley,NJ,1352
+United States,East Orange,NJ,1353
+United States,Elizabeth,NJ,1354
+United States,Elycroft,NJ,1355
+United States,Englewood,NJ,1356
+United States,Glassboro,NJ,1357
+United States,Glen Rock,NJ,2100
+United States,Gloucester City,NJ,1358
+United States,Hoboken,NJ,1359
+United States,Jamesburg,NJ,1360
+United States,Jersey City,NJ,1361
+United States,Madison,NJ,1362
+United States,Maplewood,NJ,1363
+United States,Montclair,NJ,1364
+United States,Morristown,NJ,1365
+United States,New Brunswick,NJ,1366
+United States,Newark,NJ,1367
+United States,Nutley,NJ,1368
+United States,Orange,NJ,1369
+United States,Paterson,NJ,1370
+United States,Pitman,NJ,1371
+United States,Plainfield,NJ,1372
+United States,Princeton,NJ,1373
+United States,Rahway,NJ,1374
+United States,Ridgewood,NJ,1375
+United States,Rutherford,NJ,1376
+United States,So. Orange,NJ,1377
+United States,Stockton,NJ,1378
+United States,Sussex County,NJ,1379
+United States,Thoroughfare,NJ,1380
+United States,Trenton,NJ,1381
+United States,Union,NJ,1382
+United States,Upper Montclair,NJ,1383
+United States,Westfield,NJ,1384
+United States,Wharton,NJ,1385
+United States,,NJ,1386
+United States,Albuquerque,NM,1387
+United States,Cimmaron,NM,1388
+United States,Fort Bayard,NM,1389
+United States,Gallup,NM,1390
+United States,Lake Valley,NM,1391
+United States,Las Cruces,NM,1392
+United States,Santa Fe,NM,1393
+United States,Carson City,NV,1394
+United States,Reno,NV,1395
+United States,Akron,NY,1396
+United States,Albany,NY,1397
+United States,Albion,NY,1398
+United States,Amos,NY,1400
+United States,Amsterdam,NY,1401
+United States,Andes,NY,1402
+United States,Angelica,NY,1403
+United States,Antwerp,NY,1404
+United States,Ashville,NY,1405
+United States,Au Sable Forks,NY,1406
+United States,Auburn,NY,1407
+United States,Ausable Forks,NY,1408
+United States,Avon,NY,1409
+United States,Babylon,NY,1410
+United States,Baldwinsville,NY,1411
+United States,Beacon,NY,1412
+United States,Binghamton,NY,1413
+United States,Bloomfield,NY,1414
+United States,Blooming Grove,NY,1415
+United States,Bolivar,NY,1416
+United States,Briscoe,NY,1417
+United States,Brockport,NY,1418
+United States,Bronxville,NY,1419
+United States,Brookfield,NY,1420
+United States,Brooklyn,NY,1421
+United States,Buffalo,NY,1422
+United States,Cambria,NY,1423
+United States,Campball,NY,1424
+United States,Canajsharie,NY,1425
+United States,Canandaigua,NY,1426
+United States,Canden,NY,1427
+United States,Canton,NY,1428
+United States,Cape Vincent,NY,1429
+United States,Cazenoria,NY,1430
+United States,Central Islip,NY,1431
+United States,Chautauqua,NY,1432
+United States,Chenango County,NY,1433
+United States,Chili,NY,1434
+United States,Churchville,NY,1435
+United States,Clifton Springs,NY,1436
+United States,Cohocton,NY,1437
+United States,Cold Spring Harbor,NY,1438
+United States,Coopers Plains,NY,1439
+United States,Cooperstown,NY,1440
+United States,Corfu,NY,1441
+United States,Corning,NY,1442
+United States,Dansville,NY,1443
+United States,Deer River,NY,1444
+United States,East Aurora,NY,1445
+United States,East Pembroke,NY,1446
+United States,East Bloomfield,NY,1448
+United States,Fairport,NY,1449
+United States,Fayetteville,NY,1450
+United States,Forest Hills,NY,1451
+United States,Forestville,NY,1452
+United States,Fredonia,NY,1453
+United States,Friendship,NY,1454
+United States,Fulton,NY,1455
+United States,Fultonville,NY,1456
+United States,Geneva,NY,1457
+United States,Gilbertsville,NY,1458
+United States,Glens Falls,NY,1459
+United States,Gloversville,NY,1460
+United States,Goshen,NY,1461
+United States,Granby Center,NY,1462
+United States,Greenville,NY,1463
+United States,Hamburg,NY,1464
+United States,Henderson,NY,1465
+United States,Himrod,NY,1466
+United States,Hinsdale,NY,1467
+United States,Homer,NY,1468
+United States,Houghton,NY,1469
+United States,Huntington,NY,2101
+United States,Ithaca,NY,1470
+United States,Jackson Heights,NY,1471
+United States,Jamaica,NY,1472
+United States,Jamestown,NY,1473
+United States,Jerusalem,NY,1474
+United States,Jordan,NY,1475
+United States,Katonah,NY,1476
+United States,Kew Gardens,NY,1477
+United States,Kingston,NY,1478
+United States,Kipley,NY,1479
+United States,Kirkville,NY,1480
+United States,Lakeville,NY,1481
+United States,Lancaster,NY,1482
+United States,LeRoy,NY,1483
+United States,Lewiston,NY,1484
+United States,Lima,NY,1485
+United States,Limerick,NY,1486
+United States,Little Valley,NY,1487
+United States,Lockport,NY,1488
+United States,Londonville,NY,1490
+United States,Long Island,NY,1491
+United States,Lyons,NY,1492
+United States,Lyons Wayne Co,NY,1493
+United States,"Mahasset, L.I.",NY,1494
+United States,Malone,NY,1495
+United States,Manchester,NY,1496
+United States,Marion,NY,1497
+United States,Medina,NY,1498
+United States,Meredith,NY,1499
+United States,Methol,NY,1500
+United States,Mexico,NY,1501
+United States,Middletown,NY,1502
+United States,Millvill,NY,1503
+United States,Mineola,NY,1504
+United States,Monticello,NY,1505
+United States,Mooers Forks,NY,1506
+United States,Morris,NY,1507
+United States,Mount Eden,NY,1508
+United States,Mount Vernon,NY,1509
+United States,N.Tonawanda,NY,1510
+United States,Naples,NY,1511
+United States,New Hackensack,NY,1512
+United States,New Rochelle,NY,1513
+United States,New York,NY,1514
+United States,Newark,NY,1515
+United States,Newburgh,NY,1516
+United States,NHC,NY,1517
+United States,Niagara Falls,NY,1518
+United States,North Bangor,NY,1519
+United States,Norwood,NY,1521
+United States,Nunda,NY,1522
+United States,Oakfield,NY,1524
+United States,Ogdensburg,NY,1525
+United States,Olean,NY,1526
+United States,Oneonta,NY,1527
+United States,Orange Co,NY,1528
+United States,Osanning,NY,1529
+United States,Oswego,NY,1530
+United States,Ovid,NY,1531
+United States,Palmyra,NY,1532
+United States,Pembroke,NY,1533
+United States,Perry,NY,1534
+United States,Philadelphia,NY,1535
+United States,Pike,NY,1536
+United States,Poplar Ridge,NY,1537
+United States,Port Hewey,NY,1538
+United States,Portage,NY,1539
+United States,Potsdam,NY,1540
+United States,Poughkeepsie,NY,1541
+United States,Prattsburg,NY,1542
+United States,Pultreyville,NY,1543
+United States,Ransomville,NY,1544
+United States,Reno,NY,1545
+United States,Richard Hill,NY,1546
+United States,Richmond Hill,NY,1547
+United States,Rochester,NY,1548
+United States,Rye,NY,1549
+United States,Savona,NY,1550
+United States,Schenectady,NY,1551
+United States,Scio,NY,1552
+United States,Seneca Falls,NY,1553
+United States,Shelby,NY,1554
+United States,Sidney,NY,1555
+United States,Sinclairville,NY,1556
+United States,Skaneateles,NY,1557
+United States,Spencerport,NY,1558
+United States,Springwater,NY,1559
+United States,St.Regis Falls,NY,1560
+United States,Staten Island,NY,1561
+United States,Stephentown,NY,1562
+United States,Steuben Cnty.,NY,1563
+United States,Stevensville,NY,1564
+United States,Syracuse,NY,1565
+United States,Tarrytown,NY,1566
+United States,Thiells,NY,1567
+United States,Troy,NY,1568
+United States,Turin,NY,1569
+United States,Urbana,NY,1570
+United States,Utica,NY,1571
+United States,Valley Stream,NY,1572
+United States,Victor,NY,1573
+United States,Voorheesville,NY,1574
+United States,W.Henrietta,NY,1575
+United States,Walton,NY,1576
+United States,Watertown,NY,1577
+United States,Watkins,NY,1578
+United States,Wayne Co.,NY,1579
+United States,Weedsport,NY,1580
+United States,West Coxsackie,NY,1581
+United States,West Henrietta,NY,1582
+United States,West Point,NY,1583
+United States,Westfield,NY,1584
+United States,White Plains,NY,1585
+United States,Willard,NY,1586
+United States,Wilson,NY,1587
+United States,Wolcott,NY,1588
+United States,Yonkers,NY,1589
+United States,,NY,1590
+United States,Akron,OH,1591
+United States,Alliance,OH,1592
+United States,Antwerp,OH,1593
+United States,Ashland,OH,1594
+United States,Ashtabula,OH,1595
+United States,Athens,OH,1596
+United States,Barberton,OH,1597
+United States,Bays,OH,1598
+United States,Beach City,OH,1599
+United States,Bellaire,OH,1600
+United States,Bellefontaine,OH,1601
+United States,Bellevue,OH,1602
+United States,Beloit,OH,1603
+United States,Berea,OH,1604
+United States,Blanchester,OH,1605
+United States,Bloomingburg,OH,1606
+United States,Bluffton,OH,1607
+United States,Bolivar,OH,1608
+United States,Bolivar,OH,1609
+United States,Bowling Green,OH,1610
+United States,Brilliant,OH,1611
+United States,Broadway,OH,1612
+United States,Brownsville,OH,1613
+United States,Bucyrus,OH,1614
+United States,Burton,OH,1615
+United States,Cadiz,OH,1616
+United States,Canton,OH,1617
+United States,Carrollton,OH,1618
+United States,Castalia,OH,1619
+United States,Celina,OH,1620
+United States,Champaign Co.,OH,1621
+United States,Chardon,OH,1622
+United States,Cherry Valley,OH,1623
+United States,Chester,OH,1624
+United States,Chillicothe,OH,1625
+United States,Cincinnati,OH,1626
+United States,Cleveland,OH,1627
+United States,Cleveland Heights,OH,1628
+United States,Columbus,OH,1629
+United States,Conneaut,OH,1630
+United States,Covington,OH,1631
+United States,Cumberland,OH,1632
+United States,Dayton,OH,1633
+United States,Delaware,OH,1634
+United States,Delphos,OH,1635
+United States,Dunbridge,OH,1636
+United States,East Cleveland,OH,1637
+United States,East Rochester,OH,1638
+United States,Eaton,OH,1639
+United States,Edenton,OH,1640
+United States,Elyria,OH,1641
+United States,Fairlawn,OH,1642
+United States,Fayette,OH,1643
+United States,Felicity,OH,1644
+United States,Fernbank,OH,1645
+United States,Findlay,OH,1646
+United States,Franklin,OH,1647
+United States,Franklin Furnace,OH,1648
+United States,Fremont,OH,1649
+United States,Fruitdale,OH,1650
+United States,Galion,OH,1651
+United States,Gambier,OH,1652
+United States,Germantown,OH,1653
+United States,Glendale,OH,1654
+United States,Gordon,OH,1655
+United States,Granville,OH,1656
+United States,Greenville,OH,1657
+United States,Hamilton,OH,1658
+United States,Hinckley,OH,1659
+United States,Hiram,OH,1660
+United States,Hubbard,OH,1661
+United States,Huron,OH,1662
+United States,Ira,OH,1663
+United States,Isle St.George,OH,1664
+United States,Jackson,OH,1665
+United States,Jefferson,OH,1666
+United States,Junior Furnace,OH,1667
+United States,Kent,OH,1668
+United States,Kenton,OH,1669
+United States,Lakewood,OH,1670
+United States,Leesville,OH,1671
+United States,Liberty Center,OH,1672
+United States,Lima,OH,1673
+United States,Lindonville,OH,1674
+United States,Lyndon,OH,1675
+United States,Lyons,OH,1676
+United States,Madison,OH,1677
+United States,Mallet Creek,OH,1678
+United States,Mansfield,OH,1679
+United States,Marietta,OH,1680
+United States,Marion,OH,1681
+United States,Marysville,OH,1682
+United States,Massillon,OH,1683
+United States,McComb,OH,1684
+United States,McConnelsville,OH,1685
+United States,Mentor,OH,1686
+United States,Mineral City,OH,1687
+United States,Monroeville,OH,1688
+United States,Montpelier,OH,1689
+United States,Morgan Co,OH,1690
+United States,Mt. Gilead,OH,1691
+United States,Mt. Vernon,OH,1692
+United States,Napoleon,OH,1693
+United States,New Philadelphia,OH,1694
+United States,Norwalk,OH,1695
+United States,Oberlin,OH,1696
+United States,Orrville,OH,1697
+United States,Orwell,OH,1698
+United States,Ottawa,OH,1699
+United States,Ottokee,OH,1700
+United States,Ottowa,OH,1701
+United States,Oxford,OH,1702
+United States,Painesville,OH,1703
+United States,Pandora,OH,1704
+United States,Parkertown,OH,1705
+United States,Parkman,OH,1706
+United States,Paulding,OH,1707
+United States,Pemberville,OH,1708
+United States,Pennsylvania,OH,1709
+United States,Perrysburg,OH,1710
+United States,Pioneer,OH,1711
+United States,Piqua,OH,1712
+United States,Plain City,OH,1713
+United States,Pleasant Hill,OH,1714
+United States,Poland,OH,1715
+United States,Port Clinton,OH,1716
+United States,Portsmouth,OH,1717
+United States,Put-in-Bay,OH,1718
+United States,Ravenna,OH,1719
+United States,Rockford,OH,1720
+United States,Salem,OH,1721
+United States,Salene,OH,1722
+United States,Sandusky,OH,1723
+United States,Shalersville,OH,1724
+United States,Sidney,OH,1725
+United States,So.Euclid,OH,1726
+United States,Solon,OH,1727
+United States,Sparta,OH,1728
+United States,Springfield,OH,1729
+United States,Stanleyville,OH,1730
+United States,Steubenville,OH,1731
+United States,Strongsville,OH,1732
+United States,Stryker,OH,1733
+United States,Sylvania,OH,1734
+United States,Tallmadgen,OH,1735
+United States,Tiffin,OH,1736
+United States,Toledo,OH,1737
+United States,Tremont City,OH,1738
+United States,Trenton,OH,1739
+United States,Troy,OH,1740
+United States,Upper Sandusky,OH,1741
+United States,Van Wert,OH,1742
+United States,Versailles,OH,1743
+United States,Wadsworth,OH,1744
+United States,Warren County,OH,1745
+United States,Warsaw,OH,1746
+United States,Washington C.,OH,1747
+United States,Wellington,OH,1748
+United States,Weston,OH,1749
+United States,Wilmington,OH,1750
+United States,Woodville,OH,1751
+United States,Wooster,OH,1752
+United States,Worthington,OH,1753
+United States,Xenia,OH,1754
+United States,Youngstown,OH,1755
+United States,Zanesfield,OH,1756
+United States,,OH,1757
+United States,Bartlesville,OK,1758
+United States,Chickasha,OK,1759
+United States,Edmond,OK,1760
+United States,Enid,OK,1761
+United States,Henryetta,OK,1762
+United States,Hobart,OK,1763
+United States,McAlester,OK,1764
+United States,Muskogee,OK,1765
+United States,Norman,OK,1766
+United States,Oklahoma City,OK,1767
+United States,Ponca City,OK,1768
+United States,Poteau,OK,1769
+United States,Tulsa,OK,1770
+United States,Tyrone,OK,1771
+United States,Wagoner,OK,1772
+Canada,Aylmer,Ont,1773
+Canada,Chatham,Ont,1774
+Canada,Forest,Ont,1775
+Canada,Simcoe,Ont,1776
+Canada,Wingham,Ont,1777
+United States,Arlington,OR,1778
+United States,Ashland,OR,1779
+United States,Canyon City,OR,1780
+United States,Corvallis,OR,1781
+United States,Eugene,OR,1782
+United States,Forest Grove,OR,1783
+United States,Lafayette,OR,1784
+United States,Marshfield,OR,1785
+United States,Medford,OR,1786
+United States,Pendleton,OR,1787
+United States,Portland,OR,1788
+United States,Altoona,PA,1789
+United States,Ardmore,PA,1790
+United States,Aspinwale,PA,1791
+United States,Athens,PA,1792
+United States,Beavertown,PA,1793
+United States,Bedford,PA,1794
+United States,Belle Vernon,PA,1795
+United States,Bethlehem,PA,1796
+United States,Bloomsburg,PA,1797
+United States,Bradford,PA,1798
+United States,Bryn Mawr,PA,1799
+United States,Butler Co.,PA,1800
+United States,California,PA,1801
+United States,Center,PA,1802
+United States,Chester,PA,1803
+United States,Chester Heights,PA,1804
+United States,Cheswick,PA,1805
+United States,Christiana,PA,1806
+United States,Clearfield,PA,1807
+United States,Coatesville,PA,1808
+United States,Corry,PA,1809
+United States,Corsica,PA,1810
+United States,Coudersport,PA,1811
+United States,Crawford Co,PA,1812
+United States,Darby,PA,1813
+United States,Dauphin Co.,PA,1814
+United States,Delta,PA,1815
+United States,Doe Run,PA,1816
+United States,DuBois,PA,1817
+United States,Duke Center,PA,1818
+United States,Easton,PA,1819
+United States,Elizabethtown,PA,1820
+United States,Elkins Park,PA,1821
+United States,Emlenton,PA,1822
+United States,Erie,PA,1823
+United States,Erie Co.,PA,1824
+United States,Falls Creek,PA,1825
+United States,Fishertown,PA,1826
+United States,Flora Dale,PA,1827
+United States,George School,PA,1828
+United States,Germantown,PA,1829
+United States,Gettysburg,PA,1830
+United States,Guernsey,PA,1831
+United States,Harrisburg,PA,1832
+United States,Hatborough,PA,1833
+United States,Honeybrook,PA,1834
+United States,Hummelstown,PA,1835
+United States,Indiana,PA,1836
+United States,Johnstown,PA,1837
+United States,Kirkwood,PA,1838
+United States,Lafayette Hill,PA,1839
+United States,Lancaster,PA,1840
+United States,Lansdowne,PA,1841
+United States,Laurelton,PA,1842
+United States,Lebanon,PA,1843
+United States,Lewisburg,PA,1844
+United States,Linesville,PA,1845
+United States,Mansfield,PA,2102
+United States,Marshallton,PA,1846
+United States,Mauch Chunk,PA,1847
+United States,Media,PA,1848
+United States,Midland,PA,1849
+United States,Millvale Borough,PA,1850
+United States,Moorheadville,PA,1851
+United States,Morrisons,PA,1852
+United States,Morrisville,PA,1853
+United States,Mount Pleasant,PA,1854
+United States,Narbeth,PA,1855
+United States,Narcissa,PA,1856
+United States,Natrona,PA,1857
+United States,New Castle,PA,1858
+United States,New Columbus,PA,1859
+United States,New Galilee,PA,1860
+United States,New Kensington,PA,1861
+United States,New Mahoning,PA,1862
+United States,Newton,PA,1863
+United States,Newtown,PA,1864
+United States,Norristown,PA,1865
+United States,North East,PA,1866
+United States,Oakmont,PA,1867
+United States,Oil City,PA,1868
+United States,Oxford,PA,1869
+United States,Philadelphia,PA,1870
+United States,Pittsburgh,PA,1871
+United States,Pottsdown,PA,1872
+United States,Rosedale,PA,1873
+United States,Roxborough,PA,1874
+United States,Rydal,PA,1875
+United States,Sayre,PA,1876
+United States,Scranton,PA,1877
+United States,Sharon,PA,1878
+United States,Shickshinny,PA,1879
+United States,Shippensburg,PA,1880
+United States,Shirleysburg,PA,1881
+United States,Slippery Rock,PA,1882
+United States,Solebury,PA,1883
+United States,State College,PA,1884
+United States,Swarthmore,PA,1885
+United States,Swissvale,PA,1886
+United States,Tarentum,PA,1887
+United States,Tioga,PA,1888
+United States,Titusville,PA,1889
+United States,Towanda,PA,1890
+United States,Union City,PA,1891
+United States,Upper Darby,PA,1892
+United States,Warren,PA,1893
+United States,West Chester,PA,1894
+United States,West Middleton,PA,1895
+United States,Westchester,PA,1896
+United States,Wilkes Barre,PA,1897
+United States,Wilkinsburg,PA,1898
+United States,Williamsport,PA,1899
+United States,Worthington,PA,1900
+United States,York,PA,1901
+United States,Zieglersville,PA,1902
+United States,,PA,1903
+Philippines,Manila,PI,1904
+United States,Kingston,RI,1905
+United States,Mt.Hope,RI,1906
+United States,Providence,RI,1907
+United States,Westerly,RI,1908
+United States,Charleston,SC,1909
+United States,Fort Motte,SC,1910
+United States,Williamston,SC,1911
+United States,Aberdeen,SD,1912
+United States,Brookings,SD,1913
+United States,De Smet,SD,1914
+United States,Huron,SD,1915
+United States,Keystone,SD,1916
+United States,Miller,SD,1917
+United States,Mitchell,SD,1918
+United States,Oneida,SD,1919
+United States,Rapid City,SD,1920
+United States,Sioux Falls,SD,1921
+United States,Vermillion,SD,1922
+United States,,SD,1923
+United States,Chattanooga,TN,1924
+United States,Jonesboro,TN,1925
+United States,Knoxville,TN,1926
+United States,Lookout Mountain,TN,1927
+United States,Maryville,TN,1928
+United States,Memphis,TN,1929
+United States,Nashville,TN,1930
+United States,Shelby Co.,TN,1931
+United States,Summerfield,TN,1932
+United States,,TN,1933
+United States,Austin,TX,1934
+United States,Beamont,TX,1935
+United States,Calvert,TX,1936
+United States,Corpus Christi,TX,1937
+United States,Dalhart,TX,1938
+United States,Dallas,TX,1939
+United States,Denton,TX,1940
+United States,Duffan,TX,1941
+United States,El Paso,TX,1942
+United States,Fort Worth,TX,1943
+United States,Galveston,TX,1944
+United States,Georgetown,TX,1945
+United States,Henrietta,TX,1946
+United States,LaPorte,TX,1947
+United States,Marlin,TX,1948
+United States,San Antonio,TX,1949
+United States,Techuacana,TX,1950
+United States,Waco,TX,1951
+United States,Waxachachie,TX,1952
+United States,Wichita Falls,TX,1953
+United States,Ogden,UT,1954
+United States,Salt Lake City,UT,1955
+United States,Cardinal,VA,1956
+United States,Danville,VA,1957
+United States,Fort Humphreys,VA,1958
+United States,Hampton,VA,1959
+United States,Hollins,VA,1960
+United States,Leesburg,VA,1961
+United States,Luray,VA,1962
+United States,Marion,VA,1963
+United States,Newport News,VA,1964
+United States,Petersburgh,VA,1965
+United States,Richmond,VA,1966
+United States,Spotsylvania,VA,1967
+United States,Staunton,VA,1968
+United States,,VA,1969
+United States,Barnet,VT,1970
+United States,Bethel,VT,2103
+United States,Brandon,VT,1971
+United States,Brattleboro,VT,1972
+United States,Burlington,VT,1973
+United States,Castleton,VT,1974
+United States,Marlboro,VT,1975
+United States,Middlebury,VT,1976
+United States,N Springfield,VT,1977
+United States,Rochester,VT,1978
+United States,Sheldon,VT,1979
+United States,Addy-Stevens Co.,WA,1980
+United States,Bellingham,WA,1981
+United States,Clarkston,WA,1982
+United States,Cove King Co,WA,1983
+United States,Everett,WA,1984
+United States,Everson,WA,1985
+United States,Ione,WA,1986
+United States,Kemmewick,WA,1987
+United States,Latah,WA,1988
+United States,Locke,WA,1989
+United States,Raymond,WA,1990
+United States,San Juan Co.,WA,1991
+United States,Seattle,WA,1992
+United States,Spokane,WA,1993
+United States,Tacoma,WA,1994
+United States,Yakima,WA,1995
+United States,Appleton,WI,1996
+United States,Ashland,WI,1997
+United States,Belmont,WI,1998
+United States,Beloit,WI,1999
+United States,Cambridge,WI,2000
+United States,Chilton,WI,2001
+United States,Eau Claire,WI,2002
+United States,Edgerton,WI,2003
+United States,Evansville,WI,2004
+United States,Farmington,WI,2005
+United States,Fond du Lac,WI,2006
+United States,Frederic,WI,2007
+United States,Grand Rapids,WI,2008
+United States,Green Bay,WI,2009
+United States,Hudson,WI,2010
+United States,Iron Belt,WI,2011
+United States,Kenosha,WI,2012
+United States,Lake Geneva,WI,2013
+United States,Lancaster,WI,2014
+United States,Madison,WI,2015
+United States,Markasaw,WI,2016
+United States,Marshall,WI,2017
+United States,Menominie,WI,2018
+United States,Milton Junction,WI,2019
+United States,Milwaukee,WI,2020
+United States,Monroe,WI,2021
+United States,Mukwonego,WI,2022
+United States,Neenah,WI,2023
+United States,Omro,WI,2024
+United States,Oskosh,WI,2025
+United States,Platteville,WI,2026
+United States,Racine,WI,2027
+United States,Ripon,WI,2028
+United States,Sharon,WI,2029
+United States,Soperton,WI,2030
+United States,Superior,WI,2031
+United States,Two Rivers,WI,2032
+United States,Warsaw,WI,2033
+United States,Watertown,WI,2034
+United States,Waupaca,WI,2035
+United States,Whitewater,WI,2036
+United States,Wild Rose,WI,2037
+United States,,WI,2038
+United States,Bramville,WV,2039
+United States,Buckhamion,WV,2040
+United States,Charleston,WV,2041
+United States,Chester,WV,2042
+United States,Colfax,WV,2043
+United States,Eversow,WV,2044
+United States,Glenville,WV,2045
+United States,Grafton,WV,2046
+United States,Huntington,WV,2047
+United States,Hurricane,WV,2048
+United States,Lookout,WV,2049
+United States,Mannington,WV,2050
+United States,Morgantown,WV,2051
+United States,Moundsville,WV,2052
+United States,Pulaski Co,WV,2053
+United States,Ripley,WV,2054
+United States,St.Albaus,WV,2055
+United States,Talcott,WV,2056
+United States,Welch,WV,2057
+United States,Wellsburg,WV,2058
+United States,Wheeling,WV,2059
+United States,,WV,2060
+United States,Casper,WY,2061
+United States,Cheyenne,WY,2062
+United States,Cody,WY,2063
+United States,Laramie,WY,2064
+United States,Sheridan,WY,2065
+United States,Ladd,IL,2066
+United States,Lexington,IL,2067
+United States,Lincoln,IL,2068
+United States,Lockport,IL,2069
+United States,Lombard,IL,2070
+United States,Loraine,IL,2071
+United States,West Haven,CT,2072
+United States,Macomb,IL,2104
+United States,Marion,IL,2073
+United States,Maywood,IL,2074
+United States,McHenry,IL,2075
+United States,Plainview,IL,2076
+United States,San Angelo,TX,2077
+United States,Molokai,HI,2078
+United States,Askaloosa,IA,2079
+United States,Montezuma,IA,2080
