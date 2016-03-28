@@ -32,7 +32,7 @@ What church do you attend? |  |  | Not included in database
 Public offices held--Social, Civic, Business (City, County, State, National--Elective or Appointive). | public_office | string | 
 Achievements in Science, Art, Literature, Journalism, Social Service, etc. | achievement | string | 
 What other institutions of higher education have you attended? | degrees (school) | degrees is a dictionary, school is a string
-What degrees were conferred upon you? (Including honorary degrees) degrees (start_year, end_year, degree, school, field, type) | degrees is a dictionary, start_year and end_year are integers, degree, school and field are strings and type is an enumeration (undergraduate and graduate) | 
+What degrees were conferred upon you? (Including honorary degrees) | degrees (start_year, end_year, degree, school, field, type) | degrees is list of dictionaries, start_year and end_year are integers, degree, school and field are strings and type is an enumeration (undergraduate and graduate) | 
 What members of your family beside yourself have attended the University of Michigan? | family_attending_um | string | 
 War record--dates of service period |  |  | Not included in database
 Type of service |  |  | Not included in database
@@ -42,7 +42,7 @@ Citations or decorations |  |  | Not included in database
 In your opinion what are the ten most outstanding women who have ever at any time attended the University of Michigan, considered from the standpoint of human service? | influential_women | list of strings | These were turned into a controlled vocabulary.
 Do you know of any persons in your Community who are descendants of University of Michigan alumnae or former students? We are particularly anxious to locate all the men whose mothers attended the University. |  |  | Not included in database
 How would you characterize the influence of the University of Michigan on your life? |  |  | Not included in database
-Won't you add a few of the outstanding memories of your college days? We shall be glad to head of any incident, however trivial, which lingers on your mind. | memories | list of strings | These were turned into Library of Congress Subject Headings. 
+Won't you add a few of the outstanding memories of your college days? We shall be glad to head of any incident, however trivial, which lingers on your mind. | memories | list of strings | These were turned into Library of Congress Subject Headings. Don't you remember things in Library of Congress Subject Headings?
 
 
 Example JSON:
