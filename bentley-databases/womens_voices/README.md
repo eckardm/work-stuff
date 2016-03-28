@@ -95,8 +95,8 @@ Code Examples
 
 We've included a few example scripts and utilities to help you get started digging into the data made available in this repository.
 
-  * [top_ten_occupations.py](code_examples/top_ten_occupations.py) uses the JSON to create a list of all occupations, create a count of each unique occupation and then sort them in reverse order.
-  * [graduate_and_undergraduate_degrees.py](code_examples/graduate_and_undergraduate_degrees.py) uses the JSON to get a count of degree types (undergraduate or graduate) and percentages, and then uses [matplotlib](http://matplotlib.org/) to do a [very] basic visualization of these percentages.
+  * [**top_ten_occupations.py**](code_examples/top_ten_occupations.py) uses the JSON to create a list of all occupations, create a count of each unique occupation and then sort them in reverse order.
+  * [**graduate_and_undergraduate_degrees.py**](code_examples/graduate_and_undergraduate_degrees.py) uses the JSON to get a count of degree types (undergraduate or graduate) and percentages, and then uses [matplotlib](http://matplotlib.org/) to do a [very] basic visualization of these percentages.
   * You're code here!
 
 Pull Requests and Issues
