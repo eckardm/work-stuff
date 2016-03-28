@@ -12,37 +12,37 @@ This dataset is organized by survey response in both JSON and CSV formats (as we
 Survey Responses
 ----------------
 
-Question | Field | Value | Notes
+Question | Field(s) | Value(s) | Notes
 --- | --- | ---
-Name in full | 
-Maiden name | 
-Address (Business) | 
-Address (Home) | 
-Place of birth | 
-Race | 
-Single or married | 
-Present occupation | 
-Names, addresses and occupations of children | 
-Graduate 
-Non-graduate
-Class
-Check department in which you were registered
-Occupations since leaving the University of Michigan
-What church do you attend?
-Public offices held--Social, Civic, Business (City, County, State, National--Elective or Appointive).
-Achievements in Science, Art, Literature, Journalism, Social Service, etc.
-What other institutions of higher education have you attended?
-What degrees were conferred upon you? (Including honorary degrees)
-What members of your family beside yourself have attended the University of Michigan?
-War record--dates of service period
-Type of service
-Position held
-Did you serve overseas?
-Citations or decorations
-In your opinion what are the ten most outstanding women who have ever at any time attended the University of Michigan, considered from the standpoint of human service?
-Do you konw of any persons in your Community who are descendants of University of Michigan alumnae or former students? We are particularly anxious to locate all the men whose mothers attended the University.
-How would you characterize the influence of the University of Michigan on your life?
-Won't you add a few of the outstanding memories of your college days? We shall be glad to head of any incident, however trivial, which lingers on your mind.
+Name in full | first_name, middle_name, last_name | string | 
+Maiden name | married_name | string | 
+Address (Business) | address_business (city, state, country) | dictionary | dictionary values are strings
+Address (Home) | address_home (city, state, country) | dictionary | dictionary values are strings
+Place of birth | place_of_birth (city, state, country) | dictionary | dictionary values are strings
+Race | race | string | 
+Single or married |  |  | Not included in database
+Present occupation | occupation | string | 
+Names, addresses and occupations of children |  |  | Not included in database
+Graduate |  |  | Not included in databse
+Non-graduate |  |  | Not included in database
+Class | degrees (end_year) | degrees is a dictionary, end_year is an integer | 
+Check department in which you were registered | departments | list of enumerations (College of Literature, Science, and the Arts, Medical School, Law School, Colleges of Engineering and Architectures, College of Pharmacy, Nurses Training School, College of Dental Surgery, School of Education and Graduate School) | 
+Occupations since leaving the University of Michigan | other_occupations | string | 
+What church do you attend? |  |  | Not included in database
+Public offices held--Social, Civic, Business (City, County, State, National--Elective or Appointive). | public_office | string | 
+Achievements in Science, Art, Literature, Journalism, Social Service, etc. | achievement | string | 
+What other institutions of higher education have you attended? | degrees (school) | degrees is a dictionary, school is a string
+What degrees were conferred upon you? (Including honorary degrees) degrees (start_year, end_year, degree, school, field, type) | degrees is a dictionary, start_year and end_year are integers, degree, school and field are strings and type is an enumeration (undergraduate and graduate) | 
+What members of your family beside yourself have attended the University of Michigan? | family_attending_um | string | 
+War record--dates of service period |  |  | Not included in database
+Type of service |  |  | Not included in database
+Position held |  |  | Not included in database
+Did you serve overseas? |  |  | Not included in database
+Citations or decorations |  |  | Not included in database
+In your opinion what are the ten most outstanding women who have ever at any time attended the University of Michigan, considered from the standpoint of human service? | influential_women | list of strings | These were turned into a controlled vocabulary.
+Do you know of any persons in your Community who are descendants of University of Michigan alumnae or former students? We are particularly anxious to locate all the men whose mothers attended the University. |  |  | Not included in database
+How would you characterize the influence of the University of Michigan on your life? |  |  | Not included in database
+Won't you add a few of the outstanding memories of your college days? We shall be glad to head of any incident, however trivial, which lingers on your mind. | memories | list of strings | These were turned into Library of Congress Subject Headings. 
 
 
 Example JSON:
