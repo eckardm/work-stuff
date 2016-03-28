@@ -13,7 +13,7 @@ Survey Responses
 ----------------
 
 Question | Field(s) | Value(s) | Notes
---- | --- | ---
+--- | --- | --- | ---
 Name in full | first_name, middle_name, last_name | string | 
 Maiden name | married_name | string | 
 Address (Business) | address_business (city, state, country) | dictionary | dictionary values are strings
