@@ -3,14 +3,21 @@ Women's Voices
 
 ![Women's Voices](bhl_bl003612_309_382_full_0.jpg)
 
-The Bentley Historical Library (Bentley) publication entitled *Women's Voices: Early Years at the University of Michigan* was created to showcase the results of a 1924 survey conducted by the Alumni Council of the Alumni Association of the University of Michigan. The survey was sent to approximately 10,250 women who had attended the University from the year 1870, when women were first admitted, to 1924. The survey responses are now part of the University Archives at the Bentley.
+The Bentley Historical Library (Bentley) publication entitled *Women's Voices: Early Years at the University of Michigan* and associated database were created to showcase the results of a 1924 survey conducted by the Alumni Council of the Alumni Association of the University of Michigan. The survey was sent to approximately 10,250 women who had attended the University from the year 1870, when women were first admitted, to 1924. The survey responses are now part of the University Archives at the Bentley.
 
 You can view the publication online as [HTML](http://quod.lib.umich.edu/w/womv/images/WomensVoices.pdf), as a [PDF](http://quod.lib.umich.edu/w/womv/), or browse or search the [Alumnae Survey Database](http://bentley.umich.edu/legacy-support/um/voices/).
 
-This dataset is organized by survey response in both JSON and CSV formats (as well as the original XLSX dump). In the CSV file, lists are represented by a single pipe-delimited string, such as "Events -- Commencement|Faculty -- De Pont, Paul R.". The JSON file has a bit more metadata.
+Be aware that we are actively refining our metadata creation and quality control processes and exploring ways to improve the consistenncy and accuracy of our legacy metadata, but in the meantime, you may find some idiosyncracies and curiosities in our data. If you'd like to bring certain issues to our attention, please contact the Bentley's [Division of Reference and Access Services](mailto:bentley.ref@umich.edu).
+
+  * [Survey Responses](README.md#survey-responses)
+  * [Attribution]()
+  * [Code Examples]()
+  * [Pull Requests and Issues]()
 
 Survey Responses
 ----------------
+
+Below are the original survey questions and the metadata fields you'll find in the CSV and JSON files. This dataset, generated from a dump of the original database, is organized by survey response in both JSON and CSV formats (as well as the original XLSX dump). In the CSV file, lists are represented by a single pipe-delimited string, such as "Events -- Commencement|Faculty -- De Pont, Paul R.". The JSON file has a bit more metadata, only because it can accomadate more granular information. No fields in the survey were required, so reponses vary widely in the amount of information they contain. 
 
 Question | Field(s) | Value(s) | Notes
 --- | --- | --- | ---
@@ -23,7 +30,7 @@ Race | race | string |
 Single or married |  |  | Not included in database
 Present occupation | occupation | string | 
 Names, addresses and occupations of children |  |  | Not included in database
-Graduate |  |  | Not included in databse
+Graduate |  |  | Not *explicitly* included in databse
 Non-graduate |  |  | Not included in database
 Class | degrees (end_year) | degrees is a dictionary, end_year is an integer | 
 Check department in which you were registered | departments | list of enumerations (College of Literature, Science, and the Arts, Medical School, Law School, Colleges of Engineering and Architectures, College of Pharmacy, Nurses Training School, College of Dental Surgery, School of Education and Graduate School) | 
@@ -49,73 +56,34 @@ Example JSON:
 
 ```json
 {
-	"690": {
-		"first_name": "Leita Margarita",
-		"last_name": "Davis",
+	"1543": {
+		"first_name": "Bell",
+		"last_name": "Krolik",
 		"middle_name": "",
-		"addresses": [{
-			"type": "birth",
-			"address": {
-				"country": "United States",
-				"state": "KS",
-				"city": "Elk City"
-			}
-		},
-		{
-			"type": "home",
-			"address": {
-				"country": "United States",
-				"state": "KS",
-				"city": "Liberty"
-			}
-		},
-		{
-			"type": "business",
-			"address": {
-				"country": "United States",
-				"state": "OK",
-				"city": "Edmond"
-			}
-		}],
-		"influential_women": ["Palmer, Alice Freeman, 1855-1902",
-		"Pomeroy, Katharine P."],
-		"married_name": "",
+		"influential_women": ["Barnard, Edith",
+		"Effinger, Margaret T.",
+		"Hamilton, Alice, 1869-1970",
+		"Lehman, Anna Mc",
+		"Palmer, Alice Freeman, 1855-1902",
+		"",
+		"Stearns, Mary T.",
+		"Van Hoosen, Bertha, 1863-"],
+		"married_name": "Scheyer, David",
 		"departments": ["College of Literature, Science, and the Arts"],
 		"other_occupation": "",
-		"family_attending_um": "Father: Davis, Dr. J.T.",
+		"family_attending_um": "",
 		"public_office": "",
 		"degrees": [{
-			"start_year": "",
-			"degree": "",
-			"end_year": "",
-			"school": "Columbia University",
-			"field": "",
-			"type": "graduate"
-		},
-		{
-			"start_year": "1907",
-			"degree": "AB",
-			"end_year": "1911",
+			"start_year": "1893",
+			"degree": "PhB",
+			"end_year": "1897",
 			"school": "University of Michigan",
-			"field": "Hist.",
-			"type": "undergraduate"
-		},
-		{
-			"start_year": "",
-			"degree": "MA",
-			"end_year": "",
-			"school": "University of Pennsylvania",
 			"field": "",
-			"type": "graduate"
+			"type": "undergraduate"
 		}],
-		"race": "White",
-		"memories": ["Faculty -- Dow, Earle W.",
-		"Faculty -- Van Tyne, Claude H.",
-		"Faculty -- Wenley, Robert Mark",
-		"Flora and fauna -- Huron River",
-		"Learning -- courses -- History"],
-		"achievement": "Teacher; Assoc.Prof. State Teacher's College, History; Social Work",
-		"occupation": "Asst.Prof.Hist.College"
+		"race": "",
+		"achievement": "Investigator, United Hebrew Charities, NYC; (Also attended School, Philanthropies of Charity; Organization Societies,; NYC)",
+		"occupation": "Housewife"
 	}
-}
+},
 ```
