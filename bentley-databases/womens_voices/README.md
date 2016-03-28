@@ -1,8 +1,6 @@
 Women's Voices
 ==============
 
-![Women's Voices](bhl_bl003612_309_382_full_0.jpg)
-
 The Bentley Historical Library (Bentley) publication entitled *Women's Voices: Early Years at the University of Michigan* and associated database were created to showcase the results of a 1924 survey conducted by the Alumni Council of the Alumni Association of the University of Michigan. The survey was sent to approximately 10,250 women who had attended the University from the year 1870, when women were first admitted, to 1924. The survey responses are now part of the University Archives at the Bentley.
 
 You can view the publication online as [HTML](http://quod.lib.umich.edu/w/womv/images/WomensVoices.pdf), as a [PDF](http://quod.lib.umich.edu/w/womv/), or browse or search the [Alumnae Survey Database](http://bentley.umich.edu/legacy-support/um/voices/).
@@ -10,9 +8,9 @@ You can view the publication online as [HTML](http://quod.lib.umich.edu/w/womv/i
 Be aware that we are actively refining our metadata creation and quality control processes and exploring ways to improve the consistenncy and accuracy of our legacy metadata, but in the meantime, you may find some idiosyncracies and curiosities in our data. If you'd like to bring certain issues to our attention, please contact the Bentley's [Division of Reference and Access Services](mailto:bentley.ref@umich.edu).
 
   * [Survey Responses](README.md#survey-responses)
-  * [Attribution]()
-  * [Code Examples]()
-  * [Pull Requests and Issues]()
+  * [Attribution](README.md#attribution)
+  * [Code Examples](README.md#code-examples)
+  * [Pull Requests and Issues](README.md#pull-requests-and-issues)
 
 Survey Responses
 ----------------
@@ -39,7 +37,7 @@ What church do you attend? |  |  | Not included in database
 Public offices held--Social, Civic, Business (City, County, State, National--Elective or Appointive). | public_office | string | 
 Achievements in Science, Art, Literature, Journalism, Social Service, etc. | achievement | string | 
 What other institutions of higher education have you attended? | degrees (school) | degrees is a dictionary, school is a string
-What degrees were conferred upon you? (Including honorary degrees) | degrees (start_year, end_year, degree, school, field, type) | degrees is list of dictionaries, start_year and end_year are integers, degree, school and field are strings and type is an enumeration (undergraduate and graduate) | 
+What degrees were conferred upon you? (Including honorary degrees) | degrees (start_year, end_year, degree, school, field, type) | degrees is list of dictionaries, start_year and end_year are integers, degree, school and field are strings and type is an enumeration (undergraduate and graduate) |
 What members of your family beside yourself have attended the University of Michigan? | family_attending_um | string | 
 War record--dates of service period |  |  | Not included in database
 Type of service |  |  | Not included in database
@@ -50,7 +48,6 @@ In your opinion what are the ten most outstanding women who have ever at any tim
 Do you know of any persons in your Community who are descendants of University of Michigan alumnae or former students? We are particularly anxious to locate all the men whose mothers attended the University. |  |  | Not included in database
 How would you characterize the influence of the University of Michigan on your life? |  |  | Not included in database
 Won't you add a few of the outstanding memories of your college days? We shall be glad to head of any incident, however trivial, which lingers on your mind. | memories | list of strings | These were turned into Library of Congress Subject Headings. Don't you remember things in Library of Congress Subject Headings?
-
 
 Example JSON:
 
@@ -87,3 +84,24 @@ Example JSON:
 	}
 },
 ```
+
+Attribution
+-----------
+
+Bentley's database records and code provided via this repository are distributed under a [Creative Commons CC0 1.0 Universal Public Domain Dedication ("CCO 1.0 Dedication")](http://creativecommons.org/publicdomain/zero/1.0/). See [license](LICENSE).
+
+Code Examples
+-------------
+
+We've included a few example scripts and utilities to help you get started digging into the data made available in this repository.
+
+  * You're code here!
+
+Pull Requests and Issues
+------------------------
+
+Are you doing cool things with our public domain items? Have a script or utility you'd like to share? We welcome your pull requests for code examples that can help others access, reuse, and remix our data and images.
+
+While we appreciate your support in cleaning up our legacy data, we are not able to accept your pull requests to our CSV and JSON datasets. We are actively working to improve our data consistency and completeness, but we do rely on you to help point out factual inaccuracies. If you would like to contribute corrections to our data, please contact Bentley's [Division of Reference and Access Services](mailto:bentley.ref@umich.edu).
+
+If you have suggestions for how we can improve this data documentation, please let us know.
