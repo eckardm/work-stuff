@@ -1077,8 +1077,7 @@
 		"memories": ["Faculty -- Abbe, Cleveland",
 		"Faculty -- Demmon, Isaac Newton",
 		"Faculty -- Frayer, William A.",
-		"Faculty -- Phillips, Ulrich Bonnell",
-		null],
+		"Faculty -- Phillips, Ulrich Bonnell"],
 		"influential_women": ["Palmer, Alice Freeman, 1855-1902"],
 		"degrees": [{
 			"start_year": "",
@@ -1111,7 +1110,6 @@
 		"Faculty -- Francois, Edward C.",
 		"Faculty -- Markley, Joseph L.",
 		"Learning -- courses -- Choral Union",
-		null,
 		"Social Life -- concerts -- May Festival"],
 		"degrees": [{
 			"start_year": "1893",
@@ -1146,7 +1144,6 @@
 		"Learning -- courses -- Choral Union",
 		"Learning -- courses -- Latin",
 		"Learning -- courses -- Medieval History",
-		null,
 		"Social Life -- concerts -- May Festival"],
 		"degrees": [{
 			"start_year": "1895",
@@ -1326,7 +1323,6 @@
 	"2267": {
 		"memories": ["Buildings -- Hill Auditorium",
 		"Groups -- athletic -- Football",
-		null,
 		"Social Life -- concerts",
 		"Social Life -- events -- Cap Night"],
 		"degrees": [{
@@ -1964,7 +1960,7 @@
 },
 {
 	"2042": {
-		"memories": [null],
+		"memories": [],
 		"degrees": [{
 			"start_year": "1919",
 			"degree": "AB",
@@ -2070,7 +2066,7 @@
 			"start_year": "",
 			"degree": "",
 			"end_year": "",
-			"school": null,
+			"school": "",
 			"field": "",
 			"type": "graduate"
 		},
@@ -2701,8 +2697,7 @@
 {
 	"95": {
 		"memories": ["Faculty -- Boucke, Ewald A.",
-		"Interpersonal relationships -- friendship",
-		null],
+		"Interpersonal relationships -- friendship"],
 		"influential_women": ["Hinsdale, Ellen",
 		"Hinsdale, Mary L.",
 		"Hinsdale, Mildred, 1871-1971"],
@@ -2933,7 +2928,6 @@
 {
 	"1625": {
 		"memories": ["Events -- Commencement",
-		null,
 		"Groups -- honorary -- Phi Beta Kappa",
 		"Housing -- dormitories -- Martha Cook",
 		"Social Life -- events -- Senior breakfast",
@@ -3892,7 +3886,7 @@
 },
 {
 	"1755": {
-		"memories": [null],
+		"memories": [],
 		"degrees": [{
 			"start_year": "1884",
 			"degree": "",
@@ -4318,8 +4312,7 @@
 		"memories": ["Events -- UM Presidents -- Burton",
 		"Faculty -- Aigler, Ralph W.",
 		"Faculty -- Cowden, Mrs. ",
-		"Faculty -- Cowden, Roy W.",
-		null],
+		"Faculty -- Cowden, Roy W."],
 		"influential_women": ["Jordan, Myra Beach, 1863-1946",
 		"Kahn, Ida",
 		"Knapp, Ella A.",
@@ -4735,7 +4728,6 @@
 		"memories": ["Events -- Lectures",
 		"Events -- UM Presidents -- Angell",
 		"Housing -- rooming houses",
-		null,
 		"Social Life -- concerts",
 		"Social Life -- faculty wives -- Smith, Shirley Mrs.",
 		"Social Life -- music and singing -- Varsity yells",
@@ -4991,8 +4983,7 @@
 },
 {
 	"682": {
-		"memories": ["Faculty -- Payne, William H.",
-		null],
+		"memories": ["Faculty -- Payne, William H."],
 		"influential_women": ["Nielson, Minnie J.",
 		"Palmer, Alice Freeman, 1855-1902"],
 		"degrees": [{
@@ -5204,8 +5195,7 @@
 		"Faculty -- Pattengill, Albert H.",
 		"Faculty -- Thomas, Calvin",
 		"Faculty -- Tyler, Moses Coit",
-		"Faculty -- Walter, Edward Lorraine",
-		null],
+		"Faculty -- Walter, Edward Lorraine"],
 		"degrees": [{
 			"start_year": "",
 			"degree": "AM",
@@ -5371,8 +5361,7 @@
 		"memories": ["Faculty -- Cheever, Henry S.",
 		"Faculty -- Ford, Corydon La",
 		"Faculty -- Prescott, Benjamin P.",
-		"Learning -- courses -- Anatomy",
-		null],
+		"Learning -- courses -- Anatomy"],
 		"influential_women": ["Coman, Katharine, 1857-1915",
 		"Mosher, Eliza Maria, 1846-1928",
 		"Palmer, Alice Freeman, 1855-1902",
@@ -5401,7 +5390,6 @@
 		"Groups -- clubs",
 		"Groups -- fraternities",
 		"Groups -- sororities",
-		null,
 		"Social Life -- concerts",
 		"Social Life -- events -- Cap Night"],
 		"influential_women": ["Palmer, Alice Freeman, 1855-1902",
@@ -5495,7 +5483,7 @@
 },
 {
 	"400": {
-		"memories": [null],
+		"memories": [],
 		"degrees": [{
 			"start_year": "1918",
 			"degree": "AB",
@@ -6499,8 +6487,7 @@
 {
 	"2306": {
 		"memories": ["Faculty -- Adams, Henry Carter",
-		"Faculty -- Hinsdale, Burke Aaron",
-		null],
+		"Faculty -- Hinsdale, Burke Aaron"],
 		"influential_women": ["Buck, Gertrude, 1871-1922",
 		"Kleinstuck, Caroline",
 		"Pratt, Elsie"],
@@ -6630,8 +6617,7 @@
 		"Events -- UM Presidents -- Angell",
 		"Faculty -- Demmon, Isaac Newton",
 		"Faculty -- Dewey, John",
-		"Faculty -- Morris, George S.",
-		null],
+		"Faculty -- Morris, George S."],
 		"influential_women": ["Buck, Gertrude, 1871-1922",
 		"Palmer, Alice Freeman, 1855-1902",
 		"Pratt, Elsie"],
@@ -7076,8 +7062,7 @@
 {
 	"2337": {
 		"memories": ["Events -- UM Presidents -- Angell",
-		"Housing -- rooming houses",
-		null],
+		"Housing -- rooming houses"],
 		"degrees": [{
 			"start_year": "1889",
 			"degree": "",
@@ -7305,8 +7290,7 @@
 },
 {
 	"2453": {
-		"memories": [null,
-		"Social Life -- faculty wives"],
+		"memories": ["Social Life -- faculty wives"],
 		"degrees": [{
 			"start_year": "",
 			"degree": "",
@@ -7339,8 +7323,7 @@
 		"Flora and fauna -- UM campus",
 		"Learning -- courses -- German",
 		"Learning -- courses -- Greek",
-		"Learning -- courses -- Latin",
-		null],
+		"Learning -- courses -- Latin"],
 		"influential_women": ["Stone, Mary"],
 		"degrees": [{
 			"start_year": "0",
@@ -8309,8 +8292,7 @@
 	"2405": {
 		"memories": ["Faculty -- Demmon, Isaac Newton",
 		"Faculty -- Jones, Elisha",
-		"Faculty -- Pattengill, Albert H.",
-		null],
+		"Faculty -- Pattengill, Albert H."],
 		"influential_women": ["Andrews, Fanny P.",
 		"Case, Mary",
 		"Coman, Katharine, 1857-1915",
@@ -8692,7 +8674,7 @@
 },
 {
 	"1611": {
-		"memories": [null],
+		"memories": [],
 		"degrees": [{
 			"start_year": "1915",
 			"degree": "AB",
@@ -9185,9 +9167,7 @@
 		"memories": ["Buildings -- Library",
 		"Events -- Lectures",
 		"Flora and fauna -- Boulevards",
-		null,
 		"Learning -- courses -- Rhetoric",
-		null,
 		"Social Life -- concerts",
 		"Social Life -- events -- Cap Night",
 		"Social Life -- music and singing -- Serenades"],
@@ -9824,7 +9804,6 @@
 {
 	"1549": {
 		"memories": ["College comparison -- Barnard",
-		null,
 		"Events -- UM Presidents -- Burton",
 		"Faculty -- Bartlett, Barbara",
 		"Faculty -- Cooley, Charles Horton",
@@ -9974,8 +9953,7 @@
 		"Faculty -- Morris, George S.",
 		"Faculty -- Pattengill, Albert H.",
 		"Faculty -- Walter, Edward Lorraine",
-		"Interpersonal relationships -- friendship",
-		null],
+		"Interpersonal relationships -- friendship"],
 		"influential_women": ["Byrd, Mary E. (Mary Emma), b.1849",
 		"Palmer, Alice Freeman, 1855-1902",
 		"Salmon, Lucy Maynard, 1853-1927"],
@@ -10380,7 +10358,6 @@
 		"Events -- UM Presidents -- Angell",
 		"Faculty -- Davis, Calvin O.",
 		"Learning -- courses -- Bibliography",
-		null,
 		"UM Influence -- other -- UM spirit",
 		"UM Influence -- sense of civic responsibility"],
 		"degrees": [{
@@ -11062,8 +11039,7 @@
 	"360": {
 		"memories": ["Buildings -- Psychology labs",
 		"Faculty -- Hall, Arthur Graham",
-		"Learning -- courses -- Psychology",
-		null],
+		"Learning -- courses -- Psychology"],
 		"degrees": [{
 			"start_year": "",
 			"degree": "AB",
@@ -11287,8 +11263,7 @@
 	"387": {
 		"memories": ["Groups -- clubs -- Cosmopolitan Club",
 		"Social Life -- parties and celebrations -- Teas",
-		"Housing -- dormitories -- Martha Cook",
-		null],
+		"Housing -- dormitories -- Martha Cook"],
 		"influential_women": ["Palmer, Alice Freeman, 1855-1902"],
 		"degrees": [{
 			"start_year": "1913",
@@ -11452,8 +11427,7 @@
 },
 {
 	"2190": {
-		"memories": ["Learning -- critical thinking",
-		null],
+		"memories": ["Learning -- critical thinking"],
 		"degrees": [{
 			"start_year": "",
 			"degree": "BS",
@@ -13658,7 +13632,7 @@
 			"start_year": "",
 			"degree": "",
 			"end_year": "",
-			"school": null,
+			"school": "",
 			"field": "",
 			"type": "graduate"
 		}],
@@ -13720,7 +13694,6 @@
 		"Flora and fauna -- Boulevards",
 		"Flora and fauna -- Huron River",
 		"Interpersonal relationships -- friendship",
-		null,
 		"Social Life -- concerts -- May Festival",
 		"Groups -- sororities -- Sorosis"],
 		"influential_women": ["Palmer, Alice Freeman, 1855-1902",
@@ -14394,8 +14367,7 @@
 {
 	"1776": {
 		"memories": ["Faculty -- Cooley, Charles Horton",
-		"Faculty -- Scott, Fred Newton",
-		null],
+		"Faculty -- Scott, Fred Newton"],
 		"degrees": [{
 			"start_year": "",
 			"degree": "AB",
@@ -14701,8 +14673,7 @@
 		"Faculty -- Jones, Elisha",
 		"Flora and fauna -- UM campus",
 		"Learning -- courses -- Latin",
-		"Learning -- intellectual awareness",
-		null],
+		"Learning -- intellectual awareness"],
 		"degrees": [{
 			"start_year": "1876",
 			"degree": "",
@@ -15001,7 +14972,6 @@
 		"Faculty -- Kelsey, Francis W.",
 		"Faculty -- Parker, Dewitt Henry",
 		"Faculty -- Winkler, Max",
-		null,
 		"Social Life -- concerts"],
 		"influential_women": ["Kahn, Ida"],
 		"degrees": [{
@@ -15392,7 +15362,7 @@
 },
 {
 	"52": {
-		"memories": [null],
+		"memories": [],
 		"influential_women": ["Palmer, Alice Freeman, 1855-1902",
 		"Shepard, Fanny A."],
 		"degrees": [{
@@ -15742,8 +15712,7 @@
 },
 {
 	"2995": {
-		"memories": ["Faculty -- Mosher, Eliza M.",
-		null],
+		"memories": ["Faculty -- Mosher, Eliza M."],
 		"influential_women": ["Dunbar, Frances J."],
 		"degrees": [{
 			"start_year": "1897",
@@ -16577,8 +16546,7 @@
 },
 {
 	"2211": {
-		"memories": ["Buildings -- University Hall",
-		null],
+		"memories": ["Buildings -- University Hall"],
 		"degrees": [{
 			"start_year": "1919",
 			"degree": "AB",
@@ -16774,7 +16742,6 @@
 		"memories": ["Groups -- drama and theater -- Operas",
 		"Social Life -- events -- Cap Night",
 		"Social Life -- events -- Lantern Night",
-		null,
 		"Social Life -- dances -- Swingout",
 		"Social Life -- plays -- Junior Girls' Play"],
 		"influential_women": ["Adams, Bertha W.",
@@ -16807,7 +16774,6 @@
 	"151": {
 		"memories": ["Groups -- clubs -- Women's League",
 		"Groups -- sororities",
-		null,
 		"Social Life -- faculty wives"],
 		"address_business": {
 			"country": "United States",
@@ -16834,7 +16800,6 @@
 		"Flora and fauna -- Boulevards",
 		"Flora and fauna -- Corkscrew Hill",
 		"Groups -- sororities",
-		null,
 		"Social Life -- concerts",
 		"Social Life -- other -- Faculty homes",
 		"Faculty -- Cooley, Mortimer E."],
@@ -17031,7 +16996,7 @@
 			"start_year": "",
 			"degree": "",
 			"end_year": "",
-			"school": null,
+			"school": "",
 			"field": "",
 			"type": "graduate"
 		}],
@@ -19161,7 +19126,6 @@
 		"Groups -- honorary -- Phi Beta Kappa",
 		"Housing -- dormitories -- Martha Cook",
 		"Learning -- courses -- Gymnasium",
-		null,
 		"Social Life -- plays -- Whitney Theater"],
 		"influential_women": ["Bishop, Harriet H.",
 		"Chapin, Alice",
@@ -19211,7 +19175,7 @@
 },
 {
 	"1704": {
-		"memories": [null],
+		"memories": [],
 		"degrees": [{
 			"start_year": "1914",
 			"degree": "AB",
@@ -19468,7 +19432,6 @@
 		"Faculty -- Davis, Calvin O.",
 		"Faculty -- Rankin, Thomas E.",
 		"Groups -- athletic -- Football",
-		null,
 		"Groups -- performing -- Band",
 		"Housing -- dormitories -- Martha Cook",
 		"Learning -- courses -- Education",
@@ -19516,7 +19479,6 @@
 		"Social Life -- plays -- Junior Girls' Play",
 		"Learning -- courses -- German",
 		"Learning -- courses -- Interpretive Reading",
-		null,
 		"Social Life -- music and singing -- Senior sings"],
 		"influential_women": ["Palmer, Alice Freeman, 1855-1902"],
 		"degrees": [{
@@ -19945,8 +19907,6 @@
 		"Groups -- athletic -- Football",
 		"Groups -- drama and theater -- Operas",
 		"Groups -- religious -- YMCA",
-		null,
-		null,
 		"Social Life -- parties and celebrations -- Spreads",
 		"Social Life -- dances -- Swingout",
 		"Social Life -- plays -- Junior Girls' Play"],
@@ -20139,8 +20099,7 @@
 	"526": {
 		"memories": ["Faculty -- Spalding, Volney Morgan",
 		"Groups -- musical -- Symphony",
-		"Events -- other -- Guest lectures",
-		null],
+		"Events -- other -- Guest lectures"],
 		"influential_women": ["Palmer, Alice Freeman, 1855-1902"],
 		"degrees": [{
 			"start_year": "",
@@ -20750,8 +20709,7 @@
 		"Learning -- courses -- Geology",
 		"Learning -- courses -- Politics and Government",
 		"Learning -- courses -- Shakespeare",
-		"Learning -- other -- Alma mater is a dura mater",
-		null],
+		"Learning -- other -- Alma mater is a dura mater"],
 		"degrees": [{
 			"start_year": "",
 			"degree": "AM",
@@ -20857,7 +20815,7 @@
 },
 {
 	"434": {
-		"memories": [null],
+		"memories": [],
 		"degrees": [{
 			"start_year": "1917",
 			"degree": "AB",
@@ -20879,7 +20837,6 @@
 		"memories": ["Buildings -- Library",
 		"Events -- UM Presidents -- Burton",
 		"Groups -- athletic",
-		null,
 		"Social Life -- concerts",
 		"Social Life -- events -- Lantern Night",
 		"Social Life -- other -- Pep meetings"],
@@ -21701,7 +21658,6 @@
 	"2227": {
 		"memories": ["Events -- UM Presidents -- Angell",
 		"Faculty -- Wenley, Robert Mark",
-		null,
 		"Social Life -- faculty wives"],
 		"influential_women": ["Kahn, Ida",
 		"Palmer, Alice Freeman, 1855-1902"],
@@ -22914,8 +22870,7 @@
 	"1830": {
 		"memories": ["Faculty -- Beman, Wooster W.",
 		"Faculty -- Mosher, Eliza M.",
-		"Faculty -- Scott, Fred Newton",
-		null],
+		"Faculty -- Scott, Fred Newton"],
 		"influential_women": ["Palmer, Alice Freeman, 1855-1902"],
 		"degrees": [{
 			"start_year": "",
@@ -23268,8 +23223,7 @@
 },
 {
 	"2152": {
-		"memories": ["Events -- Commencement",
-		null],
+		"memories": ["Events -- Commencement"],
 		"degrees": [{
 			"start_year": "",
 			"degree": "BA",
@@ -23623,8 +23577,7 @@
 },
 {
 	"1950": {
-		"memories": [null,
-		"Social Life -- events -- Cap Night"],
+		"memories": ["Social Life -- events -- Cap Night"],
 		"degrees": [{
 			"start_year": "1920",
 			"degree": "",
@@ -24135,7 +24088,7 @@
 },
 {
 	"1486": {
-		"memories": [null],
+		"memories": [],
 		"influential_women": [""],
 		"degrees": [{
 			"start_year": "",
@@ -24210,7 +24163,7 @@
 },
 {
 	"1489": {
-		"memories": [null],
+		"memories": [],
 		"degrees": [{
 			"start_year": "1907",
 			"degree": "AB",
@@ -25485,7 +25438,6 @@
 		"Housing -- dormitories",
 		"Interpersonal relationships -- friendship",
 		"Learning -- courses",
-		null,
 		"Social Life -- dances -- J Hop",
 		"Social Life -- music and singing -- UM songs"],
 		"degrees": [{
@@ -25569,8 +25521,7 @@
 		"Faculty -- Morris, George S.",
 		"Faculty -- Olney, Edward",
 		"Faculty -- Tyler, Moses Coit",
-		"Learning -- courses -- Latin",
-		null],
+		"Learning -- courses -- Latin"],
 		"degrees": [{
 			"start_year": "1873",
 			"degree": "PhB",
@@ -25627,8 +25578,7 @@
 	"1005": {
 		"memories": ["Events -- UM Presidents -- Angell",
 		"Faculty -- Angell, James B.",
-		"Learning -- courses -- International Law",
-		null],
+		"Learning -- courses -- International Law"],
 		"influential_women": ["Kahn, Ida",
 		"Mosher, Eliza Maria, 1846-1928",
 		"Palmer, Alice Freeman, 1855-1902",
@@ -25774,7 +25724,6 @@
 		"Groups -- athletic -- Football",
 		"Groups -- religious",
 		"Learning -- courses",
-		null,
 		"Publications -- Michigan Daily",
 		"Social Life -- concerts",
 		"Social Life -- events -- Cap Night",
@@ -25912,8 +25861,7 @@
 	"627": {
 		"memories": ["Faculty -- Adams, Henry Carter",
 		"Faculty -- Dewey, John",
-		"Groups -- clubs -- Women's League",
-		null],
+		"Groups -- clubs -- Women's League"],
 		"influential_women": ["Dewey, Alice Chipman",
 		"Hamilton, Alice, 1869-1970",
 		"Kahn, Ida",
@@ -25950,7 +25898,6 @@
 		"Flora and fauna -- Ann Arbor",
 		"Groups -- religious -- German Sunday school",
 		"Learning -- courses -- German",
-		null,
 		"Social Life -- faculty wives"],
 		"degrees": [{
 			"start_year": "",
@@ -26139,8 +26086,7 @@
 {
 	"2882": {
 		"memories": ["Faculty -- Drake, Joseph H.",
-		"Faculty -- Kelsey, Francis W.",
-		null],
+		"Faculty -- Kelsey, Francis W."],
 		"influential_women": ["Brown, Katharine Holland, d. 1931",
 		"Buck, Gertrude, 1871-1922",
 		"Clarke, Annie",
@@ -26536,8 +26482,7 @@
 		"Events -- UM Presidents -- Angell",
 		"Flora and fauna -- Huron River",
 		"Groups -- religious -- Prayer Group",
-		"Groups -- religious -- Student  Volunteers",
-		null],
+		"Groups -- religious -- Student  Volunteers"],
 		"degrees": [{
 			"start_year": "",
 			"degree": "",
@@ -26621,8 +26566,7 @@
 		}],
 		"departments": ["College of Literature, Science, and the Arts"],
 		"memories": ["Groups -- athletic",
-		"Groups -- other",
-		null]
+		"Groups -- other"]
 	}
 },
 {
@@ -27011,8 +26955,7 @@
 {
 	"2745": {
 		"memories": ["Faculty -- Spalding, Volney Morgan",
-		"Learning -- courses -- Biology",
-		null],
+		"Learning -- courses -- Biology"],
 		"degrees": [{
 			"start_year": "",
 			"degree": "",
@@ -27132,7 +27075,7 @@
 },
 {
 	"2239": {
-		"memories": [null],
+		"memories": [],
 		"influential_women": ["Palmer, Alice Freeman, 1855-1902"],
 		"degrees": [{
 			"start_year": "",
@@ -27545,8 +27488,7 @@
 		"Housing -- dormitories -- Martha Cook",
 		"Learning -- courses -- Hygiene",
 		"Learning -- courses -- Latin",
-		"Learning -- courses -- Shakespeare",
-		null],
+		"Learning -- courses -- Shakespeare"],
 		"degrees": [{
 			"start_year": "1916",
 			"degree": "AB",
@@ -28843,7 +28785,6 @@
 	"927": {
 		"memories": ["Events -- Commencement",
 		"Flora and fauna -- Frog Pond",
-		null,
 		"Social Life -- people -- Ducking Freshmen"],
 		"degrees": [{
 			"start_year": "1901",
@@ -29651,7 +29592,7 @@
 },
 {
 	"1724": {
-		"memories": [null],
+		"memories": [],
 		"degrees": [{
 			"start_year": "",
 			"degree": "PhD",
@@ -29883,7 +29824,7 @@
 },
 {
 	"2439": {
-		"memories": [null],
+		"memories": [],
 		"influential_women": ["Palmer, Alice Freeman, 1855-1902"],
 		"degrees": [{
 			"start_year": "1916",
@@ -30773,7 +30714,6 @@
 		"Faculty -- Kelsey, Francis W.",
 		"Faculty -- Stanley, Augustus A.",
 		"Faculty -- Winkler, Max",
-		null,
 		"Social Life -- concerts -- May Festival"],
 		"degrees": [{
 			"start_year": "1894",
@@ -31167,7 +31107,7 @@
 			"start_year": "",
 			"degree": "AB",
 			"end_year": "",
-			"school": null,
+			"school": "",
 			"field": "",
 			"type": "undergraduate"
 		},
@@ -31263,7 +31203,7 @@
 },
 {
 	"2890": {
-		"memories": [null],
+		"memories": [],
 		"influential_women": ["Hamilton, Alice, 1869-1970",
 		"Palmer, Alice Freeman, 1855-1902",
 		"Van Hoosen, Bertha, 1863-"],
@@ -31728,7 +31668,6 @@
 		"memories": ["Groups -- athletic",
 		"Groups -- religious",
 		"Housing -- rooming houses",
-		null,
 		"Social Life -- events -- Freshman Spread"],
 		"influential_women": ["Crozier, Jenny E.",
 		"Hinsdale, Mary L.",
@@ -31991,8 +31930,7 @@
 		"Faculty -- De Pont, Paul R.",
 		"Faculty -- Frieze, Henry Simmons",
 		"Faculty -- Thomas, Calvin",
-		"Faculty -- Walter, Edward Lorraine",
-		null],
+		"Faculty -- Walter, Edward Lorraine"],
 		"degrees": [{
 			"start_year": "",
 			"degree": "",
@@ -32411,7 +32349,7 @@
 },
 {
 	"2559": {
-		"memories": [null],
+		"memories": [],
 		"influential_women": ["Jordan, Myra Beach, 1863-1946",
 		"Brown, Antoinette",
 		"Campbell, Anna L.",
@@ -32503,8 +32441,7 @@
 		"Faculty -- Davis, Calvin O.",
 		"Faculty -- Dennison, Walter",
 		"Faculty -- Kelsey, Francis W.",
-		"Faculty -- Stuart, Duane R.",
-		null],
+		"Faculty -- Stuart, Duane R."],
 		"degrees": [{
 			"start_year": "1909",
 			"degree": "AB",
@@ -32912,7 +32849,7 @@
 },
 {
 	"2772": {
-		"memories": [null],
+		"memories": [],
 		"degrees": [{
 			"start_year": "",
 			"degree": "",
@@ -33782,8 +33719,7 @@
 		"Faculty -- Thompson, Bradley M.",
 		"Flora and fauna -- Ann Arbor",
 		"Flora and fauna -- Boulevards",
-		"Flora and fauna -- UM campus",
-		null],
+		"Flora and fauna -- UM campus"],
 		"influential_women": ["Hamilton, Alice, 1869-1970",
 		"Mosher, Eliza Maria, 1846-1928",
 		"Palmer, Alice Freeman, 1855-1902",
@@ -34945,7 +34881,7 @@
 },
 {
 	"753": {
-		"memories": [null],
+		"memories": [],
 		"degrees": [{
 			"start_year": "",
 			"degree": "Ph.D.",
@@ -35199,7 +35135,6 @@
 		"memories": ["Buildings -- Hill Auditorium",
 		"Flora and fauna -- Ann Arbor",
 		"Flora and fauna -- Huron River",
-		null,
 		"Social Life -- concerts -- Choral Union",
 		"Social Life -- concerts -- Recitals"],
 		"influential_women": ["Palmer, Alice Freeman, 1855-1902"],
@@ -35305,7 +35240,7 @@
 },
 {
 	"1590": {
-		"memories": [null],
+		"memories": [],
 		"degrees": [{
 			"start_year": "",
 			"degree": "DDS",
@@ -37226,7 +37161,6 @@
 		"Faculty -- Pattengill, Albert H.",
 		"Faculty -- Peckham, George",
 		"Faculty -- Tyler, Moses Coit",
-		null,
 		"Groups -- other -- Radical Club"],
 		"influential_women": ["Mosher, Eliza Maria, 1846-1928",
 		"Palmer, Alice Freeman, 1855-1902",
@@ -37585,8 +37519,7 @@
 		"memories": ["Events -- current -- Legislature visit",
 		"Faculty -- D'Ooge, Martin Luther",
 		"Faculty -- Kelsey, Francis W.",
-		"Faculty -- Pattengill, Albert H.",
-		null],
+		"Faculty -- Pattengill, Albert H."],
 		"degrees": [{
 			"start_year": "1892",
 			"degree": "AB",
@@ -37822,7 +37755,6 @@
 		"Housing -- dormitories",
 		"Housing -- rooming houses",
 		"Interpersonal relationships -- romantic",
-		null,
 		"Social Life -- parties and celebrations -- Roommate's wedding"],
 		"degrees": [{
 			"start_year": "1909",
@@ -38044,8 +37976,7 @@
 		"Faculty -- Pattengill, Albert H.",
 		"Flora and fauna -- Ann Arbor",
 		"Flora and fauna -- UM campus",
-		"Learning -- courses -- Latin",
-		null],
+		"Learning -- courses -- Latin"],
 		"degrees": [{
 			"start_year": "1893",
 			"degree": "AB",
@@ -38202,7 +38133,6 @@
 {
 	"2761": {
 		"memories": ["Groups -- sororities",
-		null,
 		"Publications -- Michigan Daily"],
 		"degrees": [{
 			"start_year": "1916",
@@ -38815,7 +38745,6 @@
 {
 	"2165": {
 		"memories": ["Flora and fauna -- Huron River",
-		null,
 		"Social Life -- concerts",
 		"Social Life -- dances"],
 		"influential_women": ["Palmer, Alice Freeman, 1855-1902",
@@ -38900,8 +38829,7 @@
 },
 {
 	"2167": {
-		"memories": ["Faculty -- Wenley, Robert Mark",
-		null],
+		"memories": ["Faculty -- Wenley, Robert Mark"],
 		"degrees": [{
 			"start_year": "",
 			"degree": "BS",
@@ -39176,7 +39104,7 @@
 },
 {
 	"2612": {
-		"memories": [null],
+		"memories": [],
 		"influential_women": ["Palmer, Alice Freeman, 1855-1902",
 		"Salmon, Lucy Maynard, 1853-1927",
 		"Sunderland, Eliza Read, 1839-1910",
@@ -39746,8 +39674,7 @@
 		"memories": ["Faculty -- Angell, James B.",
 		"Faculty -- Kelsey, Francis W.",
 		"Faculty -- Pierce, Edgar",
-		"Learning -- courses -- Psychology",
-		null],
+		"Learning -- courses -- Psychology"],
 		"degrees": [{
 			"start_year": "1893",
 			"degree": "PhB",
@@ -39774,7 +39701,6 @@
 		"Faculty -- Tyler, Moses Coit",
 		"Faculty -- Walter, Edward Lorraine",
 		"Faculty -- Watson, James Craig",
-		null,
 		"Social Life -- people -- Mrs. Israel Hall"],
 		"influential_women": ["Palmer, Alice Freeman, 1855-1902"],
 		"degrees": [{
@@ -40029,8 +39955,7 @@
 },
 {
 	"747": {
-		"memories": [null,
-		"Social Life -- other -- Boys' good behavior"],
+		"memories": ["Social Life -- other -- Boys' good behavior"],
 		"degrees": [{
 			"start_year": "1893",
 			"degree": "",
@@ -40950,8 +40875,7 @@
 		"Flora and fauna -- Ann Arbor",
 		"Flora and fauna -- Huron River",
 		"Groups -- other -- YWCA",
-		"Groups -- religious",
-		null],
+		"Groups -- religious"],
 		"influential_women": ["Palmer, Alice Freeman, 1855-1902"],
 		"degrees": [{
 			"start_year": "",
@@ -41020,7 +40944,7 @@
 			"start_year": "",
 			"degree": "",
 			"end_year": "",
-			"school": null,
+			"school": "",
 			"field": "",
 			"type": "graduate"
 		},
@@ -41152,7 +41076,7 @@
 },
 {
 	"611": {
-		"memories": [null],
+		"memories": [],
 		"influential_women": ["Palmer, Alice Freeman, 1855-1902"],
 		"degrees": [{
 			"start_year": "1905",
@@ -41228,8 +41152,7 @@
 		"Faculty -- Vaughan, Victor C.",
 		"Flora and fauna -- UM campus -- Old cemetery",
 		"Flora and fauna -- UM campus -- Tobogganing",
-		"Flora and fauna -- UM campus -- Wild flowers",
-		null],
+		"Flora and fauna -- UM campus -- Wild flowers"],
 		"degrees": [{
 			"start_year": "1885",
 			"degree": "",
@@ -41561,9 +41484,7 @@
 		"Learning -- courses -- Latin",
 		"Learning -- courses -- Math",
 		"Learning -- courses -- Sanitary Science",
-		"Learning -- courses -- Sanitary Science",
-		null,
-		null],
+		"Learning -- courses -- Sanitary Science"],
 		"degrees": [{
 			"start_year": "1885",
 			"degree": "AB",
@@ -41908,7 +41829,7 @@
 },
 {
 	"495": {
-		"memories": [null],
+		"memories": [],
 		"influential_women": ["Mosher, Eliza Maria, 1846-1928",
 		"Palmer, Alice Freeman, 1855-1902"],
 		"degrees": [{
@@ -41985,8 +41906,7 @@
 		"Faculty -- Scott, Fred Newton",
 		"Faculty -- Stanley, Augustus A.",
 		"Housing -- rooming houses",
-		"Learning -- courses -- Music",
-		null],
+		"Learning -- courses -- Music"],
 		"influential_women": ["Palmer, Alice Freeman, 1855-1902"],
 		"degrees": [{
 			"start_year": "",
@@ -42273,7 +42193,7 @@
 			"start_year": "",
 			"degree": "",
 			"end_year": "",
-			"school": null,
+			"school": "",
 			"field": "",
 			"type": "graduate"
 		},
@@ -42490,8 +42410,7 @@
 },
 {
 	"2289": {
-		"memories": ["Groups -- sororities -- Sorosis",
-		null],
+		"memories": ["Groups -- sororities -- Sorosis"],
 		"degrees": [{
 			"start_year": "",
 			"degree": "MA",
@@ -42593,9 +42512,7 @@
 		"Faculty -- Johnson, Elias Finley",
 		"Faculty -- Worcester, Dean C.",
 		"Groups -- athletic -- Golf",
-		null,
 		"Groups -- clubs -- Women's League",
-		null,
 		"Publications -- Michigan Daily",
 		"Publications -- Michigan Daily",
 		"Social Life -- dances",
@@ -42706,8 +42623,7 @@
 		"Faculty -- Hinsdale, Burke Aaron",
 		"Faculty -- Scott, Fred Newton",
 		"Faculty -- Walter, Edward Lorraine",
-		"Learning -- courses -- Pedagogy",
-		null],
+		"Learning -- courses -- Pedagogy"],
 		"influential_women": ["Palmer, Alice Freeman, 1855-1902",
 		"Stone, Mary"],
 		"degrees": [{
@@ -42769,8 +42685,7 @@
 },
 {
 	"972": {
-		"memories": [null,
-		"Faculty -- Hamilton, Walton H.",
+		"memories": ["Faculty -- Hamilton, Walton H.",
 		"Flora and fauna -- Huron River",
 		"Learning -- courses -- Economics",
 		"Social Life -- other -- Rush"],
@@ -43114,8 +43029,7 @@
 	"2374": {
 		"memories": ["Faculty -- Allinger, Henry W.",
 		"Faculty -- De Pont, Paul R.",
-		"Groups -- drama and theater -- Dramatic Club",
-		null],
+		"Groups -- drama and theater -- Dramatic Club"],
 		"degrees": [{
 			"start_year": "1886",
 			"degree": "",
@@ -43163,7 +43077,7 @@
 },
 {
 	"2376": {
-		"memories": [null],
+		"memories": [],
 		"degrees": [{
 			"start_year": "",
 			"degree": "MD",
@@ -43795,8 +43709,7 @@
 		"Faculty -- Frieze, Henry Simmons",
 		"Faculty -- Hutchins, Harry Burns",
 		"Faculty -- Walter, Edward Lorraine",
-		"Learning -- courses -- Philosophy",
-		null],
+		"Learning -- courses -- Philosophy"],
 		"influential_women": ["Jordan, Myra Beach, 1863-1946",
 		"Mosher, Eliza Maria, 1846-1928",
 		"Palmer, Alice Freeman, 1855-1902",
@@ -44649,8 +44562,7 @@
 },
 {
 	"2628": {
-		"memories": ["College comparison",
-		null],
+		"memories": ["College comparison"],
 		"influential_women": ["Palmer, Alice Freeman, 1855-1902"],
 		"degrees": [{
 			"start_year": "",
@@ -46018,8 +45930,7 @@
 		"Groups -- athletic",
 		"Groups -- religious",
 		"Interpersonal relationships -- friendship",
-		"Faculty -- Adams, Henry Carter",
-		null],
+		"Faculty -- Adams, Henry Carter"],
 		"degrees": [{
 			"start_year": "1886",
 			"degree": "BA",
@@ -46778,8 +46689,7 @@
 		"memories": ["Faculty -- Angell, James B.",
 		"Faculty -- McLaughlin, Andrew C.",
 		"Learning -- courses -- Constitutional Law",
-		"Learning -- courses -- Math",
-		null],
+		"Learning -- courses -- Math"],
 		"degrees": [{
 			"start_year": "1898",
 			"degree": "BL",
@@ -46806,7 +46716,6 @@
 		"Faculty -- Thomas, Franklin",
 		"Flora and fauna -- Boulevards",
 		"Learning -- intellectual awareness",
-		null,
 		"Social Life -- concerts -- May Festival"],
 		"influential_women": ["Bruce, Hortense V.",
 		"Hamilton, Alice, 1869-1970",
@@ -46948,8 +46857,7 @@
 		"Faculty -- Morris, George S.",
 		"Faculty -- Olney, Edward",
 		"Faculty -- Watson, James Craig",
-		"Learning -- intellectual awareness",
-		null],
+		"Learning -- intellectual awareness"],
 		"influential_women": ["Andrews, Lucy C.",
 		"Chapin, Angie",
 		"Mosher, Eliza Maria, 1846-1928",
@@ -47119,7 +47027,6 @@
 	"664": {
 		"memories": ["Buildings -- Barbour Gymnasium",
 		"Buildings -- Palmer Field",
-		null,
 		"Groups -- athletic -- Hockey",
 		"Groups -- athletic -- Tennis"],
 		"degrees": [{
@@ -47557,7 +47464,6 @@
 	"1316": {
 		"memories": ["Faculty -- Mosher, Eliza M.",
 		"Faculty -- Pattengill, Albert H.",
-		null,
 		"Social Life -- other -- Pranks",
 		"Social Life -- other -- Pranks"],
 		"degrees": [{
@@ -47730,8 +47636,6 @@
 		"Groups -- musical -- Girl's glee club",
 		"Interpersonal relationships -- friendship",
 		"Interpersonal relationships -- friendship",
-		null,
-		null,
 		"Social Life -- plays -- Junior Girls' Play"],
 		"degrees": [{
 			"start_year": "1919",
@@ -49126,7 +49030,7 @@
 },
 {
 	"1521": {
-		"memories": [null],
+		"memories": [],
 		"degrees": [{
 			"start_year": "1915",
 			"degree": "AB",
@@ -50243,8 +50147,7 @@
 		"memories": ["Events -- UM Presidents -- Burton",
 		"Faculty -- Rankin, Thomas E.",
 		"Faculty -- Strauss, Louis A.",
-		"Faculty -- Wenley, Robert Mark",
-		null],
+		"Faculty -- Wenley, Robert Mark"],
 		"degrees": [{
 			"start_year": "",
 			"degree": "AB",
@@ -50552,7 +50455,6 @@
 		"Faculty -- Rankin, Thomas E.",
 		"Groups -- athletic",
 		"Social Life -- concerts -- Organ recitals",
-		null,
 		"Social Life -- events -- Cap Night"],
 		"influential_women": ["Palmer, Alice Freeman, 1855-1902"],
 		"degrees": [{
@@ -50761,7 +50663,6 @@
 {
 	"877": {
 		"memories": ["Faculty -- Kelsey, Francis W.",
-		null,
 		"Social Life -- faculty wives -- Kelsey, Mrs."],
 		"degrees": [{
 			"start_year": "",
@@ -51445,8 +51346,7 @@
 	"898": {
 		"memories": ["Events -- Commencement",
 		"Events -- Convocations",
-		"Events -- UM Presidents -- Angell",
-		null],
+		"Events -- UM Presidents -- Angell"],
 		"influential_women": ["Freeman, Alice"],
 		"degrees": [{
 			"start_year": "",
@@ -51750,8 +51650,7 @@
 },
 {
 	"769": {
-		"memories": ["Faculty -- Vaughan, Victor C.",
-		null],
+		"memories": ["Faculty -- Vaughan, Victor C."],
 		"degrees": [{
 			"start_year": "1910",
 			"degree": "AB",
@@ -51889,8 +51788,7 @@
 },
 {
 	"763": {
-		"memories": [null,
-		"Learning -- intellectual awareness"],
+		"memories": ["Learning -- intellectual awareness"],
 		"degrees": [{
 			"start_year": "1919",
 			"degree": "B Pd",
@@ -51938,8 +51836,7 @@
 	"761": {
 		"memories": ["Faculty -- Demmon, Isaac Newton",
 		"Learning -- critical thinking",
-		"Learning -- intellectual awareness",
-		null],
+		"Learning -- intellectual awareness"],
 		"degrees": [{
 			"start_year": "1886",
 			"degree": "PhB",
@@ -53110,7 +53007,6 @@
 		"Groups -- musical -- Choral Union",
 		"Housing -- sororities -- Kappa Delta",
 		"Interpersonal relationships -- romantic",
-		null,
 		"Social Life -- parties and celebrations",
 		"Social Life -- dances -- Swingout"],
 		"degrees": [{
@@ -53135,7 +53031,6 @@
 		"Events -- Convocations",
 		"Events -- UM Presidents -- Burton",
 		"Groups -- athletic -- Football",
-		null,
 		"Social Life -- events -- Cap Night",
 		"Social Life -- events -- Senior Supper",
 		"Social Life -- plays -- Junior Girls' Play"],
@@ -53257,7 +53152,6 @@
 		"memories": ["Events -- Lectures",
 		"Housing -- dormitories -- Martha Cook",
 		"Housing -- sororities",
-		null,
 		"Social Life -- concerts",
 		"Groups -- drama and theater  -- Comedy Club",
 		"Groups -- drama and theater -- Masques Club",
@@ -53395,8 +53289,6 @@
 	"1410": {
 		"memories": ["Events -- Commencement",
 		"Events -- Commencement",
-		null,
-		null,
 		"Social Life -- music and singing -- Senior sings",
 		"Social Life -- music and singing -- Senior sings",
 		"Social Life -- plays -- Junior Girls' Play",
@@ -53571,8 +53463,7 @@
 		"Faculty -- Thomas, Calvin",
 		"Faculty -- Worcester, Dean C.",
 		"Flora and fauna -- Winter sports",
-		"Groups -- religious",
-		null],
+		"Groups -- religious"],
 		"influential_women": ["Case, Mary",
 		"Hoag, Lucy",
 		"Kahn, Ida",
@@ -53733,8 +53624,7 @@
 		"Faculty -- Pease, Arthur S.",
 		"Groups -- clubs -- Women's Research",
 		"Learning -- courses -- Botany",
-		"Learning -- courses -- Zoology",
-		null],
+		"Learning -- courses -- Zoology"],
 		"degrees": [{
 			"start_year": "",
 			"degree": "",
@@ -53806,7 +53696,6 @@
 		"Faculty -- Reed, John Oren",
 		"Groups -- athletic -- Football",
 		"Social Life -- parties and celebrations -- Teas",
-		null,
 		"Social Life -- faculty wives"],
 		"degrees": [{
 			"start_year": "",
@@ -53879,7 +53768,6 @@
 		"Groups -- clubs",
 		"Groups -- performing",
 		"Housing -- dormitories",
-		null,
 		"Social Life -- other -- Michigan League"],
 		"degrees": [{
 			"start_year": "",
@@ -54742,8 +54630,7 @@
 		"memories": ["Buildings -- Hill Auditorium",
 		"Buildings -- New Library",
 		"Flora and fauna -- UM campus",
-		"Groups -- performing -- Band",
-		null],
+		"Groups -- performing -- Band"],
 		"degrees": [{
 			"start_year": "1919",
 			"degree": "",
@@ -55233,8 +55120,7 @@
 {
 	"1890": {
 		"memories": ["Faculty -- Drake, Joseph H.",
-		"Faculty -- Kelsey, Francis W.",
-		null],
+		"Faculty -- Kelsey, Francis W."],
 		"degrees": [{
 			"start_year": "",
 			"degree": "AB",
@@ -55467,7 +55353,6 @@
 		"Events -- UM Presidents -- Burton",
 		"Groups -- athletic -- Football",
 		"Housing -- dormitories -- Betsy Barbour",
-		null,
 		"Social Life -- concerts"],
 		"influential_women": ["Buck, Gertrude, 1871-1922",
 		"Day, Edna D.",
@@ -55888,7 +55773,6 @@
 		"Learning -- courses -- Composition",
 		"Learning -- courses -- English History",
 		"Learning -- courses -- Short Story",
-		null,
 		"Social Life -- dances",
 		"Social Life -- plays -- Junior Girls' Play"],
 		"degrees": [{
@@ -56428,7 +56312,6 @@
 		"Groups -- sororities",
 		"Housing -- sororities -- Sorosis",
 		"Learning -- courses -- Art",
-		null,
 		"Social Life -- faculty wives -- Angell, Mrs.",
 		"Social Life -- other -- Freshman/continental cocked hat"],
 		"influential_women": ["Palmer, Alice Freeman, 1855-1902"],
@@ -56697,8 +56580,7 @@
 {
 	"719": {
 		"memories": ["Learning -- intellectual awareness",
-		"Learning -- other -- Appreciation of sciences",
-		null],
+		"Learning -- other -- Appreciation of sciences"],
 		"degrees": [{
 			"start_year": "",
 			"degree": "",
@@ -57026,8 +56908,7 @@
 },
 {
 	"2179": {
-		"memories": ["Learning -- critical thinking",
-		null],
+		"memories": ["Learning -- critical thinking"],
 		"degrees": [{
 			"start_year": "",
 			"degree": "BS",
@@ -57313,8 +57194,7 @@
 },
 {
 	"1668": {
-		"memories": ["Housing -- sororities -- Sorosis",
-		null],
+		"memories": ["Housing -- sororities -- Sorosis"],
 		"influential_women": ["Baker, Mary Josephine"],
 		"degrees": [{
 			"start_year": "",
@@ -57929,7 +57809,6 @@
 	"2826": {
 		"memories": ["Events -- Lectures -- Mencken, H.L.",
 		"Flora and fauna -- UM campus",
-		null,
 		"Social Life -- concerts",
 		"Social Life -- plays -- Junior Girls' Play"],
 		"influential_women": ["Palmer, Alice Freeman, 1855-1902"],
@@ -57954,7 +57833,6 @@
 		"memories": ["Buildings -- University Hall",
 		"Events -- Commencement",
 		"Groups -- performing -- Band",
-		null,
 		"Social Life -- dances -- Swingout"],
 		"degrees": [{
 			"start_year": "1922",
@@ -59667,7 +59545,6 @@
 		"Events -- Lectures -- Jordan, David S.",
 		"Interpersonal relationships -- romantic",
 		"Learning -- competition",
-		null,
 		"Social Life -- concerts"],
 		"degrees": [{
 			"start_year": "",
@@ -59932,7 +59809,6 @@
 		"Flora and fauna -- Ampitheatre",
 		"Flora and fauna -- UM campus",
 		"Learning -- courses -- Short Story",
-		null,
 		"Social Life -- events -- Cap Night",
 		"Social Life -- other -- Maize & Blue"],
 		"degrees": [{
@@ -60701,7 +60577,7 @@
 },
 {
 	"2658": {
-		"memories": [null],
+		"memories": [],
 		"degrees": [{
 			"start_year": "1906",
 			"degree": "AB",
@@ -61121,8 +60997,7 @@
 },
 {
 	"2018": {
-		"memories": ["Faculty -- Pattengill, Albert H.",
-		null],
+		"memories": ["Faculty -- Pattengill, Albert H."],
 		"degrees": [{
 			"start_year": "1902",
 			"degree": "AB",
@@ -61148,8 +61023,7 @@
 		"Faculty -- Tufts, James Hayden",
 		"Faculty -- Winkler, Max",
 		"Learning -- courses -- Spinoza, Philosophy",
-		"Learning -- courses -- Zoology",
-		null],
+		"Learning -- courses -- Zoology"],
 		"influential_women": ["Campbell, Elizabeth",
 		"Palmer, Alice Freeman, 1855-1902",
 		"Sunderland, Eliza Read, 1839-1910",
@@ -61879,8 +61753,7 @@
 },
 {
 	"89": {
-		"memories": ["Faculty -- Effinger, John Robert",
-		null],
+		"memories": ["Faculty -- Effinger, John Robert"],
 		"degrees": [{
 			"start_year": "",
 			"degree": "",
@@ -61935,7 +61808,7 @@
 },
 {
 	"83": {
-		"memories": [null],
+		"memories": [],
 		"influential_women": ["Cutler, Mary M.",
 		"Gloss, Dr. Anna A.",
 		"Hall, Emma M.",
@@ -62272,7 +62145,6 @@
 	"1656": {
 		"memories": ["Faculty -- Pattengill, Albert H.",
 		"Learning -- courses -- Iliad",
-		null,
 		"Social Life -- faculty wives -- Carhart, Mrs.",
 		"Social Life -- other -- Women's League"],
 		"influential_women": ["Colby, June Rose, 1856-",
@@ -62634,7 +62506,6 @@
 		"Faculty -- Freer, Paul C.",
 		"Faculty -- Huber, Carl",
 		"Faculty -- Novy, Frederick George",
-		null,
 		"Social Life -- other -- Cap & Gown",
 		"Social Life -- other -- Pranks"],
 		"degrees": [{
@@ -62786,7 +62657,7 @@
 			"start_year": "",
 			"degree": "",
 			"end_year": "",
-			"school": null,
+			"school": "",
 			"field": "",
 			"type": "graduate"
 		},
@@ -62894,13 +62765,10 @@
 		"Events -- UM Presidents -- Burton",
 		"Events -- UM Presidents -- Burton",
 		"Events -- UM Presidents -- Hutchins",
-		null,
-		null,
 		"Social Life -- plays -- Junior Girls' Play",
 		"Social Life -- plays -- Junior Girls' Play",
 		"Housing -- dormitories -- Helen Newberry",
 		"Housing -- dormitories -- Helen Newberry",
-		null,
 		"Housing -- dormitories -- Martha Cook",
 		"Interpersonal relationships -- friendship",
 		"Interpersonal relationships -- friendship",
@@ -63129,8 +62997,7 @@
 },
 {
 	"1438": {
-		"memories": [null,
-		"Events -- UM Presidents -- Burton",
+		"memories": ["Events -- UM Presidents -- Burton",
 		"Events -- UM Presidents -- Burton",
 		"Groups -- athletic -- Football",
 		"Groups -- athletic -- Football",
@@ -63769,8 +63636,7 @@
 {
 	"516": {
 		"memories": ["Faculty -- Vaughan, Victor C.",
-		"Interpersonal relationships -- friendship",
-		null],
+		"Interpersonal relationships -- friendship"],
 		"degrees": [{
 			"start_year": "",
 			"degree": "M.D.",
@@ -65141,7 +65007,6 @@
 {
 	"2242": {
 		"memories": ["Housing -- dormitories -- Martha Cook",
-		null,
 		"Social Life -- plays -- Junior Girls' Play"],
 		"degrees": [{
 			"start_year": "1915",
@@ -65971,7 +65836,7 @@
 },
 {
 	"2662": {
-		"memories": [null],
+		"memories": [],
 		"degrees": [{
 			"start_year": "",
 			"degree": "",
@@ -66024,8 +65889,7 @@
 },
 {
 	"2661": {
-		"memories": ["Faculty -- Beman, Wooster W.",
-		null],
+		"memories": ["Faculty -- Beman, Wooster W."],
 		"degrees": [{
 			"start_year": "",
 			"degree": "",
@@ -67501,7 +67365,6 @@
 {
 	"731": {
 		"memories": ["Events -- UM Presidents -- Angell",
-		null,
 		"Groups -- athletic -- Football",
 		"Groups -- literary and debate -- Webster Society",
 		"Learning -- courses -- International Law"],
@@ -68272,8 +68135,7 @@
 		"Faculty -- Hempl, George",
 		"Faculty -- Hudson, Richard",
 		"Faculty -- Payne, William H.",
-		"Faculty -- Russell, Israel Cook",
-		null],
+		"Faculty -- Russell, Israel Cook"],
 		"degrees": [{
 			"start_year": "1900",
 			"degree": "AB",
@@ -68444,7 +68306,6 @@
 	"356": {
 		"memories": ["Events -- Lectures -- Frost, Robert ",
 		"Learning -- critical thinking",
-		null,
 		"Social Life -- people -- Mrs. Barbour",
 		"Social Life -- other -- Reprimand re/no socializing at UM"],
 		"influential_women": ["Palmer, Alice Freeman, 1855-1902"],
@@ -68867,8 +68728,7 @@
 },
 {
 	"2329": {
-		"memories": [null,
-		"Events -- UM Presidents -- Angell",
+		"memories": ["Events -- UM Presidents -- Angell",
 		"Housing -- dormitories -- Martha Cook",
 		"Learning -- critical thinking",
 		"Social Life -- parties and celebrations -- League parties"],
@@ -69214,7 +69074,6 @@
 	"1116": {
 		"memories": ["Faculty -- Rankin, Thomas E.",
 		"Flora and fauna -- Missing student",
-		null,
 		"Social Life -- other -- Student's Poverty"],
 		"influential_women": ["Hempsted, Joanna K.",
 		"Palmer, Alice Freeman, 1855-1902",
@@ -69890,8 +69749,7 @@
 		"memories": ["Buildings -- Barbour Gymnasium",
 		"Buildings -- University Hall",
 		"Events -- UM Presidents -- Angell",
-		"Groups -- religious",
-		null],
+		"Groups -- religious"],
 		"influential_women": ["Moore, Ellen Whitley, 1889-",
 		"Nelson, Ida M.B.",
 		"Palmer, Alice Freeman, 1855-1902"],
@@ -70179,8 +70037,7 @@
 		"Faculty -- Stanley, Augustus A.",
 		"Faculty -- Thomas, Calvin",
 		"Faculty -- Walter, Edward Lorraine",
-		"Faculty -- Willard, Frederic W.",
-		null],
+		"Faculty -- Willard, Frederic W."],
 		"degrees": [{
 			"start_year": "1888",
 			"degree": "B Ph",
@@ -70649,7 +70506,7 @@
 },
 {
 	"118": {
-		"memories": [null],
+		"memories": [],
 		"departments": ["College of Literature, Science, and the Arts"],
 		"place_of_birth": {
 			"country": "United States",
@@ -70702,7 +70559,6 @@
 		"Faculty -- Stanley, Augustus A.",
 		"Groups -- musical -- Choral Union",
 		"Interpersonal relationships -- friendship",
-		null,
 		"Social Life -- concerts -- May Festival"],
 		"influential_women": ["Block, Mary",
 		"Cleveland, Elizabeth",
@@ -70827,8 +70683,7 @@
 		"memories": ["Buildings -- Library",
 		"Flora and fauna -- Ann Arbor",
 		"Housing -- dormitories -- Martha Cook",
-		"Learning -- other -- Examinations",
-		null],
+		"Learning -- other -- Examinations"],
 		"degrees": [{
 			"start_year": "1918",
 			"degree": "AB",
@@ -71384,8 +71239,7 @@
 },
 {
 	"2929": {
-		"memories": ["Faculty -- Vaughan, Victor C.",
-		null],
+		"memories": ["Faculty -- Vaughan, Victor C."],
 		"degrees": [{
 			"start_year": "",
 			"degree": "MD",
@@ -71404,7 +71258,7 @@
 },
 {
 	"2928": {
-		"memories": [null],
+		"memories": [],
 		"degrees": [{
 			"start_year": "1918",
 			"degree": "AB",
@@ -71655,7 +71509,7 @@
 },
 {
 	"1630": {
-		"memories": [null],
+		"memories": [],
 		"degrees": [{
 			"start_year": "1892",
 			"degree": "AB",
@@ -72225,8 +72079,7 @@
 {
 	"562": {
 		"memories": ["Buildings -- Library",
-		"Flora and fauna -- UM campus",
-		null],
+		"Flora and fauna -- UM campus"],
 		"degrees": [{
 			"start_year": "1914",
 			"degree": "",
@@ -72592,7 +72445,6 @@
 {
 	"726": {
 		"memories": ["Buildings -- New Library",
-		null,
 		"Social Life -- other -- Maison francaise"],
 		"influential_women": ["Hooper, Frances",
 		"Meba, Sugi",
@@ -73013,7 +72865,6 @@
 		"Groups -- athletic -- Football",
 		"Groups -- drama and theater -- Operas",
 		"Housing -- rooming houses",
-		null,
 		"Social Life -- events -- Cap Night",
 		"Social Life -- dances -- Granger's",
 		"Social Life -- other -- Rush"],
@@ -73166,7 +73017,6 @@
 		"Flora and fauna -- Area lakes",
 		"Learning -- courses -- Botany",
 		"Learning -- courses -- Zoology",
-		null,
 		"Social Life -- parties and celebrations"],
 		"degrees": [{
 			"start_year": "",
@@ -73429,8 +73279,7 @@
 {
 	"45": {
 		"memories": ["Faculty -- Pattengill, Albert H.",
-		"Groups -- athletic",
-		null],
+		"Groups -- athletic"],
 		"influential_women": ["Hamilton, Alice, 1869-1970",
 		"Jordan, Myra Beach, 1863-1946",
 		"Palmer, Alice Freeman, 1855-1902",
@@ -73503,8 +73352,7 @@
 	"40": {
 		"memories": ["Faculty -- Diekoff, Tobias",
 		"Faculty -- Effinger, John Robert",
-		"Faculty -- Meader, Clarence",
-		null],
+		"Faculty -- Meader, Clarence"],
 		"degrees": [{
 			"start_year": "",
 			"degree": "",
@@ -73662,8 +73510,7 @@
 {
 	"1293": {
 		"memories": ["Faculty -- Cooley, Charles Horton",
-		"Faculty -- Lloyd Douglass",
-		null],
+		"Faculty -- Lloyd Douglass"],
 		"influential_women": ["Palmer, Alice Freeman, 1855-1902"],
 		"degrees": [{
 			"start_year": "",
@@ -73816,7 +73663,6 @@
 {
 	"1295": {
 		"memories": ["Events -- Lectures",
-		null,
 		"Social Life -- concerts"],
 		"degrees": [{
 			"start_year": "1902",
@@ -74331,7 +74177,6 @@
 		"Groups -- clubs -- Women's League",
 		"Social Life -- plays -- Senior Girls' Play",
 		"Housing -- rooming houses",
-		null,
 		"Social Life -- faculty wives"],
 		"influential_women": ["Barton, Mary G. F.",
 		"Brown, Nellie",
