@@ -13,7 +13,7 @@ Survey Responses
 Below are the metadata fields you'll find in the JSON and CSV that describe a survey response. In the CSV file, lists are represented by a single pipe-delimited string, such as "Events -- Commencement|Faculty -- De Pont, Paul R.".
 
 Name | Question | JSON | CSV | Value
---- | --- | --- | ---| 
+--- | --- | --- | --- | ---
 ID  | ID assigned by the database. | key | alumID | integer
 First name | Name in full | first_name | first_name | string
 Middle name | Name in full | middle_name | middle_name | string
