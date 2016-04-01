@@ -3,6 +3,7 @@ from openpyxl import load_workbook
 from lxml import etree
 import shutil
 
+# preliminaries
 deposit_id = raw_input("Deposit ID: ")
 
 source_directory = os.path.join("X:\deepblue", deposit_id)
@@ -120,6 +121,7 @@ os.makedirs(os.path.join(target_directory, deposit_id))
 os.putenv("SOURCE_DIRECTORY", os.path.join("C:\Users\eckardm\work-stuff\prep_deep_blue_deposit", "archive_directory"))
 os.putenv("TARGET_DIRECTORY", os.path.join(target_directory, deposit_id))
 
+# delete temporary location
 os.system("move_with_teracopy.bat")
 os.rmdir("archive_directory")
 
