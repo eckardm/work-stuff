@@ -5,9 +5,9 @@ from lxml import etree
 '''
 deposit_id = raw_input("Deposit ID: ")
 
-source_directory = os.path.join("X:\deepblue", deposit_id)
+source_directory = os.path.join("X:\deepblue", deposit_id)'''
 target_directory = "S:\MLibrary\DeepBlue"
-
+'''
 # make working copy
 os.putenv("SOURCE_DIRECTORY", source_directory)
 
@@ -97,3 +97,13 @@ for row in ws.iter_rows(row_offset=1):
                 f.write("  Access restricted to Bentley.")
             f.write("\n")
     
+    # move objects
+    objects = [filename for filename in os.listdir("archive_directory") if not filename.startswith("deepBlue_") and not filename.startswith("item_")]
+    
+    for object in objects:
+        if object in dc_title_filenames:
+            
+            os.putenv("SOURCE_DIRECTORY", os.path.join("archive_directory", object))
+            os.putenv("TARGET_DIRECTORY", os.path.join("archive_directory", item))
+            
+            os.system("move_with_teracopy.bat")
