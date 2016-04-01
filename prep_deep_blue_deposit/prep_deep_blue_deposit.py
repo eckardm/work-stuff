@@ -1,13 +1,13 @@
 import os
 from openpyxl import load_workbook
 from lxml import etree
+import shutil
 
-'''
 deposit_id = raw_input("Deposit ID: ")
 
-source_directory = os.path.join("X:\deepblue", deposit_id)'''
+source_directory = os.path.join("X:\deepblue", deposit_id)
 target_directory = "S:\MLibrary\DeepBlue"
-'''
+
 # make working copy
 os.putenv("SOURCE_DIRECTORY", source_directory)
 
@@ -18,7 +18,7 @@ os.system("copy_with_teracopy.bat")
 
 # make simple archive format
 # make archive directory
-os.rename(deposit_id, "archive_directory")'''
+os.rename(deposit_id, "archive_directory")
 
 metadata = [filename for filename in os.listdir("archive_directory") if filename.startswith("deepBlue_")][0]
 
@@ -34,7 +34,7 @@ for row in ws.iter_rows(row_offset=1):
     number = str(counter).zfill(3)
     item = item + number
     counter += 1
-    # os.makedirs(os.path.join("archive_directory", item))
+    os.makedirs(os.path.join("archive_directory", item))
     
     # make dublin core
     identifier_other = row[0].value
@@ -46,7 +46,8 @@ for row in ws.iter_rows(row_offset=1):
     dc_date_created = str(row[6].value)
     dc_coverage_temporal = row[7].value
     dc_title_filenames = row[8].value.split("|")
-    dc_description_filenames = row[9].value.split("|")
+    if row[9].value:
+        dc_description_filenames = row[9].value.split("|")
     dc_type = row[10].value
     dc_rights_access = row[11].value
     dc_date_open = str(row[12].value)
@@ -98,7 +99,7 @@ for row in ws.iter_rows(row_offset=1):
             if dc_rights_access.startswith("Reading room access only"):
                 f.write("  Access restricted to Bentley.")
             f.write("\n")
-    '''
+    
     # move objects
     objects = [filename for filename in os.listdir("archive_directory") if not filename.startswith("deepBlue_") and not filename.startswith("item_")]
     
@@ -108,8 +109,19 @@ for row in ws.iter_rows(row_offset=1):
             os.putenv("SOURCE_DIRECTORY", os.path.join("archive_directory", object))
             os.putenv("TARGET_DIRECTORY", os.path.join("archive_directory", item))
             
-            os.system("move_with_teracopy.bat")'''
+            os.system("move_with_teracopy.bat")
 
 # delete metadata
 os.remove(os.path.join("archive_directory", metadata))
-            
+
+# move temporary directory to target directory
+os.makedirs(os.path.join(target_directory, deposit_id))
+
+os.putenv("SOURCE_DIRECTORY", os.path.join("C:\Users\eckardm\work-stuff\prep_deep_blue_deposit", "archive_directory"))
+os.putenv("TARGET_DIRECTORY", os.path.join(target_directory, deposit_id))
+
+os.system("move_with_teracopy.bat")
+os.rmdir("archive_directory")
+
+# delete source directory
+shutil.rmtree(source_directory)
