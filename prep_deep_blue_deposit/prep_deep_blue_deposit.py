@@ -84,6 +84,8 @@ for row in ws.iter_rows(row_offset=1):
     with open(os.path.join("archive_directory", item, "dublin_core.xml"), mode="w") as f:
         f.write(dublin_core)
         
+    wb._archive.close()
+    
     # make license
     with open(os.path.join("archive_directory", item, "license.txt"), mode="w") as f:
         f.write("As the designated coordinator for this Deep Blue Collection, I am authorized by the Community members to serve as their representative in all dealings with the Repository. As the designee, I ensure that I have read the Deep Blue policies. Furthermore, I have conveyed to the community the terms and conditions outlined in those policies, including the language of the standard deposit license quoted below and that the community members have granted me the authority to deposit content on their behalf.")
@@ -96,7 +98,7 @@ for row in ws.iter_rows(row_offset=1):
             if dc_rights_access.startswith("Reading room access only"):
                 f.write("  Access restricted to Bentley.")
             f.write("\n")
-    
+    '''
     # move objects
     objects = [filename for filename in os.listdir("archive_directory") if not filename.startswith("deepBlue_") and not filename.startswith("item_")]
     
@@ -106,4 +108,8 @@ for row in ws.iter_rows(row_offset=1):
             os.putenv("SOURCE_DIRECTORY", os.path.join("archive_directory", object))
             os.putenv("TARGET_DIRECTORY", os.path.join("archive_directory", item))
             
-            os.system("move_with_teracopy.bat")
+            os.system("move_with_teracopy.bat")'''
+
+# delete metadata
+os.remove(os.path.join("archive_directory", metadata))
+            
