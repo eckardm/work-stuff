@@ -45,8 +45,8 @@ for row in ws.iter_rows(row_offset=1):
     dc_date_issued = str(row[5].value)
     dc_date_created = str(row[6].value)
     dc_coverage_temporal = row[7].value
-    dc_title_filenames = row[8].value
-    dc_descrption_filenames = row[9].value
+    dc_title_filenames = row[8].value.split("|")
+    dc_description_filenames = row[9].value.split("|")
     dc_type = row[10].value
     dc_rights_access = row[11].value
     dc_date_open = str(row[12].value)
@@ -87,4 +87,13 @@ for row in ws.iter_rows(row_offset=1):
     # make license
     with open(os.path.join("archive_directory", item, "license.txt"), mode="w") as f:
         f.write("As the designated coordinator for this Deep Blue Collection, I am authorized by the Community members to serve as their representative in all dealings with the Repository. As the designee, I ensure that I have read the Deep Blue policies. Furthermore, I have conveyed to the community the terms and conditions outlined in those policies, including the language of the standard deposit license quoted below and that the community members have granted me the authority to deposit content on their behalf.")
+        
+    # make contents
+    with open(os.path.join("archive_directory", item, "contents"), mode="w") as f:
+        f.write("license.txt\n")
+        for dc_title_filename, dc_description_filename in zip(dc_title_filenames, dc_description_filenames):
+            f.write(dc_title_filename + "\tdescription:" + dc_description_filename)
+            if dc_rights_access.startswith("Reading room access only"):
+                f.write("  Access restricted to Bentley.")
+            f.write("\n")
     
