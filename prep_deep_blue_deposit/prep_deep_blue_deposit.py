@@ -83,5 +83,8 @@ for row in ws.iter_rows(row_offset=1):
     
     with open(os.path.join("archive_directory", item, "dublin_core.xml"), mode="w") as f:
         f.write(dublin_core)
-    
+        
+    # make license
+    with open(os.path.join("archive_directory", item, "license.txt"), mode="w") as f:
+        f.write("As the designated coordinator for this Deep Blue Collection, I am authorized by the Community members to serve as their representative in all dealings with the Repository. As the designee, I ensure that I have read the Deep Blue policies. Furthermore, I have conveyed to the community the terms and conditions outlined in those policies, including the language of the standard deposit license quoted below and that the community members have granted me the authority to deposit content on their behalf.")
     
