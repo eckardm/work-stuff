@@ -19,7 +19,7 @@ deposit_id = get_deposit_id()
 
 source_directory = os.path.join("X:\deepblue", deposit_id)
 temporary_directory = "archive_directory"
-target_directory = "S:\MLibrary\DeepBlue"
+target_directory = os.path.join("S:\MLibrary\DeepBlue", deposit_id)
 
 # basic check on metadata
 def get_dc_titles_and_dc_description_abstracts(directory):
@@ -225,10 +225,10 @@ for row in ws.iter_rows(row_offset=1):
 os.remove(os.path.join(temporary_directory, metadata))
 
 # move temporary directory to target directory
-os.makedirs(os.path.join(target_directory, deposit_id))
+os.makedirs(target_directory)
 
 os.putenv("SOURCE_DIRECTORY", os.path.join(os.path.dirname(os.path.abspath(__file__)), temporary_directory))
-os.putenv("TARGET_DIRECTORY", os.path.join(target_directory, deposit_id))
+os.putenv("TARGET_DIRECTORY", target_directory)
 
 # delete temporary location
 os.system("move_with_teracopy.bat")
