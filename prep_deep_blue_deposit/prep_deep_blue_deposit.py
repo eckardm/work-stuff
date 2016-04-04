@@ -1,7 +1,9 @@
 import os
 from openpyxl import load_workbook
+from collections import Counter
 from pprint import pprint
 from lxml import etree
+from time import strftime
 import shutil
 
 # preliminaries
@@ -27,7 +29,7 @@ dc_title_filenames = []
 wb = load_workbook(filename=os.path.join(source_directory, metadata), read_only=True, use_iterators=True)
 ws = wb.active
 
-for row in ws.rows:
+for row in ws.iter_rows(row_offset=1):
     for title in row[8].value.split("|"):
         dc_title_filenames.append(title)
 
@@ -137,7 +139,7 @@ for row in ws.iter_rows(row_offset=1):
     if dc_rights_access:
         etree.SubElement(dublin_core, "dcvalue", element="rights", qualifier="access").text = dc_rights_access
     
-    dc_date_open = str(row[12].value)
+    dc_date_open = row[12].value.strftime("%Y-%m-%d")
     if dc_date_open:
         etree.SubElement(dublin_core, "dcvalue", element="date", qualifier="open").text = dc_date_open
     
@@ -159,14 +161,24 @@ for row in ws.iter_rows(row_offset=1):
     # make license
     with open(os.path.join(temporary_directory, item, "license.txt"), mode="w") as f:
         f.write("As the designated coordinator for this Deep Blue Collection, I am authorized by the Community members to serve as their representative in all dealings with the Repository. As the designee, I ensure that I have read the Deep Blue policies. Furthermore, I have conveyed to the community the terms and conditions outlined in those policies, including the language of the standard deposit license quoted below and that the community members have granted me the authority to deposit content on their behalf.")
+        f.write("\n")
         
     # make contents
     with open(os.path.join(temporary_directory, item, "contents"), mode="w") as f:
         f.write("license.txt\n")
         for dc_title_filename, dc_description_filename in zip(dc_title_filenames, dc_description_filenames):
             f.write(dc_title_filename + "\tdescription:" + dc_description_filename)
-            if dc_rights_access.startswith("Reading room access only"):
-                f.write("  Access restricted to Bentley.")
+            
+            if dc_rights_access.startswith("This content is open for research"):
+                f.write("\tpermissions:Anonymous")
+            elif dc_rights_access.startswith("Reading room access only"):
+                f.write(" Access restricted to Bentley.")
+                f.write("\tpermissions:Bentley Only Users")
+            else:
+                print "Check out the permissions on these... looks like they're complicated."
+                print dc_rights_access
+                quit()
+                
             f.write("\n")
     
     # move objects
