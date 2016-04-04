@@ -7,69 +7,98 @@ from time import strftime
 import shutil
 
 # preliminaries
-while True:
-    deposit_id = raw_input("Deposit ID: ")
-    if deposit_id in os.listdir("X:\deepblue"):
-        break
-    print "Please enter a valid Deposit ID."
+def get_deposit_id():
+    while True:
+        deposit_id = raw_input("Deposit ID: ")
+        if deposit_id in os.listdir("X:\deepblue"):
+            break
+        print "Enter a valid Deposit ID."
+    return deposit_id
+    
+deposit_id = get_deposit_id()
 
 source_directory = os.path.join("X:\deepblue", deposit_id)
 temporary_directory = "archive_directory"
 target_directory = "S:\MLibrary\DeepBlue"
 
 # basic check on metadata
-metadata = [filename for filename in os.listdir(source_directory) if filename.startswith("deepBlue_")][0]
+def get_dc_titles_and_dc_description_abstracts(directory):
+    metadata = [filename for filename in os.listdir(directory) if filename.startswith("deepBlue_")][0]
 
-dc_titles = []
-dc_description_abstracts = []
+    dc_titles = []
+    dc_description_abstracts = []
 
-filenames = []
-dc_title_filenames = []
+    wb = load_workbook(filename=os.path.join(directory, metadata), read_only=True, use_iterators=True)
+    ws = wb.active
 
-wb = load_workbook(filename=os.path.join(source_directory, metadata), read_only=True, use_iterators=True)
-ws = wb.active
-
-for row in ws.iter_rows(row_offset=1):
-    for title in row[8].value.split("|"):
-        dc_title_filenames.append(title)
-
-    dc_titles.append(row[1].value)
-    dc_description_abstracts.append(row[2].value)
+    for row in ws.iter_rows(row_offset=1):
+        dc_titles.append(row[1].value)
+        dc_description_abstracts.append(row[2].value)
+        
+    return dc_titles, dc_description_abstracts
     
-else:
-    if filename != "Thumbs.db":
-        filenames.append(filename)
+def get_filenames_and_dc_title_filenames(directory):
+    filenames = []
+    dc_title_filenames = []
+
+    for filename in os.listdir(directory):
+        if filename != "Thumbs.db" and not filename.startswith("deepBlue_"):
+            filenames.append(filename)
+            
+    metadata = [filename for filename in os.listdir(directory) if filename.startswith("deepBlue_")][0]
+            
+    wb = load_workbook(filename=os.path.join(directory, metadata), read_only=True, use_iterators=True)
+    ws = wb.active
+
+    for row in ws.iter_rows(row_offset=1):
+        for title in row[8].value.split("|"):
+            dc_title_filenames.append(title)
+        
+    return filenames, dc_title_filenames
 
 # unique title check
-if len(dc_titles) != len(set(dc_titles)):
-    print "All titles not unique..."
-    print pprint(Counter(dc_titles).most_common())
-    quit()
+def check_that_dc_titles_are_unique(dc_titles):
+    if len(dc_titles) != len(set(dc_titles)):
+        print "All titles not unique..."
+        print pprint(Counter(dc_titles).most_common())
+        quit()
 
 # unique description check
-if len(dc_description_abstracts) != len(set(dc_description_abstracts)):
-    print "All descriptions not unique..."   
-    print pprint(Counter(dc_description_abstracts).most_common())
-    quit()
+def check_that_dc_description_abstracts_are_unique(dc_description_abstracts):
+    if len(dc_description_abstracts) != len(set(dc_description_abstracts)):
+        print "All descriptions not unique..."   
+        print pprint(Counter(dc_description_abstracts).most_common())
+        quit()
 
 # filenames and filenames in metadata check
-filenames_not_in_filenames_in_metadata = []
+def check_that_filenames_match_dc_title_filenames(filenames, dc_title_filenames):
+    filenames_not_in_filenames_in_metadata = []
 
-for filename in filenames:
-    if filename not in dc_title_filenames:
-        filenames_not_in_filenames_in_metadata.append(filename)
+    for filename in filenames:
+        if filename not in dc_title_filenames:
+            filenames_not_in_filenames_in_metadata.append(filename)
+            
+    if len(filenames_not_in_filenames_in_metadata) > 0:
+        print "All filenames and filenames in metadata do not match..."
+        for filename in filenames_not_in_filenames_in_metadata:
+            print filename
+        quit()
         
-if len(filenames_not_in_filenames_in_metadata) > 0:
-    print "All filenames and filenames in metadata do not match..."
-    for filename in filenames_not_in_filenames_in_metadata:
-        print filename
-    quit()
+def basic_metadata_check(directory):
+    dc_titles, dc_description_abstracts = get_dc_titles_and_dc_description_abstracts(directory)
+    check_that_dc_titles_are_unique(dc_titles)
+    check_that_dc_description_abstracts_are_unique(dc_description_abstracts)
+    
+    filenames, dc_title_filenames = get_filenames_and_dc_title_filenames(directory)
+    check_that_filenames_match_dc_title_filenames(filenames, dc_title_filenames)
+    
+basic_metadata_check(source_directory)
 
 # make working copy
 os.putenv("SOURCE_DIRECTORY", source_directory)
 
 os.makedirs(deposit_id)
-os.putenv("TARGET_DIRECTORY", "C:\Users\eckardm\work-stuff\prep_deep_blue_deposit")
+os.putenv("TARGET_DIRECTORY", os.path.dirname(os.path.abspath(__file__)))
 
 os.system("copy_with_teracopy.bat")
 
@@ -198,7 +227,7 @@ os.remove(os.path.join(temporary_directory, metadata))
 # move temporary directory to target directory
 os.makedirs(os.path.join(target_directory, deposit_id))
 
-os.putenv("SOURCE_DIRECTORY", os.path.join("C:\Users\eckardm\work-stuff\prep_deep_blue_deposit", temporary_directory))
+os.putenv("SOURCE_DIRECTORY", os.path.join(os.path.dirname(os.path.abspath(__file__)), temporary_directory))
 os.putenv("TARGET_DIRECTORY", os.path.join(target_directory, deposit_id))
 
 # delete temporary location
