@@ -7,6 +7,122 @@ from itertools import izip_longest
 from time import strftime
 import shutil
 
+'''
+prep of data load into Deep Blue
+================================
+
+This is the directory structure that deep blue expect when I ingest items.  
+
+I usually call the dir to ingest archive ( but any name is fine).  Under this directory you want to put every item you want in a separate directory ( one directory per item ).  Give these dirs a unique numeric value.  In each of these dirs.  You need the following files:
+
+dublin_core.xml => This file contains all the metadata. Here is an example.
+
+<dcvalue element="title" qualifier="none">The name of title</dcvalue>
+
+license.txt => this is a text file with the license.  This is a constant.
+
+contents => this file contains a list of all the files to upload for this item ( except for the dublin_core.xml file).  So for example:
+license.txt
+
+a.zip<tab>description:This file is really important.  Access restricted to UM users.
+
+b.zip<tab>description:This file is really important.  Access restricted to UM users.
+
+Things to keep in mind:
+(1)  All the items in the archive directory should have the same rights - all free, all restricted to UM, all restricted to Bentley IP, etc...
+
+(2) The content file should always list the license.txt file and the other files, if they have a description you need a tab between the filename and the word description:, also you need to include some text that contains any restrictions.  This is to get the icon to show up on the filename.
+
+Access restricted to U-M
+
+Access restricted to Bentley
+
+(3) When creating the dubline_core.xml file, you'll need to know what the dc values are are for deepblue.  Here is a comprehensive list of all of them.  You'll use very few of them.  Note that things like mime type you wont what in the list, since deep blue computes that on ingest.  You always need:
+
+These are for the browse.
+title.none
+date.issued          
+contributor.author
+
+Here is the list:
+contributor.none
+ contributor.advisor
+ contributor.editor
+ contributor.author
+ contributor.illustrator
+ contributor.other
+ creator.none
+ date.available
+ date.copyright
+ date.created
+ date.issued
+ subject.hlbsecondlevel
+ identifier.govdoc
+ identifier.isbn
+ identifier.issn
+ identifier.sici
+ identifier.ismn
+ identifier.other
+ identifier.uri
+ description.none
+ description.abstract
+ identifier.orcid
+ language.iso
+ publisher.none
+ date.open
+ rights.none
+ source.none
+ contributor.committeemember
+ subject.none
+ identifier.citation
+ subject.other
+ title.none
+ type.none
+ subject.hlbtoplevel
+ identifier.pmid
+ identifier.doi
+ identifier.source
+ identifier.citedreference
+ rights.access
+ identifier.none
+ rights.copyright
+ abstract.none
+ creator.none
+ date.none
+ identifier.none
+ issued.none
+ publisher.none
+ rights.none
+ subject.none
+ title.none
+ type.none
+
+(4) If you have items that are actually embargoed.  This means you don't want access to this item at all. You need this in the dublin_core.xml file.  In this example should not be made available for 12 months.
+
+<dcvalue element="date" qualifier="available">WITHHELD_12_MONTHS</dcvalue>
+
+the groups and their rights
+===========================
+
+Anonymous - bitstream is free to everyone
+
+Bentley Only Users - this one is strictly restricted to this ip 141.211.39.* without cosign option. 
+AND 
+must have this in the file description:  Access restricted to Bentley
+
+example:
+https://deepblue.lib.umich.edu/handle/2027.42/109255
+
+Bentley Users - This one has more ips at bentley and users can cosign in to get it.
+
+example:
+https://deepblue.lib.umich.edu/handle/2027.42/102530
+
+UM Users - access restricted to UM IP address and cosign.
+
+example:
+https://deepblue.lib.umich.edu/handle/2027.42/63650'''
+
 # preliminaries
 def get_deposit_id():
     while True:
@@ -271,6 +387,7 @@ def make_dspace_simple_archive_format(directory, metadata):
         
 make_dspace_simple_archive_format(temporary_directory, metadata)
 
+# moving temporary directory
 def move_to_mlibrary_deep_blue(temporary_directory, target_directory):
     print "Moving to S:\MLibrary\DeepBlue..."
     
@@ -282,6 +399,7 @@ def move_to_mlibrary_deep_blue(temporary_directory, target_directory):
     
 move_to_mlibrary_deep_blue(temporary_directory, target_directory)
 
+# cleaning everything up
 def clean_up_temporary_directory(directory):
     print "Clean up, clean up, everybody do your share..."
     
