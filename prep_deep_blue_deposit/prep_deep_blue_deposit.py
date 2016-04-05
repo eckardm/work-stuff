@@ -3,6 +3,7 @@ from openpyxl import load_workbook
 from collections import Counter
 from pprint import pprint
 from lxml import etree
+from itertools import izip_longest
 from time import strftime
 import shutil
 
@@ -13,6 +14,7 @@ def get_deposit_id():
         if deposit_id in os.listdir("X:\deepblue"):
             break
         print "Enter a valid Deposit ID."
+        
     return deposit_id
     
 deposit_id = get_deposit_id()
@@ -21,10 +23,10 @@ source_directory = os.path.join("X:\deepblue", deposit_id)
 temporary_directory = "archive_directory"
 target_directory = os.path.join("S:\MLibrary\DeepBlue", deposit_id)
 
-# basic check on metadata
-def get_dc_titles_and_dc_description_abstracts(directory):
-    metadata = [filename for filename in os.listdir(directory) if filename.startswith("deepBlue_")][0]
+metadata = [filename for filename in os.listdir(source_directory) if filename.startswith("deepBlue_")][0]
 
+# basic metadata check
+def get_dc_titles_and_dc_description_abstracts(directory, metadata):
     dc_titles = []
     dc_description_abstracts = []
 
@@ -37,15 +39,13 @@ def get_dc_titles_and_dc_description_abstracts(directory):
         
     return dc_titles, dc_description_abstracts
     
-def get_filenames_and_dc_title_filenames(directory):
+def get_filenames_and_dc_title_filenames(directory, metadata):
     filenames = []
     dc_title_filenames = []
 
     for filename in os.listdir(directory):
         if filename != "Thumbs.db" and not filename.startswith("deepBlue_"):
             filenames.append(filename)
-            
-    metadata = [filename for filename in os.listdir(directory) if filename.startswith("deepBlue_")][0]
             
     wb = load_workbook(filename=os.path.join(directory, metadata), read_only=True, use_iterators=True)
     ws = wb.active
@@ -56,21 +56,18 @@ def get_filenames_and_dc_title_filenames(directory):
         
     return filenames, dc_title_filenames
 
-# unique title check
 def check_that_dc_titles_are_unique(dc_titles):
     if len(dc_titles) != len(set(dc_titles)):
         print "All titles not unique..."
         print pprint(Counter(dc_titles).most_common())
         quit()
 
-# unique description check
 def check_that_dc_description_abstracts_are_unique(dc_description_abstracts):
     if len(dc_description_abstracts) != len(set(dc_description_abstracts)):
         print "All descriptions not unique..."   
         print pprint(Counter(dc_description_abstracts).most_common())
         quit()
 
-# filenames and filenames in metadata check
 def check_that_filenames_match_dc_title_filenames(filenames, dc_title_filenames):
     filenames_not_in_filenames_in_metadata = []
 
@@ -84,43 +81,44 @@ def check_that_filenames_match_dc_title_filenames(filenames, dc_title_filenames)
             print filename
         quit()
         
-def basic_metadata_check(directory):
-    dc_titles, dc_description_abstracts = get_dc_titles_and_dc_description_abstracts(directory)
+def basic_metadata_check(directory, metadata):
+    print "Performing basic metadata check..."
+    
+    dc_titles, dc_description_abstracts = get_dc_titles_and_dc_description_abstracts(directory, metadata)
     check_that_dc_titles_are_unique(dc_titles)
     check_that_dc_description_abstracts_are_unique(dc_description_abstracts)
     
-    filenames, dc_title_filenames = get_filenames_and_dc_title_filenames(directory)
+    filenames, dc_title_filenames = get_filenames_and_dc_title_filenames(directory, metadata)
     check_that_filenames_match_dc_title_filenames(filenames, dc_title_filenames)
     
-basic_metadata_check(source_directory)
+basic_metadata_check(source_directory, metadata)
 
 # make working copy
-os.putenv("SOURCE_DIRECTORY", source_directory)
-
-os.makedirs(deposit_id)
-os.putenv("TARGET_DIRECTORY", os.path.dirname(os.path.abspath(__file__)))
-
-os.system("copy_with_teracopy.bat")
-
-# make simple archive format
-# make archive directory
-os.rename(deposit_id, temporary_directory)
-
-wb = load_workbook(filename=os.path.join(temporary_directory, metadata), read_only=True, use_iterators=True)
-ws = wb.active
-
-counter = 1
-
-for row in ws.iter_rows(row_offset=1):
+def make_working_copy(source_directory):
+    print "Making working copy..."
     
-    # make items
+    os.makedirs(deposit_id)
+    
+    os.putenv("SOURCE_DIRECTORY", source_directory)    
+    os.putenv("TARGET_DIRECTORY", os.path.dirname(os.path.abspath(__file__)))
+    os.system('"C:\Program Files\TeraCopy\TeraCopy.exe" Copy %SOURCE_DIRECTORY% %TARGET_DIRECTORY%')
+    
+make_working_copy(source_directory)
+    
+# make archive directory
+def make_archive_directory(directory):
+    os.rename(deposit_id, directory)
+
+def make_item(directory, counter):
     item = "item_"
     number = str(counter).zfill(3)
     item = item + number
-    counter += 1
-    os.makedirs(os.path.join(temporary_directory, item))
     
-    # make dublin core
+    os.makedirs(os.path.join(directory, item))
+    
+    return item    
+    
+def make_dublin_core(directory, row, item):
     dublin_core = etree.Element("dublin_core")
     
     identifier_other = row[0].value
@@ -154,11 +152,6 @@ for row in ws.iter_rows(row_offset=1):
     if dc_coverage_temporal:
         etree.SubElement(dublin_core, "dcvalue", element="coverage", qualifier="temporal").text = dc_coverage_temporal
     
-    dc_title_filenames = row[8].value.split("|")
-    
-    if row[9].value:
-        dc_description_filenames = row[9].value.split("|")
-    
     if row[10].value:
         dc_types = row[10].value.split("| ")
         for dc_type in dc_types:
@@ -182,21 +175,47 @@ for row in ws.iter_rows(row_offset=1):
     
     dublin_core = etree.tostring(dublin_core, pretty_print=True, xml_declaration=True, encoding="utf-8", standalone=False)
     
-    with open(os.path.join(temporary_directory, item, "dublin_core.xml"), mode="w") as f:
+    with open(os.path.join(directory, item, "dublin_core.xml"), mode="w") as f:
         f.write(dublin_core)
         
-    wb._archive.close()
-    
-    # make license
-    with open(os.path.join(temporary_directory, item, "license.txt"), mode="w") as f:
-        f.write("As the designated coordinator for this Deep Blue Collection, I am authorized by the Community members to serve as their representative in all dealings with the Repository. As the designee, I ensure that I have read the Deep Blue policies. Furthermore, I have conveyed to the community the terms and conditions outlined in those policies, including the language of the standard deposit license quoted below and that the community members have granted me the authority to deposit content on their behalf.")
+def make_license(directory, item):
+    with open(os.path.join(directory, item, "license.txt"), mode="w") as f:
+        
+        f.write("As the designated coordinator for this Deep Blue Collection, \
+        I am authorized by the Community members to serve as their representative \
+        in all dealings with the Repository. As the designee, I ensure that I \
+        have read the Deep Blue policies. Furthermore, I have conveyed to the \
+        community the terms and conditions outlined in those policies, including \
+        the language of the standard deposit license quoted below and that the \
+        community members have granted me the authority to deposit content on \
+        their behalf.")
         f.write("\n")
         
-    # make contents
-    with open(os.path.join(temporary_directory, item, "contents"), mode="w") as f:
+def get_dc_title_filenames_and_dc_description_filenames(row):
+    dc_title_filenames = row[8].value.split("|")
+    
+    dc_description_filenames = []
+    if row[9].value:
+        dc_description_filenames = row[9].value.split("|")
+        
+    return dc_title_filenames, dc_description_filenames
+    
+def get_dc_rights_access(row):
+    dc_rights_access = row[11].value
+
+    return dc_rights_access
+        
+def make_contents(directory, item, dc_title_filenames, dc_description_filenames, dc_rights_access):
+    with open(os.path.join(directory, item, "contents"), mode="w") as f:
+        
         f.write("license.txt\n")
-        for dc_title_filename, dc_description_filename in zip(dc_title_filenames, dc_description_filenames):
-            f.write(dc_title_filename + "\tdescription:" + dc_description_filename)
+        
+        for dc_title_filename, dc_description_filename in izip_longest(dc_title_filenames, dc_description_filenames):
+            
+            f.write(dc_title_filename)
+            
+            if dc_description_filename:
+                f.write("\tdescription:" + dc_description_filename)
             
             if dc_rights_access.startswith("This content is open for research"):
                 f.write("\tpermissions:Anonymous")
@@ -210,26 +229,64 @@ for row in ws.iter_rows(row_offset=1):
                 
             f.write("\n")
     
-    # move objects
-    objects = [filename for filename in os.listdir(temporary_directory) if not filename.startswith("deepBlue_") and not filename.startswith("item_")]
+def move_objects(directory, item, dc_title_filenames):
+    objects = [filename for filename in os.listdir(directory) if filename != metadata and not filename.startswith("item_")]
     
     for object in objects:
         if object in dc_title_filenames:
             
-            os.putenv("SOURCE_DIRECTORY", os.path.join(temporary_directory, object))
-            os.putenv("TARGET_DIRECTORY", os.path.join(temporary_directory, item))
-            
-            os.system("move_with_teracopy.bat")
+            os.putenv("SOURCE_DIRECTORY", os.path.join(directory, object))
+            os.putenv("TARGET_DIRECTORY", os.path.join(directory, item))
+            os.system('"C:\Program Files\TeraCopy\TeraCopy.exe" Move %SOURCE_DIRECTORY% %TARGET_DIRECTORY%')
 
-# delete metadata
-os.remove(os.path.join(temporary_directory, metadata))
+def delete_metadata(directory, metadata):
+    os.remove(os.path.join(directory, metadata))
 
-# move temporary directory to target directory
-os.makedirs(target_directory)
+def make_dspace_simple_archive_format(directory, metadata):
+    print "Converting AutoPro output to DSpace Simple Archive Format (SAF)..."
+    
+    make_archive_directory(directory)
+    
+    wb = load_workbook(filename=os.path.join(directory, metadata), read_only=True, use_iterators=True)
+    ws = wb.active
 
-os.putenv("SOURCE_DIRECTORY", os.path.join(os.path.dirname(os.path.abspath(__file__)), temporary_directory))
-os.putenv("TARGET_DIRECTORY", target_directory)
+    counter = 1
 
-# delete temporary location
-os.system("move_with_teracopy.bat")
-shutil.rmtree(temporary_directory)
+    for row in ws.iter_rows(row_offset=1):
+        item = make_item(directory, counter)
+        make_dublin_core(directory, row, item)
+        
+        make_license(directory, item)
+        
+        dc_title_filenames, dc_description_filenames = get_dc_title_filenames_and_dc_description_filenames(row)
+        dc_rights_access = get_dc_rights_access(row)
+        make_contents(directory, item, dc_title_filenames, dc_description_filenames, dc_rights_access)
+               
+        move_objects(directory, item, dc_title_filenames)
+        
+        counter += 1
+        
+    wb._archive.close()
+    delete_metadata(directory, metadata)
+        
+make_dspace_simple_archive_format(temporary_directory, metadata)
+
+def move_to_mlibrary_deep_blue(temporary_directory, target_directory):
+    print "Moving to S:\MLibrary\DeepBlue..."
+    
+    os.makedirs(target_directory)
+
+    os.putenv("SOURCE_DIRECTORY", os.path.join(os.path.dirname(os.path.abspath(__file__)), temporary_directory))
+    os.putenv("TARGET_DIRECTORY", target_directory)
+    os.system('"C:\Program Files\TeraCopy\TeraCopy.exe" Move %SOURCE_DIRECTORY% %TARGET_DIRECTORY%')
+    
+move_to_mlibrary_deep_blue(temporary_directory, target_directory)
+
+def clean_up_temporary_directory(directory):
+    print "Clean up, clean up, everybody do your share..."
+    
+    shutil.rmtree(directory)
+    
+clean_up_temporary_directory(temporary_directory)
+
+print "Alright, we're done!"
