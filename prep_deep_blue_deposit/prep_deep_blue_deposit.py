@@ -334,10 +334,10 @@ def make_contents(directory, item, dc_title_filenames, dc_description_filenames,
                 f.write("\tdescription:" + dc_description_filename)
             
             if dc_rights_access.startswith("This content is open for research"):
-                f.write("\tpermissions:Anonymous")
+                f.write("\tpermissions:-r 'Anonymous'")
             elif dc_rights_access.startswith("Reading room access only"):
                 f.write(" Access restricted to Bentley.")
-                f.write("\tpermissions:Bentley Only Users")
+                f.write("\tpermissions:-r 'Bentley Only Users'")
             else:
                 print "Check out the permissions on these... looks like they're complicated."
                 print dc_rights_access
