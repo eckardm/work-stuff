@@ -98,6 +98,12 @@ We've included a few example scripts and utilities to help you get started diggi
   * [**top_ten_occupations.py**](code_examples/top_ten_occupations.py) uses the JSON to create a list of all occupations, create a count of each unique occupation and then sort them in reverse order.
   * [**graduate_and_undergraduate_degrees.py**](code_examples/graduate_and_undergraduate_degrees.py) uses the JSON to get a count of degree types (undergraduate or graduate) and percentages, and then uses [matplotlib](http://matplotlib.org/) to do a [very] basic visualization of these percentages.
   * You're code here!
+  
+It's also easy to create maps like this...
+
+![Businesses](womens_voices-businesses.PNG)
+
+...from the above dataset (this one maps the location of alumnae businesses relative to the University of Michigan). Simply upload the CSV to a utility like [Palladio](http://palladio.designhumanities.org/).
 
 Pull Requests and Issues
 ------------------------
