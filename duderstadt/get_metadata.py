@@ -1,7 +1,4 @@
 import os
-from bs4 import BeautifulSoup
-import re
-import cPickle as pickle
 
 paths = ["C:\Users\eckardm\work-stuff\duderstadt\9811_0001\data\jjd_closed", "C:\Users\eckardm\work-stuff\duderstadt\9811_0001\data\jjdhtml"]
 
