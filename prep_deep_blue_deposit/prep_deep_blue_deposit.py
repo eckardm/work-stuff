@@ -7,122 +7,6 @@ from itertools import izip_longest
 from time import strftime
 import shutil
 
-'''
-prep of data load into Deep Blue
-================================
-
-This is the directory structure that deep blue expect when I ingest items.  
-
-I usually call the dir to ingest archive ( but any name is fine).  Under this directory you want to put every item you want in a separate directory ( one directory per item ).  Give these dirs a unique numeric value.  In each of these dirs.  You need the following files:
-
-dublin_core.xml => This file contains all the metadata. Here is an example.
-
-<dcvalue element="title" qualifier="none">The name of title</dcvalue>
-
-license.txt => this is a text file with the license.  This is a constant.
-
-contents => this file contains a list of all the files to upload for this item ( except for the dublin_core.xml file).  So for example:
-license.txt
-
-a.zip<tab>description:This file is really important.  Access restricted to UM users.
-
-b.zip<tab>description:This file is really important.  Access restricted to UM users.
-
-Things to keep in mind:
-(1)  All the items in the archive directory should have the same rights - all free, all restricted to UM, all restricted to Bentley IP, etc...
-
-(2) The content file should always list the license.txt file and the other files, if they have a description you need a tab between the filename and the word description:, also you need to include some text that contains any restrictions.  This is to get the icon to show up on the filename.
-
-Access restricted to U-M
-
-Access restricted to Bentley
-
-(3) When creating the dubline_core.xml file, you'll need to know what the dc values are are for deepblue.  Here is a comprehensive list of all of them.  You'll use very few of them.  Note that things like mime type you wont what in the list, since deep blue computes that on ingest.  You always need:
-
-These are for the browse.
-title.none
-date.issued          
-contributor.author
-
-Here is the list:
-contributor.none
- contributor.advisor
- contributor.editor
- contributor.author
- contributor.illustrator
- contributor.other
- creator.none
- date.available
- date.copyright
- date.created
- date.issued
- subject.hlbsecondlevel
- identifier.govdoc
- identifier.isbn
- identifier.issn
- identifier.sici
- identifier.ismn
- identifier.other
- identifier.uri
- description.none
- description.abstract
- identifier.orcid
- language.iso
- publisher.none
- date.open
- rights.none
- source.none
- contributor.committeemember
- subject.none
- identifier.citation
- subject.other
- title.none
- type.none
- subject.hlbtoplevel
- identifier.pmid
- identifier.doi
- identifier.source
- identifier.citedreference
- rights.access
- identifier.none
- rights.copyright
- abstract.none
- creator.none
- date.none
- identifier.none
- issued.none
- publisher.none
- rights.none
- subject.none
- title.none
- type.none
-
-(4) If you have items that are actually embargoed.  This means you don't want access to this item at all. You need this in the dublin_core.xml file.  In this example should not be made available for 12 months.
-
-<dcvalue element="date" qualifier="available">WITHHELD_12_MONTHS</dcvalue>
-
-the groups and their rights
-===========================
-
-Anonymous - bitstream is free to everyone
-
-Bentley Only Users - this one is strictly restricted to this ip 141.211.39.* without cosign option. 
-AND 
-must have this in the file description:  Access restricted to Bentley
-
-example:
-https://deepblue.lib.umich.edu/handle/2027.42/109255
-
-Bentley Users - This one has more ips at bentley and users can cosign in to get it.
-
-example:
-https://deepblue.lib.umich.edu/handle/2027.42/102530
-
-UM Users - access restricted to UM IP address and cosign.
-
-example:
-https://deepblue.lib.umich.edu/handle/2027.42/63650'''
-
 # preliminaries
 def get_deposit_id():
     while True:
@@ -137,7 +21,9 @@ deposit_id = get_deposit_id()
 
 source_directory = os.path.join("X:\deepblue", deposit_id)
 temporary_directory = "archive_directory"
-target_directory = os.path.join("S:\MLibrary\DeepBlue", deposit_id)
+target_directory = os.path.join("S:\MLibrary\DeepBlue")
+
+bentleystaff_items = []
 
 metadata = [filename for filename in os.listdir(source_directory) if filename.startswith("deepBlue_")][0]
 
@@ -213,11 +99,7 @@ basic_metadata_check(source_directory, metadata)
 def make_working_copy(source_directory):
     print "Making working copy..."
     
-    os.makedirs(deposit_id)
-    
-    os.putenv("SOURCE_DIRECTORY", source_directory)    
-    os.putenv("TARGET_DIRECTORY", os.path.dirname(os.path.abspath(__file__)))
-    os.system('"C:\Program Files\TeraCopy\TeraCopy.exe" Copy %SOURCE_DIRECTORY% %TARGET_DIRECTORY%')
+    shutil.copytree(source_directory, os.path.join(os.path.dirname(os.path.abspath(__file__)), deposit_id))
     
 make_working_copy(source_directory)
     
@@ -264,7 +146,7 @@ def make_dublin_core(directory, row, item):
     if dc_date_created:
         etree.SubElement(dublin_core, "dcvalue", element="date", qualifier="created").text = dc_date_created
         
-    dc_coverage_temporal = row[7].value
+    dc_coverage_temporal = str(row[7].value)
     if dc_coverage_temporal:
         etree.SubElement(dublin_core, "dcvalue", element="coverage", qualifier="temporal").text = dc_coverage_temporal
     
@@ -276,17 +158,8 @@ def make_dublin_core(directory, row, item):
     dc_rights_access = row[11].value
     if dc_rights_access:
         etree.SubElement(dublin_core, "dcvalue", element="rights", qualifier="access").text = dc_rights_access
-        
-        if dc_rights_access.startswith("Executive Records"):
-            etree.SubElement(dublin_core, "dcvalue", element="date", qualifier="available").text = "WITHHELD_240_MONTHS"
-        elif dc_rights_access.startswith("Personnel Records"):
-            etree.SubElement(dublin_core, "dcvalue", element="date", qualifier="available").text = "WITHHELD_360_MONTHS"
-        elif dc_rights_access.startswith("Student Records"):
-            etree.SubElement(dublin_core, "dcvalue", element="date", qualifier="available").text = "WITHHELD_900_MONTHS"
-        elif dc_rights_access.startswith("Patient/Client Records"):
-            etree.SubElement(dublin_core, "dcvalue", element="date", qualifier="available").text = "WITHHELD_1200_MONTHS"
-        else:
-            continue
+        if dc_rights_access.startswith("Executive Records") or dc_rights_access.startswith("Personnel Records") or dc_rights_access.startswith("Student Records") or dc_rights_access.startswith("Patient/Client Records"):
+            bentleystaff_items.append(item)
     
     dc_date_open = row[12].value.strftime("%Y-%m-%d")
     if dc_date_open:
@@ -349,9 +222,11 @@ def make_contents(directory, item, dc_title_filenames, dc_description_filenames,
             elif dc_rights_access.startswith("Reading room access only"):
                 f.write(" Access restricted to Bentley.")
                 f.write("\tpermissions:-r 'Bentley Only Users'")
+            elif dc_rights_access.startswith("Executive Records") or dc_rights_access.startswith("Personnel Records") or dc_rights_access.startswith("Student Records") or dc_rights_access.startswith("Patient/Client Records"):
+                f.write("\tpermissions:-r 'BentleyStaff'")
             else:
-                continue
-                
+                print "Wierd permissions on " + item + ", DEAL WITH IT!"
+
             f.write("\n")
     
 def move_objects(directory, item, dc_title_filenames):
@@ -360,9 +235,7 @@ def move_objects(directory, item, dc_title_filenames):
     for object in objects:
         if object in dc_title_filenames:
             
-            os.putenv("SOURCE_DIRECTORY", os.path.join(directory, object))
-            os.putenv("TARGET_DIRECTORY", os.path.join(directory, item))
-            os.system('"C:\Program Files\TeraCopy\TeraCopy.exe" Move %SOURCE_DIRECTORY% %TARGET_DIRECTORY%')
+            shutil.move(os.path.join(directory, object), os.path.join(directory, item))
 
 def delete_metadata(directory, metadata):
     os.remove(os.path.join(directory, metadata))
@@ -397,16 +270,21 @@ def make_dspace_simple_archive_format(directory, metadata):
 make_dspace_simple_archive_format(temporary_directory, metadata)
 
 # moving temporary directory
-def move_to_mlibrary_deep_blue(temporary_directory, target_directory):
+def move_to_mlibrary_deep_blue(temporary_directory, target_directory, deposit_id):
     print "Moving to S:\MLibrary\DeepBlue..."
     
-    os.makedirs(target_directory)
-
-    os.putenv("SOURCE_DIRECTORY", os.path.join(os.path.dirname(os.path.abspath(__file__)), temporary_directory))
-    os.putenv("TARGET_DIRECTORY", target_directory)
-    os.system('"C:\Program Files\TeraCopy\TeraCopy.exe" Move %SOURCE_DIRECTORY% %TARGET_DIRECTORY%')
+    shutil.copytree(os.path.join(os.path.dirname(os.path.abspath(__file__)), temporary_directory), os.path.join(target_directory, deposit_id))
     
-move_to_mlibrary_deep_blue(temporary_directory, target_directory)
+move_to_mlibrary_deep_blue(temporary_directory, target_directory, deposit_id)
+
+# restructuring bentleystaff items
+def restructuring_bentleystaff_items(target_directory, bentleystaff_items):
+    print "Restructuing BentleyStaff items..."
+    
+    for bentleystaff_item in bentleystaff_items:
+        shutil.copytree(os.path.join(target_directory, deposit_id, bentleystaff_item), os.path.join(target_directory, deposit_id + "-BentleyStaff", bentleystaff_item))
+    
+restructuring_bentleystaff_items(target_directory, bentleystaff_items)    
 
 # cleaning everything up
 def clean_up_temporary_directory(directory):
