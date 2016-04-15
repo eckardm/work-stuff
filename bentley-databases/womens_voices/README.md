@@ -22,6 +22,7 @@ Question | Field(s) | Value(s) | Notes
 Name in full | first_name, middle_name, married_name | strings | 
 Maiden name | last_name | string | 
 Address (Business) | address_business (city, state, country) | address_business is a dictionary, city, state and country are strings | 
+Address (Business) Coordinates | address_business_latlong |  | Currenlty only in CSV
 Address (Home) | address_home (city, state, country) | address_home is a dictionary, city, state and country are strings | 
 Place of birth | place_of_birth (city, state, country) | place_of_birth is a dictionary, city, state and country are strings | 
 Race | race | string | 
