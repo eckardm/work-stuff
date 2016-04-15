@@ -276,6 +276,17 @@ def make_dublin_core(directory, row, item):
     dc_rights_access = row[11].value
     if dc_rights_access:
         etree.SubElement(dublin_core, "dcvalue", element="rights", qualifier="access").text = dc_rights_access
+        
+        if dc_rights_access.startswith("Executive Records"):
+            etree.SubElement(dublin_core, "dcvalue", element="date", qualifier="available").text = "WITHHELD_240_MONTHS"
+        elif dc_rights_access.startswith("Personnel Records"):
+            etree.SubElement(dublin_core, "dcvalue", element="date", qualifier="available").text = "WITHHELD_360_MONTHS"
+        elif dc_rights_access.startswith("Student Records"):
+            etree.SubElement(dublin_core, "dcvalue", element="date", qualifier="available").text = "WITHHELD_900_MONTHS"
+        elif dc_rights_access.startswith("Patient/Client Records"):
+            etree.SubElement(dublin_core, "dcvalue", element="date", qualifier="available").text = "WITHHELD_1200_MONTHS"
+        else:
+            continue
     
     dc_date_open = row[12].value.strftime("%Y-%m-%d")
     if dc_date_open:
@@ -339,9 +350,7 @@ def make_contents(directory, item, dc_title_filenames, dc_description_filenames,
                 f.write(" Access restricted to Bentley.")
                 f.write("\tpermissions:-r 'Bentley Only Users'")
             else:
-                print "Check out the permissions on these... looks like they're complicated."
-                print dc_rights_access
-                quit()
+                continue
                 
             f.write("\n")
     
