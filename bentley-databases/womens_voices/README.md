@@ -103,7 +103,7 @@ It's also easy to create maps like this...
 
 ![Businesses](womens_voices-businesses.PNG)
 
-...from the above dataset (this one maps the location of alumnae businesses relative to the University of Michigan). Simply upload the CSV to a utility like [Palladio](http://palladio.designhumanities.org/).
+...from the above dataset (this one maps the location of alumnae businesses relative to the University of Michigan). This does not require any code! Simply upload the CSV to a utility like [Palladio](http://palladio.designhumanities.org/).
 
 Pull Requests and Issues
 ------------------------
