@@ -279,10 +279,12 @@ move_to_mlibrary_deep_blue(temporary_directory, target_directory, deposit_id)
 
 # restructuring bentleystaff items
 def restructuring_bentleystaff_items(target_directory, bentleystaff_items):
-    print "Restructuing BentleyStaff items..."
+    if len(bentleystaff_items) > 0:
+        print "Restructuing BentleyStaff items..."
     
     for bentleystaff_item in bentleystaff_items:
         shutil.copytree(os.path.join(target_directory, deposit_id, bentleystaff_item), os.path.join(target_directory, deposit_id + "-BentleyStaff", bentleystaff_item))
+        shutil.rmtree(os.path.join(target_directory, deposit_id, bentleystaff_item))
     
 restructuring_bentleystaff_items(target_directory, bentleystaff_items)    
 
