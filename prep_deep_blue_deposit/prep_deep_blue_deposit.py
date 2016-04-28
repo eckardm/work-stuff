@@ -19,13 +19,15 @@ def get_deposit_id():
     
 deposit_id = get_deposit_id()
 
-source_directory = os.path.join("X:\deepblue", deposit_id)
+source_directory = os.path.join("X:", "deepblue", deposit_id)
 temporary_directory = "archive_directory"
-target_directory = os.path.join("S:\MLibrary\DeepBlue")
+target_directory = "S:\MLibrary\DeepBlue"
+beal_directory = os.path.join("X:", "beal", deposit_id)
 
 bentleystaff_items = []
 
 metadata = [filename for filename in os.listdir(source_directory) if filename.startswith("deepBlue_")][0]
+logs = [filename for filename in os.listdir(beal_directory) if filename.endswith("zip")][0]
 
 # basic metadata check
 def get_dc_titles_and_dc_description_abstracts(directory, metadata):
@@ -96,12 +98,13 @@ def basic_metadata_check(directory, metadata):
 basic_metadata_check(source_directory, metadata)
 
 # make working copy
-def make_working_copy(source_directory):
+def make_working_copy(source_directory, beal_directory, logs):
     print "Making working copy..."
     
     shutil.copytree(source_directory, os.path.join(os.path.dirname(os.path.abspath(__file__)), deposit_id))
+    shutil.copy(os.path.join(beal_directory, logs), os.path.join(os.path.dirname(os.path.abspath(__file__)), deposit_id))
     
-make_working_copy(source_directory)
+make_working_copy(source_directory, beal_directory, logs)
     
 # make archive directory
 def make_archive_directory(directory):
@@ -209,6 +212,7 @@ def make_contents(directory, item, dc_title_filenames, dc_description_filenames,
     with open(os.path.join(directory, item, "contents"), mode="w") as f:
         
         f.write("license.txt\n")
+        f.write(logs + "\tdescription:Administrative information\tpermissions:-r 'BentleyStaff'\n")
         
         for dc_title_filename, dc_description_filename in izip_longest(dc_title_filenames, dc_description_filenames):
             
@@ -228,6 +232,9 @@ def make_contents(directory, item, dc_title_filenames, dc_description_filenames,
                 print "Wierd permissions on " + item + ", DEAL WITH IT!"
 
             f.write("\n")
+    
+def copy_logs(directory, logs, item):
+    shutil.copy(os.path.join(directory, logs), os.path.join(directory, item))
     
 def move_objects(directory, item, dc_title_filenames):
     objects = [filename for filename in os.listdir(directory) if filename != metadata and not filename.startswith("item_")]
@@ -256,6 +263,8 @@ def make_dspace_simple_archive_format(directory, metadata):
         
         make_license(directory, item)
         
+        copy_logs(directory, logs, item)
+        
         dc_title_filenames, dc_description_filenames = get_dc_title_filenames_and_dc_description_filenames(row)
         dc_rights_access = get_dc_rights_access(row)
         make_contents(directory, item, dc_title_filenames, dc_description_filenames, dc_rights_access)
@@ -274,13 +283,14 @@ def move_to_mlibrary_deep_blue(temporary_directory, target_directory, deposit_id
     print "Moving to S:\MLibrary\DeepBlue..."
     
     shutil.copytree(os.path.join(os.path.dirname(os.path.abspath(__file__)), temporary_directory), os.path.join(target_directory, deposit_id))
+    os.remove(os.path.join(target_directory, deposit_id, logs))
     
 move_to_mlibrary_deep_blue(temporary_directory, target_directory, deposit_id)
 
 # restructuring bentleystaff items
 def restructuring_bentleystaff_items(target_directory, bentleystaff_items):
     if len(bentleystaff_items) > 0:
-        print "Restructuing BentleyStaff items..."
+        print "Restructuring BentleyStaff items..."
     
     for bentleystaff_item in bentleystaff_items:
         shutil.copytree(os.path.join(target_directory, deposit_id, bentleystaff_item), os.path.join(target_directory, deposit_id + "-BentleyStaff", bentleystaff_item))
