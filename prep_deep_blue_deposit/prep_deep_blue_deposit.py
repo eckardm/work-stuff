@@ -212,7 +212,7 @@ def make_contents(directory, item, dc_title_filenames, dc_description_filenames,
     with open(os.path.join(directory, item, "contents"), mode="w") as f:
         
         f.write("license.txt\n")
-        f.write(logs + "\tdescription:Administrative information\tpermissions:-r 'BentleyStaff'\n")
+        f.write(logs + "\tdescription:Administrative information. Access restricted to Bentley. \tpermissions:-r 'BentleyStaff'\n")
         
         for dc_title_filename, dc_description_filename in izip_longest(dc_title_filenames, dc_description_filenames):
             
