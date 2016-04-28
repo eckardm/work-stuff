@@ -224,8 +224,13 @@ def make_contents(directory, item, dc_title_filenames, dc_description_filenames,
             if dc_rights_access.startswith("This content is open for research"):
                 f.write("\tpermissions:-r 'Anonymous'")
             elif dc_rights_access.startswith("Reading room access only"):
-                f.write(" Access restricted to Bentley.")
+                
+                if not dc_description_filename:
+                    f.write("\tdescription:Access restricted to Bentley.")
+                else:
+                    f.write(" Access restricted to Bentley.")
                 f.write("\tpermissions:-r 'Bentley Only Users'")
+                
             elif dc_rights_access.startswith("Executive Records") or dc_rights_access.startswith("Personnel Records") or dc_rights_access.startswith("Student Records") or dc_rights_access.startswith("Patient/Client Records"):
                 f.write("\tpermissions:-r 'BentleyStaff'")
             else:
