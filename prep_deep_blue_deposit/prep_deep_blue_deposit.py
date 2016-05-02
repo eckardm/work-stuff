@@ -61,7 +61,7 @@ def get_filenames_and_dc_title_filenames(directory, metadata):
 
 def check_that_dc_titles_are_unique(dc_titles):
     if len(dc_titles) != len(set(dc_titles)):
-        print "All titles not unique..."
+        print "These titles are not unique..."
         errors = [dc_title for dc_title, counter in Counter(dc_titles).most_common() if counter > 1]
         for error in errors:
             print error
@@ -69,7 +69,7 @@ def check_that_dc_titles_are_unique(dc_titles):
 
 def check_that_dc_description_abstracts_are_unique(dc_description_abstracts):
     if len(dc_description_abstracts) != len(set(dc_description_abstracts)):
-        print "All descriptions not unique..."
+        print "These descriptions are not unique..."
         errors = [dc_description_abstract for dc_description_abstract, counter in Counter(dc_description_abstracts).most_common() if counter > 1]
         for error in errors:
             print error
@@ -83,7 +83,7 @@ def check_that_filenames_match_dc_title_filenames(filenames, dc_title_filenames)
             filenames_not_in_filenames_in_metadata.append(filename)
             
     if len(filenames_not_in_filenames_in_metadata) > 0:
-        print "All filenames and filenames in metadata do not match..."
+        print "These filenames are not in the metadata..."
         for filename in filenames_not_in_filenames_in_metadata:
             print filename
         quit()
