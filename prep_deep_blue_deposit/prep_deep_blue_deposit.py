@@ -126,8 +126,12 @@ def make_dublin_core(directory, row, item):
     if identifier_other:
         etree.SubElement(dublin_core, "dcvalue", element="identifier", qualifier="other").text = identifier_other
     
-    dc_title = row[1].value
+    dc_title = row[1].value.split(" - ")[-1]
     etree.SubElement(dublin_core, "dcvalue", element="title", qualifier="none").text = dc_title
+    
+    dc_relation_ispartof = " - ".join(row[1].value.split(" - ")[:-1])
+    if dc_relation_ispartof:
+        etree.SubElement(dublin_core, "dcvalue", element="relation", qualifier="ispartof").text = dc_relation_ispartof   
     
     dc_description_abstract = row[2].value
     if dc_description_abstract:
@@ -212,7 +216,7 @@ def make_contents(directory, item, dc_title_filenames, dc_description_filenames,
     with open(os.path.join(directory, item, "contents"), mode="w") as f:
         
         f.write("license.txt\n")
-        f.write(logs + "\tdescription:Administrative information. Access restricted to Bentley. \tpermissions:-r 'BentleyStaff'\n")
+        f.write(logs + "\tdescription:Administrative information. Access restricted to Bentley staff. \tpermissions:-r 'BentleyStaff'\n")
         
         for dc_title_filename, dc_description_filename in izip_longest(dc_title_filenames, dc_description_filenames):
             
@@ -226,9 +230,9 @@ def make_contents(directory, item, dc_title_filenames, dc_description_filenames,
             elif dc_rights_access.startswith("Reading room access only"):
                 
                 if not dc_description_filename:
-                    f.write("\tdescription:Access restricted to Bentley.")
+                    f.write("\tdescription:Access restricted to Bentley Reading Room.")
                 else:
-                    f.write(" Access restricted to Bentley.")
+                    f.write(" Access restricted to Bentley Reading Room.")
                 f.write("\tpermissions:-r 'Bentley Only Users'")
                 
             elif dc_rights_access.startswith("Executive Records") or dc_rights_access.startswith("Personnel Records") or dc_rights_access.startswith("Student Records") or dc_rights_access.startswith("Patient/Client Records"):
