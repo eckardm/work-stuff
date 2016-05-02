@@ -1,7 +1,6 @@
 import os
 from openpyxl import load_workbook
 from collections import Counter
-from pprint import pprint
 from lxml import etree
 from itertools import izip_longest
 from time import strftime
@@ -21,7 +20,7 @@ deposit_id = get_deposit_id()
 
 source_directory = os.path.join("X:", "deepblue", deposit_id)
 temporary_directory = "archive_directory"
-target_directory = "S:\MLibrary\DeepBlue"
+target_directory = os.path.join("S:", "MLibrary", "DeepBlue")
 beal_directory = os.path.join("X:", "beal", deposit_id)
 
 bentleystaff_items = []
@@ -63,13 +62,17 @@ def get_filenames_and_dc_title_filenames(directory, metadata):
 def check_that_dc_titles_are_unique(dc_titles):
     if len(dc_titles) != len(set(dc_titles)):
         print "All titles not unique..."
-        print pprint(Counter(dc_titles).most_common())
+        errors = [dc_title for dc_title, counter in Counter(dc_titles).most_common() if counter > 1]
+        for error in errors:
+            print error
         quit()
 
 def check_that_dc_description_abstracts_are_unique(dc_description_abstracts):
     if len(dc_description_abstracts) != len(set(dc_description_abstracts)):
-        print "All descriptions not unique..."   
-        print pprint(Counter(dc_description_abstracts).most_common())
+        print "All descriptions not unique..."
+        errors = [dc_description_abstract for dc_description_abstract, counter in Counter(dc_description_abstracts).most_common() if counter > 1]
+        for error in errors:
+            print error
         quit()
 
 def check_that_filenames_match_dc_title_filenames(filenames, dc_title_filenames):
