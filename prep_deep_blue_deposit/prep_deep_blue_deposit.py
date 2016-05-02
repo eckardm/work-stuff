@@ -289,7 +289,7 @@ make_dspace_simple_archive_format(temporary_directory, metadata)
 
 # moving temporary directory
 def move_to_mlibrary_deep_blue(temporary_directory, target_directory, deposit_id):
-    print "Moving to S:\MLibrary\DeepBlue..."
+    print "Moving to " + target_directory + "..."
     
     shutil.copytree(os.path.join(os.path.dirname(os.path.abspath(__file__)), temporary_directory), os.path.join(target_directory, deposit_id))
     os.remove(os.path.join(target_directory, deposit_id, logs))
