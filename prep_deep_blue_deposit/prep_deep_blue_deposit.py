@@ -171,9 +171,9 @@ def make_dublin_core(directory, row, item):
         if dc_rights_access.startswith("Executive Records") or dc_rights_access.startswith("Personnel Records") or dc_rights_access.startswith("Student Records") or dc_rights_access.startswith("Patient/Client Records"):
             bentleystaff_items.append(item)
     
-    dc_date_open = row[12].value.strftime("%Y-%m-%d")
+    dc_date_open = row[12].value
     if dc_date_open:
-        etree.SubElement(dublin_core, "dcvalue", element="date", qualifier="open").text = dc_date_open
+        etree.SubElement(dublin_core, "dcvalue", element="date", qualifier="open").text = dc_date_open.strftime("%Y-%m-%d")
     
     dc_rights_copyright = row[13].value
     if dc_rights_copyright:
@@ -243,6 +243,7 @@ def make_contents(directory, item, dc_title_filenames, dc_description_filenames,
                 
             elif dc_rights_access.startswith("Executive Records") or dc_rights_access.startswith("Personnel Records") or dc_rights_access.startswith("Student Records") or dc_rights_access.startswith("Patient/Client Records"):
                 f.write("\tpermissions:-r 'BentleyStaff'")
+                
             else:
                 print "Wierd permissions on " + item + ", DEAL WITH IT!"
 
