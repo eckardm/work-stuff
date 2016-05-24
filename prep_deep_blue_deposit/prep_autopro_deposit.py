@@ -171,6 +171,7 @@ def make_dublin_core(directory, row, item):
     if dc_rights_access:
         etree.SubElement(dublin_core, "dcvalue", element="rights", qualifier="access").text = dc_rights_access
         if dc_rights_access.startswith("Executive Records") or dc_rights_access.startswith("Personnel Records") or dc_rights_access.startswith("Student Records") or dc_rights_access.startswith("Patient/Client Records"):
+            etree.SubElement(dublin_core, "dcvalue", element="description", qualifier="restriction").text = "RESTRICTED"
             bentleystaff_items.append(item)
     
     dc_date_open = row[12].value
