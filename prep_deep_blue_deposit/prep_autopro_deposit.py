@@ -322,7 +322,7 @@ def restructuring_bentleystaff_items(target_directory, bentleystaff_items):
         shutil.copytree(os.path.join(target_directory, deposit_id, bentleystaff_item), os.path.join(target_directory, deposit_id + "-BentleyStaff", bentleystaff_item))
         shutil.rmtree(os.path.join(target_directory, deposit_id, bentleystaff_item))
         
-    if len(os.listdir(os.path.join(target_directory, deposit_id + "-BentleyStaff"))) == 0:
+    if os.path.exists(os.path.join(target_directory, deposit_id + "-BentleyStaff")) == True and len(os.listdir(os.path.join(target_directory, deposit_id + "-BentleyStaff"))) == 0:
         shutil.rmtree(os.path.join(target_directory, deposit_id + "-BentleyStaff"))
     
 restructuring_bentleystaff_items(target_directory, bentleystaff_items)    
