@@ -76,7 +76,7 @@
       <origination>
         <persname encodinganalog="100" source="lcnaf" authfilenumber="http://id.loc.gov/authorities/names/n81055160">Duderstadt, James J., 1942-</persname>
       </origination>
-      <unittitle encodinganalog="245">James J. Duderstadt Papers <unitdate encodinganalog="245$f" type="inclusive" normal="1963/1997">1963-1997</unitdate>, <unitdate encodinganalog="245 f" type="bulk" normal="1970/1996">1970-1996</unitdate></unittitle>
+      <unittitle encodinganalog="245">James J. Duderstadt Papers <unitdate encodinganalog="245$f" type="inclusive" normal="1963/1997">1963-1997</unitdate> <unitdate encodinganalog="245 f" type="bulk" normal="1970/1996">1970-1996</unitdate></unittitle>
       <unitid countrycode="us" repositorycode="MiU-H" encodinganalog="099" type="call number">9811 Aa 2</unitid>
       <langmaterial>The materials are in <language encodinganalog="041" langcode="eng">English.</language></langmaterial>
       <abstract>Nuclear engineer, professor and eleventh president of the University of Michigan (1988-1996), leader in efforts to transform the University of Michigan, and higher education generally, into a culturally diverse, financially secure, and technologically advanced institution. Collection consists of both paper and digital documents, including speeches, presentations, writings and images. Portions of the collection are restricted. This collection represents the "personal papers" of president Duderstadt. Other material relating to his presidency is located in the record group "University of Michigan. President."</abstract>
@@ -99,18 +99,14 @@
       <accessrestrict encodinganalog="506">
         <p>Access and Restrictions</p>
         <p>The James J. Duderstadt collection is comprised of paper and digital subgroups. The entire paper subgroup is open for research. Series within the digital subgroup that are open for research are the Speeches, Presentations and Legacy files.</p>
-        <p>Series within the digital subgroup that are restricted until July 1, 2030 are:
-          <list type="simple"><item>Ideas</item><item>Position Papers</item><item>Strategy</item><item>Write Files</item></list>
-        </p>
+        <p>Series within the digital subgroup that are restricted until July 1, 2030 are: <list type="simple"><item>Ideas</item><item>Position Papers</item><item>Strategy</item><item>Write Files</item></list> </p>
       </accessrestrict>
       <userestrict encodinganalog="540">
         <p>Copyright has been transferred to the Regents of the University of Michigan</p>
       </userestrict>
       <processinfo>
         <p>At the time the digital documents were accessioned to the library, a large number of the files were already considered obsolete, since they had been created with the software application MORE 3.1. After testing for information loss a decision was made to convert the obsolete files to a standard word processing program. After testing and analysis, it was decided to convert the MORE 3.1 files to Microsoft Word 6.0. It was also decided to migrate all of the files from the Macintosh operating system to a Windows platform to insure compatibility with the computers in the library reading room. The original file name, directory title, directory structure, and original date created were preserved. The original directory name, file name, and date created provide access points to the digital files.</p>
-        <p>The digital files that are currently open for research use are viewable on-line either in the Bentley Historical Library reading room or via remote access. For full access to the files, a researcher will need the following software or application plug-ins:
-          <list type="simple"><item>Internet Browser (Netscape 3.0 or later or IE 4.0 or later)</item><item>Microsoft Word 6.0 or Word 2000</item><item>Excel 5.0</item><item>PowerPoint 4.0</item></list>
-        </p>
+        <p>The digital files that are currently open for research use are viewable on-line either in the Bentley Historical Library reading room or via remote access. For full access to the files, a researcher will need the following software or application plug-ins: <list type="simple"><item>Internet Browser (Netscape 3.0 or later or IE 4.0 or later)</item><item>Microsoft Word 6.0 or Word 2000</item><item>Excel 5.0</item><item>PowerPoint 4.0</item></list> </p>
         <p>The on-line files are accessible through this finding aid. Click on the "View Files" links in the Digital Documents subgroup. The digital files that are restricted are stored on CD-ROM.</p>
         <p>A number of digital image files of campus buildings are not included in the extent statement above.</p>
       </processinfo>
@@ -174,26 +170,8 @@
     <arrangement encodinganalog="351">
       <p>The Duderstadt collection is organized into two subgroups: Paper Documents and Digital Documents, each of which include several series and subseries.</p>
       <list type="simple">
-        <item>Paper Documents
-          <list type="simple"><item>Biographical / Background</item><item>Speeches and Accompanying Material
-              <list type="simple"><item>Miscellaneous by Subject</item><item>Miscellaneous by Date</item><item>1981 -1982</item><item>1983-1984</item><item>1985-1986</item><item>1986</item><item>1987</item><item>1988</item><item>1989</item><item>1990</item><item>1991</item><item>1991-1992</item><item>1993</item><item>1994</item><item>1995</item><item>1996</item></list>
-            </item><item>Computer Printouts of Speeches</item><item>Position Papers</item><item>Publications (Legacy Documents)</item><item>Presentations</item><item>Correspondence</item><item>Research</item><item>Topical Files</item><item>Teaching</item><item>Presidential Transition</item><item>Strategic Planning</item></list>
-        </item>
-        <item>Digital Documents
-          <list type="simple"><item>Speeches
-              <list type="simple"><item>1986-1987 Speeches</item><item>1987-1988 Speeches</item><item>1988-1989 Speeches</item><item>1989-1990 Speeches</item><item>1990-1991 Speeches</item><item>1991-1992 Speeches</item><item>1992-1993 Speeches</item><item>1994-1995 Speeches</item><item>1995-1996 Speeches</item><item>Athletic Talks-Speeches</item></list>
-            </item><item>Idea Files
-              <list type="simple"><item>1986-1987 Ideas</item><item>1987-1988 Ideas</item><item>1988-1989 Ideas</item><item>1989-1990 Ideas</item><item>1990-1991 Ideas</item><item>1991-1992 Ideas</item><item>1992-1993 Ideas</item><item>1993-1994 Ideas</item><item>1994-1995 Ideas</item></list>
-            </item><item>Strategy
-              <list type="simple"><item>1986-1987 Strategy</item><item>1987-1988 Strategy</item><item>1989-1990 Strategy</item><item>1990-1991 Strategy</item><item>1994-1995 Strategy</item><item>1995-1996 Strategy</item><item>1996-1997 Strategy</item></list>
-            </item><item>Position Papers
-              <list type="simple"><item>1986-1987 Position Papers</item><item>1987-1988 Position Papers</item><item>1988-1989 Position Papers</item><item>1989-1990 Position Papers</item><item>1990-1991 Position Papers</item><item>1991-1992 Position Papers</item><item>1992-1993 Position Papers</item><item>1993-1994 Position Papers</item><item>1994-1995 Position Papers</item><item>1995-1996 Position Papers</item><item>1996-1997 Position Papers</item></list>
-            </item><item>Presentations
-              <list type="simple"><item>1987-1988 Presentations</item><item>1988-1989 Presentations</item><item>1989-1990 Presentations</item><item>1990-1991 Presentations</item><item>1991-1992 Presentations</item><item>1992-1993 Presentations</item><item>1993-1994 Presentations</item><item>1994-1995 Presentations</item><item>1995-1996 Presentations</item><item>1996-1997 Presentations</item></list>
-            </item><item>Write Files
-              <list type="simple"><item>1988 and earlier Write</item><item>1988-1989 Write</item><item>1989-1990 Write</item><item>1990-1991 Write</item><item>1991-1992 Write</item><item>1992-1993 Write</item><item>1993-1994 Write</item><item>1994-1995 Write</item><item>1995-1996 Write</item><item>1996-1997 Write</item></list>
-            </item><item>Legacy Documents</item><item>Digital Images</item></list>
-        </item>
+        <item>Paper Documents <list type="simple"><item>Biographical / Background</item><item>Speeches and Accompanying Material <list type="simple"><item>Miscellaneous by Subject</item><item>Miscellaneous by Date</item><item>1981 -1982</item><item>1983-1984</item><item>1985-1986</item><item>1986</item><item>1987</item><item>1988</item><item>1989</item><item>1990</item><item>1991</item><item>1991-1992</item><item>1993</item><item>1994</item><item>1995</item><item>1996</item></list> </item><item>Computer Printouts of Speeches</item><item>Position Papers</item><item>Publications (Legacy Documents)</item><item>Presentations</item><item>Correspondence</item><item>Research</item><item>Topical Files</item><item>Teaching</item><item>Presidential Transition</item><item>Strategic Planning</item></list> </item>
+        <item>Digital Documents <list type="simple"><item>Speeches <list type="simple"><item>1986-1987 Speeches</item><item>1987-1988 Speeches</item><item>1988-1989 Speeches</item><item>1989-1990 Speeches</item><item>1990-1991 Speeches</item><item>1991-1992 Speeches</item><item>1992-1993 Speeches</item><item>1994-1995 Speeches</item><item>1995-1996 Speeches</item><item>Athletic Talks-Speeches</item></list> </item><item>Idea Files <list type="simple"><item>1986-1987 Ideas</item><item>1987-1988 Ideas</item><item>1988-1989 Ideas</item><item>1989-1990 Ideas</item><item>1990-1991 Ideas</item><item>1991-1992 Ideas</item><item>1992-1993 Ideas</item><item>1993-1994 Ideas</item><item>1994-1995 Ideas</item></list> </item><item>Strategy <list type="simple"><item>1986-1987 Strategy</item><item>1987-1988 Strategy</item><item>1989-1990 Strategy</item><item>1990-1991 Strategy</item><item>1994-1995 Strategy</item><item>1995-1996 Strategy</item><item>1996-1997 Strategy</item></list> </item><item>Position Papers <list type="simple"><item>1986-1987 Position Papers</item><item>1987-1988 Position Papers</item><item>1988-1989 Position Papers</item><item>1989-1990 Position Papers</item><item>1990-1991 Position Papers</item><item>1991-1992 Position Papers</item><item>1992-1993 Position Papers</item><item>1993-1994 Position Papers</item><item>1994-1995 Position Papers</item><item>1995-1996 Position Papers</item><item>1996-1997 Position Papers</item></list> </item><item>Presentations <list type="simple"><item>1987-1988 Presentations</item><item>1988-1989 Presentations</item><item>1989-1990 Presentations</item><item>1990-1991 Presentations</item><item>1991-1992 Presentations</item><item>1992-1993 Presentations</item><item>1993-1994 Presentations</item><item>1994-1995 Presentations</item><item>1995-1996 Presentations</item><item>1996-1997 Presentations</item></list> </item><item>Write Files <list type="simple"><item>1988 and earlier Write</item><item>1988-1989 Write</item><item>1989-1990 Write</item><item>1990-1991 Write</item><item>1991-1992 Write</item><item>1992-1993 Write</item><item>1993-1994 Write</item><item>1994-1995 Write</item><item>1995-1996 Write</item><item>1996-1997 Write</item></list> </item><item>Legacy Documents</item><item>Digital Images</item></list> </item>
       </list>
     </arrangement>
     <scopecontent>
@@ -217,16 +195,16 @@
         <subject encodinganalog="650" source="lcsh">Universities and colleges--Michigan.</subject>
         <corpname source="lcnaf" encodinganalog="610" authfilenumber="http://id.loc.gov/authorities/names/nr89016998">University of Michigan. Board of Regents.</corpname>
         <corpname source="lcnaf" encodinganalog="610">University of Michigan. President.</corpname>
-        <corpname source="lcnaf" encodinganalog="610">University of Michigan--Administration.</corpname>
-        <corpname source="lcnaf" encodinganalog="610">University of Michigan--Buildings.</corpname>
-        <corpname source="lcnaf" encodinganalog="610">University of Michigan--Faculty.</corpname>
-        <corpname source="lcnaf" encodinganalog="610">University of Michigan--Finance.</corpname>
-        <corpname source="lcnaf" encodinganalog="610">University of Michigan--History.</corpname>
-        <corpname source="lcnaf" encodinganalog="610">University of Michigan--Planning.</corpname>
-        <corpname source="lcnaf" encodinganalog="610">University of Michigan--Provost and Vice-President.</corpname>
-        <corpname source="lcnaf" encodinganalog="610">University of Michigan--Research.</corpname>
-        <corpname source="lcnaf" encodinganalog="610">University of Michigan--Sports.</corpname>
-        <corpname source="lcnaf" encodinganalog="610">University of Michigan--Students.</corpname>
+        <corpname source="lcnaf" encodinganalog="610" authfilenumber="http://id.loc.gov/authorities/names/n79021846">University of Michigan--Administration.</corpname>
+        <corpname source="lcnaf" encodinganalog="610" authfilenumber="http://id.loc.gov/authorities/names/n79021846">University of Michigan--Buildings.</corpname>
+        <corpname source="lcnaf" encodinganalog="610" authfilenumber="http://id.loc.gov/authorities/names/n79021846">University of Michigan--Faculty.</corpname>
+        <corpname source="lcnaf" encodinganalog="610" authfilenumber="http://id.loc.gov/authorities/names/n79021846">University of Michigan--Finance.</corpname>
+        <corpname source="lcnaf" encodinganalog="610" authfilenumber="http://id.loc.gov/authorities/names/n79021846">University of Michigan--History.</corpname>
+        <corpname source="lcnaf" encodinganalog="610" authfilenumber="http://id.loc.gov/authorities/names/n79021846">University of Michigan--Planning.</corpname>
+        <corpname source="lcnaf" encodinganalog="610" authfilenumber="http://id.loc.gov/authorities/names/n79021846">University of Michigan--Provost and Vice-President.</corpname>
+        <corpname source="lcnaf" encodinganalog="610" authfilenumber="http://id.loc.gov/authorities/names/n79021846">University of Michigan--Research.</corpname>
+        <corpname source="lcnaf" encodinganalog="610" authfilenumber="http://id.loc.gov/authorities/names/n79021846">University of Michigan--Sports.</corpname>
+        <corpname source="lcnaf" encodinganalog="610" authfilenumber="http://id.loc.gov/authorities/names/n79021846">University of Michigan--Students.</corpname>
         <subject source="lcsh" encodinganalog="650">Women--Michigan--Ann Arbor.</subject>
         <subject source="lcsh" encodinganalog="650">Women college students--Michigan--Ann Arbor.</subject>
         <subject source="lcsh" encodinganalog="650">Women college teachers--Michigan--Ann Arbor.</subject>
@@ -264,7 +242,7 @@
           <c03 level="file">
             <did>
               <container label="Box" type="box">1</container>
-              <unittitle>Academic Personnel Record <unitdate normal="1974/1979">1974-1979</unitdate></unittitle>
+              <unittitle>Academic Personnel Record <unitdate normal="1974/1979" type="inclusive">1974-1979</unitdate></unittitle>
             </did>
           </c03>
           <c03 level="file">
@@ -282,7 +260,7 @@
           <c03 level="file">
             <did>
               <container type="box" label="Box">1</container>
-              <unittitle>Clippings <unitdate normal="1974/1995">1974-1995</unitdate></unittitle>
+              <unittitle>Clippings <unitdate normal="1974/1995" type="inclusive">1974-1995</unitdate></unittitle>
               <physdesc altrender="whole">
                 <extent altrender="materialtype spaceoccupied">2 folders</extent>
               </physdesc>
@@ -291,19 +269,19 @@
           <c03 level="file">
             <did>
               <container type="box" label="Box">1</container>
-              <unittitle>General (includes vitas) <unitdate normal="1984/1996">1984-1996</unitdate></unittitle>
+              <unittitle>General (includes vitas) <unitdate normal="1984/1996" type="inclusive">1984-1996</unitdate></unittitle>
             </did>
           </c03>
           <c03 level="file">
             <did>
               <container type="box" label="Box">1</container>
-              <unittitle>Personnel Papers <unitdate normal="1982/1987">1982-1987</unitdate></unittitle>
+              <unittitle>Personnel Papers <unitdate normal="1982/1987" type="inclusive">1982-1987</unitdate></unittitle>
             </did>
           </c03>
           <c03 level="file">
             <did>
               <container label="Box" type="box">1</container>
-              <unittitle>Portraits <unitdate>(various dates)</unitdate></unittitle>
+              <unittitle>Portraits <unitdate type="inclusive">(various dates)</unitdate></unittitle>
             </did>
           </c03>
           <c03 level="file">
@@ -2177,7 +2155,7 @@
               </did>
             </c04>
           </c03>
-          <c03 level="file">
+          <c03 level="subseries">
             <did>
               <unittitle>
                 <unitdate type="inclusive" normal="1993">1993</unitdate>
@@ -2226,7 +2204,7 @@
               </did>
             </c04>
           </c03>
-          <c03 level="file">
+          <c03 level="subseries">
             <did>
               <unittitle>
                 <unitdate type="inclusive" normal="1994">1994</unitdate>
@@ -2263,7 +2241,7 @@
               </did>
             </c04>
           </c03>
-          <c03 level="file">
+          <c03 level="subseries">
             <did>
               <unittitle>
                 <unitdate type="inclusive" normal="1995">1995</unitdate>
@@ -2402,7 +2380,7 @@
               </did>
             </c04>
           </c03>
-          <c03 level="file">
+          <c03 level="subseries">
             <did>
               <unittitle>
                 <unitdate type="inclusive" normal="1996">1996</unitdate>
@@ -2852,7 +2830,7 @@
             <c04 level="file">
               <did>
                 <container type="box" label="Box">6</container>
-                <unittitle>Commencement- - Rain <unitdate type="inclusive" normal="1989-04-29">April 29, 1989</unitdate></unittitle>
+                <unittitle>Commencement-- Rain <unitdate type="inclusive" normal="1989-04-29">April 29, 1989</unitdate></unittitle>
               </did>
             </c04>
             <c04 level="file">
@@ -3464,7 +3442,7 @@
           <c03 level="file">
             <did>
               <container type="box" label="Box">8</container>
-              <unittitle><title render="italic">The University of Michigan Media Union</title>, <unitdate normal="1996">Summer 1996</unitdate></unittitle>
+              <unittitle><title render="italic">The University of Michigan Media Union</title>, <unitdate normal="1996" type="inclusive">Summer 1996</unitdate></unittitle>
             </did>
           </c03>
           <c03 level="file">
@@ -3486,9 +3464,7 @@
               <container label="Box" type="box">8</container>
               <unittitle><title render="italic">Nuclear Power / Technology on Trial</title>, <unitdate type="inclusive" normal="1973/1974" certainty="approximate">circa 1973-1974</unitdate></unittitle>
               <physdesc>
-                <physfacet>
-                  <genreform normal="Photographs">color slides</genreform>
-                </physfacet>
+                <physfacet>color slides</physfacet>
               </physdesc>
             </did>
           </c03>
@@ -3786,7 +3762,7 @@
           <c03 level="file">
             <did>
               <container type="box" label="Box">10</container>
-              <unittitle>Energy Deposition Distribution For Zero Width Source Code <unitdate>undated</unitdate></unittitle>
+              <unittitle>Energy Deposition Distribution For Zero Width Source Code <unitdate type="inclusive">undated</unitdate></unittitle>
             </did>
           </c03>
           <c03 level="file">
@@ -3884,7 +3860,7 @@
             <c04 level="file">
               <did>
                 <container type="box" label="Box">11</container>
-                <unittitle>Draft Text <unitdate>undated</unitdate></unittitle>
+                <unittitle>Draft Text <unitdate type="inclusive">undated</unitdate></unittitle>
               </did>
             </c04>
             <c04 level="file">
@@ -3897,7 +3873,7 @@
           <c03 level="file">
             <did>
               <container type="box" label="Box">11</container>
-              <unittitle>Inertial Confinement Fusion Program (miscellaneous) <unitdate>undated</unitdate></unittitle>
+              <unittitle>Inertial Confinement Fusion Program (miscellaneous) <unitdate type="inclusive">undated</unitdate></unittitle>
             </did>
           </c03>
           <c03 level="file">
@@ -3952,7 +3928,7 @@
             <c04 level="item">
               <did>
                 <container type="box" label="Box">12</container>
-                <unittitle><title render="italic">Computational Techniques in Nuclear Rector Analysis</title>, <unitdate>undated</unitdate></unittitle>
+                <unittitle><title render="italic">Computational Techniques in Nuclear Rector Analysis</title>, <unitdate type="inclusive">undated</unitdate></unittitle>
               </did>
             </c04>
             <c04 level="item">
@@ -4024,13 +4000,13 @@
             <c04 level="item">
               <did>
                 <container type="box" label="Box">12</container>
-                <unittitle><title render="italic">Inertial Confinement Fusion, draft text</title>, <unitdate>undated</unitdate></unittitle>
+                <unittitle><title render="italic">Inertial Confinement Fusion, draft text</title>, <unitdate type="inclusive">undated</unitdate></unittitle>
               </did>
             </c04>
             <c04 level="item">
               <did>
                 <container type="box" label="Box">12</container>
-                <unittitle><title render="italic">Inner Iteration Error in the Sn Algorithm</title>, <unitdate>undated</unitdate></unittitle>
+                <unittitle><title render="italic">Inner Iteration Error in the Sn Algorithm</title>, <unitdate type="inclusive">undated</unitdate></unittitle>
               </did>
             </c04>
             <c04 level="item">
@@ -4069,7 +4045,7 @@
             <c04 level="item">
               <did>
                 <container type="box" label="Box">12</container>
-                <unittitle><title render="italic">A Modeled Kinetic Theory of Gas Mixtures</title>, <unitdate>undated</unitdate></unittitle>
+                <unittitle><title render="italic">A Modeled Kinetic Theory of Gas Mixtures</title>, <unitdate type="inclusive">undated</unitdate></unittitle>
               </did>
             </c04>
             <c04 level="item">
@@ -4144,7 +4120,7 @@
             <c04 level="item">
               <did>
                 <container type="box" label="Box">13</container>
-                <unittitle>Plasma Formation in E-Beam Co2 Lasers <unitdate>undated</unitdate></unittitle>
+                <unittitle>Plasma Formation in E-Beam Co2 Lasers <unitdate type="inclusive">undated</unitdate></unittitle>
               </did>
             </c04>
             <c04 level="item">
@@ -4156,13 +4132,13 @@
             <c04 level="item">
               <did>
                 <container type="box" label="Box">13</container>
-                <unittitle><title render="italic">Principles of Engineering</title>, proof copy, <unitdate>undated</unitdate></unittitle>
+                <unittitle><title render="italic">Principles of Engineering</title>, proof copy, <unitdate type="inclusive">undated</unitdate></unittitle>
               </did>
             </c04>
             <c04 level="file">
               <did>
                 <container type="box" label="Box">13</container>
-                <unittitle><title render="italic">Principles of Engineering</title>, Solutions manual to accompany, <unitdate>undated</unitdate></unittitle>
+                <unittitle><title render="italic">Principles of Engineering</title>, Solutions manual to accompany, <unitdate type="inclusive">undated</unitdate></unittitle>
               </did>
             </c04>
             <c04 level="item">
@@ -4186,7 +4162,7 @@
             <c04 level="item">
               <did>
                 <container type="box" label="Box">13</container>
-                <unittitle><title render="italic">Radiation Transport in Dense Plasmas</title>, <unitdate>undated</unitdate></unittitle>
+                <unittitle><title render="italic">Radiation Transport in Dense Plasmas</title>, <unitdate type="inclusive">undated</unitdate></unittitle>
               </did>
             </c04>
             <c04 level="item">
@@ -4252,7 +4228,7 @@
             <c04 level="item">
               <did>
                 <container type="box" label="Box">13</container>
-                <unittitle><title render="italic">A Transport Theory of Neutron Pulse Propagation</title>, <unitdate>undated</unitdate></unittitle>
+                <unittitle><title render="italic">A Transport Theory of Neutron Pulse Propagation</title>, <unitdate type="inclusive">undated</unitdate></unittitle>
               </did>
             </c04>
             <c04 level="item">
@@ -4324,7 +4300,7 @@
             <c04 level="file">
               <did>
                 <container type="box" label="Box">13</container>
-                <unittitle>Neutron Transport Theory, Index and Corrections <unitdate>undated</unitdate></unittitle>
+                <unittitle>Neutron Transport Theory, Index and Corrections <unitdate type="inclusive">undated</unitdate></unittitle>
               </did>
             </c04>
             <c04 level="file">
@@ -4352,7 +4328,7 @@
           <c03 level="file">
             <did>
               <container type="box" label="Box">14</container>
-              <unittitle>Presentation, Michigan State Address "<title render="italic">Nuclear Power: Problems and Prospects</title>", <unitdate>undated</unitdate></unittitle>
+              <unittitle>Presentation, Michigan State Address "<title render="italic">Nuclear Power: Problems and Prospects</title>", <unitdate type="inclusive">undated</unitdate></unittitle>
             </did>
           </c03>
           <c03 level="file">
@@ -4404,7 +4380,7 @@
             <c04 level="file">
               <did>
                 <container type="box" label="Box">14</container>
-                <unittitle>Long-Wavelength Laser Heating of High Density Plasmas <unitdate>undated</unitdate></unittitle>
+                <unittitle>Long-Wavelength Laser Heating of High Density Plasmas <unitdate type="inclusive">undated</unitdate></unittitle>
               </did>
             </c04>
             <c04 level="file">
@@ -4422,7 +4398,7 @@
             <c04 level="file">
               <did>
                 <container type="box" label="Box">14</container>
-                <unittitle>Proposal to Texas Instruments <unitdate>undated</unitdate></unittitle>
+                <unittitle>Proposal to Texas Instruments <unitdate type="inclusive">undated</unitdate></unittitle>
               </did>
             </c04>
             <c04 level="file">
@@ -4806,7 +4782,7 @@
           <c03 level="file">
             <did>
               <container type="box" label="Box">16</container>
-              <unittitle>College of Engineering History file <unitdate>undated</unitdate></unittitle>
+              <unittitle>College of Engineering History file <unitdate type="inclusive">undated</unitdate></unittitle>
             </did>
           </c03>
           <c03 level="file">
@@ -4896,7 +4872,7 @@
           <c03 level="file">
             <did>
               <container type="box" label="Box">16</container>
-              <unittitle>A Guide to Nuclear Engineering Students Interested in Fission Reactors <unitdate>undated</unitdate></unittitle>
+              <unittitle>A Guide to Nuclear Engineering Students Interested in Fission Reactors <unitdate type="inclusive">undated</unitdate></unittitle>
             </did>
           </c03>
           <c03 level="file">
@@ -4932,7 +4908,7 @@
           <c03 level="file">
             <did>
               <container type="box" label="Box">17</container>
-              <unittitle>Report on Inter-College Programs <unitdate>undated</unitdate></unittitle>
+              <unittitle>Report on Inter-College Programs <unitdate type="inclusive">undated</unitdate></unittitle>
             </did>
           </c03>
           <c03 level="file">
@@ -4965,7 +4941,7 @@
           <c03 level="file">
             <did>
               <container type="box" label="Box">17</container>
-              <unittitle>Thoughts on a Rainy Day, on moving the College of Engineering to North Campus <unitdate>undated</unitdate></unittitle>
+              <unittitle>Thoughts on a Rainy Day, on moving the College of Engineering to North Campus <unitdate type="inclusive">undated</unitdate></unittitle>
             </did>
           </c03>
           <c03 level="file">
@@ -5054,7 +5030,7 @@
           <c03 level="file">
             <did>
               <container type="box" label="Box">17</container>
-              <unittitle>Class Assignments <unitdate>various dates</unitdate></unittitle>
+              <unittitle>Class Assignments <unitdate type="inclusive">various dates</unitdate></unittitle>
             </did>
           </c03>
           <c03 level="file">
@@ -5072,19 +5048,19 @@
           <c03 level="file">
             <did>
               <container type="box" label="Box">17</container>
-              <unittitle>Course descriptions <unitdate>various dates</unitdate></unittitle>
+              <unittitle>Course descriptions <unitdate type="inclusive">various dates</unitdate></unittitle>
             </did>
           </c03>
           <c03 level="file">
             <did>
               <container type="box" label="Box">17</container>
-              <unittitle>Course lecture material <unitdate>undated</unitdate></unittitle>
+              <unittitle>Course lecture material <unitdate type="inclusive">undated</unitdate></unittitle>
             </did>
           </c03>
           <c03 level="file">
             <did>
               <container type="box" label="Box">17</container>
-              <unittitle>Course material for Nuclear Engineering 441 <unitdate>undated</unitdate></unittitle>
+              <unittitle>Course material for Nuclear Engineering 441 <unitdate type="inclusive">undated</unitdate></unittitle>
             </did>
           </c03>
           <c03 level="file">
@@ -5096,7 +5072,7 @@
           <c03 level="file">
             <did>
               <container type="box" label="Box">17</container>
-              <unittitle>Course material for Nuclear Engineering 695 <unitdate>undated</unitdate></unittitle>
+              <unittitle>Course material for Nuclear Engineering 695 <unitdate type="inclusive">undated</unitdate></unittitle>
             </did>
           </c03>
           <c03 level="file">
@@ -5124,7 +5100,7 @@
             <c04 level="file">
               <did>
                 <container type="box" label="Box">17</container>
-                <unittitle><unitdate>Undated</unitdate> material</unittitle>
+                <unittitle><unitdate type="inclusive">Undated</unitdate> material</unittitle>
               </did>
             </c04>
             <c04 level="file">
@@ -5234,7 +5210,7 @@
           <c03 level="file">
             <did>
               <container type="box" label="Box">18</container>
-              <unittitle>Los Alamos Scientific Laboratory <unitdate>undated</unitdate></unittitle>
+              <unittitle>Los Alamos Scientific Laboratory <unitdate type="inclusive">undated</unitdate></unittitle>
             </did>
           </c03>
           <c03 level="file">
@@ -5352,7 +5328,7 @@
           <c03 level="file">
             <did>
               <container type="box" label="Box">19</container>
-              <unittitle>Student Study Guide for <title render="italic">Principles of Engineering</title>, <unitdate>undated</unitdate></unittitle>
+              <unittitle>Student Study Guide for <title render="italic">Principles of Engineering</title>, <unitdate type="inclusive">undated</unitdate></unittitle>
             </did>
           </c03>
           <c03 level="file">
@@ -5388,7 +5364,7 @@
           <c03 level="file">
             <did>
               <container type="box" label="Box">19</container>
-              <unittitle>Utility Nuclear Engineering Summer Course <unitdate>undated</unitdate></unittitle>
+              <unittitle>Utility Nuclear Engineering Summer Course <unitdate type="inclusive">undated</unitdate></unittitle>
             </did>
           </c03>
           <c03 level="file">
@@ -5421,7 +5397,7 @@
             <c04 level="file">
               <did>
                 <container type="box" label="Box">19</container>
-                <unittitle>University of Michigan Computer Laboratory with students, unidentified and <unitdate>undated</unitdate></unittitle>
+                <unittitle>University of Michigan Computer Laboratory with students, unidentified and undated</unittitle>
               </did>
             </c04>
             <c04 level="file">
@@ -5686,605 +5662,535 @@
       </c01>
       <c01 level="subgrp">
         <did>
-          <unittitle>Digital Documents</unittitle>
+          <unittitle>Digital Documents <unitdate type="inclusive" normal="1986/1997">1986-1997</unitdate></unittitle>
+          <physdesc altrender="whole">
+            <extent altrender="materialtype spaceoccupied">2144 digital files</extent>
+            <physfacet>160.5 MB</physfacet>
+          </physdesc>
         </did>
         <scopecontent>
-          <p>The Digital Documents subgroup is made up of a University of Michigan Presidency series and a Faculty Archives series.</p>
+          <p>There are 2,144 digital files (160.5 MB) in the Digital Documents subgroup. At the time of the records accession to the Bentley Historical Library, the Macintosh operating system version 8.0 was in use. The original organization and arrangement of Duderstadt's digital files has been preserved. Duderstadt maintained seven archival directories: Speeches, Idea Files, Strategy, Position Papers, Presentations, Write Files, and Legacy. An additional series, Digital Images, was created when a collection of digital images of university building projects was accessioned to the collection early in 1998.</p>
+          <p>The arrangement of files within each directory is chronological by date starting with the 1986-1987 school year. This arrangement was designed and used by Duderstadt in the Speeches, Idea Files, and Write Files series and extended to the remaining series except the Digital Images during the processing phase of the project. The directory naming scheme effectively describes the type of record contained within the directory. File names are also in most cases descriptive of the content, however, researchers should note that Duderstadt used personal last names, initials, abbreviations, and numerous acronyms in naming files. A list of commonly used acronyms and abbreviations used for file naming purposes can be found in the "Additional Descriptive Data" section of the finding aid. Researcher's Note: The file-naming scheme also reveals the specific version of a particular document. Duderstadt maintained the file name for the record and added a sequence of numbers to the file name to indicate various versions. For example, the record "Project Athena" progresses from Project Athena .92, Project Athena 1.0, 1.01, 1.2, 2.1, to Project Athena 2.21.</p>
         </scopecontent>
         <c02 level="series">
           <did>
-            <unittitle>University of Michigan Presidency, <unitdate type="inclusive" normal="1986/1997">1986-1997</unitdate></unittitle>
-            <physdesc altrender="whole">
-              <extent altrender="materialtype spaceoccupied">5397 original digital files</extent>
-              <extent altrender="carrier">393 MB</extent>
-            </physdesc>
+            <unittitle>Speeches <unitdate type="inclusive" normal="1986/1996">1986-1996</unitdate></unittitle>
           </did>
           <scopecontent>
-            <p>There are 5397 original digital files (393 MB) in the Digital Documents subgroup. At the time of the records accession to the Bentley Historical Library, the Macintosh operating system version 8.0 was in use. The original organization and arrangement of Duderstadt's digital files has been preserved. Duderstadt maintained seven archival directories: Speeches, Idea Files, Strategy, Position Papers, Presentations, Write Files, and Legacy. An additional series, Digital Images, was created when a collection of digital images of university building projects was accessioned to the collection early in 1998.</p>
-            <p>The arrangement of files within each directory is chronological by date starting with the 1986-1987 school year. This arrangement was designed and used by Duderstadt in the Speeches, Idea Files, and Write Files series and extended to the remaining series except the Digital Images during the processing phase of the project. The directory naming scheme effectively describes the type of record contained within the directory. File names are also in most cases descriptive of the content, however, researchers should note that Duderstadt used personal last names, initials, abbreviations, and numerous acronyms in naming files. A list of commonly used acronyms and abbreviations used for file naming purposes can be found in the 'Additional Descriptive Data' section of the finding aid. Researcher's Note: The file-naming scheme also reveals the specific version of a particular document. Duderstadt maintained the file name for the record and added a sequence of numbers to the file name to indicate various versions. For example, the record 'Project Athena' progresses from Project Athena .92, Project Athena 1.0, 1.01, 1.2, 2.1, to Project Athena 2.21.</p>
+            <p>A main avenue President Duderstadt utilized as a means to communicate his ideas, objectives, and university strategic plan was to get out into the community and talk. During his presidency, Duderstadt frequently made several speeches a day to groups on campus and across the state, thus making the Speeches series (821 files, 1986-1996) the largest series in the Digital Documents subgroup. The early speech files from the years 1986 to 1992 were predominately composed using the MORE 3.1 outline program. However, after 1992 he drafted his speeches using a combination of MORE 3.1 and Microsoft Word 6.0. Major Speeches contained in this series include: The Cranbrook Address, The Challenge of K-12 Education, February, 1990, American Nuclear Society Keynote Address, A Future of Change, April, 1992, State Equity in Education Conference, The Michigan Mandate: A Progress Report, March, 1993, Vision 2017: The Third Century, November, 1993.</p>
+            <p>Researchers should note that a list of key speeches by title, year, and location can be found in the digital file titled "Accomplishments" located in the Strategy series. Also, note that several iterations of particular speeches can be found in the Digital Documents subgroup. Duderstadt's file naming scheme reflects the change in a file by a series of numbers located after the file name.</p>
           </scopecontent>
           <c03 level="subseries">
             <did>
-              <unittitle>Speeches, <unitdate type="inclusive" normal="1986/1996">1986-1996</unitdate></unittitle>
+              <physloc>Online</physloc>
+              <unittitle>1986-1987 Speeches</unittitle>
               <physdesc altrender="whole">
-                <extent altrender="materialtype spaceoccupied">821 original digital files</extent>
+                <extent altrender="materialtype spaceoccupied">37 digital files</extent>
               </physdesc>
+              <dao show="new" actuate="onrequest" href="JJDS1">
+                <daodesc>
+                  <p>[View Files]</p>
+                </daodesc>
+              </dao>
             </did>
-            <scopecontent>
-              <p>A main avenue President Duderstadt utilized as a means to communicate his ideas, objectives, and university strategic plan was to get out into the community and talk. During his presidency, Duderstadt frequently made several speeches a day to groups on campus and across the state, thus making the Speeches series (821 original files, 1986-1996) the largest series in the Digital Documents subgroup. The early speech files from the years 1986 to 1992 were predominately composed using the MORE 3.1 outline program. However, after 1992 he drafted his speeches using a combination of MORE 3.1 and Microsoft Word 6.0. Major Speeches contained in this series include: The Cranbrook Address, The Challenge of K-12 Education, February, 1990, American Nuclear Society Keynote Address, A Future of Change, April, 1992, State Equity in Education Conference, The Michigan Mandate: A Progress Report, March, 1993, Vision 2017: The Third Century, November, 1993.</p>
-              <p>Researchers should note that a list of key speeches by title, year, and location can be found in the digital file titled 'Accomplishments' located in the Strategy series. Also, note that several iterations of particular speeches can be found in the Digital Documents subgroup. Duderstadt's file naming scheme reflects the change in a file by a series of numbers located after the file name.</p>
-            </scopecontent>
-            <c04 level="otherlevel" otherlevel="sub-subseries">
-              <did>
-                <physloc>Online</physloc>
-                <unittitle>1986-1987 Speeches</unittitle>
-                <physdesc altrender="whole">
-                  <extent altrender="materialtype spaceoccupied">37 files</extent>
-                </physdesc>
-              </did>
-            </c04>
-            <c04 level="otherlevel" otherlevel="sub-subseries">
-              <did>
-                <physloc>Online</physloc>
-                <unittitle>1987-1988 Speeches</unittitle>
-                <physdesc altrender="whole">
-                  <extent altrender="materialtype spaceoccupied">54 files</extent>
-                </physdesc>
-              </did>
-            </c04>
-            <c04 level="otherlevel" otherlevel="sub-subseries">
-              <did>
-                <physloc>Online</physloc>
-                <unittitle>1988-1989 Speeches</unittitle>
-                <physdesc altrender="whole">
-                  <extent altrender="materialtype spaceoccupied">124 files</extent>
-                </physdesc>
-              </did>
-            </c04>
-            <c04 level="otherlevel" otherlevel="sub-subseries">
-              <did>
-                <physloc>Online</physloc>
-                <unittitle>1989-1990 Speeches</unittitle>
-                <physdesc altrender="whole">
-                  <extent altrender="materialtype spaceoccupied">132 files</extent>
-                </physdesc>
-              </did>
-            </c04>
-            <c04 level="otherlevel" otherlevel="sub-subseries">
-              <did>
-                <physloc>Online</physloc>
-                <unittitle>1990-1991 Speeches</unittitle>
-                <physdesc altrender="whole">
-                  <extent altrender="materialtype spaceoccupied">214 files</extent>
-                </physdesc>
-              </did>
-            </c04>
-            <c04 level="otherlevel" otherlevel="sub-subseries">
-              <did>
-                <physloc>Online</physloc>
-                <unittitle>1991-1992 Speeches</unittitle>
-                <physdesc altrender="whole">
-                  <extent altrender="materialtype spaceoccupied">52 files</extent>
-                </physdesc>
-              </did>
-            </c04>
-            <c04 level="otherlevel" otherlevel="sub-subseries">
-              <did>
-                <physloc>Online</physloc>
-                <unittitle>1992-1993 Speeches</unittitle>
-                <physdesc altrender="whole">
-                  <extent altrender="materialtype spaceoccupied">36 files</extent>
-                </physdesc>
-              </did>
-            </c04>
-            <c04 level="otherlevel" otherlevel="sub-subseries">
-              <did>
-                <physloc>Online</physloc>
-                <unittitle>1994-1995 Speeches</unittitle>
-                <physdesc altrender="whole">
-                  <extent altrender="materialtype spaceoccupied">27 files</extent>
-                </physdesc>
-              </did>
-            </c04>
-            <c04 level="otherlevel" otherlevel="sub-subseries">
-              <did>
-                <physloc>Online</physloc>
-                <unittitle>1995-1996 Speeches</unittitle>
-                <physdesc altrender="whole">
-                  <extent altrender="materialtype spaceoccupied">135 files</extent>
-                </physdesc>
-              </did>
-            </c04>
-            <c04 level="otherlevel" otherlevel="sub-subseries">
-              <did>
-                <physloc>Online</physloc>
-                <unittitle>Athletic Talks-Speeches</unittitle>
-                <physdesc altrender="whole">
-                  <extent altrender="materialtype spaceoccupied">12 files</extent>
-                </physdesc>
-              </did>
-            </c04>
           </c03>
           <c03 level="subseries">
             <did>
-              <unittitle>Idea Files, <unitdate type="inclusive" normal="1986/1995">1986-1995</unitdate></unittitle>
+              <physloc>Online</physloc>
+              <unittitle>1987-1988 Speeches</unittitle>
               <physdesc altrender="whole">
-                <extent altrender="materialtype spaceoccupied">328 original digital files</extent>
+                <extent altrender="materialtype spaceoccupied">54 digital files</extent>
               </physdesc>
+              <dao show="new" actuate="onrequest" href="JJDS2">
+                <daodesc>
+                  <p>[View Files]</p>
+                </daodesc>
+              </dao>
             </did>
-            <scopecontent>
-              <p>The Idea Files series (328 original digital files, 1986-1995) is comprised of files created with the MORE 3.1 outline program. Many of the outline files in this series resemble a silhouette of ideas that Duderstadt later developed into strategic planning documents, position papers, and speeches. Other outlines in the series read as talking points Duderstadt used either to prepare for a meeting or an important conversation. Major topics addressed in this series include higher education, teaching and research, information technology, and affirmative action. Yearly progress reports on the status of Duderstadt's agenda and goals can be found within this series in files with titles such as 'Summary 1991-92' or 'The Year Past.' Researchers interested in additional biographical material should consult the digital file 'Biography' in the 1988-1989 Ideas subseries and the Biographical series in the Paper Documents subgroup.</p>
-            </scopecontent>
-            <c04 level="otherlevel" otherlevel="sub-subseries">
-              <did>
-                <physloc>Online</physloc>
-                <unittitle>1986-1987 Ideas</unittitle>
-                <physdesc altrender="whole">
-                  <extent altrender="materialtype spaceoccupied">36 files</extent>
-                </physdesc>
-              </did>
-              <accessrestrict>
-                <p>ER RESTRICTED until <date type="restriction" normal="2030-07-01">July 1, 2030</date></p>
-              </accessrestrict>
-            </c04>
-            <c04 level="otherlevel" otherlevel="sub-subseries">
-              <did>
-                <physloc>Online</physloc>
-                <unittitle>1987-1988 Ideas</unittitle>
-                <physdesc altrender="whole">
-                  <extent altrender="materialtype spaceoccupied">28 files</extent>
-                </physdesc>
-              </did>
-              <accessrestrict>
-                <p>ER RESTRICTED until <date type="restriction" normal="2030-07-01">July 1, 2030</date></p>
-              </accessrestrict>
-            </c04>
-            <c04 level="otherlevel" otherlevel="sub-subseries">
-              <did>
-                <physloc>Online</physloc>
-                <unittitle>1988-1989 Ideas</unittitle>
-                <physdesc altrender="whole">
-                  <extent altrender="materialtype spaceoccupied">33 files</extent>
-                </physdesc>
-              </did>
-              <accessrestrict>
-                <p>ER RESTRICTED until <date type="restriction" normal="2030-07-01">July 1, 2030</date></p>
-              </accessrestrict>
-            </c04>
-            <c04 level="otherlevel" otherlevel="sub-subseries">
-              <did>
-                <physloc>Online</physloc>
-                <unittitle>1989-1990 Ideas</unittitle>
-                <physdesc altrender="whole">
-                  <extent altrender="materialtype spaceoccupied">47 files</extent>
-                </physdesc>
-              </did>
-              <accessrestrict>
-                <p>ER RESTRICTED until <date type="restriction" normal="2030-07-01">July 1, 2030</date></p>
-              </accessrestrict>
-            </c04>
-            <c04 level="otherlevel" otherlevel="sub-subseries">
-              <did>
-                <physloc>Online</physloc>
-                <unittitle>1990-1991 Ideas</unittitle>
-                <physdesc altrender="whole">
-                  <extent altrender="materialtype spaceoccupied">29 files</extent>
-                </physdesc>
-              </did>
-              <accessrestrict>
-                <p>ER RESTRICTED until <date type="restriction" normal="2030-07-01">July 1, 2030</date></p>
-              </accessrestrict>
-            </c04>
-            <c04 level="otherlevel" otherlevel="sub-subseries">
-              <did>
-                <physloc>Online</physloc>
-                <unittitle>1991-1992 Ideas</unittitle>
-                <physdesc altrender="whole">
-                  <extent altrender="materialtype spaceoccupied">20 files</extent>
-                </physdesc>
-              </did>
-              <accessrestrict>
-                <p>ER RESTRICTED until <date type="restriction" normal="2030-07-01">July 1, 2030</date></p>
-              </accessrestrict>
-            </c04>
-            <c04 level="otherlevel" otherlevel="sub-subseries">
-              <did>
-                <physloc>Online</physloc>
-                <unittitle>1992-1993 Ideas</unittitle>
-                <physdesc altrender="whole">
-                  <extent altrender="materialtype spaceoccupied">30 files</extent>
-                </physdesc>
-              </did>
-              <accessrestrict>
-                <p>ER RESTRICTED until <date type="restriction" normal="2030-07-01">July 1, 2030</date></p>
-              </accessrestrict>
-            </c04>
-            <c04 level="otherlevel" otherlevel="sub-subseries">
-              <did>
-                <physloc>Online</physloc>
-                <unittitle>1993-1994 Ideas</unittitle>
-                <physdesc altrender="whole">
-                  <extent altrender="materialtype spaceoccupied">57 files</extent>
-                </physdesc>
-              </did>
-              <accessrestrict>
-                <p>ER RESTRICTED until <date type="restriction" normal="2030-07-01">July 1, 2030</date></p>
-              </accessrestrict>
-            </c04>
-            <c04 level="otherlevel" otherlevel="sub-subseries">
-              <did>
-                <physloc>Online</physloc>
-                <unittitle>1994-1995 Ideas</unittitle>
-                <physdesc altrender="whole">
-                  <extent altrender="materialtype spaceoccupied">31 files</extent>
-                </physdesc>
-              </did>
-              <accessrestrict>
-                <p>ER RESTRICTED until <date type="restriction" normal="2030-07-01">July 1, 2030</date></p>
-              </accessrestrict>
-            </c04>
           </c03>
           <c03 level="subseries">
             <did>
-              <unittitle>Strategy, <unitdate type="inclusive" normal="1986/1997">1986-1997</unitdate></unittitle>
+              <physloc>Online</physloc>
+              <unittitle>1988-1989 Speeches</unittitle>
               <physdesc altrender="whole">
-                <extent altrender="materialtype spaceoccupied">84 original digital files</extent>
+                <extent altrender="materialtype spaceoccupied">124 digital files</extent>
               </physdesc>
+              <dao href="JJDS3">
+                <daodesc>
+                  <p>[View Files]</p>
+                </daodesc>
+              </dao>
             </did>
-            <scopecontent>
-              <p>While the other series in the Duderstadt Digital Documents subgroup contain records which cover a variety of topics, the Strategy series (84 original files, 1986-1996) is largely focused on issues specifically related to President Duderstadt's vision of higher education in the 21st century. The framework for his position of the future of education can be found in two key documents: 'Vision 2000: The Leaders and Best' and 'Vision 2017: Transforming the University.'</p>
-              <p>Duderstadt's espousal of the changing environment and the need for traditional institutions to transform is captured in this series. A researcher interested in his views on organizational change should look at the files containing the word transformation or variants with 'trans' such as, 'Transformation Text 1.6,' 'Trans Team 2.0,' and 'Trans Course 2.1.' For a summary of Duderstadt's major strategic initiatives, priorities for the coming decade, and views of changes needed in education, research, and diversity consult the file 'The Decade Report.' This report outlines major initiatives introduced to the university by Duderstadt such as the Institute for the Humanities, the Media Union, Institute of Molecular Medicine, and the Tauber Manufacturing Institute. The digital file titled 'Accomplishments,' written in the fall of 1995, provides a very informative outline of Duderstadt's priorities for the decade, accomplishments, projects (listed by year), strategic plan (Phases I, II, III), major papers, and selected speeches (listed by year). Lastly, this series contains in the 1996-1997 Strategy subseries the records related to Duderstadt's vision of 'The New University' and 'The Millennium Project.'</p>
-            </scopecontent>
-            <c04 level="otherlevel" otherlevel="sub-subseries">
-              <did>
-                <physloc>Online</physloc>
-                <unittitle>1986-1997 Strategy</unittitle>
-                <physdesc altrender="whole">
-                  <extent altrender="materialtype spaceoccupied">63 files</extent>
-                </physdesc>
-              </did>
-              <accessrestrict>
-                <p>ER RESTRICTED until <date type="restriction" normal="2030-07-01">July 1, 2030</date></p>
-              </accessrestrict>
-            </c04>
           </c03>
           <c03 level="subseries">
             <did>
-              <unittitle>Position Papers, <unitdate type="inclusive" normal="1986/1997">1986-1997</unitdate></unittitle>
+              <physloc>Online</physloc>
+              <unittitle>1989-1990 Speeches</unittitle>
               <physdesc altrender="whole">
-                <extent altrender="materialtype spaceoccupied">140 original digital files</extent>
+                <extent altrender="materialtype spaceoccupied">132 digital files</extent>
               </physdesc>
+              <dao href="JJDS4">
+                <daodesc>
+                  <p>[View Files]</p>
+                </daodesc>
+              </dao>
             </did>
-            <scopecontent>
-              <p>The Position Papers series (140 original digital files, 1986-1997) contains Duderstadt's key addresses, white papers, planning documents, annual reports, and presidential essays. Major papers contained in this series include: 'The Michigan Mandate: A Strategic Linking of Academic Excellence and Social Diversity,' 'The Role of the Research University in Undergraduate Education,' 'Michigan's Challenge: Preparing for an Age of Knowledge,' 'The Michigan Agenda for Women: Toward a Full and Equal Partnership,' 'Intellectual Transformation.' A complete list of major position papers can be found in the digital file titled 'Accomplishments' located in the Strategy series. Researchers will note that several versions of a document are in the Digital Documents subgroup, and that Duderstadt used a numbering scheme to organize versions of an digital document. One example of his file naming scheme is a series of files from the 1991-1996 subseries entitled 'Women 3.2,' 'Women 3.3,' 'Women 3.4.'</p>
-            </scopecontent>
-            <c04 level="otherlevel" otherlevel="sub-subseries">
-              <did>
-                <physloc>Online</physloc>
-                <unittitle>1986-1991 Position Papers</unittitle>
-                <physdesc altrender="whole">
-                  <extent altrender="materialtype spaceoccupied">74 files</extent>
-                </physdesc>
-              </did>
-              <accessrestrict>
-                <p>ER RESTRICTED until <date type="restriction" normal="2030-07-01">July 1, 2030</date></p>
-              </accessrestrict>
-            </c04>
-            <c04 level="otherlevel" otherlevel="sub-subseries">
-              <did>
-                <physloc>Online</physloc>
-                <unittitle>1991-1996 Position Papers</unittitle>
-                <physdesc altrender="whole">
-                  <extent altrender="materialtype spaceoccupied">66 files</extent>
-                </physdesc>
-              </did>
-              <accessrestrict>
-                <p>ER RESTRICTED until <date type="restriction" normal="2030-07-01">July 1, 2030</date></p>
-              </accessrestrict>
-            </c04>
-            <c04 level="otherlevel" otherlevel="sub-subseries">
-              <did>
-                <physloc>Online</physloc>
-                <unittitle>1996-1997 Position Papers</unittitle>
-                <physdesc altrender="whole">
-                  <extent altrender="materialtype spaceoccupied">04 files</extent>
-                </physdesc>
-              </did>
-              <accessrestrict>
-                <p>ER RESTRICTED until <date type="restriction" normal="2030-07-01">July 1, 2030</date></p>
-              </accessrestrict>
-            </c04>
           </c03>
           <c03 level="subseries">
             <did>
-              <unittitle>Presentations, <unitdate type="inclusive" normal="1987/1997">1987-1997</unitdate></unittitle>
+              <physloc>Online</physloc>
+              <unittitle>1990-1991 Speeches</unittitle>
               <physdesc altrender="whole">
-                <extent altrender="materialtype spaceoccupied">64 original digital files</extent>
+                <extent altrender="materialtype spaceoccupied">214 digital files</extent>
               </physdesc>
+              <dao href="JJDS5">
+                <daodesc>
+                  <p>[View Files]</p>
+                </daodesc>
+              </dao>
             </did>
-            <scopecontent>
-              <p>The majority of records in the Presentations series (64 original digital files, 1987-1996) were created using the software application PowerPoint by Microsoft. This application was designed specifically as a presentation tool. Many of the records in this series seem to be presentations given to Duderstadt's Executive Officers (EOs) and the Regents at retreat meetings (for example, 'Regents Retreat,' 'Tuition Retreat,' 'Leadership Retreat'). Other presentation topics included in this series are The Michigan Mandate, The Mission Plan, and University Resources.</p>
-              <p>Researchers will note that in the Digital Documents subgroup contextual and descriptive information such as audience, location, and exact date of the presentation or speech is not always explicit in the digital record.</p>
-            </scopecontent>
-            <c04 level="otherlevel" otherlevel="sub-subseries">
-              <did>
-                <physloc>Online</physloc>
-                <unittitle>1987-1988 Presentations</unittitle>
-                <physdesc altrender="whole">
-                  <extent altrender="materialtype spaceoccupied">1 file</extent>
-                </physdesc>
-              </did>
-            </c04>
-            <c04 level="otherlevel" otherlevel="sub-subseries">
-              <did>
-                <physloc>Online</physloc>
-                <unittitle>1988-1989 Presentations</unittitle>
-                <physdesc altrender="whole">
-                  <extent altrender="materialtype spaceoccupied">5 files</extent>
-                </physdesc>
-              </did>
-            </c04>
-            <c04 level="otherlevel" otherlevel="sub-subseries">
-              <did>
-                <physloc>Online</physloc>
-                <unittitle>1989-1990 Presentations</unittitle>
-                <physdesc altrender="whole">
-                  <extent altrender="materialtype spaceoccupied">8 files</extent>
-                </physdesc>
-              </did>
-            </c04>
-            <c04 level="otherlevel" otherlevel="sub-subseries">
-              <did>
-                <physloc>Online</physloc>
-                <unittitle>1990-1991 Presentations</unittitle>
-                <physdesc altrender="whole">
-                  <extent altrender="materialtype spaceoccupied">13 files</extent>
-                </physdesc>
-              </did>
-            </c04>
-            <c04 level="otherlevel" otherlevel="sub-subseries">
-              <did>
-                <physloc>Online</physloc>
-                <unittitle>1991-1992 Presentations</unittitle>
-                <physdesc altrender="whole">
-                  <extent altrender="materialtype spaceoccupied">17 files</extent>
-                </physdesc>
-              </did>
-            </c04>
-            <c04 level="otherlevel" otherlevel="sub-subseries">
-              <did>
-                <physloc>Online</physloc>
-                <unittitle>1992-1993 Presentations</unittitle>
-                <physdesc altrender="whole">
-                  <extent altrender="materialtype spaceoccupied">3 files</extent>
-                </physdesc>
-              </did>
-            </c04>
-            <c04 level="otherlevel" otherlevel="sub-subseries">
-              <did>
-                <physloc>Online</physloc>
-                <unittitle>1993-1994 Presentations</unittitle>
-                <physdesc altrender="whole">
-                  <extent altrender="materialtype spaceoccupied">1 file</extent>
-                </physdesc>
-              </did>
-            </c04>
-            <c04 level="otherlevel" otherlevel="sub-subseries">
-              <did>
-                <physloc>Online</physloc>
-                <unittitle>1994-1995 Presentations</unittitle>
-                <physdesc altrender="whole">
-                  <extent altrender="materialtype spaceoccupied">2 files</extent>
-                </physdesc>
-              </did>
-            </c04>
-            <c04 level="otherlevel" otherlevel="sub-subseries">
-              <did>
-                <physloc>Online</physloc>
-                <unittitle>1995-1996 Presentations</unittitle>
-                <physdesc altrender="whole">
-                  <extent altrender="materialtype spaceoccupied">3 files</extent>
-                </physdesc>
-              </did>
-            </c04>
-            <c04 level="otherlevel" otherlevel="sub-subseries">
-              <did>
-                <physloc>Online</physloc>
-                <unittitle>1996-1997 Presentations</unittitle>
-                <physdesc altrender="whole">
-                  <extent altrender="materialtype spaceoccupied">11 files</extent>
-                </physdesc>
-              </did>
-            </c04>
           </c03>
           <c03 level="subseries">
             <did>
-              <unittitle>Write Files, <unitdate type="inclusive" normal="1988/1997">1988-1997</unitdate></unittitle>
+              <physloc>Online</physloc>
+              <unittitle>1991-1992 Speeches</unittitle>
               <physdesc altrender="whole">
-                <extent altrender="materialtype spaceoccupied">588 original digital files</extent>
+                <extent altrender="materialtype spaceoccupied">52 digital files</extent>
               </physdesc>
+              <dao href="JJDS6">
+                <daodesc>
+                  <p>[View Files]</p>
+                </daodesc>
+              </dao>
             </did>
-            <scopecontent>
-              <p>The Write Files series (588 original digital files, 1987-1997) is composed entirely of Microsoft Word text files. Researchers will find a variety of 'traditional' business formats such as correspondence, agendas, and memorandums contained within the Write Files series. However, note that there is often an absence of descriptive information, such as the receiver's name and address, date, and signature line. The absence of this information is a reflection of the distributive work process practiced in President Duderstadt's office--a process afforded by networked computer technology. The correspondence includes letters of recommendation, thank-you's, and communication to persons not only at the University of Michigan but to persons throughout the country including U.S. presidents Gerald Ford and George Bush and Michigan governors James Blanchard and John Engler. It is important to note that Duderstadt often used the recipient's name or initials to name the file. For example, 'Blanchard-1/89' and 'H &amp; V-11/10' are communications to Governor James Blanchard in January 1989 and Harold and Vivian Shapiro on November 10th respectively.</p>
-            </scopecontent>
-            <c04 level="otherlevel" otherlevel="sub-subseries">
-              <did>
-                <physloc>Online</physloc>
-                <unittitle>1988 and earlier Write Files</unittitle>
-                <physdesc altrender="whole">
-                  <extent altrender="materialtype spaceoccupied">19 files</extent>
-                </physdesc>
-              </did>
-              <accessrestrict>
-                <p>ER RESTRICTED until <date type="restriction" normal="2030-07-01">July 1, 2030</date></p>
-              </accessrestrict>
-            </c04>
-            <c04 level="otherlevel" otherlevel="sub-subseries">
-              <did>
-                <physloc>Online</physloc>
-                <unittitle>1988-1989 Write Files</unittitle>
-                <physdesc altrender="whole">
-                  <extent altrender="materialtype spaceoccupied">19 files</extent>
-                </physdesc>
-              </did>
-              <accessrestrict>
-                <p>ER RESTRICTED until <date type="restriction" normal="2030-07-01">July 1, 2030</date></p>
-              </accessrestrict>
-            </c04>
-            <c04 level="otherlevel" otherlevel="sub-subseries">
-              <did>
-                <physloc>Online</physloc>
-                <unittitle>1989-1990 Write Files</unittitle>
-                <physdesc altrender="whole">
-                  <extent altrender="materialtype spaceoccupied">50 files</extent>
-                </physdesc>
-              </did>
-              <accessrestrict>
-                <p>ER RESTRICTED until <date type="restriction" normal="2030-07-01">July 1, 2030</date></p>
-              </accessrestrict>
-            </c04>
-            <c04 level="otherlevel" otherlevel="sub-subseries">
-              <did>
-                <physloc>Online</physloc>
-                <unittitle>1990-1991 Write Files</unittitle>
-                <physdesc altrender="whole">
-                  <extent altrender="materialtype spaceoccupied">74 files</extent>
-                </physdesc>
-              </did>
-              <accessrestrict>
-                <p>ER RESTRICTED until <date type="restriction" normal="2030-07-01">July 1, 2030</date></p>
-              </accessrestrict>
-            </c04>
-            <c04 level="otherlevel" otherlevel="sub-subseries">
-              <did>
-                <physloc>Online</physloc>
-                <unittitle>1991-1992 Write Files</unittitle>
-                <physdesc altrender="whole">
-                  <extent altrender="materialtype spaceoccupied">54 files</extent>
-                </physdesc>
-              </did>
-              <accessrestrict>
-                <p>ER RESTRICTED until <date type="restriction" normal="2030-07-01">July 1, 2030</date></p>
-              </accessrestrict>
-            </c04>
-            <c04 level="otherlevel" otherlevel="sub-subseries">
-              <did>
-                <physloc>Online</physloc>
-                <unittitle>1992-1993 Write Files</unittitle>
-                <physdesc altrender="whole">
-                  <extent altrender="materialtype spaceoccupied">120 files</extent>
-                </physdesc>
-              </did>
-              <accessrestrict>
-                <p>ER RESTRICTED until <date type="restriction" normal="2030-07-01">July 1, 2030</date></p>
-              </accessrestrict>
-            </c04>
-            <c04 level="otherlevel" otherlevel="sub-subseries">
-              <did>
-                <physloc>Online</physloc>
-                <unittitle>1993-1994 Write Files</unittitle>
-                <physdesc altrender="whole">
-                  <extent altrender="materialtype spaceoccupied">114 files</extent>
-                </physdesc>
-              </did>
-              <accessrestrict>
-                <p>ER RESTRICTED until <date type="restriction" normal="2030-07-01">July 1, 2030</date></p>
-              </accessrestrict>
-            </c04>
-            <c04 level="otherlevel" otherlevel="sub-subseries">
-              <did>
-                <physloc>Online</physloc>
-                <unittitle>1994-1995 Write Files</unittitle>
-                <physdesc altrender="whole">
-                  <extent altrender="materialtype spaceoccupied">55 files</extent>
-                </physdesc>
-              </did>
-              <accessrestrict>
-                <p>ER RESTRICTED until <date type="restriction" normal="2030-07-01">July 1, 2030</date></p>
-              </accessrestrict>
-            </c04>
-            <c04 level="otherlevel" otherlevel="sub-subseries">
-              <did>
-                <physloc>Online</physloc>
-                <unittitle>1995-1996 Write Files</unittitle>
-                <physdesc altrender="whole">
-                  <extent altrender="materialtype spaceoccupied">75 files</extent>
-                </physdesc>
-              </did>
-              <accessrestrict>
-                <p>ER RESTRICTED until <date type="restriction" normal="2030-07-01">July 1, 2030</date></p>
-              </accessrestrict>
-            </c04>
-            <c04 level="otherlevel" otherlevel="sub-subseries">
-              <did>
-                <physloc>Online</physloc>
-                <unittitle>1996-1997 Write Files</unittitle>
-                <physdesc altrender="whole">
-                  <extent altrender="materialtype spaceoccupied">8 files</extent>
-                </physdesc>
-              </did>
-              <accessrestrict>
-                <p>ER RESTRICTED until <date type="restriction" normal="2030-07-01">July 1, 2030</date></p>
-              </accessrestrict>
-            </c04>
           </c03>
           <c03 level="subseries">
             <did>
-              <unittitle>Legacy, <unitdate type="inclusive" normal="1996" certainty="Approximate">circa 1996</unitdate></unittitle>
+              <physloc>Online</physloc>
+              <unittitle>1992-1993 Speeches</unittitle>
               <physdesc altrender="whole">
-                <extent altrender="materialtype spaceoccupied">36 original digital files</extent>
+                <extent altrender="materialtype spaceoccupied">36 digital files</extent>
               </physdesc>
+              <dao href="JJDS7">
+                <daodesc>
+                  <p>[View Files]</p>
+                </daodesc>
+              </dao>
             </did>
-            <scopecontent>
-              <p>The Legacy Documents series (36 original digital files, ca. 1996) contains the drafts of the digital records that resulted in a number of printed publications written by Duderstadt together entitled 'Legacy Documents.' The files in the 'Sunflower' sub-folder are those files that resulted in the publication entitled 'A Growing Season: A Report from the President . . .The University of Michigan, 1986-1996.' A complete set of printed 'Legacy' documents including 'A Growing Season...' is in the Paper Documents series Publications.</p>
-            </scopecontent>
-            <c04 level="otherlevel" otherlevel="sub-subseries">
-              <did>
-                <physloc>Online</physloc>
-                <unittitle>1996-1997 Write Files</unittitle>
-                <physdesc altrender="whole">
-                  <extent altrender="materialtype spaceoccupied">8 files</extent>
-                </physdesc>
-              </did>
-              <accessrestrict>
-                <p>ER RESTRICTED until <date type="restriction" normal="2030-07-01">July 1, 2030</date></p>
-              </accessrestrict>
-            </c04>
           </c03>
           <c03 level="subseries">
             <did>
-              <unittitle>Digital Images, <unitdate type="inclusive" normal="1996" certainty="Approximate">circa 1996</unitdate></unittitle>
+              <physloc>Online</physloc>
+              <unittitle>1994-1995 Speeches</unittitle>
               <physdesc altrender="whole">
-                <extent altrender="materialtype spaceoccupied">55 original digital files</extent>
+                <extent altrender="materialtype spaceoccupied">27 digital files</extent>
               </physdesc>
+              <dao href="JJDS8">
+                <daodesc>
+                  <p>[View Files]</p>
+                </daodesc>
+              </dao>
             </did>
-            <scopecontent>
-              <p>The Digital Images series (55 original digital files, ca. 1996) provides a look at the many buildings either newly constructed or renovated during Duderstadt's presidential tenure at Michigan. The Ann Arbor campus underwent major changes to the Central, North, Athletic, and Medical campuses. New construction projects include the Media Union, Cancer &amp;amp; Geriatrics Center, Medical Science Research Building, Lurie Engineering Center and Bell Tower, Donald Canham Natatorium, and the Glenn E. Schembechler Hall. Major renovation and improvement projects include Angell Hall, CC Little, Chemistry Building, and Health Service. Included in this series are images of the buildings constructed on the U-M Dearborn and Flint campuses. A complete listing of all construction and renovation projects is highlighted in a special booklet titled 'Rebuilding the University, The University of Michigan 1986-1996.' A copy of this document is in the Paper Documents series Publications.</p>
-            </scopecontent>
-            <c04 level="otherlevel" otherlevel="sub-subseries">
-              <did>
-                <physloc>Online</physloc>
-                <unittitle>1996-1997 Write Files</unittitle>
-                <physdesc altrender="whole">
-                  <extent altrender="materialtype spaceoccupied">8 files</extent>
-                </physdesc>
-              </did>
-              <accessrestrict>
-                <p>ER RESTRICTED until <date type="restriction" normal="2030-07-01">July 1, 2030</date></p>
-              </accessrestrict>
-            </c04>
+          </c03>
+          <c03 level="subseries">
+            <did>
+              <physloc>Online</physloc>
+              <unittitle>1995-1996 Speeches</unittitle>
+              <physdesc altrender="whole">
+                <extent altrender="materialtype spaceoccupied">135 digital files</extent>
+              </physdesc>
+              <dao href="JJDS9">
+                <daodesc>
+                  <p>[View Files]</p>
+                </daodesc>
+              </dao>
+            </did>
+          </c03>
+          <c03 level="subseries">
+            <did>
+              <physloc>Online</physloc>
+              <unittitle>Athletic Talks-Speeches</unittitle>
+              <physdesc altrender="whole">
+                <extent altrender="materialtype spaceoccupied">12 digital files</extent>
+              </physdesc>
+              <dao href="JJDS10">
+                <daodesc>
+                  <p>[View Files]</p>
+                </daodesc>
+              </dao>
+            </did>
           </c03>
         </c02>
         <c02 level="series">
           <did>
-            <unittitle>Faculty Archives, <unitdate type="inclusive" normal="1968/ongoing">1968-ongoing</unitdate></unittitle>
+            <unittitle>Idea Files <unitdate type="inclusive" normal="1986/1995">1986-1995</unitdate></unittitle>
             <physdesc altrender="whole">
-              <extent altrender="materialtype spaceoccupied">1312 digital files</extent>
+              <extent altrender="materialtype spaceoccupied">328 digital files</extent>
             </physdesc>
           </did>
           <scopecontent>
-            <p>Includes speeches, presentations, writings and images. Portions of the collection are restricted. This collection represents the 'personal papers' of president Duderstadt.</p>
+            <p>The Idea Files series (328 digital files, 1986-1995) is comprised of files created with the MORE 3.1 outline program. Many of the outline files in this series resemble a silhouette of ideas that Duderstadt later developed into strategic planning documents, position papers, and speeches. Other outlines in the series read as talking points Duderstadt used either to prepare for a meeting or an important conversation. Major topics addressed in this series include higher education, teaching and research, information technology, and affirmative action. Yearly progress reports on the status of Duderstadt's agenda and goals can be found within this series in files with titles such as "Summary 1991-92" or "The Year Past." Researchers interested in additional biographical material should consult the digital file "Biography" in the 1988-1989 Ideas subseries and the Biographical series in the Paper Documents subgroup.</p>
           </scopecontent>
+          <c03 level="subseries">
+            <did>
+              <container type="box" label="Sound Recordings Box">1</container>
+              <unittitle>1986-1987 Ideas</unittitle>
+              <physdesc altrender="whole">
+                <extent altrender="materialtype spaceoccupied">36 digital files</extent>
+              </physdesc>
+            </did>
+            <accessrestrict>
+              <p>[RESTRICTED until <date type="restriction" normal="2030-07-01">July 1, 2030</date>]</p>
+            </accessrestrict>
+          </c03>
+          <c03 level="subseries">
+            <did>
+              <container type="box" label="Sound Recordings Box">1</container>
+              <unittitle>1987-1988 Ideas</unittitle>
+              <physdesc altrender="whole">
+                <extent altrender="materialtype spaceoccupied">28 digital files</extent>
+              </physdesc>
+            </did>
+            <accessrestrict>
+              <p>[RESTRICTED until <date type="restriction" normal="2030-07-01">July 1, 2030</date>]</p>
+            </accessrestrict>
+          </c03>
+          <c03 level="subseries">
+            <did>
+              <container type="box" label="Sound Recordings Box">1</container>
+              <unittitle>1988-1989 Ideas</unittitle>
+              <physdesc altrender="whole">
+                <extent altrender="materialtype spaceoccupied">33 digital files</extent>
+              </physdesc>
+            </did>
+            <accessrestrict>
+              <p>[RESTRICTED until <date type="restriction" normal="2030-07-01">July 1, 2030</date>]</p>
+            </accessrestrict>
+          </c03>
+          <c03 level="subseries">
+            <did>
+              <container type="box" label="Sound Recordings Box">1</container>
+              <unittitle>1989-1990 Ideas</unittitle>
+              <physdesc altrender="whole">
+                <extent altrender="materialtype spaceoccupied">47 digital files</extent>
+              </physdesc>
+            </did>
+            <accessrestrict>
+              <p>[RESTRICTED until <date type="restriction" normal="2030-07-01">July 1, 2030</date>]</p>
+            </accessrestrict>
+          </c03>
+          <c03 level="subseries">
+            <did>
+              <container type="box" label="Sound Recordings Box">1</container>
+              <unittitle>1990-1991 Ideas</unittitle>
+              <physdesc altrender="whole">
+                <extent altrender="materialtype spaceoccupied">29 digital files</extent>
+              </physdesc>
+            </did>
+            <accessrestrict>
+              <p>[RESTRICTED until <date type="restriction" normal="2030-07-01">July 1, 2030</date>]</p>
+            </accessrestrict>
+          </c03>
+          <c03 level="subseries">
+            <did>
+              <container type="box" label="Sound Recordings Box">1</container>
+              <unittitle>1991-1992 Ideas</unittitle>
+              <physdesc altrender="whole">
+                <extent altrender="materialtype spaceoccupied">20 digital files</extent>
+              </physdesc>
+            </did>
+            <accessrestrict>
+              <p>[RESTRICTED until <date type="restriction" normal="2030-07-01">July 1, 2030</date>]</p>
+            </accessrestrict>
+          </c03>
+          <c03 level="subseries">
+            <did>
+              <container type="box" label="Sound Recordings Box">1</container>
+              <unittitle>1992-1993 Ideas</unittitle>
+              <physdesc altrender="whole">
+                <extent altrender="materialtype spaceoccupied">30 digital files</extent>
+              </physdesc>
+            </did>
+            <accessrestrict>
+              <p>[RESTRICTED until <date type="restriction" normal="2030-07-01">July 1, 2030</date>]</p>
+            </accessrestrict>
+          </c03>
+          <c03 level="subseries">
+            <did>
+              <container type="box" label="Sound Recordings Box">1</container>
+              <unittitle>1993-1994 Ideas</unittitle>
+              <physdesc altrender="whole">
+                <extent altrender="materialtype spaceoccupied">57 digital files</extent>
+              </physdesc>
+            </did>
+            <accessrestrict>
+              <p>[RESTRICTED until <date type="restriction" normal="2030-07-01">July 1, 2030</date>]</p>
+            </accessrestrict>
+          </c03>
+          <c03 level="subseries">
+            <did>
+              <container type="box" label="Sound Recordings Box">1</container>
+              <unittitle>1994-1995 Ideas</unittitle>
+              <physdesc altrender="whole">
+                <extent altrender="materialtype spaceoccupied">31 digital files</extent>
+              </physdesc>
+            </did>
+            <accessrestrict>
+              <p>[RESTRICTED until <date type="restriction" normal="2030-07-01">July 1, 2030</date>]</p>
+            </accessrestrict>
+          </c03>
+        </c02>
+        <c02 level="series">
+          <did>
+            <unittitle>Strategy <unitdate type="inclusive" normal="1986/1997">1986-1997</unitdate></unittitle>
+            <physdesc altrender="whole">
+              <extent altrender="materialtype spaceoccupied">63 digital files</extent>
+            </physdesc>
+          </did>
+          <scopecontent>
+            <p>While the other series in the Duderstadt Digital Documents subgroup contain records which cover a variety of topics, the Strategy series (84 files, 1986-1996) is largely focused on issues specifically related to President Duderstadt's vision of higher education in the 21st century. The framework for his position of the future of education can be found in two key documents: "Vision 2000: The Leaders and Best" and "Vision 2017: Transforming the University."</p>
+            <p>Duderstadt's espousal of the changing environment and the need for traditional institutions to transform is captured in this series. A researcher interested in his views on organizational change should look at the files containing the word transformation or variants with "trans" such as, "Transformation Text 1.6," "Trans Team 2.0," and "Trans Course 2.1." For a summary of Duderstadt's major strategic initiatives, priorities for the coming decade, and views of changes needed in education, research, and diversity consult the file "The Decade Report." This report outlines major initiatives introduced to the university by Duderstadt such as the Institute for the Humanities, the Media Union, Institute of Molecular Medicine, and the Tauber Manufacturing Institute. The digital file titled "Accomplishments," written in the fall of 1995, provides a very informative outline of Duderstadt's priorities for the decade, accomplishments, projects (listed by year), strategic plan (Phases I, II, III), major papers, and selected speeches (listed by year). Lastly, this series contains in the 1996-1997 Strategy subseries the records related to Duderstadt's vision of "The New University" and "The Millennium Project."</p>
+          </scopecontent>
+          <c03 level="subseries">
+            <did>
+              <container type="box" label="Sound Recordings Box">1</container>
+              <unittitle>1986-1997 Strategy</unittitle>
+              <physdesc altrender="whole">
+                <extent altrender="materialtype spaceoccupied">63 digital files</extent>
+                <extent altrender="carrier">on 1 CD-ROM</extent>
+              </physdesc>
+            </did>
+            <accessrestrict>
+              <p>[RESTRICTED until <date type="restriction" normal="2030-07-01">July 1, 2030</date>]</p>
+            </accessrestrict>
+          </c03>
+        </c02>
+        <c02 level="series">
+          <did>
+            <unittitle>Position Papers <unitdate type="inclusive" normal="1986/1997">1986-1997</unitdate></unittitle>
+          </did>
+          <scopecontent>
+            <p>The Position Papers series (140 digital files, 1986-1997) contains Duderstadt's key addresses, white papers, planning documents, annual reports, and presidential essays. Major papers contained in this series include: "The Michigan Mandate: A Strategic Linking of Academic Excellence and Social Diversity," "The Role of the Research University in Undergraduate Education," "Michigan's Challenge: Preparing for an Age of Knowledge," "The Michigan Agenda for Women: Toward a Full and Equal Partnership," "Intellectual Transformation." A complete list of major position papers can be found in the digital file titled "Accomplishments" located in the Strategy series. Researchers will note that several versions of a document are in the Digital Documents subgroup, and that Duderstadt used a numbering scheme to organize versions of an digital document. One example of his file naming scheme is a series of files from the 1991-1996 subseries entitled "Women 3.2," "Women 3.3," "Women 3.4."</p>
+          </scopecontent>
+          <c03 level="subseries">
+            <did>
+              <container type="box" label="Sound Recordings Box">1</container>
+              <unittitle>1986-1991 Position Papers</unittitle>
+              <physdesc altrender="whole">
+                <extent altrender="materialtype spaceoccupied">74 digital files</extent>
+              </physdesc>
+            </did>
+            <accessrestrict>
+              <p>[RESTRICTED until <date type="restriction" normal="2030-07-01">July 1, 2030</date>]</p>
+            </accessrestrict>
+          </c03>
+          <c03 level="subseries">
+            <did>
+              <container type="box" label="Sound Recordings Box">1</container>
+              <unittitle>1991-1997 Position Papers</unittitle>
+              <physdesc altrender="whole">
+                <extent altrender="materialtype spaceoccupied">66 digital files</extent>
+              </physdesc>
+            </did>
+            <accessrestrict>
+              <p>[RESTRICTED until <date type="restriction" normal="2030-07-01">July 1, 2030</date>]</p>
+            </accessrestrict>
+          </c03>
+        </c02>
+        <c02 level="series">
+          <did>
+            <unittitle>Presentations <unitdate type="inclusive" normal="1987/1997">1987-1997</unitdate></unittitle>
+            <physdesc altrender="whole">
+              <extent altrender="materialtype spaceoccupied">64 digital files</extent>
+            </physdesc>
+          </did>
+          <scopecontent>
+            <p>The majority of records in the Presentations series (64 digital files, 1987-1996) were created using the software application PowerPoint by Microsoft. This application was designed specifically as a presentation tool. Many of the records in this series seem to be presentations given to Duderstadt's Executive Officers (EOs) and the Regents at retreat meetings (for example, "Regents Retreat," "Tuition Retreat," "Leadership Retreat"). Other presentation topics included in this series are The Michigan Mandate, The Mission Plan, and University Resources.</p>
+            <p>Researchers will note that in the Digital Documents subgroup contextual and descriptive information such as audience, location, and exact date of the presentation or speech is not always explicit in the digital record.</p>
+          </scopecontent>
+          <c03 level="subseries">
+            <did>
+              <physloc>Online</physloc>
+              <unittitle>1987-1997 Presentations files</unittitle>
+              <physdesc altrender="whole">
+                <extent altrender="materialtype spaceoccupied">64 digital files</extent>
+              </physdesc>
+              <dao show="new" actuate="onrequest" href="JJDPR">
+                <daodesc>
+                  <p>[View Files]</p>
+                </daodesc>
+              </dao>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="series">
+          <did>
+            <unittitle>Write Files <unitdate type="inclusive" normal="1988/1997">1988-1997</unitdate></unittitle>
+          </did>
+          <scopecontent>
+            <p>The Write Files series (588 digital files, 1987-1997) is composed entirely of Microsoft Word text files. Researchers will find a variety of "traditional" business formats such as correspondence, agendas, and memorandums contained within the Write Files series. However, note that there is often an absence of descriptive information, such as the receiver's name and address, date, and signature line. The absence of this information is a reflection of the distributive work process practiced in President Duderstadt's office--a process afforded by networked computer technology. The correspondence includes letters of recommendation, thank-you's, and communication to persons not only at the University of Michigan but to persons throughout the country including U.S. presidents Gerald Ford and George Bush and Michigan governors James Blanchard and John Engler. It is important to note that Duderstadt often used the recipient's name or initials to name the file. For example, "Blanchard-1/89" and "H &amp; V-11/10" are communications to Governor James Blanchard in January 1989 and Harold and Vivian Shapiro on November 10th respectively.</p>
+          </scopecontent>
+          <c03 level="subseries">
+            <did>
+              <container type="box" label="Sound Recordings Box">1</container>
+              <unittitle>1988 and earlier Write Files</unittitle>
+              <physdesc altrender="whole">
+                <extent altrender="materialtype spaceoccupied">19 digital files</extent>
+              </physdesc>
+            </did>
+            <accessrestrict>
+              <p>[RESTRICTED until <date type="restriction" normal="2030-07-01">July 1, 2030</date>]</p>
+            </accessrestrict>
+          </c03>
+          <c03 level="subseries">
+            <did>
+              <container type="box" label="Sound Recordings Box">1</container>
+              <unittitle>1988-1989 Write Files</unittitle>
+              <physdesc altrender="whole">
+                <extent altrender="materialtype spaceoccupied">19 digital files</extent>
+              </physdesc>
+            </did>
+            <accessrestrict>
+              <p>[RESTRICTED until <date type="restriction" normal="2030-07-01">July 1, 2030</date>]</p>
+            </accessrestrict>
+          </c03>
+          <c03 level="subseries">
+            <did>
+              <container type="box" label="Sound Recordings Box">1</container>
+              <unittitle>1989-1990 Write Files</unittitle>
+              <physdesc altrender="whole">
+                <extent altrender="materialtype spaceoccupied">50 digital files</extent>
+              </physdesc>
+            </did>
+            <accessrestrict>
+              <p>[RESTRICTED until <date type="restriction" normal="2030-07-01">July 1, 2030</date>]</p>
+            </accessrestrict>
+          </c03>
+          <c03 level="subseries">
+            <did>
+              <container type="box" label="Sound Recordings Box">1</container>
+              <unittitle>1990-1991 Write Files</unittitle>
+              <physdesc altrender="whole">
+                <extent altrender="materialtype spaceoccupied">74 digital files</extent>
+              </physdesc>
+            </did>
+            <accessrestrict>
+              <p>[RESTRICTED until <date type="restriction" normal="2030-07-01">July 1, 2030</date>]</p>
+            </accessrestrict>
+          </c03>
+          <c03 level="subseries">
+            <did>
+              <container type="box" label="Sound Recordings Box">1</container>
+              <unittitle>1991-1992 Write Files</unittitle>
+              <physdesc altrender="whole">
+                <extent altrender="materialtype spaceoccupied">54 digital files</extent>
+              </physdesc>
+            </did>
+            <accessrestrict>
+              <p>[RESTRICTED until <date type="restriction" normal="2030-07-01">July 1, 2030</date>]</p>
+            </accessrestrict>
+          </c03>
+          <c03 level="subseries">
+            <did>
+              <container type="box" label="Sound Recordings Box">1</container>
+              <unittitle>1992-1993 Write Files</unittitle>
+              <physdesc altrender="whole">
+                <extent altrender="materialtype spaceoccupied">120 digital files</extent>
+              </physdesc>
+            </did>
+            <accessrestrict>
+              <p>[RESTRICTED until <date type="restriction" normal="2030-07-01">July 1, 2030</date>]</p>
+            </accessrestrict>
+          </c03>
+          <c03 level="subseries">
+            <did>
+              <container type="box" label="Sound Recordings Box">1</container>
+              <unittitle>1993-1994 Write Files</unittitle>
+              <physdesc altrender="whole">
+                <extent altrender="materialtype spaceoccupied">114 digital files</extent>
+              </physdesc>
+            </did>
+            <accessrestrict>
+              <p>[RESTRICTED until <date type="restriction" normal="2030-07-01">July 1, 2030</date>]</p>
+            </accessrestrict>
+          </c03>
+          <c03 level="subseries">
+            <did>
+              <container type="box" label="Sound Recordings Box">1</container>
+              <unittitle>1994-1995 Write Files</unittitle>
+              <physdesc altrender="whole">
+                <extent altrender="materialtype spaceoccupied">55 digital files</extent>
+              </physdesc>
+            </did>
+            <accessrestrict>
+              <p>[RESTRICTED until <date type="restriction" normal="2030-07-01">July 1, 2030</date>]</p>
+            </accessrestrict>
+          </c03>
+          <c03 level="subseries">
+            <did>
+              <container type="box" label="Sound Recordings Box">1</container>
+              <unittitle>1995-1996 Write Files</unittitle>
+              <physdesc altrender="whole">
+                <extent altrender="materialtype spaceoccupied">75 digital files</extent>
+              </physdesc>
+            </did>
+            <accessrestrict>
+              <p>[RESTRICTED until <date type="restriction" normal="2030-07-01">July 1, 2030</date>]</p>
+            </accessrestrict>
+          </c03>
+          <c03 level="subseries">
+            <did>
+              <container type="box" label="Sound Recordings Box">1</container>
+              <unittitle>1996-1997 Write Files</unittitle>
+              <physdesc altrender="whole">
+                <extent altrender="materialtype spaceoccupied">8 digital files</extent>
+              </physdesc>
+            </did>
+            <accessrestrict>
+              <p>[RESTRICTED until <date type="restriction" normal="2030-07-01">July 1, 2030</date>]</p>
+            </accessrestrict>
+          </c03>
+        </c02>
+        <c02 level="series">
+          <did>
+            <unittitle>Legacy Documents <unitdate type="inclusive" normal="1996" certainty="approximate">circa 1996</unitdate></unittitle>
+            <physdesc altrender="whole">
+              <extent altrender="materialtype spaceoccupied">36 digital files</extent>
+            </physdesc>
+          </did>
+          <scopecontent>
+            <p>The Legacy Documents series (36 digital files, ca. 1996) contains the drafts of the digital records that resulted in a number of printed publications written by Duderstadt together entitled "Legacy Documents." The files in the "Sunflower" sub-folder are those files that resulted in the publication entitled <title render="italic">A Growing Season: A Report from the President . . .The University of Michigan, 1986-1996.</title> A complete set of printed "Legacy" documents including <title render="italic">A Growing Season...</title> is in the Paper Documents series Publications.</p>
+          </scopecontent>
+          <c03 level="subseries">
+            <did>
+              <unittitle>Legacy Documents</unittitle>
+              <dao href="JJDLE1" show="new" actuate="onrequest">
+                <daodesc>
+                  <p>[View Files]</p>
+                </daodesc>
+              </dao>
+            </did>
+          </c03>
+        </c02>
+        <c02 level="series">
+          <did>
+            <unittitle><genreform>Digital Images</genreform>, <unitdate type="inclusive" normal="1996" certainty="approximate">circa 1996</unitdate></unittitle>
+          </did>
+          <scopecontent>
+            <p>The Digital Images series (55 digital files, ca. 1996) provides a look at the many buildings either newly constructed or renovated during Duderstadt's presidential tenure at Michigan. The Ann Arbor campus underwent major changes to the Central, North, Athletic, and Medical campuses. New construction projects include the Media Union, Cancer &amp; Geriatrics Center, Medical Science Research Building, Lurie Engineering Center and Bell Tower, Donald Canham Natatorium, and the Glenn E. Schembechler Hall. Major renovation and improvement projects include Angell Hall, CC Little, Chemistry Building, and Health Service. Included in this series are images of the buildings constructed on the U-M Dearborn and Flint campuses. A complete listing of all construction and renovation projects is highlighted in a special booklet titled <title render="italic">Rebuilding the University, The University of Michigan 1986-1996.</title> A copy of this document is in the Paper Documents series Publications.</p>
+          </scopecontent>
+          <c03 level="subseries">
+            <did>
+              <container type="box" label="Sound Recordings Box">1</container>
+              <unittitle>Digital Images</unittitle>
+              <physdesc altrender="whole">
+                <extent altrender="materialtype spaceoccupied">55 digital files</extent>
+              </physdesc>
+            </did>
+            <accessrestrict>
+              <p>[RESTRICTED until <date type="restriction" normal="2030-07-01">July 1, 2030</date>]</p>
+            </accessrestrict>
+          </c03>
         </c02>
       </c01>
     </dsc>
