@@ -186,6 +186,41 @@ class BentleyWebLogParser(object):
                 
         return float(mobile) / total * 100
         
+    def search_vs_browse_from_index(self, start_date="", end_date="")    :
+        searchers = 0
+        browsers = 0
+        
+        total = 0
+        
+        browse_pages = [
+            "http://bentley.umich.edu/legacy-support/EAD/ead_ab.php", 
+            "http://bentley.umich.edu/legacy-support/EAD/ead_cd.php", 
+            "http://bentley.umich.edu/legacy-support/EAD/ead_ef.php", 
+            "http://bentley.umich.edu/legacy-support/EAD/ead_gh.php", 
+            "http://bentley.umich.edu/legacy-support/EAD/ead_ij.php", 
+            "http://bentley.umich.edu/legacy-support/EAD/ead_kl.php", 
+            "http://bentley.umich.edu/legacy-support/EAD/ead_mn.php", 
+            "http://bentley.umich.edu/legacy-support/EAD/ead_op.php", 
+            "http://bentley.umich.edu/legacy-support/EAD/ead_qs.php", 
+            "http://bentley.umich.edu/legacy-support/EAD/ead_tz.php", 
+            "http://bentley.umich.edu/legacy-support/EAD/ead_uofm.php", 
+            "http://bentley.umich.edu/legacy-support/EAD/ead_new.php"
+        ]
+        
+        for log in self.logs_filtered_by_time_range(start_date, end_date):
+            if log.get("request_header_referer", "") == "http://bentley.umich.edu/legacy-support/EAD/":
+                total += 1
+                if log.get("request_url", "") == "/cgi/f/findaid/findaid-idx?&page=simple&c=bhlead" or log.get("request_url", "") == "/cgi/f/findaid/findaid-idx?c=bhlead;page=boolean":
+                    searchers += 1
+                elif log.get("request_url", "") == "/cgi/f/findaid/findaid-idx?c=bhlead;page=browse;id=navbarbrowselink;cginame=findaid-idx":
+                    browsers += 1
+            elif log.get("request_header_referer", "") in browse_pages:
+                total += 1
+                browsers += 1
+            
+        return "Searchers from index: ", searchers, float(searchers) / total * 100, "\nBrowsers from index: ", browsers, float(browsers) / total * 100
+            
+            
 # * * *
             
     def unique_users_per_search_term(self, limit=None, start_date="", end_date=""):
