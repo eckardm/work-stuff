@@ -5,11 +5,16 @@ from time import strptime, strftime
 import shutil
 
 metadata_directory = os.path.join("reel_to_reel_deepblue_xml")
-target_directory = os.path.join("S:", "MLibrary", "DeepBlue", "reel-to-reel_test") # WILL NEED TO CHANGE THIS
+target_directory = os.path.join("R:", "MLibrary Drop", "reel-to-reel") # WILL NEED TO CHANGE THIS
 
-batch_one_test = [
-    "9940", 
-    "8654"
+batch_one_done = [
+    "00135", 
+    "03171", 
+    "0434", 
+    "0580", 
+    "0606", 
+    "2008043", 
+    "2012151"
 ]    
 
 batch_one = [
@@ -20,14 +25,14 @@ batch_one = [
     "95107", 
     "851100", 
     "851981", 
-    "2008043", 
-    "2012151", 
-    "00135", 
-    "0434", 
-    "0580", 
-    "0606", 
+    # "2008043", 
+    # "2012151", 
+    # "00135", 
+    # "0434", 
+    # "0580", 
+    # "0606", 
     "850", 
-    "03171", 
+    # "03171", 
     "8654", 
     "8667", 
     "8738"
@@ -119,7 +124,7 @@ for metadatum in metadata:
     item = tree.xpath("//dc.identifier.other")[0].text
     collection_id = item.split("-")[0]
     
-    if collection_id in batch_one_test: # LET'S GO THROUGH BATCHES ONE-BY-ONE
+    if collection_id in batch_one and collection_id not in batch_one_done: # LET'S GO THROUGH BATCHES ONE-BY-ONE
         source_directory = os.path.join("R:", "digitization", "Audio", "Vendor Digitization", "Reel-to-Reel Project", "Batch 1", "20130218") # DON'T FORGET TO CHANGE THIS
     
         print "Collection: " + collection_id
