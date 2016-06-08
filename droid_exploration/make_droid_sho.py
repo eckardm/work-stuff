@@ -31,7 +31,8 @@ for droid_output in os.listdir("droid_outputs"):
         for row in reader:
         
             result = []
-        
+            
+            # these are not the droids you're looking for
             if row.get("TYPE", "") == "Folder" or row.get("TYPE", "") == "Container":
                 continue
             if "_bhl-" in row.get("NAME", ""):
