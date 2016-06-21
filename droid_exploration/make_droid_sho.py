@@ -35,15 +35,15 @@ for droid_output in os.listdir("droid_outputs"):
             # these are not the droids you're looking for
             if row.get("TYPE", "") == "Folder" or row.get("TYPE", "") == "Container":
                 continue
-            if "_bhl-" in row.get("NAME", ""):
-                continue
+            # if "_bhl-" in row.get("NAME", ""):
+                # continue
             
             for header in headers:
                 result.append(row.get(header, ""))
                 
             results.append(result)
 
-with open("droid_sho.csv", mode="wb") as droid_sho:
+with open("droid_sho-with_normalized_files.csv", mode="wb") as droid_sho:
     writer = csv.writer(droid_sho)
     writer.writerow(headers)
     writer.writerows(results)
