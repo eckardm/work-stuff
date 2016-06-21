@@ -180,7 +180,10 @@ def make_dublin_core(directory, row, item):
     
     dc_rights_copyright = row[13].value
     if dc_rights_copyright:
-        etree.SubElement(dublin_core, "dcvalue", element="rights", qualifier="copyright").text = dc_rights_copyright
+        if dc_rights_copyright == "Copyright has been transferred to the Regents of the University of Michigan.":
+            etree.SubElement(dublin_core, "dcvalue", element="rights", qualifier="copyright").text = "Donor(s) have transferred any applicable copyright to the Regents of the University of Michigan but the collection may contain third-party materials for which copyright was not transferred. Patrons are responsible for determining the appropriate use or reuse of materials."
+        else:
+            etree.SubElement(dublin_core, "dcvalue", element="rights", qualifier="copyright").text = dc_rights_copyright
     
     dc_language_iso = row[14].value
     if dc_language_iso:
