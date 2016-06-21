@@ -7,14 +7,8 @@ import shutil
 metadata_directory = os.path.join("reel_to_reel_deepblue_xml")
 target_directory = os.path.join("R:", "MLibrary Drop", "reel-to-reel") # WILL NEED TO CHANGE THIS
 
-batch_one_done = [
-    "00135", 
-    "03171", 
-    "0434", 
-    "0580", 
-    "0606", 
-    "2008043", 
-    "2012151"
+already_done = [
+    "02115", 
 ]    
 
 batch_one = [
@@ -25,14 +19,14 @@ batch_one = [
     "95107", 
     "851100", 
     "851981", 
-    # "2008043", 
-    # "2012151", 
-    # "00135", 
-    # "0434", 
-    # "0580", 
-    # "0606", 
+    "2008043", 
+    "2012151", 
+    "00135", 
+    "0434", 
+    "0580", 
+    "0606", 
     "850", 
-    # "03171", 
+    "03171", 
     "8654", 
     "8667", 
     "8738"
@@ -79,7 +73,7 @@ batch_three = [
     "2009039", 
     "0601", 
     "0648", 
-    "02115", 
+    # "02115", 
     "06100", 
     "8514", 
     "8740", 
@@ -124,8 +118,8 @@ for metadatum in metadata:
     item = tree.xpath("//dc.identifier.other")[0].text
     collection_id = item.split("-")[0]
     
-    if collection_id in batch_one and collection_id not in batch_one_done: # LET'S GO THROUGH BATCHES ONE-BY-ONE
-        source_directory = os.path.join("R:", "digitization", "Audio", "Vendor Digitization", "Reel-to-Reel Project", "Batch 1", "20130218") # DON'T FORGET TO CHANGE THIS
+    if collection_id in batch_three and collection_id not in already_done: # LET'S GO THROUGH BATCHES ONE-BY-ONE
+        source_directory = os.path.join("R:", "digitization", "Audio", "Vendor Digitization", "Reel-to-Reel Project", "Batch 3", "20140117") # DON'T FORGET TO CHANGE THIS
     
         print "Collection: " + collection_id
     
