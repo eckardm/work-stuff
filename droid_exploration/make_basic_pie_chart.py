@@ -2,7 +2,6 @@ from tiers import tier_1_list, tier_2_list, tier_3_list
 
 import csv
 import plotly.plotly as py
-import plotly.graph_objs as go
 
 total = 0
 tier_1_count = 0
