@@ -3,7 +3,6 @@ from tiers import tier_1_list, tier_2_list, tier_3_list
 import csv
 import plotly.plotly as py
 
-total = 0
 tier_1_count = 0
 tier_2_count = 0
 tier_3_count = 0
@@ -15,8 +14,6 @@ with open("droid_sho-with_normalized_files.csv", mode="rb") as droid_sho:
         # skip normalized files
         if "_bhl-" in row.get("NAME", ""):
             continue
-        
-        total += 1
         
         if "." + row.get("EXT", "").lower() in tier_1_list:
             tier_1_count += 1
