@@ -266,7 +266,6 @@ trace_tier_3 = go.Scatter(
 data = [trace_tier_1, trace_tier_2, trace_tier_3]
 layout = go.Layout(
     title='<b>Number of Original Files per Tier by Last Modified Date in Dark Archive</b> (<i>n</i>=761,942)<br>See <a href="http://bentley.umich.edu/about/what-we-do/digital-curation-strategies-and-procedures/680-2/">Format Conversion Strategies for Long-Term Preservation</a> for More Information',
-    barmode="stack",
 )
 
 basic_overlaid_area_chart = go.Figure(data=data, layout=layout)
