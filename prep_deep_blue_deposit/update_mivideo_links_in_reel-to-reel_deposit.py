@@ -1,8 +1,8 @@
 import os
 from lxml import etree
 
-mlibrary_drop = os.path.join("Q:", "Homefolders", "eckardm", "Desktop", "test")
-# mlibrary_drop = os.path.join("R:", "MLibrary Drop", "reel-to-reel")
+# mlibrary_drop = os.path.join("Q:", "Homefolders", "eckardm", "Desktop", "test")
+mlibrary_drop = os.path.join("R:", "MLibrary Drop", "reel-to-reel")
 
 for root, _, files in os.walk(mlibrary_drop):
     for name in files:
