@@ -20,7 +20,7 @@ deposit_id = get_deposit_id()
 
 source_directory = os.path.join("X:", "deepblue", deposit_id)
 temporary_directory = "archive_directory"
-target_directory = os.path.join("S:", "MLibrary", "DeepBlue")
+target_directory = os.path.join("R:", "MLibrary Drop", "DeepBlue")
 beal_directory = os.path.join("X:", "beal", deposit_id)
 
 bentleystaff_items = []
