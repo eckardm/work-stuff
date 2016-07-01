@@ -16,7 +16,15 @@ def get_deposit_id():
         
     return deposit_id
     
+def get_handle():
+    handle = raw_input("Handle: ")
+    if not handle.startswith("2027.42/"):
+        handle = "2027.42/" + handle
+        
+    return handle
+    
 deposit_id = get_deposit_id()
+handle = get_handle()
 
 source_directory = os.path.join("X:", "deepblue", deposit_id)
 temporary_directory = "archive_directory"
@@ -335,6 +343,21 @@ def restructuring_bentleystaff_items(target_directory, bentleystaff_items):
         shutil.rmtree(os.path.join(target_directory, deposit_id + "-BentleyStaff"))
     
 restructuring_bentleystaff_items(target_directory, bentleystaff_items)    
+
+# rename directories so they're more helpful for jose
+def rename_directories_for_jose(target_directory):
+    print "Renaming directories so they're more helpful for Jose..."
+    
+    for dir in os.listdir(target_directory):
+        if dir.startswith(deposit_id):
+            
+            new_dir = new_dir = deposit_id + "_to_" + handle.replace(".", "-").replace("/", "-")
+            if dir.endswith("-BentleyStaff"):
+                new_dir = deposit_id + "_to_" + handle.replace(".", "-").replace("/", "-") + "-BentleyStaff"
+        
+            os.rename(os.path.join(target_directory, dir), os.path.join(target_directory, new_dir))
+                
+rename_directories_for_jose(target_directory)
 
 # cleaning everything up
 def clean_up_temporary_directory(directory):
