@@ -54,7 +54,7 @@ for row in ws.iter_rows(row_offset=1):
             revised_copyright_statement = revised_negative_copyright_statement_ua
     
     elif rights == "Copyright has not been transferred to the Regents of the University of Michigan. Copyright is held by the Arnold Weinstein Intellectual Property Trust or other third parties. The Works are protected by copyright and permissions to use the Works must be obtained from the copyright owner for any uses of the Works other than for educational or research purposes. Users of the Works may not (i) remove, obscure or modify any copyright notices or other notices included in the Works, or (ii) use, or authorize the use of, Works in any manner that would infringe the copyright thereon.":
-        continue
+        revised_copyright_statement = rights
     
     elif rights == "Copyright has not been transferred to the Regents of the University of Michigan. Researchers are responsible for determining appropriate rights holder.":
         if mhc == True:
@@ -69,10 +69,10 @@ for row in ws.iter_rows(row_offset=1):
             revised_copyright_statement = revised_copyright_statement_ua
     
     elif rights == "Copyright held jointly by Constance Cumbey and the Regents of the University of Michigan.":
-        continue
+        revised_copyright_statement = rights
     
     elif rights == "Copyright is held by StoryCorps, Inc., 80 Hanson Place, Brooklyn, NY 11217":
-        continue
+        revised_copyright_statement = rights
     
     elif rights == "Copyright is held by The North Woods Call LLC":
         revised_copyright_statement = "Copyright is held by The North Woods Call, LLC."
@@ -93,7 +93,7 @@ for row in ws.iter_rows(row_offset=1):
             revised_copyright_statement = revised_copyright_statement_ua
     
     elif rights == "Copyright is held by the Women Trailblazers in Law Project.":
-        continue
+        revised_copyright_statement = rights
     
     elif rights == "Copyright is not held by the Regents of the University of Michigan.":
         if mhc == True:
@@ -108,7 +108,7 @@ for row in ws.iter_rows(row_offset=1):
             revised_copyright_statement = revised_negative_copyright_statement_ua
     
     elif rights == "David Littmann transferred his copyright to the Regents of the University of Michigan.":
-        continue
+        revised_copyright_statement = rights
         
     rows.append([count, handle, collname, rights, revised_copyright_statement])
     
