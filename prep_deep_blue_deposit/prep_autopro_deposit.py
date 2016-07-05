@@ -353,7 +353,7 @@ def rename_directories_for_jose(target_directory):
             
             new_dir = new_dir = deposit_id + "_to_" + handle.replace(".", "-").replace("/", "-")
             if dir.endswith("-BentleyStaff"):
-                new_dir = deposit_id + "_to_" + handle.replace(".", "-").replace("/", "-") + "-BentleyStaff"
+                new_dir = new_dir + "-BentleyStaff"
         
             os.rename(os.path.join(target_directory, dir), os.path.join(target_directory, new_dir))
                 
