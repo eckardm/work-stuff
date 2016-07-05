@@ -7,7 +7,7 @@ tier_1_count = 0
 tier_2_count = 0
 tier_3_count = 0
 
-with open("droid_sho-with_normalized_files.csv", mode="rb") as droid_sho:
+with open("droid_sho.csv", mode="rb") as droid_sho:
     reader = csv.DictReader(droid_sho)
     for row in reader:
         

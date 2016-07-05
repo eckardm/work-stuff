@@ -7,7 +7,7 @@ import pprint
 
 tiers_dict = {}
 
-with open("droid_sho-with_normalized_files.csv", mode="rb") as droid_sho:
+with open("droid_sho.csv", mode="rb") as droid_sho:
     reader = csv.DictReader(droid_sho)
     for row in reader:
         
