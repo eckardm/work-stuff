@@ -11,10 +11,6 @@ with open("droid_sho-with_normalized_files.csv", mode="rb") as droid_sho:
     reader = csv.DictReader(droid_sho)
     for row in reader:
         
-        # skip normalized files
-        if "_bhl-" in row.get("NAME", ""):
-            continue
-        
         if row.get("LAST_MODIFIED", "").split("-")[0] not in tiers_dict:
             tiers_dict[row.get("LAST_MODIFIED", "").split("-")[0]] = {}
         

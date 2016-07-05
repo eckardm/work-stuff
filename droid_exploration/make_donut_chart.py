@@ -12,10 +12,6 @@ with open("droid_sho-with_normalized_files.csv", mode="rb") as droid_sho:
     reader = csv.DictReader(droid_sho)
     for row in reader:
         
-        # skip normalized files
-        if "_bhl-" in row.get("NAME", ""):
-            continue
-        
         if "." + row.get("EXT", "").lower() in tier_1_list:
             tier_1_formats.append(row.get("FORMAT_NAME"))
             
