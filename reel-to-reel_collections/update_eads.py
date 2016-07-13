@@ -20,42 +20,45 @@ for filename in os.listdir(path_to_eads):
     unitids = tree.xpath("//unitid")
     
     for unitid in unitids:
-        if "sr" in unitid.text.lower():
-            digfilecalc = unitid.text.strip("[] ")
+        if unitid:
+            if "sr" in unitid.text.lower():
+                digfilecalc = unitid.text.strip("[] ")
+                
+                href = ""
+                
+                while not href and digfilecalc:
+                    if digfilecalc in collitemno_handle:
+                        href = "http://hdl.handle.net/" + collitemno_handle.get(digfilecalc)
+                        del collitemno_handle[digfilecalc]
+                    else:
+                        digfilecalc = "-".join(digfilecalc.split("-")[:-1])
+                     
+                if href:
+                    print digfilecalc
+                
+                    parent_component = unitid.getparent().getparent().getparent()
+                    
+                    dao = etree.Element("dao")
+                    dao.attrib["href"] = href
+                    dao.attrib["show"] = "new"
+                    dao.attrib["actuate"] = "onrequest"
+                    
+                    daodesc = etree.Element("daodesc")
+                    dao.append(daodesc)
+                    
+                    p = etree.Element("p")
+                    p.text = "[view item]"
+                    daodesc.append(p)
+                    
+                    if not parent_component.find("did").find("dao"):
+                        parent_component.append(dao)
             
-            href = ""
-            
-            while not href and digfilecalc:
-                if digfilecalc in collitemno_handle:
-                    href = "http://hdl.handle.net/" + collitemno_handle.get(digfilecalc)
-                    del collitemno_handle[digfilecalc]
-                else:
-                    digfilecalc = "-".join(digfilecalc.split("-")[:-1])
-                 
-            if href:
-                print digfilecalc
-            
-                parent_component = unitid.getparent().getparent().getparent()
-                
-                dao = etree.Element("dao")
-                dao.attrib["href"] = href
-                dao.attrib["show"] = "new"
-                dao.attrib["actuate"] = "onrequest"
-                
-                daodesc = etree.Element("daodesc")
-                dao.append(daodesc)
-                
-                p = etree.Element("p")
-                p.text = "[view item]"
-                daodesc.append(p)
-                
-                if not parent_component.find("did").find("dao"):
-                    parent_component.append(dao)
-        
-                    # with open(os.path.join(path_to_eads, filename, mode="w") as ead_out:
-                        # ead_out.write(etree.tostring(tree, encoding="utf-8", xml_declaration=True))
+                        # with open(os.path.join(path_to_eads, filename, mode="w") as ead_out:
+                            # ead_out.write(etree.tostring(tree, encoding="utf-8", xml_declaration=True))
 
 if collitemno_handle:
     for collitemno in collitemno_handle:
         print collitemno, handle
+        
+print len(collitemno_handle)
                 
