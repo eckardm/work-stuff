@@ -25,7 +25,7 @@ for filename in os.listdir(path_to_eads):
             
             href = ""
             
-            while not href and digfilecalc is not None:
+            while not href and digfilecalc:
                 if digfilecalc in collitemno_handle:
                     href = "http://hdl.handle.net/" + collitemno_handle.get(digfilecalc)
                     del collitemno_handle[digfilecalc]
