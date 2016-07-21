@@ -42,17 +42,21 @@ if os.path.isdir(os.path.join(os.sep, "home", "bcadmin", "Desktop", "Shared Fold
 
 os.mkdir(os.path.join(os.sep, "home", "bcadmin", "Desktop", "Shared Folders and Media", "sf_Collections_Processing", collno + "-" + collname, barcode))
     
-os.mkdir(os.path.join(os.sep, "home", "bcadmin", "Desktop", "Shared Folders and Media", "sf_Collections_Processing", collno + "-" + collname, barcode, "MetaData"))
+os.mkdir(os.path.join(os.sep, "home", "bcadmin", "Desktop", "Shared Folders and Media", "sf_Collections_Processing", collno + "-" + collname, barcode, "logs"))
+
+os.mkdir(os.path.join(os.sep, "home", "bcadmin", "Desktop", "Shared Folders and Media", "sf_Collections_Processing", collno + "-" + collname, barcode, "logs", "bulk-" + barcode))
+
+os.mkdir(os.path.join(os.sep, "home", "bcadmin", "Desktop", "Shared Folders and Media", "sf_Collections_Processing", collno + "-" + collname, barcode, "metadata"))
 
 soup = BeautifulSoup(open("media-removal.html", mode="r"), "lxml")
 soup(class_="barcode")[0].contents[0].replace_with("A" + barcode + "A")
 soup(class_="codenumber")[0].contents[0].replace_with(barcode)
 
 html = soup.prettify("utf-8")
-with open(os.path.join(os.sep, "home", "bcadmin", "Desktop", "Shared Folders and Media", "sf_Collections_Processing", collno + "-" + collname, barcode, "MetaData", "media-removal.html"), mode="w") as media_removal:
+with open(os.path.join(os.sep, "home", "bcadmin", "Desktop", "Shared Folders and Media", "sf_Collections_Processing", collno + "-" + collname, barcode, "metadata", "media-removal.html"), mode="w") as media_removal:
     media_removal.write(html)
 
-with open(os.path.join(os.sep, "home", "bcadmin", "Desktop", "Shared Folders and Media", "sf_Collections_Processing", collno + "-" + collname, barcode, "MetaData", "notes.txt"), mode="w") as media_removal:
+with open(os.path.join(os.sep, "home", "bcadmin", "Desktop", "Shared Folders and Media", "sf_Collections_Processing", collno + "-" + collname, barcode, "metadata", "notes.txt"), mode="w") as media_removal:
     media_removal.write("This is a simple template to record information about any appraisal and processing decisions made with regards to digital media.\n\n")
     media_removal.write("Collection ID: " + collno + "\n\n")
     media_removal.write("Media Barcode: " + barcode + "\n\n")
@@ -64,5 +68,5 @@ with open(os.path.join(os.sep, "home", "bcadmin", "Desktop", "Shared Folders and
     media_removal.write("Files / Directories to exclude: \n\n")
 
 for image in os.listdir(os.path.join(os.sep, "home", "bcadmin", "Pictures", "Logitech Webcam")):
-    os.system('convert "' + os.path.join(os.sep, "home", "bcadmin", "Pictures", "Logitech Webcam", image) + '" -fuzz 25% -trim -modulate 110 "' + os.path.join(os.sep, "home", "bcadmin", "Desktop", "Shared Folders and Media", "sf_Collections_Processing", collno + "-" + collname, barcode, "MetaData", image) + '"')
+    os.system('convert "' + os.path.join(os.sep, "home", "bcadmin", "Pictures", "Logitech Webcam", image) + '" -fuzz 25% -trim -modulate 110 "' + os.path.join(os.sep, "home", "bcadmin", "Desktop", "Shared Folders and Media", "sf_Collections_Processing", collno + "-" + collname, barcode, "metadata", image) + '"')
     os.remove(os.path.join(os.sep, "home", "bcadmin", "Pictures", "Logitech Webcam", image))
