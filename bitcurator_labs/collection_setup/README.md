@@ -1,6 +1,6 @@
 **collection_setup.py** works in Windows.
 
-**collection_setup.py** works in the BitCurator Ubuntu distribution.
+**collection_setup-BitCurator.py** works in the BitCurator Ubuntu distribution.
 
 Dependencies:
   * Shared folders
