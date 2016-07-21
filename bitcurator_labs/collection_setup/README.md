@@ -21,7 +21,10 @@ ImageMagick
 To install ImageMagick in BitCurator:
   * Open Terminal
   * Type: 
-    sudo apt-get install imagemagick
+    
+'''
+sudo apt-get install imagemagick
+'''
 
 BeautifulSoup
 -------------
@@ -29,4 +32,7 @@ BeautifulSoup
 To install BeautifulSoup in BitCurator:
   * Open Terminal
   * Type:
-    sudo apt-get install python-bs4
+ 
+'''
+sudo apt-get install python-bs4
+'''
