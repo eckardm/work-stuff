@@ -1,0 +1,39 @@
+{
+    "source_organization" : {
+        "fieldRequired": true, 
+        "requiredValue": "Bentley Historical Library"
+    }, 
+    "organization_address" : {
+        "fieldRequired": false, 
+        "defaultValue": "1150 Beal Avenue Ann Arbor, MI 48109-2113 U.S.A."
+    }, 
+    "archivist" : {
+        "fieldRequired": true, 
+        "defaultValue": "Lastname, Firstname"
+    },
+    "accession_number" : {
+        "fieldRequired": true
+    }, 
+    "barcode" : {
+        "fieldRequired": true
+    }, 
+    "content_type" : {
+        "fieldRequired": false, 
+        "valueList": [
+            "audio", 
+            "video", 
+            "textual", 
+            "web capture", 
+            "mixed materials"
+        ]
+    }, 
+    "content_process" : {
+        "fieldRequired": true, 
+        "defaultValue": "born-digital", 
+        "valueList": [
+            "born-digital", 
+            "digitized", 
+            "web capture" 
+        ]
+    }
+}
